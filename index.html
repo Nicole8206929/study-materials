@@ -8,188 +8,222 @@
 <style>
 :root {
   --bg: #faf8f5;
-  --bg-card: #ffffff;
+  --card: #ffffff;
   --fg: #1a1a1a;
-  --fg-dim: #6b6b6b;
+  --dim: #6b6b6b;
   --accent: #c8553d;
-  --accent-light: #e8a89a;
+  --accent-dim: #a8442f;
   --border: #e8e4de;
-  --tag-bg: #f0ebe4;
-  --shadow: 0 2px 12px rgba(0,0,0,0.06);
+  --tag: #f0ebe4;
+  --shadow: 0 2px 16px rgba(0,0,0,0.06);
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #1a1a1a;
-    --bg-card: #242424;
+    --bg: #141414;
+    --card: #1f1f1f;
     --fg: #e8e8e8;
-    --fg-dim: #999;
+    --dim: #999;
     --accent: #e8755f;
-    --accent-light: #8a4a3a;
-    --border: #333;
-    --tag-bg: #333;
-    --shadow: 0 2px 12px rgba(0,0,0,0.3);
+    --accent-dim: #c8553d;
+    --border: #2e2e2e;
+    --tag: #2a2a2a;
+    --shadow: 0 2px 16px rgba(0,0,0,0.3);
   }
 }
 * { margin:0; padding:0; box-sizing:border-box; }
 body {
-  font-family: -apple-system, "Noto Serif CJK SC", Georgia, serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Serif CJK SC", Georgia, serif;
   background: var(--bg);
   color: var(--fg);
   line-height: 1.7;
   min-height: 100vh;
 }
-.container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
 
-/* Header */
-header { text-align: center; margin-bottom: 50px; }
+/* ===== 密码门 ===== */
+.gate {
+  position: fixed; inset: 0;
+  background: var(--bg);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 999;
+  transition: opacity .5s;
+}
+.gate.hidden { opacity: 0; pointer-events: none; }
+.gate-box {
+  text-align: center;
+  padding: 40px;
+  width: 320px;
+}
+.gate-box .icon {
+  width: 56px; height: 56px;
+  margin: 0 auto 20px;
+  border-radius: 14px;
+  background: var(--accent);
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 26px;
+}
+.gate-box h1 { font-size: 1.4em; margin-bottom: 6px; }
+.gate-box p { color: var(--dim); font-size: .9em; margin-bottom: 24px; }
+.gate-box input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card);
+  color: var(--fg);
+  font-size: 1em;
+  outline: none;
+  margin-bottom: 10px;
+}
+.gate-box input:focus { border-color: var(--accent); }
+.gate-box button {
+  width: 100%;
+  padding: 12px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+.gate-box button:hover { background: var(--accent-dim); }
+.gate-err { color: var(--accent); font-size: .85em; margin-top: 8px; min-height: 1.2em; }
+
+/* ===== 主内容 ===== */
+.container { max-width: 920px; margin: 0 auto; padding: 40px 20px; }
+
+header { text-align: center; margin-bottom: 36px; }
 header h1 {
   font-size: 2.2em;
   font-weight: 700;
-  letter-spacing: 0.05em;
-  margin-bottom: 8px;
+  letter-spacing: .04em;
+  margin-bottom: 6px;
 }
-header .tagline {
-  color: var(--fg-dim);
-  font-size: 1em;
-}
+header .tagline { color: var(--dim); font-size: 1em; }
 
-/* Search */
 .search {
-  max-width: 500px;
-  margin: 30px auto;
+  max-width: 480px;
+  margin: 0 auto 24px;
   position: relative;
 }
 .search input {
   width: 100%;
   padding: 12px 20px;
   border: 1px solid var(--border);
-  border-radius: 25px;
-  background: var(--bg-card);
+  border-radius: 24px;
+  background: var(--card);
   color: var(--fg);
-  font-size: 1em;
+  font-size: .95em;
   outline: none;
-  transition: border-color 0.2s;
 }
 .search input:focus { border-color: var(--accent); }
 
-/* Category tabs */
 .tabs {
-  display: flex;
-  gap: 10px;
+  display: flex; gap: 8px;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   flex-wrap: wrap;
 }
 .tab {
-  padding: 8px 18px;
-  border-radius: 20px;
+  padding: 7px 16px;
+  border-radius: 18px;
   border: 1px solid var(--border);
-  background: var(--bg-card);
-  color: var(--fg-dim);
+  background: var(--card);
+  color: var(--dim);
   cursor: pointer;
-  font-size: 0.9em;
-  transition: all 0.2s;
+  font-size: .88em;
+  transition: all .2s;
 }
 .tab.active, .tab:hover {
   background: var(--accent);
-  color: white;
+  color: #fff;
   border-color: var(--accent);
 }
 
-/* Book grid */
 .books {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 18px;
 }
-.book-card {
-  background: var(--bg-card);
+.book {
+  background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 14px;
   padding: 20px;
   box-shadow: var(--shadow);
-  transition: transform 0.2s, box-shadow 0.2s;
   display: flex;
   flex-direction: column;
+  transition: transform .2s;
 }
-.book-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-.book-card .category {
-  font-size: 0.75em;
+.book:hover { transform: translateY(-2px); }
+.book .cat {
+  font-size: .72em;
   color: var(--accent);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: .08em;
   margin-bottom: 8px;
 }
-.book-card h3 {
-  font-size: 1.05em;
-  margin-bottom: 6px;
-  line-height: 1.4;
+.book h3 { font-size: 1.05em; margin-bottom: 4px; line-height: 1.4; }
+.book .author { color: var(--dim); font-size: .84em; margin-bottom: 10px; }
+.book .desc { font-size: .84em; color: var(--dim); flex: 1; margin-bottom: 12px; }
+.book .meta {
+  display: flex; gap: 6px;
+  font-size: .78em;
+  color: var(--dim);
+  margin-bottom: 14px;
+  flex-wrap: wrap;
 }
-.book-card .author {
-  color: var(--fg-dim);
-  font-size: 0.85em;
-  margin-bottom: 10px;
+.book .meta span {
+  background: var(--tag);
+  padding: 3px 9px;
+  border-radius: 5px;
 }
-.book-card .desc {
-  font-size: 0.85em;
-  color: var(--fg-dim);
-  flex: 1;
-  margin-bottom: 12px;
-}
-.book-card .meta {
-  display: flex;
-  gap: 10px;
-  font-size: 0.8em;
-  color: var(--fg-dim);
-  margin-bottom: 12px;
-}
-.book-card .meta span {
-  background: var(--tag-bg);
-  padding: 2px 8px;
-  border-radius: 4px;
-}
-.book-card a.download {
-  display: inline-block;
-  padding: 8px 16px;
+.book a.dl {
+  padding: 9px;
   background: var(--accent);
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 0.9em;
+  color: #fff;
   text-align: center;
-  transition: opacity 0.2s;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: .9em;
 }
-.book-card a.download:hover { opacity: 0.85; }
-.book-card a.download.pending {
-  background: var(--tag-bg);
-  color: var(--fg-dim);
-  cursor: default;
-}
+.book a.dl:hover { background: var(--accent-dim); }
 
-/* Stats */
 .stats {
   text-align: center;
-  color: var(--fg-dim);
-  font-size: 0.9em;
-  margin-top: 40px;
-  padding-top: 20px;
+  color: var(--dim);
+  font-size: .85em;
+  margin-top: 36px;
+  padding-top: 18px;
   border-top: 1px solid var(--border);
 }
 
 footer {
   text-align: center;
-  margin-top: 50px;
-  color: var(--fg-dim);
-  font-size: 0.8em;
+  margin-top: 40px;
+  color: var(--dim);
+  font-size: .8em;
 }
 footer a { color: var(--accent); text-decoration: none; }
 </style>
 </head>
 <body>
-<div class="container">
+
+<!-- 密码门 -->
+<div class="gate" id="gate">
+  <div class="gate-box">
+    <div class="icon">📚</div>
+    <h1>心理金融书籍库</h1>
+    <p>请输入访问密码</p>
+    <form id="gateForm">
+      <input type="password" id="gatePwd" placeholder="密码" autofocus>
+      <button type="submit">进入</button>
+      <div class="gate-err" id="gateErr"></div>
+    </form>
+  </div>
+</div>
+
+<!-- 主内容 -->
+<div class="container" id="main" style="display:none">
   <header>
     <h1>心理金融书籍库</h1>
     <p class="tagline">心理学 · 经济 · 金融 · 管理 — 参考书籍与讲义资料</p>
@@ -207,7 +241,6 @@ footer a { color: var(--accent); text-decoration: none; }
   </div>
 
   <div class="books" id="books"></div>
-
   <div class="stats" id="stats"></div>
 
   <footer>
@@ -216,90 +249,94 @@ footer a { color: var(--accent); text-decoration: none; }
 </div>
 
 <script>
+// 访问密码
+const ACCESS_PASSWORD = "pc2097888";
+
+// 书籍数据
 const books = [
   {
     title: "Psychology 2e",
     author: "Spielman, Jenkins, Lovett / OpenStax",
-    category: "psych",
-    categoryName: "心理学",
+    cat: "psych", catName: "心理学",
     desc: "普通心理学系统教材：研究方法、学习记忆、思维、动机情绪、人格、社会心理、心理障碍与治疗。",
-    pages: 755,
-    size: "56 MB",
-    format: "PDF",
-    license: "CC BY-NC-SA 4.0",
-    url: "心理金融书籍/Psychology2e/Psychology2e_OpenStax.pdf"
+    pages: 755, size: "56 MB",
+    file: "心理金融书籍/Psychology2e_OpenStax.pdf"
   },
   {
     title: "Principles of Finance 2e",
     author: "OpenStax",
-    category: "econ",
-    categoryName: "经济金融",
+    cat: "econ", catName: "经济金融",
     desc: "财务报表、货币时间价值、债券股票估值、资本预算、融资决策与风险管理。",
-    pages: 629,
-    size: "30 MB",
-    format: "PDF",
-    license: "CC BY-NC-SA 4.0",
-    url: null
+    pages: 629, size: "30 MB",
+    file: "心理金融书籍/PrinciplesFinance2e_OpenStax.pdf"
   },
   {
     title: "Principles of Macroeconomics 3e",
     author: "Greenlaw, Shapiro, MacDonald / OpenStax",
-    category: "econ",
-    categoryName: "经济金融",
+    cat: "econ", catName: "经济金融",
     desc: "宏观经济学：GDP、通胀、失业、经济增长、货币与财政政策、国际贸易。",
-    pages: 635,
-    size: "33 MB",
-    format: "PDF",
-    license: "CC BY-NC-SA 4.0",
-    url: null
+    pages: 635, size: "33 MB",
+    file: "心理金融书籍/Macroeconomics3e_OpenStax.pdf"
   },
   {
     title: "Principles of Microeconomics 3e",
     author: "Greenlaw, Shapiro, MacDonald / OpenStax",
-    category: "econ",
-    categoryName: "经济金融",
+    cat: "econ", catName: "经济金融",
     desc: "微观经济学：供需、弹性、消费者行为、生产成本、市场结构、要素市场。",
-    pages: 595,
-    size: "28 MB",
-    format: "PDF",
-    license: "CC BY-NC-SA 4.0",
-    url: null
+    pages: 595, size: "28 MB",
+    file: "心理金融书籍/Microeconomics3e_OpenStax.pdf"
   },
   {
     title: "Principles of Financial Accounting",
     author: "Christine Jonick / UNG Press",
-    category: "accounting",
-    categoryName: "会计统计",
+    cat: "accounting", catName: "会计统计",
     desc: "会计等式、借贷记账、调整分录、三大财务报表、财务分析与 Excel 练习。",
-    pages: 318,
-    size: "5.1 MB",
-    format: "PDF",
-    license: "CC BY-SA 4.0",
-    url: "心理金融书籍/FinancialAccounting_Jonick.pdf"
+    pages: 318, size: "5.1 MB",
+    file: "心理金融书籍/FinancialAccounting_Jonick.pdf"
   },
   {
     title: "OpenIntro Statistics 4th Edition",
     author: "Diez, Çetinkaya-Rundel, Barr / OpenIntro",
-    category: "accounting",
-    categoryName: "会计统计",
+    cat: "accounting", catName: "会计统计",
     desc: "描述统计、概率分布、统计推断、回归分析，为读研究和财经数据提供基础。",
-    pages: 440,
-    size: "20 MB",
-    format: "PDF",
-    license: "CC BY-SA 3.0",
-    url: null
+    pages: 440, size: "13 MB",
+    file: "心理金融书籍/OpenIntroStatistics4.pdf"
   }
 ];
 
-let currentCat = "all";
-let currentSearch = "";
+// ===== 密码门 =====
+const gate = document.getElementById("gate");
+const gateForm = document.getElementById("gateForm");
+const gatePwd = document.getElementById("gatePwd");
+const gateErr = document.getElementById("gateErr");
+const main = document.getElementById("main");
+
+if (sessionStorage.getItem("authed") === "1") {
+  gate.classList.add("hidden");
+  main.style.display = "block";
+}
+
+gateForm.addEventListener("submit", e => {
+  e.preventDefault();
+  if (gatePwd.value === ACCESS_PASSWORD) {
+    sessionStorage.setItem("authed", "1");
+    gate.classList.add("hidden");
+    main.style.display = "block";
+    gateErr.textContent = "";
+  } else {
+    gateErr.textContent = "密码错误，请重试";
+    gatePwd.value = "";
+  }
+});
+
+// ===== 书籍渲染 =====
+let curCat = "all", curSearch = "";
 
 function render() {
-  const container = document.getElementById("books");
-  let filtered = books.filter(b => {
-    if (currentCat !== "all" && b.category !== currentCat) return false;
-    if (currentSearch) {
-      const s = currentSearch.toLowerCase();
+  const filtered = books.filter(b => {
+    if (curCat !== "all" && b.cat !== curCat) return false;
+    if (curSearch) {
+      const s = curSearch.toLowerCase();
       return b.title.toLowerCase().includes(s) ||
              b.author.toLowerCase().includes(s) ||
              b.desc.toLowerCase().includes(s);
@@ -307,21 +344,18 @@ function render() {
     return true;
   });
 
-  container.innerHTML = filtered.map(b => `
-    <div class="book-card">
-      <div class="category">${b.categoryName}</div>
+  document.getElementById("books").innerHTML = filtered.map(b => `
+    <div class="book">
+      <div class="cat">${b.catName}</div>
       <h3>${b.title}</h3>
       <div class="author">${b.author}</div>
       <div class="desc">${b.desc}</div>
       <div class="meta">
         <span>${b.pages} 页</span>
         <span>${b.size}</span>
-        <span>${b.format}</span>
+        <span>PDF</span>
       </div>
-      ${b.url
-        ? `<a class="download" href="${b.url}" target="_blank">下载 PDF</a>`
-        : `<a class="download pending">上传中...</a>`
-      }
+      <a class="dl" href="${b.file}" target="_blank">下载 / 查看 PDF</a>
     </div>
   `).join("");
 
@@ -329,17 +363,17 @@ function render() {
     `共 ${books.length} 本书 · 显示 ${filtered.length} 本`;
 }
 
-document.querySelectorAll(".tab").forEach(tab => {
-  tab.addEventListener("click", () => {
-    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
-    tab.classList.add("active");
-    currentCat = tab.dataset.cat;
+document.querySelectorAll(".tab").forEach(t => {
+  t.addEventListener("click", () => {
+    document.querySelectorAll(".tab").forEach(x => x.classList.remove("active"));
+    t.classList.add("active");
+    curCat = t.dataset.cat;
     render();
   });
 });
 
 document.getElementById("search").addEventListener("input", e => {
-  currentSearch = e.target.value;
+  curSearch = e.target.value;
   render();
 });
 
