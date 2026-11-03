@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Linux
+*~
+.fuse_hidden*
+.Trash-*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Office temporary files
+~.docx
+~.xlsx
+~.pptx
+*.tmp
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Large files (track with Git LFS if needed)
+*.pdf
+*.epub
+*.mobi
+*.zip
+*.rar
+*.7z
+*.mp4
+*.mov
