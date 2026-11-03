@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>心理金融书籍库</title>
+<meta name="description" content="心理学 · 经济 · 金融 · 管理 参考书籍与讲义资料库">
+<style>
+:root {
+  --bg: #faf8f5;
+  --bg-card: #ffffff;
+  --fg: #1a1a1a;
+  --fg-dim: #6b6b6b;
+  --accent: #c8553d;
+  --accent-light: #e8a89a;
+  --border: #e8e4de;
+  --tag-bg: #f0ebe4;
+  --shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1a1a;
+    --bg-card: #242424;
+    --fg: #e8e8e8;
+    --fg-dim: #999;
+    --accent: #e8755f;
+    --accent-light: #8a4a3a;
+    --border: #333;
+    --tag-bg: #333;
+    --shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: -apple-system, "Noto Serif CJK SC", Georgia, serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+
+/* Header */
+header { text-align: center; margin-bottom: 50px; }
+header h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+header .tagline {
+  color: var(--fg-dim);
+  font-size: 1em;
+}
+
+/* Search */
+.search {
+  max-width: 500px;
+  margin: 30px auto;
+  position: relative;
+}
+.search input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid var(--border);
+  border-radius: 25px;
+  background: var(--bg-card);
+  color: var(--fg);
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.search input:focus { border-color: var(--accent); }
+
+/* Category tabs */
+.tabs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.tab {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--fg-dim);
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: all 0.2s;
+}
+.tab.active, .tab:hover {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+/* Book grid */
+.books {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+.book-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+.book-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.book-card .category {
+  font-size: 0.75em;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+.book-card h3 {
+  font-size: 1.05em;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+.book-card .author {
+  color: var(--fg-dim);
+  font-size: 0.85em;
+  margin-bottom: 10px;
+}
+.book-card .desc {
+  font-size: 0.85em;
+  color: var(--fg-dim);
+  flex: 1;
+  margin-bottom: 12px;
+}
+.book-card .meta {
+  display: flex;
+  gap: 10px;
+  font-size: 0.8em;
+  color: var(--fg-dim);
+  margin-bottom: 12px;
+}
+.book-card .meta span {
+  background: var(--tag-bg);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.book-card a.download {
+  display: inline-block;
+  padding: 8px 16px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9em;
+  text-align: center;
+  transition: opacity 0.2s;
+}
+.book-card a.download:hover { opacity: 0.85; }
+.book-card a.download.pending {
+  background: var(--tag-bg);
+  color: var(--fg-dim);
+  cursor: default;
+}
+
+/* Stats */
+.stats {
+  text-align: center;
+  color: var(--fg-dim);
+  font-size: 0.9em;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  color: var(--fg-dim);
+  font-size: 0.8em;
+}
+footer a { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>心理金融书籍库</h1>
+    <p class="tagline">心理学 · 经济 · 金融 · 管理 — 参考书籍与讲义资料</p>
+  </header>
+
+  <div class="search">
+    <input type="text" id="search" placeholder="搜索书名、作者或关键词..." autocomplete="off">
+  </div>
+
+  <div class="tabs">
+    <div class="tab active" data-cat="all">全部</div>
+    <div class="tab" data-cat="psych">心理学</div>
+    <div class="tab" data-cat="econ">经济金融</div>
+    <div class="tab" data-cat="accounting">会计统计</div>
+  </div>
+
+  <div class="books" id="books"></div>
+
+  <div class="stats" id="stats"></div>
+
+  <footer>
+    <p>个人学习资料库 · <a href="https://github.com/Nicole8206929/study-materials">GitHub 仓库</a></p>
+  </footer>
+</div>
+
+<script>
+const books = [
+  {
+    title: "Psychology 2e",
+    author: "Spielman, Jenkins, Lovett / OpenStax",
+    category: "psych",
+    categoryName: "心理学",
+    desc: "普通心理学系统教材：研究方法、学习记忆、思维、动机情绪、人格、社会心理、心理障碍与治疗。",
+    pages: 755,
+    size: "56 MB",
+    format: "PDF",
+    license: "CC BY-NC-SA 4.0",
+    url: "心理金融书籍/Psychology2e/Psychology2e_OpenStax.pdf"
+  },
+  {
+    title: "Principles of Finance 2e",
+    author: "OpenStax",
+    category: "econ",
+    categoryName: "经济金融",
+    desc: "财务报表、货币时间价值、债券股票估值、资本预算、融资决策与风险管理。",
+    pages: 629,
+    size: "30 MB",
+    format: "PDF",
+    license: "CC BY-NC-SA 4.0",
+    url: null
+  },
+  {
+    title: "Principles of Macroeconomics 3e",
+    author: "Greenlaw, Shapiro, MacDonald / OpenStax",
+    category: "econ",
+    categoryName: "经济金融",
+    desc: "宏观经济学：GDP、通胀、失业、经济增长、货币与财政政策、国际贸易。",
+    pages: 635,
+    size: "33 MB",
+    format: "PDF",
+    license: "CC BY-NC-SA 4.0",
+    url: null
+  },
+  {
+    title: "Principles of Microeconomics 3e",
+    author: "Greenlaw, Shapiro, MacDonald / OpenStax",
+    category: "econ",
+    categoryName: "经济金融",
+    desc: "微观经济学：供需、弹性、消费者行为、生产成本、市场结构、要素市场。",
+    pages: 595,
+    size: "28 MB",
+    format: "PDF",
+    license: "CC BY-NC-SA 4.0",
+    url: null
+  },
+  {
+    title: "Principles of Financial Accounting",
+    author: "Christine Jonick / UNG Press",
+    category: "accounting",
+    categoryName: "会计统计",
+    desc: "会计等式、借贷记账、调整分录、三大财务报表、财务分析与 Excel 练习。",
+    pages: 318,
+    size: "5.1 MB",
+    format: "PDF",
+    license: "CC BY-SA 4.0",
+    url: null
+  },
+  {
+    title: "OpenIntro Statistics 4th Edition",
+    author: "Diez, Çetinkaya-Rundel, Barr / OpenIntro",
+    category: "accounting",
+    categoryName: "会计统计",
+    desc: "描述统计、概率分布、统计推断、回归分析，为读研究和财经数据提供基础。",
+    pages: 440,
+    size: "20 MB",
+    format: "PDF",
+    license: "CC BY-SA 3.0",
+    url: null
+  }
+];
+
+let currentCat = "all";
+let currentSearch = "";
+
+function render() {
+  const container = document.getElementById("books");
+  let filtered = books.filter(b => {
+    if (currentCat !== "all" && b.category !== currentCat) return false;
+    if (currentSearch) {
+      const s = currentSearch.toLowerCase();
+      return b.title.toLowerCase().includes(s) ||
+             b.author.toLowerCase().includes(s) ||
+             b.desc.toLowerCase().includes(s);
+    }
+    return true;
+  });
+
+  container.innerHTML = filtered.map(b => `
+    <div class="book-card">
+      <div class="category">${b.categoryName}</div>
+      <h3>${b.title}</h3>
+      <div class="author">${b.author}</div>
+      <div class="desc">${b.desc}</div>
+      <div class="meta">
+        <span>${b.pages} 页</span>
+        <span>${b.size}</span>
+        <span>${b.format}</span>
+      </div>
+      ${b.url
+        ? `<a class="download" href="${b.url}" target="_blank">下载 PDF</a>`
+        : `<a class="download pending">上传中...</a>`
+      }
+    </div>
+  `).join("");
+
+  document.getElementById("stats").textContent =
+    `共 ${books.length} 本书 · 显示 ${filtered.length} 本`;
+}
+
+document.querySelectorAll(".tab").forEach(tab => {
+  tab.addEventListener("click", () => {
+    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+    tab.classList.add("active");
+    currentCat = tab.dataset.cat;
+    render();
+  });
+});
+
+document.getElementById("search").addEventListener("input", e => {
+  currentSearch = e.target.value;
+  render();
+});
+
+render();
+</script>
+</body>
+</html>
