@@ -249,8 +249,15 @@ footer a { color: var(--accent); text-decoration: none; }
 </div>
 
 <script>
-// 访问密码
-const ACCESS_PASSWORD = "pc2097888";
+// 访问密码（SHA-256 hash，不明文存储）
+const PASSWORD_HASH = "d2d05c17e708ca6134d5e66061e7cbd6cf989f3eb3476ead17028381e76cd68f";
+let failCount = 0;
+const MAX_FAIL = 5;
+
+async function sha256(text) {
+  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, "0")).join("");
+}
 
 // 书籍数据
 const books = [
@@ -364,16 +371,27 @@ if (sessionStorage.getItem("authed") === "1") {
   main.style.display = "block";
 }
 
-gateForm.addEventListener("submit", e => {
+gateForm.addEventListener("submit", async e => {
   e.preventDefault();
-  if (gatePwd.value === ACCESS_PASSWORD) {
+  if (failCount >= MAX_FAIL) {
+    gateErr.textContent = "错误次数过多，请30秒后再试";
+    return;
+  }
+  const inputHash = await sha256(gatePwd.value);
+  if (inputHash === PASSWORD_HASH) {
     sessionStorage.setItem("authed", "1");
     gate.classList.add("hidden");
     main.style.display = "block";
     gateErr.textContent = "";
+    failCount = 0;
   } else {
-    gateErr.textContent = "密码错误，请重试";
+    failCount++;
+    gateErr.textContent = `密码错误（${failCount}/${MAX_FAIL}）`;
     gatePwd.value = "";
+    if (failCount >= MAX_FAIL) {
+      gatePwd.disabled = true;
+      setTimeout(() => { gatePwd.disabled = false; failCount = 0; gateErr.textContent = ""; }, 30000);
+    }
   }
 });
 
