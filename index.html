@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>心理金融书籍库</title>
+<title>书籍查找库</title>
 <meta name="description" content="心理学 · 经济 · 金融 · 管理 参考书籍与讲义资料库">
 <style>
 :root {
@@ -159,7 +159,7 @@ footer a { color: var(--accent); text-decoration: none; }
 <div class="gate" id="gate">
   <div class="gate-box">
     <div class="icon">📚</div>
-    <h1>心理金融书籍库</h1>
+    <h1>书籍查找库</h1>
     <p>请输入访问密码</p>
     <form id="gateForm">
       <input type="password" id="gatePwd" placeholder="密码" autofocus>
@@ -172,8 +172,8 @@ footer a { color: var(--accent); text-decoration: none; }
 <!-- 主内容 -->
 <div class="container" id="main" style="display:none">
   <header>
-    <h1>心理金融书籍库</h1>
-    <p class="tagline">心理学 · 经济 · 金融 · 管理 — 参考书籍与讲义资料</p>
+    <h1>书籍查找库</h1>
+    <p class="tagline">心理学 · 经济金融 · 数学 · 物理 · 化学 · 生物 · 信息学 — 讲义与教材资料库</p>
   </header>
 
   <div class="search">
@@ -185,6 +185,11 @@ footer a { color: var(--accent); text-decoration: none; }
     <div class="tab" data-cat="psych">心理学</div>
     <div class="tab" data-cat="econ">经济金融</div>
     <div class="tab" data-cat="accounting">会计统计</div>
+    <div class="tab" data-cat="math">数学</div>
+    <div class="tab" data-cat="physics">物理</div>
+    <div class="tab" data-cat="chem">化学</div>
+    <div class="tab" data-cat="bio">生物</div>
+    <div class="tab" data-cat="cs">信息学</div>
   </div>
 
   <div class="tag-filter" id="tagFilter"></div>
@@ -312,8 +317,8 @@ function render() {
         <span>PDF</span>
       </div>
       <div class="actions">
-        <a class="view" href="#" onclick="previewPdf('${b.file}','${b.title}');return false;">预览</a>
-        <a class="dl" href="${b.file}" target="_blank">下载</a>
+        <a class="view" href="#" onclick="previewPdf('${encodeURI(b.file)}','${b.title}');return false;">预览</a>
+        <a class="dl" href="${encodeURI(b.file)}" target="_blank">下载</a>
       </div>
     </div>
   `).join("");
