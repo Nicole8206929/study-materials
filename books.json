@@ -131,6 +131,45 @@
       "tags": ["商业教材", "学习指南", "公司金融"]
     },
     {
+      "id": "robbins-ob",
+      "title": "组织行为学（第18版）",
+      "author": "Stephen Robbins / 斯蒂芬·罗宾斯",
+      "cat": "econ",
+      "catName": "经济金融",
+      "desc": "组织行为学经典教材：个体行为、群体行为、组织结构、领导力、组织文化与变革。",
+      "pages": 600,
+      "size": "60 MB",
+      "year": 2018,
+      "file": "心理金融书籍/Robbins_Organizational_Behavior.pdf",
+      "tags": ["商业教材", "中文版", "组织行为", "管理学"]
+    },
+    {
+      "id": "porter-strategy",
+      "title": "竞争战略",
+      "author": "Michael Porter / 迈克尔·波特",
+      "cat": "econ",
+      "catName": "经济金融",
+      "desc": "波特竞争战略经典：五力模型、三大通用战略、产业结构分析与竞争优势。",
+      "pages": 400,
+      "size": "74 MB",
+      "year": 1980,
+      "file": "心理金融书籍/Porter_Competitive_Strategy.pdf",
+      "tags": ["商业教材", "中文版", "战略管理", "竞争优势"]
+    },
+    {
+      "id": "rosenberg-nvc",
+      "title": "非暴力沟通",
+      "author": "Marshall Rosenberg / 马歇尔·卢森堡",
+      "cat": "psych",
+      "catName": "心理学",
+      "desc": "非暴力沟通经典：观察、感受、需要、请求四要素，提升人际沟通与冲突解决能力。",
+      "pages": 200,
+      "size": "570 KB",
+      "year": 2016,
+      "file": "心理金融书籍/Rosenberg_Nonviolent_Communication.epub",
+      "tags": ["商业教材", "中文版", "沟通技巧", "epub"]
+    },
+    {
       "id": "financial-acct",
       "title": "Principles of Financial Accounting",
       "author": "Christine Jonick / UNG Press",
