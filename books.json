@@ -11,7 +11,11 @@
       "size": "56 MB",
       "year": 2020,
       "file": "心理金融书籍/Psychology2e_OpenStax.pdf",
-      "tags": ["开放教材", "CC-BY", "普通心理学"]
+      "tags": [
+        "开放教材",
+        "CC-BY",
+        "普通心理学"
+      ]
     },
     {
       "id": "zimbardo",
@@ -24,7 +28,11 @@
       "size": "90 MB",
       "year": 2011,
       "file": "心理金融书籍/Zimbardo_Psychology_Core_Concepts.pdf",
-      "tags": ["商业教材", "津巴多", "普通心理学"]
+      "tags": [
+        "商业教材",
+        "津巴多",
+        "普通心理学"
+      ]
     },
     {
       "id": "burger",
@@ -37,7 +45,11 @@
       "size": "37 MB",
       "year": 2011,
       "file": "心理金融书籍/Burger_Personality.pdf",
-      "tags": ["商业教材", "中文版", "人格理论"]
+      "tags": [
+        "商业教材",
+        "中文版",
+        "人格理论"
+      ]
     },
     {
       "id": "principles-finance",
@@ -50,7 +62,11 @@
       "size": "30 MB",
       "year": 2022,
       "file": "心理金融书籍/PrinciplesFinance2e_OpenStax.pdf",
-      "tags": ["开放教材", "CC-BY", "公司金融"]
+      "tags": [
+        "开放教材",
+        "CC-BY",
+        "公司金融"
+      ]
     },
     {
       "id": "macro3e",
@@ -63,7 +79,11 @@
       "size": "33 MB",
       "year": 2023,
       "file": "心理金融书籍/Macroeconomics3e_OpenStax.pdf",
-      "tags": ["开放教材", "CC-BY", "宏观"]
+      "tags": [
+        "开放教材",
+        "CC-BY",
+        "宏观"
+      ]
     },
     {
       "id": "micro3e",
@@ -76,7 +96,11 @@
       "size": "28 MB",
       "year": 2023,
       "file": "心理金融书籍/Microeconomics3e_OpenStax.pdf",
-      "tags": ["开放教材", "CC-BY", "微观"]
+      "tags": [
+        "开放教材",
+        "CC-BY",
+        "微观"
+      ]
     },
     {
       "id": "mankiw-econ",
@@ -89,7 +113,11 @@
       "size": "27 MB",
       "year": 2011,
       "file": "心理金融书籍/Mankiw_Principles_Economics.pdf",
-      "tags": ["商业教材", "曼昆", "经济学原理"]
+      "tags": [
+        "商业教材",
+        "曼昆",
+        "经济学原理"
+      ]
     },
     {
       "id": "mankiw-micro",
@@ -102,7 +130,11 @@
       "size": "14 MB",
       "year": 2017,
       "file": "心理金融书籍/Mankiw_Principles_Microeconomics.pdf",
-      "tags": ["商业教材", "曼昆", "微观"]
+      "tags": [
+        "商业教材",
+        "曼昆",
+        "微观"
+      ]
     },
     {
       "id": "mishkin",
@@ -115,7 +147,11 @@
       "size": "39 MB",
       "year": 2016,
       "file": "心理金融书籍/Mishkin_Money_Banking.pdf",
-      "tags": ["商业教材", "货币银行", "金融市场"]
+      "tags": [
+        "商业教材",
+        "货币银行",
+        "金融市场"
+      ]
     },
     {
       "id": "brealey",
@@ -128,7 +164,11 @@
       "size": "39 MB",
       "year": 1996,
       "file": "心理金融书籍/Brealey_Corporate_Finance.pdf",
-      "tags": ["商业教材", "学习指南", "公司金融"]
+      "tags": [
+        "商业教材",
+        "学习指南",
+        "公司金融"
+      ]
     },
     {
       "id": "robbins-ob",
@@ -141,7 +181,12 @@
       "size": "60 MB",
       "year": 2018,
       "file": "心理金融书籍/Robbins_Organizational_Behavior.pdf",
-      "tags": ["商业教材", "中文版", "组织行为", "管理学"]
+      "tags": [
+        "商业教材",
+        "中文版",
+        "组织行为",
+        "管理学"
+      ]
     },
     {
       "id": "porter-strategy",
@@ -154,7 +199,12 @@
       "size": "74 MB",
       "year": 1980,
       "file": "心理金融书籍/Porter_Competitive_Strategy.pdf",
-      "tags": ["商业教材", "中文版", "战略管理", "竞争优势"]
+      "tags": [
+        "商业教材",
+        "中文版",
+        "战略管理",
+        "竞争优势"
+      ]
     },
     {
       "id": "rosenberg-nvc",
@@ -167,7 +217,12 @@
       "size": "570 KB",
       "year": 2016,
       "file": "心理金融书籍/Rosenberg_Nonviolent_Communication.epub",
-      "tags": ["商业教材", "中文版", "沟通技巧", "epub"]
+      "tags": [
+        "商业教材",
+        "中文版",
+        "沟通技巧",
+        "epub"
+      ]
     },
     {
       "id": "myers-social-psych",
@@ -180,7 +235,12 @@
       "size": "19.6 MB",
       "year": 2006,
       "file": "心理金融书籍/Myers_Social_Psychology_8th.pdf",
-      "tags": ["商业教材", "中文版", "社会心理学", "经典教材"]
+      "tags": [
+        "商业教材",
+        "中文版",
+        "社会心理学",
+        "经典教材"
+      ]
     },
     {
       "id": "financial-acct",
@@ -193,7 +253,11 @@
       "size": "5.1 MB",
       "year": 2019,
       "file": "心理金融书籍/FinancialAccounting_Jonick.pdf",
-      "tags": ["开放教材", "CC-BY-SA", "财务会计"]
+      "tags": [
+        "开放教材",
+        "CC-BY-SA",
+        "财务会计"
+      ]
     },
     {
       "id": "openintro-stats",
@@ -206,7 +270,29 @@
       "size": "13 MB",
       "year": 2019,
       "file": "心理金融书籍/OpenIntroStatistics4.pdf",
-      "tags": ["开放教材", "CC-BY-SA", "统计学"]
+      "tags": [
+        "开放教材",
+        "CC-BY-SA",
+        "统计学"
+      ]
+    },
+    {
+      "id": "bio-methods",
+      "title": "高中生物核心方法册",
+      "author": "高中生物复习资料",
+      "cat": "bio",
+      "catName": "高中生物",
+      "desc": "高中生物核心方法复习册：细胞结构、代谢、遗传、调节、生态等专题方法归纳与例题解析。",
+      "pages": 486,
+      "size": "26.8 MB",
+      "year": 2026,
+      "file": "高中生物/高中生物核心方法册.pdf",
+      "tags": [
+        "高中",
+        "生物",
+        "方法册",
+        "复习"
+      ]
     }
   ]
 }
