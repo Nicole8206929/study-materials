@@ -170,6 +170,19 @@
       "tags": ["商业教材", "中文版", "沟通技巧", "epub"]
     },
     {
+      "id": "myers-social-psych",
+      "title": "社会心理学（第8版）",
+      "author": "David Myers / 戴维·迈尔斯",
+      "cat": "psych",
+      "catName": "心理学",
+      "desc": "社会心理学经典教材：社会思维、社会影响、社会关系三大模块，涵盖归因、从众、偏见、吸引、利他等核心主题。",
+      "pages": 600,
+      "size": "19.6 MB",
+      "year": 2006,
+      "file": "心理金融书籍/Myers_Social_Psychology_8th.pdf",
+      "tags": ["商业教材", "中文版", "社会心理学", "经典教材"]
+    },
+    {
       "id": "financial-acct",
       "title": "Principles of Financial Accounting",
       "author": "Christine Jonick / UNG Press",
