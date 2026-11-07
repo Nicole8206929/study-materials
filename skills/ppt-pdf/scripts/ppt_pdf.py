@@ -51,50 +51,61 @@ def register_cjk_font(name="CJK"):
             return name
         except Exception:
             pass
-    return "Helvetica"
+    from reportlab.pdfbase.cidfonts import UnicodeCIDFont
+    pdfmetrics.registerFont(UnicodeCIDFont("STSong-Light"))
+    return "STSong-Light"
 
 
 # ============ PPT 转换 ============
 
-def convert_ppt(ppt_path, pdf_path, timeout=300, retries=2):
-    """单个 PPT 转 PDF，带重试"""
-    ppt_path = Path(ppt_path).resolve()
-    pdf_path = Path(pdf_path).resolve()
-    if not ppt_path.exists():
-        raise FileNotFoundError(str(ppt_path))
-    pdf_path.parent.mkdir(parents=True, exist_ok=True)
+def ensure_new_output(path):
+    path = Path(path).absolute()
+    if path.exists() or path.is_symlink():
+        raise FileExistsError(f"拒绝覆盖已有文件: {path}")
+    if path.suffix.lower() != ".pdf":
+        raise ValueError("输出必须使用 .pdf 扩展名")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    return path
 
+
+def publish_pdf(source, target):
+    """Validate and atomically publish without replacing an existing file."""
+    get_pdf_info(source)
+    target = ensure_new_output(target)
+    with tempfile.TemporaryDirectory(prefix=".ppt-pdf-", dir=target.parent) as tmp:
+        candidate = Path(tmp) / "output.pdf"
+        shutil.copyfile(source, candidate)
+        os.link(candidate, target)
+    return target
+
+
+def convert_ppt(ppt_path, pdf_path, timeout=300, retries=2):
+    """Use a private LibreOffice profile per attempt; never kill other sessions."""
+    ppt_path = Path(ppt_path).resolve(strict=True)
+    pdf_path = ensure_new_output(pdf_path)
+    if ppt_path.suffix.lower() not in SUPPORTED_EXTENSIONS:
+        raise ValueError(f"不支持的演示文稿格式: {ppt_path.suffix}")
+    if timeout <= 0 or retries < 0:
+        raise ValueError("timeout 必须为正数，retries 不能为负数")
+    if not shutil.which("soffice"):
+        raise RuntimeError("未找到 LibreOffice（soffice）")
     err = None
     for attempt in range(retries + 1):
-        if attempt:
-            subprocess.run(["pkill", "-f", "soffice"], capture_output=True)
-            import time
-            time.sleep(2)
-
-        with tempfile.TemporaryDirectory() as tmp:
-            cmd = [
-                "soffice", "--headless", "--norestore",
-                "--convert-to", "pdf", "--outdir", tmp, str(ppt_path),
-            ]
+        with tempfile.TemporaryDirectory(prefix="ppt-convert-") as tmp:
+            profile = (Path(tmp) / "lo-profile").as_uri()
+            cmd = ["soffice", f"-env:UserInstallation={profile}", "--headless", "--norestore",
+                   "--convert-to", "pdf", "--outdir", tmp, str(ppt_path)]
             try:
-                r = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
-                if r.returncode != 0:
-                    err = r.stderr
-                    continue
+                result = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
                 out = Path(tmp) / f"{ppt_path.stem}.pdf"
-                if not out.exists():
-                    pdfs = list(Path(tmp).glob("*.pdf"))
-                    if not pdfs:
-                        err = "无 PDF 输出"
-                        continue
-                    out = pdfs[0]
-                shutil.move(str(out), str(pdf_path))
-                if pdf_path.stat().st_size > 0:
-                    return pdf_path
-            except subprocess.TimeoutExpired:
-                err = "超时"
-            except Exception as e:
-                err = str(e)
+                if result.returncode or not out.is_file():
+                    err = result.stderr or result.stdout or "无 PDF 输出"
+                    continue
+                get_pdf_info(out)
+            except (subprocess.TimeoutExpired, ValueError, RuntimeError) as exc:
+                err = str(exc)
+                continue
+            return publish_pdf(out, pdf_path)
     raise RuntimeError(f"转换失败: {err}")
 
 
@@ -176,6 +187,8 @@ def create_toc(out_path, entries):
 def get_pdf_info(p):
     import pymupdf
     with pymupdf.open(str(p)) as d:
+        if not d.is_pdf or d.is_encrypted or d.page_count < 1:
+            raise ValueError("需要未加密、至少含一页的有效 PDF")
         return {"pages": d.page_count, "size": Path(p).stat().st_size}
 
 
@@ -199,28 +212,31 @@ def merge_pdfs(items, out_path, metadata=None):
 def compress(pdf_path, level="medium"):
     if not PDF_COMPRESS_SCRIPT.exists():
         raise FileNotFoundError(str(PDF_COMPRESS_SCRIPT))
-    tmp_out = pdf_path.with_name(f"{pdf_path.stem}_c{pdf_path.suffix}")
-    r = subprocess.run([
-        sys.executable, str(PDF_COMPRESS_SCRIPT), "compress",
-        str(pdf_path), "--level", level, "-o", str(tmp_out),
-    ], capture_output=True, text=True, timeout=600)
-    if r.returncode:
-        raise RuntimeError(r.stderr)
+    pdf_path = Path(pdf_path).resolve(strict=True)
     orig = pdf_path.stat().st_size
-    shutil.move(str(tmp_out), str(pdf_path))
+    with tempfile.TemporaryDirectory(prefix=".ppt-compress-", dir=pdf_path.parent) as tmp:
+        tmp_out = Path(tmp) / "compressed.pdf"
+        r = subprocess.run([
+            sys.executable, str(PDF_COMPRESS_SCRIPT), "compress",
+            str(pdf_path), "--level", level, "-o", str(tmp_out),
+        ], capture_output=True, text=True, timeout=660)
+        if r.returncode:
+            raise RuntimeError(r.stderr)
+        if get_pdf_info(tmp_out)["pages"] != get_pdf_info(pdf_path)["pages"]:
+            raise RuntimeError("压缩结果页数不一致，保留未压缩文件")
+        os.replace(tmp_out, pdf_path)
     return orig, pdf_path.stat().st_size
+
 
 
 # ============ 目录扫描 ============
 
 def scan_dir(d, recursive=False, sort_by="name"):
     d = Path(d)
-    files = []
-    glob = d.rglob if recursive else d.glob
-    for ext in SUPPORTED_EXTENSIONS:
-        files.extend(glob(f"*{ext}"))
-        files.extend(glob(f"*{ext.upper()}"))
-    files = sorted(set(f for f in files if not f.name.startswith(".")))
+    if not d.is_dir():
+        raise NotADirectoryError(str(d))
+    candidates = d.rglob("*") if recursive else d.glob("*")
+    files = sorted(f for f in candidates if f.is_file() and f.suffix.lower() in SUPPORTED_EXTENSIONS and not f.name.startswith("."))
     key = {
         "name": lambda f: f.name.lower(),
         "mtime": lambda f: f.stat().st_mtime,
@@ -251,8 +267,9 @@ def cmd_convert(args):
 def cmd_merge(args):
     """多文件合并"""
     files = [Path(f) for f in args.files]
-    out = Path(args.output)
-    out.parent.mkdir(parents=True, exist_ok=True)
+    out = ensure_new_output(args.output)
+    if any(f.resolve() == out.resolve() for f in files):
+        raise ValueError("输出不能覆盖输入")
 
     print(f"合并 {len(files)} 个 PPT → {out}\n")
 
@@ -277,12 +294,21 @@ def cmd_merge(args):
         if not converted:
             sys.exit("全部失败")
 
+        if failed and not args.allow_partial:
+            raise RuntimeError(f"{len(failed)} 个输入转换失败，已停止合并；如接受缺失章节，可使用 --allow-partial")
+
+        # Measure the actual TOC page count before calculating chapter offsets.
+        toc_pages = 0
+        if args.toc:
+            probe = tmp / "toc-probe.pdf"
+            create_toc(probe, [(name, 1) for _, name in converted])
+            toc_pages = get_pdf_info(probe)["pages"]
         # 计算页码
         start = 1
         if args.cover:
             start += 1
         if args.toc:
-            start += 1
+            start += toc_pages
         toc_entries, cur = [], start
         for pdf, name in converted:
             toc_entries.append((name, cur))
@@ -307,7 +333,9 @@ def cmd_merge(args):
             "author": args.author or "",
             "subject": args.subtitle or "",
         }
-        merge_pdfs(items, out, meta)
+        merged = tmp / "merged.pdf"
+        merge_pdfs(items, merged, meta)
+        publish_pdf(merged, out)
 
     info = get_pdf_info(out)
     print(f"\n合并完成: {info['pages']}页 {format_size(info['size'])}")
@@ -333,6 +361,11 @@ def cmd_batch(args):
 
     if args.mode == "separate":
         # 每个单独转
+        outputs = [f.with_suffix(".pdf").absolute() for f in files]
+        if len(set(outputs)) != len(outputs):
+            raise ValueError("多个输入会生成同名 PDF，请分别指定输出位置")
+        for output in outputs:
+            ensure_new_output(output)
         ok = 0
         for i, f in enumerate(files, 1):
             out = f.with_suffix(".pdf")
@@ -346,6 +379,8 @@ def cmd_batch(args):
             except Exception as e:
                 print(f"  ✗ {e}")
         print(f"\n完成 {ok}/{len(files)}")
+        if ok != len(files):
+            raise RuntimeError(f"{len(files)-ok} 个文件未完成")
 
     else:
         # 合并为一个
@@ -375,6 +410,7 @@ def main():
     c2.add_argument("--subtitle")
     c2.add_argument("--author")
     c2.add_argument("--toc", action="store_true")
+    c2.add_argument("--allow-partial", action="store_true", help="明确允许跳过失败的输入")
     c2.add_argument("--compress", choices=["low", "medium", "high"])
     c2.add_argument("--timeout", type=int, default=300)
     c2.set_defaults(func=cmd_merge)
@@ -390,13 +426,25 @@ def main():
     c3.add_argument("--subtitle")
     c3.add_argument("--author")
     c3.add_argument("--toc", action="store_true")
+    c3.add_argument("--allow-partial", action="store_true")
     c3.add_argument("--compress", choices=["low", "medium", "high"])
     c3.add_argument("--timeout", type=int, default=300)
     c3.set_defaults(func=cmd_batch)
 
     args = p.parse_args()
-    args.func(args)
+    if args.cmd == "batch" and args.mode == "merge" and not args.output:
+        p.error("batch --mode merge 必须提供 -o/--output")
+    if args.cmd == "batch" and args.mode == "separate" and args.output:
+        p.error("batch --mode separate 不接受 -o；每个 PDF 保存在源文件旁")
+    if args.timeout <= 0:
+        p.error("--timeout 必须为正数")
+    try:
+        args.func(args)
+    except (Exception, KeyboardInterrupt) as exc:
+        print(f"处理失败: {exc}", file=sys.stderr)
+        return 1
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

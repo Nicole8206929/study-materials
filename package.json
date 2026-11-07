@@ -1,0 +1,15 @@
+{
+  "name": "study-materials",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Nicole 的学习资料库",
+  "license": "MIT",
+  "scripts": {
+    "test": "node tests/browser.cjs",
+    "start": "python3 -m http.server 8000"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "playwright": "1.65.0"
+  }
+}

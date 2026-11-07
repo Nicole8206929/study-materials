@@ -1,366 +1,60 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>书籍查找库</title>
-<meta name="description" content="心理学 · 经济 · 金融 · 管理 参考书籍与讲义资料库">
-<style>
-:root {
-  --bg: #faf8f5;
-  --card: #ffffff;
-  --fg: #1a1a1a;
-  --dim: #6b6b6b;
-  --accent: #c8553d;
-  --accent-dim: #a8442f;
-  --border: #e8e4de;
-  --tag: #f0ebe4;
-  --shadow: 0 2px 16px rgba(0,0,0,0.06);
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #141414;
-    --card: #1f1f1f;
-    --fg: #e8e8e8;
-    --dim: #999;
-    --accent: #e8755f;
-    --accent-dim: #c8553d;
-    --border: #2e2e2e;
-    --tag: #2a2a2a;
-    --shadow: 0 2px 16px rgba(0,0,0,0.3);
-  }
-}
-* { margin:0; padding:0; box-sizing:border-box; }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Noto Serif CJK SC", Georgia, serif;
-  background: var(--bg);
-  color: var(--fg);
-  line-height: 1.7;
-  min-height: 100vh;
-}
-
-/* 密码门 */
-.gate {
-  position: fixed; inset: 0;
-  background: var(--bg);
-  display: flex; align-items: center; justify-content: center;
-  z-index: 999;
-  transition: opacity .5s;
-}
-.gate.hidden { opacity: 0; pointer-events: none; }
-.gate-box { text-align: center; padding: 40px; width: 320px; }
-.gate-box .icon {
-  width: 56px; height: 56px; margin: 0 auto 20px;
-  border-radius: 14px; background: var(--accent);
-  display: flex; align-items: center; justify-content: center;
-  color: #fff; font-size: 26px;
-}
-.gate-box h1 { font-size: 1.4em; margin-bottom: 6px; }
-.gate-box p { color: var(--dim); font-size: .9em; margin-bottom: 24px; }
-.gate-box input {
-  width: 100%; padding: 12px 16px;
-  border: 1px solid var(--border); border-radius: 10px;
-  background: var(--card); color: var(--fg);
-  font-size: 1em; outline: none; margin-bottom: 10px;
-}
-.gate-box input:focus { border-color: var(--accent); }
-.gate-box button {
-  width: 100%; padding: 12px; background: var(--accent);
-  color: #fff; border: none; border-radius: 10px;
-  font-size: 1em; cursor: pointer;
-}
-.gate-box button:hover { background: var(--accent-dim); }
-.gate-err { color: var(--accent); font-size: .85em; margin-top: 8px; min-height: 1.2em; }
-
-/* 主内容 */
-.container { max-width: 920px; margin: 0 auto; padding: 40px 20px; }
-header { text-align: center; margin-bottom: 36px; }
-header h1 { font-size: 2.2em; font-weight: 700; letter-spacing: .04em; margin-bottom: 6px; }
-header .tagline { color: var(--dim); font-size: 1em; }
-
-.search { max-width: 480px; margin: 0 auto 24px; position: relative; }
-.search input {
-  width: 100%; padding: 12px 20px;
-  border: 1px solid var(--border); border-radius: 24px;
-  background: var(--card); color: var(--fg);
-  font-size: .95em; outline: none;
-}
-.search input:focus { border-color: var(--accent); }
-
-.tabs { display: flex; gap: 8px; justify-content: center; margin-bottom: 16px; flex-wrap: wrap; }
-.tab {
-  padding: 7px 16px; border-radius: 18px;
-  border: 1px solid var(--border); background: var(--card);
-  color: var(--dim); cursor: pointer; font-size: .88em; transition: all .2s;
-}
-.tab.active, .tab:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
-
-.tag-filter { display: flex; gap: 6px; justify-content: center; margin-bottom: 24px; flex-wrap: wrap; }
-.tag-chip {
-  padding: 4px 12px; border-radius: 12px;
-  background: var(--tag); color: var(--dim);
-  font-size: .78em; cursor: pointer; transition: all .2s;
-}
-.tag-chip.active { background: var(--accent); color: #fff; }
-
-.books { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 18px; }
-.book {
-  background: var(--card); border: 1px solid var(--border);
-  border-radius: 14px; padding: 20px; box-shadow: var(--shadow);
-  display: flex; flex-direction: column; transition: transform .2s;
-}
-.book:hover { transform: translateY(-2px); }
-.book .cat { font-size: .72em; color: var(--accent); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 8px; }
-.book h3 { font-size: 1.05em; margin-bottom: 4px; line-height: 1.4; }
-.book .author { color: var(--dim); font-size: .84em; margin-bottom: 10px; }
-.book .desc { font-size: .84em; color: var(--dim); flex: 1; margin-bottom: 12px; }
-.book .meta { display: flex; gap: 6px; font-size: .78em; color: var(--dim); margin-bottom: 14px; flex-wrap: wrap; }
-.book .meta span { background: var(--tag); padding: 3px 9px; border-radius: 5px; }
-.book .actions { display: flex; gap: 8px; }
-.book .actions a {
-  flex: 1; padding: 9px; text-align: center; border-radius: 8px;
-  text-decoration: none; font-size: .9em;
-}
-.book a.view { background: var(--tag); color: var(--fg); }
-.book a.dl { background: var(--accent); color: #fff; }
-.book a.dl:hover { background: var(--accent-dim); }
-
-.stats { text-align: center; color: var(--dim); font-size: .85em; margin-top: 36px; padding-top: 18px; border-top: 1px solid var(--border); }
-footer { text-align: center; margin-top: 40px; color: var(--dim); font-size: .8em; }
-footer a { color: var(--accent); text-decoration: none; }
-
-/* PDF 预览弹窗 */
-.preview-modal {
-  position: fixed; inset: 0; background: rgba(0,0,0,.85);
-  z-index: 1000; display: none; align-items: center; justify-content: center;
-}
-.preview-modal.open { display: flex; }
-.preview-box {
-  width: 95%; max-width: 900px; height: 90vh;
-  background: var(--card); border-radius: 12px; overflow: hidden;
-  display: flex; flex-direction: column;
-}
-.preview-header {
-  padding: 12px 16px; border-bottom: 1px solid var(--border);
-  display: flex; justify-content: space-between; align-items: center;
-}
-.preview-header span { font-size: .9em; font-weight: 600; }
-.preview-header button {
-  background: none; border: none; color: var(--dim);
-  font-size: 1.3em; cursor: pointer; padding: 0 8px;
-}
-.preview-body { flex: 1; }
-.preview-body iframe { width: 100%; height: 100%; border: none; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Nicole 的学习资料库：按学科、标签和格式检索心理学、经济金融、会计统计与生物教材，在线预览 PDF 或下载原文件。">
+  <meta name="color-scheme" content="light dark">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <title>书籍查找库 · Nicole 的学习书架</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/app.js" defer></script>
 </head>
 <body>
-
-<!-- 密码门 -->
-<div class="gate" id="gate">
-  <div class="gate-box">
-    <div class="icon">📚</div>
-    <h1>书籍查找库</h1>
-    <p>请输入访问密码</p>
-    <form id="gateForm">
-      <input type="password" id="gatePwd" placeholder="密码" autofocus>
-      <button type="submit">进入</button>
-      <div class="gate-err" id="gateErr"></div>
-    </form>
-  </div>
-</div>
-
-<!-- 主内容 -->
-<div class="container" id="main" style="display:none">
-  <header>
-    <h1>书籍查找库</h1>
-    <p class="tagline">心理学 · 经济金融 · 数学 · 物理 · 化学 · 生物 · 信息学 — 讲义与教材资料库</p>
-  </header>
-
-  <div class="search">
-    <input type="text" id="search" placeholder="搜索书名、作者或关键词..." autocomplete="off">
-  </div>
-
-  <div class="tabs">
-    <div class="tab active" data-cat="all">全部</div>
-    <div class="tab" data-cat="psych">心理学</div>
-    <div class="tab" data-cat="econ">经济金融</div>
-    <div class="tab" data-cat="accounting">会计统计</div>
-    <div class="tab" data-cat="math">数学</div>
-    <div class="tab" data-cat="physics">物理</div>
-    <div class="tab" data-cat="chem">化学</div>
-    <div class="tab" data-cat="bio">生物</div>
-    <div class="tab" data-cat="cs">信息学</div>
-  </div>
-
-  <div class="tag-filter" id="tagFilter"></div>
-  <div class="books" id="books"></div>
-  <div class="stats" id="stats"></div>
-
-  <footer>
-    <p>个人学习资料库 · <a href="https://github.com/Nicole8206929/study-materials">GitHub 仓库</a></p>
-  </footer>
-</div>
-
-<!-- PDF 预览弹窗 -->
-<div class="preview-modal" id="previewModal">
-  <div class="preview-box">
-    <div class="preview-header">
-      <span id="previewTitle">PDF 预览</span>
-      <button id="previewClose">×</button>
+  <noscript><p class="notice">本页需要 JavaScript 才能搜索。你也可以在 <a href="https://github.com/Nicole8206929/study-materials">GitHub 仓库</a>浏览资料。</p></noscript>
+  <section class="gate" id="gate" role="main" aria-labelledby="gateTitle">
+    <div class="gate-box">
+      <span class="eyebrow">NICOLE / PERSONAL LIBRARY</span>
+      <div class="gate-mark" aria-hidden="true">阅</div>
+      <h1 id="gateTitle">书籍查找库</h1>
+      <p class="muted">给好奇心留一张书桌。</p>
+      <form id="gateForm">
+        <label for="gatePwd">访问密码</label>
+        <input type="password" id="gatePwd" autocomplete="current-password" required aria-describedby="gateErr gateNote">
+        <button type="submit" id="gateSubmit" class="primary">进入书架 <span aria-hidden="true">→</span></button>
+        <p id="gateErr" role="status" aria-live="polite"></p>
+      </form>
+      <p class="gate-note" id="gateNote">这是公开资料库。此密码仅作入口提示，不能保护文件隐私；资料直链和 GitHub 仓库均可公开访问。</p>
+      <a class="subtle-link" href="https://github.com/Nicole8206929/study-materials">查看 GitHub 仓库 ↗</a>
     </div>
-    <div class="preview-body">
-      <iframe id="previewFrame" src=""></iframe>
-    </div>
+  </section>
+  <div class="container" id="main" hidden>
+    <header>
+      <a class="skip-link" href="#catalog">跳到资料列表</a>
+      <div class="masthead"><a class="brand" href="./">NICOLE / 学习书架</a><a href="https://github.com/Nicole8206929/study-materials">GitHub ↗</a></div>
+      <div class="hero"><div><span class="eyebrow">A PLACE FOR CURIOUS MINDS</span><h1>书籍查找库<span class="title-dot">。</span></h1><p>从一个问题开始，找到下一本想读的书。</p></div><span class="hero-stamp" aria-hidden="true">温故<br>知新</span></div>
+      <div class="summary"><span id="totalSummary">正在整理书架…</span><span>心理学 / 经济金融 / 会计统计 / 生物</span></div>
+    </header>
+    <main id="catalog" tabindex="-1">
+      <section class="filters" aria-label="查找资料">
+        <label class="search-label" for="search">在书架上找一找</label>
+        <div class="search-row"><input type="search" id="search" placeholder="搜索书名、作者、主题或年份" autocomplete="off"><button type="button" id="clearSearch">清空搜索</button></div>
+        <div id="categories" class="categories" role="group" aria-label="学科分类"></div>
+        <div class="filter-row"><div class="selects"><label for="format">文件格式 <select id="format"><option value="all">全部格式</option><option value="pdf">PDF</option><option value="epub">EPUB</option></select></label><label for="sort">排序 <select id="sort"><option value="default">书架顺序</option><option value="title">书名 A–Z</option><option value="year">年份由新到旧</option><option value="size">文件由小到大</option></select></label></div><button type="button" id="resetFilters" class="text-button">重置筛选 ↺</button></div>
+        <div class="tag-filter" id="tagFilter" role="group" aria-label="主题标签"></div>
+      </section>
+      <div class="results-heading"><h2>书架目录</h2><p id="stats" role="status" aria-live="polite" aria-atomic="true">正在加载资料…</p></div>
+      <div id="loadError" class="empty-state" role="alert" hidden><h3>书架暂时没有加载成功</h3><p>请检查网络后重试，也可以从 GitHub 仓库浏览原文件。</p><button id="retryLoad" class="primary" type="button">重新加载</button><a href="https://github.com/Nicole8206929/study-materials">前往仓库 ↗</a></div>
+      <div id="emptyState" class="empty-state" hidden><h3>还没有找到匹配的资料</h3><p>试试更短的关键词，或重置分类、格式和标签。</p><button id="emptyReset" type="button" class="primary">查看全部资料</button></div>
+      <div class="books" id="books" aria-busy="true"></div>
+    </main>
+    <footer><p>个人学习资料库 · 慢慢读，认真想。</p><p>文件公开可访问，入口密码不提供隐私保护。EPUB 请下载后用电子书阅读器打开；大文件建议使用稳定网络。</p><p>各资料的权利归原作者或出版方所有，仓库代码许可不代表书籍授权。<a href="https://github.com/Nicole8206929/study-materials/issues/new">反馈问题 ↗</a></p></footer>
   </div>
-</div>
-
-<script>
-// 密码 SHA-256 hash（不明文存储）
-const PASSWORD_HASH = "d2d05c17e708ca6134d5e66061e7cbd6cf989f3eb3476ead17028381e76cd68f";
-let failCount = 0;
-const MAX_FAIL = 5;
-
-async function sha256(text) {
-  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
-  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, "0")).join("");
-}
-
-// ===== 密码门 =====
-const gate = document.getElementById("gate");
-const gateForm = document.getElementById("gateForm");
-const gatePwd = document.getElementById("gatePwd");
-const gateErr = document.getElementById("gateErr");
-const main = document.getElementById("main");
-
-if (sessionStorage.getItem("authed") === "1") {
-  gate.classList.add("hidden");
-  main.style.display = "block";
-}
-
-gateForm.addEventListener("submit", async e => {
-  e.preventDefault();
-  if (failCount >= MAX_FAIL) {
-    gateErr.textContent = "错误次数过多，请30秒后再试";
-    return;
-  }
-  const inputHash = await sha256(gatePwd.value);
-  if (inputHash === PASSWORD_HASH) {
-    sessionStorage.setItem("authed", "1");
-    gate.classList.add("hidden");
-    main.style.display = "block";
-    gateErr.textContent = "";
-    failCount = 0;
-  } else {
-    failCount++;
-    gateErr.textContent = `密码错误（${failCount}/${MAX_FAIL}）`;
-    gatePwd.value = "";
-    if (failCount >= MAX_FAIL) {
-      gatePwd.disabled = true;
-      setTimeout(() => { gatePwd.disabled = false; failCount = 0; gateErr.textContent = ""; }, 30000);
-    }
-  }
-});
-
-// ===== 书籍数据（从 books.json 加载）=====
-let booksData = [];
-let curCat = "all", curSearch = "", curTag = "";
-
-async function loadBooks() {
-  try {
-    const res = await fetch("books.json");
-    const data = await res.json();
-    booksData = data.books || [];
-    renderTags();
-    render();
-  } catch (e) {
-    document.getElementById("books").innerHTML = "<p style='color:var(--dim);text-align:center'>加载书籍数据失败</p>";
-  }
-}
-
-function renderTags() {
-  const allTags = [...new Set(booksData.flatMap(b => b.tags || []))];
-  const el = document.getElementById("tagFilter");
-  el.innerHTML = '<div class="tag-chip' + (curTag === "" ? " active" : "") + '" data-tag="">全部标签</div>' +
-    allTags.map(t => `<div class="tag-chip${curTag === t ? " active" : ""}" data-tag="${t}">${t}</div>`).join("");
-  el.querySelectorAll(".tag-chip").forEach(c => {
-    c.addEventListener("click", () => {
-      curTag = c.dataset.tag;
-      renderTags();
-      render();
-    });
-  });
-}
-
-function render() {
-  const filtered = booksData.filter(b => {
-    if (curCat !== "all" && b.cat !== curCat) return false;
-    if (curTag && !(b.tags || []).includes(curTag)) return false;
-    if (curSearch) {
-      const s = curSearch.toLowerCase();
-      return b.title.toLowerCase().includes(s) ||
-             b.author.toLowerCase().includes(s) ||
-             b.desc.toLowerCase().includes(s) ||
-             (b.tags || []).some(t => t.toLowerCase().includes(s));
-    }
-    return true;
-  });
-
-  document.getElementById("books").innerHTML = filtered.map(b => `
-    <div class="book">
-      <div class="cat">${b.catName}</div>
-      <h3>${b.title}</h3>
-      <div class="author">${b.author}</div>
-      <div class="desc">${b.desc}</div>
-      <div class="meta">
-        <span>${b.pages} 页</span>
-        <span>${b.size}</span>
-        <span>PDF</span>
-      </div>
-      <div class="actions">
-        <a class="view" href="#" onclick="previewPdf('${encodeURI(b.file)}','${b.title}');return false;">预览</a>
-        <a class="dl" href="${encodeURI(b.file)}" target="_blank">下载</a>
-      </div>
-    </div>
-  `).join("");
-
-  document.getElementById("stats").textContent =
-    `共 ${booksData.length} 本书 · 显示 ${filtered.length} 本`;
-}
-
-// ===== PDF 预览 =====
-const modal = document.getElementById("previewModal");
-const frame = document.getElementById("previewFrame");
-const pTitle = document.getElementById("previewTitle");
-
-function previewPdf(file, title) {
-  pTitle.textContent = title;
-  frame.src = file + "#toolbar=1&navpanes=0";
-  modal.classList.add("open");
-}
-document.getElementById("previewClose").addEventListener("click", () => {
-  modal.classList.remove("open");
-  frame.src = "";
-});
-modal.addEventListener("click", e => {
-  if (e.target === modal) { modal.classList.remove("open"); frame.src = ""; }
-});
-
-// ===== 分类筛选 =====
-document.querySelectorAll(".tab").forEach(t => {
-  t.addEventListener("click", () => {
-    document.querySelectorAll(".tab").forEach(x => x.classList.remove("active"));
-    t.classList.add("active");
-    curCat = t.dataset.cat;
-    render();
-  });
-});
-
-document.getElementById("search").addEventListener("input", e => {
-  curSearch = e.target.value;
-  render();
-});
-
-loadBooks();
-</script>
+  <dialog id="previewModal" aria-labelledby="previewTitle">
+    <div class="preview-header"><h2 id="previewTitle">PDF 预览</h2><button type="button" id="previewClose" aria-label="关闭预览">关闭 ×</button></div>
+    <p class="preview-help">若预览空白或手机无法显示，请<a id="previewOpen" target="_blank" rel="noopener noreferrer">新窗口打开</a>或<a id="previewDownload" download>下载文件</a>。大文件加载需要一些时间。</p>
+    <iframe id="previewFrame" title="PDF 文档预览" referrerpolicy="no-referrer"></iframe>
+  </dialog>
 </body>
 </html>

@@ -8,14 +8,18 @@
       "catName": "心理学",
       "desc": "普通心理学系统教材：研究方法、学习记忆、思维、动机情绪、人格、社会心理、心理障碍与治疗。",
       "pages": 755,
-      "size": "56 MB",
+      "size": "55.1 MB",
       "year": 2020,
       "file": "心理金融书籍/Psychology2e_OpenStax.pdf",
       "tags": [
         "开放教材",
         "CC-BY",
         "普通心理学"
-      ]
+      ],
+      "bytes": 57739919,
+      "sha256": "2f08113c78127bc684922ad6a819db22bd4705ce9fcf28a07f36a2041b1474e2",
+      "format": "PDF",
+      "verifiedAt": "2026-11-07"
     },
     {
       "id": "zimbardo",
@@ -24,15 +28,19 @@
       "cat": "psych",
       "catName": "心理学",
       "desc": "津巴多普通心理学核心概念：心智、行为与心理过程的经典入门教材。",
-      "pages": 500,
-      "size": "90 MB",
+      "pages": 872,
+      "size": "89.8 MB",
       "year": 2011,
       "file": "心理金融书籍/Zimbardo_Psychology_Core_Concepts.pdf",
       "tags": [
         "商业教材",
         "津巴多",
         "普通心理学"
-      ]
+      ],
+      "bytes": 94118880,
+      "sha256": "d6f294834648477fbb957191b2c56d6729319c8dbb64a09312a10968d146c34a",
+      "format": "PDF",
+      "verifiedAt": "2026-11-07"
     },
     {
       "id": "burger",
@@ -41,15 +49,19 @@
       "cat": "psych",
       "catName": "心理学",
       "desc": "六大人格理论流派：精神分析、特质、生物、人本、行为与认知，附研究方法。",
-      "pages": 480,
-      "size": "37 MB",
+      "pages": 368,
+      "size": "36.3 MB",
       "year": 2011,
       "file": "心理金融书籍/Burger_Personality.pdf",
       "tags": [
         "商业教材",
         "中文版",
         "人格理论"
-      ]
+      ],
+      "bytes": 38030114,
+      "sha256": "e387e893830c785f5db8ce8426cc45bdf4375b80993d3c7d0055ba57b512c5bc",
+      "format": "PDF",
+      "verifiedAt": "2026-11-07"
     },
     {
       "id": "principles-finance",
@@ -59,14 +71,18 @@
       "catName": "经济金融",
       "desc": "财务报表、货币时间价值、债券股票估值、资本预算、融资决策与风险管理。",
       "pages": 629,
-      "size": "30 MB",
+      "size": "29.5 MB",
       "year": 2022,
       "file": "心理金融书籍/PrinciplesFinance2e_OpenStax.pdf",
       "tags": [
         "开放教材",
         "CC-BY",
         "公司金融"
-      ]
+      ],
+      "bytes": 30902513,
+      "sha256": "7d942df1aaf2fc3edcc7f681955cdabecdd0d4e4c754469f0bea159461a6ad79",
+      "format": "PDF",
+      "verifiedAt": "2026-11-07"
     },
     {
       "id": "macro3e",
@@ -76,14 +92,18 @@
       "catName": "经济金融",
       "desc": "宏观经济学：GDP、通胀、失业、经济增长、货币与财政政策、国际贸易。",
       "pages": 635,
-      "size": "33 MB",
+      "size": "32.0 MB",
       "year": 2023,
       "file": "心理金融书籍/Macroeconomics3e_OpenStax.pdf",
       "tags": [
         "开放教材",
         "CC-BY",
         "宏观"
-      ]
+      ],
+      "bytes": 33585123,
+      "sha256": "c1ac3049ae23c7463c8071ff3de22b6df80de1107db8a43980e0f1935a1e5815",
+      "format": "PDF",
+      "verifiedAt": "2026-11-07"
     },
     {
       "id": "micro3e",
@@ -93,14 +113,18 @@
       "catName": "经济金融",
       "desc": "微观经济学：供需、弹性、消费者行为、生产成本、市场结构、要素市场。",
       "pages": 595,
-      "size": "28 MB",
+      "size": "27.9 MB",
       "year": 2023,
       "file": "心理金融书籍/Microeconomics3e_OpenStax.pdf",
       "tags": [
         "开放教材",
         "CC-BY",
         "微观"
-      ]
+      ],
+      "bytes": 29247593,
+      "sha256": "65a1856faa91d5fdef9c630928029c6e4e188a9580d9128fcbc9138c4f4a583f",
+      "format": "PDF",
+      "verifiedAt": "2026-11-07"
     },
     {
       "id": "mankiw-econ",
@@ -109,15 +133,19 @@
       "cat": "econ",
       "catName": "经济金融",
       "desc": "经济学原理经典教材：十大经济学原理、供需弹性、企业行为、宏观经济政策。",
-      "pages": 870,
-      "size": "27 MB",
+      "pages": 890,
+      "size": "26.1 MB",
       "year": 2011,
       "file": "心理金融书籍/Mankiw_Principles_Economics.pdf",
       "tags": [
         "商业教材",
         "曼昆",
         "经济学原理"
-      ]
+      ],
+      "bytes": 27393165,
+      "sha256": "15394545f9dd5d2266596373cb9807c6fec4d5133c98ebb4c82e634e0dee8cd6",
+      "format": "PDF",
+      "verifiedAt": "2026-11-07"
     },
     {
       "id": "mankiw-micro",
@@ -126,15 +154,19 @@
       "cat": "econ",
       "catName": "经济金融",
       "desc": "曼昆微观经济学分册：价格机制、市场效率、税制、消费者与生产者理论。",
-      "pages": 500,
-      "size": "14 MB",
+      "pages": 1038,
+      "size": "13.6 MB",
       "year": 2017,
       "file": "心理金融书籍/Mankiw_Principles_Microeconomics.pdf",
       "tags": [
         "商业教材",
         "曼昆",
         "微观"
-      ]
+      ],
+      "bytes": 14220969,
+      "sha256": "57669a1a516ee6504efdcc86b37a80ef0a0a120d4afbc4293124367c40c3cfdc",
+      "format": "PDF",
+      "verifiedAt": "2026-11-07"
     },
     {
       "id": "mishkin",
@@ -143,15 +175,19 @@
       "cat": "econ",
       "catName": "经济金融",
       "desc": "货币金融学：利率决定、银行体系、央行货币政策、金融市场与金融危机。",
-      "pages": 700,
-      "size": "39 MB",
+      "pages": 568,
+      "size": "38.5 MB",
       "year": 2016,
       "file": "心理金融书籍/Mishkin_Money_Banking.pdf",
       "tags": [
         "商业教材",
         "货币银行",
         "金融市场"
-      ]
+      ],
+      "bytes": 40391815,
+      "sha256": "56f9ab05cd56696001623b14187b15389ab735faa6ac753ae207f49168abef61",
+      "format": "PDF",
+      "verifiedAt": "2026-11-07"
     },
     {
       "id": "brealey",
@@ -160,15 +196,19 @@
       "cat": "econ",
       "catName": "经济金融",
       "desc": "公司金融配套学习指南：资本预算、估值、融资决策、资本结构与股利政策。",
-      "pages": 400,
-      "size": "39 MB",
+      "pages": 404,
+      "size": "38.5 MB",
       "year": 1996,
       "file": "心理金融书籍/Brealey_Corporate_Finance.pdf",
       "tags": [
         "商业教材",
         "学习指南",
         "公司金融"
-      ]
+      ],
+      "bytes": 40410841,
+      "sha256": "0464b09351528d6a7b25475ed3463188e99fc5d46e93d76ee33d4f2eb90edd38",
+      "format": "PDF",
+      "verifiedAt": "2026-11-07"
     },
     {
       "id": "robbins-ob",
@@ -177,8 +217,8 @@
       "cat": "econ",
       "catName": "经济金融",
       "desc": "组织行为学经典教材：个体行为、群体行为、组织结构、领导力、组织文化与变革。",
-      "pages": 600,
-      "size": "60 MB",
+      "pages": 562,
+      "size": "60.0 MB",
       "year": 2018,
       "file": "心理金融书籍/Robbins_Organizational_Behavior.pdf",
       "tags": [
@@ -186,7 +226,11 @@
         "中文版",
         "组织行为",
         "管理学"
-      ]
+      ],
+      "bytes": 62960671,
+      "sha256": "885a479490642c2f6dcdc1082df6856e04f4bba98dd39a11577095cb8c69e14e",
+      "format": "PDF",
+      "verifiedAt": "2026-11-07"
     },
     {
       "id": "porter-strategy",
@@ -195,8 +239,8 @@
       "cat": "econ",
       "catName": "经济金融",
       "desc": "波特竞争战略经典：五力模型、三大通用战略、产业结构分析与竞争优势。",
-      "pages": 400,
-      "size": "74 MB",
+      "pages": 388,
+      "size": "74.1 MB",
       "year": 1980,
       "file": "心理金融书籍/Porter_Competitive_Strategy.pdf",
       "tags": [
@@ -204,7 +248,11 @@
         "中文版",
         "战略管理",
         "竞争优势"
-      ]
+      ],
+      "bytes": 77680460,
+      "sha256": "3463e60c7449edd8bd7db0cf63972c646070b78289c370a3a1651051e575f879",
+      "format": "PDF",
+      "verifiedAt": "2026-11-07"
     },
     {
       "id": "rosenberg-nvc",
@@ -213,7 +261,7 @@
       "cat": "psych",
       "catName": "心理学",
       "desc": "非暴力沟通经典：观察、感受、需要、请求四要素，提升人际沟通与冲突解决能力。",
-      "pages": 200,
+      "pages": null,
       "size": "570 KB",
       "year": 2016,
       "file": "心理金融书籍/Rosenberg_Nonviolent_Communication.epub",
@@ -222,7 +270,11 @@
         "中文版",
         "沟通技巧",
         "epub"
-      ]
+      ],
+      "bytes": 583968,
+      "sha256": "58df9c7fc6f6c5ee3050e46091bfbd1dc61ce5cf204cb578308682979ef79d88",
+      "format": "EPUB",
+      "verifiedAt": "2026-11-07"
     },
     {
       "id": "myers-social-psych",
@@ -231,7 +283,7 @@
       "cat": "psych",
       "catName": "心理学",
       "desc": "社会心理学经典教材：社会思维、社会影响、社会关系三大模块，涵盖归因、从众、偏见、吸引、利他等核心主题。",
-      "pages": 600,
+      "pages": 653,
       "size": "19.6 MB",
       "year": 2006,
       "file": "心理金融书籍/Myers_Social_Psychology_8th.pdf",
@@ -240,7 +292,11 @@
         "中文版",
         "社会心理学",
         "经典教材"
-      ]
+      ],
+      "bytes": 20548712,
+      "sha256": "f9bf6a9df135b7a99940ca60949d0db1c88a26be7e6b44e617484edfde485a24",
+      "format": "PDF",
+      "verifiedAt": "2026-11-07"
     },
     {
       "id": "financial-acct",
@@ -257,7 +313,11 @@
         "开放教材",
         "CC-BY-SA",
         "财务会计"
-      ]
+      ],
+      "bytes": 5296257,
+      "sha256": "ddc74629d85972a05bc362c0e3f3a23e678b4869c8b97a512aba00bf1a220174",
+      "format": "PDF",
+      "verifiedAt": "2026-11-07"
     },
     {
       "id": "openintro-stats",
@@ -265,16 +325,22 @@
       "author": "Diez, Çetinkaya-Rundel, Barr / OpenIntro",
       "cat": "accounting",
       "catName": "会计统计",
-      "desc": "描述统计、概率分布、统计推断、回归分析，为读研究和财经数据提供基础。",
-      "pages": 440,
-      "size": "13 MB",
+      "desc": "描述统计、概率分布、统计推断与回归分析。官方屏幕阅读器友好版，页码与普通版不同，引用时建议使用章节号。",
+      "pages": 465,
+      "size": "15.2 MB",
       "year": 2019,
       "file": "心理金融书籍/OpenIntroStatistics4.pdf",
       "tags": [
         "开放教材",
         "CC-BY-SA",
         "统计学"
-      ]
+      ],
+      "sourceUrl": "https://www.openintro.org/go?id=os4_for_screen_reader",
+      "editionNote": "第四版，官方屏幕阅读器友好版本",
+      "bytes": 15926600,
+      "sha256": "63323c3afc9d68c84ef130bdfa99e3828f080240251f5b7657480db3e355b3eb",
+      "format": "PDF",
+      "verifiedAt": "2026-11-07"
     },
     {
       "id": "bio-methods",
@@ -292,7 +358,12 @@
         "生物",
         "方法册",
         "复习"
-      ]
+      ],
+      "bytes": 28077117,
+      "sha256": "77a9b8049c5ee09474869a6f590f44fac013c6a5cccc9ec889b3ba0af0162b0b",
+      "format": "PDF",
+      "verifiedAt": "2026-11-07"
     }
-  ]
+  ],
+  "verifiedAt": "2026-11-07"
 }

@@ -36,3 +36,13 @@ Desktop.ini
 *.7z
 *.mp4
 *.mov
+
+# Local development and credentials
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+playwright-report/
+test-results/
