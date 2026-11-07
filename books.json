@@ -149,14 +149,14 @@
     },
     {
       "id": "mankiw-micro",
-      "title": "Principles of Microeconomics",
+      "title": "Principles of Microeconomics 8e",
       "author": "N. Gregory Mankiw / 曼昆",
       "cat": "econ",
       "catName": "经济金融",
       "desc": "曼昆微观经济学分册：价格机制、市场效率、税制、消费者与生产者理论。",
       "pages": 1038,
       "size": "13.6 MB",
-      "year": 2017,
+      "year": 2018,
       "file": "心理金融书籍/Mankiw_Principles_Microeconomics.pdf",
       "tags": [
         "商业教材",
@@ -170,11 +170,11 @@
     },
     {
       "id": "mishkin",
-      "title": "The Economics of Money, Banking & Financial Markets",
-      "author": "Frederick Mishkin / 米什金",
+      "title": "货币金融学（第11版）",
+      "author": "Frederic S. Mishkin / 米什金",
       "cat": "econ",
       "catName": "经济金融",
-      "desc": "货币金融学：利率决定、银行体系、央行货币政策、金融市场与金融危机。",
+      "desc": "The Economics of Money, Banking and Financial Markets 中文版：利率决定、银行体系、央行货币政策、金融市场与金融危机。",
       "pages": 568,
       "size": "38.5 MB",
       "year": 2016,
@@ -182,7 +182,8 @@
       "tags": [
         "商业教材",
         "货币银行",
-        "金融市场"
+        "金融市场",
+        "中文版"
       ],
       "bytes": 40391815,
       "sha256": "56f9ab05cd56696001623b14187b15389ab735faa6ac753ae207f49168abef61",
