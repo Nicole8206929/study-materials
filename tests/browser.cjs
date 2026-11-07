@@ -2,7 +2,8 @@ const assert = require('node:assert/strict');
 const { chromium } = require('playwright');
 const { AxeBuilder } = require('@axe-core/playwright');
 const { spawn } = require('node:child_process');
-const { once } = require('node:events');
+const fs = require('node:fs');
+const { createHash } = require('node:crypto');
 const path = require('node:path');
 const books = require('../books.json').books;
 (async () => {
@@ -44,6 +45,19 @@ const books = require('../books.json').books;
     await page.locator('#search').fill('no-such-book-xyz');
     assert(await page.locator('#emptyState').isVisible());
     await page.locator('#emptyReset').click();
+    // Exercise real browser downloads and compare complete bytes to the manifest.
+    for (const id of ['rosenberg-nvc', 'financial-acct']) {
+      const book = books.find(book => book.id === id);
+      const [download] = await Promise.all([
+        page.waitForEvent('download'),
+        page.locator(`[data-id="${id}"] .download`).click(),
+      ]);
+      assert.equal(await download.failure(), null);
+      assert.equal(download.suggestedFilename(), book.file.split('/').pop());
+      const content = fs.readFileSync(await download.path());
+      assert.equal(content.length, book.bytes);
+      assert.equal(createHash('sha256').update(content).digest('hex'), book.sha256);
+    }
     // Stub file contents only; test dialog keyboard/focus behavior without huge downloads.
     await page.route('**/*.pdf', route => route.fulfill({ contentType: 'application/pdf', body: '%PDF-1.4\n%%EOF' }));
     const firstPreview = page.locator('.view').first();
@@ -70,7 +84,23 @@ const books = require('../books.json').books;
     }
     await page.setViewportSize({ width: 390, height: 844 });
     await page.emulateMedia({ colorScheme: 'light' });
-    await page.screenshot({ path: '/tmp/study-mobile.png', fullPage: true });
+    await page.reload();
+    await page.waitForSelector('.book');
+    assert.equal(await page.locator('#tagDetails').getAttribute('open'), null, 'mobile tag list starts collapsed');
+    assert((await page.locator('.book').first().boundingBox()).y < 850, 'first book is not pushed below a long list of tags');
+    await page.locator('#tagDetails summary').click();
+    await page.locator('#tagFilter button').filter({ hasText: '开放教材' }).click();
+    assert((await page.locator('#selectedTag').innerText()).includes('开放教材'));
+    await page.reload();
+    await page.waitForSelector('.book');
+    assert.notEqual(await page.locator('#tagDetails').getAttribute('open'), null, 'shared selected tag stays visible');
+    await page.locator('#resetFilters').click();
+    await page.screenshot({ path: '/tmp/study-mobile-second-pass.png', fullPage: true });
+    // Older supported browsers can load the catalogue without AbortSignal.timeout.
+    await page.addInitScript(() => Object.defineProperty(AbortSignal, 'timeout', { value: undefined }));
+    await page.reload();
+    await page.waitForSelector('.book');
+    assert.equal(await page.locator('.book').count(), books.length);
     // Catalogue strings are text, not executable HTML; hostile filenames stay local.
     await page.route('**/books.json', route => route.fulfill({ json: { books: [{ ...books[0], title: '<img src=x onerror=alert(1)>', file: "心理金融书籍/a'# ?.pdf" }] } }));
     await page.goto('http://127.0.0.1:8765/');
@@ -85,7 +115,7 @@ const books = require('../books.json').books;
     await page.waitForSelector('.book');
     assert.equal(await page.locator('.book').count(), books.length);
     assert.deepEqual(errors, []);
-    console.log('PASS: gate, catalogue, search, URL state, EPUB, downloads, dialog, keyboard, light/dark accessibility, 4 viewports, injection and retry.');
+    console.log('PASS: gate, catalogue, search, URL state, EPUB, real PDF/EPUB download hashes, dialog, keyboard, mobile tag collapse, timeout fallback, light/dark accessibility, 4 viewports, injection and retry.');
   } finally {
     await browser.close();
     server.kill();

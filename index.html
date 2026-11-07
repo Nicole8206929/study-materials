@@ -42,7 +42,10 @@
         <div class="search-row"><input type="search" id="search" placeholder="搜索书名、作者、主题或年份" autocomplete="off"><button type="button" id="clearSearch">清空搜索</button></div>
         <div id="categories" class="categories" role="group" aria-label="学科分类"></div>
         <div class="filter-row"><div class="selects"><label for="format">文件格式 <select id="format"><option value="all">全部格式</option><option value="pdf">PDF</option><option value="epub">EPUB</option></select></label><label for="sort">排序 <select id="sort"><option value="default">书架顺序</option><option value="title">书名 A–Z</option><option value="year">年份由新到旧</option><option value="size">文件由小到大</option></select></label></div><button type="button" id="resetFilters" class="text-button">重置筛选 ↺</button></div>
-        <div class="tag-filter" id="tagFilter" role="group" aria-label="主题标签"></div>
+        <details class="tag-section" id="tagDetails" open>
+          <summary><span id="tagSummary">主题标签</span><span id="selectedTag">全部标签</span></summary>
+          <div class="tag-filter" id="tagFilter" role="group" aria-label="主题标签"></div>
+        </details>
       </section>
       <div class="results-heading"><h2>书架目录</h2><p id="stats" role="status" aria-live="polite" aria-atomic="true">正在加载资料…</p></div>
       <div id="loadError" class="empty-state" role="alert" hidden><h3>书架暂时没有加载成功</h3><p>请检查网络后重试，也可以从 GitHub 仓库浏览原文件。</p><button id="retryLoad" class="primary" type="button">重新加载</button><a href="https://github.com/Nicole8206929/study-materials">前往仓库 ↗</a></div>

@@ -91,8 +91,10 @@ async function loadBooks() {
   $("emptyState").hidden = true;
   $("books").setAttribute("aria-busy", "true");
   $("stats").textContent = "正在加载资料…";
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 15000);
   try {
-    const response = await fetch("books.json", { signal: AbortSignal.timeout(15000) });
+    const response = await fetch("books.json", { signal: controller.signal });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     if (!Array.isArray(data.books)) throw new Error("Invalid catalogue");
@@ -100,6 +102,7 @@ async function loadBooks() {
     if (new Set(books.map(book => book.id)).size !== books.length) throw new Error("Duplicate IDs");
     loaded = true;
     readState();
+    $("tagDetails").open = !matchMedia("(max-width: 600px)").matches || Boolean(state.tag);
     renderCategories();
     renderTags();
     render();
@@ -111,6 +114,7 @@ async function loadBooks() {
     $("totalSummary").textContent = "书架暂时无法加载";
     $("books").replaceChildren();
   } finally {
+    clearTimeout(timeout);
     loading = false;
     $("books").setAttribute("aria-busy", "false");
   }
@@ -165,8 +169,11 @@ function renderCategories() {
 
 function renderTags() {
   const tags = [...new Set(books.filter(book => state.cat === "all" || book.cat === state.cat).flatMap(book => book.tags))];
+  $("tagSummary").textContent = `主题标签（${tags.length}）`;
+  $("selectedTag").textContent = state.tag || "全部标签";
   $("tagFilter").replaceChildren(...["", ...tags].map(tag => filterButton(tag || "全部标签", tag, "tag-chip", state.tag === tag, () => {
     state.tag = tag;
+    $("selectedTag").textContent = tag || "全部标签";
     $("tagFilter").querySelectorAll("button").forEach(item => item.setAttribute("aria-pressed", String(item.dataset.value === tag)));
     render();
     saveState();
