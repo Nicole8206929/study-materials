@@ -2,6 +2,7 @@
 
 const $ = id => document.getElementById(id);
 let books = [];
+let categories = new Map();
 let loaded = false;
 let loading = false;
 let state = { q: "", cat: "all", tag: "", format: "all", sort: "default" };
@@ -44,6 +45,11 @@ async function loadBooks() {
     if (!Array.isArray(data.books)) throw new Error("Invalid catalogue");
     books = data.books.map(validateBook);
     if (new Set(books.map(book => book.id)).size !== books.length) throw new Error("Duplicate IDs");
+    const declared = data.categories || [];
+    if (!Array.isArray(declared) || declared.some(category => !category || typeof category.id !== "string" || category.id === "all" || !category.id.trim() || typeof category.name !== "string" || !category.name.trim())) throw new Error("Invalid categories");
+    categories = new Map(declared.map(category => [category.id, category.name]));
+    if (categories.size !== declared.length) throw new Error("Duplicate category IDs");
+    books.forEach(book => { if (!categories.has(book.cat)) categories.set(book.cat, book.catName); });
     loaded = true;
     readState();
     $("tagDetails").open = !matchMedia("(max-width: 600px)").matches || Boolean(state.tag);
@@ -51,7 +57,7 @@ async function loadBooks() {
     renderTags();
     render();
     const formats = [...new Set(books.map(book => book.format))];
-    $("totalSummary").textContent = `${books.length} 份资料 · ${new Set(books.map(book => book.cat)).size} 个学科 · ${formats.map(format => format.toUpperCase()).join(" / ")}`;
+    $("totalSummary").textContent = `${books.length} 份资料 · ${categories.size} 个分类 · ${formats.map(format => format.toUpperCase()).join(" / ")}`;
   } catch {
     $("loadError").hidden = false;
     $("stats").textContent = "资料加载失败";
@@ -67,7 +73,7 @@ async function loadBooks() {
 function readState() {
   const params = new URL(location.href).searchParams;
   state = { q: params.get("q") || "", cat: params.get("cat") || "all", tag: params.get("tag") || "", format: params.get("format") || "all", sort: params.get("sort") || "default" };
-  if (!books.some(book => book.cat === state.cat)) state.cat = "all";
+  if (!categories.has(state.cat)) state.cat = "all";
   if (!["all", "pdf", "epub"].includes(state.format)) state.format = "all";
   if (!["default", "title", "year", "size"].includes(state.sort)) state.sort = "default";
   if (!books.some(book => (state.cat === "all" || book.cat === state.cat) && book.tags.includes(state.tag))) state.tag = "";
@@ -95,8 +101,8 @@ function filterButton(text, value, className, selected, onClick) {
 }
 
 function renderCategories() {
-  const categories = new Map([["all", "全部资料"], ...books.map(book => [book.cat, book.catName])]);
-  $("categories").replaceChildren(...Array.from(categories, ([cat, name]) => {
+  const options = new Map([["all", "全部资料"], ...categories]);
+  $("categories").replaceChildren(...Array.from(options, ([cat, name]) => {
     const count = cat === "all" ? books.length : books.filter(book => book.cat === cat).length;
     const button = filterButton(name, cat, "category", state.cat === cat, () => {
       state.cat = cat;
@@ -175,6 +181,9 @@ function render() {
   if (state.sort === "size") filtered.sort((a, b) => sizeBytes(a) - sizeBytes(b));
   $("books").replaceChildren(...filtered.map(bookCard));
   $("emptyState").hidden = filtered.length !== 0;
+  const emptyCategory = state.cat !== "all" && !books.some(book => book.cat === state.cat);
+  $("emptyStateTitle").textContent = emptyCategory ? `${categories.get(state.cat)}暂未添加书籍` : "还没有找到匹配的资料";
+  $("emptyStateHint").textContent = emptyCategory ? "分类已建立，添加对应书籍后会显示在这里。" : "试试更短的关键词，或重置分类、格式和标签。";
   $("stats").textContent = `共 ${books.length} 份资料 · 当前显示 ${filtered.length} 份`;
 }
 

@@ -15,12 +15,21 @@ def validate():
     assert data['access'] == 'public-preview-only'
     assert 1 <= data['previewLimit'] <= 20
     assert data['books']
+    categories = data['categories']
+    assert isinstance(categories, list) and categories
+    category_names = {}
+    for category in categories:
+        assert re.fullmatch(r'[a-z][a-z0-9-]*', category['id']) and category['id'] != 'all'
+        assert isinstance(category['name'], str) and category['name'].strip()
+        assert category['id'] not in category_names, 'Duplicate category ID'
+        category_names[category['id']] = category['name']
     ids = set()
     images = set()
     for book in data['books']:
         assert not set(book)-ALLOWED_KEYS, f"Unexpected public fields: {book['id']}"
         assert book['id'] not in ids
         ids.add(book['id'])
+        assert category_names.get(book['cat']) == book['catName'], f"Category mismatch: {book['id']}"
         assert book['format'] in ('PDF','EPUB')
         preview = book['preview']
         assert 1 <= len(preview['images']) == preview['pageCount'] <= data['previewLimit']

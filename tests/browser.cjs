@@ -17,7 +17,25 @@ const catalog = require('../books.json');
     await page.waitForSelector('.book');
     assert.equal(await page.locator('input[type=password]').count(),0);
     assert.equal(await page.locator('.book').count(),17);
-    assert.equal(await page.locator('.category').count(),8);
+    assert.equal(await page.locator('.category').count(),13);
+    for (const [id, name] of [
+      ['high-school-physics','高中物理'], ['university-physics','大学物理'],
+      ['high-school-math','高中数学'], ['competition-math','竞赛数学'], ['university-math','大学数学']
+    ]) {
+      const category = page.locator(`.category[data-value="${id}"]`);
+      assert((await category.innerText()).includes(name));
+      assert.equal(await category.locator('.category-count').innerText(),'0');
+      await category.click();
+      assert.equal(await page.locator('.book').count(),0);
+      assert.equal(await page.locator('#emptyStateTitle').innerText(),`${name}暂未添加书籍`);
+      await page.reload();
+      await page.waitForFunction(()=>document.querySelector('#books').getAttribute('aria-busy')==='false');
+      assert.equal(await page.locator(`.category[data-value="${id}"]`).getAttribute('aria-pressed'),'true');
+      assert.equal(await page.locator('.book').count(),0);
+      assert(await page.locator('#emptyState').isVisible());
+    }
+    await page.locator('#emptyReset').click();
+    assert.equal(await page.locator('.book').count(),17);
     assert.equal(await page.locator('a[download],.download,iframe').count(),0);
     assert.equal(await page.locator('.book-access').count(),17);
     assert.equal(await page.locator('[data-id="robbins-ob"] .book-top span').first().innerText(),'管理');
@@ -68,6 +86,6 @@ const catalog = require('../books.json');
     await page.reload(); await page.waitForSelector('.book');
     assert.equal(await page.locator('.book img').count(),0);
     assert.deepEqual(errors,[]);
-    console.log('PASS: no password, seven subjects, title search, lock icons, limited PDF/EPUB previews, no original downloads, keyboard, mobile, accessibility and error recovery.');
+    console.log('PASS: no password, twelve categories including empty categories and URL persistence, title search, lock icons, limited PDF/EPUB previews, no original downloads, keyboard, mobile, accessibility and error recovery.');
   } finally { if(browser) await browser.close(); server.kill(); }
 })().catch(e=>{console.error(e);process.exitCode=1;});

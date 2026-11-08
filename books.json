@@ -1,6 +1,56 @@
 {
   "access": "public-preview-only",
   "previewLimit": 10,
+  "categories": [
+    {
+      "id": "psych",
+      "name": "心理"
+    },
+    {
+      "id": "finance",
+      "name": "金融"
+    },
+    {
+      "id": "econ",
+      "name": "经济"
+    },
+    {
+      "id": "management",
+      "name": "管理"
+    },
+    {
+      "id": "accounting",
+      "name": "会计"
+    },
+    {
+      "id": "statistics",
+      "name": "统计"
+    },
+    {
+      "id": "bio",
+      "name": "生物"
+    },
+    {
+      "id": "high-school-physics",
+      "name": "高中物理"
+    },
+    {
+      "id": "university-physics",
+      "name": "大学物理"
+    },
+    {
+      "id": "high-school-math",
+      "name": "高中数学"
+    },
+    {
+      "id": "competition-math",
+      "name": "竞赛数学"
+    },
+    {
+      "id": "university-math",
+      "name": "大学数学"
+    }
+  ],
   "books": [
     {
       "id": "psych2e",
