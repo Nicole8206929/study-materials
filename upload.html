@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="从安卓手机微信保存文件，直接上传到 Nicole 的私有书籍资料库。">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>上传书籍 · Nicole 的学习书架</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="container guide-container">
+    <header><div class="masthead"><a class="brand" href="./">NICOLE / 学习书架</a><a href="./">返回书架</a></div></header>
+    <main class="upload-guide">
+      <h1>上传书籍</h1>
+      <p class="guide-intro">微信里的书，保存到手机后直接上传，不用先发到聊天。</p>
+      <p>这是本人的管理入口。上传时使用自己的 GitHub 账号；访客浏览书架和试读不需要登录。</p>
+      <a class="upload-link" id="privateUpload" href="https://github.com/Nicole8206929/study-materials-originals/releases/edit/438226489" rel="noreferrer">打开私有上传页</a>
+      <h2>安卓手机怎么操作</h2>
+      <ol class="upload-steps">
+        <li><strong>先保存文件。</strong>在微信里打开文件，查看右上角菜单，选择保存到手机，或通过“用其他应用打开”保存到“文件 / 下载”。不同手机的名称可能不同。</li>
+        <li><strong>打开上传页。</strong>点上面的按钮。如果微信内置浏览器不好用，选择“在浏览器打开”，使用 Chrome 或系统浏览器。GitHub 要求登录时，登录自己的账号。</li>
+        <li><strong>选择书籍。</strong>在 GitHub 页面向下找到附件框（Attach binaries），点选择文件，从“下载”或最近文件中选 PDF、EPUB。支持多本，每个文件须小于 2 GiB。</li>
+        <li><strong>等上传结束，保存草稿。</strong>确认每个文件都完成上传，再点 Save draft。保持草稿即可，不需要点 Publish release；也不用修改标签、标题或正文。</li>
+        <li><strong>告诉我“已上传”。</strong>回到聊天发这句话，最好同时说一下分类。我会检查新文件，添加书目和前 10 页试读。需要讲义时，再告诉我书名、章节或学习目标。</li>
+      </ol>
+      <h2>上传遇到问题</h2>
+      <ul class="upload-help">
+        <li>找不到文件：先确认微信中的文件已经下载完，再到手机“文件管理”的“最近 / 下载 / 文档”中查看。</li>
+        <li>出现 404：先确认登录的是有权访问此私有仓库的 GitHub 账号。</li>
+        <li>找不到附件框：尝试浏览器菜单里的“桌面版网站”，然后向下查找。</li>
+        <li>网络中断：重新上传失败的文件。此入口不保证断点续传，上传期间尽量保持浏览器在前台。</li>
+      </ul>
+      <p class="upload-privacy">完整原件留在私有仓库。公开书架只显示书名、分类和部分试读；上传后需要通知我处理，不会自动生成讲义。GitHub 页面可能仍显示 “Release / 发布” 等字样，请使用“保存草稿”。</p>
+    </main>
+    <footer><p><a href="./">返回书架</a> · <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases">GitHub 附件大小说明</a></p></footer>
+  </div>
+</body>
+</html>
