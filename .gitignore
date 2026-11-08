@@ -1,0 +1,12 @@
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+*.pdf
+*.epub
+*.mobi
+*.zip
+*.rar
+*.7z

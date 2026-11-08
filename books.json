@@ -1,0 +1,667 @@
+{
+  "access": "public-preview-only",
+  "previewLimit": 10,
+  "books": [
+    {
+      "id": "psych2e",
+      "title": "Psychology 2e",
+      "author": "Spielman, Jenkins, Lovett / OpenStax",
+      "cat": "psych",
+      "catName": "心理",
+      "desc": "普通心理学系统教材：研究方法、学习记忆、思维、动机情绪、人格、社会心理、心理障碍与治疗。",
+      "pages": 755,
+      "size": "55.1 MB",
+      "year": 2020,
+      "format": "PDF",
+      "bytes": 57739919,
+      "tags": [
+        "开放教材",
+        "CC-BY",
+        "普通心理学"
+      ],
+      "searchTitles": [
+        "普通心理学",
+        "心理学 第二版",
+        "Psychology2e"
+      ],
+      "preview": {
+        "images": [
+          "previews/psych2e/page-001.webp",
+          "previews/psych2e/page-002.webp",
+          "previews/psych2e/page-003.webp",
+          "previews/psych2e/page-004.webp",
+          "previews/psych2e/page-005.webp",
+          "previews/psych2e/page-006.webp",
+          "previews/psych2e/page-007.webp",
+          "previews/psych2e/page-008.webp",
+          "previews/psych2e/page-009.webp",
+          "previews/psych2e/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 755
+      }
+    },
+    {
+      "id": "zimbardo",
+      "title": "Psychology Core Concepts",
+      "author": "Philip Zimbardo / 津巴多",
+      "cat": "psych",
+      "catName": "心理",
+      "desc": "津巴多普通心理学核心概念：心智、行为与心理过程的经典入门教材。",
+      "pages": 872,
+      "size": "89.8 MB",
+      "year": 2011,
+      "format": "PDF",
+      "bytes": 94118880,
+      "tags": [
+        "商业教材",
+        "津巴多",
+        "普通心理学"
+      ],
+      "searchTitles": [
+        "心理学核心概念",
+        "津巴多普通心理学"
+      ],
+      "preview": {
+        "images": [
+          "previews/zimbardo/page-001.webp",
+          "previews/zimbardo/page-002.webp",
+          "previews/zimbardo/page-003.webp",
+          "previews/zimbardo/page-004.webp",
+          "previews/zimbardo/page-005.webp",
+          "previews/zimbardo/page-006.webp",
+          "previews/zimbardo/page-007.webp",
+          "previews/zimbardo/page-008.webp",
+          "previews/zimbardo/page-009.webp",
+          "previews/zimbardo/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 872
+      }
+    },
+    {
+      "id": "burger",
+      "title": "人格心理学（第7版）",
+      "author": "Jerry Burger / 陈会昌译",
+      "cat": "psych",
+      "catName": "心理",
+      "desc": "六大人格理论流派：精神分析、特质、生物、人本、行为与认知，附研究方法。",
+      "pages": 368,
+      "size": "36.3 MB",
+      "year": 2011,
+      "format": "PDF",
+      "bytes": 38030114,
+      "tags": [
+        "商业教材",
+        "中文版",
+        "人格理论"
+      ],
+      "searchTitles": [
+        "人格心理学",
+        "Burger Personality"
+      ],
+      "preview": {
+        "images": [
+          "previews/burger/page-001.webp",
+          "previews/burger/page-002.webp",
+          "previews/burger/page-003.webp",
+          "previews/burger/page-004.webp",
+          "previews/burger/page-005.webp",
+          "previews/burger/page-006.webp",
+          "previews/burger/page-007.webp",
+          "previews/burger/page-008.webp",
+          "previews/burger/page-009.webp",
+          "previews/burger/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 368
+      }
+    },
+    {
+      "id": "principles-finance",
+      "title": "Principles of Finance 2e",
+      "author": "OpenStax",
+      "cat": "finance",
+      "catName": "金融",
+      "desc": "财务报表、货币时间价值、债券股票估值、资本预算、融资决策与风险管理。",
+      "pages": 629,
+      "size": "29.5 MB",
+      "year": 2022,
+      "format": "PDF",
+      "bytes": 30902513,
+      "tags": [
+        "开放教材",
+        "CC-BY",
+        "公司金融"
+      ],
+      "searchTitles": [
+        "金融学原理",
+        "财务管理原理",
+        "Principles of Finance"
+      ],
+      "preview": {
+        "images": [
+          "previews/principles-finance/page-001.webp",
+          "previews/principles-finance/page-002.webp",
+          "previews/principles-finance/page-003.webp",
+          "previews/principles-finance/page-004.webp",
+          "previews/principles-finance/page-005.webp",
+          "previews/principles-finance/page-006.webp",
+          "previews/principles-finance/page-007.webp",
+          "previews/principles-finance/page-008.webp",
+          "previews/principles-finance/page-009.webp",
+          "previews/principles-finance/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 629
+      }
+    },
+    {
+      "id": "macro3e",
+      "title": "Principles of Macroeconomics 3e",
+      "author": "Greenlaw, Shapiro, MacDonald / OpenStax",
+      "cat": "econ",
+      "catName": "经济",
+      "desc": "宏观经济学：GDP、通胀、失业、经济增长、货币与财政政策、国际贸易。",
+      "pages": 635,
+      "size": "32.0 MB",
+      "year": 2023,
+      "format": "PDF",
+      "bytes": 33585123,
+      "tags": [
+        "开放教材",
+        "CC-BY",
+        "宏观"
+      ],
+      "searchTitles": [
+        "宏观经济学原理",
+        "宏观经济学 第三版"
+      ],
+      "preview": {
+        "images": [
+          "previews/macro3e/page-001.webp",
+          "previews/macro3e/page-002.webp",
+          "previews/macro3e/page-003.webp",
+          "previews/macro3e/page-004.webp",
+          "previews/macro3e/page-005.webp",
+          "previews/macro3e/page-006.webp",
+          "previews/macro3e/page-007.webp",
+          "previews/macro3e/page-008.webp",
+          "previews/macro3e/page-009.webp",
+          "previews/macro3e/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 635
+      }
+    },
+    {
+      "id": "micro3e",
+      "title": "Principles of Microeconomics 3e",
+      "author": "Greenlaw, Shapiro, MacDonald / OpenStax",
+      "cat": "econ",
+      "catName": "经济",
+      "desc": "微观经济学：供需、弹性、消费者行为、生产成本、市场结构、要素市场。",
+      "pages": 595,
+      "size": "27.9 MB",
+      "year": 2023,
+      "format": "PDF",
+      "bytes": 29247593,
+      "tags": [
+        "开放教材",
+        "CC-BY",
+        "微观"
+      ],
+      "searchTitles": [
+        "微观经济学原理",
+        "微观经济学 第三版"
+      ],
+      "preview": {
+        "images": [
+          "previews/micro3e/page-001.webp",
+          "previews/micro3e/page-002.webp",
+          "previews/micro3e/page-003.webp",
+          "previews/micro3e/page-004.webp",
+          "previews/micro3e/page-005.webp",
+          "previews/micro3e/page-006.webp",
+          "previews/micro3e/page-007.webp",
+          "previews/micro3e/page-008.webp",
+          "previews/micro3e/page-009.webp",
+          "previews/micro3e/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 595
+      }
+    },
+    {
+      "id": "mankiw-econ",
+      "title": "Principles of Economics 6e",
+      "author": "N. Gregory Mankiw / 曼昆",
+      "cat": "econ",
+      "catName": "经济",
+      "desc": "经济学原理经典教材：十大经济学原理、供需弹性、企业行为、宏观经济政策。",
+      "pages": 890,
+      "size": "26.1 MB",
+      "year": 2011,
+      "format": "PDF",
+      "bytes": 27393165,
+      "tags": [
+        "商业教材",
+        "曼昆",
+        "经济学原理"
+      ],
+      "searchTitles": [
+        "曼昆经济学原理",
+        "经济学原理 第六版"
+      ],
+      "preview": {
+        "images": [
+          "previews/mankiw-econ/page-001.webp",
+          "previews/mankiw-econ/page-002.webp",
+          "previews/mankiw-econ/page-003.webp",
+          "previews/mankiw-econ/page-004.webp",
+          "previews/mankiw-econ/page-005.webp",
+          "previews/mankiw-econ/page-006.webp",
+          "previews/mankiw-econ/page-007.webp",
+          "previews/mankiw-econ/page-008.webp",
+          "previews/mankiw-econ/page-009.webp",
+          "previews/mankiw-econ/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 890
+      }
+    },
+    {
+      "id": "mankiw-micro",
+      "title": "Principles of Microeconomics 8e",
+      "author": "N. Gregory Mankiw / 曼昆",
+      "cat": "econ",
+      "catName": "经济",
+      "desc": "曼昆微观经济学分册：价格机制、市场效率、税制、消费者与生产者理论。",
+      "pages": 1038,
+      "size": "13.6 MB",
+      "year": 2018,
+      "format": "PDF",
+      "bytes": 14220969,
+      "tags": [
+        "商业教材",
+        "曼昆",
+        "微观"
+      ],
+      "searchTitles": [
+        "曼昆微观经济学原理",
+        "微观经济学 第八版"
+      ],
+      "preview": {
+        "images": [
+          "previews/mankiw-micro/page-001.webp",
+          "previews/mankiw-micro/page-002.webp",
+          "previews/mankiw-micro/page-003.webp",
+          "previews/mankiw-micro/page-004.webp",
+          "previews/mankiw-micro/page-005.webp",
+          "previews/mankiw-micro/page-006.webp",
+          "previews/mankiw-micro/page-007.webp",
+          "previews/mankiw-micro/page-008.webp",
+          "previews/mankiw-micro/page-009.webp",
+          "previews/mankiw-micro/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 1038
+      }
+    },
+    {
+      "id": "mishkin",
+      "title": "货币金融学（第11版）",
+      "author": "Frederic S. Mishkin / 米什金",
+      "cat": "finance",
+      "catName": "金融",
+      "desc": "The Economics of Money, Banking and Financial Markets 中文版：利率决定、银行体系、央行货币政策、金融市场与金融危机。",
+      "pages": 568,
+      "size": "38.5 MB",
+      "year": 2016,
+      "format": "PDF",
+      "bytes": 40391815,
+      "tags": [
+        "商业教材",
+        "货币银行",
+        "金融市场",
+        "中文版"
+      ],
+      "searchTitles": [
+        "货币金融学",
+        "米什金货币金融学",
+        "The Economics of Money Banking and Financial Markets"
+      ],
+      "preview": {
+        "images": [
+          "previews/mishkin/page-001.webp",
+          "previews/mishkin/page-002.webp",
+          "previews/mishkin/page-003.webp",
+          "previews/mishkin/page-004.webp",
+          "previews/mishkin/page-005.webp",
+          "previews/mishkin/page-006.webp",
+          "previews/mishkin/page-007.webp",
+          "previews/mishkin/page-008.webp",
+          "previews/mishkin/page-009.webp",
+          "previews/mishkin/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 568
+      }
+    },
+    {
+      "id": "brealey",
+      "title": "Principles of Corporate Finance（学习指南）",
+      "author": "Brealey, Myers / 布雷利",
+      "cat": "finance",
+      "catName": "金融",
+      "desc": "公司金融配套学习指南：资本预算、估值、融资决策、资本结构与股利政策。",
+      "pages": 404,
+      "size": "38.5 MB",
+      "year": 1996,
+      "format": "PDF",
+      "bytes": 40410841,
+      "tags": [
+        "商业教材",
+        "学习指南",
+        "公司金融"
+      ],
+      "searchTitles": [
+        "公司金融原理",
+        "公司金融学习指南",
+        "布雷利公司金融"
+      ],
+      "preview": {
+        "images": [
+          "previews/brealey/page-001.webp",
+          "previews/brealey/page-002.webp",
+          "previews/brealey/page-003.webp",
+          "previews/brealey/page-004.webp",
+          "previews/brealey/page-005.webp",
+          "previews/brealey/page-006.webp",
+          "previews/brealey/page-007.webp",
+          "previews/brealey/page-008.webp",
+          "previews/brealey/page-009.webp",
+          "previews/brealey/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 404
+      }
+    },
+    {
+      "id": "robbins-ob",
+      "title": "组织行为学（第18版）",
+      "author": "Stephen Robbins / 斯蒂芬·罗宾斯",
+      "cat": "management",
+      "catName": "管理",
+      "desc": "组织行为学经典教材：个体行为、群体行为、组织结构、领导力、组织文化与变革。",
+      "pages": 562,
+      "size": "60.0 MB",
+      "year": 2018,
+      "format": "PDF",
+      "bytes": 62960671,
+      "tags": [
+        "商业教材",
+        "中文版",
+        "组织行为",
+        "管理学"
+      ],
+      "searchTitles": [
+        "组织行为学",
+        "罗宾斯组织行为学",
+        "Organizational Behavior"
+      ],
+      "preview": {
+        "images": [
+          "previews/robbins-ob/page-001.webp",
+          "previews/robbins-ob/page-002.webp",
+          "previews/robbins-ob/page-003.webp",
+          "previews/robbins-ob/page-004.webp",
+          "previews/robbins-ob/page-005.webp",
+          "previews/robbins-ob/page-006.webp",
+          "previews/robbins-ob/page-007.webp",
+          "previews/robbins-ob/page-008.webp",
+          "previews/robbins-ob/page-009.webp",
+          "previews/robbins-ob/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 562
+      }
+    },
+    {
+      "id": "porter-strategy",
+      "title": "竞争战略",
+      "author": "Michael Porter / 迈克尔·波特",
+      "cat": "management",
+      "catName": "管理",
+      "desc": "波特竞争战略经典：五力模型、三大通用战略、产业结构分析与竞争优势。",
+      "pages": 388,
+      "size": "74.1 MB",
+      "year": 1980,
+      "format": "PDF",
+      "bytes": 77680460,
+      "tags": [
+        "商业教材",
+        "中文版",
+        "战略管理",
+        "竞争优势"
+      ],
+      "searchTitles": [
+        "竞争战略",
+        "波特竞争战略",
+        "Competitive Strategy"
+      ],
+      "preview": {
+        "images": [
+          "previews/porter-strategy/page-001.webp",
+          "previews/porter-strategy/page-002.webp",
+          "previews/porter-strategy/page-003.webp",
+          "previews/porter-strategy/page-004.webp",
+          "previews/porter-strategy/page-005.webp",
+          "previews/porter-strategy/page-006.webp",
+          "previews/porter-strategy/page-007.webp",
+          "previews/porter-strategy/page-008.webp",
+          "previews/porter-strategy/page-009.webp",
+          "previews/porter-strategy/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 388
+      }
+    },
+    {
+      "id": "rosenberg-nvc",
+      "title": "非暴力沟通",
+      "author": "Marshall Rosenberg / 马歇尔·卢森堡",
+      "cat": "psych",
+      "catName": "心理",
+      "desc": "非暴力沟通经典：观察、感受、需要、请求四要素，提升人际沟通与冲突解决能力。",
+      "pages": null,
+      "size": "570 KB",
+      "year": 2016,
+      "format": "EPUB",
+      "bytes": 583968,
+      "tags": [
+        "商业教材",
+        "中文版",
+        "沟通技巧",
+        "epub"
+      ],
+      "searchTitles": [
+        "非暴力沟通",
+        "Nonviolent Communication"
+      ],
+      "preview": {
+        "images": [
+          "previews/rosenberg-nvc/page-001.webp",
+          "previews/rosenberg-nvc/page-002.webp",
+          "previews/rosenberg-nvc/page-003.webp",
+          "previews/rosenberg-nvc/page-004.webp",
+          "previews/rosenberg-nvc/page-005.webp",
+          "previews/rosenberg-nvc/page-006.webp",
+          "previews/rosenberg-nvc/page-007.webp",
+          "previews/rosenberg-nvc/page-008.webp",
+          "previews/rosenberg-nvc/page-009.webp",
+          "previews/rosenberg-nvc/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 123
+      }
+    },
+    {
+      "id": "myers-social-psych",
+      "title": "社会心理学（第8版）",
+      "author": "David Myers / 戴维·迈尔斯",
+      "cat": "psych",
+      "catName": "心理",
+      "desc": "社会心理学经典教材：社会思维、社会影响、社会关系三大模块，涵盖归因、从众、偏见、吸引、利他等核心主题。",
+      "pages": 653,
+      "size": "19.6 MB",
+      "year": 2006,
+      "format": "PDF",
+      "bytes": 20548712,
+      "tags": [
+        "商业教材",
+        "中文版",
+        "社会心理学",
+        "经典教材"
+      ],
+      "searchTitles": [
+        "社会心理学",
+        "迈尔斯社会心理学",
+        "Social Psychology"
+      ],
+      "preview": {
+        "images": [
+          "previews/myers-social-psych/page-001.webp",
+          "previews/myers-social-psych/page-002.webp",
+          "previews/myers-social-psych/page-003.webp",
+          "previews/myers-social-psych/page-004.webp",
+          "previews/myers-social-psych/page-005.webp",
+          "previews/myers-social-psych/page-006.webp",
+          "previews/myers-social-psych/page-007.webp",
+          "previews/myers-social-psych/page-008.webp",
+          "previews/myers-social-psych/page-009.webp",
+          "previews/myers-social-psych/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 653
+      }
+    },
+    {
+      "id": "financial-acct",
+      "title": "Principles of Financial Accounting",
+      "author": "Christine Jonick / UNG Press",
+      "cat": "accounting",
+      "catName": "会计",
+      "desc": "会计等式、借贷记账、调整分录、三大财务报表、财务分析与 Excel 练习。",
+      "pages": 318,
+      "size": "5.1 MB",
+      "year": 2019,
+      "format": "PDF",
+      "bytes": 5296257,
+      "tags": [
+        "开放教材",
+        "CC-BY-SA",
+        "财务会计"
+      ],
+      "searchTitles": [
+        "财务会计原理",
+        "会计学原理",
+        "Financial Accounting"
+      ],
+      "preview": {
+        "images": [
+          "previews/financial-acct/page-001.webp",
+          "previews/financial-acct/page-002.webp",
+          "previews/financial-acct/page-003.webp",
+          "previews/financial-acct/page-004.webp",
+          "previews/financial-acct/page-005.webp",
+          "previews/financial-acct/page-006.webp",
+          "previews/financial-acct/page-007.webp",
+          "previews/financial-acct/page-008.webp",
+          "previews/financial-acct/page-009.webp",
+          "previews/financial-acct/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 318
+      }
+    },
+    {
+      "id": "openintro-stats",
+      "title": "OpenIntro Statistics 4th Edition",
+      "author": "Diez, Çetinkaya-Rundel, Barr / OpenIntro",
+      "cat": "statistics",
+      "catName": "统计",
+      "desc": "描述统计、概率分布、统计推断与回归分析。官方屏幕阅读器友好版，页码与普通版不同，引用时建议使用章节号。",
+      "pages": 465,
+      "size": "15.2 MB",
+      "year": 2019,
+      "format": "PDF",
+      "bytes": 15926600,
+      "tags": [
+        "开放教材",
+        "CC-BY-SA",
+        "统计学"
+      ],
+      "searchTitles": [
+        "统计学入门",
+        "开放统计学",
+        "OpenIntro Statistics"
+      ],
+      "preview": {
+        "images": [
+          "previews/openintro-stats/page-001.webp",
+          "previews/openintro-stats/page-002.webp",
+          "previews/openintro-stats/page-003.webp",
+          "previews/openintro-stats/page-004.webp",
+          "previews/openintro-stats/page-005.webp",
+          "previews/openintro-stats/page-006.webp",
+          "previews/openintro-stats/page-007.webp",
+          "previews/openintro-stats/page-008.webp",
+          "previews/openintro-stats/page-009.webp",
+          "previews/openintro-stats/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 465
+      }
+    },
+    {
+      "id": "bio-methods",
+      "title": "高中生物核心方法册",
+      "author": "高中生物复习资料",
+      "cat": "bio",
+      "catName": "生物",
+      "desc": "高中生物核心方法复习册：细胞结构、代谢、遗传、调节、生态等专题方法归纳与例题解析。",
+      "pages": 486,
+      "size": "26.8 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 28077117,
+      "tags": [
+        "高中",
+        "生物",
+        "方法册",
+        "复习"
+      ],
+      "searchTitles": [
+        "高中生物",
+        "生物核心方法册"
+      ],
+      "preview": {
+        "images": [
+          "previews/bio-methods/page-001.webp",
+          "previews/bio-methods/page-002.webp",
+          "previews/bio-methods/page-003.webp",
+          "previews/bio-methods/page-004.webp",
+          "previews/bio-methods/page-005.webp",
+          "previews/bio-methods/page-006.webp",
+          "previews/bio-methods/page-007.webp",
+          "previews/bio-methods/page-008.webp",
+          "previews/bio-methods/page-009.webp",
+          "previews/bio-methods/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 486
+      }
+    }
+  ]
+}
