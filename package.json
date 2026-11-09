@@ -5,11 +5,12 @@
   "description": "Nicole 的学习资料库",
   "license": "MIT",
   "scripts": {
-    "test": "node tests/browser.cjs",
+    "test": "node --test tests/upload-helper.test.cjs && node tests/browser.cjs && node tests/upload-helper-browser.cjs",
     "start": "python3 -m http.server 8000"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",
+    "@github/file-attachment-element": "3.2.0",
     "playwright": "1.65.0"
   }
 }

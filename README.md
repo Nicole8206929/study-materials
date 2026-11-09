@@ -10,7 +10,11 @@
 
 ## 从微信上传书籍
 
-书架顶部的“上传书籍（仅本人）”打开 `upload.html`，提供安卓手机操作说明，并跳转到私有仓库的固定 Releases 草稿上传区。微信文件先保存到手机，再选择附件上传；每个文件须小于 2 GiB。等待完成后点击 Save draft，不需要发布 Release。需要时在 GitHub 登录本人账号，书架本身不新增登录或密码。
+书架顶部的“上传书籍（仅本人）”打开 `upload.html`，提供安卓手机操作说明，并跳转到私有仓库的 Releases 上传区。草稿的 untagged 地址可能改变，入口不固定旧地址。微信文件先保存到手机，再选择附件上传；每个文件须小于 2 GiB。等待完成后点击 Save draft，不需要发布 Release。需要时在 GitHub 登录本人账号，书架本身不新增登录或密码。
+
+自动补传：在安卓 Firefox 中安装 Tampermonkey，再从 `upload.html` 安装 `tools/github-upload-helper.user.js`。助手限定在本人私有仓库 Releases 页面，利用原生文件控件排队；重新全选时以当前附件列表、准确字节数和原文件名判断重复，成功项跳过，失败项最多重试三次。不覆盖已有同名文件，不删除不能确认归属的失败记录。它不是内容哈希判重；修改过的同名资料应按新版本命名。
+
+安装说明已发布不代表用户的真实 GitHub 私有页面已经验证。单元和浏览器测试使用 GitHub 官方 file-attachment 元素及模拟传输，实际编辑页结构、扩展授权与手机浏览器仍须首次小批验证。诊断按钮只复制版本、控件识别和计数，不含正文、密码、令牌或下载签名。
 
 上传后回到聊天告诉助手“已上传”，由助手通过私有仓库的 `scripts/import_release_books.py` 列出新增附件，确认分类，只生成新书的前 10 页试读，然后分别提交私有导入记录与公开书架。此入口不是本站上传 API，也不会自动同步或自动生成讲义。网络失败的附件需要重传，不承诺断点续传。
 
@@ -22,7 +26,7 @@
 python3 -m http.server 8000
 python3 scripts/check_public_shelf.py
 npm ci
-npx playwright install chromium
+npx playwright install chromium firefox
 npm test
 ```
 

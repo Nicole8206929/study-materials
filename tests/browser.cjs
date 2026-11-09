@@ -92,7 +92,9 @@ const total = catalog.books.length;
     await page.locator('.owner-entry').click();
     assert(page.url().endsWith('/upload.html'));
     const upload = page.locator('#privateUpload');
-    assert.equal(await upload.getAttribute('href'),'https://github.com/Nicole8206929/study-materials-originals/releases/edit/untagged-485b1316e1b6dd89a054');
+    assert.equal(await upload.getAttribute('href'),'https://github.com/Nicole8206929/study-materials-originals/releases');
+    assert.equal(await page.locator('#installUploadHelper').getAttribute('href'),'tools/github-upload-helper.user.js');
+    assert((await page.locator('#tampermonkeyInstall').getAttribute('href')).startsWith('https://addons.mozilla.org/'));
     assert.equal(await page.locator('input[type=password],input[type=file],script').count(),0);
     assert((await page.locator('main').innerText()).includes('Save draft'));
     for (const scheme of ['light','dark']) {

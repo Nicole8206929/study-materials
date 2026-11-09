@@ -16,5 +16,5 @@ jobs:
           cache: npm
       - run: python scripts/check_public_shelf.py
       - run: npm ci
-      - run: npx playwright install --with-deps chromium
+      - run: npx playwright install --with-deps chromium firefox
       - run: npm test
