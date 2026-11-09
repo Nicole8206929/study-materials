@@ -5,7 +5,7 @@ import {screenActivity} from './screen-activity.mjs';
 const element = id => document.getElementById(id);
 const picker = element('checkFiles'), folderPicker = element('checkFolder'), status = element('checkStatus');
 const selection = new FileSelection(), hashCache = new WeakMap();
-let snapshot, plan, abort, downloadURL, loader, loadVersion = 0, revision = 0, checkAgain = false;
+let snapshot, plan, abort, downloadURL, loader, loadVersion = 0, revision = 0, checkAgain = false, pausedByUser = false;
 const savedContextKey = 'nicole-upload-check-context-v1';
 const bytesLabel = size => size < 1024 * 1024 ? `${Math.ceil(size / 1024)} KB` : `${(size / 1024 / 1024).toFixed(1)} MB`;
 const labels = {uploaded:'已上传，跳过',missing:'需要补传',duplicate:'本次内容重复，跳过',invalid:'未能核对'};
@@ -82,6 +82,7 @@ function renderSelection() {
   busy(!!abort);
 }
 function selectionChanged(message) {
+  pausedByUser = false;
   revision++; checkAgain = true;
   const hadPackage = invalidatePlan();
   renderSelection();
@@ -116,6 +117,7 @@ function readContext(url) {
   return /^[a-f0-9]{32}$/.test(value.id || '') && /^[A-Za-z0-9_-]{43}$/.test(value.key || '') ? value : null;
 }
 async function initialize(restored) {
+  pausedByUser = false;
   const version = ++loadVersion;
   loader?.abort(); snapshot = null; revision++; invalidatePlan(); renderSelection();
   element('inventoryDate').textContent = '';
@@ -177,7 +179,7 @@ element('clearSelection').addEventListener('click',() => {
 element('undoSelection').addEventListener('click',() => {
   const count = selection.undo(); selectionChanged(`已恢复 ${count} 份文件。`);
 });
-element('recheckSelection').addEventListener('click',() => { checkAgain = true; checkSelectedFiles(); });
+element('recheckSelection').addEventListener('click',() => { pausedByUser = false; checkAgain = true; checkSelectedFiles(); });
 async function checkSelectedFiles() {
   if (abort) return;
   checkAgain = false;
@@ -245,7 +247,7 @@ element('makePackage').addEventListener('click',async () => {
     if (checkAgain) checkSelectedFiles();
   }
 });
-element('cancelCheck').addEventListener('click',() => { checkAgain = false; abort?.abort(); });
+element('cancelCheck').addEventListener('click',() => { pausedByUser = true; checkAgain = false; abort?.abort(); });
 window.addEventListener('beforeunload',event => {
   if (abort) { event.preventDefault(); event.returnValue = ''; }
 });
@@ -253,7 +255,7 @@ let returnedAt = 0, refreshingInventory = false;
 async function resumePage() {
   activity.update();
   if (document.visibilityState !== 'visible') return;
-  if (!abort && plan?.rows.some(row => row.state === 'invalid' && row.reason?.includes('无法读取'))) checkAgain = true;
+  if (!pausedByUser && !abort && plan?.rows.some(row => row.state === 'invalid' && row.reason?.includes('无法读取'))) checkAgain = true;
   if (checkAgain && !abort) checkSelectedFiles();
   // Keep file references, completed hashes and an existing package. Refresh
   // the encrypted record without reloading this page or resetting selections.
@@ -275,7 +277,10 @@ async function resumePage() {
     try { localStorage.setItem(savedContextKey,JSON.stringify(context)); } catch {}
     showInventory();
     element('recordRecovery').hidden = true;
-    if (changed && selection.entries.length) selectionChanged('返回前台后已载入更新的记录，正在重新核对已选文件。');
+    if (changed && selection.entries.length && pausedByUser) {
+      revision++; checkAgain = false; invalidatePlan(); renderSelection();
+      status.textContent = '已取消的处理保持停止。核对记录已更新，已选文件保留；点“重新核对已选文件”继续。';
+    } else if (changed && selection.entries.length) selectionChanged('返回前台后已载入更新的记录，正在重新核对已选文件。');
     else element('resumeStatus').textContent = '已返回前台，核对记录未变；当前选择与处理进度保留。';
   } catch {
     if (currentVersion === loadVersion) element('resumeStatus').textContent = '返回前台后暂未刷新到核对记录，已选文件保留；联网后会重试。';
