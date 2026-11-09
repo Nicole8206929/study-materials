@@ -95,7 +95,16 @@ const total = catalog.books.length;
     assert.equal(await upload.getAttribute('href'),'https://github.com/Nicole8206929/study-materials-originals/releases');
     assert.equal(await page.locator('#installUploadHelper').getAttribute('href'),'tools/github-upload-helper.user.js');
     assert((await page.locator('#tampermonkeyInstall').getAttribute('href')).startsWith('https://addons.mozilla.org/'));
-    assert.equal(await page.locator('input[type=password],input[type=file],script').count(),0);
+    assert.equal(await page.locator('input[type=password],input[type=file]').count(),0);
+    assert.equal(await page.locator('script[src="assets/upload-install.js"]').count(),1);
+    assert.equal(await page.locator('#helperScriptUrl').inputValue(),'https://nicole8206929.github.io/study-materials/tools/github-upload-helper.user.js');
+    assert((await page.locator('#helperOfficialInstall').getAttribute('href')).startsWith('https://www.tampermonkey.net/script_installation.php#url='));
+    await context.grantPermissions(['clipboard-read','clipboard-write']);
+    await page.locator('#copyInstallPage').click();
+    assert.equal(await page.evaluate(()=>navigator.clipboard.readText()),await page.locator('#installPageUrl').inputValue());
+    await page.locator('#installTroubleshoot summary').click();
+    await page.locator('#copyHelperScript').click();
+    assert.equal(await page.evaluate(()=>navigator.clipboard.readText()),await page.locator('#helperScriptUrl').inputValue());
     assert((await page.locator('main').innerText()).includes('Save draft'));
     for (const scheme of ['light','dark']) {
       await page.emulateMedia({colorScheme:scheme});

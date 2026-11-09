@@ -6,10 +6,11 @@
   <meta name="description" content="从安卓手机微信保存文件，直接上传到 Nicole 的私有书籍资料库。">
   <meta name="color-scheme" content="light dark">
   <meta name="robots" content="noindex">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
   <title>上传书籍 · Nicole 的学习书架</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/upload-install.js" defer></script>
 </head>
 <body>
   <div class="container guide-container">
@@ -18,13 +19,28 @@
       <h1>上传书籍</h1>
       <p class="guide-intro">重新全选文件，跳过已上传的，只补传剩下的。</p>
       <p>这是本人的管理入口。上传时使用自己的 GitHub 账号；访客浏览书架和试读不需要登录。</p>
+      <div class="install-address">
+        <p><strong>请先在 Firefox（火狐浏览器）里打开本页。</strong>在聊天窗口或其他浏览器里点安装，不会自动装到 Firefox。先点下面的复制按钮，再打开手机桌面的 Firefox，把地址粘贴到地址栏。</p>
+        <label for="installPageUrl">本页地址</label>
+        <input id="installPageUrl" type="url" readonly value="https://nicole8206929.github.io/study-materials/upload.html?v=helper-2" spellcheck="false">
+        <button class="primary" id="copyInstallPage" type="button" data-copy-field="installPageUrl">复制本页地址，去 Firefox 打开</button>
+      </div>
       <h2>首次安装，只需一次</h2>
       <ol class="upload-steps">
         <li>在安卓手机安装 <a href="https://www.mozilla.org/firefox/browsers/mobile/android/">Firefox 浏览器</a>。请在 Firefox 中打开本页，其他浏览器不会自动启用此助手。</li>
-        <li>在 Firefox 中安装 <a id="tampermonkeyInstall" href="https://addons.mozilla.org/zh-CN/android/addon/tampermonkey/">Tampermonkey 扩展</a>，按浏览器提示启用。</li>
+        <li>在 Firefox 中点击 <a id="tampermonkeyInstall" href="https://addons.mozilla.org/zh-CN/android/addon/tampermonkey/">安装 Tampermonkey 扩展</a>，点“添加到 Firefox”并确认。如果需要查找扩展菜单，点 Firefox 右上角或右下角的 ⋮ → 扩展（附加组件）。</li>
         <li>点击下面的“安装上传助手”，在扩展弹出的安装页确认安装。若只看到代码，先确认 Tampermonkey 已启用，再重新打开安装链接。</li>
       </ol>
       <a class="upload-link" id="installUploadHelper" href="tools/github-upload-helper.user.js">安装上传助手 1.0.0</a>
+      <details class="install-address" id="installTroubleshoot">
+        <summary>点安装后只有代码，没有弹出安装页？</summary>
+        <p>先确认正在用 Firefox，且 Tampermonkey 已启用。可以试试 <a id="helperOfficialInstall" href="https://www.tampermonkey.net/script_installation.php#url=https%3A%2F%2Fnicole8206929.github.io%2Fstudy-materials%2Ftools%2Fgithub-upload-helper.user.js">Tampermonkey 官方备用安装入口</a>。</p>
+        <p>仍然不行时，不需要复制代码：点 Firefox 的 ⋮ → 扩展 → Tampermonkey → 管理面板（Dashboard）→ 实用工具（Utilities），找到“从 URL 安装 / Import from URL”。粘贴下面这个地址，点“安装 / Install”，再确认安装。</p>
+        <label for="helperScriptUrl">上传助手的安装地址，只复制链接</label>
+        <input id="helperScriptUrl" type="url" readonly value="https://nicole8206929.github.io/study-materials/tools/github-upload-helper.user.js" spellcheck="false">
+        <button class="primary" id="copyHelperScript" type="button" data-copy-field="helperScriptUrl">复制安装地址</button>
+      </details>
+      <p id="installCopyStatus" role="status" aria-live="polite"></p>
       <p>助手只在本人的私有资料库 Releases 页面运行，借用 GitHub 原生上传控件；不需要新增云服务、网盘账号或授权码。此版本已做浏览器测试，仍需要在你的真实 GitHub 页面完成首次小批验证。</p>
       <h2>以后这样补传</h2>
       <ol class="upload-steps">
