@@ -24,6 +24,7 @@ export async function decryptSnapshot(envelope, secret) {
 export function validateSnapshot(snapshot) {
   if (snapshot?.version !== 1 || !Number.isFinite(Date.parse(snapshot.checkedAt)) ||
       !Number.isInteger(snapshot.expectedCount) || snapshot.expectedCount < 1 || snapshot.expectedCount > 1000 ||
+      (snapshot.stage !== undefined && !['collected','compiled'].includes(snapshot.stage)) ||
       !Array.isArray(snapshot.uploaded) || snapshot.uploaded.length > 1000 || snapshot.uploaded.some(item =>
         !Number.isSafeInteger(item.size) || item.size < 1 || item.size >= MAX_BYTES || !/^[a-f0-9]{64}$/.test(item.sha256))) {
     throw new Error('已上传记录不完整，不能可靠核对；请返回聊天更新核对链接。');

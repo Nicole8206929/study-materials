@@ -11,8 +11,8 @@
   <title>补齐上传资料 · Nicole 的学习书架</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
-  <script src="assets/upload-checker-bootstrap.js?v=queue-3" defer></script>
-  <script src="assets/upload-checker.js?v=queue-3" defer></script>
+  <script src="assets/upload-checker-bootstrap.js?v=resume-1" defer></script>
+  <script src="assets/upload-checker.js?v=resume-1" defer></script>
 </head>
 <body>
   <div class="container guide-container">
@@ -41,7 +41,7 @@
           <input id="checkFolder" type="file" multiple webkitdirectory directory autocomplete="off">
           <p class="muted">如果手机没有提供文件夹选择，就使用上面的分批添加；文件夹中的非课件文件会忽略。</p>
         </details>
-        <p class="muted">这里只读取你主动选择的文件，不会直接访问手机全部目录，也不会上传到本网站。微信受保护目录中的文件，请先保存到“下载”或“文档”。核对、打包时保持浏览器在前台。</p>
+        <p class="muted">这里只读取你主动选择的文件。微信文件请先保存到“下载”或“文档”。处理时会在浏览器允许的情况下保持亮屏；切回前台会继续核对，并刷新核对记录。</p>
       </section>
       <section id="selectionSection" hidden aria-labelledby="selectionCount">
         <h2 id="selectionCount">已选 0 份文件</h2>
@@ -56,12 +56,19 @@
       <p id="selectionNotice" role="status" aria-live="polite"></p>
       <div id="checkWork" hidden>
         <p id="checkStatus" role="status" aria-live="polite"></p>
+        <p id="backgroundStatus" class="muted" role="status"></p>
         <label for="checkProgress">处理进度</label>
         <progress id="checkProgress" max="100" value="0"></progress>
         <button class="text-button" id="cancelCheck" type="button" hidden>取消本次处理</button>
         <p id="checkSummary" class="check-summary" role="status"></p>
         <details id="checkResults" hidden><summary>查看每份文件的核对结果</summary><ul id="checkRows" class="upload-help"></ul></details>
       </div>
+      <p id="resumeStatus" class="muted" role="status"></p>
+      <details>
+        <summary>黑屏或切到后台后怎么办？</summary>
+        <p>系统可能暂停浏览器，回到此页会接着处理，已完成的文件核对会复用。如果系统关闭了网页，需要重新选择文件，成功上传的附件不会丢失。</p>
+        <p>本页负责本地核对和打包。GitHub 上传区的传输仍由 GitHub 和手机系统控制，普通网页无法保证黑屏时持续上传；已经开始的云端资料转换不受手机黑屏影响。</p>
+      </details>
       <section id="packageSection" hidden aria-labelledby="packageHeading">
         <h2 id="packageHeading">2. 下载补传包</h2>
         <p>已上传的和本次重复选择的相同内容会跳过。补传包保留原文件内容，不转换或改写；同名但内容不同的文件会分别保留。</p>

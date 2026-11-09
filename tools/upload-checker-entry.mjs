@@ -1,5 +1,6 @@
 import {decryptSnapshot, planFiles, createUploadZip} from './upload-checker-core.mjs';
 import {FileSelection} from './file-selection.mjs';
+import {screenActivity} from './screen-activity.mjs';
 
 const element = id => document.getElementById(id);
 const picker = element('checkFiles'), folderPicker = element('checkFolder'), status = element('checkStatus');
@@ -8,7 +9,19 @@ let snapshot, plan, abort, downloadURL, loader, loadVersion = 0, revision = 0, c
 const savedContextKey = 'nicole-upload-check-context-v1';
 const bytesLabel = size => size < 1024 * 1024 ? `${Math.ceil(size / 1024)} KB` : `${(size / 1024 / 1024).toFixed(1)} MB`;
 const labels = {uploaded:'已上传，跳过',missing:'需要补传',duplicate:'本次内容重复，跳过',invalid:'未能核对'};
+function showInventory() {
+  const archived = snapshot.stage === 'compiled';
+  labels.uploaded = archived ? '已归入合集，跳过' : '已上传，跳过';
+  element('inventoryStatus').textContent = `已载入 ${snapshot.uploaded.length} 份${archived ? '合订归档' : '成功上传'}记录；本批目标 ${snapshot.expectedCount} 份。` +
+    (archived ? '本批已完成，原资料按约定清理，只保留最终合集。已收录的内容会跳过。' : '现在可以分批添加原文件。');
+  element('inventoryDate').textContent = `记录时间：${new Date(snapshot.checkedAt).toLocaleString('zh-CN')}。核对过程中不会上传文件。`;
+}
 let lastProgress = 0;
+const activity = screenActivity({
+  request: navigator.wakeLock?.request ? () => navigator.wakeLock.request('screen') : null,
+  visible: () => document.visibilityState === 'visible',
+  notify: text => { element('backgroundStatus').textContent = text; }
+});
 function progress(value) {
   const now = performance.now();
   if (now - lastProgress < 150 && value.bytes !== value.totalBytes) return;
@@ -17,6 +30,7 @@ function progress(value) {
   status.textContent = `${value.phase === 'checking' ? '正在本地核对' : '正在生成补传包'} ${value.index + 1}/${value.total}：${value.name}`;
 }
 function busy(value) {
+  activity.setActive(value);
   // Adding/removing files is allowed while a read runs: edits cancel the old
   // task, invalidate its result and schedule a check of the new selection.
   picker.disabled = false; folderPicker.disabled = false;
@@ -127,8 +141,7 @@ async function initialize(restored) {
     try { localStorage.setItem(savedContextKey,JSON.stringify(context)); } catch {}
     const url = new URL(location.href); url.searchParams.set('batch',context.id); url.hash = 'k=' + context.key;
     history.replaceState(null,'',url);
-    element('inventoryStatus').textContent = `已载入 ${snapshot.uploaded.length} 份成功上传记录；本批目标 ${snapshot.expectedCount} 份。现在可以分批添加原文件。`;
-    element('inventoryDate').textContent = `记录时间：${new Date(snapshot.checkedAt).toLocaleString('zh-CN')}。核对过程中不会上传文件。`;
+    showInventory();
     element('recordRecovery').hidden = true; element('privateCheckLink').value = '';
   } catch (error) {
     if (version !== loadVersion) return;
@@ -137,7 +150,11 @@ async function initialize(restored) {
       ? '记录加载超时。请点“重新载入记录”；已选文件会保留，不会自动打包。'
       : error.message || '记录无法解密，请粘贴聊天中的完整链接后重试。';
     element('recordRecovery').hidden = false;
-  } finally { clearTimeout(timeout); if (version === loadVersion) busy(!!abort); }
+  } finally {
+    clearTimeout(timeout);
+    if (loader === request) loader = null;
+    if (version === loadVersion) busy(!!abort);
+  }
   if (version === loadVersion && snapshot) {
     if (!selection.entries.length && picker.files.length) addFiles(picker.files);
     else if (selection.entries.length) { checkAgain = true; checkSelectedFiles(); }
@@ -175,7 +192,7 @@ async function checkSelectedFiles() {
     if (task.signal.aborted || currentRevision !== revision) return;
     plan = result;
     const counts = Object.fromEntries(Object.keys(labels).map(state => [state,plan.rows.filter(row => row.state === state).length]));
-    element('checkSummary').textContent = `已选择 ${files.length} · 已上传 ${counts.uploaded} · 待补传 ${counts.missing} · 本次重复 ${counts.duplicate} · 未能核对 ${counts.invalid}`;
+    element('checkSummary').textContent = `已选择 ${files.length} · ${snapshot.stage === 'compiled' ? '已归档' : '已上传'} ${counts.uploaded} · 待补传 ${counts.missing} · 本次重复 ${counts.duplicate} · 未能核对 ${counts.invalid}`;
     element('checkRows').replaceChildren();
     for (const row of plan.rows) {
       const item = document.createElement('li'); item.textContent = `${row.file.name}：${labels[row.state]}${row.reason ? '。' + row.reason : ''}`;
@@ -185,7 +202,7 @@ async function checkSelectedFiles() {
     if (counts.invalid) {
       status.textContent = '有文件未能核对。可在已选列表点“×”移除，或保存好原文件后重新添加。';
       element('checkResults').open = true;
-    } else if (!counts.missing) status.textContent = '所选内容均已上传或是重复项，无需补传。可以继续添加文件。';
+    } else if (!counts.missing) status.textContent = `所选内容均已${snapshot.stage === 'compiled' ? '归入合集' : '上传'}或是重复项，无需补传。可以继续添加文件。`;
     else {
       status.textContent = `核对完成。只需打包 ${counts.missing} 份资料；原有成功附件保持不动。`;
       if (files.length !== snapshot.expectedCount) status.textContent += ` 本次累计 ${files.length} 份，目标 ${snapshot.expectedCount} 份；可以继续添加剩余文件。`;
@@ -232,6 +249,38 @@ element('cancelCheck').addEventListener('click',() => { checkAgain = false; abor
 window.addEventListener('beforeunload',event => {
   if (abort) { event.preventDefault(); event.returnValue = ''; }
 });
+let returnedAt = 0, refreshingInventory = false;
+async function resumePage() {
+  activity.update();
+  if (document.visibilityState !== 'visible') return;
+  if (checkAgain && !abort) checkSelectedFiles();
+  // Keep file references, completed hashes and an existing package. Refresh
+  // the encrypted record without reloading this page or resetting selections.
+  if (refreshingInventory || loader?.signal.aborted === false || Date.now() - returnedAt < 15000) return;
+  const context = readContext(new URL(location.href));
+  if (!context) return;
+  returnedAt = Date.now(); refreshingInventory = true;
+  const currentVersion = loadVersion, request = new AbortController();
+  const timer = setTimeout(() => request.abort(),20000);
+  try {
+    const response = await fetch(`upload-check-data/${context.id}.json`, {cache:'no-store',credentials:'omit',referrerPolicy:'no-referrer',signal:request.signal});
+    if (!response.ok) throw new Error('record');
+    const loaded = await decryptSnapshot(await response.json(),context.key);
+    if (currentVersion !== loadVersion) return;
+    const signature = value => JSON.stringify([value?.expectedCount,value?.stage,value?.uploaded.map(item => `${item.size}:${item.sha256}`).sort()]);
+    const changed = signature(snapshot) !== signature(loaded);
+    snapshot = loaded;
+    showInventory();
+    element('recordRecovery').hidden = true;
+    if (changed && selection.entries.length) selectionChanged('返回前台后已载入更新的记录，正在重新核对已选文件。');
+    else element('resumeStatus').textContent = '已返回前台，核对记录未变；当前选择与处理进度保留。';
+  } catch {
+    if (currentVersion === loadVersion) element('resumeStatus').textContent = '返回前台后暂未刷新到核对记录，已选文件保留；联网后会重试。';
+  } finally { clearTimeout(timer); refreshingInventory = false; }
+}
+document.addEventListener('visibilitychange',resumePage);
+window.addEventListener('pageshow',event => { if (event.persisted) resumePage(); });
+window.addEventListener('online',() => { returnedAt = 0; resumePage(); });
 window.addEventListener('hashchange',() => { abort?.abort(); abort = null; snapshot = null; location.reload(); });
 element('retryInventory').addEventListener('click',() => { if (!abort) initialize(); });
 element('recordRecovery').addEventListener('submit',event => {

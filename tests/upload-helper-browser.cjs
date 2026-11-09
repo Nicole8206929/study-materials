@@ -196,7 +196,8 @@ async function fixture(browser, options={}) {
 
         f=await fixture(browser,{bookmark:true,initial:{'changed.pdf':3},contents:{'changed.pdf':'xyz'}});
         await f.choose(['changed.pdf','next.pdf']);
-        await f.page.waitForFunction(()=>document.querySelector('#nicole-upload-helper').textContent.includes('冲突 1'));
+        await f.page.waitForFunction(()=>document.querySelector('#nicole-upload-helper [role=status]').textContent.includes('已处理可补传的文件'));
+        assert((await f.page.locator('#nicole-upload-helper').innerText()).includes('冲突 1'));
         assert.deepEqual(f.state.uploads,['next.pdf']);assert.deepEqual(f.state.deletes,[]);await f.close();
 
         f=await fixture(browser,{bookmark:true,failures:{'retry.pdf':1}});await f.choose(['retry.pdf']);
