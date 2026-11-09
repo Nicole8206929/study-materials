@@ -1,29 +1,6 @@
-import {sha256} from '@noble/hashes/sha2.js';
 import helper from './github-upload-helper.user.js';
-
-// Read bounded slices so a large presentation is never copied into one giant
-// ArrayBuffer on a phone. Cache only this page's selected File objects.
-export function createFileHasher() {
-  const hashes = new WeakMap();
-  return async file => {
-    if (hashes.has(file)) return hashes.get(file);
-    const work = (async () => {
-      const state = sha256.create();
-      let lastYield = performance.now();
-      for (let offset = 0; offset < file.size; offset += 256 * 1024) {
-        state.update(new Uint8Array(await file.slice(offset, offset + 256 * 1024).arrayBuffer()));
-        if (performance.now() - lastYield > 40) {
-          await new Promise(resolve => setTimeout(resolve, 0));
-          lastYield = performance.now();
-        }
-      }
-      return 'sha256:' + Array.from(state.digest(), value => value.toString(16).padStart(2, '0')).join('');
-    })();
-    hashes.set(file, work);
-    try { return await work; }
-    catch (error) { hashes.delete(file); throw error; }
-  };
-}
+import {createFileHasher} from './file-hash.mjs';
+export {createFileHasher} from './file-hash.mjs';
 
 if (typeof window !== 'undefined') {
   if (!helper.allowedPage(new URL(location.href))) {

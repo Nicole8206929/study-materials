@@ -3,32 +3,56 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="GitHub 私有书籍上传入口。当前原生页面暂不支持自动跳过重复文件和补传。">
+  <meta name="description" content="在手机本地核对已上传资料，只将缺失文件打成一个补传包。无需插件或新后台。">
   <meta name="color-scheme" content="light dark">
   <meta name="robots" content="noindex">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
-  <title>上传书籍 · Nicole 的学习书架</title>
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>补齐上传资料 · Nicole 的学习书架</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/upload-checker.js" defer></script>
 </head>
 <body>
   <div class="container guide-container">
     <header><div class="masthead"><a class="brand" href="./">NICOLE / 学习书架</a><a href="./">返回书架</a></div></header>
     <main class="upload-guide">
-      <h1>上传书籍</h1>
-      <p class="guide-intro">手机自带浏览器 · GitHub 私有上传区。</p>
-      <p><strong>自动识别、跳过已上传文件并补齐缺失项，目前尚未实现。</strong></p>
-      <p>下面的入口打开 GitHub 自己的 Edit release 上传页面。它不会因为书架代码更新就自动跳过重复文件；本网站无法修改 GitHub 原生上传程序。</p>
-      <p>已撤下书签和插件安装引导，不需要按旧说明安装或运行它们，也未启用新的上传后台。当前入口保留用于访问原有资料，不代表已经满足自动补传要求。</p>
-      <a class="upload-link" id="privateUpload" href="https://github.com/Nicole8206929/study-materials-originals/releases" rel="noreferrer">打开 GitHub 私有上传区</a>
-      <p>使用有权访问资料库的 GitHub 账号登录，找到“书籍上传区”的编辑按钮。公开书架与试读仍不需要登录。</p>
-      <h2>出现“同名附件已存在”</h2>
-      <p>“An attachment with that filename already exists”表示 GitHub 已有同名附件，不能由此判断其他文件是否已经上传。直接在原生页面重新全选，仍可能出现此提示。</p>
-      <p>已有的成功附件继续保留，不需要为了清除同名提示把它们删除。若刚上传了新文件，等待完成后点 <strong>Save draft</strong> 保存草稿，不需要点 Publish release。</p>
-      <h2>资料整理</h2>
-      <p>完整原件保留在私有资料库，公开书架只展示书目和有限试读。上传后回到聊天说明已上传的资料，再核对文件并按约定整理；本入口不会自动生成讲义或删除原件。</p>
+      <h1>补齐上传资料</h1>
+      <p class="guide-intro">全选原来的文件，只打包未上传的。</p>
+      <p>手机自带浏览器就能使用。不需要安装插件、运行书签或启用新后台；核对和打包在手机上完成。</p>
+      <p id="inventoryStatus" role="status" aria-live="polite">正在载入本次已上传记录…</p>
+      <p id="inventoryDate" class="muted"></p>
+      <section class="check-picker" aria-labelledby="chooseHeading">
+        <h2 id="chooseHeading">1. 全选这批原文件</h2>
+        <label for="checkFiles">选择全部 PDF、PPT、PPTX，包含已经上传的也没关系</label>
+        <input id="checkFiles" type="file" accept=".pdf,.ppt,.pptx" multiple disabled>
+        <p class="muted">请先把微信文件完整保存到手机。这里只读取你主动选择的文件，不会把它们上传到本网站。核对、打包时保持浏览器在前台，进度会显示。</p>
+      </section>
+      <div id="checkWork" hidden>
+        <p id="checkStatus" role="status" aria-live="polite"></p>
+        <label for="checkProgress">处理进度</label>
+        <progress id="checkProgress" max="100" value="0"></progress>
+        <button class="text-button" id="cancelCheck" type="button" hidden>取消本次处理</button>
+        <p id="checkSummary" class="check-summary" role="status"></p>
+        <details id="checkResults" hidden><summary>查看每份文件的核对结果</summary><ul id="checkRows" class="upload-help"></ul></details>
+      </div>
+      <section id="packageSection" hidden aria-labelledby="packageHeading">
+        <h2 id="packageHeading">2. 下载补传包</h2>
+        <p>已上传的和本次重复选择的相同内容会跳过。补传包保留原文件内容，不转换或改写；同名但内容不同的文件会分别保留。</p>
+        <button class="primary" id="makePackage" type="button" hidden>生成补传包</button>
+        <a class="upload-link" id="downloadPackage" hidden>下载补传包</a>
+        <p id="packageInfo"></p>
+      </section>
+      <section id="nextSteps" hidden aria-labelledby="uploadHeading">
+        <h2 id="uploadHeading">3. 只上传这一个 ZIP</h2>
+        <p>下载后，在原 GitHub 上传区选择刚生成的 <strong id="packageName"></strong>，等成功后点 <strong>Save draft</strong>。不需要逐个挑缺失文件，也不需要删除原来的成功附件。</p>
+        <p>上传完成后回到聊天告诉我“补传包已上传”。我会校验包内文件，再按约定去重和整理。</p>
+      </section>
+      <p><a id="privateUpload" href="https://github.com/Nicole8206929/study-materials-originals/releases" rel="noreferrer">打开原 GitHub 私有上传区</a></p>
+      <p class="upload-privacy">本页使用专用链接内对应的已上传记录，不实时查询 GitHub。新包上传后回到聊天，我会刷新记录；不要把旧记录当作最新状态。私人链接仅用于读取加密的核对清单，不授予原件下载权限。</p>
+      <noscript><p>请允许浏览器运行本页 JavaScript 后再打开私人核对链接；无需安装扩展。</p></noscript>
     </main>
-    <footer><p><a href="./">返回书架</a> · <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases">GitHub 附件说明</a></p></footer>
+    <footer><p><a href="./">返回书架</a> · 完整原件仍保留在私有资料库</p></footer>
   </div>
 </body>
 </html>

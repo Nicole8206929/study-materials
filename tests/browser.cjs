@@ -93,11 +93,12 @@ const total = catalog.books.length;
     assert(page.url().endsWith('/upload.html'));
     const upload = page.locator('#privateUpload');
     assert.equal(await upload.getAttribute('href'),'https://github.com/Nicole8206929/study-materials-originals/releases');
-    assert.equal(await page.locator('input[type=password],input[type=file]').count(),0);
-    assert.equal(await page.locator('script,#copyBookmark,#installUploadHelper,#tampermonkeyInstall').count(),0);
-    assert((await page.locator('.guide-intro').innerText()).includes('手机自带浏览器'));
-    assert((await page.locator('main').innerText()).includes('目前尚未实现'));
-    assert((await page.locator('main').innerText()).includes('Save draft'));
+    assert.equal(await page.locator('input[type=password]').count(),0);
+    assert.equal(await page.locator('#copyBookmark,#installUploadHelper,#tampermonkeyInstall').count(),0);
+    assert.equal(await page.locator('script[src="assets/upload-checker.js"]').count(),1);
+    await page.waitForFunction(()=>document.querySelector('#inventoryStatus').textContent.includes('私人核对链接'));
+    assert.equal(await page.locator('#checkFiles').isDisabled(),true);
+    assert((await page.locator('main').innerText()).includes('手机自带浏览器'));
     for (const scheme of ['light','dark']) {
       await page.emulateMedia({colorScheme:scheme});
       assert.deepEqual((await new AxeBuilder({page}).analyze()).violations,[]);
