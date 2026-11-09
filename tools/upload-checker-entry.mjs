@@ -256,7 +256,8 @@ async function resumePage() {
   if (checkAgain && !abort) checkSelectedFiles();
   // Keep file references, completed hashes and an existing package. Refresh
   // the encrypted record without reloading this page or resetting selections.
-  if (refreshingInventory || loader?.signal.aborted === false || Date.now() - returnedAt < 15000) return;
+  if (loader) { initialize(); return; }
+  if (refreshingInventory || Date.now() - returnedAt < 15000) return;
   const context = readContext(new URL(location.href));
   if (!context) return;
   returnedAt = Date.now(); refreshingInventory = true;
@@ -270,6 +271,7 @@ async function resumePage() {
     const signature = value => JSON.stringify([value?.expectedCount,value?.stage,value?.uploaded.map(item => `${item.size}:${item.sha256}`).sort()]);
     const changed = signature(snapshot) !== signature(loaded);
     snapshot = loaded;
+    try { localStorage.setItem(savedContextKey,JSON.stringify(context)); } catch {}
     showInventory();
     element('recordRecovery').hidden = true;
     if (changed && selection.entries.length) selectionChanged('返回前台后已载入更新的记录，正在重新核对已选文件。');

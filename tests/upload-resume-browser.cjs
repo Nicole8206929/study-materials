@@ -11,9 +11,9 @@ const path = require('node:path');
     const files = Array.from({length:97},(_,i)=>({name:`${i+1}.pptx`,mimeType:'application/octet-stream',buffer:Buffer.from(`original ${i+1}`)}));
     const uploaded = files.map(file=>({size:file.buffer.length,sha256:createHash('sha256').update(file.buffer).digest('hex')}));
     const key = randomBytes(32);
-    function encrypt(count) {
+    function encrypt(count,archived) {
       const iv=randomBytes(12),cipher=createCipheriv('aes-256-gcm',key,iv);
-      const data=Buffer.concat([cipher.update(JSON.stringify({version:1,checkedAt:new Date().toISOString(),expectedCount:97,uploaded:uploaded.slice(0,count)})),cipher.final(),cipher.getAuthTag()]);
+      const data=Buffer.concat([cipher.update(JSON.stringify({version:1,checkedAt:new Date().toISOString(),expectedCount:97,...(archived?{stage:'compiled'}:{}),uploaded:uploaded.slice(0,count)})),cipher.final(),cipher.getAuthTag()]);
       return {version:1,iv:iv.toString('base64url'),data:data.toString('base64url')};
     }
     for (const engine of [chromium,firefox]) {
@@ -28,8 +28,8 @@ const path = require('node:path');
         }}});
         window.returnToChecker=()=>{window.testVisible=true;document.dispatchEvent(new Event('visibilitychange'));window.dispatchEvent(new Event('online'));};
       });
-      let count=81,offline=false;
-      await context.route('**/upload-check-data/*.json',route=>offline?route.abort():route.fulfill({json:encrypt(count)}));
+      let count=81,offline=false,archived=false;
+      await context.route('**/upload-check-data/*.json',route=>offline?route.abort():route.fulfill({json:encrypt(count,archived)}));
       const page=await context.newPage(),errors=[],requests=[];
       page.on('pageerror',error=>errors.push(error.message));
       page.on('request',request=>requests.push({url:request.url(),method:request.method()}));
@@ -52,6 +52,9 @@ const path = require('node:path');
       assert((await page.locator('#checkSummary').innerText()).includes('已上传 97'));
       offline=false; await page.evaluate(()=>window.returnToChecker());
       await page.waitForFunction(()=>document.querySelector('#resumeStatus').textContent.includes('记录未变'));
+      archived=true; await page.evaluate(()=>window.returnToChecker());
+      await page.waitForFunction(()=>document.querySelector('#checkSummary').textContent.includes('已归档 97'));
+      assert((await page.locator('#inventoryStatus').innerText()).includes('只保留最终合集'));
       await page.locator('#clearSelection').click();
       await page.evaluate(()=>{
         const read=Blob.prototype.arrayBuffer;
