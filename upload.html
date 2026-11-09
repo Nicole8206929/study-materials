@@ -11,7 +11,8 @@
   <title>补齐上传资料 · Nicole 的学习书架</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
-  <script src="assets/upload-checker.js" defer></script>
+  <script src="assets/upload-checker-bootstrap.js?v=picker-2" defer></script>
+  <script src="assets/upload-checker.js?v=picker-2" defer></script>
 </head>
 <body>
   <div class="container guide-container">
@@ -20,12 +21,19 @@
       <h1>补齐上传资料</h1>
       <p class="guide-intro">全选原来的文件，只打包未上传的。</p>
       <p>手机自带浏览器就能使用。不需要安装插件、运行书签或启用新后台；核对和打包在手机上完成。</p>
-      <p id="inventoryStatus" role="status" aria-live="polite">正在载入本次已上传记录…</p>
+      <p id="inventoryStatus" role="status" aria-live="polite">正在准备核对工具；可以先选择文件，记录载入后会自动核对。</p>
       <p id="inventoryDate" class="muted"></p>
+      <button class="text-button" id="retryInventory" type="button">重新载入记录</button>
+      <form id="recordRecovery" class="install-address" hidden>
+        <label for="privateCheckLink">如果打开时丢失了链接信息，在这里粘贴聊天中的完整私人核对链接</label>
+        <input id="privateCheckLink" type="url" autocomplete="off" autocapitalize="off" spellcheck="false">
+        <button class="primary" id="restoreInventory" type="submit">载入记录并继续核对</button>
+        <p class="muted">已选文件会留在当前页面，无需重新选择。记录未载入前不会生成补传包。</p>
+      </form>
       <section class="check-picker" aria-labelledby="chooseHeading">
         <h2 id="chooseHeading">1. 全选这批原文件</h2>
         <label for="checkFiles">选择全部 PDF、PPT、PPTX，包含已经上传的也没关系</label>
-        <input id="checkFiles" type="file" accept=".pdf,.ppt,.pptx" multiple disabled>
+        <input id="checkFiles" type="file" accept=".pdf,.ppt,.pptx" multiple autocomplete="off">
         <p class="muted">请先把微信文件完整保存到手机。这里只读取你主动选择的文件，不会把它们上传到本网站。核对、打包时保持浏览器在前台，进度会显示。</p>
       </section>
       <div id="checkWork" hidden>

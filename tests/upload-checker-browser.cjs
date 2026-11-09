@@ -25,6 +25,22 @@ const root = path.join(__dirname, '..');
       const page = await context.newPage(), errors = [];
       page.on('pageerror', e => errors.push(e.message));
       const url = `http://127.0.0.1:8766/upload.html?batch=${'a'.repeat(32)}#k=${key.toString('base64url')}`;
+      // A missing private fragment must not disable the phone's file picker.
+      // Files selected before the record loads are retained, then checked as
+      // soon as the user restores the complete link.
+      await page.goto('http://127.0.0.1:8766/upload.html', {waitUntil: 'networkidle'});
+      assert.equal(await page.locator('#checkFiles').isDisabled(), false);
+      await page.locator('#checkFiles').setInputFiles(all);
+      await page.waitForFunction(() => document.querySelector('#checkStatus').textContent.includes('已选择 97'));
+      assert.equal(await page.locator('#makePackage').isVisible(), false);
+      assert.equal(await page.locator('#downloadPackage').isVisible(), false);
+      await page.locator('#privateCheckLink').fill(url);
+      await page.locator('#restoreInventory').click();
+      await page.waitForFunction(() => document.querySelector('#checkSummary').textContent.includes('待补传 16'));
+      // Returning through the ordinary shelf entry restores this browser's
+      // last successfully read inventory, without asking for the link again.
+      await page.goto('http://127.0.0.1:8766/upload.html', {waitUntil: 'networkidle'});
+      await page.waitForFunction(() => document.querySelector('#inventoryStatus').textContent.includes('已载入 81'));
       await page.goto(url, {waitUntil: 'networkidle'});
       assert.equal(await page.locator('#checkFiles').count(), 1);
       await page.waitForFunction(() => !document.querySelector('#checkFiles').disabled);
@@ -63,7 +79,47 @@ const root = path.join(__dirname, '..');
       assert.equal(await page.locator('#downloadPackage').isVisible(), false);
       await page.goto(url.replace(/#k=.*/, '#k=' + randomBytes(32).toString('base64url')));
       await page.waitForFunction(() => document.querySelector('#inventoryStatus').textContent.includes('不完整'));
-      assert.equal(await page.locator('#checkFiles').isDisabled(), true);
+      assert.equal(await page.locator('#checkFiles').isDisabled(), false);
+      await page.locator('#checkFiles').setInputFiles(all);
+      await page.waitForFunction(() => document.querySelector('#checkStatus').textContent.includes('等待'));
+      assert.equal(await page.locator('#makePackage').isVisible(), false);
+      assert.equal(await page.locator('#downloadPackage').isVisible(), false);
+      let refuseOnce = true;
+      await page.route('**/upload-check-data/*.json', route => {
+        if (refuseOnce) { refuseOnce = false; return route.fulfill({status:503,body:'not available'}); }
+        return route.fulfill({json:envelope});
+      });
+      await page.goto(url.replace('upload.html?', 'upload.html?v=retry&'), {waitUntil:'networkidle'});
+      await page.waitForFunction(() => document.querySelector('#inventoryStatus').textContent.includes('未载入'));
+      assert.equal(await page.locator('#checkFiles').isDisabled(), false);
+      await page.locator('#checkFiles').setInputFiles(all);
+      await page.waitForFunction(() => document.querySelector('#checkStatus').textContent.includes('等待'));
+      await page.locator('#retryInventory').click();
+      await page.waitForFunction(() => document.querySelector('#checkSummary').textContent.includes('待补传 16'));
+      if (engine === chromium) {
+        const isolated = await browser.newContext();
+        await isolated.addInitScript(() => {
+          Object.defineProperty(window, 'localStorage', {get() { throw new Error('storage disabled'); }});
+        });
+        await isolated.route('**/upload-check-data/*.json', route => route.fulfill({json:envelope}));
+        const isolatedPage = await isolated.newPage();
+        await isolatedPage.goto(url);
+        await isolatedPage.waitForFunction(() => document.querySelector('#inventoryStatus').textContent.includes('已载入 81'));
+        assert.equal(await isolatedPage.locator('#checkFiles').isDisabled(), false);
+        await isolated.close();
+        const blocked = await browser.newContext();
+        await blocked.addInitScript(() => {
+          const timer = window.setTimeout.bind(window);
+          window.setTimeout = (fn, ms, ...args) => timer(fn, ms === 12000 ? 1 : ms, ...args);
+        });
+        await blocked.route('**/assets/upload-checker.js*', route => route.abort());
+        const blockedPage = await blocked.newPage();
+        await blockedPage.goto('http://127.0.0.1:8766/upload.html');
+        await blockedPage.waitForFunction(() => document.querySelector('#inventoryStatus').textContent.includes('工具未能启动'));
+        assert.equal(await blockedPage.locator('#checkFiles').isDisabled(), false);
+        assert.equal(await blockedPage.locator('#makePackage').isVisible(), false);
+        await blocked.close();
+      }
       assert.deepEqual(errors, []);
       await context.close(); await browser.close(); browser = null;
       console.log(`PASS ${engine.name()}: private link, select 97 / skip 81 / package 16, valid ZIP download, no file network transfer, all-uploaded and bad-key handling.`);

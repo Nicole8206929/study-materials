@@ -95,9 +95,9 @@ const total = catalog.books.length;
     assert.equal(await upload.getAttribute('href'),'https://github.com/Nicole8206929/study-materials-originals/releases');
     assert.equal(await page.locator('input[type=password]').count(),0);
     assert.equal(await page.locator('#copyBookmark,#installUploadHelper,#tampermonkeyInstall').count(),0);
-    assert.equal(await page.locator('script[src="assets/upload-checker.js"]').count(),1);
-    await page.waitForFunction(()=>document.querySelector('#inventoryStatus').textContent.includes('私人核对链接'));
-    assert.equal(await page.locator('#checkFiles').isDisabled(),true);
+    assert.equal(await page.locator('script[src^="assets/upload-checker.js"]').count(),1);
+    await page.waitForFunction(()=>document.querySelector('#inventoryStatus').textContent.includes('核对记录还没载入'));
+    assert.equal(await page.locator('#checkFiles').isDisabled(),false);
     assert((await page.locator('main').innerText()).includes('手机自带浏览器'));
     for (const scheme of ['light','dark']) {
       await page.emulateMedia({colorScheme:scheme});
