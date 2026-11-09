@@ -1,12 +1,15 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
+const {createHash} = require('node:crypto');
 const {chromium, firefox} = require('playwright');
 const helper = fs.readFileSync(path.join(__dirname,'../tools/github-upload-helper.user.js'),'utf8');
+const bookmark = fs.readFileSync(path.join(__dirname,'../tools/github-upload-bookmark.txt'),'utf8').trim();
+const digest = content => 'sha256:' + createHash('sha256').update(content).digest('hex');
 const prefix='/Nicole8206929/study-materials-originals/releases';
 const edit=`https://github.com${prefix}/edit/untagged-fixture`;
 const component=path.join(__dirname,'../node_modules/@github/file-attachment-element/dist');
-const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Native upload fixture</title></head><body>
+const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'unsafe-inline'; object-src 'none'"><title>Native upload fixture</title></head><body>
 <main><h1>Edit release</h1><form class="js-release-form"><input id="release_id" type="hidden" value="438226489">
 <label>Title<input id="release_name" type="text" value="书籍上传区"></label><label>Body<textarea id="release_body">Fixture</textarea></label>
 <div id="native-rows"></div><file-attachment input="release-files" class="js-upload-release-file"><input id="release-files" type="file" multiple><p>Attach binaries</p></file-attachment>
@@ -21,7 +24,9 @@ for(const f of config.assets){const row=document.createElement('div');row.classN
 document.addEventListener('file-attachment-accepted',async e=>{
  for(const attachment of e.detail.attachments){
   const f=attachment.file;attachment.saving(0);
-  const response=await fetch('/helper-fixture/upload',{method:'POST',body:JSON.stringify({name:f.name,size:f.size})});
+  const bytes=new Uint8Array(await crypto.subtle.digest('SHA-256',await f.arrayBuffer()));
+  const digest='sha256:'+Array.from(bytes,b=>b.toString(16).padStart(2,'0')).join('');
+  const response=await fetch('/helper-fixture/upload',{method:'POST',body:JSON.stringify({name:f.name,size:f.size,digest})});
   if(!response.ok){
    const row=document.createElement('div');row.className='is-failed';row.dataset.state='failed';
    const input=document.createElement('input');input.type='text';input.value=f.name;
@@ -43,7 +48,7 @@ document.querySelector('#publish').addEventListener('click',()=>fetch('/helper-f
 window.nativeReady=true;`;
 
 async function fixture(browser, options={}) {
-  const assets=new Map(Object.entries(options.initial||{}).map(([name,size])=>[name,{name,size,state:'uploaded'}]));
+  const assets=new Map(Object.entries(options.initial||{}).map(([name,size])=>[name,{name,size,state:'uploaded',digest:digest(options.contents?.[name] || (size===3?'abc':Buffer.alloc(size)))}]));
   for(const name of options.starters||[]) assets.set(name,{name,size:3,state:'starter'});
   const state={assets,uploads:[],deletes:[],saves:0,publishes:0,active:0,maxActive:0,heads:0};
   const failures={...options.failures};
@@ -58,7 +63,7 @@ async function fixture(browser, options={}) {
       return route.fulfill({contentType:'text/html',body});
     }
     if(p.startsWith(`${prefix}/expanded_assets/`)){
-      const body=[...assets.values()].map(f=>`<a href="${prefix}/download/untagged-fixture/${encodeURIComponent(f.name)}">asset</a>`).join('');
+      const body='<ul>'+[...assets.values()].map(f=>`<li><a href="${prefix}/download/untagged-fixture/${encodeURIComponent(f.name)}">asset</a>${f.state==='uploaded'&&!options.noDigest?'<clipboard-copy value="'+f.digest+'"></clipboard-copy>':''}</li>`).join('')+'</ul>';
       return route.fulfill({contentType:'text/html',body});
     }
     if(p.startsWith(`${prefix}/download/`)){
@@ -89,25 +94,32 @@ async function fixture(browser, options={}) {
     }
     return route.fulfill({status:404,body:''});
   });
-  await context.addInitScript(()=>{
+  await context.addInitScript(({bookmark})=>{
     const timer=window.setTimeout.bind(window);
     window.setTimeout=(fn,ms,...args)=>timer(fn,[1500,4000,10000,1200,2400].includes(ms)?1:ms,...args);
+    if(bookmark)return;
     window.GM_addStyle=css=>{const s=document.createElement('style');s.textContent=css;document.head.append(s);};
     window.GM_setValue=()=>{};window.GM_getValue=()=>null;window.unsafeWindow=window;
     window.GM_xmlhttpRequest=options=>fetch(options.url,{method:options.method,headers:options.headers}).then(async response=>{
       options.onload({status:response.status,finalUrl:response.url,responseText:options.method==='HEAD'?'':await response.text(),responseHeaders:[...response.headers].map(([k,v])=>k+': '+v).join('\r\n')});
     }).catch(options.onerror);
-  });
-  await context.addInitScript({content:helper});
+  },{bookmark:!!options.bookmark});
+  if(!options.bookmark)await context.addInitScript({content:helper});
   const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto(edit);
   try { await page.waitForFunction(()=>window.nativeReady===true); }
   catch(error) { throw new Error('Native fixture not ready: '+errors.join('; ')+'; '+await page.locator('body').innerText()); }
+  const activate = async () => {
+    try { await page.goto(bookmark); }
+    catch(error) { if(!/ERR_ABORTED|NS_ERROR_ABORT|interrupted by another navigation/.test(error.message)) throw error; }
+    await page.waitForSelector('#nicole-upload-helper');
+  };
+  if(options.bookmark)await activate();
   await page.waitForSelector('#nicole-upload-helper');
   const choose=async names=>{
     await page.locator('#release-files').setInputFiles(names.map(name=>({name,mimeType:'application/octet-stream',buffer:Buffer.from('abc')})));
   };
-  return {page,state,choose,errors,close:()=>context.close()};
+  return {page,state,choose,activate,errors,close:()=>context.close()};
 }
 
 (async()=>{
@@ -141,7 +153,7 @@ async function fixture(browser, options={}) {
       assert.deepEqual(f.state.uploads,['unsafe.pdf']);assert.deepEqual(f.state.deletes,[]);assert(f.state.assets.has('safe.pdf'));await f.close();
 
       f=await fixture(browser,{failures:{'received.pdf':1},lostResponse:true});await f.choose(['received.pdf']);
-      await f.page.waitForFunction(()=>document.querySelector('#nicole-upload-helper [role=status]').textContent.includes('同名附件已完整存在'));
+      await f.page.waitForFunction(()=>document.querySelector('#nicole-upload-helper [role=status]').textContent.includes('同名附件可能已完整存在'));
       assert.deepEqual(f.state.deletes,[]);assert.equal(f.state.assets.get('received.pdf').state,'uploaded');await f.close();
 
       f=await fixture(browser,{initial:{'changed.pdf':99}});await f.choose(['changed.pdf']);
@@ -171,6 +183,37 @@ async function fixture(browser, options={}) {
         throw new Error('Delayed control: '+await f.page.locator('#nicole-upload-helper').innerText()+'; native='+JSON.stringify(nativeInfo)+'; errors='+f.errors.join('; ')+'; uploads='+JSON.stringify(f.state.uploads));
       }
       assert.deepEqual(f.state.uploads,[]);assert.deepEqual(f.errors,[]);await f.close();
+      if(engine===chromium){
+        f=await fixture(browser,{bookmark:true,initial:{'old.pdf':3}});
+        await f.choose(['old.pdf','new.pptx']);
+        await f.page.waitForFunction(()=>document.querySelector('#nicole-upload-helper [role=status]').textContent.includes('已保存草稿'));
+        assert.deepEqual(f.state.uploads,['new.pptx']);assert.equal(f.state.heads,0);assert.equal(f.state.saves,1);assert.equal(f.state.publishes,0);
+        assert((await f.page.locator('#nicole-upload-helper').innerText()).includes('已跳过 1'));
+        await f.activate();assert.equal(await f.page.locator('#nicole-upload-helper').count(),1);
+        await f.page.reload();await f.page.waitForFunction(()=>window.nativeReady===true);await f.activate();await f.choose(['old.pdf','new.pptx']);
+        await f.page.waitForFunction(()=>document.querySelector('#nicole-upload-helper [role=status]').textContent.includes('无须重复'));
+        assert.deepEqual(f.state.uploads,['new.pptx']);assert.deepEqual(f.errors,[]);await f.close();
+
+        f=await fixture(browser,{bookmark:true,initial:{'changed.pdf':3},contents:{'changed.pdf':'xyz'}});
+        await f.choose(['changed.pdf','next.pdf']);
+        await f.page.waitForFunction(()=>document.querySelector('#nicole-upload-helper').textContent.includes('冲突 1'));
+        assert.deepEqual(f.state.uploads,['next.pdf']);assert.deepEqual(f.state.deletes,[]);await f.close();
+
+        f=await fixture(browser,{bookmark:true,failures:{'retry.pdf':1}});await f.choose(['retry.pdf']);
+        await f.page.waitForFunction(()=>document.querySelector('#nicole-upload-helper [role=status]').textContent.includes('已保存草稿'));
+        assert.deepEqual(f.state.uploads,['retry.pdf','retry.pdf']);assert.deepEqual(f.state.deletes,['retry.pdf']);await f.close();
+
+        f=await fixture(browser,{bookmark:true,failures:{'received.pdf':1},lostResponse:true});await f.choose(['received.pdf']);
+        await f.page.waitForFunction(()=>document.querySelector('#nicole-upload-helper [role=status]').textContent.includes('不会删除'));
+        assert.deepEqual(f.state.uploads,['received.pdf']);assert.deepEqual(f.state.deletes,[]);await f.close();
+
+        for(const extra of [{noDigest:true,initial:{'old.pdf':3}},{starters:['old.pdf']}]){
+          f=await fixture(browser,{bookmark:true,...extra});await f.choose(['old.pdf','next.pdf']);
+          await f.page.waitForFunction(()=>document.querySelector('#nicole-upload-helper [role=status]').textContent.includes('校验值'));
+          assert.deepEqual(f.state.uploads,[]);assert.deepEqual(f.state.deletes,[]);await f.close();
+        }
+        console.log('PASS native bookmark: actual javascript URL under strict CSP, no extension globals, content dedup, same-size conflicts, retry, response loss, unknown hashes and reactivation.');
+      }
       console.log(`PASS ${engine.name()}: native GitHub file-attachment component, reselect/skip, serial upload, safe failure retry, conflicts, stale placeholders, page reload and draft safety.`);
     }finally{await browser.close();}
   }

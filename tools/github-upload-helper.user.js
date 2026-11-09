@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Nicole 私有书架自动补传
 // @namespace    https://nicole8206929.github.io/study-materials/
-// @version      1.0.0
+// @version      1.1.0
 // @description  重新全选文件，核对成功附件后逐个补传；不覆盖成功文件。
 // @match        https://github.com/Nicole8206929/study-materials-originals/releases*
 // @run-at       document-start
@@ -23,7 +23,7 @@
   else api.install();
 })(function () {
   'use strict';
-  const VERSION = '1.0.0';
+  const VERSION = '1.1.0';
   const REPO = '/Nicole8206929/study-materials-originals';
   const RELEASE_ID = '438226489';
   const MAX_BYTES = 2 * 1024 ** 3;
@@ -138,7 +138,15 @@
       try { name = decodeURIComponent(url.pathname.split('/').pop()); } catch { throw new StopError('附件名称无法可靠识别，已停止。'); }
       const key = normalize(name);
       if (files.has(key) && files.get(key).url !== url.href) throw new StopError('附件出现同名歧义，已停止。');
-      files.set(key, {name, url: url.href});
+      const row = link.closest('li');
+      const hashes = row ? [...row.querySelectorAll('clipboard-copy[value]')]
+        .map(item => item.getAttribute('value')).filter(value => /^sha256:[a-f0-9]{64}$/i.test(value)) : [];
+      if (hashes.length > 1) throw new StopError('附件校验值出现歧义，已停止。');
+      if (hashes.length && [...row.querySelectorAll('a[href]')].filter(item => {
+        const target = new URL(item.getAttribute('href'), base);
+        return target.origin === 'https://github.com' && target.pathname.startsWith(`${REPO}/releases/download/`);
+      }).length !== 1) throw new StopError('无法把校验值对应到唯一附件，已停止。');
+      files.set(key, {name, url: url.href, digest: hashes[0]?.toLowerCase() || null});
     }
     for (const item of doc.querySelectorAll('include-fragment[src],.js-release-expandable[data-expand-url]')) {
       const value = item.getAttribute('src') || item.getAttribute('data-expand-url');
@@ -149,12 +157,13 @@
   }
 
   class GitHubAdapter {
-    constructor(doc, win, request, changed = () => {}) {
+    constructor(doc, win, request, changed = () => {}, options = {}) {
       this.doc = doc; this.win = win; this.request = request; this.changed = changed;
       this.uploader = doc.querySelector('file-attachment.js-upload-release-file');
       this.form = doc.querySelector('form.js-release-form');
       this.files = new Map(); this.heads = new Map(); this.failures = new Map(); this.allowed = null;
       this.verified = false; this.confirmed = 0;
+      this.hash = options.hash || null;
       this.originalFields = this.fields();
       if (!this.form || !this.uploader || doc.querySelector('#release_id')?.value !== RELEASE_ID) throw new StopError('未识别到指定上传区；请打开“书籍上传区”的编辑页。');
       const native = this.uploader.wrappedJSObject || this.uploader;
@@ -166,7 +175,7 @@
       let response;
       try { response = await this.request({method, url: safe.href, timeout: 45000, headers: {Accept: method === 'GET' ? 'text/html' : '*/*'}}); }
       catch { throw new StopError('网络未能确认附件状态，已暂停；网络恢复后点“继续”。'); }
-      if (response.status === 401 || response.status === 403 || /\/login(?:\?|$)/.test(response.finalUrl || '')) throw new StopError('请先在 Firefox 登录本人的 GitHub，再刷新上传区。');
+      if (response.status === 401 || response.status === 403 || /\/login(?:\?|$)/.test(response.finalUrl || '')) throw new StopError('请先在当前浏览器登录本人的 GitHub，再刷新上传区。');
       return response;
     }
     async refresh() {
@@ -192,6 +201,12 @@
       if (this.failures.has(normalize(file.name))) { await this.cleanupFailed(file); await this.refresh(); }
       const key = normalize(file.name); const item = this.files.get(key);
       if (!item) return null;
+      if (this.hash) {
+        if (!item.digest) throw new StopError(`同名附件还没有可验证的校验值：${file.name}。已暂停，不会覆盖或删除。`);
+        const digest = await this.hash(file);
+        if (digest !== item.digest) throw new FileConflict('GitHub 中已有同名但内容不同的文件；请改成不同名称，不会覆盖。');
+        return {...item, size: file.size};
+      }
       if (this.heads.has(key)) return this.heads.get(key);
       const response = await this.read(item.url, 'HEAD');
       if (response.status !== 200) throw new StopError(`无法确认同名附件是否完整：${file.name}。已暂停，不会删除它。`);
@@ -261,7 +276,7 @@
       const slug = pageURL(this.win.location.href).pathname.split('/').pop();
       const download = existing?.url || `https://github.com${REPO}/releases/download/${encodeURIComponent(slug)}/${encodeURIComponent(file.name)}`;
       const probe = await this.read(download, 'HEAD');
-      if (probe.status === 200) throw new StopError('同名附件已完整存在，已暂停且不会删除它。重新打开上传区并全选即可核对后继续。');
+      if (existing?.digest || probe.status === 200 || probe.status === 0) throw new StopError('同名附件可能已完整存在，已暂停且不会删除它。重新打开上传区并全选即可核对后继续。');
       if (probe.status !== 404) throw new StopError('无法确认失败附件是否仍在服务端处理，已暂停，不会删除。');
       const candidates = [...this.doc.querySelectorAll('input[type=text]')].filter(input => input.value === file.name && !owned.initialInputs.has(input));
       let row, button;
@@ -311,14 +326,30 @@
     }
   }
 
-  function install() {
+  function install(options = {}) {
     if (typeof window === 'undefined' || !allowedPage(new URL(location.href))) return;
+    if (document.getElementById('nicole-upload-helper')) {
+      document.getElementById('nicole-upload-helper').scrollIntoView({block: 'center'});
+      return;
+    }
     const nativeWindow = typeof unsafeWindow !== 'undefined' ? unsafeWindow : window;
     let controller = null;
     function gmRequest(options) {
+      if (typeof GM_xmlhttpRequest !== 'function' && typeof installOptions.hash === 'function') {
+        const safe = pageURL(options.url);
+        const abort = new AbortController();
+        const timeout = setTimeout(() => abort.abort(), options.timeout);
+        return fetch(safe.href, {method: options.method, headers: options.headers, credentials: 'same-origin',
+          cache: 'no-store', redirect: options.method === 'HEAD' ? 'manual' : 'error', signal: abort.signal})
+          .then(async response => ({status: response.status, finalUrl: response.url,
+            responseText: options.method === 'HEAD' ? '' : await response.text(),
+            responseHeaders: [...response.headers].map(([key, value]) => `${key}: ${value}`).join('\r\n')}))
+          .finally(() => clearTimeout(timeout));
+      }
       if (typeof GM_xmlhttpRequest !== 'function') return Promise.reject(new StopError('没有取得扩展网络权限；请通过 Tampermonkey 安装，不能直接当网页脚本打开。'));
       return new Promise((resolve, reject) => GM_xmlhttpRequest({...options, onload: resolve, onerror: reject, ontimeout: reject}));
     }
+    const installOptions = options;
     async function mount() {
       if (!allowedPage(new URL(location.href)) || document.getElementById('nicole-upload-helper')) return;
       if (!location.pathname.includes('/releases/edit/')) {
@@ -332,7 +363,9 @@
       }
       const panel = document.createElement('section'); panel.id = 'nicole-upload-helper'; panel.setAttribute('aria-label', 'Nicole 自动补传助手');
       const title = document.createElement('h2'); title.textContent = '自动补传助手';
-      const note = document.createElement('p'); note.textContent = '重新全选即可；按文件名和准确大小跳过成功附件，不覆盖。首次先逐个验证。';
+      const note = document.createElement('p'); note.textContent = installOptions.hash
+        ? '重新全选即可；在手机本地核对文件内容，跳过已成功上传的，只补传缺失项。刷新后需要重新运行书签。'
+        : '重新全选即可；按文件名和准确大小跳过成功附件，不覆盖。首次先逐个验证。';
       const status = document.createElement('p'); status.setAttribute('role', 'status'); status.setAttribute('aria-live', 'polite');
       const counts = document.createElement('p');
       const controls = document.createElement('div');
@@ -383,7 +416,7 @@
             if (!panel.isConnected) return;
           }
         }
-        adapter = new GitHubAdapter(document, nativeWindow, gmRequest);
+        adapter = new GitHubAdapter(document, nativeWindow, gmRequest, () => {}, installOptions);
         queue = new UploadQueue(adapter, changed); queue.notify();
         status.textContent = '已连接原生文件控件。请先重新选择文件；将核对后逐个补传。真实上传尚未验证。';
       } catch (error) { initializing = false; earlyFiles.length = 0; initializationError = error.message; status.textContent = error.message; }
@@ -419,7 +452,7 @@
       controller = {queue, adapter, capture};
       if (earlyFiles.length) { queue.add(earlyFiles); queue.run(); }
       else adapter.refresh().then(() => {
-          if (!queue.running && !queue.jobs.length) status.textContent = `已识别 ${adapter.files.size} 个现有附件。重新全选后，会核实大小并自动补传；真实上传尚未验证。`;
+          if (!queue.running && !queue.jobs.length) status.textContent = `已识别 ${adapter.files.size} 个现有附件。重新全选后，会${installOptions.hash ? '核对内容' : '核实大小'}并自动补传；真实上传尚未验证。`;
         }).catch(error => { queue.paused = true; queue.message = error.message; queue.notify(); });
     }
     document.addEventListener('turbo:before-render', () => {

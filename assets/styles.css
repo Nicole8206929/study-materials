@@ -30,7 +30,8 @@
 .upload-privacy { border-top:1px solid var(--border); padding-top:18px; color:var(--muted); font-size:13px; }
 .install-address { margin:18px 0; padding:16px; border:1px solid var(--border); border-radius:5px; }
 .install-address label { display:block; margin:12px 0 6px; font-size:13px; }
-.install-address input { display:block; width:100%; min-height:44px; padding:9px; color:var(--fg); background:var(--card); border:1px solid var(--border); border-radius:4px; font-size:13px; }
+.install-address input,.install-address textarea { display:block; width:100%; min-height:44px; padding:9px; color:var(--fg); background:var(--card); border:1px solid var(--border); border-radius:4px; font-size:13px; }
+.install-address [hidden] { display:none; }
 .install-address button { min-height:44px; margin-top:12px; max-width:100%; }
 .install-address summary { min-height:44px; cursor:pointer; color:var(--accent); }
 #installCopyStatus { color:var(--accent); }

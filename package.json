@@ -5,12 +5,15 @@
   "description": "Nicole 的学习资料库",
   "license": "MIT",
   "scripts": {
-    "test": "node --test tests/upload-helper.test.cjs && node tests/browser.cjs && node tests/upload-helper-browser.cjs",
-    "start": "python3 -m http.server 8000"
+    "test": "node scripts/build-bookmark.mjs --check && node --test tests/upload-helper.test.cjs tests/bookmark-hash.test.mjs && node tests/browser.cjs && node tests/upload-helper-browser.cjs",
+    "start": "python3 -m http.server 8000",
+    "build:bookmark": "node scripts/build-bookmark.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",
     "@github/file-attachment-element": "3.2.0",
+    "@noble/hashes": "2.4.0",
+    "esbuild": "0.28.2",
     "playwright": "1.65.0"
   }
 }
