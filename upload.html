@@ -3,86 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="用手机自带浏览器补传私有书籍资料，重新全选，核对已上传文件后自动补齐。">
+  <meta name="description" content="GitHub 私有书籍上传入口。当前原生页面暂不支持自动跳过重复文件和补传。">
   <meta name="color-scheme" content="light dark">
   <meta name="robots" content="noindex">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
   <title>上传书籍 · Nicole 的学习书架</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
-  <script src="assets/upload-install.js" defer></script>
 </head>
 <body>
   <div class="container guide-container">
     <header><div class="masthead"><a class="brand" href="./">NICOLE / 学习书架</a><a href="./">返回书架</a></div></header>
     <main class="upload-guide">
       <h1>上传书籍</h1>
-      <p class="guide-intro">手机自带浏览器 · 重新全选，自动补齐。</p>
-      <p>首次保存“自动补传”书签后，就能在 GitHub 原有上传页补传。不装扩展，不启用新后台，完整文件仍留在私有资料库。</p>
-      <p class="upload-privacy">已通过浏览器模拟测试；OPPO／vivo 真机兼容性待验证。先看到“自动补传助手”，再选择文件。</p>
-
-      <h2>1. 保存“自动补传”书签</h2>
-      <div class="install-address">
-        <button class="primary" id="copyBookmark" type="button" data-copy-field="bookmarkAddress" disabled>复制书签地址</button>
-        <p id="bookmarkLoadStatus" role="status" aria-live="polite">正在准备书签…</p>
-        <label for="bookmarkAddress" hidden>书签地址，完整复制到书签的网址栏</label>
-        <textarea id="bookmarkAddress" readonly rows="3" hidden spellcheck="false"></textarea>
-        <noscript><p>请允许浏览器运行 JavaScript 后刷新本页，才能复制和使用书签。</p></noscript>
-      </div>
-      <p id="installCopyStatus" role="status" aria-live="polite"></p>
-
-      <ol class="upload-steps">
-        <li>在手机桌面打开 OPPO 或 vivo 自带的“浏览器”，打开本页。若当前在微信或聊天窗口，请通过菜单选择“在浏览器打开”。</li>
-        <li>点浏览器的菜单，选择“加入书签”或“收藏网址”，把名称改为<strong>自动补传</strong>。</li>
-        <li>点上面的“复制书签地址”，然后打开浏览器的“书签／收藏”列表，长按刚保存的“自动补传”，选择“编辑”。</li>
-        <li>把书签原来的<strong>网址</strong>全部删掉，粘贴刚复制的内容，保存。名称仍然是“自动补传”；网址以 <code>javascript:</code> 开头。这一步只需做一次。</li>
-      </ol>
-      <h2>2. 打开 GitHub 上传区</h2>
-      <p>在同一个浏览器点下面的按钮，用有权访问私有资料库的 GitHub 账号登录。找到“书籍上传区”，点它旁边的编辑按钮，进入有 <strong>Assets / Attach binaries</strong> 附件框的页面。</p>
-      <a class="upload-link" id="privateUpload" href="https://github.com/Nicole8206929/study-materials-originals/releases" rel="noreferrer">打开私有上传区</a>
-      <p>找不到编辑按钮或附件框时，可以在浏览器菜单开启“桌面版网站”。不需要新建 Release，也不要点 Publish release。</p>
-
-      <h2>3. 运行书签，重新全选</h2>
-      <ol class="upload-steps">
-        <li>保持在 GitHub 上传区的编辑页，打开浏览器“书签／收藏”，点<strong>自动补传</strong>。如果没有运行，也可以点地址栏输入“自动补传”，从带书签图标的建议中点选，别按搜索。</li>
-        <li>附件框上方应出现<strong>自动补传助手</strong>和现有附件数量。首次先选 2–3 个文件验证，可以包含已上传文件；没有看到助手时，先不要整批选择。</li>
-        <li>确认正常后，在附件框重新全选这批文件。助手会在手机上计算校验值，跳过名称和内容都相同的成功附件，只补传缺失项；同名但内容不同会提示冲突，不会覆盖。</li>
-        <li>保持浏览器在前台。失败时会尝试重传，仍失败的点“重试失败项”。状态不明会暂停并保留原件；刷新或关闭页面后，需要重新运行书签，再选择手机文件。</li>
-        <li>全部完成后，助手会尝试保存草稿；若页面提示自行保存，点 <strong>Save draft</strong>。不要点 Publish release。</li>
-        <li>回到聊天告诉我“已上传”，我会核对实际文件。整理讲义和合并仍按你此前给出的要求处理。</li>
-      </ol>
-
-      <details class="install-address" id="nativeTroubleshoot">
-        <summary>保存或运行书签后没有变化？</summary>
-        <ul class="upload-help">
-          <li>确认已经进入 GitHub 的上传区编辑页。书签只能在指定私有资料库中使用；在本说明页点它不会开始上传。</li>
-          <li>编辑书签时检查：网址开头应为 <code>javascript:</code>，内容完整保留；不要放进书签的“名称”栏，也不要粘贴到搜索框。</li>
-          <li>GitHub 编辑页刷新后，需再次运行书签。正常上传需要微信里的文件先保存到手机的“下载／文档”。</li>
-          <li>若浏览器拒绝保存这种网址，或运行后跳到搜索页，说明此版本可能不支持。下面的诊断按钮只复制浏览器信息；发给我后继续检查，不需要上传密码或验证码。</li>
-        </ul>
-        <button class="primary" id="copyBrowserInfo" type="button">复制浏览器诊断</button>
-      </details>
-
-      <details class="install-address">
-        <summary>需要把本页转到自带浏览器打开？</summary>
-        <label for="installPageUrl">本页地址</label>
-        <input id="installPageUrl" type="url" readonly value="https://nicole8206929.github.io/study-materials/upload.html?v=native-1" spellcheck="false">
-        <button class="primary" id="copyInstallPage" type="button" data-copy-field="installPageUrl">复制本页地址</button>
-      </details>
-
-      <details class="install-address" id="legacyUploadHelper">
-        <summary>已经安装 Firefox 扩展？保留原来的备用方法</summary>
-        <p>此前安装过的助手仍可使用。在 Firefox 中启用 <a id="tampermonkeyInstall" href="https://addons.mozilla.org/zh-CN/android/addon/tampermonkey/">Tampermonkey</a>，安装或更新助手，然后打开同一个私有上传区。无需另存书签。</p>
-        <a class="upload-link" id="installUploadHelper" href="tools/github-upload-helper.user.js">安装或更新扩展版助手 1.1.0</a>
-        <details id="installTroubleshoot">
-          <summary>扩展版安装链接只显示代码？</summary>
-          <p>在 Firefox 中先确认扩展已启用，再试 <a id="helperOfficialInstall" href="https://www.tampermonkey.net/script_installation.php#url=https%3A%2F%2Fnicole8206929.github.io%2Fstudy-materials%2Ftools%2Fgithub-upload-helper.user.js">Tampermonkey 官方备用安装入口</a>。也可在 Tampermonkey 管理面板 → 实用工具 → 从 URL 安装，粘贴下面的地址。</p>
-          <label for="helperScriptUrl">扩展版安装地址</label>
-          <input id="helperScriptUrl" type="url" readonly value="https://nicole8206929.github.io/study-materials/tools/github-upload-helper.user.js" spellcheck="false">
-          <button class="primary" id="copyHelperScript" type="button" data-copy-field="helperScriptUrl">复制扩展版安装地址</button>
-        </details>
-      </details>
-      <p class="upload-privacy">本页不会接收文件或保存 GitHub 登录信息。文件由 GitHub 原生控件直接上传；书签不读取密码、Cookie 或授权码。支持 PDF、EPUB、PPT、PPTX 等附件，每个文件须小于 2 GiB。同名修改版请改成不同名称。</p>
+      <p class="guide-intro">手机自带浏览器 · GitHub 私有上传区。</p>
+      <p><strong>自动识别、跳过已上传文件并补齐缺失项，目前尚未实现。</strong></p>
+      <p>下面的入口打开 GitHub 自己的 Edit release 上传页面。它不会因为书架代码更新就自动跳过重复文件；本网站无法修改 GitHub 原生上传程序。</p>
+      <p>已撤下书签和插件安装引导，不需要按旧说明安装或运行它们，也未启用新的上传后台。当前入口保留用于访问原有资料，不代表已经满足自动补传要求。</p>
+      <a class="upload-link" id="privateUpload" href="https://github.com/Nicole8206929/study-materials-originals/releases" rel="noreferrer">打开 GitHub 私有上传区</a>
+      <p>使用有权访问资料库的 GitHub 账号登录，找到“书籍上传区”的编辑按钮。公开书架与试读仍不需要登录。</p>
+      <h2>出现“同名附件已存在”</h2>
+      <p>“An attachment with that filename already exists”表示 GitHub 已有同名附件，不能由此判断其他文件是否已经上传。直接在原生页面重新全选，仍可能出现此提示。</p>
+      <p>已有的成功附件继续保留，不需要为了清除同名提示把它们删除。若刚上传了新文件，等待完成后点 <strong>Save draft</strong> 保存草稿，不需要点 Publish release。</p>
+      <h2>资料整理</h2>
+      <p>完整原件保留在私有资料库，公开书架只展示书目和有限试读。上传后回到聊天说明已上传的资料，再核对文件并按约定整理；本入口不会自动生成讲义或删除原件。</p>
     </main>
     <footer><p><a href="./">返回书架</a> · <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases">GitHub 附件说明</a></p></footer>
   </div>
