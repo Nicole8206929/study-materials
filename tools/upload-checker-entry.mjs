@@ -253,6 +253,7 @@ let returnedAt = 0, refreshingInventory = false;
 async function resumePage() {
   activity.update();
   if (document.visibilityState !== 'visible') return;
+  if (!abort && plan?.rows.some(row => row.state === 'invalid' && row.reason?.includes('无法读取'))) checkAgain = true;
   if (checkAgain && !abort) checkSelectedFiles();
   // Keep file references, completed hashes and an existing package. Refresh
   // the encrypted record without reloading this page or resetting selections.

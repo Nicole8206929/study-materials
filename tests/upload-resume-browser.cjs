@@ -57,6 +57,16 @@ const path = require('node:path');
       assert((await page.locator('#inventoryStatus').innerText()).includes('只保留最终合集'));
       await page.locator('#clearSelection').click();
       await page.evaluate(()=>{
+        const read=Blob.prototype.arrayBuffer;window.failPhoneRead=true;
+        Blob.prototype.arrayBuffer=function(){if(window.failPhoneRead){window.failPhoneRead=false;return Promise.reject(new Error('provider suspended'));}return read.call(this);};
+      });
+      await page.locator('#checkFiles').setInputFiles({name:'recover.pptx',mimeType:'application/octet-stream',buffer:Buffer.from('recover this original file')});
+      await page.waitForFunction(()=>document.querySelector('#checkSummary').textContent.includes('未能核对 1'));
+      await page.evaluate(()=>window.returnToChecker());
+      await page.waitForFunction(()=>document.querySelector('#checkSummary').textContent.includes('未能核对 0'),null,{timeout:5000});
+      assert((await page.locator('#checkSummary').innerText()).includes('待补传 1'),'transient file-provider failure retries the retained file on return');
+      await page.locator('#clearSelection').click();
+      await page.evaluate(()=>{
         const read=Blob.prototype.arrayBuffer;
         Blob.prototype.arrayBuffer=async function(){await new Promise(r=>setTimeout(r,40));return read.call(this);};
       });
