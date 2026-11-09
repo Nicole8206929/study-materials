@@ -31,7 +31,7 @@ export function validateSnapshot(snapshot) {
   return snapshot;
 }
 
-export async function planFiles(files, snapshot, {signal, progress} = {}) {
+export async function planFiles(files, snapshot, {signal, progress, hashCache} = {}) {
   validateSnapshot(snapshot);
   if (!files.length || files.length > 1000) throw new Error('请重新选择这批资料，最多支持 1000 份。');
   let completed = 0, activeIndex = 0;
@@ -48,7 +48,8 @@ export async function planFiles(files, snapshot, {signal, progress} = {}) {
       continue;
     }
     try {
-      const sha256 = (await hash(file)).slice(7);
+      const sha256 = hashCache?.get(file) || (await hash(file)).slice(7);
+      hashCache?.set(file, sha256);
       const key = `${file.size}:${sha256}`;
       const uploaded = snapshot.uploaded.some(item => item.size === file.size && item.sha256 === sha256);
       rows.push({file, sha256, state: uploaded ? 'uploaded' : seen.has(key) ? 'duplicate' : 'missing'});

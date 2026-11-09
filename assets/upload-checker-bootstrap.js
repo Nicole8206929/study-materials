@@ -6,7 +6,9 @@
   picker.disabled = false;
   picker.addEventListener('change', function () {
     if (window.nicoleUploadCheckerStarted || !picker.files.length) return;
-    status.textContent = '已选择 ' + picker.files.length + ' 份文件。核对工具仍在准备；现在不会上传或打包。';
+    var early = window.nicoleUploadEarlyFiles || (window.nicoleUploadEarlyFiles = []);
+    for (var i = 0; i < picker.files.length; i++) early.push(picker.files[i]);
+    status.textContent = '已累计选择 ' + early.length + ' 份文件。核对工具仍在准备；现在不会上传或打包。';
   });
   retry.addEventListener('click', function () {
     if (!window.nicoleUploadCheckerStarted) location.reload();

@@ -11,15 +11,15 @@
   <title>补齐上传资料 · Nicole 的学习书架</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
-  <script src="assets/upload-checker-bootstrap.js?v=picker-2" defer></script>
-  <script src="assets/upload-checker.js?v=picker-2" defer></script>
+  <script src="assets/upload-checker-bootstrap.js?v=queue-3" defer></script>
+  <script src="assets/upload-checker.js?v=queue-3" defer></script>
 </head>
 <body>
   <div class="container guide-container">
     <header><div class="masthead"><a class="brand" href="./">NICOLE / 学习书架</a><a href="./">返回书架</a></div></header>
     <main class="upload-guide">
       <h1>补齐上传资料</h1>
-      <p class="guide-intro">全选原来的文件，只打包未上传的。</p>
+      <p class="guide-intro">分批添加，随时移除，只打包未上传的。</p>
       <p>手机自带浏览器就能使用。不需要安装插件、运行书签或启用新后台；核对和打包在手机上完成。</p>
       <p id="inventoryStatus" role="status" aria-live="polite">正在准备核对工具；可以先选择文件，记录载入后会自动核对。</p>
       <p id="inventoryDate" class="muted"></p>
@@ -31,11 +31,29 @@
         <p class="muted">已选文件会留在当前页面，无需重新选择。记录未载入前不会生成补传包。</p>
       </form>
       <section class="check-picker" aria-labelledby="chooseHeading">
-        <h2 id="chooseHeading">1. 全选这批原文件</h2>
-        <label for="checkFiles">选择全部 PDF、PPT、PPTX，包含已经上传的也没关系</label>
-        <input id="checkFiles" type="file" accept=".pdf,.ppt,.pptx" multiple autocomplete="off">
-        <p class="muted">请先把微信文件完整保存到手机。这里只读取你主动选择的文件，不会把它们上传到本网站。核对、打包时保持浏览器在前台，进度会显示。</p>
+        <h2 id="chooseHeading">1. 选择或继续添加文件</h2>
+        <label for="checkFiles">多次选择会累计，不会覆盖上一批</label>
+        <input id="checkFiles" type="file" multiple autocomplete="off">
+        <p class="muted">如果手机一次只能选 50 个，就先选 50 个，再继续选择剩下的。本页最多累计 1000 份，已上传的也可以选；本批核对 PDF、PPT、PPTX。</p>
+        <details id="folderPickerOption" hidden>
+          <summary>按文件夹添加（浏览器支持时）</summary>
+          <label for="checkFolder">选择一个文件夹，加入其中的 PDF、PPT、PPTX</label>
+          <input id="checkFolder" type="file" multiple webkitdirectory directory autocomplete="off">
+          <p class="muted">如果手机没有提供文件夹选择，就使用上面的分批添加；文件夹中的非课件文件会忽略。</p>
+        </details>
+        <p class="muted">这里只读取你主动选择的文件，不会直接访问手机全部目录，也不会上传到本网站。微信受保护目录中的文件，请先保存到“下载”或“文档”。核对、打包时保持浏览器在前台。</p>
       </section>
+      <section id="selectionSection" hidden aria-labelledby="selectionCount">
+        <h2 id="selectionCount">已选 0 份文件</h2>
+        <div class="selection-actions">
+          <button class="text-button" id="clearSelection" type="button">清空本次选择</button>
+          <button class="text-button" id="undoSelection" type="button" hidden>撤销移除</button>
+          <button class="text-button" id="recheckSelection" type="button">重新核对已选文件</button>
+        </div>
+        <p class="muted">每项右边点“×”即可移除。这里只调整本次列表，不删除手机或 GitHub 原件，也不是撤销已上传的附件。</p>
+        <ul id="selectedFiles" class="selection-list" aria-label="已选文件，可逐项移除"></ul>
+      </section>
+      <p id="selectionNotice" role="status" aria-live="polite"></p>
       <div id="checkWork" hidden>
         <p id="checkStatus" role="status" aria-live="polite"></p>
         <label for="checkProgress">处理进度</label>

@@ -76,3 +76,13 @@ test('older mobile AbortSignal works and a truncated phone read is never package
   const invalid = await planFiles([short], snapshot());
   assert.equal(invalid.rows[0].state, 'invalid');
 });
+
+test('adding a new batch reuses hashes of the retained File objects instead of rereading them', async () => {
+  let reads = 0;
+  const original = file('first.pptx', 'abc');
+  const tracked = {name:original.name, size:original.size, slice(...args) { reads++; return original.slice(...args); }};
+  const hashCache = new WeakMap();
+  await planFiles([tracked], snapshot(), {hashCache});
+  await planFiles([tracked, file('second.pptx','xyz')], snapshot(), {hashCache});
+  assert.equal(reads, 1);
+});
