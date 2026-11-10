@@ -1,6 +1,7 @@
 import {DirectUploadClient,UploadFailure} from './direct-upload-client.mjs';
 import {makeUploadRelease} from './library-upload.mjs';
 import {screenActivity} from './screen-activity.mjs';
+import {initializeGithubLogin} from './github-login.mjs';
 const tokenKey='nicole-direct-session-v1',pairKey='nicole-direct-pair-v1',activeKey='nicole-direct-active-v1',failedKey='nicole-direct-failed-v1';
 const read=(key,fallback=null)=>{try{return JSON.parse(localStorage.getItem(key)||'null')??fallback;}catch{return fallback;}};
 const write=(key,value)=>{try{value===null?localStorage.removeItem(key):localStorage.setItem(key,JSON.stringify(value));}catch{}};
@@ -9,11 +10,11 @@ const label=bytes=>`${(bytes/1024/1024).toFixed(1)} MB`;
 export function initializeDirectUpload({config,categories,input,onQueued,notify}){
  const el=id=>document.getElementById(id),endpoint=new URL(config.endpoint).origin;
  window.nicoleDirectUploaderStarted=true;
- let enabled=config.ready===true,auth=read(tokenKey),rows=[],busy=false,authRefreshing=false,archiveReady=false,connected=false,controller,active=read(activeKey);
+ let enabled=config.ready===true,auth=read(tokenKey),rows=[],busy=false,authRefreshing=false,authRefreshRequested=false,archiveReady=false,githubReady=false,connected=false,controller,login,active=read(activeKey);
  const client=new DirectUploadClient({endpoint,token:()=>auth?.token||''});
  const activity=screenActivity({request:navigator.wakeLock?.request?()=>navigator.wakeLock.request('screen'):null,visible:()=>document.visibilityState==='visible',notify:text=>{el('directBackground').textContent=text;}});
  const names={selected:'待上传',checking:'正在本地核对',uploading:'正在上传',retrying:'正在核对并重试',verifying:'服务器正在校验',complete:'服务器已校验',duplicate:'内容重复，已跳过',failed:'未完成，可重试'};
- function updateButton(){el('startNewUpload').textContent=connected?'开始上传':'启用本人上传';el('startNewUpload').disabled=!enabled||busy||(connected&&!rows.length);if(busy)for(const id of ['uploadCategories','uploadSubcategories'])el(id).querySelectorAll('input').forEach(item=>{item.disabled=true;});}
+ function updateButton(){el('startNewUpload').textContent=connected?'开始上传':githubReady?'GitHub 登录':'启用本人上传';el('startNewUpload').disabled=!enabled||busy||(connected&&!rows.length);if(busy)for(const id of ['uploadCategories','uploadSubcategories'])el(id).querySelectorAll('input').forEach(item=>{item.disabled=true;});}
  function renderRows(){
   el('directSelectionCount').textContent=rows.length?`已选 ${rows.length} 份，可继续添加`:'尚未选择文件';
   el('directFileList').replaceChildren(...rows.map((row,index)=>{
@@ -43,18 +44,20 @@ export function initializeDirectUpload({config,categories,input,onQueued,notify}
   write(failedKey,remaining);
  }
  async function refreshAuth(){
-  if(busy||authRefreshing)return;
+  if(busy)return;
+  if(authRefreshing){authRefreshRequested=true;return;}
   if(!enabled){el('directOwnerState').textContent='上传服务已部署，正在等待接口连接授权。可以先选择文件，尚未开始传输。';updateButton();return;}
   authRefreshing=true;
   try{
    auth=read(tokenKey);
    const pending=read(pairKey);
    connected=false;
-   if(auth?.token){try{const state=await client.request('/api/session');connected=state.connected===true;}catch(error){if(error.status!==401||!pending)throw error;auth=null;write(tokenKey,null);}}
+   if(auth?.token){const usedToken=auth.token;try{const state=await client.request('/api/session');connected=state.connected===true;}catch(error){if(error.status!==401)throw error;const latest=read(tokenKey);if(latest?.token&&latest.token!==usedToken){auth=latest;authRefreshRequested=true;return;}auth=null;write(tokenKey,null);}}
    if(!connected&&pending){auth=await client.pair(pending.ticket,pending.token);write(tokenKey,auth);connected=true;}
    if(connected&&pending)write(pairKey,null);
-   const health=await client.health();archiveReady=health.archiveReady===true;
-   el('directOwnerState').textContent=connected?(archiveReady?'本人上传已启用，私有资料库已连接。':auth.scope==='validation'?'传输验证会话：测试文件不会加入书架。':'本人身份已启用。还需连接一次私有资料库，以后直接在本页上传。'):'仅本人可上传。首次请打开聊天中的“本人上传启用链接”；访客仍可正常查看书架试读。';
+   const health=await client.health();archiveReady=health.archiveReady===true;githubReady=health.githubLoginReady===true;
+   el('githubLogin').hidden=connected||!githubReady;
+   el('directOwnerState').textContent=connected?(archiveReady?'本人上传已启用，私有资料库已连接。':auth.scope==='validation'?'传输验证会话：测试文件不会加入书架。':'本人身份已启用。还需连接一次私有资料库，以后直接在本页上传。'):githubReady?'用 GitHub 登录后即可上传，仅 Nicole8206929 账号有上传权限。访客仍可正常查看试读。':'仅本人可上传。GitHub 登录等待首次连接；现在仍可打开聊天中的“本人上传入口”启用当前浏览器。';
    el('connectPrivateArchive').hidden=!connected||archiveReady||auth?.scope==='validation';el('disconnectDirectUpload').hidden=!connected;el('directActivation').hidden=connected;
    if(connected){
     await flushFailures();
@@ -72,7 +75,7 @@ export function initializeDirectUpload({config,categories,input,onQueued,notify}
   }catch(error){
    if(error.status===401){connected=false;auth=null;write(tokenKey,null);}
    el('directOwnerState').textContent=error.message;el('directActivation').hidden=connected;
-  }finally{authRefreshing=false;updateButton();}
+  }finally{authRefreshing=false;updateButton();if(authRefreshRequested){authRefreshRequested=false;queueMicrotask(refreshAuth);}}
  }
  function acceptLink(value){
   let link;try{link=new URL(value,location.href);}catch{throw new Error('本人启用链接不完整。');}
@@ -82,7 +85,7 @@ export function initializeDirectUpload({config,categories,input,onQueued,notify}
  }
  async function start(){
   if(busy)return;
-  if(!connected){el('directActivation').hidden=false;el('directActivationLink').focus();notify('请从聊天中打开本人专用上传链接，首次启用后本浏览器可直接上传。');return;}
+  if(!connected){if(githubReady){await login.start({usePopup:true});return;}el('directActivation').hidden=false;el('directActivation').open=true;el('directActivationLink').focus();notify('请从聊天中打开本人专用上传链接，首次启用后本浏览器可直接上传。');return;}
   if(!rows.length){notify('请先选择要上传的文件。');return;}
   const selected=input();
   if(selected.expectedCount&&Number(selected.expectedCount)!==rows.length){notify(`本批填写了 ${selected.expectedCount} 份，但只选了 ${rows.length} 份；请补齐或修改文件数。`);return;}
@@ -145,6 +148,7 @@ export function initializeDirectUpload({config,categories,input,onQueued,notify}
   }finally{setBusy(false);}
  }
  el('directFiles').addEventListener('change',()=>{add(el('directFiles').files);el('directFiles').value='';});
+ el('githubLogin').addEventListener('click',()=>login.start({usePopup:true}));
  el('cancelDirectUpload').addEventListener('click',()=>controller?.abort(new DOMException('已暂停','AbortError')));
  el('applyDirectActivation').addEventListener('click',async()=>{try{acceptLink(el('directActivationLink').value.trim());el('directActivationLink').value='';await refreshAuth();}catch(error){notify(error.message);}});
  el('connectPrivateArchive').addEventListener('click',async()=>{
@@ -159,13 +163,15 @@ export function initializeDirectUpload({config,categories,input,onQueued,notify}
   }catch(error){popup?.close();notify(error.message);}
  });
  el('disconnectDirectUpload').addEventListener('click',async()=>{if(busy)return;try{await client.request('/api/session',{method:'DELETE'});}catch{}auth=null;connected=false;write(tokenKey,null);await refreshAuth();});
- window.addEventListener('message',event=>{if(event.origin===endpoint&&event.data?.type==='nicole-upload-connected')refreshAuth();});
+ window.addEventListener('message',event=>{if(event.origin===endpoint&&event.data?.type==='nicole-upload-connected'||event.origin===location.origin&&event.data?.type==='nicole-github-login')refreshAuth();});
  window.addEventListener('storage',event=>{if(event.key===tokenKey||event.key===pairKey)refreshAuth();});
  window.addEventListener('online',()=>refreshAuth());window.addEventListener('pageshow',()=>refreshAuth());document.addEventListener('visibilitychange',()=>{activity.update();if(document.visibilityState==='visible')refreshAuth();});
  const fragment=new URLSearchParams(location.hash.slice(1));
  if(fragment.has('pair')){try{acceptLink(location.href);history.replaceState(null,'',location.pathname+location.search);}catch(error){notify(error.message);}}
  if(window.nicoleDirectEarlyFiles?.length){add(window.nicoleDirectEarlyFiles);window.nicoleDirectEarlyFiles=[];}
  if(el('directFiles').files.length)add(el('directFiles').files);
- el('directUploadControls').hidden=false;el('startNewUpload').textContent='开始上传';el('legacyUploadInstructions').hidden=true;renderRows();refreshAuth();
+ el('directUploadControls').hidden=false;el('startNewUpload').textContent='开始上传';el('legacyUploadInstructions').hidden=true;renderRows();
+ login=initializeGithubLogin({client,notify,onSession:session=>{auth=session;write(tokenKey,session);notify('GitHub 登录成功，本人上传已启用。');}});
+ login.completion.then(()=>refreshAuth());
  return {start,updateButton,status:batch=>client.status(batch),configure:next=>{if(enabled!==next.ready){enabled=next.ready===true;refreshAuth();}updateButton();},get connected(){return connected;}};
 }

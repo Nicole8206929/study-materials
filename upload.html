@@ -12,7 +12,7 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css?v=direct-upload-1">
   <script src="assets/upload-checker-bootstrap.js?v=direct-upload-1" defer></script>
-  <script src="assets/upload-checker.js?v=direct-upload-3" defer></script>
+  <script src="assets/upload-checker.js?v=github-login-1" defer></script>
 </head>
 <body>
   <div class="container guide-container">
@@ -27,11 +27,13 @@
         <section id="directUploadControls" aria-labelledby="directFileHeading">
           <h2 id="directFileHeading">选择文件</h2>
           <p id="directOwnerState" role="status">正在连接本人上传设置…</p>
-          <div id="directActivation" hidden>
+          <button id="githubLogin" class="primary" type="button" hidden>GitHub 登录</button>
+          <details id="directActivation" hidden>
+            <summary>使用已有本人启用链接（备用）</summary>
             <label for="directActivationLink">本人上传启用链接</label>
             <input id="directActivationLink" type="url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="粘贴聊天里的本人上传启用链接">
             <button id="applyDirectActivation" type="button" class="text-button">启用本浏览器</button>
-          </div>
+          </details>
           <button id="connectPrivateArchive" class="text-button" type="button" hidden>连接本人私有资料库（仅首次）</button>
           <a id="resumePrivateArchive" href="#" target="_blank" rel="noreferrer" hidden>打开资料库授权</a>
           <button id="disconnectDirectUpload" class="text-button" type="button" hidden>退出本人上传</button>
