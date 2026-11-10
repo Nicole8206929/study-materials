@@ -7,7 +7,7 @@ from pathlib import Path
 from urllib.parse import urlsplit, unquote
 
 ROOT = Path(__file__).resolve().parents[1]
-ALLOWED_KEYS = {'id','title','author','cat','catName','desc','pages','size','year','format','bytes','tags','searchTitles','preview','subcat','ownerAccess'}
+ALLOWED_KEYS = {'id','title','author','cat','catName','desc','pages','size','year','format','bytes','tags','searchTitles','preview','subcat','ownerAccess','cats','subcats'}
 FORBIDDEN = {'.pdf','.epub','.mobi','.zip','.rar','.7z','.tar','.gz'}
 
 
@@ -44,8 +44,14 @@ def validate():
         assert book['id'] not in ids
         ids.add(book['id'])
         assert category_names.get(book['cat']) == book['catName'], f"Category mismatch: {book['id']}"
+        selected=book.get('cats',[book['cat']])
+        assert isinstance(selected,list) and selected and selected[0]==book['cat'] and all(isinstance(c,str) and c in category_names for c in selected), 'Invalid category membership'
+        assert len(set(selected))==len(selected), 'Duplicate category membership'
         assert book['format'] in ('PDF','EPUB')
-        if book.get('subcat'):assert any(s['id']==book['subcat'] and s['parent']==book['cat'] for s in subcategories),'Subcategory mismatch'
+        children=book.get('subcats',[book['subcat']] if book.get('subcat') else [])
+        assert isinstance(children,list) and all(isinstance(child,str) and any(s['id']==child and s['parent'] in selected for s in subcategories) for child in children),'Subcategory mismatch'
+        assert len(set(children))==len(children),'Duplicate subcategory membership'
+        if book.get('subcat'):assert children and children[0]==book['subcat'],'Primary subcategory mismatch'
         if book.get('ownerAccess'):check_owner_access(book['ownerAccess'])
         preview = book['preview']
         assert 1 <= len(preview['images']) == preview['pageCount'] <= data['previewLimit']
