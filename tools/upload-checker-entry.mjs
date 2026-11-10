@@ -115,6 +115,8 @@ function readRememberedContext() {
   return null;
 }
 function readContext(url) {
+  const authorization=new URLSearchParams(url.hash.slice(1));
+  if(['pair','github','githubSetup'].some(key=>authorization.has(key))||url.searchParams.get('connect')==='github')return null;
   const id = url.searchParams.get('batch'), key = new URLSearchParams(url.hash.slice(1)).get('k');
   const remembered = readRememberedContext();
   const value = {id:id || (!key ? remembered?.id : null), key:key || ((!id || id === remembered?.id) ? remembered?.key : null)};

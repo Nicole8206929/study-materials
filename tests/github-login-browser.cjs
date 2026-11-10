@@ -1,7 +1,7 @@
 const assert=require('node:assert/strict');
 const {chromium,firefox}=require('playwright');
 const {spawn}=require('node:child_process');
-const {createHash}=require('node:crypto');
+const {createHash,createCipheriv,randomBytes}=require('node:crypto');
 const path=require('node:path');
 const origin='http://127.0.0.1:8797',service='https://nicole-private-book-upload.vibrantcloth2.chatgpt.site';
 (async()=>{
@@ -13,19 +13,20 @@ const origin='http://127.0.0.1:8797',service='https://nicole-private-book-upload
    try{
     const context=await browser.newContext({viewport:{width:390,height:844}}),page=await context.newPage();
     const errors=[];context.on('page',p=>p.on('pageerror',e=>errors.push(e.message)));
-    let challenge,sessionToken,holdHealth=false,releaseHealth;
+    let challenge,sessionToken,holdHealth=false,releaseHealth,githubReady=true,failLoginStart=false;
     const healthGate=new Promise(resolve=>{releaseHealth=resolve;});
     const cors={'Access-Control-Allow-Origin':origin,'Access-Control-Allow-Headers':'authorization,content-type','Access-Control-Allow-Methods':'GET,POST,OPTIONS','Content-Type':'application/json'};
     await context.route(service+'/**',async route=>{
      const req=route.request(),url=new URL(req.url()),send=(data,status=200)=>route.fulfill({status,headers:cors,body:JSON.stringify(data)});
      if(req.method()==='OPTIONS')return route.fulfill({status:204,headers:cors});
-     if(url.pathname==='/health'){if(holdHealth&&req.frame().page()===page)await healthGate;return send({archiveReady:true,githubLoginReady:true});}
+     if(url.pathname==='/health'){if(holdHealth&&req.frame().page()===page)await healthGate;return send({archiveReady:true,githubLoginReady:githubReady});}
      if(url.pathname==='/api/session')return sessionToken&&req.headers().authorization==='Bearer '+sessionToken?send({connected:true}):send({error:{code:'session_required',message:'请先登录'}},401);
      if(url.pathname==='/api/batches')return send({batches:[]});
      if(url.pathname==='/auth/github/start'||url.pathname==='/auth/github/bootstrap'){
-      const body=req.postDataJSON();challenge=body.challenge;assert.match(challenge,/^[A-Za-z0-9_-]{43}$/);if(url.pathname.endsWith('bootstrap'))assert.equal(body.key,'s'.repeat(43));return send({url:service+'/auth/github/'+(url.pathname.endsWith('bootstrap')?'setup':'authorize')+'?state=browser-fixture'});
+      if(failLoginStart){failLoginStart=false;return send({error:{code:'github_unavailable',message:'暂时无法连接 GitHub，请重试。'}},503);}
+      const body=req.postDataJSON();challenge=body.challenge;assert.match(challenge,/^[A-Za-z0-9_-]{43}$/);if(url.pathname.endsWith('bootstrap'))assert.equal(body.key,'s'.repeat(43));return send({url:service+'/auth/github/'+(!githubReady||url.pathname.endsWith('bootstrap')?'setup':'authorize')+'?state=browser-fixture'});
      }
-     if(['/auth/github/authorize','/auth/github/setup'].includes(url.pathname))return route.fulfill({status:303,headers:{Location:origin+'/upload.html#github='+'g'.repeat(43)+'&challenge='+challenge}});
+     if(['/auth/github/authorize','/auth/github/setup'].includes(url.pathname)){githubReady=true;return route.fulfill({status:303,headers:{Location:origin+'/upload.html#github='+'g'.repeat(43)+'&challenge='+challenge}});}
      if(url.pathname==='/auth/github/complete'){
       const body=req.postDataJSON();assert.equal(createHash('sha256').update(body.verifier).digest('base64url'),challenge);assert.equal(body.grant,'g'.repeat(43));assert.match(body.clientToken,/^[A-Za-z0-9_-]{43}$/);sessionToken=body.clientToken;return send({token:sessionToken,scope:'owner',expires:Date.now()/1000+86400});
      }
@@ -48,7 +49,25 @@ const origin='http://127.0.0.1:8797',service='https://nicole-private-book-upload
     await page.goto(origin+'/upload.html?first-github-connection=1#githubSetup='+'s'.repeat(43),{waitUntil:'domcontentloaded'});
     await page.waitForFunction(()=>document.querySelector('#directOwnerState').textContent.includes('私有资料库已连接'),{},{timeout:15000});
     assert.equal(new URL(page.url()).hash,'');assert.deepEqual(errors,[]);
-    console.log('PASS '+name+': GitHub login returns to the original uploader, verifies the one-use browser proof, preserves selected phone files, enables Start and persists the session. GitHub and receiver responses are fixtures.');
+    const key=randomBytes(32),iv=randomBytes(12),cipher=createCipheriv('aes-256-gcm',key,iv);
+    const encrypted=Buffer.concat([cipher.update(JSON.stringify({version:1,checkedAt:new Date().toISOString(),expectedCount:1,uploaded:[]})),cipher.final(),cipher.getAuthTag()]);
+    await context.route('**/upload-check-data/*.json',r=>r.fulfill({json:{version:1,iv:iv.toString('base64url'),data:encrypted.toString('base64url')}}));
+    await context.route('**/upload-service.json',async r=>{await new Promise(resolve=>setTimeout(resolve,200));return r.fulfill({json:{version:1,ready:true,endpoint:service}});});
+    await page.evaluate(({id,key})=>{localStorage.clear();localStorage.setItem('nicole-upload-check-context-v1',JSON.stringify({id,key}));},{id:'a'.repeat(32),key:key.toString('base64url')});sessionToken=undefined;
+    await page.goto(origin+'/upload.html?first-github-connection=2#githubSetup='+'s'.repeat(43),{waitUntil:'domcontentloaded'});
+    await page.waitForFunction(()=>document.querySelector('#directOwnerState').textContent.includes('私有资料库已连接'),{},{timeout:10000});
+    assert.deepEqual(errors,[]);
+    await page.evaluate(()=>localStorage.removeItem('nicole-direct-session-v1'));sessionToken=undefined;githubReady=false;
+    await page.goto(origin+'/upload.html?connect=github',{waitUntil:'networkidle'});
+    await page.locator('#githubLogin').waitFor({state:'visible',timeout:3000});
+    assert.match(await page.locator('#githubLogin').innerText(),/连接 GitHub/);
+    failLoginStart=true;await page.locator('#githubLogin').click();
+    await page.waitForFunction(()=>document.querySelector('#githubLoginNotice')?.textContent.includes('暂时无法连接 GitHub'));
+    assert.equal(await page.locator('#githubLogin').isEnabled(),true);
+    await page.locator('#githubLogin').click();
+    await page.waitForFunction(()=>document.querySelector('#directOwnerState').textContent.includes('私有资料库已连接'),{},{timeout:10000});
+    assert.equal(new URL(page.url()).hash,'');assert.deepEqual(errors,[]);
+    console.log('PASS '+name+': GitHub login preserves selected files and browser proofs; remembered inventory cannot overwrite first connection or callback; the ordinary URL exposes first setup and visible, retryable failures. GitHub and receiver responses are fixtures.');
    }finally{await browser.close();}
   }
  }finally{server.kill('SIGTERM');}

@@ -131,7 +131,7 @@ export function initializeLibraryUpload() {
         if(!response.ok)throw new Error('原页上传设置暂未载入，请稍后刷新。');
         const config=await response.json();
         if(config.version!==1||typeof config.ready!=='boolean'||config.endpoint!=='https://nicole-private-book-upload.vibrantcloth2.chatgpt.site')throw new Error('原页上传设置不完整，请稍后刷新。');
-        if(!direct)direct=initializeDirectUpload({config,categories:()=>categories,input,notify:message=>{el('newUploadNotice').textContent=message;},onQueued:record=>{
+        if(!direct)direct=initializeDirectUpload({config,authorizationUrl:url.href,categories:()=>categories,input,notify:message=>{el('newUploadNotice').textContent=message;},onQueued:record=>{
           pending=pending.filter(x=>x.batch!==record.batch).concat(record);save();render();refresh();
         }});
         direct.configure(config);if(!config.ready){ready=false;el('automationState').textContent='原网页上传服务已部署，正在等待接口连接授权。可以先选择文件；尚未开始传输。';}
