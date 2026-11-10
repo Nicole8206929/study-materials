@@ -72,6 +72,7 @@
 .upload-destination .category-options input[type=checkbox] { flex:none; width:20px; height:20px; min-height:20px; margin:0; padding:0; accent-color:var(--accent); }
 .category-options label.is-selected { border-color:var(--accent); }
 .receipt-category-link { display:inline-flex; min-height:44px; align-items:center; margin-right:16px; }
+.receipt-dismiss { float:inline-end; margin:0 0 8px 12px; }
 .upload-privacy { border-top:1px solid var(--border); padding-top:18px; color:var(--muted); font-size:13px; }
 .install-address { margin:18px 0; padding:16px; border:1px solid var(--border); border-radius:5px; }
 .install-address label { display:block; margin:12px 0 6px; font-size:13px; }

@@ -33,6 +33,10 @@ export function initializeLibraryUpload() {
   function save(){try{localStorage.setItem(pendingKey,JSON.stringify(pending));localStorage.setItem(receiptsKey,JSON.stringify(receipts.slice(-5)));}catch{}}
   function row(item,done=false) {
     const li=document.createElement('li');
+    if(!done){
+      const dismiss=document.createElement('button');dismiss.type='button';dismiss.className='remove-selection receipt-dismiss';dismiss.textContent='×';dismiss.setAttribute('aria-label','移除此条未完成记录');
+      dismiss.addEventListener('click',()=>{pending=pending.filter(x=>x.batch!==item.batch);save();render();});li.append(dismiss);
+    }
     const text=document.createElement('p');text.textContent=done?'上传成功，已入库。':item.message||waitingMessage;li.append(text);
     if(!done&&item.statusError){const error=document.createElement('p');error.className='muted';error.textContent=item.statusError;li.append(error);}
     const detail=document.createElement('p');detail.className='muted';detail.textContent=`批次 ${item.batch.replace('upload-','')}${item.sourceCount?` · ${item.sourceCount} 份资料`:''}`;li.append(detail);
@@ -57,6 +61,7 @@ export function initializeLibraryUpload() {
   async function refresh() {
     if (refreshing || document.visibilityState==='hidden' || navigator.onLine===false) return;
     refreshing=true;
+    let failed=0;
     try {
       for (const item of [...pending]) {
         try {
@@ -70,10 +75,12 @@ export function initializeLibraryUpload() {
           const record=validateUploadStatus(await response.json(),item.batch);
           delete item.statusError;
           if (record.stage==='ready') {pending=pending.filter(x=>x.batch!==item.batch);receipts=receipts.filter(x=>x.batch!==item.batch).concat(record).slice(-5);}
+          else if(record.stage==='failed'){pending=pending.filter(x=>x.batch!==item.batch);failed++;}
           else Object.assign(item,record);
         } catch {item.statusError='暂时无法查询最新处理结果，请稍后刷新。若 GitHub 添加附件失败，请回原上传页重试；刷新不会重传手机文件。';}
       }
       save();render();
+      if(failed)el('newUploadNotice').textContent=`${failed} 批上传未完成，已从未完成列表移除。可重新选择文件再试。`;
     } finally {refreshing=false;}
   }
   el('newUploadForm').addEventListener('submit',event=>{
