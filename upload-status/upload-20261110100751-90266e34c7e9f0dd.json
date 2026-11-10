@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "batch": "upload-20261110100751-90266e34c7e9f0dd",
+  "stage": "processing",
+  "message": "上传成功，正在按所选分类整理。",
+  "updatedAt": "2026-11-10T10:10:15.621048+00:00",
+  "cat": "high-school-physics",
+  "cats": [
+    "high-school-physics"
+  ],
+  "subcats": [],
+  "bookIds": [],
+  "sourceCount": 2
+}
