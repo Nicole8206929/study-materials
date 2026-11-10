@@ -10,6 +10,7 @@ const path=require('node:path');
    const browser=await type.launch();
    try{
     const context=await browser.newContext({viewport:{width:390,height:844}});
+    await context.route('**/upload-service.json',r=>r.fulfill({json:{version:1,ready:false}}));
     const batches=['upload-20261110032658-bb88991b181ca6b4','upload-20261110035947-76d9bd27b8090eba','upload-20261110123456-1234abcd','upload-20261110123457-1234abcd'];
     await context.addInitScript(({batches})=>{
      if(!localStorage.getItem('history-fixture-ready')){

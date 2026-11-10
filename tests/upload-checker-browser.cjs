@@ -21,6 +21,7 @@ const root = path.join(__dirname, '..');
     for (const engine of [chromium, firefox]) {
       browser = await engine.launch({headless: true});
       const context = await browser.newContext({viewport: {width: 390, height: 844}, acceptDownloads: true});
+      await context.route('**/upload-service.json',r=>r.fulfill({json:{version:1,ready:false}}));
       await context.route('**/upload-check-data/*.json', route => route.fulfill({json: envelope}));
       const page = await context.newPage(), errors = [];
       page.on('pageerror', e => errors.push(e.message));
@@ -135,6 +136,7 @@ const root = path.join(__dirname, '..');
       await page.waitForFunction(() => document.querySelector('#checkSummary').textContent.includes('待补传 16'));
       if (engine === chromium) {
         const isolated = await browser.newContext();
+        await isolated.route('**/upload-service.json',r=>r.fulfill({json:{version:1,ready:false}}));
         await isolated.addInitScript(() => {
           Object.defineProperty(window, 'localStorage', {get() { throw new Error('storage disabled'); }});
         });
@@ -157,6 +159,7 @@ const root = path.join(__dirname, '..');
         } finally { fs.rmSync(folder,{recursive:true,force:true}); }
         await isolated.close();
         const blocked = await browser.newContext();
+        await blocked.route('**/upload-service.json',r=>r.fulfill({json:{version:1,ready:false}}));
         await blocked.addInitScript(() => {
           const timer = window.setTimeout.bind(window);
           window.setTimeout = (fn, ms, ...args) => timer(fn, ms === 12000 ? 1 : ms, ...args);

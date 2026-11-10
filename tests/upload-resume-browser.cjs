@@ -18,6 +18,7 @@ const path = require('node:path');
     }
     for (const engine of [chromium,firefox]) {
       browser=await engine.launch(); const context=await browser.newContext();
+      await context.route('**/upload-service.json',r=>r.fulfill({json:{version:1,ready:false}}));
       await context.addInitScript(()=>{
         window.testVisible=true; window.testWakeLocks=[];
         Object.defineProperty(document,'visibilityState',{get:()=>window.testVisible?'visible':'hidden'});
@@ -86,6 +87,7 @@ const path = require('node:path');
       await page.evaluate(()=>window.returnToChecker());
       await page.waitForFunction(()=>document.querySelector('#resumeStatus').textContent.includes('记录未变'));
       assert((await page.locator('#checkStatus').innerText()).includes('已取消'),'return does not undo a deliberate cancellation');
+      await page.waitForLoadState('networkidle');
       archived=false; await page.evaluate(()=>window.returnToChecker());
       await page.waitForFunction(()=>document.querySelector('#checkStatus').textContent.includes('保持停止'));
       assert.equal(await page.locator('#cancelCheck').isVisible(),false,'updated records also respect a deliberate cancellation');

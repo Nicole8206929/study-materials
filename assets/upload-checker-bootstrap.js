@@ -3,6 +3,14 @@
   var picker = document.getElementById('checkFiles');
   var status = document.getElementById('inventoryStatus');
   var retry = document.getElementById('retryInventory');
+  var directPicker = document.getElementById('directFiles');
+  if (directPicker) directPicker.addEventListener('change', function () {
+    if (window.nicoleDirectUploaderStarted || !directPicker.files.length) return;
+    var selected = window.nicoleDirectEarlyFiles || (window.nicoleDirectEarlyFiles = []);
+    for (var j = 0; j < directPicker.files.length && selected.length < 1000; j++) selected.push(directPicker.files[j]);
+    var count = document.getElementById('directSelectionCount');
+    if (count) count.textContent = '已暂存选择 ' + selected.length + ' 份，正在准备上传设置。';
+  });
   picker.disabled = false;
   picker.addEventListener('change', function () {
     if (window.nicoleUploadCheckerStarted || !picker.files.length) return;

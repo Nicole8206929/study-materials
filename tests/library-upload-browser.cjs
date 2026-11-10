@@ -13,7 +13,7 @@ const path=require('node:path');
     const context=await browser.newContext({viewport:{width:390,height:844}});const page=await context.newPage();
     const errors=[];page.on('pageerror',e=>errors.push(e.message));
     await page.route('**/upload-automation.json',r=>r.fulfill({json:{version:1,ready:false}}));
-    await page.goto('http://127.0.0.1:8768/upload.html',{waitUntil:'networkidle'});
+    await page.goto('http://127.0.0.1:8768/upload.html?legacyUpload=1',{waitUntil:'networkidle'});
     assert.equal(await page.locator('#startNewUpload').isDisabled(),true);
     assert(await page.locator('#automationSetup').isVisible());
     assert.equal(await page.locator('#legacyChecker').getAttribute('open'),null);

@@ -13,6 +13,7 @@ const total = catalog.books.length;
     browser = await chromium.launch({headless:true});
     const context = await browser.newContext({viewport:{width:1440,height:1000}});
     const page = await context.newPage();
+    await context.route('**/upload-service.json',route=>route.fulfill({json:{version:1,ready:false}}));
     const errors=[]; page.on('pageerror',e=>errors.push(e.message));
     await page.goto('http://127.0.0.1:8765/');
     await page.waitForSelector('.book');

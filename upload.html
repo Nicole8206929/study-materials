@@ -7,12 +7,12 @@
   <meta name="color-scheme" content="light dark">
   <meta name="robots" content="noindex">
   <meta name="referrer" content="no-referrer">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self' https://nicole-private-book-upload.vibrantcloth2.chatgpt.site; object-src 'none'; base-uri 'self'; form-action 'none'">
   <title>上传并分类 · Nicole 的学习书架</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/styles.css?v=upload-history-1">
-  <script src="assets/upload-checker-bootstrap.js?v=multi-category-1" defer></script>
-  <script src="assets/upload-checker.js?v=upload-history-1" defer></script>
+  <link rel="stylesheet" href="assets/styles.css?v=direct-upload-1">
+  <script src="assets/upload-checker-bootstrap.js?v=direct-upload-1" defer></script>
+  <script src="assets/upload-checker.js?v=direct-upload-1" defer></script>
 </head>
 <body>
   <div class="container guide-container">
@@ -20,10 +20,34 @@
     <main class="upload-guide">
       <h1>上传并分类</h1>
       <p class="guide-intro">选好放在哪里，上传后自动整理。</p>
-      <p>用手机自带浏览器操作。书架无需密码，上传区沿用你自己的 GitHub 登录；完整资料保持私有，书架只提供前 10 页试读。</p>
+      <p>手机自带浏览器即可使用：在本页选文件、看进度和重试。完整资料保存在私有资料库，书架向访客提供前 10 页试读。</p>
       <p id="automationState" role="status">正在读取上传设置…</p>
       <p id="automationSetup" hidden><a class="upload-link" href="upload-setup.html">首次启用自动入库</a></p>
       <form id="newUploadForm" class="upload-destination">
+        <section id="directUploadControls" aria-labelledby="directFileHeading">
+          <h2 id="directFileHeading">选择文件</h2>
+          <p id="directOwnerState" role="status">正在连接本人上传设置…</p>
+          <div id="directActivation" hidden>
+            <label for="directActivationLink">本人上传启用链接</label>
+            <input id="directActivationLink" type="url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="粘贴聊天里的本人上传启用链接">
+            <button id="applyDirectActivation" type="button" class="text-button">启用本浏览器</button>
+          </div>
+          <button id="connectPrivateArchive" class="text-button" type="button" hidden>连接本人私有资料库（仅首次）</button>
+          <a id="resumePrivateArchive" href="#" target="_blank" rel="noreferrer" hidden>打开资料库授权</a>
+          <button id="disconnectDirectUpload" class="text-button" type="button" hidden>退出本人上传</button>
+          <label for="directFiles">添加 PDF、EPUB、PPT 或 PPTX，可多次选择</label>
+          <input id="directFiles" type="file" accept=".pdf,.epub,.ppt,.pptx" multiple>
+          <p class="muted">分批选择会累计；手机一次只能选 50 个时，再继续添加即可。每批最多 1000 份，右侧“×”可移除。上传会核对重复内容。</p>
+          <p id="directSelectionCount" aria-live="polite">尚未选择文件</p>
+          <ul id="directFileList" class="selection-list" aria-label="本次上传文件"></ul>
+          <div id="directProgressSection" hidden>
+            <label for="directUploadProgress">文件传输进度</label>
+            <progress id="directUploadProgress" value="0" max="100"></progress>
+            <p id="directUploadState" role="status"></p>
+            <p id="directBackground" class="muted" role="status"></p>
+            <button id="cancelDirectUpload" type="button" class="text-button" hidden>暂停／修改文件</button>
+          </div>
+        </section>
         <fieldset class="category-choices"><legend>书架分类（可多选）</legend><div id="uploadCategories" class="category-options"><p>正在载入分类…</p></div><p id="selectedCategoryCount" class="muted" aria-live="polite">至少选一类，同一份资料可同时放入多个类别。</p></fieldset>
         <div id="uploadSubcategoryField" hidden><fieldset class="category-choices"><legend>大学数学小分类（可多选）</legend><div id="uploadSubcategories" class="category-options"></div></fieldset></div>
         <label for="uploadTags">分类标签（选填，用逗号分隔）</label>
@@ -35,14 +59,15 @@
         <input id="uploadTitle" maxlength="120" placeholder="留空时使用原文件名">
         <label for="uploadExpected">本批文件总数（选填）</label>
         <input id="uploadExpected" type="number" inputmode="numeric" min="1" max="1000" placeholder="填写后会检查是否齐全">
-        <p>下一页添加文件，等每个附件上传成功后点 <strong>Publish release（发布）</strong>。这是私有归档，不会把完整文件公开，也不需要存入草稿箱。</p>
-        <button id="startNewUpload" class="primary" type="submit" disabled>前往上传</button>
+        <p>点击开始后，本页逐个分块上传并显示实际传输进度。服务器收齐并校验后才显示“上传成功”；随后自动整理入库，不需要手动发布或保存草稿。</p>
+        <p id="legacyUploadInstructions" hidden>旧上传入口：在 GitHub 添加附件，全部成功后点 Publish release。新资料请使用本页直接上传。</p>
+        <button id="startNewUpload" class="primary" type="submit" disabled>开始上传</button>
         <p id="newUploadNotice" role="status" aria-live="polite"></p>
         <a id="resumeNewUpload" href="#" target="_blank" rel="noopener noreferrer" hidden>打开本次上传</a>
       </form>
       <section id="uploadTracking" hidden aria-labelledby="pendingHeading">
         <h2 id="pendingHeading">待处理</h2>
-        <p>这里的刷新只查询入库结果，不会重传文件。GitHub 添加附件失败时，回原上传页重试；全部附件上传成功并发布后，本页才会收到云端处理记录。云端整理启动后可关闭网页或锁屏。</p>
+        <p>上传中的进度显示在上方；只有服务器收齐文件后才进入这里。已确认失败的批次会自动移出，点“×”可移除本机记录。云端整理启动后可以关闭网页。</p>
         <button id="refreshUploadStatus" class="text-button" type="button">刷新处理结果</button>
         <ul id="pendingUploads" class="upload-receipts"></ul>
         <ul id="completedUploads" class="upload-receipts" aria-label="最近入库成功记录"></ul>
@@ -54,7 +79,7 @@
           <li>使用移动数据时，在浏览器的流量管理中允许后台联网；若系统提供“锁屏断网”或“睡眠待机优化”，传输期间关闭相应限制。</li>
           <li>在最近任务中锁定浏览器，避免一键清理将它关闭。不要同时开启省电模式；大批文件传输时保持页面在前台最可靠。</li>
         </ol>
-        <p class="muted">这些设置不能强制手机浏览器在黑屏后持续运行。传输暂停时回到 GitHub 等待或重试；成功附件不会丢失。发布后已经启动的云端转换无需手机保持亮屏。</p>
+        <p class="muted">系统仍可能暂停黑屏网页。回到本页后会核对已收到的分块并重试；如果系统关闭了网页，需要重新选择原文件，已确认的内容会复用。云端整理启动后无需手机保持亮屏。</p>
       </details>
       <details id="legacyChecker" class="legacy-checker">
       <summary>补齐旧批次文件／查看旧核对记录</summary>
