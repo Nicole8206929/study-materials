@@ -1130,6 +1130,216 @@
         "pageCount": 10,
         "sourcePageCount": 164
       }
+    },
+    {
+      "id": "research-methods-psych",
+      "title": "Research Methods in Psychology",
+      "author": "Jhangiani, Chiang, Cuttler & Leighton",
+      "cat": "psych",
+      "catName": "心理",
+      "desc": "心理学研究的科学方法：研究伦理、测量、实验与非实验设计、数据描述与推断、结果报告。",
+      "pages": 321,
+      "year": 2019,
+      "format": "PDF",
+      "tags": [
+        "开放教材",
+        "研究方法"
+      ],
+      "searchTitles": [
+        "心理学研究方法",
+        "Research Methods"
+      ],
+      "bytes": 6354043,
+      "size": "6.1 MB",
+      "preview": {
+        "images": [
+          "previews/research-methods-psych/page-001.webp",
+          "previews/research-methods-psych/page-002.webp",
+          "previews/research-methods-psych/page-003.webp",
+          "previews/research-methods-psych/page-004.webp",
+          "previews/research-methods-psych/page-005.webp",
+          "previews/research-methods-psych/page-006.webp",
+          "previews/research-methods-psych/page-007.webp",
+          "previews/research-methods-psych/page-008.webp",
+          "previews/research-methods-psych/page-009.webp",
+          "previews/research-methods-psych/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 321
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/269b2c539f6ea5b9149dd3142c34eea8f9a97df6/%E5%BF%83%E7%90%86%E9%87%91%E8%9E%8D%E4%B9%A6%E7%B1%8D/ResearchMethods_Psychology.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/269b2c539f6ea5b9149dd3142c34eea8f9a97df6/%E5%BF%83%E7%90%86%E9%87%91%E8%9E%8D%E4%B9%A6%E7%B1%8D/ResearchMethods_Psychology.pdf"
+      }
+    },
+    {
+      "id": "principles-social-psych",
+      "title": "Principles of Social Psychology",
+      "author": "Rajiv Jhangiani & Hammond Tarry",
+      "cat": "psych",
+      "catName": "心理",
+      "desc": "社会心理学系统教材：自我与社会认知、态度、从众、偏见、群体过程、人际吸引与亲社会/攻击行为。",
+      "pages": 503,
+      "year": 2012,
+      "format": "PDF",
+      "tags": [
+        "开放教材",
+        "社会心理学"
+      ],
+      "searchTitles": [
+        "社会心理学原理",
+        "Principles of Social Psychology"
+      ],
+      "bytes": 11222194,
+      "size": "10.7 MB",
+      "preview": {
+        "images": [
+          "previews/principles-social-psych/page-001.webp",
+          "previews/principles-social-psych/page-002.webp",
+          "previews/principles-social-psych/page-003.webp",
+          "previews/principles-social-psych/page-004.webp",
+          "previews/principles-social-psych/page-005.webp",
+          "previews/principles-social-psych/page-006.webp",
+          "previews/principles-social-psych/page-007.webp",
+          "previews/principles-social-psych/page-008.webp",
+          "previews/principles-social-psych/page-009.webp",
+          "previews/principles-social-psych/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 503
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/269b2c539f6ea5b9149dd3142c34eea8f9a97df6/%E5%BF%83%E7%90%86%E9%87%91%E8%9E%8D%E4%B9%A6%E7%B1%8D/PrinciplesSocialPsychology.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/269b2c539f6ea5b9149dd3142c34eea8f9a97df6/%E5%BF%83%E7%90%86%E9%87%91%E8%9E%8D%E4%B9%A6%E7%B1%8D/PrinciplesSocialPsychology.pdf"
+      }
+    },
+    {
+      "id": "balance-personality",
+      "title": "The Balance of Personality",
+      "author": "Chris Allen",
+      "cat": "psych",
+      "catName": "心理",
+      "desc": "以人格特质与行为的动态平衡为线索，概览主要人格理论及研究方法，篇幅精炼。",
+      "pages": 213,
+      "year": 2020,
+      "format": "PDF",
+      "tags": [
+        "开放教材",
+        "人格理论"
+      ],
+      "searchTitles": [
+        "人格的平衡",
+        "Balance of Personality"
+      ],
+      "bytes": 9401664,
+      "size": "9.0 MB",
+      "preview": {
+        "images": [
+          "previews/balance-personality/page-001.webp",
+          "previews/balance-personality/page-002.webp",
+          "previews/balance-personality/page-003.webp",
+          "previews/balance-personality/page-004.webp",
+          "previews/balance-personality/page-005.webp",
+          "previews/balance-personality/page-006.webp",
+          "previews/balance-personality/page-007.webp",
+          "previews/balance-personality/page-008.webp",
+          "previews/balance-personality/page-009.webp",
+          "previews/balance-personality/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 213
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/269b2c539f6ea5b9149dd3142c34eea8f9a97df6/%E5%BF%83%E7%90%86%E9%87%91%E8%9E%8D%E4%B9%A6%E7%B1%8D/BalanceOfPersonality.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/269b2c539f6ea5b9149dd3142c34eea8f9a97df6/%E5%BF%83%E7%90%86%E9%87%91%E8%9E%8D%E4%B9%A6%E7%B1%8D/BalanceOfPersonality.pdf"
+      }
+    },
+    {
+      "id": "ob-libretexts",
+      "title": "Organizational Behavior",
+      "author": "LibreTexts（开放教材版）",
+      "cat": "management",
+      "catName": "管理",
+      "desc": "开放版组织行为学：个体差异、知觉与激励、团队、沟通、领导、组织结构与变革，非罗宾斯商业版。",
+      "pages": 525,
+      "year": 2020,
+      "format": "PDF",
+      "tags": [
+        "开放教材",
+        "组织行为学"
+      ],
+      "searchTitles": [
+        "组织行为学开放版",
+        "Organizational Behavior LibreTexts"
+      ],
+      "bytes": 10303491,
+      "size": "9.8 MB",
+      "preview": {
+        "images": [
+          "previews/ob-libretexts/page-001.webp",
+          "previews/ob-libretexts/page-002.webp",
+          "previews/ob-libretexts/page-003.webp",
+          "previews/ob-libretexts/page-004.webp",
+          "previews/ob-libretexts/page-005.webp",
+          "previews/ob-libretexts/page-006.webp",
+          "previews/ob-libretexts/page-007.webp",
+          "previews/ob-libretexts/page-008.webp",
+          "previews/ob-libretexts/page-009.webp",
+          "previews/ob-libretexts/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 525
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/269b2c539f6ea5b9149dd3142c34eea8f9a97df6/%E5%BF%83%E7%90%86%E9%87%91%E8%9E%8D%E4%B9%A6%E7%B1%8D/OrganizationalBehavior_LibreTexts.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/269b2c539f6ea5b9149dd3142c34eea8f9a97df6/%E5%BF%83%E7%90%86%E9%87%91%E8%9E%8D%E4%B9%A6%E7%B1%8D/OrganizationalBehavior_LibreTexts.pdf"
+      }
+    },
+    {
+      "id": "strategic-management",
+      "title": "Strategic Management 2E",
+      "author": "John Morris",
+      "cat": "management",
+      "catName": "管理",
+      "desc": "俄勒冈州立大学开放教材：战略分析、外部与内部环境、竞争战略、战略实施与评估。",
+      "pages": 170,
+      "year": 2021,
+      "format": "PDF",
+      "tags": [
+        "开放教材",
+        "战略管理"
+      ],
+      "searchTitles": [
+        "战略管理",
+        "Strategic Management"
+      ],
+      "bytes": 1374831,
+      "size": "1.3 MB",
+      "preview": {
+        "images": [
+          "previews/strategic-management/page-001.webp",
+          "previews/strategic-management/page-002.webp",
+          "previews/strategic-management/page-003.webp",
+          "previews/strategic-management/page-004.webp",
+          "previews/strategic-management/page-005.webp",
+          "previews/strategic-management/page-006.webp",
+          "previews/strategic-management/page-007.webp",
+          "previews/strategic-management/page-008.webp",
+          "previews/strategic-management/page-009.webp",
+          "previews/strategic-management/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 170
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/269b2c539f6ea5b9149dd3142c34eea8f9a97df6/%E5%BF%83%E7%90%86%E9%87%91%E8%9E%8D%E4%B9%A6%E7%B1%8D/StrategicManagement.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/269b2c539f6ea5b9149dd3142c34eea8f9a97df6/%E5%BF%83%E7%90%86%E9%87%91%E8%9E%8D%E4%B9%A6%E7%B1%8D/StrategicManagement.pdf"
+      }
     }
   ],
   "subcategories": [
