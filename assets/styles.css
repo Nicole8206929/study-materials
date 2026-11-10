@@ -49,6 +49,15 @@
 .upload-steps li { padding-left:4px; margin:0 0 18px; }
 .upload-help li { margin:0 0 10px; }
 .upload-guide p,.upload-guide li { overflow-wrap:anywhere; }
+.upload-destination { margin:24px 0; padding:20px 0; border-block:1px solid var(--border); }
+.upload-destination label { display:block; margin:16px 0 7px; font-weight:600; }
+.upload-destination input,.upload-destination select { width:100%; margin:0; padding:12px; min-height:48px; background:var(--card); color:var(--fg); border:1px solid var(--border); border-radius:5px; }
+.upload-destination .muted { font-size:13px; }
+.phone-settings,.legacy-checker { margin:24px 0; border-top:1px solid var(--border); padding-top:12px; }
+.phone-settings>summary,.legacy-checker>summary { min-height:44px; padding:10px 0; cursor:pointer; font-weight:600; color:var(--accent); }
+.upload-receipts { list-style:none; padding:0; }
+.upload-receipts li { border-bottom:1px solid var(--border); padding:10px 0 16px; }
+.upload-receipts li p { margin:8px 0; }
 .upload-privacy { border-top:1px solid var(--border); padding-top:18px; color:var(--muted); font-size:13px; }
 .install-address { margin:18px 0; padding:16px; border:1px solid var(--border); border-radius:5px; }
 .install-address label { display:block; margin:12px 0 6px; font-size:13px; }

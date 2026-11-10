@@ -3,22 +3,62 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="在手机本地核对已上传资料，只将缺失文件打成一个补传包。无需插件或新后台。">
+  <meta name="description" content="自己选择分类和标签，上传后自动整理到书架；原件保存在私有资料库。">
   <meta name="color-scheme" content="light dark">
   <meta name="robots" content="noindex">
   <meta name="referrer" content="no-referrer">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
-  <title>补齐上传资料 · Nicole 的学习书架</title>
+  <title>上传并分类 · Nicole 的学习书架</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
-  <script src="assets/upload-checker-bootstrap.js?v=resume-2" defer></script>
-  <script src="assets/upload-checker.js?v=resume-2" defer></script>
+  <script src="assets/upload-checker-bootstrap.js?v=classify-1" defer></script>
+  <script src="assets/upload-checker.js?v=classify-1" defer></script>
 </head>
 <body>
   <div class="container guide-container">
     <header><div class="masthead"><a class="brand" href="./">NICOLE / 学习书架</a><a href="./">返回书架</a></div></header>
     <main class="upload-guide">
-      <h1>补齐上传资料</h1>
+      <h1>上传并分类</h1>
+      <p class="guide-intro">选好放在哪里，上传后自动整理。</p>
+      <p>用手机自带浏览器操作。书架无需密码，上传区沿用你自己的 GitHub 登录；完整资料保持私有，书架只提供前 10 页试读。</p>
+      <p id="automationState" role="status">正在读取上传设置…</p>
+      <p id="automationSetup" hidden><a class="upload-link" href="upload-setup.html">首次启用自动入库</a></p>
+      <form id="newUploadForm" class="upload-destination">
+        <label for="uploadCategory">书架分类</label>
+        <select id="uploadCategory" required><option value="">正在载入分类…</option></select>
+        <label for="uploadTags">分类标签（选填，用逗号分隔）</label>
+        <input id="uploadTags" placeholder="例如：深中高中物理资料，课内总结" maxlength="450">
+        <label for="uploadMode">整理方式</label>
+        <select id="uploadMode"><option value="individual">每个文件分别入库</option><option value="merge">按文件名顺序合订为一本 PDF</option></select>
+        <p class="muted">PDF、EPUB 可分别入库；PPT/PPTX 会转为静态 PDF，保留隐藏页和原备注。合订支持 PDF 和课件，按文件名中的数字顺序排列，不改写原文，不含音视频。原件保存在私有归档区。</p>
+        <label for="uploadTitle">书名／合集名称（合订时必填）</label>
+        <input id="uploadTitle" maxlength="120" placeholder="留空时使用原文件名">
+        <label for="uploadExpected">本批文件总数（选填）</label>
+        <input id="uploadExpected" type="number" inputmode="numeric" min="1" max="1000" placeholder="填写后会检查是否齐全">
+        <p>下一页添加文件，等每个附件上传成功后点 <strong>Publish release（发布）</strong>。这是私有归档，不会把完整文件公开，也不需要存入草稿箱。</p>
+        <button id="startNewUpload" class="primary" type="submit" disabled>前往上传</button>
+        <p id="newUploadNotice" role="status" aria-live="polite"></p>
+        <a id="resumeNewUpload" href="#" target="_blank" rel="noopener noreferrer" hidden>打开本次上传</a>
+      </form>
+      <section id="uploadTracking" hidden aria-labelledby="pendingHeading">
+        <h2 id="pendingHeading">待处理</h2>
+        <p>发布后回到此页，会自动更新处理结果。云端整理启动后可关闭网页或锁屏，不需要找助手指定分类。传输附件期间仍需等待 GitHub 显示完成。</p>
+        <button id="refreshUploadStatus" class="text-button" type="button">刷新处理结果</button>
+        <ul id="pendingUploads" class="upload-receipts"></ul>
+        <ul id="completedUploads" class="upload-receipts" aria-label="最近入库成功记录"></ul>
+      </section>
+      <details class="phone-settings">
+        <summary>OPPO／vivo：减少后台传输中断</summary>
+        <ol class="upload-help">
+          <li>在系统“设置 → 应用管理 → 浏览器 → 电池／耗电管理”中允许后台活动，关闭对此浏览器的省电限制。不同机型也可能位于“电池 → 应用耗电管理”。</li>
+          <li>使用移动数据时，在浏览器的流量管理中允许后台联网；若系统提供“锁屏断网”或“睡眠待机优化”，传输期间关闭相应限制。</li>
+          <li>在最近任务中锁定浏览器，避免一键清理将它关闭。不要同时开启省电模式；大批文件传输时保持页面在前台最可靠。</li>
+        </ol>
+        <p class="muted">这些设置不能强制手机浏览器在黑屏后持续运行。传输暂停时回到 GitHub 等待或重试；成功附件不会丢失。发布后已经启动的云端转换无需手机保持亮屏。</p>
+      </details>
+      <details id="legacyChecker" class="legacy-checker">
+      <summary>补齐旧批次文件／查看旧核对记录</summary>
+      <h2>补齐旧批次资料</h2>
       <p class="guide-intro">分批添加，随时移除，只打包未上传的。</p>
       <p>手机自带浏览器就能使用。不需要安装插件、运行书签或启用新后台；核对和打包在手机上完成。</p>
       <p id="inventoryStatus" role="status" aria-live="polite">正在准备核对工具；可以先选择文件，记录载入后会自动核对。</p>
@@ -84,6 +124,7 @@
       <p><a id="privateUpload" href="https://github.com/Nicole8206929/study-materials-originals/releases" rel="noreferrer">打开原 GitHub 私有上传区</a></p>
       <p class="upload-privacy">本页使用专用链接内对应的已上传记录，不实时查询 GitHub。新包上传后回到聊天，我会刷新记录；不要把旧记录当作最新状态。私人链接仅用于读取加密的核对清单，不授予原件下载权限。</p>
       <noscript><p>请允许浏览器运行本页 JavaScript 后再打开私人核对链接；无需安装扩展。</p></noscript>
+      </details>
     </main>
     <footer><p><a href="./">返回书架</a> · 完整版保存在私有资料库</p></footer>
   </div>

@@ -1,6 +1,9 @@
 import {decryptSnapshot, planFiles, createUploadZip} from './upload-checker-core.mjs';
 import {FileSelection} from './file-selection.mjs';
 import {screenActivity} from './screen-activity.mjs';
+import {initializeLibraryUpload} from './library-upload-entry.mjs';
+
+initializeLibraryUpload();
 
 const element = id => document.getElementById(id);
 const picker = element('checkFiles'), folderPicker = element('checkFolder'), status = element('checkStatus');
@@ -92,6 +95,7 @@ function selectionChanged(message) {
 }
 function addFiles(files, folder = false) {
   const received = Array.from(files);
+  if (received.length) element('legacyChecker')?.setAttribute('open','');
   const accepted = folder ? received.filter(file => /\.(?:pdf|pptx?)$/i.test(file.name)) : received;
   if (!accepted.length) {
     if (received.length) element('selectionNotice').textContent = '这个文件夹中没有 PDF、PPT 或 PPTX，原有选择保留。';

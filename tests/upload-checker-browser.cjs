@@ -29,6 +29,7 @@ const root = path.join(__dirname, '..');
       // Files selected before the record loads are retained, then checked as
       // soon as the user restores the complete link.
       await page.goto('http://127.0.0.1:8766/upload.html', {waitUntil: 'networkidle'});
+      await page.locator('#legacyChecker > summary').click();
       assert.equal(await page.locator('#checkFiles').isDisabled(), false);
       await page.locator('#checkFiles').setInputFiles(all.slice(0, 50));
       await page.waitForFunction(() => document.querySelector('#selectionCount')?.textContent.includes('50'));

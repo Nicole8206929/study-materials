@@ -15,6 +15,8 @@
   });
   setTimeout(function () {
     if (window.nicoleUploadCheckerStarted) return;
+    var automation = document.getElementById('automationState');
+    if (automation) automation.textContent = '上传工具未能启动。请刷新此页重试；尚未发送文件，也不会误报入库成功。';
     status.textContent = '核对工具未能启动，可能是脚本没载入或浏览器不兼容。所选文件尚未核对；点“重新载入记录”会刷新本页。';
   }, 12000);
 })();

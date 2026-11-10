@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex"><meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>首次启用自动入库 · Nicole 的学习书架</title>
+  <link rel="stylesheet" href="assets/styles.css"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body><div class="container guide-container">
+  <header><div class="masthead"><a class="brand" href="./">NICOLE / 学习书架</a><a href="upload.html">返回上传页</a></div></header>
+  <main class="upload-guide">
+    <h1>首次启用自动入库</h1>
+    <p class="guide-intro">完成这一次，之后自己选分类并上传即可。</p>
+    <p>完整文件在私有仓库，公开书架在另一个仓库。GitHub 自动任务需要一份仅用于更新公开书架的授权；当前 ChatGPT 的 GitHub 连接不能代设这项仓库密钥。无需安装扩展、开启服务器或把令牌发到聊天。</p>
+    <ol class="upload-steps">
+      <li><strong>在 GitHub 创建书架授权。</strong><p>下方链接预填账户与 Contents: Read and write（仓库内容读写）。在 Repository access 选择 Only select repositories，并且只选 <code>study-materials</code>，再创建并复制令牌。无需授权其他仓库或账户管理权限；到期后需更新同一项密钥。</p><a class="upload-link" href="https://github.com/settings/personal-access-tokens/new?name=Study%20Materials%20Auto%20Publish&amp;target_name=Nicole8206929&amp;contents=write&amp;expires_in=365" target="_blank" rel="noopener noreferrer">创建书架授权</a></li>
+      <li><strong>保存到 GitHub 的私有仓库密钥。</strong><p>打开下方页面，Name 填 <code>PUBLIC_SHELF_TOKEN</code>，Secret 粘贴刚才的令牌，然后点 Add secret。只在 GitHub 页面粘贴；本网站不接收令牌。</p><a class="upload-link" href="https://github.com/Nicole8206929/study-materials-originals/settings/secrets/actions/new" target="_blank" rel="noopener noreferrer">保存发布授权</a></li>
+      <li><strong>启用并检查一次。</strong><p>打开下方任务页，点 Run workflow。保持 <code>release_id</code> 留空，直接运行。任务验证发布权限并更新网站后，上传页会显示“自动入库已启用”。之后上传无需再运行这一步。</p><a class="upload-link" href="https://github.com/Nicole8206929/study-materials-originals/actions/workflows/auto-library.yml" target="_blank" rel="noopener noreferrer">启用自动入库</a></li>
+    </ol>
+    <p>以后在上传页选择分类、标签和整理方式，去 GitHub 添加文件并点 Publish release。完整文件仍在私有仓库；公开书架只增加书目信息和最多 10 页试读。</p>
+    <p><a class="upload-link" href="upload.html">返回上传页检查</a></p>
+  </main><footer><p>未启用或整理失败时，原件保持私有并保留，不会假报上传成功。</p></footer>
+</div></body></html>
