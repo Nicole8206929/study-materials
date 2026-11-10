@@ -13,6 +13,10 @@ export function makeUploadRelease(input,categories,{stamp,random}={}) {
   const batch=`upload-${stamp}-${random}`;
   if (!batchPattern.test(batch)) throw new Error('无法生成上传批次，请重试。');
   const spec={version:1,cat:input.cat,tags,mode:input.mode,title,expectedCount};
+  if (input.subcat) {
+    if (!/^[a-z][a-z0-9-]*$/.test(input.subcat) || input.cat!=='university-math') throw new Error('请检查大学数学小分类。');
+    spec.subcat=input.subcat;
+  }
   const category=categories.find(c=>c.id===input.cat).name;
   const encoded=JSON.stringify(spec).replaceAll('<','\\u003c').replaceAll('>','\\u003e');
   const body=`分类：${category}\n标签：${tags.join('、')||'无'}\n\n请添加 PDF、EPUB、PPT 或 PPTX。等每个附件上传成功，再点 Publish release（发布）。本仓库是私有的，发布不会公开完整文件。发布后返回书架上传页查看结果，无需保存到草稿或回聊天指定分类。\n\n<!-- nicole-library:${encoded} -->`;

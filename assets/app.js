@@ -3,9 +3,23 @@
 const $ = id => document.getElementById(id);
 let books = [];
 let categories = new Map();
+let subcategories = [];
 let loaded = false;
 let loading = false;
-let state = { q: "", cat: "all", tag: "", format: "all", sort: "default" };
+let state = { q: "", cat: "all", subcat: "", tag: "", format: "all", sort: "default" };
+
+function protectedOwnerAccess(access) {
+  if (!access) return null;
+  if (access.provider !== 'github-private') throw new Error('Invalid owner access');
+  for (const key of ['view','download']) {
+    const url = new URL(access[key]);
+    if (url.origin !== 'https://github.com' || url.username || url.password || url.search || url.hash ||
+        !url.pathname.startsWith('/Nicole8206929/study-materials-originals/') ||
+        !/^\/(?:Nicole8206929\/study-materials-originals)\/(?:blob\/|raw\/|releases\/(?:tag|download)\/)/.test(url.pathname) ||
+        decodeURIComponent(url.pathname).split('/').some(p=>p==='..'||/[\x00-\x1f]/.test(p))) throw new Error('Unprotected original link rejected');
+  }
+  return access;
+}
 
 function node(tag, className, text) {
   const element = document.createElement(tag);
@@ -25,6 +39,7 @@ function validateBook(book) {
   if (!Array.isArray(book.tags) || book.tags.some(tag => typeof tag !== "string")) throw new Error("Invalid tags");
   if (!["PDF", "EPUB"].includes(book.format)) throw new Error("Invalid format");
   if (book.file || book.url || book.downloadUrl) throw new Error("Public catalogue must not expose originals");
+  protectedOwnerAccess(book.ownerAccess);
   if (!book.preview || !Array.isArray(book.preview.images) || !book.preview.images.length || book.preview.images.length > 20) throw new Error("Invalid preview");
   return { ...book, format: book.format.toLowerCase(), previewImages: book.preview.images.map(previewURL) };
 }
@@ -48,12 +63,16 @@ async function loadBooks() {
     const declared = data.categories || [];
     if (!Array.isArray(declared) || declared.some(category => !category || typeof category.id !== "string" || category.id === "all" || !category.id.trim() || typeof category.name !== "string" || !category.name.trim())) throw new Error("Invalid categories");
     categories = new Map(declared.map(category => [category.id, category.name]));
+    subcategories = data.subcategories || [];
+    if (!Array.isArray(subcategories) || subcategories.some(s=>!s.id||!s.name||!categories.has(s.parent))) throw new Error('Invalid subcategories');
+    books.forEach(book=>{if(book.subcat&&!subcategories.some(s=>s.id===book.subcat&&s.parent===book.cat))throw new Error('Invalid book subcategory');});
     if (categories.size !== declared.length) throw new Error("Duplicate category IDs");
     books.forEach(book => { if (!categories.has(book.cat)) categories.set(book.cat, book.catName); });
     loaded = true;
     readState();
     $("tagDetails").open = !matchMedia("(max-width: 600px)").matches || Boolean(state.tag);
     renderCategories();
+    renderSubcategories();
     renderTags();
     render();
     const formats = [...new Set(books.map(book => book.format))];
@@ -72,11 +91,12 @@ async function loadBooks() {
 
 function readState() {
   const params = new URL(location.href).searchParams;
-  state = { q: params.get("q") || "", cat: params.get("cat") || "all", tag: params.get("tag") || "", format: params.get("format") || "all", sort: params.get("sort") || "default" };
+  state = { q: params.get("q") || "", cat: params.get("cat") || "all", subcat: params.get('subcat') || '', tag: params.get("tag") || "", format: params.get("format") || "all", sort: params.get("sort") || "default" };
   if (!categories.has(state.cat)) state.cat = "all";
+  if (!subcategories.some(s=>s.parent===state.cat&&s.id===state.subcat)) state.subcat='';
   if (!["all", "pdf", "epub"].includes(state.format)) state.format = "all";
   if (!["default", "title", "year", "size"].includes(state.sort)) state.sort = "default";
-  if (!books.some(book => (state.cat === "all" || book.cat === state.cat) && book.tags.includes(state.tag))) state.tag = "";
+  if (!books.some(book => (state.cat === "all" || book.cat === state.cat) && (!state.subcat||book.subcat===state.subcat) && book.tags.includes(state.tag))) state.tag = "";
   $("search").value = state.q;
   $("format").value = state.format;
   $("sort").value = state.sort;
@@ -106,9 +126,10 @@ function renderCategories() {
     const count = cat === "all" ? books.length : books.filter(book => book.cat === cat).length;
     const button = filterButton(name, cat, "category", state.cat === cat, () => {
       state.cat = cat;
+      state.subcat = '';
       state.tag = "";
       $("categories").querySelectorAll("button").forEach(item => item.setAttribute("aria-pressed", String(item.dataset.value === cat)));
-      renderTags();
+      renderSubcategories();renderTags();
       render();
       saveState();
     });
@@ -117,8 +138,19 @@ function renderCategories() {
   }));
 }
 
+function renderSubcategories() {
+  const choices=subcategories.filter(s=>s.parent===state.cat);
+  $('subcategorySection').hidden=!choices.length;
+  $('subcategories').replaceChildren(...[{id:'',name:'全部'},...choices].map(s=>{
+    const count=books.filter(b=>b.cat===state.cat&&(!s.id||b.subcat===s.id)).length;
+    return filterButton(`${s.name} ${count}`,s.id,'tag-chip subcategory',state.subcat===s.id,()=>{
+      state.subcat=s.id;state.tag='';renderSubcategories();renderTags();render();saveState();
+    });
+  }));
+}
+
 function renderTags() {
-  const tags = [...new Set(books.filter(book => state.cat === "all" || book.cat === state.cat).flatMap(book => book.tags))];
+  const tags = [...new Set(books.filter(book => (state.cat === "all" || book.cat === state.cat)&&(!state.subcat||book.subcat===state.subcat)).flatMap(book => book.tags))];
   $("tagSummary").textContent = `主题标签（${tags.length}）`;
   $("selectedTag").textContent = state.tag || "全部标签";
   $("tagFilter").replaceChildren(...["", ...tags].map(tag => filterButton(tag || "全部标签", tag, "tag-chip", state.tag === tag, () => {
@@ -152,6 +184,12 @@ function bookCard(book) {
   preview.setAttribute("aria-label", `查看试读《${book.title}》`);
   preview.addEventListener("click", () => previewBook(book));
   actions.append(preview);
+  if (book.ownerAccess) {
+    for (const [key,label,css] of [['view','本人查看原件','owner-view'],['download','本人下载原件','owner-download']]) {
+      const link=node('a',css,label);link.href=book.ownerAccess[key];link.target='_blank';link.rel='noopener noreferrer';
+      link.setAttribute('aria-label',`${label}《${book.title}》（GitHub 验证权限）`);actions.append(link);
+    }
+  }
   const access = node("div", "book-access");
   const icon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   icon.setAttribute("viewBox", "0 0 24 24");
@@ -161,7 +199,7 @@ function bookCard(book) {
   icon.append(shape);
   access.append(icon, node("span", "", "原件已锁定"));
   card.append(top, node("h3", "", book.title), node("p", "author", book.author), node("p", "desc", book.desc), meta, node("p", "book-tags", book.tags.join(" · ")), access, actions);
-  card.append(node("p", "format-note", `前 ${book.previewImages.length} 页试读 · 不提供原件下载`));
+  card.append(node("p", "format-note", `访客试读前 ${book.previewImages.length} 页${book.ownerAccess?' · 本人入口由 GitHub 验证权限':' · 完整文件保持私有'}`));
 
   return card;
 }
@@ -171,6 +209,7 @@ function render() {
   const terms = state.q.trim().normalize("NFKC").toLocaleLowerCase().split(/\s+/).filter(Boolean);
   const filtered = books.filter(book => {
     if (state.cat !== "all" && book.cat !== state.cat) return false;
+    if (state.subcat && book.subcat!==state.subcat) return false;
     if (state.tag && !book.tags.includes(state.tag)) return false;
     if (state.format !== "all" && book.format !== state.format) return false;
     const haystack = [book.title, ...(book.searchTitles || [])].join(" ").normalize("NFKC").toLocaleLowerCase();
@@ -182,7 +221,8 @@ function render() {
   $("books").replaceChildren(...filtered.map(bookCard));
   $("emptyState").hidden = filtered.length !== 0;
   const emptyCategory = state.cat !== "all" && !books.some(book => book.cat === state.cat);
-  $("emptyStateTitle").textContent = emptyCategory ? `${categories.get(state.cat)}暂未添加书籍` : "还没有找到匹配的资料";
+  const emptySubcategory=state.subcat&&!books.some(b=>b.cat===state.cat&&b.subcat===state.subcat);
+  $("emptyStateTitle").textContent = emptySubcategory ? `${subcategories.find(s=>s.id===state.subcat)?.name}暂未添加书籍` : emptyCategory ? `${categories.get(state.cat)}暂未添加书籍` : "还没有找到匹配的资料";
   $("emptyStateHint").textContent = emptyCategory ? "分类已建立，添加对应书籍后会显示在这里。" : "试试更短的关键词，或重置分类、格式和标签。";
   $("stats").textContent = `共 ${books.length} 份资料 · 当前显示 ${filtered.length} 份`;
 }
@@ -217,14 +257,14 @@ $("search").addEventListener("input", event => { state.q = event.target.value; r
 $("clearSearch").addEventListener("click", () => { state.q = ""; $("search").value = ""; render(); saveState(); $("search").focus(); });
 for (const id of ["format", "sort"]) $(id).addEventListener("change", event => { state[id] = event.target.value; render(); saveState(); });
 function resetFilters() {
-  state = { q: "", cat: "all", tag: "", format: "all", sort: "default" };
+  state = { q: "", cat: "all", subcat: "", tag: "", format: "all", sort: "default" };
   $("search").value = "";
   $("format").value = "all";
   $("sort").value = "default";
-  renderCategories(); renderTags(); render(); saveState(); $("search").focus();
+  renderCategories(); renderSubcategories();renderTags(); render(); saveState(); $("search").focus();
 }
 $("resetFilters").addEventListener("click", resetFilters);
 $("emptyReset").addEventListener("click", resetFilters);
 $("retryLoad").addEventListener("click", loadBooks);
-window.addEventListener("popstate", () => { if (loaded) { readState(); renderCategories(); renderTags(); render(); } });
+window.addEventListener("popstate", () => { if (loaded) { readState(); renderCategories();renderSubcategories(); renderTags(); render(); } });
 loadBooks();

@@ -23,3 +23,10 @@ test('only a matching confirmed result can clear an upload from the pending list
   assert.throws(()=>validateUploadStatus({...ready,stage:'done'},batch));
   assert.throws(()=>validateUploadStatus({...ready,bookIds:['javascript:alert(1)']},batch));
 });
+
+test('university mathematics child category is carried into the private upload metadata',()=>{
+  const result=makeUploadRelease({cat:'university-math',subcat:'analysis',tags:'实分析',mode:'individual'},
+    [{id:'university-math',name:'大学数学'}],{stamp:'20261110123456',random:'1234abcd'});
+  assert.equal(result.spec.subcat,'analysis');
+  assert(new URL(result.url).searchParams.get('body').includes('"subcat":"analysis"'));
+});

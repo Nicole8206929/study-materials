@@ -26,6 +26,7 @@
       <form id="newUploadForm" class="upload-destination">
         <label for="uploadCategory">书架分类</label>
         <select id="uploadCategory" required><option value="">正在载入分类…</option></select>
+        <div id="uploadSubcategoryField" hidden><label for="uploadSubcategory">大学数学小分类</label><select id="uploadSubcategory"><option value="">请选择小分类</option></select></div>
         <label for="uploadTags">分类标签（选填，用逗号分隔）</label>
         <input id="uploadTags" placeholder="例如：深中高中物理资料，课内总结" maxlength="450">
         <label for="uploadMode">整理方式</label>
@@ -118,11 +119,11 @@
       </section>
       <section id="nextSteps" hidden aria-labelledby="uploadHeading">
         <h2 id="uploadHeading">3. 只上传这一个 ZIP</h2>
-        <p>下载后，在原 GitHub 上传区选择刚生成的 <strong id="packageName"></strong>，等成功后点 <strong>Save draft</strong>。不需要逐个挑缺失文件，也不需要删除原来的成功附件。</p>
-        <p>上传完成后回到聊天告诉我“补传包已上传”。我会校验包内文件，再按约定去重和整理。</p>
+        <p>本地核对产物：<strong id="packageName"></strong>。旧物理批次已归档；这个 ZIP 不作为新自动入库的上传格式。</p>
+        <p>新资料请使用上方“前往上传”，分类会随批次保存，发布后自动整理。</p>
       </section>
       <p><a id="privateUpload" href="https://github.com/Nicole8206929/study-materials-originals/releases" rel="noreferrer">打开原 GitHub 私有上传区</a></p>
-      <p class="upload-privacy">本页使用专用链接内对应的已上传记录，不实时查询 GitHub。新包上传后回到聊天，我会刷新记录；不要把旧记录当作最新状态。私人链接仅用于读取加密的核对清单，不授予原件下载权限。</p>
+      <p class="upload-privacy">旧核对区使用专用链接对应的归档记录，不实时查询 GitHub；新自动入库的状态在上方显示。私人链接仅用于读取加密的核对清单，不授予原件下载权限。</p>
       <noscript><p>请允许浏览器运行本页 JavaScript 后再打开私人核对链接；无需安装扩展。</p></noscript>
       </details>
     </main>

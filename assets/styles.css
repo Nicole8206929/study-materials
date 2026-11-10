@@ -58,6 +58,13 @@
 .upload-receipts { list-style:none; padding:0; }
 .upload-receipts li { border-bottom:1px solid var(--border); padding:10px 0 16px; }
 .upload-receipts li p { margin:8px 0; }
+.subcategory-section { padding:0 0 18px; }
+.subcategory-section h2 { font-size:14px; margin:0 0 8px; }
+.subcategory-section .tag-filter { margin-top:0; }
+.actions { flex-wrap:wrap; }
+.owner-view,.owner-download { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:8px 12px; border:1px solid var(--border); border-radius:4px; color:var(--accent); text-decoration:none; flex:1; text-align:center; }
+.owner-download { border-color:var(--accent); font-weight:600; }
+.book .view { flex-basis:100%; }
 .upload-privacy { border-top:1px solid var(--border); padding-top:18px; color:var(--muted); font-size:13px; }
 .install-address { margin:18px 0; padding:16px; border:1px solid var(--border); border-radius:5px; }
 .install-address label { display:block; margin:12px 0 6px; font-size:13px; }

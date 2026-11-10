@@ -4,10 +4,20 @@ import json
 import re
 import sys
 from pathlib import Path
+from urllib.parse import urlsplit, unquote
 
 ROOT = Path(__file__).resolve().parents[1]
-ALLOWED_KEYS = {'id','title','author','cat','catName','desc','pages','size','year','format','bytes','tags','searchTitles','preview'}
+ALLOWED_KEYS = {'id','title','author','cat','catName','desc','pages','size','year','format','bytes','tags','searchTitles','preview','subcat','ownerAccess'}
 FORBIDDEN = {'.pdf','.epub','.mobi','.zip','.rar','.7z','.tar','.gz'}
+
+
+def check_owner_access(access):
+    assert set(access)=={'provider','view','download'} and access['provider']=='github-private', 'Invalid owner access'
+    for key in ['view','download']:
+        url=urlsplit(access[key])
+        assert url.scheme=='https' and url.netloc=='github.com' and not url.query and not url.fragment, 'Unprotected original link'
+        assert re.match(r'^/Nicole8206929/study-materials-originals/(?:blob/|raw/|releases/(?:tag|download)/)',url.path), 'Owner link must stay in the private repository'
+        assert not any(p=='..' or any(ord(c)<32 for c in p) for p in unquote(url.path).split('/')), 'Unsafe owner path'
 
 
 def validate():
@@ -24,6 +34,10 @@ def validate():
         assert category['id'] not in category_names, 'Duplicate category ID'
         category_names[category['id']] = category['name']
     ids = set()
+    subcategories=data.get('subcategories',[])
+    assert len({s['id'] for s in subcategories})==len(subcategories),'Duplicate subcategory'
+    for sub in subcategories:
+        assert sub['parent'] in category_names and re.fullmatch(r'[a-z][a-z0-9-]*',sub['id']) and sub['name'].strip(), 'Invalid subcategory'
     images = set()
     for book in data['books']:
         assert not set(book)-ALLOWED_KEYS, f"Unexpected public fields: {book['id']}"
@@ -31,6 +45,8 @@ def validate():
         ids.add(book['id'])
         assert category_names.get(book['cat']) == book['catName'], f"Category mismatch: {book['id']}"
         assert book['format'] in ('PDF','EPUB')
+        if book.get('subcat'):assert any(s['id']==book['subcat'] and s['parent']==book['cat'] for s in subcategories),'Subcategory mismatch'
+        if book.get('ownerAccess'):check_owner_access(book['ownerAccess'])
         preview = book['preview']
         assert 1 <= len(preview['images']) == preview['pageCount'] <= data['previewLimit']
         for image in preview['images']:
@@ -50,7 +66,7 @@ def validate():
             assert path.name != '.env' and not path.name.startswith('.env.'), f'Environment file found: {relative}'
             if path.suffix.lower() == '.webp':
                 assert relative.as_posix() in images, f'Unlisted preview: {relative}'
-    print(f'PASS: {len(ids)} books; {len(images)} limited preview images; no originals or download URLs')
+    print(f'PASS: {len(ids)} books; {len(images)} limited previews; no public originals; owner links restricted to private GitHub')
 
 
 if __name__ == '__main__':

@@ -5,7 +5,14 @@ export function initializeLibraryUpload() {
   if (!el('newUploadForm')) return;
   const url=new URL(location.href);
   el('legacyChecker').open=url.searchParams.has('batch') || url.searchParams.has('legacy');
-  let categories=[],ready=false,refreshing=false,settingsLoading=false;
+  let categories=[],subcategories=[],ready=false,refreshing=false,settingsLoading=false;
+  function renderSubcategories(){
+    const previous=el('uploadSubcategory').value,choices=subcategories.filter(s=>s.parent===el('uploadCategory').value);
+    el('uploadSubcategoryField').hidden=!choices.length;el('uploadSubcategory').required=!!choices.length;
+    el('uploadSubcategory').replaceChildren(...[{id:'',name:'请选择小分类'},...choices].map(s=>{const o=document.createElement('option');o.value=s.id;o.textContent=s.name;return o;}));
+    if(choices.some(s=>s.id===previous))el('uploadSubcategory').value=previous;
+  }
+  el('uploadCategory').addEventListener('change',renderSubcategories);
   const pendingKey='nicole-library-pending-v1',receiptsKey='nicole-library-receipts-v1';
   function read(key) {try {const rows=JSON.parse(localStorage.getItem(key)||'[]');return Array.isArray(rows)?rows.filter(x=>batchPattern.test(x.batch)).slice(-20):[];}catch{return [];}}
   let pending=read(pendingKey),receipts=read(receiptsKey);
@@ -44,7 +51,7 @@ export function initializeLibraryUpload() {
     event.preventDefault();
     if (!ready) {el('newUploadNotice').textContent='自动入库尚未启用，请先完成一次性配置。';return;}
     try {
-      const result=makeUploadRelease({cat:el('uploadCategory').value,tags:el('uploadTags').value,
+      const result=makeUploadRelease({cat:el('uploadCategory').value,subcat:el('uploadSubcategoryField').hidden?'':el('uploadSubcategory').value,tags:el('uploadTags').value,
         mode:el('uploadMode').value,title:el('uploadTitle').value,expectedCount:el('uploadExpected').value},categories);
       pending.push({batch:result.batch,cat:result.spec.cat,createdAt:new Date().toISOString()});save();render();
       el('newUploadNotice').textContent='已记住所选分类。在 GitHub 添加文件并点 Publish release，返回本页可查看结果；云端整理启动后可关闭手机。';
@@ -65,10 +72,11 @@ export function initializeLibraryUpload() {
     try {
       const [catalogue,automation]=await Promise.all([fetch('books.json',{cache:'no-store'}),fetch('upload-automation.json',{cache:'no-store'})]);
       if(!catalogue.ok||!automation.ok)throw new Error('上传设置暂时未载入，请刷新重试。');
-      const data=await catalogue.json(),state=await automation.json();categories=data.categories;
+      const data=await catalogue.json(),state=await automation.json();categories=data.categories;subcategories=data.subcategories||[];
       const previous=el('uploadCategory').value;
       el('uploadCategory').replaceChildren(...categories.map(c=>{const o=document.createElement('option');o.value=c.id;o.textContent=c.name;return o;}));
       el('uploadCategory').value=categories.some(c=>c.id===previous)?previous:categories.some(c=>c.id===url.searchParams.get('cat'))?url.searchParams.get('cat'):'high-school-physics';
+      renderSubcategories();
       ready=state.version===1&&state.ready===true;el('startNewUpload').disabled=!ready;
       el('automationSetup').hidden=ready;el('automationState').textContent=ready?'自动入库已启用。选择分类后上传，不需要回聊天处理。':'自动入库已准备好，尚需完成一次 GitHub 发布授权。启用前不会把资料误报成已入库。';
     }catch(error){el('automationState').textContent=error.message;}

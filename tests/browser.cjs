@@ -37,9 +37,26 @@ const total = catalog.books.length;
       if (!count) assert(await page.locator('#emptyState').isVisible());
     }
     await page.locator('#resetFilters').click();
+    await page.locator('.category[data-value="university-math"]').click();
+    assert(await page.locator('#subcategorySection').isVisible());
+    for(const [id,name] of [['analysis','分析'],['algebra','代数'],['geometry-topology','几何与拓扑'],['probability-statistics','概率与统计'],['applied-math','应用数学']]) {
+      await page.locator(`.subcategory[data-value="${id}"]`).click();
+      assert(new URL(page.url()).searchParams.get('subcat')===id);
+      await page.reload();await page.waitForFunction(()=>document.querySelector('#books').getAttribute('aria-busy')==='false');
+      assert.equal(await page.locator(`.subcategory[data-value="${id}"]`).getAttribute('aria-pressed'),'true');
+      const expected=catalog.books.filter(b=>b.cat==='university-math'&&b.subcat===id).length;
+      assert.equal(await page.locator('.book').count(),expected);
+      if(!expected)assert.equal(await page.locator('#emptyStateTitle').innerText(),`${name}暂未添加书籍`);
+    }
+    await page.locator('#resetFilters').click();
     assert.equal(await page.locator('.book').count(),total);
     assert.equal(await page.locator('a[download],.download,iframe').count(),0);
     assert.equal(await page.locator('.book-access').count(),total);
+    assert.equal(await page.locator('.owner-download').count(),catalog.books.filter(b=>b.ownerAccess).length);
+    for(const link of await page.locator('.owner-download').all()) {
+      const u=new URL(await link.getAttribute('href'));assert.equal(u.origin,'https://github.com');
+      assert(u.pathname.startsWith('/Nicole8206929/study-materials-originals/'));assert.equal(u.search,'');assert.equal(u.hash,'');
+    }
     assert.equal(await page.locator('[data-id="robbins-ob"] .book-top span').first().innerText(),'管理');
     await page.locator('#search').fill('宏观经济学原理');
     assert(await page.locator('[data-id="macro3e"]').isVisible());
