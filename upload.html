@@ -12,7 +12,7 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css?v=multi-category-1">
   <script src="assets/upload-checker-bootstrap.js?v=multi-category-1" defer></script>
-  <script src="assets/upload-checker.js?v=multi-category-1" defer></script>
+  <script src="assets/upload-checker.js?v=upload-recovery-1" defer></script>
 </head>
 <body>
   <div class="container guide-container">
@@ -42,7 +42,7 @@
       </form>
       <section id="uploadTracking" hidden aria-labelledby="pendingHeading">
         <h2 id="pendingHeading">待处理</h2>
-        <p>发布后回到此页，会自动更新处理结果。云端整理启动后可关闭网页或锁屏，不需要找助手指定分类。传输附件期间仍需等待 GitHub 显示完成。</p>
+        <p>这里的刷新只查询入库结果，不会重传文件。GitHub 添加附件失败时，回原上传页重试；全部附件上传成功并发布后，本页才会收到云端处理记录。云端整理启动后可关闭网页或锁屏。</p>
         <button id="refreshUploadStatus" class="text-button" type="button">刷新处理结果</button>
         <ul id="pendingUploads" class="upload-receipts"></ul>
         <ul id="completedUploads" class="upload-receipts" aria-label="最近入库成功记录"></ul>

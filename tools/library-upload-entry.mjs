@@ -27,12 +27,14 @@ export function initializeLibraryUpload() {
   el('uploadCategories').addEventListener('change',renderSubcategories);
   el('uploadSubcategories').addEventListener('change',updateChoiceLabels);
   const pendingKey='nicole-library-pending-v1',receiptsKey='nicole-library-receipts-v1';
+  const waitingMessage='尚未收到云端处理记录。请先在 GitHub 完成附件上传并点 Publish release；此处刷新只查询结果，不会重新上传文件。';
   function read(key) {try {const rows=JSON.parse(localStorage.getItem(key)||'[]');return Array.isArray(rows)?rows.filter(x=>batchPattern.test(x.batch)).slice(-20):[];}catch{return [];}}
   let pending=read(pendingKey),receipts=read(receiptsKey);
   function save(){try{localStorage.setItem(pendingKey,JSON.stringify(pending));localStorage.setItem(receiptsKey,JSON.stringify(receipts.slice(-5)));}catch{}}
   function row(item,done=false) {
     const li=document.createElement('li');
-    const text=document.createElement('p');text.textContent=done?'上传成功，已入库。':item.message||'等待上传。请在 GitHub 添加文件，全部成功后点 Publish release，再返回此页。';li.append(text);
+    const text=document.createElement('p');text.textContent=done?'上传成功，已入库。':item.message||waitingMessage;li.append(text);
+    if(!done&&item.statusError){const error=document.createElement('p');error.className='muted';error.textContent=item.statusError;li.append(error);}
     const detail=document.createElement('p');detail.className='muted';detail.textContent=`批次 ${item.batch.replace('upload-','')}${item.sourceCount?` · ${item.sourceCount} 份资料`:''}`;li.append(detail);
     if(done){
       for(const cat of item.cats||[item.cat]){
@@ -40,7 +42,9 @@ export function initializeLibraryUpload() {
         link.textContent=`查看${categories.find(c=>c.id===cat)?.name||'所选分类'}`;link.className='receipt-category-link';li.append(link);
       }
     }else{
-      const link=document.createElement('a');link.href='https://github.com/Nicole8206929/study-materials-originals/actions/workflows/auto-library.yml';link.textContent='查看私有处理记录';link.rel='noreferrer';li.append(link);
+      const link=document.createElement('a');link.rel='noreferrer';
+      link.href=item.stage?'https://github.com/Nicole8206929/study-materials-originals/actions/workflows/auto-library.yml':'https://github.com/Nicole8206929/study-materials-originals/releases';
+      link.textContent=item.stage?'查看私有处理记录':'回 GitHub 继续上传／发布';li.append(link);
     }
     return li;
   }
@@ -48,7 +52,7 @@ export function initializeLibraryUpload() {
     el('pendingUploads').replaceChildren(...pending.map(x=>row(x)));
     el('completedUploads').replaceChildren(...receipts.slice(-5).reverse().map(x=>row(x,true)));
     el('uploadTracking').hidden=!pending.length&&!receipts.length;
-    el('pendingHeading').textContent=pending.length?`待处理 ${pending.length} 批`:'待处理列表已清空';
+    el('pendingHeading').textContent=pending.length?`未完成 ${pending.length} 批`:'待处理列表已清空';
   }
   async function refresh() {
     if (refreshing || document.visibilityState==='hidden' || navigator.onLine===false) return;
@@ -57,12 +61,17 @@ export function initializeLibraryUpload() {
       for (const item of [...pending]) {
         try {
           const response=await fetch(`upload-status/${item.batch}.json?fresh=${Date.now()}`,{cache:'no-store',credentials:'omit',signal:AbortSignal.timeout?AbortSignal.timeout(15000):undefined});
-          if (response.status===404) continue;
+          if (response.status===404) {
+            delete item.statusError;
+            if(!item.stage)item.message=waitingMessage;
+            continue;
+          }
           if (!response.ok) throw new Error('记录暂时不可用，返回前台后会重试。');
           const record=validateUploadStatus(await response.json(),item.batch);
+          delete item.statusError;
           if (record.stage==='ready') {pending=pending.filter(x=>x.batch!==item.batch);receipts=receipts.filter(x=>x.batch!==item.batch).concat(record).slice(-5);}
           else Object.assign(item,record);
-        } catch {item.message='暂未取得最新结果，原件不会因此丢失。可查看私有处理记录，回到前台后自动重试。';}
+        } catch {item.statusError='暂时无法查询最新处理结果，请稍后刷新。若 GitHub 添加附件失败，请回原上传页重试；刷新不会重传手机文件。';}
       }
       save();render();
     } finally {refreshing=false;}
