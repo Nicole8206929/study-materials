@@ -1,9 +1,9 @@
 {
   "version": 1,
   "batch": "upload-20261110100751-90266e34c7e9f0dd",
-  "stage": "publishing",
-  "message": "资料已整理，正在更新书架。",
-  "updatedAt": "2026-11-10T10:17:10.171491+00:00",
+  "stage": "ready",
+  "message": "上传成功，已入库。待处理列表已清空，原件保存在私有归档区。",
+  "updatedAt": "2026-11-10T10:20:36.391140+00:00",
   "cat": "high-school-physics",
   "cats": [
     "high-school-physics"
