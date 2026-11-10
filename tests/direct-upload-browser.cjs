@@ -18,13 +18,14 @@ const service='https://nicole-private-book-upload.vibrantcloth2.chatgpt.site';
     let serviceReady=false;
     await page.route('**/upload-service.json',r=>r.fulfill({json:{version:1,ready:serviceReady,endpoint:service}}));
     const cors={'Access-Control-Allow-Origin':'http://127.0.0.1:8791','Access-Control-Allow-Headers':'authorization,content-type,x-chunk-sha256,x-upload-request','Access-Control-Allow-Methods':'GET,POST,PUT,DELETE,OPTIONS','Content-Type':'application/json'};
-    let batch,spec,stored,allowVerified=false,ready=false,puts=0,failedMode=false,loseFinalResponse=true,finalizes=0;
+    let batch,spec,stored,allowVerified=false,ready=false,puts=0,failedMode=false,loseFinalResponse=true,finalizes=0,pairCalls=0;
     await context.route(service+'/**',async route=>{
      const req=route.request(),url=new URL(req.url()),method=req.method();
      const send=(data,status=200)=>route.fulfill({status,headers:cors,body:JSON.stringify(data)});
      if(method==='OPTIONS')return route.fulfill({status:204,headers:cors});
      if(url.pathname==='/health')return send({version:1,archiveReady:true,chunkSize:8*1024*1024});
-     if(url.pathname==='/api/session')return send({connected:true,scope:'owner'});
+     if(url.pathname==='/api/session')return req.headers().authorization==='Bearer '+'v'.repeat(43)?send({connected:true,scope:'owner'}):send({error:{code:'session_required',message:'权限不可用'}},401);
+     if(url.pathname==='/api/pair'){pairCalls++;return send({error:{code:'pairing_used',message:'已使用'}},409);}
      if(url.pathname==='/api/batches'&&method==='GET')return send({batches:[]});
      if(url.pathname==='/api/batches'&&method==='POST'){
       const body=req.postDataJSON();batch=body.batch;spec=body.spec;stored=null;return send({batch,state:'uploading',chunkSize:8*1024*1024},201);
@@ -51,13 +52,14 @@ const service='https://nicole-private-book-upload.vibrantcloth2.chatgpt.site';
      if(url.pathname.endsWith('/failed'))return send({failed:true});
      return send({version:1,batch,...spec,state:ready?'ready':'queued',stage:ready?'ready':'processing',sourceCount:1,bookIds:ready?['upload-999']:[],message:ready?'已入库':'文件已上传，等待云端整理。'});
     });
-    await page.goto('http://127.0.0.1:8791/upload.html',{waitUntil:'networkidle'});
+    await page.goto('http://127.0.0.1:8791/upload.html#pair='+'p'.repeat(43),{waitUntil:'networkidle'});
     await page.waitForFunction(()=>document.querySelector('#directOwnerState').textContent.includes('等待接口连接授权'));
     await page.locator('#directFiles').setInputFiles({name:'先选.pdf',mimeType:'application/pdf',buffer:Buffer.from('%PDF prepare')});
     assert.equal(await page.locator('#directFileList li').count(),1);assert.equal(await page.locator('#startNewUpload').isDisabled(),true);
     serviceReady=true;await page.evaluate(()=>window.dispatchEvent(new Event('pageshow')));
     try{await page.waitForFunction(()=>document.querySelector('#directOwnerState').textContent.includes('私有资料库已连接'),{},{timeout:8000});}
     catch(error){console.log({owner:await page.locator('#directOwnerState').innerText(),automation:await page.locator('#automationState').innerText(),errors});throw error;}
+    assert.equal(pairCalls,0,'an already enabled browser must not consume the single-use link again');
     assert.equal(await page.locator('#directFileList li').count(),1);await page.getByRole('button',{name:'移除 先选.pdf',exact:true}).click();
     assert.equal(await page.locator('#directFiles').isEnabled(),true);
     const big=Buffer.alloc(8*1024*1024+543,7);big.write('%PDF-1.7\n');

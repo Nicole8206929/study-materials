@@ -9,7 +9,7 @@ const label=bytes=>`${(bytes/1024/1024).toFixed(1)} MB`;
 export function initializeDirectUpload({config,categories,input,onQueued,notify}){
  const el=id=>document.getElementById(id),endpoint=new URL(config.endpoint).origin;
  window.nicoleDirectUploaderStarted=true;
- let enabled=config.ready===true,auth=read(tokenKey),rows=[],busy=false,archiveReady=false,connected=false,controller,active=read(activeKey);
+ let enabled=config.ready===true,auth=read(tokenKey),rows=[],busy=false,authRefreshing=false,archiveReady=false,connected=false,controller,active=read(activeKey);
  const client=new DirectUploadClient({endpoint,token:()=>auth?.token||''});
  const activity=screenActivity({request:navigator.wakeLock?.request?()=>navigator.wakeLock.request('screen'):null,visible:()=>document.visibilityState==='visible',notify:text=>{el('directBackground').textContent=text;}});
  const names={selected:'待上传',checking:'正在本地核对',uploading:'正在上传',retrying:'正在核对并重试',verifying:'服务器正在校验',complete:'服务器已校验',duplicate:'内容重复，已跳过',failed:'未完成，可重试'};
@@ -43,12 +43,16 @@ export function initializeDirectUpload({config,categories,input,onQueued,notify}
   write(failedKey,remaining);
  }
  async function refreshAuth(){
-  if(busy)return;
+  if(busy||authRefreshing)return;
   if(!enabled){el('directOwnerState').textContent='上传服务已部署，正在等待接口连接授权。可以先选择文件，尚未开始传输。';updateButton();return;}
+  authRefreshing=true;
   try{
+   auth=read(tokenKey);
    const pending=read(pairKey);
-   if(pending){auth=await client.pair(pending.ticket,pending.token);write(tokenKey,auth);write(pairKey,null);}
-   if(auth?.token){const state=await client.request('/api/session');connected=state.connected===true;}else connected=false;
+   connected=false;
+   if(auth?.token){try{const state=await client.request('/api/session');connected=state.connected===true;}catch(error){if(error.status!==401||!pending)throw error;auth=null;write(tokenKey,null);}}
+   if(!connected&&pending){auth=await client.pair(pending.ticket,pending.token);write(tokenKey,auth);connected=true;}
+   if(connected&&pending)write(pairKey,null);
    const health=await client.health();archiveReady=health.archiveReady===true;
    el('directOwnerState').textContent=connected?(archiveReady?'本人上传已启用，私有资料库已连接。':auth.scope==='validation'?'传输验证会话：测试文件不会加入书架。':'本人身份已启用。还需连接一次私有资料库，以后直接在本页上传。'):'仅本人可上传。首次请打开聊天中的“本人上传启用链接”；访客仍可正常查看书架试读。';
    el('connectPrivateArchive').hidden=!connected||archiveReady||auth?.scope==='validation';el('disconnectDirectUpload').hidden=!connected;el('directActivation').hidden=connected;
@@ -68,7 +72,7 @@ export function initializeDirectUpload({config,categories,input,onQueued,notify}
   }catch(error){
    if(error.status===401){connected=false;auth=null;write(tokenKey,null);}
    el('directOwnerState').textContent=error.message;el('directActivation').hidden=connected;
-  }finally{updateButton();}
+  }finally{authRefreshing=false;updateButton();}
  }
  function acceptLink(value){
   let link;try{link=new URL(value,location.href);}catch{throw new Error('本人启用链接不完整。');}
@@ -156,6 +160,7 @@ export function initializeDirectUpload({config,categories,input,onQueued,notify}
  });
  el('disconnectDirectUpload').addEventListener('click',async()=>{if(busy)return;try{await client.request('/api/session',{method:'DELETE'});}catch{}auth=null;connected=false;write(tokenKey,null);await refreshAuth();});
  window.addEventListener('message',event=>{if(event.origin===endpoint&&event.data?.type==='nicole-upload-connected')refreshAuth();});
+ window.addEventListener('storage',event=>{if(event.key===tokenKey||event.key===pairKey)refreshAuth();});
  window.addEventListener('online',()=>refreshAuth());window.addEventListener('pageshow',()=>refreshAuth());document.addEventListener('visibilitychange',()=>{activity.update();if(document.visibilityState==='visible')refreshAuth();});
  const fragment=new URLSearchParams(location.hash.slice(1));
  if(fragment.has('pair')){try{acceptLink(location.href);history.replaceState(null,'',location.pathname+location.search);}catch(error){notify(error.message);}}
