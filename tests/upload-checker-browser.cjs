@@ -75,7 +75,7 @@ const root = path.join(__dirname, '..');
       assert(Object.values(listing).every((value, index) => value === `presentation ${index + 82}`));
       assert(requests.every(request => request.startsWith('blob:')), 'local files must not cause network requests');
       assert.equal(await page.locator('#privateUpload').getAttribute('href'), 'https://github.com/Nicole8206929/study-materials-originals/releases');
-      assert((await page.locator('#nextSteps').innerText()).includes('Save draft'));
+      assert((await page.locator('#nextSteps').innerText()).includes('旧物理批次已归档'));
       if (engine === chromium) {
         for (const scheme of ['light', 'dark']) {
           await page.emulateMedia({colorScheme: scheme});
