@@ -1088,6 +1088,48 @@
         "pageCount": 10,
         "sourcePageCount": 2605
       }
+    },
+    {
+      "id": "upload-730978571",
+      "title": "强基物理",
+      "author": "原资料作者（见各文献）",
+      "catName": "高中物理",
+      "desc": "2 份资料保留原页，以 LaTeX 合订。先安排数学准备与物理专题讲义，再安排 2025 清北强基资料。",
+      "year": null,
+      "tags": [],
+      "searchTitles": [
+        "强基计划物理篇",
+        "2025清北强基物理"
+      ],
+      "bytes": 5653819,
+      "size": "5.4 MB",
+      "format": "PDF",
+      "cat": "high-school-physics",
+      "cats": [
+        "high-school-physics"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261110100751-90266e34c7e9f0dd",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261110100751-90266e34c7e9f0dd/library-618dfeeebe8ea06a5eec59927cde2eeb635e58ed5d402da5174be73278c60682.pdf"
+      },
+      "pages": 164,
+      "preview": {
+        "images": [
+          "previews/upload-730978571/page-001.webp",
+          "previews/upload-730978571/page-002.webp",
+          "previews/upload-730978571/page-003.webp",
+          "previews/upload-730978571/page-004.webp",
+          "previews/upload-730978571/page-005.webp",
+          "previews/upload-730978571/page-006.webp",
+          "previews/upload-730978571/page-007.webp",
+          "previews/upload-730978571/page-008.webp",
+          "previews/upload-730978571/page-009.webp",
+          "previews/upload-730978571/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 164
+      }
     }
   ],
   "subcategories": [
