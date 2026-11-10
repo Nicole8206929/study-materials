@@ -44,7 +44,10 @@ export class DirectUploadClient{
  }
  async pair(ticket,clientToken){return this.request('/api/pair',{method:'POST',body:{ticket,clientToken},anonymous:true});}
  async health(){return this.request('/health',{anonymous:true});}
- async hash(file,{signal,onProgress}={}){return (await createFileHasher({signal,onBytes:(_,bytes)=>onProgress?.(bytes)})(file)).slice(7);}
+ async hash(file,{signal,onProgress}={}){
+  try{return (await createFileHasher({signal,onBytes:(_,bytes)=>onProgress?.(bytes)})(file)).slice(7);}
+  catch(error){checkAbort(signal);throw new UploadFailure('手机未能完整读出这个文件。请先从微信完整保存到“下载”或“文档”，再重新选择。',{code:'read_file'});}
+ }
  async uploadFile(batch,file,{sha256,signal,onProgress=()=>{}}={}){
   sha256||=await this.hash(file,{signal});
   const base='/api/batches/'+encodeURIComponent(batch)+'/files';

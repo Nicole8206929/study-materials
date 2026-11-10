@@ -12,7 +12,7 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css?v=direct-upload-1">
   <script src="assets/upload-checker-bootstrap.js?v=direct-upload-1" defer></script>
-  <script src="assets/upload-checker.js?v=direct-upload-1" defer></script>
+  <script src="assets/upload-checker.js?v=direct-upload-2" defer></script>
 </head>
 <body>
   <div class="container guide-container">
@@ -59,9 +59,10 @@
         <input id="uploadTitle" maxlength="120" placeholder="留空时使用原文件名">
         <label for="uploadExpected">本批文件总数（选填）</label>
         <input id="uploadExpected" type="number" inputmode="numeric" min="1" max="1000" placeholder="填写后会检查是否齐全">
-        <p>点击开始后，本页逐个分块上传并显示实际传输进度。服务器收齐并校验后才显示“上传成功”；随后自动整理入库，不需要手动发布或保存草稿。</p>
+        <p>点击开始后，本页逐个分块上传并显示实际传输进度。服务器收齐并校验后才显示“上传成功”。后台每 30 分钟检查待整理资料，再自动分类入库；不需要手动发布或保存草稿。</p>
         <p id="legacyUploadInstructions" hidden>旧上传入口：在 GitHub 添加附件，全部成功后点 Publish release。新资料请使用本页直接上传。</p>
         <button id="startNewUpload" class="primary" type="submit" disabled>开始上传</button>
+        <p class="muted"><a href="upload.html?legacyUpload=1">使用原上传方式（备用）</a></p>
         <p id="newUploadNotice" role="status" aria-live="polite"></p>
         <a id="resumeNewUpload" href="#" target="_blank" rel="noopener noreferrer" hidden>打开本次上传</a>
       </form>

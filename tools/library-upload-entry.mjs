@@ -60,7 +60,7 @@ export function initializeLibraryUpload() {
     el('pendingUploads').replaceChildren(...pending.map(x=>row(x)));
     el('completedUploads').replaceChildren(...receipts.slice(-5).reverse().map(x=>row(x,true)));
     el('uploadTracking').hidden=!pending.length&&!receipts.length;
-    el('pendingHeading').textContent=pending.length?`未完成 ${pending.length} 批`:'待处理列表已清空';
+    el('pendingHeading').textContent=pending.length?pending.every(item=>item.source==='direct')?`已上传，待入库 ${pending.length} 批`:`未完成 ${pending.length} 批`:'待处理列表已清空';
   }
   async function refresh() {
     if (refreshing || document.visibilityState==='hidden' || navigator.onLine===false) return;

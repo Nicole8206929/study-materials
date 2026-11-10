@@ -13,7 +13,7 @@ export function initializeDirectUpload({config,categories,input,onQueued,notify}
  const client=new DirectUploadClient({endpoint,token:()=>auth?.token||''});
  const activity=screenActivity({request:navigator.wakeLock?.request?()=>navigator.wakeLock.request('screen'):null,visible:()=>document.visibilityState==='visible',notify:text=>{el('directBackground').textContent=text;}});
  const names={selected:'待上传',checking:'正在本地核对',uploading:'正在上传',retrying:'正在核对并重试',verifying:'服务器正在校验',complete:'服务器已校验',duplicate:'内容重复，已跳过',failed:'未完成，可重试'};
- function updateButton(){el('startNewUpload').disabled=!enabled||busy||!connected||(!archiveReady&&auth?.scope!=='validation')||!rows.length;if(busy)for(const id of ['uploadCategories','uploadSubcategories'])el(id).querySelectorAll('input').forEach(item=>{item.disabled=true;});}
+ function updateButton(){el('startNewUpload').textContent=connected?'开始上传':'启用本人上传';el('startNewUpload').disabled=!enabled||busy||(connected&&!rows.length);if(busy)for(const id of ['uploadCategories','uploadSubcategories'])el(id).querySelectorAll('input').forEach(item=>{item.disabled=true;});}
  function renderRows(){
   el('directSelectionCount').textContent=rows.length?`已选 ${rows.length} 份，可继续添加`:'尚未选择文件';
   el('directFileList').replaceChildren(...rows.map((row,index)=>{
@@ -78,7 +78,7 @@ export function initializeDirectUpload({config,categories,input,onQueued,notify}
  }
  async function start(){
   if(busy)return;
-  if(!connected||(!archiveReady&&auth?.scope!=='validation')){notify('请先完成本人上传启用和私有资料库连接。');return;}
+  if(!connected){el('directActivation').hidden=false;el('directActivationLink').focus();notify('请从聊天中打开本人专用上传链接，首次启用后本浏览器可直接上传。');return;}
   if(!rows.length){notify('请先选择要上传的文件。');return;}
   const selected=input();
   if(selected.expectedCount&&Number(selected.expectedCount)!==rows.length){notify(`本批填写了 ${selected.expectedCount} 份，但只选了 ${rows.length} 份；请补齐或修改文件数。`);return;}
@@ -87,7 +87,7 @@ export function initializeDirectUpload({config,categories,input,onQueued,notify}
   let batch,finalizing=false;
   const finish=record=>{
    onQueued({...record,source:'direct'});active=null;write(activeKey,null);rows=[];el('directFiles').value='';renderRows();
-   el('directUploadState').textContent='上传成功，服务器已收齐并校验文件。云端正在按所选分类整理，完成后会显示“已入库”。';notify('文件已上传。可以关闭网页；云端整理完成后会自动归入所选分类。');
+   el('directUploadState').textContent='上传成功，服务器已收齐并校验文件。已进入自动整理队列（后台每 30 分钟检查），完成后会显示“已入库”。';notify('文件已上传并私有保存。可以关闭网页；后台会自动按所选分类整理。');
   };
   try{
    const unique=[],seen=new Set();let checked=0,last=0;

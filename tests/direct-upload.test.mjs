@@ -2,6 +2,13 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {DirectUploadClient} from '../tools/direct-upload-client.mjs';
+test('an unreadable phone file is reported before creating or transferring an upload',async()=>{
+ let networkCalls=0;
+ const client=new DirectUploadClient({endpoint:'https://upload.example',token:()=>'',fetch:async()=>{networkCalls++;throw new Error('network must not be used');}});
+ const file={size:12,name:'wechat.pdf',slice:()=>({arrayBuffer:async()=>{throw new DOMException('provider unavailable','NotReadableError');}})};
+ await assert.rejects(()=>client.hash(file),error=>error.code==='read_file'&&error.message.includes('微信'));
+ assert.equal(networkCalls,0);
+});
 test('a lost part response is reconciled before retry, and progress reaches success only after server verification',async()=>{
  const bytes=new Uint8Array(12);bytes.set([37,80,68,70]);
  const file=new File([bytes],'physics.pdf'),sha256=createHash('sha256').update(bytes).digest('hex');
