@@ -10,9 +10,9 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
   <title>上传并分类 · Nicole 的学习书架</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/styles.css">
-  <script src="assets/upload-checker-bootstrap.js?v=classify-2" defer></script>
-  <script src="assets/upload-checker.js?v=classify-2" defer></script>
+  <link rel="stylesheet" href="assets/styles.css?v=multi-category-1">
+  <script src="assets/upload-checker-bootstrap.js?v=multi-category-1" defer></script>
+  <script src="assets/upload-checker.js?v=multi-category-1" defer></script>
 </head>
 <body>
   <div class="container guide-container">
@@ -24,9 +24,8 @@
       <p id="automationState" role="status">正在读取上传设置…</p>
       <p id="automationSetup" hidden><a class="upload-link" href="upload-setup.html">首次启用自动入库</a></p>
       <form id="newUploadForm" class="upload-destination">
-        <label for="uploadCategory">书架分类</label>
-        <select id="uploadCategory" required><option value="">正在载入分类…</option></select>
-        <div id="uploadSubcategoryField" hidden><label for="uploadSubcategory">大学数学小分类</label><select id="uploadSubcategory"><option value="">请选择小分类</option></select></div>
+        <fieldset class="category-choices"><legend>书架分类（可多选）</legend><div id="uploadCategories" class="category-options"><p>正在载入分类…</p></div><p id="selectedCategoryCount" class="muted" aria-live="polite">至少选一类，同一份资料可同时放入多个类别。</p></fieldset>
+        <div id="uploadSubcategoryField" hidden><fieldset class="category-choices"><legend>大学数学小分类（可多选）</legend><div id="uploadSubcategories" class="category-options"></div></fieldset></div>
         <label for="uploadTags">分类标签（选填，用逗号分隔）</label>
         <input id="uploadTags" placeholder="例如：深中高中物理资料，课内总结" maxlength="450">
         <label for="uploadMode">整理方式</label>

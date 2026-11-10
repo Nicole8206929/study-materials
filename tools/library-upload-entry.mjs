@@ -5,14 +5,27 @@ export function initializeLibraryUpload() {
   if (!el('newUploadForm')) return;
   const url=new URL(location.href);
   el('legacyChecker').open=url.searchParams.has('batch') || url.searchParams.has('legacy');
-  let categories=[],subcategories=[],ready=false,refreshing=false,settingsLoading=false;
-  function renderSubcategories(){
-    const previous=el('uploadSubcategory').value,choices=subcategories.filter(s=>s.parent===el('uploadCategory').value);
-    el('uploadSubcategoryField').hidden=!choices.length;el('uploadSubcategory').required=!!choices.length;
-    el('uploadSubcategory').replaceChildren(...[{id:'',name:'请选择小分类'},...choices].map(s=>{const o=document.createElement('option');o.value=s.id;o.textContent=s.name;return o;}));
-    if(choices.some(s=>s.id===previous))el('uploadSubcategory').value=previous;
+  let categories=[],subcategories=[],ready=false,refreshing=false,settingsLoading=false,categoriesLoaded=false;
+  const checked=id=>Array.from(el(id).querySelectorAll('input:checked'),input=>input.value);
+  function choices(id,items,selected){
+    el(id).replaceChildren(...items.map(item=>{
+      const label=document.createElement('label'),input=document.createElement('input'),text=document.createElement('span');
+      input.type='checkbox';input.name=id;input.value=item.id;input.checked=selected.includes(item.id);
+      text.textContent=item.name;label.append(input,text);label.classList.toggle('is-selected',input.checked);return label;
+    }));
   }
-  el('uploadCategory').addEventListener('change',renderSubcategories);
+  function updateChoiceLabels(){
+    for(const id of ['uploadCategories','uploadSubcategories'])el(id).querySelectorAll('label').forEach(label=>label.classList.toggle('is-selected',label.querySelector('input').checked));
+    const selected=checked('uploadCategories');
+    el('selectedCategoryCount').textContent=selected.length?`已选 ${selected.length} 类：${selected.map(id=>categories.find(c=>c.id===id)?.name).join('、')}。同一份资料会在这些类别中显示。`:'请至少勾选一个分类。';
+  }
+  function renderSubcategories(){
+    const previous=checked('uploadSubcategories'),items=subcategories.filter(s=>checked('uploadCategories').includes(s.parent));
+    el('uploadSubcategoryField').hidden=!items.length;
+    choices('uploadSubcategories',items,previous);updateChoiceLabels();
+  }
+  el('uploadCategories').addEventListener('change',renderSubcategories);
+  el('uploadSubcategories').addEventListener('change',updateChoiceLabels);
   const pendingKey='nicole-library-pending-v1',receiptsKey='nicole-library-receipts-v1';
   function read(key) {try {const rows=JSON.parse(localStorage.getItem(key)||'[]');return Array.isArray(rows)?rows.filter(x=>batchPattern.test(x.batch)).slice(-20):[];}catch{return [];}}
   let pending=read(pendingKey),receipts=read(receiptsKey);
@@ -21,8 +34,15 @@ export function initializeLibraryUpload() {
     const li=document.createElement('li');
     const text=document.createElement('p');text.textContent=done?'上传成功，已入库。':item.message||'等待上传。请在 GitHub 添加文件，全部成功后点 Publish release，再返回此页。';li.append(text);
     const detail=document.createElement('p');detail.className='muted';detail.textContent=`批次 ${item.batch.replace('upload-','')}${item.sourceCount?` · ${item.sourceCount} 份资料`:''}`;li.append(detail);
-    const link=document.createElement('a');link.href=done?`./?cat=${encodeURIComponent(item.cat)}`:'https://github.com/Nicole8206929/study-materials-originals/actions/workflows/auto-library.yml';
-    link.textContent=done?'查看所选分类':'查看私有处理记录';link.rel='noreferrer';li.append(link);return li;
+    if(done){
+      for(const cat of item.cats||[item.cat]){
+        const link=document.createElement('a');link.href=`./?cat=${encodeURIComponent(cat)}`;
+        link.textContent=`查看${categories.find(c=>c.id===cat)?.name||'所选分类'}`;link.className='receipt-category-link';li.append(link);
+      }
+    }else{
+      const link=document.createElement('a');link.href='https://github.com/Nicole8206929/study-materials-originals/actions/workflows/auto-library.yml';link.textContent='查看私有处理记录';link.rel='noreferrer';li.append(link);
+    }
+    return li;
   }
   function render() {
     el('pendingUploads').replaceChildren(...pending.map(x=>row(x)));
@@ -51,9 +71,9 @@ export function initializeLibraryUpload() {
     event.preventDefault();
     if (!ready) {el('newUploadNotice').textContent='自动入库尚未启用，请先完成一次性配置。';return;}
     try {
-      const result=makeUploadRelease({cat:el('uploadCategory').value,subcat:el('uploadSubcategoryField').hidden?'':el('uploadSubcategory').value,tags:el('uploadTags').value,
+      const result=makeUploadRelease({cats:checked('uploadCategories'),subcats:checked('uploadSubcategories'),tags:el('uploadTags').value,
         mode:el('uploadMode').value,title:el('uploadTitle').value,expectedCount:el('uploadExpected').value},categories);
-      pending.push({batch:result.batch,cat:result.spec.cat,createdAt:new Date().toISOString()});save();render();
+      pending.push({batch:result.batch,cat:result.spec.cat,cats:result.spec.cats,createdAt:new Date().toISOString()});save();render();
       el('newUploadNotice').textContent='已记住所选分类。在 GitHub 添加文件并点 Publish release，返回本页可查看结果；云端整理启动后可关闭手机。';
       el('resumeNewUpload').href=result.url;el('resumeNewUpload').hidden=false;
       const opened=window.open(result.url,'_blank','noopener,noreferrer');
@@ -72,11 +92,10 @@ export function initializeLibraryUpload() {
     try {
       const [catalogue,automation]=await Promise.all([fetch('books.json',{cache:'no-store'}),fetch('upload-automation.json',{cache:'no-store'})]);
       if(!catalogue.ok||!automation.ok)throw new Error('上传设置暂时未载入，请刷新重试。');
-      const data=await catalogue.json(),state=await automation.json();categories=data.categories;subcategories=data.subcategories||[];
-      const previous=el('uploadCategory').value;
-      el('uploadCategory').replaceChildren(...categories.map(c=>{const o=document.createElement('option');o.value=c.id;o.textContent=c.name;return o;}));
-      el('uploadCategory').value=categories.some(c=>c.id===previous)?previous:categories.some(c=>c.id===url.searchParams.get('cat'))?url.searchParams.get('cat'):'high-school-physics';
-      renderSubcategories();
+      const data=await catalogue.json(),state=await automation.json(),previous=checked('uploadCategories');categories=data.categories;subcategories=data.subcategories||[];
+      const initial=categories.some(c=>c.id===url.searchParams.get('cat'))?url.searchParams.get('cat'):'high-school-physics';
+      choices('uploadCategories',categories,categoriesLoaded?previous:[initial]);categoriesLoaded=true;
+      renderSubcategories();render();
       ready=state.version===1&&state.ready===true;el('startNewUpload').disabled=!ready;
       el('automationSetup').hidden=ready;el('automationState').textContent=ready?'自动入库已启用。选择分类后上传，不需要回聊天处理。':'自动入库已准备好，尚需完成一次 GitHub 发布授权。启用前不会把资料误报成已入库。';
     }catch(error){el('automationState').textContent=error.message;}

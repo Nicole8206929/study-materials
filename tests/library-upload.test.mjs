@@ -30,3 +30,16 @@ test('university mathematics child category is carried into the private upload m
   assert.equal(result.spec.subcat,'analysis');
   assert(new URL(result.url).searchParams.get('body').includes('"subcat":"analysis"'));
 });
+
+test('one upload can target several subjects and several university-math branches',()=>{
+  const result=makeUploadRelease({cats:['high-school-physics','university-math','high-school-physics'],
+    subcats:['analysis','algebra'],tags:'跨学科',mode:'individual'},
+    [{id:'high-school-physics',name:'高中物理'},{id:'university-math',name:'大学数学'}],
+    {stamp:'20261110123456',random:'1234abcd'});
+  assert.deepEqual(result.spec.cats,['high-school-physics','university-math']);
+  assert.deepEqual(result.spec.subcats,['analysis','algebra']);
+  assert.equal(result.spec.cat,'high-school-physics');
+  assert(new URL(result.url).searchParams.get('body').includes('高中物理、大学数学'));
+  assert.throws(()=>makeUploadRelease({cats:[],mode:'individual'},[{id:'high-school-physics'}]));
+  assert.throws(()=>makeUploadRelease({cats:['high-school-physics'],subcats:['analysis'],mode:'individual'},[{id:'high-school-physics'}]));
+});

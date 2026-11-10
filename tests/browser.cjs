@@ -25,7 +25,7 @@ const total = catalog.books.length;
     ]) {
       const category = page.locator(`.category[data-value="${id}"]`);
       assert((await category.innerText()).includes(name));
-      const count = catalog.books.filter(book=>book.cat===id).length;
+      const count = catalog.books.filter(book=>(book.cats||[book.cat]).includes(id)).length;
       assert.equal(await category.locator('.category-count').innerText(),String(count));
       await category.click();
       assert.equal(await page.locator('.book').count(),count);
@@ -44,7 +44,7 @@ const total = catalog.books.length;
       assert(new URL(page.url()).searchParams.get('subcat')===id);
       await page.reload();await page.waitForFunction(()=>document.querySelector('#books').getAttribute('aria-busy')==='false');
       assert.equal(await page.locator(`.subcategory[data-value="${id}"]`).getAttribute('aria-pressed'),'true');
-      const expected=catalog.books.filter(b=>b.cat==='university-math'&&b.subcat===id).length;
+      const expected=catalog.books.filter(b=>(b.cats||[b.cat]).includes('university-math')&&(b.subcats||(b.subcat?[b.subcat]:[])).includes(id)).length;
       assert.equal(await page.locator('.book').count(),expected);
       if(!expected)assert.equal(await page.locator('#emptyStateTitle').innerText(),`${name}暂未添加书籍`);
     }

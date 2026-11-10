@@ -7,6 +7,9 @@ let subcategories = [];
 let loaded = false;
 let loading = false;
 let state = { q: "", cat: "all", subcat: "", tag: "", format: "all", sort: "default" };
+const bookCategories=book=>book.cats||[book.cat];
+const bookSubcategories=book=>book.subcats||(book.subcat?[book.subcat]:[]);
+const inCategory=(book,cat)=>cat==='all'||bookCategories(book).includes(cat);
 
 function protectedOwnerAccess(access) {
   if (!access) return null;
@@ -37,6 +40,8 @@ function validateBook(book) {
   if (!book || ["id", "title", "author", "cat", "catName", "desc"].some(key => typeof book[key] !== "string" || !book[key].trim())) throw new Error("Invalid catalogue entry");
   if (book.searchTitles !== undefined && (!Array.isArray(book.searchTitles) || book.searchTitles.some(title => typeof title !== "string"))) throw new Error("Invalid search titles");
   if (!Array.isArray(book.tags) || book.tags.some(tag => typeof tag !== "string")) throw new Error("Invalid tags");
+  if(book.cats!==undefined&&(!Array.isArray(book.cats)||!book.cats.length||book.cats[0]!==book.cat||book.cats.some(c=>typeof c!=='string')||new Set(book.cats).size!==book.cats.length))throw new Error('Invalid category memberships');
+  if(book.subcats!==undefined&&(!Array.isArray(book.subcats)||book.subcats.some(s=>typeof s!=='string')||new Set(book.subcats).size!==book.subcats.length||(book.subcat&&book.subcats[0]!==book.subcat)))throw new Error('Invalid subcategory memberships');
   if (!["PDF", "EPUB"].includes(book.format)) throw new Error("Invalid format");
   if (book.file || book.url || book.downloadUrl) throw new Error("Public catalogue must not expose originals");
   protectedOwnerAccess(book.ownerAccess);
@@ -65,9 +70,11 @@ async function loadBooks() {
     categories = new Map(declared.map(category => [category.id, category.name]));
     subcategories = data.subcategories || [];
     if (!Array.isArray(subcategories) || subcategories.some(s=>!s.id||!s.name||!categories.has(s.parent))) throw new Error('Invalid subcategories');
-    books.forEach(book=>{if(book.subcat&&!subcategories.some(s=>s.id===book.subcat&&s.parent===book.cat))throw new Error('Invalid book subcategory');});
     if (categories.size !== declared.length) throw new Error("Duplicate category IDs");
     books.forEach(book => { if (!categories.has(book.cat)) categories.set(book.cat, book.catName); });
+    books.forEach(book=>{
+      if(bookCategories(book).some(c=>!categories.has(c))||bookSubcategories(book).some(child=>!subcategories.some(s=>s.id===child&&bookCategories(book).includes(s.parent))))throw new Error('Invalid book classification');
+    });
     loaded = true;
     readState();
     $("tagDetails").open = !matchMedia("(max-width: 600px)").matches || Boolean(state.tag);
@@ -96,7 +103,7 @@ function readState() {
   if (!subcategories.some(s=>s.parent===state.cat&&s.id===state.subcat)) state.subcat='';
   if (!["all", "pdf", "epub"].includes(state.format)) state.format = "all";
   if (!["default", "title", "year", "size"].includes(state.sort)) state.sort = "default";
-  if (!books.some(book => (state.cat === "all" || book.cat === state.cat) && (!state.subcat||book.subcat===state.subcat) && book.tags.includes(state.tag))) state.tag = "";
+  if (!books.some(book => inCategory(book,state.cat) && (!state.subcat||bookSubcategories(book).includes(state.subcat)) && book.tags.includes(state.tag))) state.tag = "";
   $("search").value = state.q;
   $("format").value = state.format;
   $("sort").value = state.sort;
@@ -123,7 +130,7 @@ function filterButton(text, value, className, selected, onClick) {
 function renderCategories() {
   const options = new Map([["all", "全部资料"], ...categories]);
   $("categories").replaceChildren(...Array.from(options, ([cat, name]) => {
-    const count = cat === "all" ? books.length : books.filter(book => book.cat === cat).length;
+    const count = books.filter(book => inCategory(book,cat)).length;
     const button = filterButton(name, cat, "category", state.cat === cat, () => {
       state.cat = cat;
       state.subcat = '';
@@ -142,7 +149,7 @@ function renderSubcategories() {
   const choices=subcategories.filter(s=>s.parent===state.cat);
   $('subcategorySection').hidden=!choices.length;
   $('subcategories').replaceChildren(...[{id:'',name:'全部'},...choices].map(s=>{
-    const count=books.filter(b=>b.cat===state.cat&&(!s.id||b.subcat===s.id)).length;
+    const count=books.filter(b=>inCategory(b,state.cat)&&(!s.id||bookSubcategories(b).includes(s.id))).length;
     return filterButton(`${s.name} ${count}`,s.id,'tag-chip subcategory',state.subcat===s.id,()=>{
       state.subcat=s.id;state.tag='';renderSubcategories();renderTags();render();saveState();
     });
@@ -150,7 +157,7 @@ function renderSubcategories() {
 }
 
 function renderTags() {
-  const tags = [...new Set(books.filter(book => (state.cat === "all" || book.cat === state.cat)&&(!state.subcat||book.subcat===state.subcat)).flatMap(book => book.tags))];
+  const tags = [...new Set(books.filter(book => inCategory(book,state.cat)&&(!state.subcat||bookSubcategories(book).includes(state.subcat))).flatMap(book => book.tags))];
   $("tagSummary").textContent = `主题标签（${tags.length}）`;
   $("selectedTag").textContent = state.tag || "全部标签";
   $("tagFilter").replaceChildren(...["", ...tags].map(tag => filterButton(tag || "全部标签", tag, "tag-chip", state.tag === tag, () => {
@@ -172,7 +179,7 @@ function bookCard(book) {
   const card = node("article", "book");
   card.dataset.id = book.id;
   const top = node("div", "book-top");
-  top.append(node("span", "", book.catName), node("span", "book-number", String(books.indexOf(book) + 1).padStart(2, "0")));
+  top.append(node("span", "", bookCategories(book).map(c=>categories.get(c)||book.catName).join(' · ')), node("span", "book-number", String(books.indexOf(book) + 1).padStart(2, "0")));
   const meta = node("div", "meta");
   const labels = [book.format.toUpperCase(), book.size];
   if (Number.isInteger(book.pages) && book.pages > 0 && book.format === "pdf") labels.push(`${book.pages} 页`);
@@ -208,8 +215,8 @@ function render() {
   if (!loaded) return;
   const terms = state.q.trim().normalize("NFKC").toLocaleLowerCase().split(/\s+/).filter(Boolean);
   const filtered = books.filter(book => {
-    if (state.cat !== "all" && book.cat !== state.cat) return false;
-    if (state.subcat && book.subcat!==state.subcat) return false;
+    if (!inCategory(book,state.cat)) return false;
+    if (state.subcat && !bookSubcategories(book).includes(state.subcat)) return false;
     if (state.tag && !book.tags.includes(state.tag)) return false;
     if (state.format !== "all" && book.format !== state.format) return false;
     const haystack = [book.title, ...(book.searchTitles || [])].join(" ").normalize("NFKC").toLocaleLowerCase();
@@ -220,8 +227,8 @@ function render() {
   if (state.sort === "size") filtered.sort((a, b) => sizeBytes(a) - sizeBytes(b));
   $("books").replaceChildren(...filtered.map(bookCard));
   $("emptyState").hidden = filtered.length !== 0;
-  const emptyCategory = state.cat !== "all" && !books.some(book => book.cat === state.cat);
-  const emptySubcategory=state.subcat&&!books.some(b=>b.cat===state.cat&&b.subcat===state.subcat);
+  const emptyCategory = state.cat !== "all" && !books.some(book => inCategory(book,state.cat));
+  const emptySubcategory=state.subcat&&!books.some(b=>inCategory(b,state.cat)&&bookSubcategories(b).includes(state.subcat));
   $("emptyStateTitle").textContent = emptySubcategory ? `${subcategories.find(s=>s.id===state.subcat)?.name}暂未添加书籍` : emptyCategory ? `${categories.get(state.cat)}暂未添加书籍` : "还没有找到匹配的资料";
   $("emptyStateHint").textContent = emptyCategory ? "分类已建立，添加对应书籍后会显示在这里。" : "试试更短的关键词，或重置分类、格式和标签。";
   $("stats").textContent = `共 ${books.length} 份资料 · 当前显示 ${filtered.length} 份`;
