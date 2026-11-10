@@ -1,15 +1,17 @@
 {
   "version": 1,
   "batch": "upload-20261110081106-a2ab9e129ebff7ad",
-  "stage": "processing",
-  "message": "上传成功，正在按所选分类整理。",
-  "updatedAt": "2026-11-10T08:22:57.912903+00:00",
+  "stage": "publishing",
+  "message": "资料已整理，正在更新书架。",
+  "updatedAt": "2026-11-10T09:20:47.790900+00:00",
   "cat": "high-school-physics",
   "cats": [
     "high-school-physics",
     "university-physics"
   ],
   "subcats": [],
-  "bookIds": [],
+  "bookIds": [
+    "upload-730826425"
+  ],
   "sourceCount": 12
 }

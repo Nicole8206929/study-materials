@@ -1033,6 +1033,61 @@
         "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/book-upload-inbox",
         "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/book-upload-inbox/high-school-physics-shenzhong-summary-final.pdf"
       }
+    },
+    {
+      "id": "upload-730826425",
+      "title": "深中大物资料讲义",
+      "author": "原资料作者（见各文献）",
+      "catName": "高中物理",
+      "desc": "12 份资料保留原页，以 LaTeX 合订。基础方法、力学、电磁学和振动波光在前，综合讲义、复习题库与费曼物理学讲义附后。",
+      "year": null,
+      "tags": [
+        "深中物理资料"
+      ],
+      "searchTitles": [
+        "专题讲义S1：量纲分析与数量级估计",
+        "大物1质点运动学【26.2】",
+        "大物2质点动力学【26.2】",
+        "大物3刚体力学基础【26.2】",
+        "大物4电荷与电场【26.2】",
+        "大物5电流与磁场【26.2】",
+        "大物6电磁感应与麦克斯韦方程组【26.1】",
+        "大物7振动学基础【26.1】",
+        "自学讲义_普物波光近代物理",
+        "求真书院预科物理讲义2023春",
+        "《大学物理》题库-清华大学",
+        "费曼物理学讲义 全三卷 英文版 The Feynman Lectures on Physics"
+      ],
+      "bytes": 58745575,
+      "size": "56.0 MB",
+      "format": "PDF",
+      "cat": "high-school-physics",
+      "cats": [
+        "high-school-physics",
+        "university-physics"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261110081106-a2ab9e129ebff7ad",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261110081106-a2ab9e129ebff7ad/library-b52da837023a28f9847ccda8304cfe82a980c27351b9e592af6d6c15ccaa257e.pdf"
+      },
+      "pages": 2605,
+      "preview": {
+        "images": [
+          "previews/upload-730826425/page-001.webp",
+          "previews/upload-730826425/page-002.webp",
+          "previews/upload-730826425/page-003.webp",
+          "previews/upload-730826425/page-004.webp",
+          "previews/upload-730826425/page-005.webp",
+          "previews/upload-730826425/page-006.webp",
+          "previews/upload-730826425/page-007.webp",
+          "previews/upload-730826425/page-008.webp",
+          "previews/upload-730826425/page-009.webp",
+          "previews/upload-730826425/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 2605
+      }
     }
   ],
   "subcategories": [
