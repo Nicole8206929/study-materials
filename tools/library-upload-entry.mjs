@@ -5,7 +5,7 @@ export function initializeLibraryUpload() {
   if (!el('newUploadForm')) return;
   const url=new URL(location.href);
   el('legacyChecker').open=url.searchParams.has('batch') || url.searchParams.has('legacy');
-  let categories=[],ready=false,refreshing=false;
+  let categories=[],ready=false,refreshing=false,settingsLoading=false;
   const pendingKey='nicole-library-pending-v1',receiptsKey='nicole-library-receipts-v1';
   function read(key) {try {const rows=JSON.parse(localStorage.getItem(key)||'[]');return Array.isArray(rows)?rows.filter(x=>batchPattern.test(x.batch)).slice(-20):[];}catch{return [];}}
   let pending=read(pendingKey),receipts=read(receiptsKey);
@@ -54,20 +54,25 @@ export function initializeLibraryUpload() {
       if (!opened) el('newUploadNotice').textContent+=' 若没有打开新页面，请点下方“打开本次上传”。';
     } catch(error) {el('newUploadNotice').textContent=error.message;}
   });
-  el('refreshUploadStatus').addEventListener('click',refresh);
-  document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')refresh();});
-  window.addEventListener('online',refresh);window.addEventListener('pageshow',refresh);
-  setInterval(()=>{if(pending.length)refresh();},15000);
+  function resume(){load();refresh();}
+  el('refreshUploadStatus').addEventListener('click',resume);
+  document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')resume();});
+  window.addEventListener('online',resume);window.addEventListener('pageshow',resume);
+  setInterval(()=>{if(pending.length)refresh();if(!ready&&document.visibilityState==='visible')load();},15000);
   async function load() {
+    if(settingsLoading)return;
+    settingsLoading=true;
     try {
       const [catalogue,automation]=await Promise.all([fetch('books.json',{cache:'no-store'}),fetch('upload-automation.json',{cache:'no-store'})]);
       if(!catalogue.ok||!automation.ok)throw new Error('上传设置暂时未载入，请刷新重试。');
       const data=await catalogue.json(),state=await automation.json();categories=data.categories;
+      const previous=el('uploadCategory').value;
       el('uploadCategory').replaceChildren(...categories.map(c=>{const o=document.createElement('option');o.value=c.id;o.textContent=c.name;return o;}));
-      el('uploadCategory').value=categories.some(c=>c.id===url.searchParams.get('cat'))?url.searchParams.get('cat'):'high-school-physics';
+      el('uploadCategory').value=categories.some(c=>c.id===previous)?previous:categories.some(c=>c.id===url.searchParams.get('cat'))?url.searchParams.get('cat'):'high-school-physics';
       ready=state.version===1&&state.ready===true;el('startNewUpload').disabled=!ready;
       el('automationSetup').hidden=ready;el('automationState').textContent=ready?'自动入库已启用。选择分类后上传，不需要回聊天处理。':'自动入库已准备好，尚需完成一次 GitHub 发布授权。启用前不会把资料误报成已入库。';
     }catch(error){el('automationState').textContent=error.message;}
+    finally{settingsLoading=false;}
   }
   render();load();refresh();
 }
