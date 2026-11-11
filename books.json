@@ -4806,6 +4806,294 @@
         "pageCount": 10,
         "sourcePageCount": 448
       }
+    },
+    {
+      "id": "gtm-045",
+      "title": "Probability Theory I",
+      "author": "Michel Loeve",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "概率论经典（本文件为第三版单卷本，对应第四版GTM45第一卷内容）：测度论概率、随机变量、条件概率与极限定理基础。",
+      "pages": 712,
+      "size": "31.8 MB",
+      "year": 1963,
+      "format": "PDF",
+      "bytes": 31790688,
+      "tags": [
+        "GTM",
+        "Springer",
+        "研究生教材",
+        "概率与统计"
+      ],
+      "searchTitles": [
+        "概率论 第一卷",
+        "Probability Theory I",
+        "GTM 45"
+      ],
+      "preview": {
+        "images": [
+          "previews/gtm-045/page-001.webp",
+          "previews/gtm-045/page-002.webp",
+          "previews/gtm-045/page-003.webp",
+          "previews/gtm-045/page-004.webp",
+          "previews/gtm-045/page-005.webp",
+          "previews/gtm-045/page-006.webp",
+          "previews/gtm-045/page-007.webp",
+          "previews/gtm-045/page-008.webp",
+          "previews/gtm-045/page-009.webp",
+          "previews/gtm-045/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 712
+      },
+      "subcats": [
+        "probability-statistics"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0dbc2eb2d1e6c3b2544224cbd2e21f40ee891eae/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM045_Probability_Theory_I.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0dbc2eb2d1e6c3b2544224cbd2e21f40ee891eae/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM045_Probability_Theory_I.pdf"
+      }
+    },
+    {
+      "id": "gtm-115",
+      "title": "Differential Geometry: Manifolds, Curves, and Surfaces",
+      "author": "Marcel Berger, Bernard Gostiaux",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "微分几何：流形、曲线与曲面，Berger/Gostiaux 经典教材英文译本（Silvio Levy 译）。",
+      "pages": 487,
+      "size": "36.6 MB",
+      "year": 1988,
+      "format": "PDF",
+      "bytes": 36618399,
+      "tags": [
+        "GTM",
+        "Springer",
+        "研究生教材",
+        "微分几何"
+      ],
+      "searchTitles": [
+        "微分几何",
+        "Differential Geometry: Manifolds, Curves, and Surfaces",
+        "GTM 115"
+      ],
+      "preview": {
+        "images": [
+          "previews/gtm-115/page-001.webp",
+          "previews/gtm-115/page-002.webp",
+          "previews/gtm-115/page-003.webp",
+          "previews/gtm-115/page-004.webp",
+          "previews/gtm-115/page-005.webp",
+          "previews/gtm-115/page-006.webp",
+          "previews/gtm-115/page-007.webp",
+          "previews/gtm-115/page-008.webp",
+          "previews/gtm-115/page-009.webp",
+          "previews/gtm-115/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 487
+      },
+      "subcats": [
+        "differential-geometry"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0dbc2eb2d1e6c3b2544224cbd2e21f40ee891eae/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM115_Differential_Geometry.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0dbc2eb2d1e6c3b2544224cbd2e21f40ee891eae/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM115_Differential_Geometry.pdf"
+      }
+    },
+    {
+      "id": "gtm-169",
+      "title": "Matrix Analysis",
+      "author": "Rajendra Bhatia",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "矩阵分析：矩阵函数、算子均值、扰动理论与矩阵不等式，Bhatia 应用数学经典。",
+      "pages": 357,
+      "size": "8.1 MB",
+      "year": 1997,
+      "format": "PDF",
+      "bytes": 8119753,
+      "tags": [
+        "GTM",
+        "Springer",
+        "研究生教材",
+        "应用数学"
+      ],
+      "searchTitles": [
+        "矩阵分析",
+        "Matrix Analysis",
+        "GTM 169"
+      ],
+      "preview": {
+        "images": [
+          "previews/gtm-169/page-001.webp",
+          "previews/gtm-169/page-002.webp",
+          "previews/gtm-169/page-003.webp",
+          "previews/gtm-169/page-004.webp",
+          "previews/gtm-169/page-005.webp",
+          "previews/gtm-169/page-006.webp",
+          "previews/gtm-169/page-007.webp",
+          "previews/gtm-169/page-008.webp",
+          "previews/gtm-169/page-009.webp",
+          "previews/gtm-169/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 357
+      },
+      "subcats": [
+        "applied-math"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0dbc2eb2d1e6c3b2544224cbd2e21f40ee891eae/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM169_Matrix_Analysis.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0dbc2eb2d1e6c3b2544224cbd2e21f40ee891eae/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM169_Matrix_Analysis.pdf"
+      }
+    },
+    {
+      "id": "gtm-211",
+      "title": "Algebra",
+      "author": "Serge Lang",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "代数（修订第三版）：群、环、模、域、同调代数与代数几何基础，Lang 综合性研究生教材。",
+      "pages": 923,
+      "size": "68.0 MB",
+      "year": 2002,
+      "format": "PDF",
+      "bytes": 67994919,
+      "tags": [
+        "GTM",
+        "Springer",
+        "研究生教材",
+        "代数"
+      ],
+      "searchTitles": [
+        "代数",
+        "Algebra",
+        "GTM 211"
+      ],
+      "preview": {
+        "images": [
+          "previews/gtm-211/page-001.webp",
+          "previews/gtm-211/page-002.webp",
+          "previews/gtm-211/page-003.webp",
+          "previews/gtm-211/page-004.webp",
+          "previews/gtm-211/page-005.webp",
+          "previews/gtm-211/page-006.webp",
+          "previews/gtm-211/page-007.webp",
+          "previews/gtm-211/page-008.webp",
+          "previews/gtm-211/page-009.webp",
+          "previews/gtm-211/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 923
+      },
+      "subcats": [
+        "algebra"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0dbc2eb2d1e6c3b2544224cbd2e21f40ee891eae/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM211_Algebra.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0dbc2eb2d1e6c3b2544224cbd2e21f40ee891eae/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM211_Algebra.pdf"
+      }
+    },
+    {
+      "id": "gtm-242",
+      "title": "Abstract Algebra",
+      "author": "Pierre Antoine Grillet",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "抽象代数（第二版）：从群环域到伽罗瓦理论与同调，Grillet 结构清晰的研究生教材。",
+      "pages": 683,
+      "size": "4.7 MB",
+      "year": 2007,
+      "format": "PDF",
+      "bytes": 4710373,
+      "tags": [
+        "GTM",
+        "Springer",
+        "研究生教材",
+        "代数"
+      ],
+      "searchTitles": [
+        "抽象代数",
+        "Abstract Algebra",
+        "GTM 242"
+      ],
+      "preview": {
+        "images": [
+          "previews/gtm-242/page-001.webp",
+          "previews/gtm-242/page-002.webp",
+          "previews/gtm-242/page-003.webp",
+          "previews/gtm-242/page-004.webp",
+          "previews/gtm-242/page-005.webp",
+          "previews/gtm-242/page-006.webp",
+          "previews/gtm-242/page-007.webp",
+          "previews/gtm-242/page-008.webp",
+          "previews/gtm-242/page-009.webp",
+          "previews/gtm-242/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 683
+      },
+      "subcats": [
+        "algebra"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0dbc2eb2d1e6c3b2544224cbd2e21f40ee891eae/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM242_Abstract_Algebra.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0dbc2eb2d1e6c3b2544224cbd2e21f40ee891eae/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM242_Abstract_Algebra.pdf"
+      }
+    },
+    {
+      "id": "gtm-275",
+      "title": "Differential Geometry: Connections, Curvature, and Characteristic Classes",
+      "author": "Loring W. Tu",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "微分几何：向量丛、联络、曲率与示性类（本文件为第1-6章中文译稿），Tu 现代微分几何教材。",
+      "pages": 482,
+      "size": "34.0 MB",
+      "year": 2017,
+      "format": "PDF",
+      "bytes": 33986648,
+      "tags": [
+        "GTM",
+        "Springer",
+        "研究生教材",
+        "微分几何"
+      ],
+      "searchTitles": [
+        "微分几何 示性类",
+        "Differential Geometry: Connections, Curvature, and Characteristic Classes",
+        "GTM 275"
+      ],
+      "preview": {
+        "images": [
+          "previews/gtm-275/page-001.webp",
+          "previews/gtm-275/page-002.webp",
+          "previews/gtm-275/page-003.webp",
+          "previews/gtm-275/page-004.webp",
+          "previews/gtm-275/page-005.webp",
+          "previews/gtm-275/page-006.webp",
+          "previews/gtm-275/page-007.webp",
+          "previews/gtm-275/page-008.webp",
+          "previews/gtm-275/page-009.webp",
+          "previews/gtm-275/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 482
+      },
+      "subcats": [
+        "differential-geometry"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0dbc2eb2d1e6c3b2544224cbd2e21f40ee891eae/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM275_Differential_Geometry_Connections_Curvature_Characteristic_Classes.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0dbc2eb2d1e6c3b2544224cbd2e21f40ee891eae/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM275_Differential_Geometry_Connections_Curvature_Characteristic_Classes.pdf"
+      }
     }
   ],
   "subcategories": [
