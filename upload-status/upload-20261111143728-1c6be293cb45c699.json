@@ -1,9 +1,9 @@
 {
   "version": 1,
   "batch": "upload-20261111143728-1c6be293cb45c699",
-  "stage": "publishing",
-  "message": "资料已整理，正在更新书架。",
-  "updatedAt": "2026-11-11T16:08:01.809876+00:00",
+  "stage": "ready",
+  "message": "上传成功，已入库。待处理列表已清空，原件保存在私有归档区。",
+  "updatedAt": "2026-11-11T16:08:40.929343+00:00",
   "cat": "university-physics",
   "cats": [
     "university-physics"
