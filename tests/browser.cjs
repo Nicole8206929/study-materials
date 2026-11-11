@@ -5,6 +5,11 @@ const {spawn} = require('node:child_process');
 const path = require('node:path');
 const catalog = require('../books.json');
 const total = catalog.books.length;
+const bookBySearchTitle = text => {
+  const book = catalog.books.find(book => [book.title,...(book.searchTitles||[])].some(title=>title.includes(text)));
+  assert(book,`Missing searchable original title: ${text}`);
+  return book.id;
+};
 (async () => {
   const server = spawn('python3', ['-m','http.server','8765','--bind','127.0.0.1'], {cwd:path.join(__dirname,'..'),stdio:['ignore','pipe','pipe']});
   let browser;
@@ -60,11 +65,11 @@ const total = catalog.books.length;
     }
     assert.equal(await page.locator('[data-id="robbins-ob"] .book-top span').first().innerText(),'管理');
     await page.locator('#search').fill('宏观经济学原理');
-    assert(await page.locator('[data-id="macro3e"]').isVisible());
+    assert(await page.locator(`[data-id="${bookBySearchTitle('宏观经济学原理')}"]`).isVisible());
     await page.locator('#search').fill('  曼昆   微观 ');
-    assert(await page.locator('[data-id="mankiw-micro"]').isVisible());
+    assert(await page.locator(`[data-id="${bookBySearchTitle('曼昆微观经济学原理')}"]`).isVisible());
     await page.reload(); await page.waitForSelector('.book');
-    assert(await page.locator('[data-id="mankiw-micro"]').isVisible());
+    assert(await page.locator(`[data-id="${bookBySearchTitle('曼昆微观经济学原理')}"]`).isVisible());
     await page.locator('#resetFilters').click();
     await page.locator('#format').selectOption('epub');
     assert.equal(await page.locator('.book').count(),catalog.books.filter(book=>book.format==='EPUB').length);

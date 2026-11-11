@@ -40,6 +40,8 @@ def validate():
         assert sub['parent'] in category_names and re.fullmatch(r'[a-z][a-z0-9-]*',sub['id']) and sub['name'].strip(), 'Invalid subcategory'
     images = set()
     for book in data['books']:
+        assert all(isinstance(book.get(key),str) and book[key].strip()
+                   for key in ['id','title','author','cat','catName','desc']), 'Missing required book text; the browser would reject the catalogue'
         assert not set(book)-ALLOWED_KEYS, f"Unexpected public fields: {book['id']}"
         assert book['id'] not in ids
         ids.add(book['id'])
