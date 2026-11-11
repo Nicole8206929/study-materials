@@ -1,14 +1,20 @@
 {
   "version": 1,
   "batch": "upload-20261111143728-1c6be293cb45c699",
-  "stage": "processing",
-  "message": "上传成功，正在按所选分类整理。",
-  "updatedAt": "2026-11-11T16:07:51.164466+00:00",
+  "stage": "publishing",
+  "message": "资料已整理，正在更新书架。",
+  "updatedAt": "2026-11-11T16:08:01.809876+00:00",
   "cat": "university-physics",
   "cats": [
     "university-physics"
   ],
   "subcats": [],
-  "bookIds": [],
+  "bookIds": [
+    "upload-735648029",
+    "upload-736069923",
+    "upload-736068889",
+    "upload-736068843",
+    "upload-736040451"
+  ],
   "sourceCount": 14
 }
