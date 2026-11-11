@@ -59,7 +59,7 @@ async function loadBooks() {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 15000);
   try {
-    const response = await fetch("books.json", { signal: controller.signal });
+    const response = await fetch("books.json", { signal: controller.signal, cache: "no-cache" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     if (!Array.isArray(data.books)) throw new Error("Invalid catalogue");
