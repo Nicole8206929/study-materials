@@ -1242,49 +1242,6 @@
       }
     },
     {
-      "id": "bd-68cf7eb7d918",
-      "title": "Introduction to Electrodynamics（Griffiths，2017）",
-      "author": "原资料作者（见原文件）",
-      "cat": "university-physics",
-      "catName": "大学物理",
-      "desc": "领军资料·大学物理",
-      "pages": 623,
-      "size": "4.8 MB",
-      "year": null,
-      "format": "PDF",
-      "bytes": 4772354,
-      "tags": [
-        "物理",
-        "领军资料"
-      ],
-      "searchTitles": [
-        "David J. Griffiths - Introduction to Electrodynamics-(2017)",
-        "Introduction to Electrodynamics（Griffiths，2017）"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-68cf7eb7d918/page-001.webp",
-          "previews/bd-68cf7eb7d918/page-002.webp",
-          "previews/bd-68cf7eb7d918/page-003.webp",
-          "previews/bd-68cf7eb7d918/page-004.webp",
-          "previews/bd-68cf7eb7d918/page-005.webp",
-          "previews/bd-68cf7eb7d918/page-006.webp",
-          "previews/bd-68cf7eb7d918/page-007.webp",
-          "previews/bd-68cf7eb7d918/page-008.webp",
-          "previews/bd-68cf7eb7d918/page-009.webp",
-          "previews/bd-68cf7eb7d918/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 623
-      },
-      "subcats": [],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/60686b75f2eb43902312b939ecb3b9b78fcd4147/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/%E7%89%A9%E7%90%86/%E5%9B%9B%E5%A4%A7%E5%8A%9B%E5%AD%A6/%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6/David%20J.%20Griffiths%20-%20Introduction%20to%20Electrodynamics-%282017%29.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/60686b75f2eb43902312b939ecb3b9b78fcd4147/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/%E7%89%A9%E7%90%86/%E5%9B%9B%E5%A4%A7%E5%8A%9B%E5%AD%A6/%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6/David%20J.%20Griffiths%20-%20Introduction%20to%20Electrodynamics-%282017%29.pdf"
-      }
-    },
-    {
       "id": "bd-9720f7f17a1e",
       "title": "电动力学讲义（周磊）",
       "author": "原资料作者（见原文件）",
@@ -1325,49 +1282,6 @@
         "provider": "github-private",
         "view": "https://github.com/Nicole8206929/study-materials-originals/blob/60686b75f2eb43902312b939ecb3b9b78fcd4147/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/%E7%89%A9%E7%90%86/%E5%9B%9B%E5%A4%A7%E5%8A%9B%E5%AD%A6/%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6/%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6%E8%AE%B2%E4%B9%89%E5%91%A8%E7%A3%8A.pdf",
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/60686b75f2eb43902312b939ecb3b9b78fcd4147/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/%E7%89%A9%E7%90%86/%E5%9B%9B%E5%A4%A7%E5%8A%9B%E5%AD%A6/%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6/%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6%E8%AE%B2%E4%B9%89%E5%91%A8%E7%A3%8A.pdf"
-      }
-    },
-    {
-      "id": "bd-2bc4835d1a3d",
-      "title": "热力学与统计物理（刘川）",
-      "author": "原资料作者（见原文件）",
-      "cat": "university-physics",
-      "catName": "大学物理",
-      "desc": "领军资料·大学物理",
-      "pages": 247,
-      "size": "19.9 MB",
-      "year": null,
-      "format": "PDF",
-      "bytes": 19947239,
-      "tags": [
-        "物理",
-        "领军资料"
-      ],
-      "searchTitles": [
-        "参考书1.热力学与统计物理 (刘川) (Z-Library)",
-        "热力学与统计物理（刘川）"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-2bc4835d1a3d/page-001.webp",
-          "previews/bd-2bc4835d1a3d/page-002.webp",
-          "previews/bd-2bc4835d1a3d/page-003.webp",
-          "previews/bd-2bc4835d1a3d/page-004.webp",
-          "previews/bd-2bc4835d1a3d/page-005.webp",
-          "previews/bd-2bc4835d1a3d/page-006.webp",
-          "previews/bd-2bc4835d1a3d/page-007.webp",
-          "previews/bd-2bc4835d1a3d/page-008.webp",
-          "previews/bd-2bc4835d1a3d/page-009.webp",
-          "previews/bd-2bc4835d1a3d/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 247
-      },
-      "subcats": [],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/60686b75f2eb43902312b939ecb3b9b78fcd4147/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/%E7%89%A9%E7%90%86/%E5%9B%9B%E5%A4%A7%E5%8A%9B%E5%AD%A6/%E7%BB%9F%E8%AE%A1%E7%89%A9%E7%90%86/%E5%8F%82%E8%80%83%E4%B9%A61.%E7%83%AD%E5%8A%9B%E5%AD%A6%E4%B8%8E%E7%BB%9F%E8%AE%A1%E7%89%A9%E7%90%86%20%28%E5%88%98%E5%B7%9D%29%20%28Z-Library%29.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/60686b75f2eb43902312b939ecb3b9b78fcd4147/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/%E7%89%A9%E7%90%86/%E5%9B%9B%E5%A4%A7%E5%8A%9B%E5%AD%A6/%E7%BB%9F%E8%AE%A1%E7%89%A9%E7%90%86/%E5%8F%82%E8%80%83%E4%B9%A61.%E7%83%AD%E5%8A%9B%E5%AD%A6%E4%B8%8E%E7%BB%9F%E8%AE%A1%E7%89%A9%E7%90%86%20%28%E5%88%98%E5%B7%9D%29%20%28Z-Library%29.pdf"
       }
     },
     {
@@ -4100,86 +4014,6 @@
       }
     },
     {
-      "id": "upload-735648510",
-      "title": "松松饼资料",
-      "author": "原资料作者（见各来源）",
-      "catName": "大学物理",
-      "desc": "17 份同机构、作者或系列资料合订，保留 426 页原始正文，附可点击目录与书签。",
-      "year": null,
-      "tags": [
-        "松松饼",
-        "同源资料合订",
-        "物理",
-        "领军资料"
-      ],
-      "searchTitles": [
-        "热力学与统计物理1【修订1.1】",
-        "热力学与统计物理2",
-        "热力学与统计物理3",
-        "热力学与统计物理4",
-        "热力学与统计物理5",
-        "热力学与统计物理6【修订1.1】",
-        "量子力学1",
-        "量子力学2",
-        "量子力学3",
-        "专题讲义S1：量纲分析与数量级估计",
-        "大物1质点运动学【26.1】",
-        "大物2质点动力学【26.1】",
-        "大物3刚体力学基础【26.1】",
-        "大物4电荷与电场【26.1】",
-        "大物5电流与磁场【26.1】",
-        "大物6电磁感应与麦克斯韦方程组【26.1】",
-        "松松饼的高考捞捞清单合集",
-        "bd-20916f7896e8",
-        "bd-a56980a7713e",
-        "bd-a325b34b60d0",
-        "bd-bf360c505885",
-        "bd-3a52fdc48051",
-        "bd-80e941aa5b40",
-        "bd-10157c9fabc6",
-        "bd-62d8340b9788",
-        "bd-98dfc91fb9d4",
-        "bd-7f3a4d3575ab",
-        "bd-b55e1233bed8",
-        "bd-98d3d6b5fb1d",
-        "bd-7c5d197b0c12",
-        "bd-be6cc2ba80e8",
-        "bd-f811cdbdf270",
-        "bd-82a5fe27147f",
-        "bd-22b934b966e1"
-      ],
-      "bytes": 42006345,
-      "size": "40.1 MB",
-      "format": "PDF",
-      "cat": "university-physics",
-      "cats": [
-        "university-physics",
-        "high-school-physics"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/origin-collections-20261111",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/origin-collections-20261111/library-3da6d8a02bbc756d8460a7d4b983d23b77e985c760554c267d4dc5a8f13ab00c.pdf"
-      },
-      "pages": 428,
-      "preview": {
-        "images": [
-          "previews/upload-735648510/page-001.webp",
-          "previews/upload-735648510/page-002.webp",
-          "previews/upload-735648510/page-003.webp",
-          "previews/upload-735648510/page-004.webp",
-          "previews/upload-735648510/page-005.webp",
-          "previews/upload-735648510/page-006.webp",
-          "previews/upload-735648510/page-007.webp",
-          "previews/upload-735648510/page-008.webp",
-          "previews/upload-735648510/page-009.webp",
-          "previews/upload-735648510/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 428
-      }
-    },
-    {
       "id": "upload-735648625",
       "title": "清华大学资料",
       "author": "原资料作者（见各来源）",
@@ -4730,92 +4564,20 @@
       }
     },
     {
-      "id": "upload-736069923",
-      "title": "历年丘赛统计+量子真题解合集【2026.3】",
-      "author": "作者待补充",
-      "catName": "大学物理",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
-      "bytes": 4066673,
-      "size": "3.9 MB",
-      "format": "PDF",
-      "cat": "university-physics",
-      "cats": [
-        "university-physics"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261111143728-1c6be293cb45c699",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261111143728-1c6be293cb45c699/file-ff2a2302-5897-4b98-be88-bbfa38cdc0c7.pdf"
-      },
-      "pages": 20,
-      "preview": {
-        "images": [
-          "previews/upload-736069923/page-001.webp",
-          "previews/upload-736069923/page-002.webp",
-          "previews/upload-736069923/page-003.webp",
-          "previews/upload-736069923/page-004.webp",
-          "previews/upload-736069923/page-005.webp",
-          "previews/upload-736069923/page-006.webp",
-          "previews/upload-736069923/page-007.webp",
-          "previews/upload-736069923/page-008.webp",
-          "previews/upload-736069923/page-009.webp",
-          "previews/upload-736069923/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 20
-      }
-    },
-    {
-      "id": "upload-736068889",
-      "title": "理论力学 (刘川)",
-      "author": "作者待补充",
-      "catName": "大学物理",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
-      "bytes": 25840887,
-      "size": "24.6 MB",
-      "format": "PDF",
-      "cat": "university-physics",
-      "cats": [
-        "university-physics"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261111143728-1c6be293cb45c699",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261111143728-1c6be293cb45c699/file-a64e8ba6-7b5d-4208-89af-8fe241b72ab4.pdf"
-      },
-      "pages": 213,
-      "preview": {
-        "images": [
-          "previews/upload-736068889/page-001.webp",
-          "previews/upload-736068889/page-002.webp",
-          "previews/upload-736068889/page-003.webp",
-          "previews/upload-736068889/page-004.webp",
-          "previews/upload-736068889/page-005.webp",
-          "previews/upload-736068889/page-006.webp",
-          "previews/upload-736068889/page-007.webp",
-          "previews/upload-736068889/page-008.webp",
-          "previews/upload-736068889/page-009.webp",
-          "previews/upload-736068889/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 213
-      }
-    },
-    {
       "id": "upload-736068843",
-      "title": "理论物理概论——从牛顿力学到统一理论",
-      "author": "作者待补充",
+      "title": "理论物理概论：从牛顿力学到统一理论",
+      "author": "曹知秋",
       "catName": "大学物理",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
+      "desc": "曹知秋编写的理论物理概论，原文覆盖从牛顿力学到统一理论。完整原件保存在私有书库。",
+      "year": 2024,
+      "tags": [
+        "理论物理",
+        "曹知秋"
+      ],
+      "searchTitles": [
+        "理论物理概论——从牛顿力学到统一理论",
+        "曹知秋"
+      ],
       "bytes": 2930522,
       "size": "2.8 MB",
       "format": "PDF",
@@ -4847,16 +4609,33 @@
       }
     },
     {
-      "id": "upload-736040451",
-      "title": "电动力学导论 格里菲斯",
-      "author": "作者待补充",
+      "id": "upload-736097082",
+      "title": "Griffiths 物理教材资料",
+      "author": "David J. Griffiths / 格里菲斯",
       "catName": "大学物理",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
+      "desc": "2 份同作者、机构或系列资料合订，保留 1001 页原始正文，附可点击目录与书签。",
       "year": null,
-      "tags": [],
-      "searchTitles": [],
-      "bytes": 83343565,
-      "size": "79.5 MB",
+      "tags": [
+        "Griffiths",
+        "格里菲斯",
+        "电动力学",
+        "同源资料合订",
+        "物理",
+        "领军资料"
+      ],
+      "searchTitles": [
+        "格里菲斯物理教材资料",
+        "Introduction to Electrodynamics（第4版英文原版，Griffiths）",
+        "电动力学导论（第3版中文译本，格里菲斯）",
+        "电动力学导论 格里菲斯",
+        "Introduction to Electrodynamics（Griffiths，2017）",
+        "David J. Griffiths - Introduction to Electrodynamics-(2017)",
+        "bd-68cf7eb7d918",
+        "upload-736040451",
+        "David J. Griffiths / 格里菲斯"
+      ],
+      "bytes": 88176434,
+      "size": "84.1 MB",
       "format": "PDF",
       "cat": "university-physics",
       "cats": [
@@ -4864,25 +4643,168 @@
       ],
       "ownerAccess": {
         "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261111143728-1c6be293cb45c699",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261111143728-1c6be293cb45c699/default.pdf"
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/physics-additions-collections-20261111",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/physics-additions-collections-20261111/library-d25c5c63859dccfc1bb77906b6f8cc14250b1ed70fee39c7509a580d143656f4.pdf"
       },
-      "pages": 378,
+      "pages": 1003,
       "preview": {
         "images": [
-          "previews/upload-736040451/page-001.webp",
-          "previews/upload-736040451/page-002.webp",
-          "previews/upload-736040451/page-003.webp",
-          "previews/upload-736040451/page-004.webp",
-          "previews/upload-736040451/page-005.webp",
-          "previews/upload-736040451/page-006.webp",
-          "previews/upload-736040451/page-007.webp",
-          "previews/upload-736040451/page-008.webp",
-          "previews/upload-736040451/page-009.webp",
-          "previews/upload-736040451/page-010.webp"
+          "previews/upload-736097082/page-001.webp",
+          "previews/upload-736097082/page-002.webp",
+          "previews/upload-736097082/page-003.webp",
+          "previews/upload-736097082/page-004.webp",
+          "previews/upload-736097082/page-005.webp",
+          "previews/upload-736097082/page-006.webp",
+          "previews/upload-736097082/page-007.webp",
+          "previews/upload-736097082/page-008.webp",
+          "previews/upload-736097082/page-009.webp",
+          "previews/upload-736097082/page-010.webp"
         ],
         "pageCount": 10,
-        "sourcePageCount": 378
+        "sourcePageCount": 1003
+      }
+    },
+    {
+      "id": "upload-736097327",
+      "title": "刘川物理教材资料",
+      "author": "刘川",
+      "catName": "大学物理",
+      "desc": "2 份同作者、机构或系列资料合订，保留 460 页原始正文，附可点击目录与书签。",
+      "year": null,
+      "tags": [
+        "刘川",
+        "理论力学",
+        "热力学与统计物理",
+        "同源资料合订",
+        "物理",
+        "领军资料"
+      ],
+      "searchTitles": [
+        "理论力学（刘川）",
+        "热力学与统计物理（刘川）",
+        "理论力学 (刘川) ",
+        "参考书1.热力学与统计物理 (刘川) (Z-Library)",
+        "bd-2bc4835d1a3d",
+        "upload-736068889",
+        "刘川",
+        "理论力学 (刘川)"
+      ],
+      "bytes": 45854567,
+      "size": "43.7 MB",
+      "format": "PDF",
+      "cat": "university-physics",
+      "cats": [
+        "university-physics"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/physics-additions-collections-20261111",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/physics-additions-collections-20261111/library-7b3ef81cfeb813474d310fd6dfe5c4d0e559a5e67c42ce9da0ffe8813d27e3bf.pdf"
+      },
+      "pages": 462,
+      "preview": {
+        "images": [
+          "previews/upload-736097327/page-001.webp",
+          "previews/upload-736097327/page-002.webp",
+          "previews/upload-736097327/page-003.webp",
+          "previews/upload-736097327/page-004.webp",
+          "previews/upload-736097327/page-005.webp",
+          "previews/upload-736097327/page-006.webp",
+          "previews/upload-736097327/page-007.webp",
+          "previews/upload-736097327/page-008.webp",
+          "previews/upload-736097327/page-009.webp",
+          "previews/upload-736097327/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 462
+      }
+    },
+    {
+      "id": "upload-736097834",
+      "title": "松松饼资料",
+      "author": "松松饼（高新雨）",
+      "catName": "大学物理",
+      "desc": "18 份同作者、机构或系列资料合订，保留 446 页原始正文，附可点击目录与书签。已补入历年丘赛统计与量子真题解合集（2026.3）。",
+      "year": null,
+      "tags": [
+        "松松饼",
+        "高新雨",
+        "丘赛真题",
+        "同源资料合订",
+        "物理",
+        "领军资料"
+      ],
+      "searchTitles": [
+        "热力学与统计物理1【修订1.1】",
+        "热力学与统计物理2",
+        "热力学与统计物理3",
+        "热力学与统计物理4",
+        "热力学与统计物理5",
+        "热力学与统计物理6【修订1.1】",
+        "量子力学1",
+        "量子力学2",
+        "量子力学3",
+        "专题讲义S1：量纲分析与数量级估计",
+        "大物1质点运动学【26.1】",
+        "大物2质点动力学【26.1】",
+        "大物3刚体力学基础【26.1】",
+        "大物4电荷与电场【26.1】",
+        "大物5电流与磁场【26.1】",
+        "大物6电磁感应与麦克斯韦方程组【26.1】",
+        "松松饼的高考捞捞清单合集",
+        "历年丘赛统计与量子真题解合集（2026.3）",
+        "历年丘赛统计+量子真题解合集【2026.3】",
+        "松松饼资料",
+        "bd-20916f7896e8",
+        "bd-a56980a7713e",
+        "bd-a325b34b60d0",
+        "bd-bf360c505885",
+        "bd-3a52fdc48051",
+        "bd-80e941aa5b40",
+        "bd-10157c9fabc6",
+        "bd-62d8340b9788",
+        "bd-98dfc91fb9d4",
+        "bd-7f3a4d3575ab",
+        "bd-b55e1233bed8",
+        "bd-98d3d6b5fb1d",
+        "bd-7c5d197b0c12",
+        "bd-be6cc2ba80e8",
+        "bd-f811cdbdf270",
+        "bd-82a5fe27147f",
+        "bd-22b934b966e1",
+        "upload-735648510",
+        "upload-736069923",
+        "松松饼（高新雨）"
+      ],
+      "bytes": 43583405,
+      "size": "41.6 MB",
+      "format": "PDF",
+      "cat": "university-physics",
+      "cats": [
+        "university-physics",
+        "high-school-physics"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/physics-additions-collections-20261111",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/physics-additions-collections-20261111/library-2ab9b6db327ae27f888de7065710d7748633fadee0e76596100824a556b47054.pdf"
+      },
+      "pages": 448,
+      "preview": {
+        "images": [
+          "previews/upload-736097834/page-001.webp",
+          "previews/upload-736097834/page-002.webp",
+          "previews/upload-736097834/page-003.webp",
+          "previews/upload-736097834/page-004.webp",
+          "previews/upload-736097834/page-005.webp",
+          "previews/upload-736097834/page-006.webp",
+          "previews/upload-736097834/page-007.webp",
+          "previews/upload-736097834/page-008.webp",
+          "previews/upload-736097834/page-009.webp",
+          "previews/upload-736097834/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 448
       }
     }
   ],
