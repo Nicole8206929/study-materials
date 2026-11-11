@@ -1649,6 +1649,57 @@
         "pageCount": 10,
         "sourcePageCount": 340
       }
+    },
+    {
+      "id": "high-school-strong-physics-r5",
+      "title": "高中强基物理讲义",
+      "author": "讲义编写组",
+      "cat": "high-school-physics",
+      "cats": [
+        "high-school-physics"
+      ],
+      "catName": "高中物理",
+      "desc": "完整R5修订稿：25章，独立数学准备章49页；300道例题、650道练习，均附思路与完整解答，另有160道概念短检。强基相关物理训练270道，已计入总题量。",
+      "year": 2026,
+      "tags": [
+        "系统讲义",
+        "强基物理",
+        "高中物理",
+        "数学准备",
+        "完整题解"
+      ],
+      "searchTitles": [
+        "高中物理系统讲义",
+        "高中强基物理讲义",
+        "零基础自学",
+        "高考满分冲刺与强基提升",
+        "R5"
+      ],
+      "bytes": 3685489,
+      "size": "3.5 MB",
+      "format": "PDF",
+      "pages": 642,
+      "preview": {
+        "images": [
+          "previews/high-school-strong-physics-r5/page-001.webp",
+          "previews/high-school-strong-physics-r5/page-002.webp",
+          "previews/high-school-strong-physics-r5/page-003.webp",
+          "previews/high-school-strong-physics-r5/page-004.webp",
+          "previews/high-school-strong-physics-r5/page-005.webp",
+          "previews/high-school-strong-physics-r5/page-006.webp",
+          "previews/high-school-strong-physics-r5/page-007.webp",
+          "previews/high-school-strong-physics-r5/page-008.webp",
+          "previews/high-school-strong-physics-r5/page-009.webp",
+          "previews/high-school-strong-physics-r5/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 642
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/main/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/%E9%AB%98%E4%B8%AD%E5%BC%BA%E5%9F%BA%E7%89%A9%E7%90%86%E8%AE%B2%E4%B9%89.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/refs/heads/main/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/%E9%AB%98%E4%B8%AD%E5%BC%BA%E5%9F%BA%E7%89%A9%E7%90%86%E8%AE%B2%E4%B9%89.pdf"
+      }
     }
   ],
   "subcategories": [
