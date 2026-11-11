@@ -1342,533 +1342,312 @@
       }
     },
     {
-      "id": "gtm-027",
-      "title": "General Topology",
-      "author": "John L. Kelley",
-      "cat": "university-math",
+      "id": "upload-734536722",
+      "title": "GTM 代数合订本",
+      "author": "Nathan Jacobson、Thomas W. Hungerford",
       "catName": "大学数学",
-      "desc": "点集拓扑经典：拓扑空间、收敛、紧性、一致空间与函数空间，现代一般拓扑的奠基教材。",
-      "pages": 318,
-      "size": "17.5 MB",
-      "year": 1955,
-      "format": "PDF",
-      "bytes": 17538132,
+      "desc": "4 本 GTM 按学习顺序保留原页合订，附目录与书签。",
+      "year": null,
       "tags": [
         "GTM",
-        "Springer",
-        "研究生教材",
-        "几何与拓扑"
-      ],
-      "searchTitles": [
-        "一般拓扑",
-        "General Topology",
-        "GTM 27"
-      ],
-      "preview": {
-        "images": [
-          "previews/gtm-027/page-001.webp",
-          "previews/gtm-027/page-002.webp",
-          "previews/gtm-027/page-003.webp",
-          "previews/gtm-027/page-004.webp",
-          "previews/gtm-027/page-005.webp",
-          "previews/gtm-027/page-006.webp",
-          "previews/gtm-027/page-007.webp",
-          "previews/gtm-027/page-008.webp",
-          "previews/gtm-027/page-009.webp",
-          "previews/gtm-027/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 318
-      },
-      "subcats": [
-        "geometry-topology"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/04019892dd4cc9efc49e321ebce687891b41f1ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM027_General_Topology.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/04019892dd4cc9efc49e321ebce687891b41f1ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM027_General_Topology.pdf"
-      }
-    },
-    {
-      "id": "gtm-030",
-      "title": "Lectures in Abstract Algebra I: Basic Concepts",
-      "author": "Nathan Jacobson",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "desc": "抽象代数讲义第一卷：群、环、域等基本概念，Jacobson 经典研究生教材。",
-      "pages": 240,
-      "size": "11.3 MB",
-      "year": 1951,
-      "format": "PDF",
-      "bytes": 11346768,
-      "tags": [
-        "GTM",
-        "Springer",
         "研究生教材",
         "代数"
       ],
       "searchTitles": [
         "抽象代数讲义 第一卷",
         "Lectures in Abstract Algebra I: Basic Concepts",
-        "GTM 30"
-      ],
-      "preview": {
-        "images": [
-          "previews/gtm-030/page-001.webp",
-          "previews/gtm-030/page-002.webp",
-          "previews/gtm-030/page-003.webp",
-          "previews/gtm-030/page-004.webp",
-          "previews/gtm-030/page-005.webp",
-          "previews/gtm-030/page-006.webp",
-          "previews/gtm-030/page-007.webp",
-          "previews/gtm-030/page-008.webp",
-          "previews/gtm-030/page-009.webp",
-          "previews/gtm-030/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 240
-      },
-      "subcats": [
-        "algebra"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/04019892dd4cc9efc49e321ebce687891b41f1ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM030_Lectures_in_Abstract_Algebra_I_Basic_Concepts.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/04019892dd4cc9efc49e321ebce687891b41f1ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM030_Lectures_in_Abstract_Algebra_I_Basic_Concepts.pdf"
-      }
-    },
-    {
-      "id": "gtm-031",
-      "title": "Lectures in Abstract Algebra II: Linear Algebra",
-      "author": "Nathan Jacobson",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "desc": "抽象代数讲义第二卷：线性代数、向量空间、线性变换与矩阵理论。",
-      "pages": 291,
-      "size": "21.5 MB",
-      "year": 1953,
-      "format": "PDF",
-      "bytes": 21540957,
-      "tags": [
-        "GTM",
-        "Springer",
-        "研究生教材",
-        "代数"
-      ],
-      "searchTitles": [
+        "GTM 30",
+        "GTM030",
+        "GTM30",
+        "GTM 030",
+        "gtm-030",
         "抽象代数讲义 第二卷",
         "Lectures in Abstract Algebra II: Linear Algebra",
-        "GTM 31"
-      ],
-      "preview": {
-        "images": [
-          "previews/gtm-031/page-001.webp",
-          "previews/gtm-031/page-002.webp",
-          "previews/gtm-031/page-003.webp",
-          "previews/gtm-031/page-004.webp",
-          "previews/gtm-031/page-005.webp",
-          "previews/gtm-031/page-006.webp",
-          "previews/gtm-031/page-007.webp",
-          "previews/gtm-031/page-008.webp",
-          "previews/gtm-031/page-009.webp",
-          "previews/gtm-031/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 291
-      },
-      "subcats": [
-        "algebra"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/04019892dd4cc9efc49e321ebce687891b41f1ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM031_Lectures_in_Abstract_Algebra_II_Linear_Algebra.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/04019892dd4cc9efc49e321ebce687891b41f1ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM031_Lectures_in_Abstract_Algebra_II_Linear_Algebra.pdf"
-      }
-    },
-    {
-      "id": "gtm-032",
-      "title": "Lectures in Abstract Algebra III: Theory of Fields and Galois Theory",
-      "author": "Nathan Jacobson",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "desc": "抽象代数讲义第三卷：域论与伽罗瓦理论，含域扩张与伽罗瓦对应。",
-      "pages": 334,
-      "size": "98.2 MB",
-      "year": 1964,
-      "format": "PDF",
-      "bytes": 98211646,
-      "tags": [
-        "GTM",
-        "Springer",
-        "研究生教材",
-        "代数"
-      ],
-      "searchTitles": [
+        "GTM 31",
+        "GTM031",
+        "GTM31",
+        "GTM 031",
+        "gtm-031",
         "抽象代数讲义 第三卷",
         "Lectures in Abstract Algebra III: Theory of Fields and Galois Theory",
-        "GTM 32"
+        "GTM 32",
+        "GTM032",
+        "GTM32",
+        "GTM 032",
+        "gtm-032",
+        "代数",
+        "Algebra",
+        "GTM 73",
+        "GTM073",
+        "GTM73",
+        "GTM 073",
+        "gtm-073"
       ],
-      "preview": {
-        "images": [
-          "previews/gtm-032/page-001.webp",
-          "previews/gtm-032/page-002.webp",
-          "previews/gtm-032/page-003.webp",
-          "previews/gtm-032/page-004.webp",
-          "previews/gtm-032/page-005.webp",
-          "previews/gtm-032/page-006.webp",
-          "previews/gtm-032/page-007.webp",
-          "previews/gtm-032/page-008.webp",
-          "previews/gtm-032/page-009.webp",
-          "previews/gtm-032/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 334
-      },
+      "bytes": 168412584,
+      "size": "160.6 MB",
+      "format": "PDF",
+      "cat": "university-math",
+      "cats": [
+        "university-math"
+      ],
+      "subcat": "algebra",
       "subcats": [
         "algebra"
       ],
       "ownerAccess": {
         "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/04019892dd4cc9efc49e321ebce687891b41f1ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM032_Lectures_in_Abstract_Algebra_III_Theory_of_Fields.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/04019892dd4cc9efc49e321ebce687891b41f1ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM032_Lectures_in_Abstract_Algebra_III_Theory_of_Fields.pdf"
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/gtm-subject-collections-20261111",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/gtm-subject-collections-20261111/library-3639864fffba51a0ba03f5f3d63c48a354b7c723499442425bb1a434ddff4947.pdf"
+      },
+      "pages": 1395,
+      "preview": {
+        "images": [
+          "previews/upload-734536722/page-001.webp",
+          "previews/upload-734536722/page-002.webp",
+          "previews/upload-734536722/page-003.webp",
+          "previews/upload-734536722/page-004.webp",
+          "previews/upload-734536722/page-005.webp",
+          "previews/upload-734536722/page-006.webp",
+          "previews/upload-734536722/page-007.webp",
+          "previews/upload-734536722/page-008.webp",
+          "previews/upload-734536722/page-009.webp",
+          "previews/upload-734536722/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 1395
       }
     },
     {
-      "id": "gtm-046",
-      "title": "Probability Theory II",
-      "author": "Michel Loeve",
-      "cat": "university-math",
+      "id": "upload-734536831",
+      "title": "GTM 几何与拓扑合订本",
+      "author": "John L. Kelley、John M. Lee",
       "catName": "大学数学",
-      "desc": "概率论经典第二卷（第四版）：测度论框架下的随机过程、极限定理与高级概率主题。",
-      "pages": 426,
-      "size": "18.1 MB",
-      "year": 1978,
-      "format": "PDF",
-      "bytes": 18130525,
+      "desc": "2 本 GTM 按学习顺序保留原页合订，附目录与书签。",
+      "year": null,
       "tags": [
         "GTM",
-        "Springer",
         "研究生教材",
-        "概率与统计"
+        "几何与拓扑"
       ],
       "searchTitles": [
-        "概率论 第二卷",
-        "Probability Theory II",
-        "GTM 46"
+        "一般拓扑",
+        "General Topology",
+        "GTM 27",
+        "GTM027",
+        "GTM27",
+        "GTM 027",
+        "gtm-027",
+        "拓扑流形导论",
+        "Introduction to Topological Manifolds",
+        "GTM 202",
+        "GTM202",
+        "gtm-202"
       ],
-      "preview": {
-        "images": [
-          "previews/gtm-046/page-001.webp",
-          "previews/gtm-046/page-002.webp",
-          "previews/gtm-046/page-003.webp",
-          "previews/gtm-046/page-004.webp",
-          "previews/gtm-046/page-005.webp",
-          "previews/gtm-046/page-006.webp",
-          "previews/gtm-046/page-007.webp",
-          "previews/gtm-046/page-008.webp",
-          "previews/gtm-046/page-009.webp",
-          "previews/gtm-046/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 426
-      },
+      "bytes": 21262147,
+      "size": "20.3 MB",
+      "format": "PDF",
+      "cat": "university-math",
+      "cats": [
+        "university-math"
+      ],
+      "subcat": "geometry-topology",
       "subcats": [
-        "probability-statistics"
+        "geometry-topology"
       ],
       "ownerAccess": {
         "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/04019892dd4cc9efc49e321ebce687891b41f1ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM046_Probability_Theory_II.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/04019892dd4cc9efc49e321ebce687891b41f1ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM046_Probability_Theory_II.pdf"
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/gtm-subject-collections-20261111",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/gtm-subject-collections-20261111/library-c7b113b12aafa685e7cf5b75ad5423125f2c1314d704f941e454d5088f022513.pdf"
+      },
+      "pages": 717,
+      "preview": {
+        "images": [
+          "previews/upload-734536831/page-001.webp",
+          "previews/upload-734536831/page-002.webp",
+          "previews/upload-734536831/page-003.webp",
+          "previews/upload-734536831/page-004.webp",
+          "previews/upload-734536831/page-005.webp",
+          "previews/upload-734536831/page-006.webp",
+          "previews/upload-734536831/page-007.webp",
+          "previews/upload-734536831/page-008.webp",
+          "previews/upload-734536831/page-009.webp",
+          "previews/upload-734536831/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 717
       }
     },
     {
-      "id": "gtm-051",
-      "title": "A Course in Differential Geometry",
-      "author": "Wilhelm Klingenberg",
-      "cat": "university-math",
+      "id": "upload-734537004",
+      "title": "GTM 微分几何合订本",
+      "author": "Wilhelm Klingenberg、John M. Lee、R. W. Sharpe",
       "catName": "大学数学",
-      "desc": "微分几何教程：曲线曲面理论、微分流形与黎曼几何基础，Klingenberg 代表作。",
-      "pages": 188,
-      "size": "5.4 MB",
-      "year": 1978,
-      "format": "PDF",
-      "bytes": 5415458,
+      "desc": "3 本 GTM 按学习顺序保留原页合订，附目录与书签。",
+      "year": null,
       "tags": [
         "GTM",
-        "Springer",
         "研究生教材",
         "微分几何"
       ],
       "searchTitles": [
         "微分几何教程",
         "A Course in Differential Geometry",
-        "GTM 51"
-      ],
-      "preview": {
-        "images": [
-          "previews/gtm-051/page-001.webp",
-          "previews/gtm-051/page-002.webp",
-          "previews/gtm-051/page-003.webp",
-          "previews/gtm-051/page-004.webp",
-          "previews/gtm-051/page-005.webp",
-          "previews/gtm-051/page-006.webp",
-          "previews/gtm-051/page-007.webp",
-          "previews/gtm-051/page-008.webp",
-          "previews/gtm-051/page-009.webp",
-          "previews/gtm-051/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 188
-      },
-      "subcats": [
-        "differential-geometry"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/04019892dd4cc9efc49e321ebce687891b41f1ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM051_A_Course_in_Differential_Geometry.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/04019892dd4cc9efc49e321ebce687891b41f1ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM051_A_Course_in_Differential_Geometry.pdf"
-      }
-    },
-    {
-      "id": "gtm-073",
-      "title": "Algebra",
-      "author": "Thomas W. Hungerford",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "desc": "研究生代数标准教材：群、环、模、域、伽罗瓦理论与同调代数，体系完整。",
-      "pages": 526,
-      "size": "37.8 MB",
-      "year": 1974,
-      "format": "PDF",
-      "bytes": 37796543,
-      "tags": [
-        "GTM",
-        "Springer",
-        "研究生教材",
-        "代数"
-      ],
-      "searchTitles": [
-        "代数",
-        "Algebra",
-        "GTM 73"
-      ],
-      "preview": {
-        "images": [
-          "previews/gtm-073/page-001.webp",
-          "previews/gtm-073/page-002.webp",
-          "previews/gtm-073/page-003.webp",
-          "previews/gtm-073/page-004.webp",
-          "previews/gtm-073/page-005.webp",
-          "previews/gtm-073/page-006.webp",
-          "previews/gtm-073/page-007.webp",
-          "previews/gtm-073/page-008.webp",
-          "previews/gtm-073/page-009.webp",
-          "previews/gtm-073/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 526
-      },
-      "subcats": [
-        "algebra"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/04019892dd4cc9efc49e321ebce687891b41f1ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM073_Algebra.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/04019892dd4cc9efc49e321ebce687891b41f1ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM073_Algebra.pdf"
-      }
-    },
-    {
-      "id": "gtm-166",
-      "title": "Differential Geometry",
-      "author": "R. W. Sharpe",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "desc": "以 Cartan 活动标架法讲微分几何：外微分、联络、曲率与齐性空间，Chern 作序。",
-      "pages": 220,
-      "size": "30.1 MB",
-      "year": 1997,
-      "format": "PDF",
-      "bytes": 30099155,
-      "tags": [
-        "GTM",
-        "Springer",
-        "研究生教材",
-        "微分几何"
-      ],
-      "searchTitles": [
-        "微分几何",
-        "Differential Geometry",
-        "GTM 166"
-      ],
-      "preview": {
-        "images": [
-          "previews/gtm-166/page-001.webp",
-          "previews/gtm-166/page-002.webp",
-          "previews/gtm-166/page-003.webp",
-          "previews/gtm-166/page-004.webp",
-          "previews/gtm-166/page-005.webp",
-          "previews/gtm-166/page-006.webp",
-          "previews/gtm-166/page-007.webp",
-          "previews/gtm-166/page-008.webp",
-          "previews/gtm-166/page-009.webp",
-          "previews/gtm-166/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 220
-      },
-      "subcats": [
-        "differential-geometry"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/04019892dd4cc9efc49e321ebce687891b41f1ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM166_Differential_Geometry.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/04019892dd4cc9efc49e321ebce687891b41f1ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM166_Differential_Geometry.pdf"
-      }
-    },
-    {
-      "id": "gtm-176",
-      "title": "Riemannian Manifolds",
-      "author": "John M. Lee",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "desc": "黎曼流形入门经典：度量、联络、测地线、曲率与黎曼几何核心定理。",
-      "pages": 232,
-      "size": "1.2 MB",
-      "year": 1997,
-      "format": "PDF",
-      "bytes": 1238502,
-      "tags": [
-        "GTM",
-        "Springer",
-        "研究生教材",
-        "微分几何",
-        "几何与拓扑"
-      ],
-      "searchTitles": [
+        "GTM 51",
+        "GTM051",
+        "GTM51",
+        "GTM 051",
+        "gtm-051",
         "黎曼流形",
         "Riemannian Manifolds",
-        "GTM 176"
+        "GTM 176",
+        "GTM176",
+        "gtm-176",
+        "微分几何",
+        "Differential Geometry",
+        "GTM 166",
+        "GTM166",
+        "gtm-166"
       ],
-      "preview": {
-        "images": [
-          "previews/gtm-176/page-001.webp",
-          "previews/gtm-176/page-002.webp",
-          "previews/gtm-176/page-003.webp",
-          "previews/gtm-176/page-004.webp",
-          "previews/gtm-176/page-005.webp",
-          "previews/gtm-176/page-006.webp",
-          "previews/gtm-176/page-007.webp",
-          "previews/gtm-176/page-008.webp",
-          "previews/gtm-176/page-009.webp",
-          "previews/gtm-176/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 232
-      },
+      "bytes": 36477524,
+      "size": "34.8 MB",
+      "format": "PDF",
+      "cat": "university-math",
+      "cats": [
+        "university-math"
+      ],
+      "subcat": "differential-geometry",
       "subcats": [
-        "differential-geometry",
-        "geometry-topology"
+        "differential-geometry"
       ],
       "ownerAccess": {
         "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/04019892dd4cc9efc49e321ebce687891b41f1ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM176_Riemannian_Manifolds.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/04019892dd4cc9efc49e321ebce687891b41f1ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM176_Riemannian_Manifolds.pdf"
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/gtm-subject-collections-20261111",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/gtm-subject-collections-20261111/library-e787c2a48048c322120f62f18d35583d35b33dd2d29a854f187531b54fdf3c3a.pdf"
+      },
+      "pages": 645,
+      "preview": {
+        "images": [
+          "previews/upload-734537004/page-001.webp",
+          "previews/upload-734537004/page-002.webp",
+          "previews/upload-734537004/page-003.webp",
+          "previews/upload-734537004/page-004.webp",
+          "previews/upload-734537004/page-005.webp",
+          "previews/upload-734537004/page-006.webp",
+          "previews/upload-734537004/page-007.webp",
+          "previews/upload-734537004/page-008.webp",
+          "previews/upload-734537004/page-009.webp",
+          "previews/upload-734537004/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 645
       }
     },
     {
-      "id": "gtm-181",
-      "title": "Numerical Analysis",
-      "author": "Rainer Kress",
-      "cat": "university-math",
+      "id": "upload-734537250",
+      "title": "GTM 概率与统计：Probability Theory II",
+      "author": "Michel Loeve",
       "catName": "大学数学",
-      "desc": "应用数学数值分析：插值、数值积分、线性方程组、非线性问题与数值方法理论。",
-      "pages": 340,
-      "size": "42.1 MB",
-      "year": 1998,
-      "format": "PDF",
-      "bytes": 42143693,
+      "desc": "保留原文与公式，压缩检查后保留清晰版本。",
+      "year": null,
       "tags": [
         "GTM",
-        "Springer",
+        "研究生教材",
+        "概率与统计"
+      ],
+      "searchTitles": [
+        "概率论 第二卷",
+        "Probability Theory II",
+        "GTM 46",
+        "GTM046",
+        "GTM46",
+        "GTM 046",
+        "gtm-046"
+      ],
+      "bytes": 18130525,
+      "size": "17.3 MB",
+      "format": "PDF",
+      "cat": "university-math",
+      "cats": [
+        "university-math"
+      ],
+      "subcat": "probability-statistics",
+      "subcats": [
+        "probability-statistics"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/gtm-subject-collections-20261111",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/gtm-subject-collections-20261111/library-4f8e908379aced84ab386e535cc10e80c4e1d5f360788ec2ee111d4dac23d092.pdf"
+      },
+      "pages": 426,
+      "preview": {
+        "images": [
+          "previews/upload-734537250/page-001.webp",
+          "previews/upload-734537250/page-002.webp",
+          "previews/upload-734537250/page-003.webp",
+          "previews/upload-734537250/page-004.webp",
+          "previews/upload-734537250/page-005.webp",
+          "previews/upload-734537250/page-006.webp",
+          "previews/upload-734537250/page-007.webp",
+          "previews/upload-734537250/page-008.webp",
+          "previews/upload-734537250/page-009.webp",
+          "previews/upload-734537250/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 426
+      }
+    },
+    {
+      "id": "upload-734537615",
+      "title": "GTM 应用数学：Numerical Analysis",
+      "author": "Rainer Kress",
+      "catName": "大学数学",
+      "desc": "保留原文与公式，压缩检查后保留清晰版本。",
+      "year": null,
+      "tags": [
+        "GTM",
         "研究生教材",
         "应用数学"
       ],
       "searchTitles": [
         "数值分析",
         "Numerical Analysis",
-        "GTM 181"
+        "GTM 181",
+        "GTM181",
+        "gtm-181"
       ],
-      "preview": {
-        "images": [
-          "previews/gtm-181/page-001.webp",
-          "previews/gtm-181/page-002.webp",
-          "previews/gtm-181/page-003.webp",
-          "previews/gtm-181/page-004.webp",
-          "previews/gtm-181/page-005.webp",
-          "previews/gtm-181/page-006.webp",
-          "previews/gtm-181/page-007.webp",
-          "previews/gtm-181/page-008.webp",
-          "previews/gtm-181/page-009.webp",
-          "previews/gtm-181/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 340
-      },
+      "bytes": 42072292,
+      "size": "40.1 MB",
+      "format": "PDF",
+      "cat": "university-math",
+      "cats": [
+        "university-math"
+      ],
+      "subcat": "applied-math",
       "subcats": [
         "applied-math"
       ],
       "ownerAccess": {
         "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/04019892dd4cc9efc49e321ebce687891b41f1ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM181_Numerical_Analysis.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/04019892dd4cc9efc49e321ebce687891b41f1ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM181_Numerical_Analysis.pdf"
-      }
-    },
-    {
-      "id": "gtm-202",
-      "title": "Introduction to Topological Manifolds",
-      "author": "John M. Lee",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "desc": "拓扑流形入门：流形、覆盖空间、基本群与同伦，Lee 经典教材。",
-      "pages": 395,
-      "size": "4.1 MB",
-      "year": 2000,
-      "format": "PDF",
-      "bytes": 4135693,
-      "tags": [
-        "GTM",
-        "Springer",
-        "研究生教材",
-        "几何与拓扑"
-      ],
-      "searchTitles": [
-        "拓扑流形导论",
-        "Introduction to Topological Manifolds",
-        "GTM 202"
-      ],
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/gtm-subject-collections-20261111",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/gtm-subject-collections-20261111/library-cb63bd80c9d62807ac14cdc60b7830f11c2cec4f926dfdc69384ec1857b5575e.pdf"
+      },
+      "pages": 340,
       "preview": {
         "images": [
-          "previews/gtm-202/page-001.webp",
-          "previews/gtm-202/page-002.webp",
-          "previews/gtm-202/page-003.webp",
-          "previews/gtm-202/page-004.webp",
-          "previews/gtm-202/page-005.webp",
-          "previews/gtm-202/page-006.webp",
-          "previews/gtm-202/page-007.webp",
-          "previews/gtm-202/page-008.webp",
-          "previews/gtm-202/page-009.webp",
-          "previews/gtm-202/page-010.webp"
+          "previews/upload-734537615/page-001.webp",
+          "previews/upload-734537615/page-002.webp",
+          "previews/upload-734537615/page-003.webp",
+          "previews/upload-734537615/page-004.webp",
+          "previews/upload-734537615/page-005.webp",
+          "previews/upload-734537615/page-006.webp",
+          "previews/upload-734537615/page-007.webp",
+          "previews/upload-734537615/page-008.webp",
+          "previews/upload-734537615/page-009.webp",
+          "previews/upload-734537615/page-010.webp"
         ],
         "pageCount": 10,
-        "sourcePageCount": 395
-      },
-      "subcats": [
-        "geometry-topology"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/04019892dd4cc9efc49e321ebce687891b41f1ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM202_Introduction_to_Topological_Manifolds.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/04019892dd4cc9efc49e321ebce687891b41f1ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM202_Introduction_to_Topological_Manifolds.pdf"
+        "sourcePageCount": 340
       }
     }
   ],
