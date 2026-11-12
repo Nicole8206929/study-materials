@@ -92,7 +92,7 @@
 .management-notice{padding:12px 14px;border:1px solid var(--border);line-height:1.7;margin-bottom:18px}
 .delete-book,.management-dialog .danger{color:#963b2d;border-color:#963b2d}
 .delete-book{grid-column:1/-1}
-.management-dialog{max-width:560px;width:calc(100% - 32px);height:auto;padding:24px;max-height:85dvh;overflow:auto}
+.management-dialog{max-width:560px;width:calc(100% - 32px);height:fit-content;padding:24px;max-height:85dvh;overflow:auto}
 .management-dialog p{line-height:1.75;overflow-wrap:anywhere}
 .dialog-actions{display:flex;gap:12px;justify-content:flex-end;margin-top:20px;flex-wrap:wrap}
 .trash-list{padding:0;list-style:none}
