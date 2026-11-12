@@ -1,14 +1,16 @@
 {
   "version": 1,
   "batch": "upload-20261112150620-45a1ce623705bcf1",
-  "stage": "failed",
-  "message": "整理未完成，原件已保留。打开处理记录查看原因，再重新运行即可。",
-  "updatedAt": "2026-11-12T15:14:28.435708+00:00",
+  "stage": "publishing",
+  "message": "资料已整理，正在更新书架。",
+  "updatedAt": "2026-11-12T15:22:41.967518+00:00",
   "cat": "competition-math",
   "cats": [
     "competition-math"
   ],
   "subcats": [],
-  "bookIds": [],
-  "sourceCount": 0
+  "bookIds": [
+    "upload-739976186"
+  ],
+  "sourceCount": 2
 }
