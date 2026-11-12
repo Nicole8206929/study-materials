@@ -1,7 +1,15 @@
 "use strict";
+import {initializeShelfManagement} from '../tools/shelf-management.mjs';
 
 const $ = id => document.getElementById(id);
 let books = [];
+let allBooks = [];
+let management;
+let managementReady;
+const getManagement=()=>managementReady||=initializeShelfManagement({
+  onChange:removed=>{books=allBooks.filter(book=>!removed.has(book.id));refreshCatalogue();},
+  onModeChange:()=>{if(loaded)render();}
+}).then(value=>management=value);
 let categories = new Map();
 let subcategories = [];
 let loaded = false;
@@ -63,7 +71,10 @@ async function loadBooks() {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     if (!Array.isArray(data.books)) throw new Error("Invalid catalogue");
-    books = data.books.map(validateBook);
+    allBooks = data.books.map(validateBook);
+    await getManagement();
+    const removed=await management.visibility();
+    books = allBooks.filter(book=>!removed.has(book.id));
     if (new Set(books.map(book => book.id)).size !== books.length) throw new Error("Duplicate IDs");
     const declared = data.categories || [];
     if (!Array.isArray(declared) || declared.some(category => !category || typeof category.id !== "string" || category.id === "all" || !category.id.trim() || typeof category.name !== "string" || !category.name.trim())) throw new Error("Invalid categories");
@@ -85,6 +96,7 @@ async function loadBooks() {
     const formats = [...new Set(books.map(book => book.format))];
     $("totalSummary").textContent = `${books.length} 份资料 · ${categories.size} 个分类 · ${formats.map(format => format.toUpperCase()).join(" / ")}`;
   } catch {
+    if(!management)managementReady=null;
     $("loadError").hidden = false;
     $("stats").textContent = "资料加载失败";
     $("totalSummary").textContent = "书架暂时无法加载";
@@ -94,6 +106,13 @@ async function loadBooks() {
     loading = false;
     $("books").setAttribute("aria-busy", "false");
   }
+}
+
+function refreshCatalogue(){
+  if(state.tag&&!books.some(book=>inCategory(book,state.cat)&&book.tags.includes(state.tag)))state.tag='';
+  renderCategories();renderSubcategories();renderTags();render();saveState();
+  const formats=[...new Set(books.map(book=>book.format))];
+  $("totalSummary").textContent=`${books.length} 份资料 · ${categories.size} 个分类 · ${formats.length?formats.map(format=>format.toUpperCase()).join(" / "):"无资料"}`;
 }
 
 function readState() {
@@ -196,6 +215,9 @@ function bookCard(book) {
       const link=node('a',css,label);link.href=book.ownerAccess[key];link.target='_blank';link.rel='noopener noreferrer';
       link.setAttribute('aria-label',`${label}《${book.title}》（GitHub 验证权限）`);actions.append(link);
     }
+  }
+  if(management?.canManage){
+    const remove=node('button','delete-book','删除书籍');remove.type='button';remove.setAttribute('aria-label',`删除《${book.title}》`);remove.addEventListener('click',()=>management.remove(book));actions.append(remove);
   }
   const access = node("div", "book-access");
   const icon = document.createElementNS("http://www.w3.org/2000/svg", "svg");

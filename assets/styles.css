@@ -85,3 +85,19 @@
 .preview-page { margin:0 auto 20px; max-width:900px; }
 .preview-page img { display:block; width:100%; height:auto; background:white; border:1px solid var(--border); }
 .preview-page figcaption { text-align:center; color:var(--muted); font-size:12px; padding-top:8px; }
+/* Owner book management follows the existing book and dialog controls. */
+.shelf-management{display:flex;gap:10px;justify-content:flex-end;margin:0 0 16px;flex-wrap:wrap}
+.shelf-management:empty{display:none}
+.shelf-management button,.management-dialog button,.delete-book{min-height:44px;padding:9px 14px;border:1px solid var(--border);border-radius:4px;background:var(--card);color:var(--accent)}
+.management-notice{padding:12px 14px;border:1px solid var(--border);line-height:1.7;margin-bottom:18px}
+.delete-book,.management-dialog .danger{color:#963b2d;border-color:#963b2d}
+.delete-book{grid-column:1/-1}
+.management-dialog{max-width:560px;width:calc(100% - 32px);height:auto;padding:24px;max-height:85dvh;overflow:auto}
+.management-dialog p{line-height:1.75;overflow-wrap:anywhere}
+.dialog-actions{display:flex;gap:12px;justify-content:flex-end;margin-top:20px;flex-wrap:wrap}
+.trash-list{padding:0;list-style:none}
+.trash-list li{display:flex;gap:16px;align-items:center;justify-content:space-between;padding:16px 0;border-top:1px solid var(--border)}
+.trash-list li div{min-width:0}
+.trash-list li p{margin:0 0 6px;overflow-wrap:anywhere}
+.trash-list button{flex-shrink:0}
+@media(prefers-color-scheme:dark){.delete-book,.management-dialog .danger{color:#f2a192;border-color:#f2a192}}

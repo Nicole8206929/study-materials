@@ -15,6 +15,7 @@ const catalogue=require('../books.json');
    try {
     const page=await browser.newPage({viewport:{width:390,height:844}});const errors=[];page.on('pageerror',e=>errors.push(e.message));
     await page.route('**/books.json',r=>r.fulfill({json:fixture}));
+    await page.route('**/upload-service.json',r=>r.fulfill({json:{version:1,ready:false}}));
     for(const cat of book.cats){
      await page.goto(`http://127.0.0.1:8769/?cat=${cat}`);
      await page.locator(`[data-id="${book.id}"]`).waitFor({timeout:5000});

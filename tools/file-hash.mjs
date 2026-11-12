@@ -1,8 +1,7 @@
 import {sha256} from '@noble/hashes/sha2.js';
 
-export function checkAbort(signal) {
-  if (signal?.aborted) throw signal.reason || new DOMException('已取消', 'AbortError');
-}
+import {checkAbort} from './private-service-client.mjs';
+export {checkAbort};
 
 // Read bounded slices so a large presentation is never copied into one giant
 // ArrayBuffer on a phone. Cache only this page's selected File objects.
