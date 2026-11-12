@@ -4890,6 +4890,45 @@
         "pageCount": 10,
         "sourcePageCount": 9031
       }
+    },
+    {
+      "id": "upload-737850270",
+      "title": "高中数学一试",
+      "author": "作者待补充",
+      "catName": "高中数学",
+      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
+      "year": null,
+      "tags": [],
+      "searchTitles": [],
+      "bytes": 20778155,
+      "size": "19.8 MB",
+      "format": "PDF",
+      "cat": "high-school-math",
+      "cats": [
+        "high-school-math"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261112025508-4d2e3cde5dbbebb3",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261112025508-4d2e3cde5dbbebb3/library-71de04cacd0a709f94c9323c3ac5994f984ced4edb4f69f56c95f381e308c4ee.pdf"
+      },
+      "pages": 683,
+      "preview": {
+        "images": [
+          "previews/upload-737850270/page-001.webp",
+          "previews/upload-737850270/page-002.webp",
+          "previews/upload-737850270/page-003.webp",
+          "previews/upload-737850270/page-004.webp",
+          "previews/upload-737850270/page-005.webp",
+          "previews/upload-737850270/page-006.webp",
+          "previews/upload-737850270/page-007.webp",
+          "previews/upload-737850270/page-008.webp",
+          "previews/upload-737850270/page-009.webp",
+          "previews/upload-737850270/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 683
+      }
     }
   ],
   "subcategories": [
