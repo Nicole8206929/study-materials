@@ -1,9 +1,9 @@
 {
   "version": 1,
   "batch": "upload-20261112025508-4d2e3cde5dbbebb3",
-  "stage": "publishing",
-  "message": "资料已整理，正在更新书架。",
-  "updatedAt": "2026-11-12T03:07:29.928431+00:00",
+  "stage": "ready",
+  "message": "上传成功，已入库。待处理列表已清空，原件保存在私有归档区。",
+  "updatedAt": "2026-11-12T03:08:06.675863+00:00",
   "cat": "high-school-math",
   "cats": [
     "high-school-math"
