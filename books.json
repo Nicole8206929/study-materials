@@ -49,6 +49,10 @@
     {
       "id": "university-math",
       "name": "大学数学"
+    },
+    {
+      "id": "computer-science",
+      "name": "计算机与人工智能"
     }
   ],
   "books": [
@@ -4948,6 +4952,198 @@
         ],
         "pageCount": 10,
         "sourcePageCount": 682
+      }
+    },
+    {
+      "id": "ai-d2l",
+      "title": "Dive into Deep Learning",
+      "author": "Aston Zhang, Zachary C. Lipton, Mu Li, Alexander J. Smola",
+      "cat": "computer-science",
+      "catName": "计算机与人工智能",
+      "desc": "开源交互式深度学习教材：全PyTorch等框架代码实现，覆盖预备知识、CV、NLP、推荐系统等，可直接抽取代码作为实验案例。",
+      "pages": 1151,
+      "size": "44.7 MB",
+      "year": 2023,
+      "format": "PDF",
+      "bytes": 44685994,
+      "tags": [
+        "人工智能",
+        "机器学习",
+        "英文原版",
+        "免费官方版"
+      ],
+      "searchTitles": [
+        "Dive into Deep Learning",
+        "动手学深度学习",
+        "D2L",
+        "动手学深度学习",
+        "Dive into Deep Learning"
+      ],
+      "preview": {
+        "images": [
+          "previews/ai-d2l/page-001.webp",
+          "previews/ai-d2l/page-002.webp",
+          "previews/ai-d2l/page-003.webp",
+          "previews/ai-d2l/page-004.webp",
+          "previews/ai-d2l/page-005.webp",
+          "previews/ai-d2l/page-006.webp",
+          "previews/ai-d2l/page-007.webp",
+          "previews/ai-d2l/page-008.webp",
+          "previews/ai-d2l/page-009.webp",
+          "previews/ai-d2l/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 1151
+      },
+      "subcats": [],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/f285a688eb96c67c489611b7422558e0107908c8/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/DiveIntoDeepLearning_Zhang.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/f285a688eb96c67c489611b7422558e0107908c8/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/DiveIntoDeepLearning_Zhang.pdf"
+      }
+    },
+    {
+      "id": "ai-mml",
+      "title": "Mathematics for Machine Learning",
+      "author": "Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong",
+      "cat": "computer-science",
+      "catName": "计算机与人工智能",
+      "desc": "衔接本科数学与机器学习：线性代数、解析几何、矩阵分解、微积分、概率统计与优化在ML中的应用，剑桥官方免费教材。",
+      "pages": 417,
+      "size": "17.6 MB",
+      "year": 2020,
+      "format": "PDF",
+      "bytes": 17565898,
+      "tags": [
+        "人工智能",
+        "机器学习",
+        "英文原版",
+        "免费官方版"
+      ],
+      "searchTitles": [
+        "Mathematics for Machine Learning",
+        "机器学习数学基础",
+        "MML",
+        "机器学习数学基础",
+        "Mathematics for Machine Learning"
+      ],
+      "preview": {
+        "images": [
+          "previews/ai-mml/page-001.webp",
+          "previews/ai-mml/page-002.webp",
+          "previews/ai-mml/page-003.webp",
+          "previews/ai-mml/page-004.webp",
+          "previews/ai-mml/page-005.webp",
+          "previews/ai-mml/page-006.webp",
+          "previews/ai-mml/page-007.webp",
+          "previews/ai-mml/page-008.webp",
+          "previews/ai-mml/page-009.webp",
+          "previews/ai-mml/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 417
+      },
+      "subcats": [],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/f285a688eb96c67c489611b7422558e0107908c8/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/MathematicsForMachineLearning_Deisenroth.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/f285a688eb96c67c489611b7422558e0107908c8/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/MathematicsForMachineLearning_Deisenroth.pdf"
+      }
+    },
+    {
+      "id": "ai-pml",
+      "title": "Probabilistic Machine Learning: An Introduction",
+      "author": "Kevin P. Murphy",
+      "cat": "computer-science",
+      "catName": "计算机与人工智能",
+      "desc": "以概率视角统一机器学习知识体系：概率模型、高斯过程、图模型与深度生成模型，术语严谨、北美高校核心教材。",
+      "pages": 860,
+      "size": "92.3 MB",
+      "year": 2022,
+      "format": "PDF",
+      "bytes": 92323940,
+      "tags": [
+        "人工智能",
+        "机器学习",
+        "英文原版",
+        "免费官方版"
+      ],
+      "searchTitles": [
+        "Probabilistic Machine Learning",
+        "概率机器学习",
+        "PML",
+        "概率机器学习导论",
+        "Probabilistic Machine Learning: An Introduction"
+      ],
+      "preview": {
+        "images": [
+          "previews/ai-pml/page-001.webp",
+          "previews/ai-pml/page-002.webp",
+          "previews/ai-pml/page-003.webp",
+          "previews/ai-pml/page-004.webp",
+          "previews/ai-pml/page-005.webp",
+          "previews/ai-pml/page-006.webp",
+          "previews/ai-pml/page-007.webp",
+          "previews/ai-pml/page-008.webp",
+          "previews/ai-pml/page-009.webp",
+          "previews/ai-pml/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 860
+      },
+      "subcats": [],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/f285a688eb96c67c489611b7422558e0107908c8/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/ProbabilisticMachineLearning_Murphy.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/f285a688eb96c67c489611b7422558e0107908c8/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/ProbabilisticMachineLearning_Murphy.pdf"
+      }
+    },
+    {
+      "id": "ai-rl",
+      "title": "Reinforcement Learning: An Introduction",
+      "author": "Richard S. Sutton, Andrew G. Barto",
+      "cat": "computer-science",
+      "catName": "计算机与人工智能",
+      "desc": "强化学习标杆教材（第二版）：马尔可夫决策过程、时序差分、策略梯度等完整算法体系与专业术语。",
+      "pages": 548,
+      "size": "73.1 MB",
+      "year": 2020,
+      "format": "PDF",
+      "bytes": 73129769,
+      "tags": [
+        "人工智能",
+        "机器学习",
+        "英文原版",
+        "免费官方版"
+      ],
+      "searchTitles": [
+        "Reinforcement Learning",
+        "强化学习",
+        "RL",
+        "强化学习导论",
+        "Reinforcement Learning: An Introduction"
+      ],
+      "preview": {
+        "images": [
+          "previews/ai-rl/page-001.webp",
+          "previews/ai-rl/page-002.webp",
+          "previews/ai-rl/page-003.webp",
+          "previews/ai-rl/page-004.webp",
+          "previews/ai-rl/page-005.webp",
+          "previews/ai-rl/page-006.webp",
+          "previews/ai-rl/page-007.webp",
+          "previews/ai-rl/page-008.webp",
+          "previews/ai-rl/page-009.webp",
+          "previews/ai-rl/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 548
+      },
+      "subcats": [],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/f285a688eb96c67c489611b7422558e0107908c8/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/ReinforcementLearning_SuttonBarto.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/f285a688eb96c67c489611b7422558e0107908c8/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/ReinforcementLearning_SuttonBarto.pdf"
       }
     }
   ],
