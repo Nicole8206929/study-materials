@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "batch": "upload-20261112025508-4d2e3cde5dbbebb3",
+  "stage": "processing",
+  "message": "上传成功，正在按所选分类整理。",
+  "updatedAt": "2026-11-12T03:03:18.830544+00:00",
+  "cat": "high-school-math",
+  "cats": [
+    "high-school-math"
+  ],
+  "subcats": [],
+  "bookIds": [],
+  "sourceCount": 2
+}
