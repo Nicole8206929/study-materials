@@ -5586,6 +5586,387 @@
         "view": "https://github.com/Nicole8206929/study-materials-originals/blob/5bd984f8a164543f02d0d24800eb6228717de349/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/%E7%89%A9%E7%90%86/%E5%9B%9B%E5%A4%A7%E5%8A%9B%E5%AD%A6/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/%E7%BB%8F%E5%85%B8%E5%8A%9B%E5%AD%A6%E4%B8%8E%E5%87%A0%E4%BD%95%28%E6%9D%8E%E6%80%9D%29%E7%AC%AC5%E7%89%88_202503112134_18959.pdf",
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/5bd984f8a164543f02d0d24800eb6228717de349/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/%E7%89%A9%E7%90%86/%E5%9B%9B%E5%A4%A7%E5%8A%9B%E5%AD%A6/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/%E7%BB%8F%E5%85%B8%E5%8A%9B%E5%AD%A6%E4%B8%8E%E5%87%A0%E4%BD%95%28%E6%9D%8E%E6%80%9D%29%E7%AC%AC5%E7%89%88_202503112134_18959.pdf"
       }
+    },
+    {
+      "id": "gtm-047",
+      "title": "Geometric Topology in Dimensions 2 and 3",
+      "author": "Edwin E. Moise",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "低维几何拓扑经典：二维与三维流形、分片线性结构与三角剖分，Moise 研究生教材。",
+      "pages": 272,
+      "size": "7.2 MB",
+      "year": 1977,
+      "format": "PDF",
+      "bytes": 7174742,
+      "tags": [
+        "GTM",
+        "Springer",
+        "研究生教材",
+        "几何与拓扑"
+      ],
+      "searchTitles": [
+        "2、3维几何拓扑",
+        "Geometric Topology in Dimensions 2 and 3",
+        "GTM 47"
+      ],
+      "preview": {
+        "images": [
+          "previews/gtm-047/page-001.webp",
+          "previews/gtm-047/page-002.webp",
+          "previews/gtm-047/page-003.webp",
+          "previews/gtm-047/page-004.webp",
+          "previews/gtm-047/page-005.webp",
+          "previews/gtm-047/page-006.webp",
+          "previews/gtm-047/page-007.webp",
+          "previews/gtm-047/page-008.webp",
+          "previews/gtm-047/page-009.webp",
+          "previews/gtm-047/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 272
+      },
+      "subcats": [
+        "geometry-topology"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/af967c16adcf0b97382dfd4951b107ea30ce21ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM047_Geometric_Topology_in_Dimensions_2_and_3.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/af967c16adcf0b97382dfd4951b107ea30ce21ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM047_Geometric_Topology_in_Dimensions_2_and_3.pdf"
+      }
+    },
+    {
+      "id": "gtm-082",
+      "title": "Differential Forms in Algebraic Topology",
+      "author": "Raoul Bott, Loring W. Tu",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "代数拓扑中的微分形式：de Rham上同调、谱序列与示性类，Bott/Tu 经典教材。",
+      "pages": 342,
+      "size": "26.8 MB",
+      "year": 1982,
+      "format": "PDF",
+      "bytes": 26814920,
+      "tags": [
+        "GTM",
+        "Springer",
+        "研究生教材",
+        "几何与拓扑"
+      ],
+      "searchTitles": [
+        "代数拓扑微分形式",
+        "Differential Forms in Algebraic Topology",
+        "GTM 82"
+      ],
+      "preview": {
+        "images": [
+          "previews/gtm-082/page-001.webp",
+          "previews/gtm-082/page-002.webp",
+          "previews/gtm-082/page-003.webp",
+          "previews/gtm-082/page-004.webp",
+          "previews/gtm-082/page-005.webp",
+          "previews/gtm-082/page-006.webp",
+          "previews/gtm-082/page-007.webp",
+          "previews/gtm-082/page-008.webp",
+          "previews/gtm-082/page-009.webp",
+          "previews/gtm-082/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 342
+      },
+      "subcats": [
+        "geometry-topology"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/af967c16adcf0b97382dfd4951b107ea30ce21ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM082_Differential_Forms_in_Algebraic_Topology.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/af967c16adcf0b97382dfd4951b107ea30ce21ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM082_Differential_Forms_in_Algebraic_Topology.pdf"
+      }
+    },
+    {
+      "id": "gtm-139",
+      "title": "Topology and Geometry",
+      "author": "Glen E. Bredon",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "拓扑与几何：同伦、同调与上同调理论，Bredon 综合性研究生教材。",
+      "pages": 576,
+      "size": "22.4 MB",
+      "year": 1993,
+      "format": "PDF",
+      "bytes": 22448515,
+      "tags": [
+        "GTM",
+        "Springer",
+        "研究生教材",
+        "几何与拓扑"
+      ],
+      "searchTitles": [
+        "拓扑与几何",
+        "Topology and Geometry",
+        "GTM 139"
+      ],
+      "preview": {
+        "images": [
+          "previews/gtm-139/page-001.webp",
+          "previews/gtm-139/page-002.webp",
+          "previews/gtm-139/page-003.webp",
+          "previews/gtm-139/page-004.webp",
+          "previews/gtm-139/page-005.webp",
+          "previews/gtm-139/page-006.webp",
+          "previews/gtm-139/page-007.webp",
+          "previews/gtm-139/page-008.webp",
+          "previews/gtm-139/page-009.webp",
+          "previews/gtm-139/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 576
+      },
+      "subcats": [
+        "geometry-topology"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/af967c16adcf0b97382dfd4951b107ea30ce21ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM139_Topology_and_Geometry.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/af967c16adcf0b97382dfd4951b107ea30ce21ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM139_Topology_and_Geometry.pdf"
+      }
+    },
+    {
+      "id": "gtm-153",
+      "title": "Algebraic Topology: A First Course",
+      "author": "William Fulton",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "代数拓扑入门：基本群、覆盖空间与同调，Fulton 面向初学者的教材。",
+      "pages": 449,
+      "size": "12.7 MB",
+      "year": 1995,
+      "format": "PDF",
+      "bytes": 12734478,
+      "tags": [
+        "GTM",
+        "Springer",
+        "研究生教材",
+        "几何与拓扑"
+      ],
+      "searchTitles": [
+        "代数拓扑入门",
+        "Algebraic Topology: A First Course",
+        "GTM 153"
+      ],
+      "preview": {
+        "images": [
+          "previews/gtm-153/page-001.webp",
+          "previews/gtm-153/page-002.webp",
+          "previews/gtm-153/page-003.webp",
+          "previews/gtm-153/page-004.webp",
+          "previews/gtm-153/page-005.webp",
+          "previews/gtm-153/page-006.webp",
+          "previews/gtm-153/page-007.webp",
+          "previews/gtm-153/page-008.webp",
+          "previews/gtm-153/page-009.webp",
+          "previews/gtm-153/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 449
+      },
+      "subcats": [
+        "geometry-topology"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/af967c16adcf0b97382dfd4951b107ea30ce21ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM153_Algebraic_Topology.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/af967c16adcf0b97382dfd4951b107ea30ce21ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM153_Algebraic_Topology.pdf"
+      }
+    },
+    {
+      "id": "gtm-208",
+      "title": "Analysis for Applied Mathematics",
+      "author": "E. Ward Cheney",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "应用数学分析（扫描版已压缩）：赋范空间、泛函分析与数值方法基础，Cheney 研究生教材。",
+      "pages": 460,
+      "size": "68.6 MB",
+      "year": 2001,
+      "format": "PDF",
+      "bytes": 68613113,
+      "tags": [
+        "GTM",
+        "Springer",
+        "研究生教材",
+        "应用数学"
+      ],
+      "searchTitles": [
+        "应用数学分析",
+        "Analysis for Applied Mathematics",
+        "GTM 208"
+      ],
+      "preview": {
+        "images": [
+          "previews/gtm-208/page-001.webp",
+          "previews/gtm-208/page-002.webp",
+          "previews/gtm-208/page-003.webp",
+          "previews/gtm-208/page-004.webp",
+          "previews/gtm-208/page-005.webp",
+          "previews/gtm-208/page-006.webp",
+          "previews/gtm-208/page-007.webp",
+          "previews/gtm-208/page-008.webp",
+          "previews/gtm-208/page-009.webp",
+          "previews/gtm-208/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 460
+      },
+      "subcats": [
+        "applied-math"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/af967c16adcf0b97382dfd4951b107ea30ce21ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM208_Analysis_for_Applied_Mathematics.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/af967c16adcf0b97382dfd4951b107ea30ce21ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM208_Analysis_for_Applied_Mathematics.pdf"
+      }
+    },
+    {
+      "id": "gtm-218",
+      "title": "Introduction to Smooth Manifolds",
+      "author": "John M. Lee",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "光滑流形导论（第二版）：流形、切丛、张量、微分形式与李群，Lee 经典教材。",
+      "pages": 723,
+      "size": "7.6 MB",
+      "year": 2013,
+      "format": "PDF",
+      "bytes": 7578073,
+      "tags": [
+        "GTM",
+        "Springer",
+        "研究生教材",
+        "几何与拓扑"
+      ],
+      "searchTitles": [
+        "光滑流形导论",
+        "Introduction to Smooth Manifolds",
+        "GTM 218"
+      ],
+      "preview": {
+        "images": [
+          "previews/gtm-218/page-001.webp",
+          "previews/gtm-218/page-002.webp",
+          "previews/gtm-218/page-003.webp",
+          "previews/gtm-218/page-004.webp",
+          "previews/gtm-218/page-005.webp",
+          "previews/gtm-218/page-006.webp",
+          "previews/gtm-218/page-007.webp",
+          "previews/gtm-218/page-008.webp",
+          "previews/gtm-218/page-009.webp",
+          "previews/gtm-218/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 723
+      },
+      "subcats": [
+        "geometry-topology"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/af967c16adcf0b97382dfd4951b107ea30ce21ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM218_Introduction_to_Smooth_Manifolds.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/af967c16adcf0b97382dfd4951b107ea30ce21ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM218_Introduction_to_Smooth_Manifolds.pdf"
+      }
+    },
+    {
+      "id": "gtm-223",
+      "title": "Fourier Analysis and Its Applications",
+      "author": "Anders Vretblad",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "傅里叶分析及其应用：傅里叶级数、积分与拉普拉斯变换，Vretblad 教材。",
+      "pages": 282,
+      "size": "1.3 MB",
+      "year": 2003,
+      "format": "PDF",
+      "bytes": 1349740,
+      "tags": [
+        "GTM",
+        "Springer",
+        "研究生教材",
+        "应用数学"
+      ],
+      "searchTitles": [
+        "傅里叶分析应用",
+        "Fourier Analysis and Its Applications",
+        "GTM 223"
+      ],
+      "preview": {
+        "images": [
+          "previews/gtm-223/page-001.webp",
+          "previews/gtm-223/page-002.webp",
+          "previews/gtm-223/page-003.webp",
+          "previews/gtm-223/page-004.webp",
+          "previews/gtm-223/page-005.webp",
+          "previews/gtm-223/page-006.webp",
+          "previews/gtm-223/page-007.webp",
+          "previews/gtm-223/page-008.webp",
+          "previews/gtm-223/page-009.webp",
+          "previews/gtm-223/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 282
+      },
+      "subcats": [
+        "applied-math"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/af967c16adcf0b97382dfd4951b107ea30ce21ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM223_Fourier_Analysis_and_Its_Applications.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/af967c16adcf0b97382dfd4951b107ea30ce21ac/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM223_Fourier_Analysis_and_Its_Applications.pdf"
+      }
+    },
+    {
+      "id": "qf-quanttrading",
+      "title": "Quantitative Trading: How to Build Your Own Algorithmic Trading Business",
+      "author": "Ernest P. Chan",
+      "cat": "finance",
+      "catName": "金融",
+      "desc": "以实战流程串联量化全链路：因子开发、回测、业绩评价与实盘执行，Ernie Chan 量化交易入门。",
+      "pages": 204,
+      "size": "3.6 MB",
+      "year": 2009,
+      "format": "PDF",
+      "bytes": 3554831,
+      "tags": [
+        "量化交易",
+        "算法交易",
+        "英文原版"
+      ],
+      "searchTitles": [
+        "量化交易",
+        "Quantitative Trading",
+        "Chan"
+      ],
+      "preview": {
+        "images": [
+          "previews/qf-quanttrading/page-001.webp",
+          "previews/qf-quanttrading/page-002.webp",
+          "previews/qf-quanttrading/page-003.webp",
+          "previews/qf-quanttrading/page-004.webp",
+          "previews/qf-quanttrading/page-005.webp",
+          "previews/qf-quanttrading/page-006.webp",
+          "previews/qf-quanttrading/page-007.webp",
+          "previews/qf-quanttrading/page-008.webp",
+          "previews/qf-quanttrading/page-009.webp",
+          "previews/qf-quanttrading/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 204
+      },
+      "subcats": [],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/af967c16adcf0b97382dfd4951b107ea30ce21ac/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/QuantitativeTrading_Chan.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/af967c16adcf0b97382dfd4951b107ea30ce21ac/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/QuantitativeTrading_Chan.pdf"
+      }
     }
   ],
   "subcategories": [
