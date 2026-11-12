@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "batch": "upload-20261112150620-45a1ce623705bcf1",
+  "stage": "processing",
+  "message": "上传成功，正在按所选分类整理。",
+  "updatedAt": "2026-11-12T15:10:41.065162+00:00",
+  "cat": "competition-math",
+  "cats": [
+    "competition-math"
+  ],
+  "subcats": [],
+  "bookIds": [],
+  "sourceCount": 2
+}
