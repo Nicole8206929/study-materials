@@ -4894,25 +4894,45 @@
     {
       "id": "upload-737850270",
       "title": "高中数学一试",
-      "author": "作者待补充",
+      "author": "DingCheng Weng；李名德、李胜宏（主编）",
       "catName": "高中数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
+      "desc": "依次收录 DingCheng Weng《高中数学讲义》（284 页）和李名德、李胜宏主编《高中数学竞赛培优教程（一试）》（396 页）。覆盖课内知识与竞赛一试训练，保留原文、题目和答案；附合订目录及原讲义章节书签。",
       "year": null,
-      "tags": [],
-      "searchTitles": [],
-      "bytes": 20778155,
+      "tags": [
+        "高中数学讲义",
+        "课内基础",
+        "竞赛一试",
+        "竞赛培优教程",
+        "原文合订"
+      ],
+      "searchTitles": [
+        "高中数学讲义.pdf",
+        "高中数学讲义",
+        "高中数学竞赛培优教程__一试.pdf",
+        "高中数学竞赛培优教程__一试",
+        "高中数学竞赛培优教程（一试）",
+        "高中数学竞赛培优教程 一试",
+        "高中数学竞赛培优教程(一试)",
+        "高中数学竞赛培优教程",
+        "李名德",
+        "李胜宏",
+        "DingCheng Weng",
+        "高中数学一试"
+      ],
+      "bytes": 20765804,
       "size": "19.8 MB",
       "format": "PDF",
       "cat": "high-school-math",
       "cats": [
-        "high-school-math"
+        "high-school-math",
+        "competition-math"
       ],
       "ownerAccess": {
         "provider": "github-private",
         "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261112025508-4d2e3cde5dbbebb3",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261112025508-4d2e3cde5dbbebb3/library-71de04cacd0a709f94c9323c3ac5994f984ced4edb4f69f56c95f381e308c4ee.pdf"
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261112025508-4d2e3cde5dbbebb3/library-64666f84c27040152c34a1538513cb759b9641c97f904620e198a21b59ce381a.pdf"
       },
-      "pages": 683,
+      "pages": 682,
       "preview": {
         "images": [
           "previews/upload-737850270/page-001.webp",
@@ -4927,7 +4947,7 @@
           "previews/upload-737850270/page-010.webp"
         ],
         "pageCount": 10,
-        "sourcePageCount": 683
+        "sourcePageCount": 682
       }
     }
   ],
