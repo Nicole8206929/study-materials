@@ -6002,6 +6002,99 @@
         "view": "https://github.com/Nicole8206929/study-materials-originals/blob/a63d5e0a58aa58e26189a5ffe82019dbb40199d4/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87/%E7%BB%B4%E5%85%8B%E5%A4%9A%E9%AB%98%E4%B8%AD%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87.pdf",
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/a63d5e0a58aa58e26189a5ffe82019dbb40199d4/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87/%E7%BB%B4%E5%85%8B%E5%A4%9A%E9%AB%98%E4%B8%AD%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87.pdf"
       }
+    },
+    {
+      "id": "qf-activeportfolio",
+      "title": "Active Portfolio Management: A Quantitative Approach for Producing Superior Returns and Controlling Risk",
+      "author": "Richard C. Grinold; Ronald N. Kahn",
+      "cat": "finance",
+      "catName": "金融",
+      "desc": "主动管理经典：以信息比率、预期收益与风险模型系统化构建超额收益，Grinold 与 Kahn 量化投资代表作。",
+      "pages": 621,
+      "size": "5.3 MB",
+      "year": 2000,
+      "format": "PDF",
+      "bytes": 5532031,
+      "tags": [
+        "量化投资",
+        "主动管理",
+        "投资组合",
+        "英文原版"
+      ],
+      "searchTitles": [
+        "主动投资组合管理",
+        "Active Portfolio Management",
+        "Grinold",
+        "Kahn"
+      ],
+      "preview": {
+        "images": [
+          "previews/qf-activeportfolio/page-001.webp",
+          "previews/qf-activeportfolio/page-002.webp",
+          "previews/qf-activeportfolio/page-003.webp",
+          "previews/qf-activeportfolio/page-004.webp",
+          "previews/qf-activeportfolio/page-005.webp",
+          "previews/qf-activeportfolio/page-006.webp",
+          "previews/qf-activeportfolio/page-007.webp",
+          "previews/qf-activeportfolio/page-008.webp",
+          "previews/qf-activeportfolio/page-009.webp",
+          "previews/qf-activeportfolio/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 621
+      },
+      "subcats": [],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/2ee46b742c58999e8531b0384bad3eb906b29d3d/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/ActivePortfolioManagement_GrinoldKahn.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/2ee46b742c58999e8531b0384bad3eb906b29d3d/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/ActivePortfolioManagement_GrinoldKahn.pdf"
+      }
+    },
+    {
+      "id": "qf-pythonfinance",
+      "title": "Python for Finance: Mastering Data-Driven Finance",
+      "author": "Yves Hilpisch",
+      "cat": "finance",
+      "catName": "金融",
+      "desc": "用 Python 打通金融数据处理、可视化、回测与衍生品定价，O'Reilly 金融编程实战（第二版）。",
+      "pages": 1055,
+      "size": "26.4 MB",
+      "year": 2019,
+      "format": "PDF",
+      "bytes": 27659876,
+      "tags": [
+        "金融编程",
+        "Python",
+        "量化回测",
+        "英文原版"
+      ],
+      "searchTitles": [
+        "Python金融",
+        "Python for Finance",
+        "Hilpisch"
+      ],
+      "preview": {
+        "images": [
+          "previews/qf-pythonfinance/page-001.webp",
+          "previews/qf-pythonfinance/page-002.webp",
+          "previews/qf-pythonfinance/page-003.webp",
+          "previews/qf-pythonfinance/page-004.webp",
+          "previews/qf-pythonfinance/page-005.webp",
+          "previews/qf-pythonfinance/page-006.webp",
+          "previews/qf-pythonfinance/page-007.webp",
+          "previews/qf-pythonfinance/page-008.webp",
+          "previews/qf-pythonfinance/page-009.webp",
+          "previews/qf-pythonfinance/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 1055
+      },
+      "subcats": [],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/2ee46b742c58999e8531b0384bad3eb906b29d3d/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/PythonForFinance_Hilpisch.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/2ee46b742c58999e8531b0384bad3eb906b29d3d/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/PythonForFinance_Hilpisch.pdf"
+      }
     }
   ],
   "subcategories": [
