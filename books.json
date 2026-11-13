@@ -6095,6 +6095,530 @@
         "view": "https://github.com/Nicole8206929/study-materials-originals/blob/2ee46b742c58999e8531b0384bad3eb906b29d3d/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/PythonForFinance_Hilpisch.pdf",
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/2ee46b742c58999e8531b0384bad3eb906b29d3d/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/PythonForFinance_Hilpisch.pdf"
       }
+    },
+    {
+      "id": "bd-001e65b02785",
+      "title": "week-13-real-analysis-iii",
+      "author": "原资料作者（见原文件）",
+      "cat": "competition-math",
+      "catName": "竞赛数学",
+      "desc": "领军资料·竞赛数学",
+      "pages": 70,
+      "size": "33.8 MB",
+      "year": null,
+      "format": "PDF",
+      "bytes": 33821575,
+      "tags": [
+        "数学竞赛",
+        "领军资料"
+      ],
+      "searchTitles": [
+        "week-13-real-analysis-iii"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-001e65b02785/page-001.webp",
+          "previews/bd-001e65b02785/page-002.webp",
+          "previews/bd-001e65b02785/page-003.webp",
+          "previews/bd-001e65b02785/page-004.webp",
+          "previews/bd-001e65b02785/page-005.webp",
+          "previews/bd-001e65b02785/page-006.webp",
+          "previews/bd-001e65b02785/page-007.webp",
+          "previews/bd-001e65b02785/page-008.webp",
+          "previews/bd-001e65b02785/page-009.webp",
+          "previews/bd-001e65b02785/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 70
+      },
+      "subcats": [],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B/Putnam/%E6%B1%82%E7%9C%9FPutnam%E8%AE%B2%E4%B9%89/week-13-real-analysis-iii.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B/Putnam/%E6%B1%82%E7%9C%9FPutnam%E8%AE%B2%E4%B9%89/week-13-real-analysis-iii.pdf"
+      }
+    },
+    {
+      "id": "bd-fb156949ec02",
+      "title": "13.Abstract Algebra 3E",
+      "author": "原资料作者（见原文件）",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "领军资料·大学数学",
+      "pages": 946,
+      "size": "35.2 MB",
+      "year": null,
+      "format": "PDF",
+      "bytes": 35242707,
+      "tags": [
+        "领军资料",
+        "代数"
+      ],
+      "searchTitles": [
+        "13.Abstract Algebra 3E"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-fb156949ec02/page-001.webp",
+          "previews/bd-fb156949ec02/page-002.webp",
+          "previews/bd-fb156949ec02/page-003.webp",
+          "previews/bd-fb156949ec02/page-004.webp",
+          "previews/bd-fb156949ec02/page-005.webp",
+          "previews/bd-fb156949ec02/page-006.webp",
+          "previews/bd-fb156949ec02/page-007.webp",
+          "previews/bd-fb156949ec02/page-008.webp",
+          "previews/bd-fb156949ec02/page-009.webp",
+          "previews/bd-fb156949ec02/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 946
+      },
+      "subcats": [
+        "algebra"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/13.Abstract%20Algebra%203E.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/13.Abstract%20Algebra%203E.pdf"
+      }
+    },
+    {
+      "id": "bd-fedfd4bdd979",
+      "title": "David S. Dummit, Richard M. Foote - Abstract Algebra, 3rd Edition   (2003, Wiley)",
+      "author": "原资料作者（见原文件）",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "领军资料·大学数学",
+      "pages": 946,
+      "size": "35.2 MB",
+      "year": null,
+      "format": "PDF",
+      "bytes": 35242707,
+      "tags": [
+        "领军资料",
+        "代数"
+      ],
+      "searchTitles": [
+        "David S. Dummit, Richard M. Foote - Abstract Algebra, 3rd Edition   (2003, Wiley)"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-fedfd4bdd979/page-001.webp",
+          "previews/bd-fedfd4bdd979/page-002.webp",
+          "previews/bd-fedfd4bdd979/page-003.webp",
+          "previews/bd-fedfd4bdd979/page-004.webp",
+          "previews/bd-fedfd4bdd979/page-005.webp",
+          "previews/bd-fedfd4bdd979/page-006.webp",
+          "previews/bd-fedfd4bdd979/page-007.webp",
+          "previews/bd-fedfd4bdd979/page-008.webp",
+          "previews/bd-fedfd4bdd979/page-009.webp",
+          "previews/bd-fedfd4bdd979/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 946
+      },
+      "subcats": [
+        "algebra"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/David%20S.%20Dummit%2C%20Richard%20M.%20Foote%20-%20Abstract%20Algebra%2C%203rd%20Edition%20%20%20%282003%2C%20Wiley%29.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/David%20S.%20Dummit%2C%20Richard%20M.%20Foote%20-%20Abstract%20Algebra%2C%203rd%20Edition%20%20%20%282003%2C%20Wiley%29.pdf"
+      }
+    },
+    {
+      "id": "bd-438efba09df6",
+      "title": "7.26 深圳代数",
+      "author": "原资料作者（见原文件）",
+      "cat": "competition-math",
+      "catName": "竞赛数学",
+      "desc": "领军资料·竞赛数学",
+      "pages": 20,
+      "size": "43.6 MB",
+      "year": null,
+      "format": "PDF",
+      "bytes": 43642142,
+      "tags": [
+        "数学竞赛",
+        "领军资料"
+      ],
+      "searchTitles": [
+        "7.26 深圳代数"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-438efba09df6/page-001.webp",
+          "previews/bd-438efba09df6/page-002.webp",
+          "previews/bd-438efba09df6/page-003.webp",
+          "previews/bd-438efba09df6/page-004.webp",
+          "previews/bd-438efba09df6/page-005.webp",
+          "previews/bd-438efba09df6/page-006.webp",
+          "previews/bd-438efba09df6/page-007.webp",
+          "previews/bd-438efba09df6/page-008.webp",
+          "previews/bd-438efba09df6/page-009.webp",
+          "previews/bd-438efba09df6/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 20
+      },
+      "subcats": [],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%9C%BA%E6%9E%84%E8%B5%84%E6%96%99/%E4%B9%9D%E5%AD%A6/26%E5%B9%B4%E6%9A%91%E5%81%87/%E6%89%8B%E7%A8%BF/7.26%20%E6%B7%B1%E5%9C%B3%E4%BB%A3%E6%95%B0.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%9C%BA%E6%9E%84%E8%B5%84%E6%96%99/%E4%B9%9D%E5%AD%A6/26%E5%B9%B4%E6%9A%91%E5%81%87/%E6%89%8B%E7%A8%BF/7.26%20%E6%B7%B1%E5%9C%B3%E4%BB%A3%E6%95%B0.pdf"
+      }
+    },
+    {
+      "id": "bd-655960dde9e5",
+      "title": "基础拓扑学及应用(1)(1)",
+      "author": "原资料作者（见原文件）",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "领军资料·大学数学",
+      "pages": 322,
+      "size": "50.7 MB",
+      "year": null,
+      "format": "PDF",
+      "bytes": 50699338,
+      "tags": [
+        "领军资料",
+        "几何与拓扑"
+      ],
+      "searchTitles": [
+        "基础拓扑学及应用(1)(1)"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-655960dde9e5/page-001.webp",
+          "previews/bd-655960dde9e5/page-002.webp",
+          "previews/bd-655960dde9e5/page-003.webp",
+          "previews/bd-655960dde9e5/page-004.webp",
+          "previews/bd-655960dde9e5/page-005.webp",
+          "previews/bd-655960dde9e5/page-006.webp",
+          "previews/bd-655960dde9e5/page-007.webp",
+          "previews/bd-655960dde9e5/page-008.webp",
+          "previews/bd-655960dde9e5/page-009.webp",
+          "previews/bd-655960dde9e5/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 322
+      },
+      "subcats": [
+        "geometry-topology"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E5%87%A0%E4%BD%95%E4%B8%8E%E6%8B%93%E6%89%91/%E5%9F%BA%E7%A1%80%E6%8B%93%E6%89%91%E5%AD%A6%EF%BC%88%E7%82%B9%E9%9B%86%EF%BC%8B%E4%BB%A3%E6%95%B0%E5%88%9D%E6%AD%A5%EF%BC%89/%E5%9F%BA%E7%A1%80%E6%8B%93%E6%89%91%E5%AD%A6%E5%8F%8A%E5%BA%94%E7%94%A8%281%29%281%29.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E5%87%A0%E4%BD%95%E4%B8%8E%E6%8B%93%E6%89%91/%E5%9F%BA%E7%A1%80%E6%8B%93%E6%89%91%E5%AD%A6%EF%BC%88%E7%82%B9%E9%9B%86%EF%BC%8B%E4%BB%A3%E6%95%B0%E5%88%9D%E6%AD%A5%EF%BC%89/%E5%9F%BA%E7%A1%80%E6%8B%93%E6%89%91%E5%AD%A6%E5%8F%8A%E5%BA%94%E7%94%A8%281%29%281%29.pdf"
+      }
+    },
+    {
+      "id": "bd-d8b5e45160b5",
+      "title": "求真拓扑学讲义(林剑峰)",
+      "author": "原资料作者（见原文件）",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "领军资料·大学数学",
+      "pages": 142,
+      "size": "39.3 MB",
+      "year": null,
+      "format": "PDF",
+      "bytes": 39251026,
+      "tags": [
+        "领军资料",
+        "几何与拓扑"
+      ],
+      "searchTitles": [
+        "求真拓扑学讲义(林剑峰)"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-d8b5e45160b5/page-001.webp",
+          "previews/bd-d8b5e45160b5/page-002.webp",
+          "previews/bd-d8b5e45160b5/page-003.webp",
+          "previews/bd-d8b5e45160b5/page-004.webp",
+          "previews/bd-d8b5e45160b5/page-005.webp",
+          "previews/bd-d8b5e45160b5/page-006.webp",
+          "previews/bd-d8b5e45160b5/page-007.webp",
+          "previews/bd-d8b5e45160b5/page-008.webp",
+          "previews/bd-d8b5e45160b5/page-009.webp",
+          "previews/bd-d8b5e45160b5/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 142
+      },
+      "subcats": [
+        "geometry-topology"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E5%87%A0%E4%BD%95%E4%B8%8E%E6%8B%93%E6%89%91/%E5%9F%BA%E7%A1%80%E6%8B%93%E6%89%91%E5%AD%A6%EF%BC%88%E7%82%B9%E9%9B%86%EF%BC%8B%E4%BB%A3%E6%95%B0%E5%88%9D%E6%AD%A5%EF%BC%89/%E6%B1%82%E7%9C%9F%E6%8B%93%E6%89%91%E5%AD%A6%E8%AE%B2%E4%B9%89%28%E6%9E%97%E5%89%91%E5%B3%B0%29.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E5%87%A0%E4%BD%95%E4%B8%8E%E6%8B%93%E6%89%91/%E5%9F%BA%E7%A1%80%E6%8B%93%E6%89%91%E5%AD%A6%EF%BC%88%E7%82%B9%E9%9B%86%EF%BC%8B%E4%BB%A3%E6%95%B0%E5%88%9D%E6%AD%A5%EF%BC%89/%E6%B1%82%E7%9C%9F%E6%8B%93%E6%89%91%E5%AD%A6%E8%AE%B2%E4%B9%89%28%E6%9E%97%E5%89%91%E5%B3%B0%29.pdf"
+      }
+    },
+    {
+      "id": "bd-a3fb647bbfa4",
+      "title": "王作勤《拓扑学(H)》(1)",
+      "author": "原资料作者（见原文件）",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "领军资料·大学数学",
+      "pages": 335,
+      "size": "38.5 MB",
+      "year": null,
+      "format": "PDF",
+      "bytes": 38462157,
+      "tags": [
+        "领军资料",
+        "几何与拓扑"
+      ],
+      "searchTitles": [
+        "王作勤《拓扑学(H)》(1)"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-a3fb647bbfa4/page-001.webp",
+          "previews/bd-a3fb647bbfa4/page-002.webp",
+          "previews/bd-a3fb647bbfa4/page-003.webp",
+          "previews/bd-a3fb647bbfa4/page-004.webp",
+          "previews/bd-a3fb647bbfa4/page-005.webp",
+          "previews/bd-a3fb647bbfa4/page-006.webp",
+          "previews/bd-a3fb647bbfa4/page-007.webp",
+          "previews/bd-a3fb647bbfa4/page-008.webp",
+          "previews/bd-a3fb647bbfa4/page-009.webp",
+          "previews/bd-a3fb647bbfa4/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 335
+      },
+      "subcats": [
+        "geometry-topology"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E5%87%A0%E4%BD%95%E4%B8%8E%E6%8B%93%E6%89%91/%E5%9F%BA%E7%A1%80%E6%8B%93%E6%89%91%E5%AD%A6%EF%BC%88%E7%82%B9%E9%9B%86%EF%BC%8B%E4%BB%A3%E6%95%B0%E5%88%9D%E6%AD%A5%EF%BC%89/%E7%8E%8B%E4%BD%9C%E5%8B%A4%E3%80%8A%E6%8B%93%E6%89%91%E5%AD%A6%28H%29%E3%80%8B%281%29.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E5%87%A0%E4%BD%95%E4%B8%8E%E6%8B%93%E6%89%91/%E5%9F%BA%E7%A1%80%E6%8B%93%E6%89%91%E5%AD%A6%EF%BC%88%E7%82%B9%E9%9B%86%EF%BC%8B%E4%BB%A3%E6%95%B0%E5%88%9D%E6%AD%A5%EF%BC%89/%E7%8E%8B%E4%BD%9C%E5%8B%A4%E3%80%8A%E6%8B%93%E6%89%91%E5%AD%A6%28H%29%E3%80%8B%281%29.pdf"
+      }
+    },
+    {
+      "id": "bd-d43a55279e54",
+      "title": "Neukirch = Algebraic Number Theory",
+      "author": "原资料作者（见原文件）",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "领军资料·大学数学",
+      "pages": 456,
+      "size": "38.2 MB",
+      "year": null,
+      "format": "PDF",
+      "bytes": 38226053,
+      "tags": [
+        "领军资料",
+        "代数"
+      ],
+      "searchTitles": [
+        "Neukirch = Algebraic Number Theory"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-d43a55279e54/page-001.webp",
+          "previews/bd-d43a55279e54/page-002.webp",
+          "previews/bd-d43a55279e54/page-003.webp",
+          "previews/bd-d43a55279e54/page-004.webp",
+          "previews/bd-d43a55279e54/page-005.webp",
+          "previews/bd-d43a55279e54/page-006.webp",
+          "previews/bd-d43a55279e54/page-007.webp",
+          "previews/bd-d43a55279e54/page-008.webp",
+          "previews/bd-d43a55279e54/page-009.webp",
+          "previews/bd-d43a55279e54/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 456
+      },
+      "subcats": [
+        "algebra"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E9%AB%98%E5%B9%B4%E7%BA%A7%E4%BB%A3%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0%E6%95%B0%E8%AE%BA/Neukirch%20%3D%20Algebraic%20Number%20Theory.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E9%AB%98%E5%B9%B4%E7%BA%A7%E4%BB%A3%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0%E6%95%B0%E8%AE%BA/Neukirch%20%3D%20Algebraic%20Number%20Theory.pdf"
+      }
+    },
+    {
+      "id": "bd-b5bfba451978",
+      "title": "偏微分方程第二版 Evans",
+      "author": "原资料作者（见原文件）",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "领军资料·大学数学",
+      "pages": 758,
+      "size": "37.3 MB",
+      "year": null,
+      "format": "PDF",
+      "bytes": 37305181,
+      "tags": [
+        "领军资料",
+        "分析"
+      ],
+      "searchTitles": [
+        "偏微分方程第二版 Evans"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-b5bfba451978/page-001.webp",
+          "previews/bd-b5bfba451978/page-002.webp",
+          "previews/bd-b5bfba451978/page-003.webp",
+          "previews/bd-b5bfba451978/page-004.webp",
+          "previews/bd-b5bfba451978/page-005.webp",
+          "previews/bd-b5bfba451978/page-006.webp",
+          "previews/bd-b5bfba451978/page-007.webp",
+          "previews/bd-b5bfba451978/page-008.webp",
+          "previews/bd-b5bfba451978/page-009.webp",
+          "previews/bd-b5bfba451978/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 758
+      },
+      "subcats": [
+        "analysis"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E9%AB%98%E5%B9%B4%E7%BA%A7%E5%88%86%E6%9E%90%E5%AD%A6/%E5%81%8F%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/%E5%81%8F%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%AC%AC%E4%BA%8C%E7%89%88%20Evans.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E9%AB%98%E5%B9%B4%E7%BA%A7%E5%88%86%E6%9E%90%E5%AD%A6/%E5%81%8F%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/%E5%81%8F%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%AC%AC%E4%BA%8C%E7%89%88%20Evans.pdf"
+      }
+    },
+    {
+      "id": "bd-b160648a0199",
+      "title": "OrdinaryDifferentialEquations(V.I.ARNOLDetc.)(z-library.sk,1lib.sk,z-lib.sk)",
+      "author": "原资料作者（见原文件）",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "领军资料·大学数学",
+      "pages": 290,
+      "size": "50.6 MB",
+      "year": null,
+      "format": "PDF",
+      "bytes": 50564536,
+      "tags": [
+        "领军资料",
+        "分析"
+      ],
+      "searchTitles": [
+        "OrdinaryDifferentialEquations(V.I.ARNOLDetc.)(z-library.sk,1lib.sk,z-lib.sk)"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-b160648a0199/page-001.webp",
+          "previews/bd-b160648a0199/page-002.webp",
+          "previews/bd-b160648a0199/page-003.webp",
+          "previews/bd-b160648a0199/page-004.webp",
+          "previews/bd-b160648a0199/page-005.webp",
+          "previews/bd-b160648a0199/page-006.webp",
+          "previews/bd-b160648a0199/page-007.webp",
+          "previews/bd-b160648a0199/page-008.webp",
+          "previews/bd-b160648a0199/page-009.webp",
+          "previews/bd-b160648a0199/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 290
+      },
+      "subcats": [
+        "analysis"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E9%AB%98%E5%B9%B4%E7%BA%A7%E5%88%86%E6%9E%90%E5%AD%A6/%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/OrdinaryDifferentialEquations%28V.I.ARNOLDetc.%29%28z-library.sk%2C1lib.sk%2Cz-lib.sk%29.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E9%AB%98%E5%B9%B4%E7%BA%A7%E5%88%86%E6%9E%90%E5%AD%A6/%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/OrdinaryDifferentialEquations%28V.I.ARNOLDetc.%29%28z-library.sk%2C1lib.sk%2Cz-lib.sk%29.pdf"
+      }
+    },
+    {
+      "id": "bd-7dfc6a1da044",
+      "title": "常微分方程  第四版 王高雄电子教材 (1)",
+      "author": "原资料作者（见原文件）",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "领军资料·大学数学",
+      "pages": 264,
+      "size": "44.8 MB",
+      "year": null,
+      "format": "PDF",
+      "bytes": 44798956,
+      "tags": [
+        "领军资料",
+        "分析"
+      ],
+      "searchTitles": [
+        "常微分方程  第四版 王高雄电子教材 (1)"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-7dfc6a1da044/page-001.webp",
+          "previews/bd-7dfc6a1da044/page-002.webp",
+          "previews/bd-7dfc6a1da044/page-003.webp",
+          "previews/bd-7dfc6a1da044/page-004.webp",
+          "previews/bd-7dfc6a1da044/page-005.webp",
+          "previews/bd-7dfc6a1da044/page-006.webp",
+          "previews/bd-7dfc6a1da044/page-007.webp",
+          "previews/bd-7dfc6a1da044/page-008.webp",
+          "previews/bd-7dfc6a1da044/page-009.webp",
+          "previews/bd-7dfc6a1da044/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 264
+      },
+      "subcats": [
+        "analysis"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E9%AB%98%E5%B9%B4%E7%BA%A7%E5%88%86%E6%9E%90%E5%AD%A6/%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%20%20%E7%AC%AC%E5%9B%9B%E7%89%88%20%E7%8E%8B%E9%AB%98%E9%9B%84%E7%94%B5%E5%AD%90%E6%95%99%E6%9D%90%20%281%29.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E9%AB%98%E5%B9%B4%E7%BA%A7%E5%88%86%E6%9E%90%E5%AD%A6/%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%20%20%E7%AC%AC%E5%9B%9B%E7%89%88%20%E7%8E%8B%E9%AB%98%E9%9B%84%E7%94%B5%E5%AD%90%E6%95%99%E6%9D%90%20%281%29.pdf"
+      }
+    },
+    {
+      "id": "bd-72ae7597c9f4",
+      "title": "(GTM096)A Course in Functional Analysis",
+      "author": "原资料作者（见原文件）",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "领军资料·大学数学",
+      "pages": 419,
+      "size": "33.7 MB",
+      "year": null,
+      "format": "PDF",
+      "bytes": 33677623,
+      "tags": [
+        "领军资料",
+        "分析"
+      ],
+      "searchTitles": [
+        "(GTM096)A Course in Functional Analysis"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-72ae7597c9f4/page-001.webp",
+          "previews/bd-72ae7597c9f4/page-002.webp",
+          "previews/bd-72ae7597c9f4/page-003.webp",
+          "previews/bd-72ae7597c9f4/page-004.webp",
+          "previews/bd-72ae7597c9f4/page-005.webp",
+          "previews/bd-72ae7597c9f4/page-006.webp",
+          "previews/bd-72ae7597c9f4/page-007.webp",
+          "previews/bd-72ae7597c9f4/page-008.webp",
+          "previews/bd-72ae7597c9f4/page-009.webp",
+          "previews/bd-72ae7597c9f4/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 419
+      },
+      "subcats": [
+        "analysis"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E9%AB%98%E5%B9%B4%E7%BA%A7%E5%88%86%E6%9E%90%E5%AD%A6/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%28GTM096%29A%20Course%20in%20Functional%20Analysis.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E9%AB%98%E5%B9%B4%E7%BA%A7%E5%88%86%E6%9E%90%E5%AD%A6/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%28GTM096%29A%20Course%20in%20Functional%20Analysis.pdf"
+      }
     }
   ],
   "subcategories": [
