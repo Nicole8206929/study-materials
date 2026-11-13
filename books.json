@@ -5685,18 +5685,35 @@
     {
       "id": "upload-743483749",
       "title": "高中数学一试讲义",
-      "author": "作者待补充",
+      "author": "讲义编写组",
       "catName": "高中数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
+      "desc": "《高中数学系统讲义》第三版修订本，覆盖高中数学主线、全国高中数学联赛一试专题和综合训练，含练习及题解。保留原 PDF 的可跳转目录、章节书签和题解链接。",
+      "year": 2026,
+      "tags": [
+        "高中数学讲义",
+        "高考数学",
+        "竞赛一试",
+        "零基础自学",
+        "第三版修订本"
+      ],
+      "searchTitles": [
+        "高中数学一试讲义.pdf",
+        "高中数学一试讲义",
+        "高中数学系统讲义",
+        "高中数学系统讲义（第三版修订本）",
+        "全国高中数学联赛一试",
+        "联赛一试讲义",
+        "高考数学讲义",
+        "高中数学第三版讲义",
+        "讲义编写组"
+      ],
       "bytes": 3293825,
       "size": "3.1 MB",
       "format": "PDF",
       "cat": "high-school-math",
       "cats": [
-        "high-school-math"
+        "high-school-math",
+        "competition-math"
       ],
       "ownerAccess": {
         "provider": "github-private",
