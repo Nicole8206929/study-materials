@@ -5737,6 +5737,271 @@
         "pageCount": 10,
         "sourcePageCount": 610
       }
+    },
+    {
+      "id": "eng-wordpower",
+      "title": "Word Power Made Easy",
+      "author": "Norman Lewis",
+      "cat": "english",
+      "catName": "英语",
+      "desc": "小白书：用词根词缀与词源故事串联单词，按主题分类、互动练习丰富，深入理解词汇、告别中式表达。",
+      "pages": 562,
+      "size": "25.6 MB",
+      "year": 1979,
+      "format": "PDF",
+      "bytes": 25610593,
+      "tags": [
+        "英语",
+        "词汇",
+        "英文原版"
+      ],
+      "searchTitles": [
+        "小白书",
+        "英语说文解字",
+        "Word Power Made Easy"
+      ],
+      "preview": {
+        "images": [
+          "previews/eng-wordpower/page-001.webp",
+          "previews/eng-wordpower/page-002.webp",
+          "previews/eng-wordpower/page-003.webp",
+          "previews/eng-wordpower/page-004.webp",
+          "previews/eng-wordpower/page-005.webp",
+          "previews/eng-wordpower/page-006.webp",
+          "previews/eng-wordpower/page-007.webp",
+          "previews/eng-wordpower/page-008.webp",
+          "previews/eng-wordpower/page-009.webp",
+          "previews/eng-wordpower/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 562
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/a63d5e0a58aa58e26189a5ffe82019dbb40199d4/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87/WordPowerMadeEasy_Lewis.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/a63d5e0a58aa58e26189a5ffe82019dbb40199d4/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87/WordPowerMadeEasy_Lewis.pdf"
+      }
+    },
+    {
+      "id": "eng-mwbuilder",
+      "title": "Merriam-Webster's Vocabulary Builder",
+      "author": "Mary Wood Cornog",
+      "cat": "english",
+      "catName": "英语",
+      "desc": "韦小绿：通过250个核心词根串联1200核心词与2500衍生词，配英英释义与例句，适配雅思/托福/GRE。",
+      "pages": 2066,
+      "size": "4.5 MB",
+      "year": 1994,
+      "format": "PDF",
+      "bytes": 4472051,
+      "tags": [
+        "英语",
+        "词汇",
+        "英文原版"
+      ],
+      "searchTitles": [
+        "韦小绿",
+        "韦氏词汇构建",
+        "Merriam-Webster's Vocabulary Builder"
+      ],
+      "preview": {
+        "images": [
+          "previews/eng-mwbuilder/page-001.webp",
+          "previews/eng-mwbuilder/page-002.webp",
+          "previews/eng-mwbuilder/page-003.webp",
+          "previews/eng-mwbuilder/page-004.webp",
+          "previews/eng-mwbuilder/page-005.webp",
+          "previews/eng-mwbuilder/page-006.webp",
+          "previews/eng-mwbuilder/page-007.webp",
+          "previews/eng-mwbuilder/page-008.webp",
+          "previews/eng-mwbuilder/page-009.webp",
+          "previews/eng-mwbuilder/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 2066
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/a63d5e0a58aa58e26189a5ffe82019dbb40199d4/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87/MerriamWebsterVocabularyBuilder.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/a63d5e0a58aa58e26189a5ffe82019dbb40199d4/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87/MerriamWebsterVocabularyBuilder.pdf"
+      }
+    },
+    {
+      "id": "eng-ieltszhenjing",
+      "title": "雅思词汇真经",
+      "author": "刘洪波",
+      "cat": "english",
+      "catName": "英语",
+      "desc": "刘洪波雅思词汇名作：按逻辑词群分类，把同话题词汇集中，契合雅思同义替换特点。",
+      "pages": 336,
+      "size": "35.0 MB",
+      "year": 2018,
+      "format": "PDF",
+      "bytes": 35003552,
+      "tags": [
+        "英语",
+        "词汇",
+        "英文原版"
+      ],
+      "searchTitles": [
+        "雅思词汇真经",
+        "刘洪波雅思",
+        "雅思词汇真经"
+      ],
+      "preview": {
+        "images": [
+          "previews/eng-ieltszhenjing/page-001.webp",
+          "previews/eng-ieltszhenjing/page-002.webp",
+          "previews/eng-ieltszhenjing/page-003.webp",
+          "previews/eng-ieltszhenjing/page-004.webp",
+          "previews/eng-ieltszhenjing/page-005.webp",
+          "previews/eng-ieltszhenjing/page-006.webp",
+          "previews/eng-ieltszhenjing/page-007.webp",
+          "previews/eng-ieltszhenjing/page-008.webp",
+          "previews/eng-ieltszhenjing/page-009.webp",
+          "previews/eng-ieltszhenjing/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 336
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/a63d5e0a58aa58e26189a5ffe82019dbb40199d4/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87/IELTS%E8%AF%8D%E6%B1%87%E7%9C%9F%E7%BB%8F_%E5%88%98%E6%B4%AA%E6%B3%A2.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/a63d5e0a58aa58e26189a5ffe82019dbb40199d4/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87/IELTS%E8%AF%8D%E6%B1%87%E7%9C%9F%E7%BB%8F_%E5%88%98%E6%B4%AA%E6%B3%A2.pdf"
+      }
+    },
+    {
+      "id": "eng-ieltsroot",
+      "title": "雅思词汇词根+联想记忆法",
+      "author": "俞敏洪",
+      "cat": "english",
+      "catName": "英语",
+      "desc": "新东方红宝书：用词根词缀与趣味联想记忆单词，系统覆盖雅思核心词汇。",
+      "pages": 518,
+      "size": "81.5 MB",
+      "year": 2016,
+      "format": "PDF",
+      "bytes": 81525853,
+      "tags": [
+        "英语",
+        "词汇",
+        "英文原版"
+      ],
+      "searchTitles": [
+        "雅思红宝书",
+        "新东方雅思词汇",
+        "雅思词汇词根+联想记忆法"
+      ],
+      "preview": {
+        "images": [
+          "previews/eng-ieltsroot/page-001.webp",
+          "previews/eng-ieltsroot/page-002.webp",
+          "previews/eng-ieltsroot/page-003.webp",
+          "previews/eng-ieltsroot/page-004.webp",
+          "previews/eng-ieltsroot/page-005.webp",
+          "previews/eng-ieltsroot/page-006.webp",
+          "previews/eng-ieltsroot/page-007.webp",
+          "previews/eng-ieltsroot/page-008.webp",
+          "previews/eng-ieltsroot/page-009.webp",
+          "previews/eng-ieltsroot/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 518
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/a63d5e0a58aa58e26189a5ffe82019dbb40199d4/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87/IELTS%E8%AF%8D%E6%B1%87%E8%AF%8D%E6%A0%B9%E8%81%94%E6%83%B3%E8%AE%B0%E5%BF%86%E6%B3%95.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/a63d5e0a58aa58e26189a5ffe82019dbb40199d4/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87/IELTS%E8%AF%8D%E6%B1%87%E8%AF%8D%E6%A0%B9%E8%81%94%E6%83%B3%E8%AE%B0%E5%BF%86%E6%B3%95.pdf"
+      }
+    },
+    {
+      "id": "eng-cambridgeielts",
+      "title": "剑桥雅思词汇精典",
+      "author": "吴建业、钟钰",
+      "cat": "english",
+      "catName": "英语",
+      "desc": "剑桥雅思词汇：按考试使用频率与功能组织词汇，分清主次、高效备考。",
+      "pages": 416,
+      "size": "14.7 MB",
+      "year": 2009,
+      "format": "PDF",
+      "bytes": 14692358,
+      "tags": [
+        "英语",
+        "词汇",
+        "英文原版"
+      ],
+      "searchTitles": [
+        "剑桥雅思词汇",
+        "雅思词汇精典",
+        "剑桥雅思词汇精典"
+      ],
+      "preview": {
+        "images": [
+          "previews/eng-cambridgeielts/page-001.webp",
+          "previews/eng-cambridgeielts/page-002.webp",
+          "previews/eng-cambridgeielts/page-003.webp",
+          "previews/eng-cambridgeielts/page-004.webp",
+          "previews/eng-cambridgeielts/page-005.webp",
+          "previews/eng-cambridgeielts/page-006.webp",
+          "previews/eng-cambridgeielts/page-007.webp",
+          "previews/eng-cambridgeielts/page-008.webp",
+          "previews/eng-cambridgeielts/page-009.webp",
+          "previews/eng-cambridgeielts/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 416
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/a63d5e0a58aa58e26189a5ffe82019dbb40199d4/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87/%E5%89%91%E6%A1%A5%E9%9B%85%E6%80%9D%E8%AF%8D%E6%B1%87%E7%B2%BE%E5%85%B8.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/a63d5e0a58aa58e26189a5ffe82019dbb40199d4/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87/%E5%89%91%E6%A1%A5%E9%9B%85%E6%80%9D%E8%AF%8D%E6%B1%87%E7%B2%BE%E5%85%B8.pdf"
+      }
+    },
+    {
+      "id": "eng-victor",
+      "title": "维克多高中英语词汇",
+      "author": "维克多英语",
+      "cat": "english",
+      "catName": "英语",
+      "desc": "维克多新高中英语词汇：贴合高中课标与高考，覆盖3000+核心词及拓展，高中英语词汇主力书。",
+      "pages": 202,
+      "size": "77.6 MB",
+      "year": 2025,
+      "format": "PDF",
+      "bytes": 77551996,
+      "tags": [
+        "英语",
+        "词汇",
+        "英文原版"
+      ],
+      "searchTitles": [
+        "维克多英语",
+        "新高中英语词汇",
+        "维克多英语词汇",
+        "维克多高中英语词汇"
+      ],
+      "preview": {
+        "images": [
+          "previews/eng-victor/page-001.webp",
+          "previews/eng-victor/page-002.webp",
+          "previews/eng-victor/page-003.webp",
+          "previews/eng-victor/page-004.webp",
+          "previews/eng-victor/page-005.webp",
+          "previews/eng-victor/page-006.webp",
+          "previews/eng-victor/page-007.webp",
+          "previews/eng-victor/page-008.webp",
+          "previews/eng-victor/page-009.webp",
+          "previews/eng-victor/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 202
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/a63d5e0a58aa58e26189a5ffe82019dbb40199d4/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87/%E7%BB%B4%E5%85%8B%E5%A4%9A%E9%AB%98%E4%B8%AD%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/a63d5e0a58aa58e26189a5ffe82019dbb40199d4/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87/%E7%BB%B4%E5%85%8B%E5%A4%9A%E9%AB%98%E4%B8%AD%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87.pdf"
+      }
     }
   ],
   "subcategories": [
