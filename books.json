@@ -53,6 +53,10 @@
     {
       "id": "computer-science",
       "name": "计算机与人工智能"
+    },
+    {
+      "id": "english",
+      "name": "英语"
     }
   ],
   "books": [
