@@ -5681,6 +5681,45 @@
         "view": "https://github.com/Nicole8206929/study-materials-originals/blob/af967c16adcf0b97382dfd4951b107ea30ce21ac/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/QuantitativeTrading_Chan.pdf",
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/af967c16adcf0b97382dfd4951b107ea30ce21ac/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/QuantitativeTrading_Chan.pdf"
       }
+    },
+    {
+      "id": "upload-743483749",
+      "title": "高中数学一试讲义",
+      "author": "作者待补充",
+      "catName": "高中数学",
+      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
+      "year": null,
+      "tags": [],
+      "searchTitles": [],
+      "bytes": 3293825,
+      "size": "3.1 MB",
+      "format": "PDF",
+      "cat": "high-school-math",
+      "cats": [
+        "high-school-math"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261113115516-3f7a34c1f4e4a8c9",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261113115516-3f7a34c1f4e4a8c9/file-a9947431-d764-4fbb-8d40-af52a7b276bd.pdf"
+      },
+      "pages": 610,
+      "preview": {
+        "images": [
+          "previews/upload-743483749/page-001.webp",
+          "previews/upload-743483749/page-002.webp",
+          "previews/upload-743483749/page-003.webp",
+          "previews/upload-743483749/page-004.webp",
+          "previews/upload-743483749/page-005.webp",
+          "previews/upload-743483749/page-006.webp",
+          "previews/upload-743483749/page-007.webp",
+          "previews/upload-743483749/page-008.webp",
+          "previews/upload-743483749/page-009.webp",
+          "previews/upload-743483749/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 610
+      }
     }
   ],
   "subcategories": [
