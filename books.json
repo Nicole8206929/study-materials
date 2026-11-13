@@ -6619,6 +6619,288 @@
         "view": "https://github.com/Nicole8206929/study-materials-originals/blob/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E9%AB%98%E5%B9%B4%E7%BA%A7%E5%88%86%E6%9E%90%E5%AD%A6/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%28GTM096%29A%20Course%20in%20Functional%20Analysis.pdf",
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E9%AB%98%E5%B9%B4%E7%BA%A7%E5%88%86%E6%9E%90%E5%AD%A6/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%28GTM096%29A%20Course%20in%20Functional%20Analysis.pdf"
       }
+    },
+    {
+      "id": "ai-aima",
+      "title": "Artificial Intelligence: A Modern Approach",
+      "author": "Stuart Russell, Peter Norvig",
+      "cat": "computer-science",
+      "catName": "计算机与人工智能",
+      "desc": "人工智能领域权威综合教材（第四版）：智能代理、搜索、知识表示、规划、机器学习、概率推理与深度学习，北美高校标准用书。",
+      "pages": 1127,
+      "size": "12.9 MB",
+      "year": 2020,
+      "format": "PDF",
+      "bytes": 12909682,
+      "tags": [
+        "人工智能",
+        "机器学习",
+        "英文原版",
+        "经典教材"
+      ],
+      "searchTitles": [
+        "Artificial Intelligence A Modern Approach",
+        "AIMA",
+        "人工智能一种现代方法",
+        "Artificial Intelligence: A Modern Approach"
+      ],
+      "preview": {
+        "images": [
+          "previews/ai-aima/page-001.webp",
+          "previews/ai-aima/page-002.webp",
+          "previews/ai-aima/page-003.webp",
+          "previews/ai-aima/page-004.webp",
+          "previews/ai-aima/page-005.webp",
+          "previews/ai-aima/page-006.webp",
+          "previews/ai-aima/page-007.webp",
+          "previews/ai-aima/page-008.webp",
+          "previews/ai-aima/page-009.webp",
+          "previews/ai-aima/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 1127
+      },
+      "subcats": [],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/f6eb8d6/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/ArtificialIntelligenceModernApproach_RussellNorvig.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/f6eb8d6/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/ArtificialIntelligenceModernApproach_RussellNorvig.pdf"
+      }
+    },
+    {
+      "id": "ai-handsml",
+      "title": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow",
+      "author": "Aurélien Géron",
+      "cat": "computer-science",
+      "catName": "计算机与人工智能",
+      "desc": "机器学习工程实践标杆（第二版）：端到端项目流程、Scikit-Learn 算法、Keras/TensorFlow 深度网络，含大量可运行代码。",
+      "pages": 799,
+      "size": "83.1 MB",
+      "year": 2019,
+      "format": "PDF",
+      "bytes": 83054260,
+      "tags": [
+        "机器学习",
+        "深度学习",
+        "英文原版",
+        "工程实践"
+      ],
+      "searchTitles": [
+        "Hands-On Machine Learning",
+        "Scikit-Learn Keras TensorFlow",
+        "机器学习实战",
+        "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow"
+      ],
+      "preview": {
+        "images": [
+          "previews/ai-handsml/page-001.webp",
+          "previews/ai-handsml/page-002.webp",
+          "previews/ai-handsml/page-003.webp",
+          "previews/ai-handsml/page-004.webp",
+          "previews/ai-handsml/page-005.webp",
+          "previews/ai-handsml/page-006.webp",
+          "previews/ai-handsml/page-007.webp",
+          "previews/ai-handsml/page-008.webp",
+          "previews/ai-handsml/page-009.webp",
+          "previews/ai-handsml/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 799
+      },
+      "subcats": [],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/f6eb8d6/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/HandsOnMachineLearning_Geron.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/f6eb8d6/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/HandsOnMachineLearning_Geron.pdf"
+      }
+    },
+    {
+      "id": "ai-prml",
+      "title": "Pattern Recognition and Machine Learning",
+      "author": "Christopher M. Bishop",
+      "cat": "computer-science",
+      "catName": "计算机与人工智能",
+      "desc": "统计机器学习经典（PRML）：贝叶斯方法、回归分类、核方法、图模型与近似推断，概率视角术语严谨。",
+      "pages": 803,
+      "size": "5.8 MB",
+      "year": 2006,
+      "format": "PDF",
+      "bytes": 5799007,
+      "tags": [
+        "机器学习",
+        "贝叶斯",
+        "英文原版",
+        "经典教材"
+      ],
+      "searchTitles": [
+        "Pattern Recognition and Machine Learning",
+        "PRML",
+        "模式识别与机器学习",
+        "Pattern Recognition and Machine Learning"
+      ],
+      "preview": {
+        "images": [
+          "previews/ai-prml/page-001.webp",
+          "previews/ai-prml/page-002.webp",
+          "previews/ai-prml/page-003.webp",
+          "previews/ai-prml/page-004.webp",
+          "previews/ai-prml/page-005.webp",
+          "previews/ai-prml/page-006.webp",
+          "previews/ai-prml/page-007.webp",
+          "previews/ai-prml/page-008.webp",
+          "previews/ai-prml/page-009.webp",
+          "previews/ai-prml/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 803
+      },
+      "subcats": [],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/f6eb8d6/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/PatternRecognitionMachineLearning_Bishop.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/f6eb8d6/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/PatternRecognitionMachineLearning_Bishop.pdf"
+      }
+    },
+    {
+      "id": "ai-deeplearning",
+      "title": "Deep Learning",
+      "author": "Ian Goodfellow, Yoshua Bengio, Aaron Courville",
+      "cat": "computer-science",
+      "catName": "计算机与人工智能",
+      "desc": "深度学习奠基性教材（花书）：线性代数概率信息论基础、深度网络、正则化优化、卷积/循环网络与研究前沿。",
+      "pages": 643,
+      "size": "21.7 MB",
+      "year": 2016,
+      "format": "PDF",
+      "bytes": 21674711,
+      "tags": [
+        "深度学习",
+        "神经网络",
+        "英文原版",
+        "经典教材"
+      ],
+      "searchTitles": [
+        "Deep Learning",
+        "Goodfellow Bengio Courville",
+        "深度学习花书",
+        "Deep Learning"
+      ],
+      "preview": {
+        "images": [
+          "previews/ai-deeplearning/page-001.webp",
+          "previews/ai-deeplearning/page-002.webp",
+          "previews/ai-deeplearning/page-003.webp",
+          "previews/ai-deeplearning/page-004.webp",
+          "previews/ai-deeplearning/page-005.webp",
+          "previews/ai-deeplearning/page-006.webp",
+          "previews/ai-deeplearning/page-007.webp",
+          "previews/ai-deeplearning/page-008.webp",
+          "previews/ai-deeplearning/page-009.webp",
+          "previews/ai-deeplearning/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 643
+      },
+      "subcats": [],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/f6eb8d6/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/DeepLearning_Goodfellow.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/f6eb8d6/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/DeepLearning_Goodfellow.pdf"
+      }
+    },
+    {
+      "id": "qf-mathfinance",
+      "title": "Mathematics for Finance: An Introduction to Financial Engineering",
+      "author": "Marek Capiński, Tomasz Zastawniak",
+      "cat": "finance",
+      "catName": "金融",
+      "desc": "金融工程数学入门：离散时间模型、无套利定价、利率、二叉树与风险中性概率，数学推导清晰适合量化基础。",
+      "pages": 324,
+      "size": "16.3 MB",
+      "year": 2003,
+      "format": "PDF",
+      "bytes": 16287247,
+      "tags": [
+        "金融工程",
+        "量化金融",
+        "英文原版",
+        "数学基础"
+      ],
+      "searchTitles": [
+        "Mathematics for Finance",
+        "Capinski Zastawniak",
+        "金融数学导论",
+        "Mathematics for Finance: An Introduction to Financial Engineering"
+      ],
+      "preview": {
+        "images": [
+          "previews/qf-mathfinance/page-001.webp",
+          "previews/qf-mathfinance/page-002.webp",
+          "previews/qf-mathfinance/page-003.webp",
+          "previews/qf-mathfinance/page-004.webp",
+          "previews/qf-mathfinance/page-005.webp",
+          "previews/qf-mathfinance/page-006.webp",
+          "previews/qf-mathfinance/page-007.webp",
+          "previews/qf-mathfinance/page-008.webp",
+          "previews/qf-mathfinance/page-009.webp",
+          "previews/qf-mathfinance/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 324
+      },
+      "subcats": [],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/f6eb8d6/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/MathematicsForFinance_Capinski.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/f6eb8d6/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/MathematicsForFinance_Capinski.pdf"
+      }
+    },
+    {
+      "id": "qf-investmentscience",
+      "title": "Investment Science",
+      "author": "David G. Luenberger",
+      "cat": "finance",
+      "catName": "金融",
+      "desc": "投资科学经典（第二版）：确定性与随机现金流、均值-方差组合、资本资产定价、期权与衍生证券，融合运筹与金融。",
+      "pages": 640,
+      "size": "35.5 MB",
+      "year": 2013,
+      "format": "PDF",
+      "bytes": 35488904,
+      "tags": [
+        "投资学",
+        "组合理论",
+        "英文原版",
+        "经典教材"
+      ],
+      "searchTitles": [
+        "Investment Science",
+        "Luenberger",
+        "投资科学",
+        "Investment Science"
+      ],
+      "preview": {
+        "images": [
+          "previews/qf-investmentscience/page-001.webp",
+          "previews/qf-investmentscience/page-002.webp",
+          "previews/qf-investmentscience/page-003.webp",
+          "previews/qf-investmentscience/page-004.webp",
+          "previews/qf-investmentscience/page-005.webp",
+          "previews/qf-investmentscience/page-006.webp",
+          "previews/qf-investmentscience/page-007.webp",
+          "previews/qf-investmentscience/page-008.webp",
+          "previews/qf-investmentscience/page-009.webp",
+          "previews/qf-investmentscience/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 640
+      },
+      "subcats": [],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/f6eb8d6/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/InvestmentScience_Luenberger.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/f6eb8d6/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/InvestmentScience_Luenberger.pdf"
+      }
     }
   ],
   "subcategories": [
