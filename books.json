@@ -53,6 +53,10 @@
     {
       "id": "accounting",
       "name": "会计"
+    },
+    {
+      "id": "artificial-intelligence",
+      "name": "人工智能"
     }
   ],
   "books": [
@@ -5641,7 +5645,8 @@
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/f6eb8d6/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/ArtificialIntelligenceModernApproach_RussellNorvig.pdf"
       },
       "cats": [
-        "computer-science"
+        "computer-science",
+        "artificial-intelligence"
       ]
     },
     {
@@ -5692,7 +5697,8 @@
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/f6eb8d6/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/DeepLearning_Goodfellow.pdf"
       },
       "cats": [
-        "computer-science"
+        "computer-science",
+        "artificial-intelligence"
       ]
     },
     {
@@ -5744,7 +5750,8 @@
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/f285a688eb96c67c489611b7422558e0107908c8/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/DiveIntoDeepLearning_Zhang.pdf"
       },
       "cats": [
-        "computer-science"
+        "computer-science",
+        "artificial-intelligence"
       ]
     },
     {
@@ -5795,7 +5802,8 @@
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/f6eb8d6/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/HandsOnMachineLearning_Geron.pdf"
       },
       "cats": [
-        "computer-science"
+        "computer-science",
+        "artificial-intelligence"
       ]
     },
     {
@@ -5850,7 +5858,8 @@
       },
       "cats": [
         "computer-science",
-        "university-math"
+        "university-math",
+        "artificial-intelligence"
       ],
       "subcat": "applied-math"
     },
@@ -5903,7 +5912,8 @@
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/f6eb8d6/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/PatternRecognitionMachineLearning_Bishop.pdf"
       },
       "cats": [
-        "computer-science"
+        "computer-science",
+        "artificial-intelligence"
       ]
     },
     {
@@ -5955,7 +5965,8 @@
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/f285a688eb96c67c489611b7422558e0107908c8/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/ProbabilisticMachineLearning_Murphy.pdf"
       },
       "cats": [
-        "computer-science"
+        "computer-science",
+        "artificial-intelligence"
       ]
     },
     {
@@ -6007,7 +6018,8 @@
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/f285a688eb96c67c489611b7422558e0107908c8/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/ReinforcementLearning_SuttonBarto.pdf"
       },
       "cats": [
-        "computer-science"
+        "computer-science",
+        "artificial-intelligence"
       ]
     },
     {
@@ -7675,7 +7687,8 @@
       "name": "计算机与语言",
       "ids": [
         "computer-science",
-        "english"
+        "english",
+        "artificial-intelligence"
       ]
     },
     {
@@ -7693,9 +7706,6 @@
     "statistics": {
       "cat": "university-math",
       "subcat": "probability-statistics"
-    },
-    "artificial-intelligence": {
-      "cat": "computer-science"
     }
   },
   "subcategoryAliases": {
