@@ -6901,6 +6901,100 @@
         "view": "https://github.com/Nicole8206929/study-materials-originals/blob/f6eb8d6/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/InvestmentScience_Luenberger.pdf",
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/f6eb8d6/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/InvestmentScience_Luenberger.pdf"
       }
+    },
+    {
+      "id": "qf-blackbox",
+      "title": "Inside the Black Box: A Simple Guide to Quantitative and High-Frequency Trading",
+      "author": "Rishi K. Narang",
+      "cat": "finance",
+      "catName": "金融",
+      "desc": "量化交易黑箱揭秘（第二版）：系统拆解量化交易的组成——阿尔法模型、风险模型、投资组合构建、执行与数据，入门量化的清晰指南。",
+      "pages": 337,
+      "size": "32.0 MB",
+      "year": 2013,
+      "format": "PDF",
+      "bytes": 32002860,
+      "tags": [
+        "量化交易",
+        "高频交易",
+        "英文原版",
+        "经典教材"
+      ],
+      "searchTitles": [
+        "Inside the Black Box",
+        "Narang",
+        "打开黑箱",
+        "Inside the Black Box: A Simple Guide to Quantitative and High-Frequency Trading"
+      ],
+      "preview": {
+        "images": [
+          "previews/qf-blackbox/page-001.webp",
+          "previews/qf-blackbox/page-002.webp",
+          "previews/qf-blackbox/page-003.webp",
+          "previews/qf-blackbox/page-004.webp",
+          "previews/qf-blackbox/page-005.webp",
+          "previews/qf-blackbox/page-006.webp",
+          "previews/qf-blackbox/page-007.webp",
+          "previews/qf-blackbox/page-008.webp",
+          "previews/qf-blackbox/page-009.webp",
+          "previews/qf-blackbox/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 337
+      },
+      "subcats": [],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/cd55264/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/InsideTheBlackBox_Narang.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/cd55264/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/InsideTheBlackBox_Narang.pdf"
+      }
+    },
+    {
+      "id": "qf-hull",
+      "title": "Options, Futures, and Other Derivatives",
+      "author": "John C. Hull",
+      "cat": "finance",
+      "catName": "金融",
+      "desc": "衍生品权威圣经（第九版）：期权期货机制、套期保值、定价模型、希腊字母、利率与信用衍生品，金融工程核心教材。",
+      "pages": 892,
+      "size": "5.9 MB",
+      "year": 2017,
+      "format": "PDF",
+      "bytes": 5908391,
+      "tags": [
+        "衍生品",
+        "期权期货",
+        "英文原版",
+        "经典教材"
+      ],
+      "searchTitles": [
+        "Options Futures and Other Derivatives",
+        "Hull",
+        "期权期货及其他衍生品",
+        "Options, Futures, and Other Derivatives"
+      ],
+      "preview": {
+        "images": [
+          "previews/qf-hull/page-001.webp",
+          "previews/qf-hull/page-002.webp",
+          "previews/qf-hull/page-003.webp",
+          "previews/qf-hull/page-004.webp",
+          "previews/qf-hull/page-005.webp",
+          "previews/qf-hull/page-006.webp",
+          "previews/qf-hull/page-007.webp",
+          "previews/qf-hull/page-008.webp",
+          "previews/qf-hull/page-009.webp",
+          "previews/qf-hull/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 892
+      },
+      "subcats": [],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/cd55264/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/OptionsFuturesDerivatives_Hull.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/cd55264/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/OptionsFuturesDerivatives_Hull.pdf"
+      }
     }
   ],
   "subcategories": [
