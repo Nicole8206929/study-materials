@@ -1,5 +1,6 @@
 "use strict";
 import {initializeShelfManagement} from '../tools/shelf-management.mjs';
+import {createCatalogueModel} from '../tools/catalogue-model.mjs';
 
 const $ = id => document.getElementById(id);
 let books = [];
@@ -10,6 +11,8 @@ const getManagement=()=>managementReady||=initializeShelfManagement({
   onChange:removed=>{books=allBooks.filter(book=>!removed.has(book.id));refreshCatalogue();},
   onModeChange:()=>{if(loaded)render();}
 }).then(value=>management=value);
+let model;
+let categoryGroups=[];
 let categories = new Map();
 let subcategories = [];
 let loaded = false;
@@ -76,6 +79,8 @@ async function loadBooks() {
     const removed=await management.visibility();
     books = allBooks.filter(book=>!removed.has(book.id));
     if (new Set(books.map(book => book.id)).size !== books.length) throw new Error("Duplicate IDs");
+    model=createCatalogueModel(data);
+    categoryGroups=data.categoryGroups||[];
     const declared = data.categories || [];
     if (!Array.isArray(declared) || declared.some(category => !category || typeof category.id !== "string" || category.id === "all" || !category.id.trim() || typeof category.name !== "string" || !category.name.trim())) throw new Error("Invalid categories");
     categories = new Map(declared.map(category => [category.id, category.name]));
@@ -88,13 +93,14 @@ async function loadBooks() {
     });
     loaded = true;
     readState();
-    $("tagDetails").open = !matchMedia("(max-width: 600px)").matches || Boolean(state.tag);
+    $("tagDetails").open=Boolean(state.tag);
+    $("subjectDetails").open=!matchMedia("(max-width: 800px)").matches;
+    saveState();
     renderCategories();
     renderSubcategories();
     renderTags();
     render();
-    const formats = [...new Set(books.map(book => book.format))];
-    $("totalSummary").textContent = `${books.length} 份资料 · ${categories.size} 个分类 · ${formats.map(format => format.toUpperCase()).join(" / ")}`;
+    updateSummary();
   } catch {
     if(!management)managementReady=null;
     $("loadError").hidden = false;
@@ -109,20 +115,19 @@ async function loadBooks() {
 }
 
 function refreshCatalogue(){
-  if(state.tag&&!books.some(book=>inCategory(book,state.cat)&&book.tags.includes(state.tag)))state.tag='';
+  if(state.tag&&!books.some(book=>inCategory(book,state.cat)&&model.tagsOf(book).includes(state.tag)))state.tag='';
   renderCategories();renderSubcategories();renderTags();render();saveState();
-  const formats=[...new Set(books.map(book=>book.format))];
-  $("totalSummary").textContent=`${books.length} 份资料 · ${categories.size} 个分类 · ${formats.length?formats.map(format=>format.toUpperCase()).join(" / "):"无资料"}`;
+  updateSummary();
+}
+function updateSummary(){
+  $("totalSummary").textContent=books.length+" 份资料，按 "+categories.size+" 个学科整理";
 }
 
 function readState() {
   const params = new URL(location.href).searchParams;
   state = { q: params.get("q") || "", cat: params.get("cat") || "all", subcat: params.get('subcat') || '', tag: params.get("tag") || "", format: params.get("format") || "all", sort: params.get("sort") || "default" };
-  if (!categories.has(state.cat)) state.cat = "all";
-  if (!subcategories.some(s=>s.parent===state.cat&&s.id===state.subcat)) state.subcat='';
-  if (!["all", "pdf", "epub"].includes(state.format)) state.format = "all";
-  if (!["default", "title", "year", "size"].includes(state.sort)) state.sort = "default";
-  if (!books.some(book => inCategory(book,state.cat) && (!state.subcat||bookSubcategories(book).includes(state.subcat)) && book.tags.includes(state.tag))) state.tag = "";
+  state=model.normalizeState(state);
+  if(!books.some(book=>inCategory(book,state.cat)&&(!state.subcat||bookSubcategories(book).includes(state.subcat))&&model.tagsOf(book).includes(state.tag)))state.tag="";
   $("search").value = state.q;
   $("format").value = state.format;
   $("sort").value = state.sort;
@@ -147,21 +152,24 @@ function filterButton(text, value, className, selected, onClick) {
 }
 
 function renderCategories() {
-  const options = new Map([["all", "全部资料"], ...categories]);
-  $("categories").replaceChildren(...Array.from(options, ([cat, name]) => {
-    const count = books.filter(book => inCategory(book,cat)).length;
-    const button = filterButton(name, cat, "category", state.cat === cat, () => {
-      state.cat = cat;
-      state.subcat = '';
-      state.tag = "";
-      $("categories").querySelectorAll("button").forEach(item => item.setAttribute("aria-pressed", String(item.dataset.value === cat)));
-      renderSubcategories();renderTags();
-      render();
-      saveState();
+  const make=(cat,name)=>{
+    const count=books.filter(book=>inCategory(book,cat)).length;
+    const button=filterButton(name,cat,"category",state.cat===cat,()=>{
+      state.cat=cat;state.subcat='';state.tag='';$("tagSearch").value='';
+      $("categories").querySelectorAll("button").forEach(item=>item.setAttribute("aria-pressed",String(item.dataset.value===cat)));
+      if(matchMedia("(max-width: 800px)").matches){$("subjectDetails").open=false;$("subjectDetails").querySelector("summary").focus();}
+      renderSubcategories();renderTags();render();saveState();
     });
-    button.append(node("span", "category-count", String(count)));
-    return button;
-  }));
+    button.append(node("span","category-count",String(count)));return button;
+  };
+  const used=new Set(),groups=categoryGroups.map(group=>{
+    const section=node('div','category-group');section.append(node('h2','',group.name));
+    const list=node('div','category-list');
+    for(const cat of group.ids)if(categories.has(cat)&&!used.has(cat)){list.append(make(cat,categories.get(cat)));used.add(cat);}
+    section.append(list);return section;
+  });
+  const remaining=[...categories].filter(([id])=>!used.has(id)).map(([id,name])=>make(id,name));
+  $("categories").replaceChildren(make('all','全部资料'),...groups,...remaining);
 }
 
 function renderSubcategories() {
@@ -176,16 +184,22 @@ function renderSubcategories() {
 }
 
 function renderTags() {
-  const tags = [...new Set(books.filter(book => inCategory(book,state.cat)&&(!state.subcat||bookSubcategories(book).includes(state.subcat))).flatMap(book => book.tags))];
-  $("tagSummary").textContent = `主题标签（${tags.length}）`;
-  $("selectedTag").textContent = state.tag || "全部标签";
-  $("tagFilter").replaceChildren(...["", ...tags].map(tag => filterButton(tag || "全部标签", tag, "tag-chip", state.tag === tag, () => {
-    state.tag = tag;
-    $("selectedTag").textContent = tag || "全部标签";
-    $("tagFilter").querySelectorAll("button").forEach(item => item.setAttribute("aria-pressed", String(item.dataset.value === tag)));
-    render();
-    saveState();
-  })));
+  const groups=model.tagGroups(books,state,$("tagSearch").value.trim());
+  const allCount=model.tagGroups(books,state).reduce((n,g)=>n+g.tags.length,0);
+  $("tagSummary").textContent="按标签细分（"+allCount+"）";
+  $("selectedTag").textContent=state.tag||"机构、主题、用途";
+  const select=tag=>{
+    state.tag=tag;renderTags();render();saveState();
+    [...$("tagFilter").querySelectorAll('button')].find(b=>b.dataset.value===tag)?.focus();
+  };
+  const sections=groups.map(group=>{
+    const section=node('section','facet-group');section.append(node('h3','',group.name));
+    const list=node('div','facet-options');
+    for(const {tag,count}of group.tags){const button=filterButton(tag,tag,'tag-chip',state.tag===tag,()=>select(tag));button.append(node('span','tag-count',String(count)));list.append(button);}
+    section.append(list);return section;
+  });
+  $("tagFilter").replaceChildren(filterButton('全部标签','','tag-chip',!state.tag,()=>select('')),...sections);
+  if(!groups.length)$("tagFilter").append(node('p','muted','当前条件下没有匹配的标签。'));
 }
 
 function sizeBytes(book) {
@@ -197,8 +211,9 @@ function sizeBytes(book) {
 function bookCard(book) {
   const card = node("article", "book");
   card.dataset.id = book.id;
+  card.dataset.subject=book.cat;
   const top = node("div", "book-top");
-  top.append(node("span", "", bookCategories(book).map(c=>categories.get(c)||book.catName).join(' · ')), node("span", "book-number", String(books.indexOf(book) + 1).padStart(2, "0")));
+  top.append(node("span","",bookCategories(book).map(c=>categories.get(c)||book.catName).join(' / ')));
   const meta = node("div", "meta");
   const labels = [book.format.toUpperCase(), book.size];
   if (Number.isInteger(book.pages) && book.pages > 0 && book.format === "pdf") labels.push(`${book.pages} 页`);
@@ -211,7 +226,7 @@ function bookCard(book) {
   preview.addEventListener("click", () => previewBook(book));
   actions.append(preview);
   if (book.ownerAccess) {
-    for (const [key,label,css] of [['view','本人查看原件','owner-view'],['download','本人下载原件','owner-download']]) {
+    for (const [key,label,css] of [['view','查看原件','owner-view'],['download','本人下载','owner-download']]) {
       const link=node('a',css,label);link.href=book.ownerAccess[key];link.target='_blank';link.rel='noopener noreferrer';
       link.setAttribute('aria-label',`${label}《${book.title}》（GitHub 验证权限）`);actions.append(link);
     }
@@ -226,24 +241,34 @@ function bookCard(book) {
   const shape = document.createElementNS("http://www.w3.org/2000/svg", "path");
   shape.setAttribute("d", "M7 10V7a5 5 0 0 1 10 0v3M6 10h12v11H6zM12 14v3");
   icon.append(shape);
-  access.append(icon, node("span", "", "原件已锁定"));
-  card.append(top, node("h3", "", book.title), node("p", "author", book.author), node("p", "desc", book.desc), meta, node("p", "book-tags", book.tags.join(" · ")), access, actions);
-  card.append(node("p", "format-note", `访客试读前 ${book.previewImages.length} 页${book.ownerAccess?' · 本人入口由 GitHub 验证权限':' · 完整文件保持私有'}`));
+  access.append(icon,node("span","","完整原件仅本人可用"));
+  const details=node('details','book-details');
+  details.append(node('summary','','简介与标签'),node('p','desc',book.desc));
+  const bookTags=node('div','book-tags');
+  for(const tag of model.tagsOf(book)){
+    const button=filterButton(tag,tag,'book-tag',false,()=>{
+      state.tag=tag;state.q='';$('search').value='';$('tagSearch').value='';
+      renderTags();render();saveState();$('resultsTitle').scrollIntoView({block:'start'});$('search').focus({preventScroll:true});
+    });bookTags.append(button);
+  }
+  details.append(bookTags);
+  const heading=node('div','book-heading');
+  heading.append(top,node("h3","",book.title),node("p","author",book.author));
+  const branches=bookSubcategories(book).map(id=>subcategories.find(s=>s.id===id)?.name).filter(Boolean);
+  if(branches.length)heading.append(node('p','book-branches',branches.join(' / ')));
+  card.append(heading,meta,details,access,actions);
+  card.append(node("p","format-note","访客试读 "+book.previewImages.length+" 页"+(book.ownerAccess?"；本人入口验证 GitHub 权限":"；完整文件保持私有")));
 
   return card;
 }
 
 function render() {
   if (!loaded) return;
-  const terms = state.q.trim().normalize("NFKC").toLocaleLowerCase().split(/\s+/).filter(Boolean);
-  const filtered = books.filter(book => {
-    if (!inCategory(book,state.cat)) return false;
-    if (state.subcat && !bookSubcategories(book).includes(state.subcat)) return false;
-    if (state.tag && !book.tags.includes(state.tag)) return false;
-    if (state.format !== "all" && book.format !== state.format) return false;
-    const haystack = [book.title, ...(book.searchTitles || [])].join(" ").normalize("NFKC").toLocaleLowerCase();
-    return terms.every(term => haystack.includes(term));
-  });
+  const filtered=books.filter(book=>model.matches(book,state));
+  if(state.sort==='default'){
+    const rank=[...categories.keys()];
+    filtered.sort((a,b)=>(state.cat==='all'?rank.indexOf(a.cat)-rank.indexOf(b.cat):0)||a.title.localeCompare(b.title,'zh-CN'));
+  }
   if (state.sort === "title") filtered.sort((a, b) => a.title.localeCompare(b.title, "zh-CN"));
   if (state.sort === "year") filtered.sort((a, b) => (b.year || 0) - (a.year || 0));
   if (state.sort === "size") filtered.sort((a, b) => sizeBytes(a) - sizeBytes(b));
@@ -253,7 +278,21 @@ function render() {
   const emptySubcategory=state.subcat&&!books.some(b=>inCategory(b,state.cat)&&bookSubcategories(b).includes(state.subcat));
   $("emptyStateTitle").textContent = emptySubcategory ? `${subcategories.find(s=>s.id===state.subcat)?.name}暂未添加书籍` : emptyCategory ? `${categories.get(state.cat)}暂未添加书籍` : "还没有找到匹配的资料";
   $("emptyStateHint").textContent = emptyCategory ? "分类已建立，添加对应书籍后会显示在这里。" : "试试更短的关键词，或重置分类、格式和标签。";
-  $("stats").textContent = `共 ${books.length} 份资料 · 当前显示 ${filtered.length} 份`;
+  $("stats").textContent="当前 "+filtered.length+" 份 / 全架 "+books.length+" 份";
+  const categoryName=categories.get(state.cat)||'全部资料';
+  $("currentCategory").textContent=categoryName;
+  $("resultsTitle").textContent=state.subcat?categoryName+" / "+subcategories.find(s=>s.id===state.subcat).name:categoryName;
+  const active=[];
+  const add=(label,key)=>active.push(filterButton(label+" ×",key,'active-filter',false,()=>{
+    state[key]=key==='cat'||key==='format'?'all':key==='sort'?'default':'';
+    if(key==='cat'){state.subcat='';state.tag='';}if(key==='subcat')state.tag='';
+    $("search").value=state.q;$("format").value=state.format;$("sort").value=state.sort;
+    renderCategories();renderSubcategories();renderTags();render();saveState();$("search").focus();
+  }));
+  if(state.q)add("搜索："+state.q,'q');
+  if(state.tag)add(state.tag,'tag');
+  if(state.format!=='all')add(state.format.toUpperCase(),'format');
+  $("activeFilters").replaceChildren(...active);$("activeFilters").hidden=!active.length;
 }
 
 function previewBook(book) {
@@ -282,10 +321,12 @@ $("previewModal").addEventListener("click", event => {
   const rect = event.target.getBoundingClientRect();
   if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) event.target.close();
 });
-$("search").addEventListener("input", event => { state.q = event.target.value; render(); saveState(); });
-$("clearSearch").addEventListener("click", () => { state.q = ""; $("search").value = ""; render(); saveState(); $("search").focus(); });
-for (const id of ["format", "sort"]) $(id).addEventListener("change", event => { state[id] = event.target.value; render(); saveState(); });
+$("search").addEventListener("input", event => { state.q = event.target.value; renderTags();render(); saveState(); });
+$("clearSearch").addEventListener("click", () => { state.q = ""; $("search").value = ""; renderTags();render(); saveState(); $("search").focus(); });
+for (const id of ["format", "sort"]) $(id).addEventListener("change", event => { state[id] = event.target.value; renderTags();render(); saveState(); });
+$("tagSearch").addEventListener("input",renderTags);
 function resetFilters() {
+  $("tagSearch").value="";
   state = { q: "", cat: "all", subcat: "", tag: "", format: "all", sort: "default" };
   $("search").value = "";
   $("format").value = "all";
@@ -295,5 +336,7 @@ function resetFilters() {
 $("resetFilters").addEventListener("click", resetFilters);
 $("emptyReset").addEventListener("click", resetFilters);
 $("retryLoad").addEventListener("click", loadBooks);
+const narrowScreen=matchMedia('(max-width: 800px)');
+narrowScreen.addEventListener('change',event=>{$('subjectDetails').open=!event.matches;});
 window.addEventListener("popstate", () => { if (loaded) { readState(); renderCategories();renderSubcategories(); renderTags(); render(); } });
 loadBooks();

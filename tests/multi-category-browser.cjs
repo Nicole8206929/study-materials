@@ -20,7 +20,9 @@ const catalogue=require('../books.json');
      await page.goto(`http://127.0.0.1:8769/?cat=${cat}`);
      await page.locator(`[data-id="${book.id}"]`).waitFor({timeout:5000});
      assert.equal(await page.locator(`[data-id="${book.id}"]`).count(),1);
+     await page.locator('#subjectDetails summary').click();
      assert.equal(await page.locator(`.category[data-value="${cat}"] .category-count`).innerText(),String(fixture.books.filter(b=>(b.cats||[b.cat]).includes(cat)).length));
+     await page.locator('#subjectDetails summary').click();
      await page.locator('#search').fill(book.title);assert(await page.locator(`[data-id="${book.id}"]`).isVisible());
     }
     for(const child of ['analysis','algebra']){

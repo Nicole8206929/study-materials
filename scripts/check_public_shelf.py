@@ -33,11 +33,21 @@ def validate():
         assert isinstance(category['name'], str) and category['name'].strip()
         assert category['id'] not in category_names, 'Duplicate category ID'
         category_names[category['id']] = category['name']
+    assert len(set(category_names.values())) == len(category_names), 'Duplicate category name'
+    if data.get('categoryGroups'):
+        grouped = [id for group in data['categoryGroups'] for id in group['ids']]
+        assert len(grouped) == len(set(grouped)) and set(grouped) == set(category_names), 'Invalid category groups'
+    for legacy, target in data.get('categoryAliases', {}).items():
+        assert legacy not in category_names and target['cat'] in category_names, 'Invalid category alias'
     ids = set()
     subcategories=data.get('subcategories',[])
     assert len({s['id'] for s in subcategories})==len(subcategories),'Duplicate subcategory'
     for sub in subcategories:
         assert sub['parent'] in category_names and re.fullmatch(r'[a-z][a-z0-9-]*',sub['id']) and sub['name'].strip(), 'Invalid subcategory'
+    for legacy, target in data.get('subcategoryAliases', {}).items():
+        assert legacy not in {s['id'] for s in subcategories} and target['subcat'] in {s['id'] for s in subcategories}, 'Invalid subcategory alias'
+    for b in data['books']:
+        assert len(b['tags'])==len(set(b['tags'])), 'Duplicate book tag'
     images = set()
     for book in data['books']:
         assert all(isinstance(book.get(key),str) and book[key].strip()
