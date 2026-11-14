@@ -7459,6 +7459,67 @@
         "view": "https://github.com/Nicole8206929/study-materials-originals/blob/1daf1352c34c6de46115495624278e24876372bc/%E5%BF%83%E7%90%86%E9%87%91%E8%9E%8D%E4%B9%A6%E7%B1%8D/FinancialAccounting_Jonick.pdf",
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/1daf1352c34c6de46115495624278e24876372bc/%E5%BF%83%E7%90%86%E9%87%91%E8%9E%8D%E4%B9%A6%E7%B1%8D/FinancialAccounting_Jonick.pdf"
       }
+    },
+    {
+      "id": "qf-backtest-overfitting",
+      "title": "The Probability of Backtest Overfitting",
+      "author": "David H. Bailey、Jonathan M. Borwein、Marcos López de Prado、Qiji Jim Zhu",
+      "cat": "finance",
+      "catName": "金融",
+      "cats": [
+        "finance",
+        "university-math"
+      ],
+      "subcat": "probability-statistics",
+      "subcats": [
+        "probability-statistics"
+      ],
+      "desc": "研究从多组交易策略回测中挑选最优结果时的过拟合概率，给出组合对称交叉验证（CSCV）估计方法。加州大学 eScholarship 收录的 2015 年 2 月修订稿，论文于 2017 年发表。",
+      "year": 2017,
+      "format": "PDF",
+      "bytes": 1277113,
+      "pages": 35,
+      "size": "1.2 MB",
+      "tags": [
+        "量化金融",
+        "回测过拟合",
+        "交叉验证",
+        "概率与统计",
+        "研究论文",
+        "CC BY-NC 4.0"
+      ],
+      "searchTitles": [
+        "回测过拟合的概率",
+        "回测过拟合概率",
+        "PBO",
+        "CSCV",
+        "Bailey",
+        "Borwein",
+        "López de Prado",
+        "Zhu",
+        "10.21314/JCF.2016.322"
+      ],
+      "preview": {
+        "images": [
+          "previews/qf-backtest-overfitting/page-001.webp",
+          "previews/qf-backtest-overfitting/page-002.webp",
+          "previews/qf-backtest-overfitting/page-003.webp",
+          "previews/qf-backtest-overfitting/page-004.webp",
+          "previews/qf-backtest-overfitting/page-005.webp",
+          "previews/qf-backtest-overfitting/page-006.webp",
+          "previews/qf-backtest-overfitting/page-007.webp",
+          "previews/qf-backtest-overfitting/page-008.webp",
+          "previews/qf-backtest-overfitting/page-009.webp",
+          "previews/qf-backtest-overfitting/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 35
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/b3caf39d1cd65189a317fd886700cb1f31f565fb/%E5%BF%83%E7%90%86%E9%87%91%E8%9E%8D%E4%B9%A6%E7%B1%8D/The_Probability_of_Backtest_Overfitting.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/b3caf39d1cd65189a317fd886700cb1f31f565fb/%E5%BF%83%E7%90%86%E9%87%91%E8%9E%8D%E4%B9%A6%E7%B1%8D/The_Probability_of_Backtest_Overfitting.pdf"
+      }
     }
   ],
   "subcategories": [
