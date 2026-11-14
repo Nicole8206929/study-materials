@@ -57,6 +57,10 @@
     {
       "id": "english",
       "name": "英语"
+    },
+    {
+      "id": "artificial-intelligence",
+      "name": "人工智能"
     }
   ],
   "books": [
@@ -6994,6 +6998,102 @@
         "provider": "github-private",
         "view": "https://github.com/Nicole8206929/study-materials-originals/blob/cd55264/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/OptionsFuturesDerivatives_Hull.pdf",
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/cd55264/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/OptionsFuturesDerivatives_Hull.pdf"
+      }
+    },
+    {
+      "id": "eng-gaopin8000",
+      "title": "高频8000金融银行英语词汇随身带",
+      "author": "刘志芳、修文乔、戴卫平",
+      "cat": "english",
+      "catName": "英语",
+      "desc": "金融银行高频英语词汇随身手册：情景式＋归类记忆法，覆盖银行、证券、保险、外汇等业务高频词条，便携速查，附外教朗读音频。",
+      "pages": 397,
+      "size": "53.9 MB",
+      "year": 2016,
+      "format": "PDF",
+      "bytes": 53880244,
+      "tags": [
+        "金融英语",
+        "银行英语",
+        "词汇",
+        "随身带",
+        "中文教材"
+      ],
+      "searchTitles": [
+        "高频8000",
+        "金融银行英语词汇",
+        "Top 8000 Vocabulary",
+        "高频8000金融银行英语词汇随身带"
+      ],
+      "preview": {
+        "images": [
+          "previews/eng-gaopin8000/page-001.webp",
+          "previews/eng-gaopin8000/page-002.webp",
+          "previews/eng-gaopin8000/page-003.webp",
+          "previews/eng-gaopin8000/page-004.webp",
+          "previews/eng-gaopin8000/page-005.webp",
+          "previews/eng-gaopin8000/page-006.webp",
+          "previews/eng-gaopin8000/page-007.webp",
+          "previews/eng-gaopin8000/page-008.webp",
+          "previews/eng-gaopin8000/page-009.webp",
+          "previews/eng-gaopin8000/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 397
+      },
+      "subcats": [],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/aab01d3bb49a57f1ff555ead5ec4a0a5bdc5b221/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87/%E9%AB%98%E9%A2%918000%E9%87%91%E8%9E%8D%E9%93%B6%E8%A1%8C%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87%E9%9A%8F%E8%BA%AB%E5%B8%A6.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/aab01d3bb49a57f1ff555ead5ec4a0a5bdc5b221/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87/%E9%AB%98%E9%A2%918000%E9%87%91%E8%9E%8D%E9%93%B6%E8%A1%8C%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87%E9%9A%8F%E8%BA%AB%E5%B8%A6.pdf"
+      }
+    },
+    {
+      "id": "eng-mathdict",
+      "title": "英汉数学词汇（第三版）",
+      "author": "张鸿林、葛显良",
+      "cat": "english",
+      "catName": "英语",
+      "desc": "英汉数学名词术语权威词典（第三版）：收录纯粹数学与应用数学各分支常见、重要及近年新增术语六万余条，书末附数学家译名表，数学专业必备工具书。",
+      "pages": 793,
+      "size": "13.9 MB",
+      "year": 2018,
+      "format": "PDF",
+      "bytes": 13865677,
+      "tags": [
+        "数学词汇",
+        "英汉词典",
+        "专业术语",
+        "工具书",
+        "第三版"
+      ],
+      "searchTitles": [
+        "英汉数学词汇",
+        "English-Chinese Dictionary of Mathematics",
+        "数学名词",
+        "英汉数学词汇（第三版）"
+      ],
+      "preview": {
+        "images": [
+          "previews/eng-mathdict/page-001.webp",
+          "previews/eng-mathdict/page-002.webp",
+          "previews/eng-mathdict/page-003.webp",
+          "previews/eng-mathdict/page-004.webp",
+          "previews/eng-mathdict/page-005.webp",
+          "previews/eng-mathdict/page-006.webp",
+          "previews/eng-mathdict/page-007.webp",
+          "previews/eng-mathdict/page-008.webp",
+          "previews/eng-mathdict/page-009.webp",
+          "previews/eng-mathdict/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 793
+      },
+      "subcats": [],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/aab01d3bb49a57f1ff555ead5ec4a0a5bdc5b221/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87/%E8%8B%B1%E6%B1%89%E6%95%B0%E5%AD%A6%E8%AF%8D%E6%B1%87%E7%AC%AC%E4%B8%89%E7%89%88.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/aab01d3bb49a57f1ff555ead5ec4a0a5bdc5b221/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87/%E8%8B%B1%E6%B1%89%E6%95%B0%E5%AD%A6%E8%AF%8D%E6%B1%87%E7%AC%AC%E4%B8%89%E7%89%88.pdf"
       }
     }
   ],
