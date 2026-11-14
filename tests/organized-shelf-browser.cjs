@@ -34,6 +34,8 @@ const data=require('../books.json');
    await page.locator('#search').fill('Quantitative Trading');assert.equal(await page.locator('.book[data-id="qf-quanttrading"] .owner-download').getAttribute('href'),data.books.find(b=>b.id==='qf-quanttrading').ownerAccess.download);
    await page.goto('http://127.0.0.1:8782/upload.html?legacyUpload=1&cat=statistics');await page.waitForSelector('#uploadSubcategories input[value="probability-statistics"]');
    assert(await page.locator('#uploadCategories input[value="university-math"]').isChecked());assert(await page.locator('#uploadSubcategories input[value="probability-statistics"]').isChecked());
+   await page.goto('http://127.0.0.1:8782/upload.html?legacyUpload=1&cat=artificial-intelligence');await page.waitForSelector('#uploadCategories input[value="artificial-intelligence"]');
+   assert.equal(new URL(page.url()).searchParams.get('cat'),'artificial-intelligence');assert(await page.locator('#uploadCategories input[value="artificial-intelligence"]').isChecked());
    assert.deepEqual(errors,[]);console.log('PASS '+engine+': organized mobile catalogue, legacy URLs, contextual tags, unique search, original download, preview, upload aliases and accessibility.');
   }finally{await browser.close();}
  }

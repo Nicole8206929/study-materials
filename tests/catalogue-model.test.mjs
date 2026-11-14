@@ -5,7 +5,7 @@ import {createCatalogueModel} from '../tools/catalogue-model.mjs';
 const data=JSON.parse(readFileSync(new URL('../books.json',import.meta.url))),model=createCatalogueModel(data);
 test('legacy subjects and geometry resolve without creating duplicate categories',()=>{
  assert.equal(model.normalizeState({cat:'statistics'}).subcat,'probability-statistics');
- assert.equal(model.normalizeState({cat:'artificial-intelligence'}).cat,'computer-science');
+ assert.equal(model.normalizeState({cat:'artificial-intelligence'}).cat,'artificial-intelligence');
  const s=model.normalizeState({cat:'university-math',subcat:'differential-geometry'});
  assert.equal(s.subcat,'geometry-topology');assert.equal(s.tag,'微分几何');
  assert(model.matches(data.books.find(b=>b.id==='bd-eb7d47b1ac45'),s));

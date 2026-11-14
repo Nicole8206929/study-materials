@@ -2732,57 +2732,6 @@
       "subcat": "algebra"
     },
     {
-      "id": "bd-72ae7597c9f4",
-      "title": "A Course in Functional Analysis（GTM 96）",
-      "author": "John B. Conway",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "desc": "泛函分析教材，GTM 第 96 卷。此单册与现有 GTM 合订本分别保留。",
-      "pages": 419,
-      "size": "33.7 MB",
-      "year": null,
-      "format": "PDF",
-      "bytes": 33677623,
-      "tags": [
-        "领军资料",
-        "分析",
-        "泛函分析",
-        "GTM"
-      ],
-      "searchTitles": [
-        "(GTM096)A Course in Functional Analysis",
-        "A Course in Functional Analysis（GTM 96）"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-72ae7597c9f4/page-001.webp",
-          "previews/bd-72ae7597c9f4/page-002.webp",
-          "previews/bd-72ae7597c9f4/page-003.webp",
-          "previews/bd-72ae7597c9f4/page-004.webp",
-          "previews/bd-72ae7597c9f4/page-005.webp",
-          "previews/bd-72ae7597c9f4/page-006.webp",
-          "previews/bd-72ae7597c9f4/page-007.webp",
-          "previews/bd-72ae7597c9f4/page-008.webp",
-          "previews/bd-72ae7597c9f4/page-009.webp",
-          "previews/bd-72ae7597c9f4/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 419
-      },
-      "subcats": [
-        "analysis"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E9%AB%98%E5%B9%B4%E7%BA%A7%E5%88%86%E6%9E%90%E5%AD%A6/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%28GTM096%29A%20Course%20in%20Functional%20Analysis.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E9%AB%98%E5%B9%B4%E7%BA%A7%E5%88%86%E6%9E%90%E5%AD%A6/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%28GTM096%29A%20Course%20in%20Functional%20Analysis.pdf"
-      },
-      "cats": [
-        "university-math"
-      ],
-      "subcat": "analysis"
-    },
-    {
       "id": "bd-ac70ba6c42a2",
       "title": "Abstract Algebra（第3版，Dummit & Foote）",
       "author": "David S. Dummit / Richard M. Foote",
@@ -3336,7 +3285,7 @@
       "title": "GTM 数学资料",
       "author": "原资料作者（见各册）",
       "catName": "大学数学",
-      "desc": "GTM 系列及关联资料共 29 册，按卷号合订。新增 GTM047、082、139、153、208、218、223，涵盖代数、分析、拓扑、微分几何、概率与应用数学。正文和原书签保留；GTM045 文件实际为 Loève《Probability Theory》第3版关联旧版，GTM275 为第1—6章中文译稿。",
+      "desc": "GTM 系列及关联资料共 31 册，按卷号合订。本次补入 GTM 95 Shiryaev《Probability》第二版、GTM 96 Conway《A Course in Functional Analysis》第一版，涵盖分析、代数、几何与拓扑、概率与统计及应用数学。原文、原书签与内部跳转保留；GTM045 文件实际为 Loève《Probability Theory》第3版关联旧版，GTM275 为第1—6章中文译稿。",
       "year": null,
       "tags": [
         "GTM",
@@ -3349,7 +3298,8 @@
         "应用数学",
         "领军资料",
         "分析",
-        "Springer"
+        "Springer",
+        "泛函分析"
       ],
       "searchTitles": [
         "GTM 数学资料",
@@ -3591,10 +3541,30 @@
         "应用数学",
         "领军资料",
         "分析",
-        "Springer"
+        "Springer",
+        "Probability",
+        "Shiryaev",
+        "概率",
+        "GTM 95",
+        "GTM95",
+        "GTM095",
+        "Probability Shiryaev",
+        "Albert N. Shiryaev",
+        "GTM095_Probability_Shiryaev.pdf",
+        "gtm-095",
+        "GTM 095",
+        "(GTM096)A Course in Functional Analysis",
+        "A Course in Functional Analysis（GTM 96）",
+        "John B. Conway",
+        "(GTM096)A Course in Functional Analysis.pdf",
+        "bd-72ae7597c9f4",
+        "GTM096",
+        "GTM 096",
+        "GTM96",
+        "GTM 96"
       ],
-      "bytes": 661261284,
-      "size": "630.6 MB",
+      "bytes": 734710335,
+      "size": "700.7 MB",
       "format": "PDF",
       "cat": "university-math",
       "cats": [
@@ -3609,10 +3579,10 @@
       ],
       "ownerAccess": {
         "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/gtm-extended-20261112",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/gtm-extended-20261112/library-37ad763e25cdbbd8c1e2ce2c2c7ebfe6bd5dade9fb7acc80a6ae02095b782826.pdf"
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/gtm-extended-20261114",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/gtm-extended-20261114/library-17c689bb1ae556330acf260489a049538718c6905088696083024fa6915574dc.pdf"
       },
-      "pages": 12135,
+      "pages": 13190,
       "preview": {
         "images": [
           "previews/upload-737626449/page-001.webp",
@@ -3627,7 +3597,7 @@
           "previews/upload-737626449/page-010.webp"
         ],
         "pageCount": 10,
-        "sourcePageCount": 12135
+        "sourcePageCount": 13190
       },
       "subcat": "algebra"
     },
@@ -7557,11 +7527,15 @@
         "数学分析",
         "高等代数",
         "抽象代数",
-        "习题与解答"
+        "习题与解答",
+        "水手练习题集",
+        "中文重编本"
       ],
       "searchTitles": [
         "水手练习题集",
-        "水手练习题集_中文重编本.pdf"
+        "水手练习题集_中文重编本.pdf",
+        "水手练习题集：思路与多种解答",
+        "大力水手爱潜水"
       ],
       "preview": {
         "images": [
@@ -7583,59 +7557,6 @@
         "provider": "github-private",
         "view": "https://github.com/Nicole8206929/study-materials-originals/blob/f79f7586d91948c15ba9d43d03b224a7898192ad/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%B0%B4%E6%89%8B%E7%BB%83%E4%B9%A0%E9%A2%98%E9%9B%86_%E4%B8%AD%E6%96%87%E9%87%8D%E7%BC%96%E6%9C%AC.pdf",
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/f79f7586d91948c15ba9d43d03b224a7898192ad/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%B0%B4%E6%89%8B%E7%BB%83%E4%B9%A0%E9%A2%98%E9%9B%86_%E4%B8%AD%E6%96%87%E9%87%8D%E7%BC%96%E6%9C%AC.pdf"
-      }
-    },
-    {
-      "id": "gtm-095",
-      "title": "Probability",
-      "author": "Albert N. Shiryaev",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "desc": "概率论（GTM 95，第二版，R.P. Boas 英译，636 页）：测度论概率、随机变量、条件概率、随机过程与极限定理，Shiryaev 经典研究生教材。",
-      "pages": 636,
-      "size": "40.4 MB",
-      "year": 1996,
-      "format": "PDF",
-      "bytes": 40393344,
-      "tags": [
-        "GTM",
-        "Springer",
-        "研究生教材",
-        "概率与统计",
-        "英文原版"
-      ],
-      "searchTitles": [
-        "Probability",
-        "Shiryaev",
-        "概率",
-        "GTM 95",
-        "GTM95",
-        "GTM095",
-        "Probability Shiryaev"
-      ],
-      "preview": {
-        "images": [
-          "previews/gtm-095/page-001.webp",
-          "previews/gtm-095/page-002.webp",
-          "previews/gtm-095/page-003.webp",
-          "previews/gtm-095/page-004.webp",
-          "previews/gtm-095/page-005.webp",
-          "previews/gtm-095/page-006.webp",
-          "previews/gtm-095/page-007.webp",
-          "previews/gtm-095/page-008.webp",
-          "previews/gtm-095/page-009.webp",
-          "previews/gtm-095/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 636
-      },
-      "subcats": [
-        "probability-statistics"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/49822f595a0dc87264036ad18ffca276408d1832/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM095_Probability_Shiryaev.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/49822f595a0dc87264036ad18ffca276408d1832/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM095_Probability_Shiryaev.pdf"
       }
     }
   ],
@@ -7757,7 +7678,8 @@
         "松松饼",
         "高新雨",
         "曹知秋",
-        "数学奥林匹克小丛书"
+        "数学奥林匹克小丛书",
+        "水手练习题集"
       ]
     },
     {
@@ -7802,7 +7724,9 @@
         "随身带",
         "工程实践",
         "雅思",
-        "高中英语"
+        "高中英语",
+        "习题与解答",
+        "中文重编本"
       ]
     }
   ]

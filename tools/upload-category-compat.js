@@ -2,7 +2,6 @@
 (() => {
   const url=new URL(location.href),cat=url.searchParams.get('cat'),subcat=url.searchParams.get('subcat');let changed=false;
   if(cat==='statistics'){url.searchParams.set('cat','university-math');url.searchParams.set('subcat','probability-statistics');changed=true;}
-  if(cat==='artificial-intelligence'){url.searchParams.set('cat','computer-science');changed=true;}
   if(subcat==='differential-geometry'){url.searchParams.set('subcat','geometry-topology');changed=true;}
   if(changed)history.replaceState(null,'',url);
 })();
