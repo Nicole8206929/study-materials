@@ -7572,6 +7572,59 @@
         "view": "https://github.com/Nicole8206929/study-materials-originals/blob/f79f7586d91948c15ba9d43d03b224a7898192ad/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%B0%B4%E6%89%8B%E7%BB%83%E4%B9%A0%E9%A2%98%E9%9B%86_%E4%B8%AD%E6%96%87%E9%87%8D%E7%BC%96%E6%9C%AC.pdf",
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/f79f7586d91948c15ba9d43d03b224a7898192ad/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%B0%B4%E6%89%8B%E7%BB%83%E4%B9%A0%E9%A2%98%E9%9B%86_%E4%B8%AD%E6%96%87%E9%87%8D%E7%BC%96%E6%9C%AC.pdf"
       }
+    },
+    {
+      "id": "gtm-095",
+      "title": "Probability",
+      "author": "Albert N. Shiryaev",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "概率论（GTM 95，第二版，R.P. Boas 英译，636 页）：测度论概率、随机变量、条件概率、随机过程与极限定理，Shiryaev 经典研究生教材。",
+      "pages": 636,
+      "size": "40.4 MB",
+      "year": 1996,
+      "format": "PDF",
+      "bytes": 40393344,
+      "tags": [
+        "GTM",
+        "Springer",
+        "研究生教材",
+        "概率与统计",
+        "英文原版"
+      ],
+      "searchTitles": [
+        "Probability",
+        "Shiryaev",
+        "概率",
+        "GTM 95",
+        "GTM95",
+        "GTM095",
+        "Probability Shiryaev"
+      ],
+      "preview": {
+        "images": [
+          "previews/gtm-095/page-001.webp",
+          "previews/gtm-095/page-002.webp",
+          "previews/gtm-095/page-003.webp",
+          "previews/gtm-095/page-004.webp",
+          "previews/gtm-095/page-005.webp",
+          "previews/gtm-095/page-006.webp",
+          "previews/gtm-095/page-007.webp",
+          "previews/gtm-095/page-008.webp",
+          "previews/gtm-095/page-009.webp",
+          "previews/gtm-095/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 636
+      },
+      "subcats": [
+        "probability-statistics"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/49822f595a0dc87264036ad18ffca276408d1832/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM095_Probability_Shiryaev.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/49822f595a0dc87264036ad18ffca276408d1832/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM095_Probability_Shiryaev.pdf"
+      }
     }
   ],
   "subcategories": [
