@@ -7520,6 +7520,58 @@
         "view": "https://github.com/Nicole8206929/study-materials-originals/blob/b3caf39d1cd65189a317fd886700cb1f31f565fb/%E5%BF%83%E7%90%86%E9%87%91%E8%9E%8D%E4%B9%A6%E7%B1%8D/The_Probability_of_Backtest_Overfitting.pdf",
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/b3caf39d1cd65189a317fd886700cb1f31f565fb/%E5%BF%83%E7%90%86%E9%87%91%E8%9E%8D%E4%B9%A6%E7%B1%8D/The_Probability_of_Backtest_Overfitting.pdf"
       }
+    },
+    {
+      "id": "sailor-math-zh-324",
+      "title": "水手练习题集（中文重编本）",
+      "author": "大力水手爱潜水（原题编者）",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "cats": [
+        "university-math"
+      ],
+      "subcat": "analysis",
+      "subcats": [
+        "analysis",
+        "algebra"
+      ],
+      "desc": "262 道有题面的大学数学练习，涵盖数学分析、高等代数与抽象代数，附多种解法和可点击题号索引。",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 1908284,
+      "pages": 324,
+      "size": "1.8 MB",
+      "tags": [
+        "数学分析",
+        "高等代数",
+        "抽象代数",
+        "习题与解答"
+      ],
+      "searchTitles": [
+        "水手练习题集",
+        "水手练习题集_中文重编本.pdf"
+      ],
+      "preview": {
+        "images": [
+          "previews/sailor-math-zh-324/page-001.webp",
+          "previews/sailor-math-zh-324/page-002.webp",
+          "previews/sailor-math-zh-324/page-003.webp",
+          "previews/sailor-math-zh-324/page-004.webp",
+          "previews/sailor-math-zh-324/page-005.webp",
+          "previews/sailor-math-zh-324/page-006.webp",
+          "previews/sailor-math-zh-324/page-007.webp",
+          "previews/sailor-math-zh-324/page-008.webp",
+          "previews/sailor-math-zh-324/page-009.webp",
+          "previews/sailor-math-zh-324/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 324
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/f79f7586d91948c15ba9d43d03b224a7898192ad/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%B0%B4%E6%89%8B%E7%BB%83%E4%B9%A0%E9%A2%98%E9%9B%86_%E4%B8%AD%E6%96%87%E9%87%8D%E7%BC%96%E6%9C%AC.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/f79f7586d91948c15ba9d43d03b224a7898192ad/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%B0%B4%E6%89%8B%E7%BB%83%E4%B9%A0%E9%A2%98%E9%9B%86_%E4%B8%AD%E6%96%87%E9%87%8D%E7%BC%96%E6%9C%AC.pdf"
+      }
     }
   ],
   "subcategories": [
