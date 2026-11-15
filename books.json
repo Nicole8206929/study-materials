@@ -314,10 +314,10 @@
     {
       "id": "upload-735645128",
       "title": "九学资料",
-      "author": "原资料作者（见各来源）",
+      "author": "进阶九学教研组及原资料作者",
       "catName": "竞赛数学",
-      "desc": "54 份同机构、作者或系列资料合订，保留 633 页原始正文，附可点击目录与书签。",
-      "year": null,
+      "desc": "九学资料共62份，新增线性代数第1—6讲、独立的第3—4讲与第5—6讲、内积空间，以及分析代数、几何拓扑、概率统计、应用数学零试专项。不同讲次版本含有不同题目，均予保留；附可点击目录与书签。",
+      "year": 2026,
       "tags": [
         "九学",
         "同源资料合订",
@@ -461,10 +461,81 @@
         "bd-2ba0bdf51c19",
         "bd-9200f2ec848a",
         "bd-ea1b3eb59ff2",
-        "bd-e493524d534b"
+        "bd-e493524d534b",
+        "大学数学/机构资料/九学/26年春/81048c907fee7aeb44303d22b64e65f9_6698635806548788498_m_SZX-级数.pdf",
+        "大学数学/机构资料/九学/26年春/81048c907fee7aeb44303d22b64e65f9_6698635806548788498_m_代数第一讲.pdf",
+        "大学数学/机构资料/九学/26年春/81048c907fee7aeb44303d22b64e65f9_6698635806548788498_m_代数第三讲.pdf",
+        "大学数学/机构资料/九学/26年春/81048c907fee7aeb44303d22b64e65f9_6698635806548788498_m_代数第四讲.pdf",
+        "大学数学/机构资料/九学/26年春/81048c907fee7aeb44303d22b64e65f9_6698635806548788498_m_代数第七讲.pdf",
+        "大学数学/机构资料/九学/26年春/81048c907fee7aeb44303d22b64e65f9_6698635806548788498_m_代数第八讲.pdf",
+        "大学数学/机构资料/九学/26年春/81048c907fee7aeb44303d22b64e65f9_6698635806548788498_m_代数第九讲.pdf",
+        "大学数学/机构资料/九学/26年春/81048c907fee7aeb44303d22b64e65f9_6698635806548788498_m_代数讲稿2.pdf",
+        "大学数学/机构资料/九学/26年春/81048c907fee7aeb44303d22b64e65f9_6698635806548788498_m_微积分II_A9.pdf",
+        "大学数学/机构资料/九学/26年春/81048c907fee7aeb44303d22b64e65f9_6698635806548788498_m_群论第二讲.pdf",
+        "大学数学/机构资料/九学/26年春/81048c907fee7aeb44303d22b64e65f9_6698635806548788498_m_群论第三讲.pdf",
+        "大学数学/机构资料/九学/26年春/81048c907fee7aeb44303d22b64e65f9_6698635806548788498_m_群论讲稿1.pdf",
+        "大学数学/机构资料/九学/26年暑假/高等代数学习资料.pdf",
+        "线性代数讲义 (1).pdf",
+        "线性代数讲义3-4.pdf",
+        "线性代数讲义5-6.pdf",
+        "内积空间讲义.pdf",
+        "进阶九学-零试专项1.pdf",
+        "考前零试-几何与拓扑.pdf",
+        "考前零试-概率统计.pdf",
+        "零试专项-应用数学.pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟/2026-进阶九学-一试模拟1(2).pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟/2026-进阶九学-一试模拟2(2).pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟/2026-进阶九学-一试模拟3(3).pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟/2026-进阶九学-一试模拟4(3).pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟/2026-进阶九学-一试模拟5(3).pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟/2026-进阶九学-一试模拟6(4).pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟/2026-进阶九学-一试模拟7(3).pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟/2026暑期集训-模拟测试1.pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟/2026暑期集训-模拟测试2(6).pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟/2026暑期集训-模拟测试3(1).pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟/2026暑期集训-模拟测试4(4).pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟/五一集训一试模拟1.pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟/五一集训一试模拟2.pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟/五一集训一试模拟3.pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟答案/2026-进阶九学-一试模拟4解析(1).pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟答案/2026-进阶九学-一试模拟5解析.pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟答案/2026-进阶九学-一试模拟6解析.pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟答案/2026-进阶九学-一试模拟7解析.pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟答案/2026-进阶九学-一试模拟8解析.pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟答案/2026-进阶九学-一试模拟9解析.pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟答案/一试模拟1-2（解析版）(1).pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟答案/一试模拟3解析.pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟答案/九学三四答案.pdf",
+        "大学数学/机构资料/九学/模拟题/一试模拟答案/九学两次模拟答案.pdf",
+        "大学数学/机构资料/九学/模拟题/二试模拟/二试模拟-概率.pdf",
+        "大学数学/机构资料/九学/模拟题/二试模拟/二试讲义-概率.pdf",
+        "大学数学/机构资料/九学/模拟题/零试模拟/2026-进阶九学-零试模拟3(2).pdf",
+        "大学数学/机构资料/九学/模拟题/零试模拟/2026-进阶九学-零试模拟4(2).pdf",
+        "大学数学/机构资料/九学/模拟题/零试模拟/2026-进阶九学-零试模拟6(2).pdf",
+        "大学数学/机构资料/九学/模拟题/零试模拟/2026-进阶九学-零试模拟7.pdf",
+        "大学数学/机构资料/九学/模拟题/零试模拟/零试模拟1-2（学生版）(1).pdf",
+        "大学数学/机构资料/九学/模拟题/零试模拟/零试模拟14.pdf",
+        "大学数学/机构资料/九学/模拟题/零试模拟答案/2026-进阶九学-零试模拟4解析.pdf",
+        "大学数学/机构资料/九学/模拟题/零试模拟答案/2026-进阶九学-零试模拟5解析.pdf",
+        "大学数学/机构资料/九学/模拟题/零试模拟答案/2026-进阶九学-零试模拟6解析.pdf",
+        "大学数学/机构资料/九学/模拟题/零试模拟答案/2026-进阶九学-零试模拟7解析.pdf",
+        "大学数学/机构资料/九学/模拟题/零试模拟答案/2026-进阶九学-零试模拟8解析.pdf",
+        "大学数学/机构资料/九学/模拟题/零试模拟答案/进阶九学-零试模拟3解析.pdf",
+        "大学数学/机构资料/九学/模拟题/零试模拟答案/零试模拟1-2（解析版）.pdf",
+        "大学数学/机构资料/九学/模拟题/零试模拟答案/零试模拟14解析.pdf",
+        "大学数学/机构资料/九学/模拟题/零试模拟答案/（解析）北京九学-零试模拟9.pdf",
+        "线性代数讲义（第1—6讲）",
+        "线性代数讲义（第3—4讲，单独讲次版）",
+        "线性代数讲义（第5—6讲，单独讲次版）",
+        "内积空间讲义",
+        "零试专项：分析与代数",
+        "考前零试-几何与拓扑",
+        "考前零试-概率统计",
+        "零试专项-应用数学",
+        "进阶九学教研组及原资料作者"
       ],
-      "bytes": 70336676,
-      "size": "67.1 MB",
+      "bytes": 72566542,
+      "size": "69.2 MB",
       "format": "PDF",
       "cat": "competition-math",
       "cats": [
@@ -474,14 +545,16 @@
       "subcats": [
         "analysis",
         "algebra",
-        "probability-statistics"
+        "geometry-topology",
+        "probability-statistics",
+        "applied-math"
       ],
       "ownerAccess": {
         "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/origin-collections-20261111",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/origin-collections-20261111/library-a0266dffc63319b13ce9b8ec9f25cc02f882438156ad7536093e64d20eaf7467.pdf"
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/handouts-organized-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/handouts-organized-20261115/library-64d3dc82f636be01389ad45990d6df49ac6932d3db01250e11323b3df390f7b5.pdf"
       },
-      "pages": 636,
+      "pages": 845,
       "preview": {
         "images": [
           "previews/upload-735645128/page-001.webp",
@@ -496,7 +569,7 @@
           "previews/upload-735645128/page-010.webp"
         ],
         "pageCount": 10,
-        "sourcePageCount": 636
+        "sourcePageCount": 845
       },
       "subcat": "analysis"
     },
@@ -4882,10 +4955,10 @@
     {
       "id": "upload-735648158",
       "title": "李思讲义资料",
-      "author": "原资料作者（见各来源）",
+      "author": "李思",
       "catName": "大学物理",
-      "desc": "3 份同机构、作者或系列资料合订，保留 556 页原始正文，附可点击目录与书签。",
-      "year": null,
+      "desc": "李思的线性代数、代数拓扑、电磁学与几何、量子力学与几何四份讲义合订。线性代数为2024年12月更新版；保留原文和内部跳转，可在大学数学与大学物理中查找。",
+      "year": 2026,
       "tags": [
         "李思讲义",
         "同源资料合订",
@@ -4901,10 +4974,16 @@
         "Algebraic-Topology.2020",
         "bd-15410614bee5",
         "bd-5ce3f0bf42bc",
-        "bd-bc6af0714154"
+        "bd-bc6af0714154",
+        "线性代数讲义.pdf",
+        "大学数学/高年级课程/几何与拓扑/代数拓扑/Algebraic-Topology.2020.pdf",
+        "大学物理/物理/四大力学/电动力学/2_李思讲义-Electromagnetism and Geometry.pdf",
+        "大学物理/物理/四大力学/量子力学/Quantum+Mechanics+and+Geometry.pdf",
+        "线性代数（2024年12月版）",
+        "李思"
       ],
-      "bytes": 3737859,
-      "size": "3.6 MB",
+      "bytes": 5361569,
+      "size": "5.1 MB",
       "format": "PDF",
       "cat": "university-physics",
       "cats": [
@@ -4912,14 +4991,15 @@
         "university-math"
       ],
       "subcats": [
+        "algebra",
         "geometry-topology"
       ],
       "ownerAccess": {
         "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/origin-collections-20261111",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/origin-collections-20261111/library-43a4520965f97fdb431be0b2a4240c7e85550a0c93ce18ad429692017cdbc257.pdf"
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/handouts-organized-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/handouts-organized-20261115/library-1d9c4d69edbfed7a0400a6db500eddd6bfacda448e62fde8164ca43d34d2eb90.pdf"
       },
-      "pages": 558,
+      "pages": 758,
       "preview": {
         "images": [
           "previews/upload-735648158/page-001.webp",
@@ -4934,9 +5014,9 @@
           "previews/upload-735648158/page-010.webp"
         ],
         "pageCount": 10,
-        "sourcePageCount": 558
+        "sourcePageCount": 758
       },
-      "subcat": "geometry-topology"
+      "subcat": "algebra"
     },
     {
       "id": "upload-736068843",
@@ -7724,246 +7804,23 @@
       }
     },
     {
-      "id": "upload-750427213",
-      "title": "代数与数论考试复习讲义",
-      "author": "作者待补充",
-      "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
-      "bytes": 24276486,
-      "size": "23.2 MB",
-      "format": "PDF",
-      "cat": "university-math",
-      "cats": [
-        "university-math"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261115084928-3a49f93bcc7ee22c",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261115084928-3a49f93bcc7ee22c/file-f3b1f9e3-4a60-4065-8bc3-774ae2bf6d7c.pdf"
-      },
-      "pages": 542,
-      "preview": {
-        "images": [
-          "previews/upload-750427213/page-001.webp",
-          "previews/upload-750427213/page-002.webp",
-          "previews/upload-750427213/page-003.webp",
-          "previews/upload-750427213/page-004.webp",
-          "previews/upload-750427213/page-005.webp",
-          "previews/upload-750427213/page-006.webp",
-          "previews/upload-750427213/page-007.webp",
-          "previews/upload-750427213/page-008.webp",
-          "previews/upload-750427213/page-009.webp",
-          "previews/upload-750427213/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 542
-      }
-    },
-    {
-      "id": "upload-750426952",
-      "title": "优化理论 - Copy",
-      "author": "作者待补充",
-      "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
-      "bytes": 182779,
-      "size": "0.2 MB",
-      "format": "PDF",
-      "cat": "university-math",
-      "cats": [
-        "university-math"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261115084928-3a49f93bcc7ee22c",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261115084928-3a49f93bcc7ee22c/file-10f0e77e-3c00-4587-8c48-c0f755f2459a.pdf"
-      },
-      "pages": 16,
-      "preview": {
-        "images": [
-          "previews/upload-750426952/page-001.webp",
-          "previews/upload-750426952/page-002.webp",
-          "previews/upload-750426952/page-003.webp",
-          "previews/upload-750426952/page-004.webp",
-          "previews/upload-750426952/page-005.webp",
-          "previews/upload-750426952/page-006.webp",
-          "previews/upload-750426952/page-007.webp",
-          "previews/upload-750426952/page-008.webp",
-          "previews/upload-750426952/page-009.webp",
-          "previews/upload-750426952/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 16
-      }
-    },
-    {
-      "id": "upload-750426908",
-      "title": "优化理论",
-      "author": "作者待补充",
-      "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
-      "bytes": 278295,
-      "size": "0.3 MB",
-      "format": "PDF",
-      "cat": "university-math",
-      "cats": [
-        "university-math"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261115084928-3a49f93bcc7ee22c",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261115084928-3a49f93bcc7ee22c/file-695aef4f-910b-4cf1-91ad-79e0da431fd4.pdf"
-      },
-      "pages": 30,
-      "preview": {
-        "images": [
-          "previews/upload-750426908/page-001.webp",
-          "previews/upload-750426908/page-002.webp",
-          "previews/upload-750426908/page-003.webp",
-          "previews/upload-750426908/page-004.webp",
-          "previews/upload-750426908/page-005.webp",
-          "previews/upload-750426908/page-006.webp",
-          "previews/upload-750426908/page-007.webp",
-          "previews/upload-750426908/page-008.webp",
-          "previews/upload-750426908/page-009.webp",
-          "previews/upload-750426908/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 30
-      }
-    },
-    {
-      "id": "upload-750426817",
-      "title": "内积空间讲义",
-      "author": "作者待补充",
-      "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
-      "bytes": 139265,
-      "size": "0.1 MB",
-      "format": "PDF",
-      "cat": "university-math",
-      "cats": [
-        "university-math"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261115084928-3a49f93bcc7ee22c",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261115084928-3a49f93bcc7ee22c/file-0a6173fd-9901-4249-aff3-1e491968dcd8.pdf"
-      },
-      "pages": 8,
-      "preview": {
-        "images": [
-          "previews/upload-750426817/page-001.webp",
-          "previews/upload-750426817/page-002.webp",
-          "previews/upload-750426817/page-003.webp",
-          "previews/upload-750426817/page-004.webp",
-          "previews/upload-750426817/page-005.webp",
-          "previews/upload-750426817/page-006.webp",
-          "previews/upload-750426817/page-007.webp",
-          "previews/upload-750426817/page-008.webp"
-        ],
-        "pageCount": 8,
-        "sourcePageCount": 8
-      }
-    },
-    {
-      "id": "upload-750426998",
-      "title": "分析2复习资料",
-      "author": "作者待补充",
-      "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
-      "bytes": 3906943,
-      "size": "3.7 MB",
-      "format": "PDF",
-      "cat": "university-math",
-      "cats": [
-        "university-math"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261115084928-3a49f93bcc7ee22c",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261115084928-3a49f93bcc7ee22c/file-1829cf55-0bc6-481c-9979-e39aa2799302.pdf"
-      },
-      "pages": 93,
-      "preview": {
-        "images": [
-          "previews/upload-750426998/page-001.webp",
-          "previews/upload-750426998/page-002.webp",
-          "previews/upload-750426998/page-003.webp",
-          "previews/upload-750426998/page-004.webp",
-          "previews/upload-750426998/page-005.webp",
-          "previews/upload-750426998/page-006.webp",
-          "previews/upload-750426998/page-007.webp",
-          "previews/upload-750426998/page-008.webp",
-          "previews/upload-750426998/page-009.webp",
-          "previews/upload-750426998/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 93
-      }
-    },
-    {
-      "id": "upload-750426505",
-      "title": "分析与PDE复习讲义",
-      "author": "作者待补充",
-      "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
-      "bytes": 41320009,
-      "size": "39.4 MB",
-      "format": "PDF",
-      "cat": "university-math",
-      "cats": [
-        "university-math"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261115084928-3a49f93bcc7ee22c",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261115084928-3a49f93bcc7ee22c/file-0e77b018-81fc-423f-b248-19b932a6fe7b.pdf"
-      },
-      "pages": 872,
-      "preview": {
-        "images": [
-          "previews/upload-750426505/page-001.webp",
-          "previews/upload-750426505/page-002.webp",
-          "previews/upload-750426505/page-003.webp",
-          "previews/upload-750426505/page-004.webp",
-          "previews/upload-750426505/page-005.webp",
-          "previews/upload-750426505/page-006.webp",
-          "previews/upload-750426505/page-007.webp",
-          "previews/upload-750426505/page-008.webp",
-          "previews/upload-750426505/page-009.webp",
-          "previews/upload-750426505/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 872
-      }
-    },
-    {
       "id": "upload-750427519",
-      "title": "分析学",
-      "author": "作者待补充",
+      "title": "分析学：理论、例题与参考题",
+      "author": "未署名",
       "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
+      "desc": "讲义编号10000054，涵盖极限、微积分、级数、常微分方程、偏微分方程、Fourier分析、复分析、测度与泛函分析等14章，保留全部856页。",
+      "year": 2026,
+      "tags": [
+        "数学分析",
+        "微分方程",
+        "泛函分析",
+        "系统讲义"
+      ],
+      "searchTitles": [
+        "分析学.pdf",
+        "分析学",
+        "分析学：理论、例题与参考题"
+      ],
       "bytes": 31301619,
       "size": "29.9 MB",
       "format": "PDF",
@@ -7992,17 +7849,29 @@
         ],
         "pageCount": 10,
         "sourcePageCount": 856
-      }
+      },
+      "subcat": "analysis",
+      "subcats": [
+        "analysis",
+        "applied-math"
+      ]
     },
     {
       "id": "upload-750426181",
-      "title": "数值代数",
-      "author": "作者待补充",
+      "title": "数值代数讲义",
+      "author": "未署名",
       "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
+      "desc": "包括误差分析、线性方程组、矩阵分解与迭代方法等内容。保留原文，共45页。",
+      "year": 2026,
+      "tags": [
+        "数值线性代数",
+        "课程讲义"
+      ],
+      "searchTitles": [
+        "数值代数.pdf",
+        "数值代数",
+        "数值代数讲义"
+      ],
       "bytes": 350146,
       "size": "0.3 MB",
       "format": "PDF",
@@ -8031,17 +7900,29 @@
         ],
         "pageCount": 10,
         "sourcePageCount": 45
-      }
+      },
+      "subcat": "applied-math",
+      "subcats": [
+        "applied-math",
+        "algebra"
+      ]
     },
     {
       "id": "upload-750426149",
-      "title": "数值分析_不等号统一",
-      "author": "作者待补充",
+      "title": "数值分析讲义",
+      "author": "未署名",
       "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
+      "desc": "非线性方程迭代、插值与逼近、数值积分等内容。保留所传不等号统一版本，共33页。",
+      "year": 2026,
+      "tags": [
+        "数值分析",
+        "课程讲义"
+      ],
+      "searchTitles": [
+        "数值分析_不等号统一.pdf",
+        "数值分析_不等号统一",
+        "数值分析讲义"
+      ],
       "bytes": 275819,
       "size": "0.3 MB",
       "format": "PDF",
@@ -8070,23 +7951,39 @@
         ],
         "pageCount": 10,
         "sourcePageCount": 33
-      }
+      },
+      "subcat": "applied-math",
+      "subcats": [
+        "applied-math"
+      ]
     },
     {
       "id": "upload-750427450",
-      "title": "数学与物理积木_合并去重版",
-      "author": "作者待补充",
+      "title": "数学与物理积木（合并去重版）",
+      "author": "未署名",
       "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
+      "desc": "讲义编号10000007，按原有13章整理数学与物理知识，包含分析代数、几何拓扑、概率统计、应用数学、普物与四大力学等内容。完整保留所传461页版本。",
+      "year": 2026,
+      "tags": [
+        "数学与物理积木",
+        "知识整理",
+        "数学物理",
+        "理论力学",
+        "量子力学",
+        "电磁学与电动力学"
+      ],
+      "searchTitles": [
+        "数学与物理积木_合并去重版.pdf",
+        "数学与物理积木_合并去重版",
+        "数学与物理积木（合并去重版）"
+      ],
       "bytes": 3714195,
       "size": "3.5 MB",
       "format": "PDF",
       "cat": "university-math",
       "cats": [
-        "university-math"
+        "university-math",
+        "university-physics"
       ],
       "ownerAccess": {
         "provider": "github-private",
@@ -8109,465 +8006,134 @@
         ],
         "pageCount": 10,
         "sourcePageCount": 461
-      }
+      },
+      "subcat": "analysis",
+      "subcats": [
+        "analysis",
+        "algebra",
+        "geometry-topology",
+        "probability-statistics",
+        "applied-math"
+      ]
     },
     {
-      "id": "upload-750427137",
-      "title": "概率论复习讲义",
-      "author": "作者待补充",
-      "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
-      "bytes": 4287866,
-      "size": "4.1 MB",
-      "format": "PDF",
+      "id": "tengtengshe-review-notes",
+      "title": "藤藤蛇复习讲义资料",
+      "author": "藤藤蛇擅长找东西",
       "cat": "university-math",
       "cats": [
         "university-math"
       ],
+      "catName": "大学数学",
+      "subcat": "analysis",
+      "subcats": [
+        "analysis",
+        "algebra",
+        "geometry-topology",
+        "probability-statistics",
+        "applied-math"
+      ],
+      "desc": "藤藤蛇擅长找东西署名的6份复习讲义：分析2、分析与PDE、代数与数论、表示论、概率论、计算与应用数学。按基础复习到专题内容排列，完整保留2527页原文，另加2页封面与可点击目录。",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 118448120,
+      "size": "113.0 MB",
+      "tags": [
+        "藤藤蛇擅长找东西",
+        "博士资格考试",
+        "期末复习",
+        "同源资料合订"
+      ],
+      "searchTitles": [
+        "分析2复习资料.pdf",
+        "分析与PDE复习讲义.pdf",
+        "代数与数论考试复习讲义.pdf",
+        "表示论复习讲义.pdf",
+        "概率论复习讲义.pdf",
+        "计算与应用数学复习讲义.pdf",
+        "分析2复习资料",
+        "分析与PDE复习讲义",
+        "代数与数论考试复习讲义",
+        "表示论复习讲义",
+        "概率论复习讲义",
+        "计算与应用数学复习讲义",
+        "藤藤蛇擅长找东西"
+      ],
       "ownerAccess": {
         "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261115084928-3a49f93bcc7ee22c",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261115084928-3a49f93bcc7ee22c/file-c7485b4c-ae4f-46ea-8bb7-2940d6cb3b27.pdf"
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/handouts-organized-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/handouts-organized-20261115/library-1e515b59f05c5dcb9153cdaf16c3912933187cfac0bb0d539774008f1dcaea7f.pdf"
       },
-      "pages": 105,
+      "pages": 2529,
       "preview": {
         "images": [
-          "previews/upload-750427137/page-001.webp",
-          "previews/upload-750427137/page-002.webp",
-          "previews/upload-750427137/page-003.webp",
-          "previews/upload-750427137/page-004.webp",
-          "previews/upload-750427137/page-005.webp",
-          "previews/upload-750427137/page-006.webp",
-          "previews/upload-750427137/page-007.webp",
-          "previews/upload-750427137/page-008.webp",
-          "previews/upload-750427137/page-009.webp",
-          "previews/upload-750427137/page-010.webp"
+          "previews/tengtengshe-review-notes/page-001.webp",
+          "previews/tengtengshe-review-notes/page-002.webp",
+          "previews/tengtengshe-review-notes/page-003.webp",
+          "previews/tengtengshe-review-notes/page-004.webp",
+          "previews/tengtengshe-review-notes/page-005.webp",
+          "previews/tengtengshe-review-notes/page-006.webp",
+          "previews/tengtengshe-review-notes/page-007.webp",
+          "previews/tengtengshe-review-notes/page-008.webp",
+          "previews/tengtengshe-review-notes/page-009.webp",
+          "previews/tengtengshe-review-notes/page-010.webp"
         ],
         "pageCount": 10,
-        "sourcePageCount": 105
+        "sourcePageCount": 2529
       }
     },
     {
-      "id": "upload-750427642",
-      "title": "水手练习题集_中文重编本",
-      "author": "作者待补充",
-      "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
-      "bytes": 2205979,
-      "size": "2.1 MB",
-      "format": "PDF",
+      "id": "optimization-theory-notes",
+      "title": "优化理论讲义",
+      "author": "未署名",
       "cat": "university-math",
       "cats": [
         "university-math"
       ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261115084928-3a49f93bcc7ee22c",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261115084928-3a49f93bcc7ee22c/file-8daf7174-37f4-4649-9a84-8c73cf6193dc.pdf"
-      },
-      "pages": 324,
-      "preview": {
-        "images": [
-          "previews/upload-750427642/page-001.webp",
-          "previews/upload-750427642/page-002.webp",
-          "previews/upload-750427642/page-003.webp",
-          "previews/upload-750427642/page-004.webp",
-          "previews/upload-750427642/page-005.webp",
-          "previews/upload-750427642/page-006.webp",
-          "previews/upload-750427642/page-007.webp",
-          "previews/upload-750427642/page-008.webp",
-          "previews/upload-750427642/page-009.webp",
-          "previews/upload-750427642/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 324
-      }
-    },
-    {
-      "id": "upload-750426614",
-      "title": "线性代数讲义3-4",
-      "author": "作者待补充",
       "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
-      "bytes": 249671,
-      "size": "0.2 MB",
-      "format": "PDF",
-      "cat": "university-math",
-      "cats": [
-        "university-math"
+      "subcat": "applied-math",
+      "subcats": [
+        "applied-math"
       ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261115084928-3a49f93bcc7ee22c",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261115084928-3a49f93bcc7ee22c/file-e0fb0f57-6d31-4471-8bbe-34c465f11670.pdf"
-      },
-      "pages": 24,
-      "preview": {
-        "images": [
-          "previews/upload-750426614/page-001.webp",
-          "previews/upload-750426614/page-002.webp",
-          "previews/upload-750426614/page-003.webp",
-          "previews/upload-750426614/page-004.webp",
-          "previews/upload-750426614/page-005.webp",
-          "previews/upload-750426614/page-006.webp",
-          "previews/upload-750426614/page-007.webp",
-          "previews/upload-750426614/page-008.webp",
-          "previews/upload-750426614/page-009.webp",
-          "previews/upload-750426614/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 24
-      }
-    },
-    {
-      "id": "upload-750426685",
-      "title": "线性代数讲义5-6",
-      "author": "作者待补充",
-      "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
-      "bytes": 249690,
-      "size": "0.2 MB",
+      "desc": "合并所传两份同名课程讲义：线性规划与无约束优化30页，罚函数与乘子法16页。两份内容不同，全部保留，另加2页封面和目录。",
+      "year": 2026,
       "format": "PDF",
-      "cat": "university-math",
-      "cats": [
-        "university-math"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261115084928-3a49f93bcc7ee22c",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261115084928-3a49f93bcc7ee22c/file-9f6dcc82-4720-4390-ac9f-60b631e9b5fb.pdf"
-      },
-      "pages": 25,
-      "preview": {
-        "images": [
-          "previews/upload-750426685/page-001.webp",
-          "previews/upload-750426685/page-002.webp",
-          "previews/upload-750426685/page-003.webp",
-          "previews/upload-750426685/page-004.webp",
-          "previews/upload-750426685/page-005.webp",
-          "previews/upload-750426685/page-006.webp",
-          "previews/upload-750426685/page-007.webp",
-          "previews/upload-750426685/page-008.webp",
-          "previews/upload-750426685/page-009.webp",
-          "previews/upload-750426685/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 25
-      }
-    },
-    {
-      "id": "upload-750426764",
-      "title": "线性代数讲义 (1)",
-      "author": "作者待补充",
-      "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
-      "bytes": 502412,
+      "bytes": 519701,
       "size": "0.5 MB",
-      "format": "PDF",
-      "cat": "university-math",
-      "cats": [
-        "university-math"
+      "tags": [
+        "最优化",
+        "线性规划",
+        "课程讲义",
+        "原文合订"
+      ],
+      "searchTitles": [
+        "优化理论.pdf",
+        "优化理论 - Copy.pdf",
+        "优化理论：线性规划与无约束优化",
+        "优化理论：罚函数与乘子法",
+        "未署名"
       ],
       "ownerAccess": {
         "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261115084928-3a49f93bcc7ee22c",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261115084928-3a49f93bcc7ee22c/file-7a5a5ce8-148d-4040-96ad-69afebf358e8.pdf"
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/handouts-organized-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/handouts-organized-20261115/library-1f154fc60756c9e1b2f22da1eaba4f88b6b282629e9368f5291aa9886ab12c4f.pdf"
       },
-      "pages": 82,
+      "pages": 48,
       "preview": {
         "images": [
-          "previews/upload-750426764/page-001.webp",
-          "previews/upload-750426764/page-002.webp",
-          "previews/upload-750426764/page-003.webp",
-          "previews/upload-750426764/page-004.webp",
-          "previews/upload-750426764/page-005.webp",
-          "previews/upload-750426764/page-006.webp",
-          "previews/upload-750426764/page-007.webp",
-          "previews/upload-750426764/page-008.webp",
-          "previews/upload-750426764/page-009.webp",
-          "previews/upload-750426764/page-010.webp"
+          "previews/optimization-theory-notes/page-001.webp",
+          "previews/optimization-theory-notes/page-002.webp",
+          "previews/optimization-theory-notes/page-003.webp",
+          "previews/optimization-theory-notes/page-004.webp",
+          "previews/optimization-theory-notes/page-005.webp",
+          "previews/optimization-theory-notes/page-006.webp",
+          "previews/optimization-theory-notes/page-007.webp",
+          "previews/optimization-theory-notes/page-008.webp",
+          "previews/optimization-theory-notes/page-009.webp",
+          "previews/optimization-theory-notes/page-010.webp"
         ],
         "pageCount": 10,
-        "sourcePageCount": 82
-      }
-    },
-    {
-      "id": "upload-750427306",
-      "title": "线性代数讲义",
-      "author": "作者待补充",
-      "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
-      "bytes": 1529117,
-      "size": "1.5 MB",
-      "format": "PDF",
-      "cat": "university-math",
-      "cats": [
-        "university-math"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261115084928-3a49f93bcc7ee22c",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261115084928-3a49f93bcc7ee22c/file-a8f44877-6432-498a-b552-e4dfecf4542e.pdf"
-      },
-      "pages": 200,
-      "preview": {
-        "images": [
-          "previews/upload-750427306/page-001.webp",
-          "previews/upload-750427306/page-002.webp",
-          "previews/upload-750427306/page-003.webp",
-          "previews/upload-750427306/page-004.webp",
-          "previews/upload-750427306/page-005.webp",
-          "previews/upload-750427306/page-006.webp",
-          "previews/upload-750427306/page-007.webp",
-          "previews/upload-750427306/page-008.webp",
-          "previews/upload-750427306/page-009.webp",
-          "previews/upload-750427306/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 200
-      }
-    },
-    {
-      "id": "upload-750426285",
-      "title": "考前零试-几何与拓扑",
-      "author": "作者待补充",
-      "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
-      "bytes": 208009,
-      "size": "0.2 MB",
-      "format": "PDF",
-      "cat": "university-math",
-      "cats": [
-        "university-math"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261115084928-3a49f93bcc7ee22c",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261115084928-3a49f93bcc7ee22c/file-9b17fe3d-e110-43c3-94f0-0aecf5b3f24b.pdf"
-      },
-      "pages": 5,
-      "preview": {
-        "images": [
-          "previews/upload-750426285/page-001.webp",
-          "previews/upload-750426285/page-002.webp",
-          "previews/upload-750426285/page-003.webp",
-          "previews/upload-750426285/page-004.webp",
-          "previews/upload-750426285/page-005.webp"
-        ],
-        "pageCount": 5,
-        "sourcePageCount": 5
-      }
-    },
-    {
-      "id": "upload-750426230",
-      "title": "考前零试-概率统计",
-      "author": "作者待补充",
-      "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
-      "bytes": 230197,
-      "size": "0.2 MB",
-      "format": "PDF",
-      "cat": "university-math",
-      "cats": [
-        "university-math"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261115084928-3a49f93bcc7ee22c",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261115084928-3a49f93bcc7ee22c/file-4a318800-aa46-4788-b736-6fc073b73b1a.pdf"
-      },
-      "pages": 6,
-      "preview": {
-        "images": [
-          "previews/upload-750426230/page-001.webp",
-          "previews/upload-750426230/page-002.webp",
-          "previews/upload-750426230/page-003.webp",
-          "previews/upload-750426230/page-004.webp",
-          "previews/upload-750426230/page-005.webp",
-          "previews/upload-750426230/page-006.webp"
-        ],
-        "pageCount": 6,
-        "sourcePageCount": 6
-      }
-    },
-    {
-      "id": "upload-750427071",
-      "title": "表示论复习讲义",
-      "author": "作者待补充",
-      "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
-      "bytes": 4236252,
-      "size": "4.0 MB",
-      "format": "PDF",
-      "cat": "university-math",
-      "cats": [
-        "university-math"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261115084928-3a49f93bcc7ee22c",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261115084928-3a49f93bcc7ee22c/file-eb58a45c-8605-4bf6-b786-f8be3b2cb9fb.pdf"
-      },
-      "pages": 102,
-      "preview": {
-        "images": [
-          "previews/upload-750427071/page-001.webp",
-          "previews/upload-750427071/page-002.webp",
-          "previews/upload-750427071/page-003.webp",
-          "previews/upload-750427071/page-004.webp",
-          "previews/upload-750427071/page-005.webp",
-          "previews/upload-750427071/page-006.webp",
-          "previews/upload-750427071/page-007.webp",
-          "previews/upload-750427071/page-008.webp",
-          "previews/upload-750427071/page-009.webp",
-          "previews/upload-750427071/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 102
-      }
-    },
-    {
-      "id": "upload-750427373",
-      "title": "计算与应用数学复习讲义",
-      "author": "作者待补充",
-      "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
-      "bytes": 41025884,
-      "size": "39.1 MB",
-      "format": "PDF",
-      "cat": "university-math",
-      "cats": [
-        "university-math"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261115084928-3a49f93bcc7ee22c",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261115084928-3a49f93bcc7ee22c/file-2cc9b7bd-a5ae-4a27-81b1-ee8008bb1cb6.pdf"
-      },
-      "pages": 813,
-      "preview": {
-        "images": [
-          "previews/upload-750427373/page-001.webp",
-          "previews/upload-750427373/page-002.webp",
-          "previews/upload-750427373/page-003.webp",
-          "previews/upload-750427373/page-004.webp",
-          "previews/upload-750427373/page-005.webp",
-          "previews/upload-750427373/page-006.webp",
-          "previews/upload-750427373/page-007.webp",
-          "previews/upload-750427373/page-008.webp",
-          "previews/upload-750427373/page-009.webp",
-          "previews/upload-750427373/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 813
-      }
-    },
-    {
-      "id": "upload-750426387",
-      "title": "进阶九学-零试专项1",
-      "author": "作者待补充",
-      "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
-      "bytes": 399010,
-      "size": "0.4 MB",
-      "format": "PDF",
-      "cat": "university-math",
-      "cats": [
-        "university-math"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261115084928-3a49f93bcc7ee22c",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261115084928-3a49f93bcc7ee22c/file-8cd62073-4fbb-487a-bd72-14eedebd5182.pdf"
-      },
-      "pages": 30,
-      "preview": {
-        "images": [
-          "previews/upload-750426387/page-001.webp",
-          "previews/upload-750426387/page-002.webp",
-          "previews/upload-750426387/page-003.webp",
-          "previews/upload-750426387/page-004.webp",
-          "previews/upload-750426387/page-005.webp",
-          "previews/upload-750426387/page-006.webp",
-          "previews/upload-750426387/page-007.webp",
-          "previews/upload-750426387/page-008.webp",
-          "previews/upload-750426387/page-009.webp",
-          "previews/upload-750426387/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 30
-      }
-    },
-    {
-      "id": "upload-750426337",
-      "title": "零试专项-应用数学",
-      "author": "作者待补充",
-      "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
-      "year": null,
-      "tags": [],
-      "searchTitles": [],
-      "bytes": 247805,
-      "size": "0.2 MB",
-      "format": "PDF",
-      "cat": "university-math",
-      "cats": [
-        "university-math"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/upload-20261115084928-3a49f93bcc7ee22c",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/upload-20261115084928-3a49f93bcc7ee22c/file-1a6a12ee-7a43-4dd0-ae90-00ff715b53a3.pdf"
-      },
-      "pages": 29,
-      "preview": {
-        "images": [
-          "previews/upload-750426337/page-001.webp",
-          "previews/upload-750426337/page-002.webp",
-          "previews/upload-750426337/page-003.webp",
-          "previews/upload-750426337/page-004.webp",
-          "previews/upload-750426337/page-005.webp",
-          "previews/upload-750426337/page-006.webp",
-          "previews/upload-750426337/page-007.webp",
-          "previews/upload-750426337/page-008.webp",
-          "previews/upload-750426337/page-009.webp",
-          "previews/upload-750426337/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 29
+        "sourcePageCount": 48
       }
     }
   ],
@@ -8691,7 +8257,9 @@
         "松松饼",
         "曹知秋",
         "数学奥林匹克小丛书",
-        "水手练习题集"
+        "水手练习题集",
+        "藤藤蛇擅长找东西",
+        "数学与物理积木"
       ]
     },
     {
@@ -8741,7 +8309,12 @@
         "中文重编本",
         "修订版",
         "选择性必修",
-        "广东新高考"
+        "广东新高考",
+        "博士资格考试",
+        "期末复习",
+        "课程讲义",
+        "知识整理",
+        "原文合订"
       ]
     }
   ]
