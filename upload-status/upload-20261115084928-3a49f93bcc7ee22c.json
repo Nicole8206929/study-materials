@@ -1,9 +1,9 @@
 {
   "version": 1,
   "batch": "upload-20261115084928-3a49f93bcc7ee22c",
-  "stage": "publishing",
-  "message": "资料已整理，正在更新书架。",
-  "updatedAt": "2026-11-15T09:05:24.273090+00:00",
+  "stage": "ready",
+  "message": "上传成功，已入库。待处理列表已清空，原件保存在私有归档区。",
+  "updatedAt": "2026-11-15T09:06:40.591625+00:00",
   "cat": "university-math",
   "cats": [
     "university-math"
