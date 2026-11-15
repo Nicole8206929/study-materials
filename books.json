@@ -9739,6 +9739,688 @@
         "view": "https://github.com/Nicole8206929/study-materials-originals/blob/19ccec008bb1daa80b96ec44edb8f8668c603bbf/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM281_Intersection_Homology_Perverse_Sheaves.pdf",
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/19ccec008bb1daa80b96ec44edb8f8668c603bbf/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM281_Intersection_Homology_Perverse_Sheaves.pdf"
       }
+    },
+    {
+      "id": "bd-math-chenjixiu-up",
+      "title": "数学分析（上册）",
+      "author": "陈纪修 等",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "cats": [
+        "university-math"
+      ],
+      "desc": "复旦陈纪修《数学分析》第三版上册：极限、连续、一元微积分与级数，经典数学系教材。",
+      "pages": 381,
+      "size": "59.4 MB",
+      "year": 2019,
+      "format": "PDF",
+      "bytes": 59353322,
+      "tags": [
+        "大学数学",
+        "分析",
+        "研究生教材"
+      ],
+      "searchTitles": [
+        "数学分析 陈纪修 上册",
+        "数学分析（上册）"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-math-chenjixiu-up/page-001.webp",
+          "previews/bd-math-chenjixiu-up/page-002.webp",
+          "previews/bd-math-chenjixiu-up/page-003.webp",
+          "previews/bd-math-chenjixiu-up/page-004.webp",
+          "previews/bd-math-chenjixiu-up/page-005.webp",
+          "previews/bd-math-chenjixiu-up/page-006.webp",
+          "previews/bd-math-chenjixiu-up/page-007.webp",
+          "previews/bd-math-chenjixiu-up/page-008.webp",
+          "previews/bd-math-chenjixiu-up/page-009.webp",
+          "previews/bd-math-chenjixiu-up/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 381
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90_%E5%A4%8D%E6%97%A6%E9%99%88%E7%BA%AA%E4%BF%AE_%E7%AC%AC3%E7%89%88_%E4%B8%8A%E5%86%8C.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90_%E5%A4%8D%E6%97%A6%E9%99%88%E7%BA%AA%E4%BF%AE_%E7%AC%AC3%E7%89%88_%E4%B8%8A%E5%86%8C.pdf"
+      },
+      "subcats": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "bd-math-chenjixiu-down",
+      "title": "数学分析（下册）",
+      "author": "陈纪修 等",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "cats": [
+        "university-math"
+      ],
+      "desc": "复旦陈纪修《数学分析》第三版下册：多元微积分、级数与含参变量积分。",
+      "pages": 442,
+      "size": "54.3 MB",
+      "year": 2019,
+      "format": "PDF",
+      "bytes": 54270986,
+      "tags": [
+        "大学数学",
+        "分析",
+        "研究生教材"
+      ],
+      "searchTitles": [
+        "数学分析 陈纪修 下册",
+        "数学分析（下册）"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-math-chenjixiu-down/page-001.webp",
+          "previews/bd-math-chenjixiu-down/page-002.webp",
+          "previews/bd-math-chenjixiu-down/page-003.webp",
+          "previews/bd-math-chenjixiu-down/page-004.webp",
+          "previews/bd-math-chenjixiu-down/page-005.webp",
+          "previews/bd-math-chenjixiu-down/page-006.webp",
+          "previews/bd-math-chenjixiu-down/page-007.webp",
+          "previews/bd-math-chenjixiu-down/page-008.webp",
+          "previews/bd-math-chenjixiu-down/page-009.webp",
+          "previews/bd-math-chenjixiu-down/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 442
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90_%E9%99%88%E7%BA%AA%E4%BF%AE_%E7%AC%AC3%E7%89%88_%E4%B8%8B%E5%86%8C.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90_%E9%99%88%E7%BA%AA%E4%BF%AE_%E7%AC%AC3%E7%89%88_%E4%B8%8B%E5%86%8C.pdf"
+      },
+      "subcats": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "bd-math-peiliwen",
+      "title": "数学分析中的典型问题与方法（第三版）",
+      "author": "裴礼文",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "cats": [
+        "university-math"
+      ],
+      "desc": "数学分析经典题解：按专题归纳典型问题与方法，覆盖分析学各核心考点。",
+      "pages": 879,
+      "size": "61.9 MB",
+      "year": 2021,
+      "format": "PDF",
+      "bytes": 61906755,
+      "tags": [
+        "大学数学",
+        "分析",
+        "研究生教材"
+      ],
+      "searchTitles": [
+        "数学分析 典型问题 裴礼文",
+        "数学分析中的典型问题与方法（第三版）"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-math-peiliwen/page-001.webp",
+          "previews/bd-math-peiliwen/page-002.webp",
+          "previews/bd-math-peiliwen/page-003.webp",
+          "previews/bd-math-peiliwen/page-004.webp",
+          "previews/bd-math-peiliwen/page-005.webp",
+          "previews/bd-math-peiliwen/page-006.webp",
+          "previews/bd-math-peiliwen/page-007.webp",
+          "previews/bd-math-peiliwen/page-008.webp",
+          "previews/bd-math-peiliwen/page-009.webp",
+          "previews/bd-math-peiliwen/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 879
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%AD%E7%9A%84%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98%E4%B8%8E%E6%96%B9%E6%B3%95_%E8%A3%B4%E7%A4%BC%E6%96%87_%E7%AC%AC3%E7%89%88.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%AD%E7%9A%84%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98%E4%B8%8E%E6%96%B9%E6%B3%95_%E8%A3%B4%E7%A4%BC%E6%96%87_%E7%AC%AC3%E7%89%88.pdf"
+      },
+      "subcats": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "bd-math-louhongwei-up",
+      "title": "数学分析（上册）",
+      "author": "楼红卫",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "cats": [
+        "university-math"
+      ],
+      "desc": "楼红卫《数学分析》2022上册：现代观点讲解数学分析基础。",
+      "pages": 377,
+      "size": "58.0 MB",
+      "year": 2022,
+      "format": "PDF",
+      "bytes": 58009377,
+      "tags": [
+        "大学数学",
+        "分析",
+        "研究生教材"
+      ],
+      "searchTitles": [
+        "数学分析 楼红卫 上册",
+        "数学分析（上册）"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-math-louhongwei-up/page-001.webp",
+          "previews/bd-math-louhongwei-up/page-002.webp",
+          "previews/bd-math-louhongwei-up/page-003.webp",
+          "previews/bd-math-louhongwei-up/page-004.webp",
+          "previews/bd-math-louhongwei-up/page-005.webp",
+          "previews/bd-math-louhongwei-up/page-006.webp",
+          "previews/bd-math-louhongwei-up/page-007.webp",
+          "previews/bd-math-louhongwei-up/page-008.webp",
+          "previews/bd-math-louhongwei-up/page-009.webp",
+          "previews/bd-math-louhongwei-up/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 377
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90_%E4%B8%8A%E5%86%8C_%E6%A5%BC%E7%BA%A2%E5%8D%AB_2022.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90_%E4%B8%8A%E5%86%8C_%E6%A5%BC%E7%BA%A2%E5%8D%AB_2022.pdf"
+      },
+      "subcats": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "bd-serrefinitegroups",
+      "title": "有限群导引",
+      "author": "Jean-Pierre Serre",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "cats": [
+        "university-math"
+      ],
+      "desc": "Serre 有限群经典：群作用、Sylow 定理、有限群结构与表示入门。",
+      "pages": 194,
+      "size": "73.7 MB",
+      "year": 1976,
+      "format": "PDF",
+      "bytes": 73703947,
+      "tags": [
+        "大学数学",
+        "代数",
+        "研究生教材"
+      ],
+      "searchTitles": [
+        "有限群导引 Serre",
+        "有限群导引"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-serrefinitegroups/page-001.webp",
+          "previews/bd-serrefinitegroups/page-002.webp",
+          "previews/bd-serrefinitegroups/page-003.webp",
+          "previews/bd-serrefinitegroups/page-004.webp",
+          "previews/bd-serrefinitegroups/page-005.webp",
+          "previews/bd-serrefinitegroups/page-006.webp",
+          "previews/bd-serrefinitegroups/page-007.webp",
+          "previews/bd-serrefinitegroups/page-008.webp",
+          "previews/bd-serrefinitegroups/page-009.webp",
+          "previews/bd-serrefinitegroups/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 194
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%9C%89%E9%99%90%E7%BE%A4%E5%AF%BC%E5%BC%95_Jean-Pierre_Serre.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%9C%89%E9%99%90%E7%BE%A4%E5%AF%BC%E5%BC%95_Jean-Pierre_Serre.pdf"
+      },
+      "subcats": [
+        "algebra"
+      ]
+    },
+    {
+      "id": "bd-math-louhongwei-down",
+      "title": "数学分析（下册）",
+      "author": "楼红卫",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "cats": [
+        "university-math"
+      ],
+      "desc": "楼红卫《数学分析》下册：多元分析与现代分析专题。",
+      "pages": 413,
+      "size": "59.1 MB",
+      "year": 2022,
+      "format": "PDF",
+      "bytes": 59082264,
+      "tags": [
+        "大学数学",
+        "分析",
+        "研究生教材"
+      ],
+      "searchTitles": [
+        "数学分析 楼红卫 下册",
+        "数学分析（下册）"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-math-louhongwei-down/page-001.webp",
+          "previews/bd-math-louhongwei-down/page-002.webp",
+          "previews/bd-math-louhongwei-down/page-003.webp",
+          "previews/bd-math-louhongwei-down/page-004.webp",
+          "previews/bd-math-louhongwei-down/page-005.webp",
+          "previews/bd-math-louhongwei-down/page-006.webp",
+          "previews/bd-math-louhongwei-down/page-007.webp",
+          "previews/bd-math-louhongwei-down/page-008.webp",
+          "previews/bd-math-louhongwei-down/page-009.webp",
+          "previews/bd-math-louhongwei-down/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 413
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90_%E4%B8%8B%E5%86%8C_%E6%A5%BC%E7%BA%A2%E5%8D%AB.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90_%E4%B8%8B%E5%86%8C_%E6%A5%BC%E7%BA%A2%E5%8D%AB.pdf"
+      },
+      "subcats": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "bd-geometry-qiuweisheng",
+      "title": "解析几何（第三版）",
+      "author": "丘维声",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "cats": [
+        "university-math"
+      ],
+      "desc": "丘维声解析几何：向量、坐标、空间曲线曲面与二次型，经典几何教材。",
+      "pages": 413,
+      "size": "57.1 MB",
+      "year": 2014,
+      "format": "PDF",
+      "bytes": 57113791,
+      "tags": [
+        "大学数学",
+        "几何与拓扑",
+        "研究生教材"
+      ],
+      "searchTitles": [
+        "解析几何 丘维声",
+        "解析几何（第三版）"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-geometry-qiuweisheng/page-001.webp",
+          "previews/bd-geometry-qiuweisheng/page-002.webp",
+          "previews/bd-geometry-qiuweisheng/page-003.webp",
+          "previews/bd-geometry-qiuweisheng/page-004.webp",
+          "previews/bd-geometry-qiuweisheng/page-005.webp",
+          "previews/bd-geometry-qiuweisheng/page-006.webp",
+          "previews/bd-geometry-qiuweisheng/page-007.webp",
+          "previews/bd-geometry-qiuweisheng/page-008.webp",
+          "previews/bd-geometry-qiuweisheng/page-009.webp",
+          "previews/bd-geometry-qiuweisheng/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 413
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95_%E7%AC%AC3%E7%89%88_%E4%B8%98%E7%BB%B4%E5%A3%B0.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95_%E7%AC%AC3%E7%89%88_%E4%B8%98%E7%BB%B4%E5%A3%B0.pdf"
+      },
+      "subcats": [
+        "geometry-topology"
+      ]
+    },
+    {
+      "id": "bd-math-xiehuimin",
+      "title": "数学分析习题课讲义答案",
+      "author": "谢惠民 等",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "cats": [
+        "university-math"
+      ],
+      "desc": "谢惠民《数学分析习题课讲义》配套答案，逐题解析。",
+      "pages": 671,
+      "size": "59.9 MB",
+      "year": 2018,
+      "format": "PDF",
+      "bytes": 59888612,
+      "tags": [
+        "大学数学",
+        "分析",
+        "研究生教材"
+      ],
+      "searchTitles": [
+        "数学分析 谢惠民 习题答案",
+        "数学分析习题课讲义答案"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-math-xiehuimin/page-001.webp",
+          "previews/bd-math-xiehuimin/page-002.webp",
+          "previews/bd-math-xiehuimin/page-003.webp",
+          "previews/bd-math-xiehuimin/page-004.webp",
+          "previews/bd-math-xiehuimin/page-005.webp",
+          "previews/bd-math-xiehuimin/page-006.webp",
+          "previews/bd-math-xiehuimin/page-007.webp",
+          "previews/bd-math-xiehuimin/page-008.webp",
+          "previews/bd-math-xiehuimin/page-009.webp",
+          "previews/bd-math-xiehuimin/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 671
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E8%B0%A2%E6%83%A0%E6%B0%91%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B9%A0%E9%A2%98%E8%AF%BE%E8%AE%B2%E4%B9%89%E7%AD%94%E6%A1%88.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E8%B0%A2%E6%83%A0%E6%B0%91%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B9%A0%E9%A2%98%E8%AF%BE%E8%AE%B2%E4%B9%89%E7%AD%94%E6%A1%88.pdf"
+      },
+      "subcats": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "bd-algebra-xieqihong",
+      "title": "高等代数学（第四版）",
+      "author": "谢启鸿、姚慕生、吴泉水",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "cats": [
+        "university-math"
+      ],
+      "desc": "复旦高等代数第四版：线性代数、多项式、矩阵与空间理论，经典教材。",
+      "pages": 492,
+      "size": "56.6 MB",
+      "year": 2015,
+      "format": "PDF",
+      "bytes": 56581942,
+      "tags": [
+        "大学数学",
+        "代数",
+        "研究生教材"
+      ],
+      "searchTitles": [
+        "高等代数 谢启鸿",
+        "高等代数学（第四版）"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-algebra-xieqihong/page-001.webp",
+          "previews/bd-algebra-xieqihong/page-002.webp",
+          "previews/bd-algebra-xieqihong/page-003.webp",
+          "previews/bd-algebra-xieqihong/page-004.webp",
+          "previews/bd-algebra-xieqihong/page-005.webp",
+          "previews/bd-algebra-xieqihong/page-006.webp",
+          "previews/bd-algebra-xieqihong/page-007.webp",
+          "previews/bd-algebra-xieqihong/page-008.webp",
+          "previews/bd-algebra-xieqihong/page-009.webp",
+          "previews/bd-algebra-xieqihong/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 492
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0%E5%AD%A6_%E7%AC%AC4%E7%89%88_%E8%B0%A2%E5%90%AF%E9%B8%BF.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0%E5%AD%A6_%E7%AC%AC4%E7%89%88_%E8%B0%A2%E5%90%AF%E9%B8%BF.pdf"
+      },
+      "subcats": [
+        "algebra"
+      ]
+    },
+    {
+      "id": "bd-algebra-whitepaper",
+      "title": "高等代数白皮书（第四版）",
+      "author": "谢启鸿",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "cats": [
+        "university-math"
+      ],
+      "desc": "复旦高等代数学习白皮书：考研与课程配套习题精讲。",
+      "pages": 639,
+      "size": "62.5 MB",
+      "year": 2016,
+      "format": "PDF",
+      "bytes": 62452756,
+      "tags": [
+        "大学数学",
+        "代数",
+        "研究生教材"
+      ],
+      "searchTitles": [
+        "高等代数 白皮书",
+        "高等代数白皮书（第四版）"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-algebra-whitepaper/page-001.webp",
+          "previews/bd-algebra-whitepaper/page-002.webp",
+          "previews/bd-algebra-whitepaper/page-003.webp",
+          "previews/bd-algebra-whitepaper/page-004.webp",
+          "previews/bd-algebra-whitepaper/page-005.webp",
+          "previews/bd-algebra-whitepaper/page-006.webp",
+          "previews/bd-algebra-whitepaper/page-007.webp",
+          "previews/bd-algebra-whitepaper/page-008.webp",
+          "previews/bd-algebra-whitepaper/page-009.webp",
+          "previews/bd-algebra-whitepaper/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 639
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0%E7%99%BD%E7%9A%AE%E4%B9%A6_%E7%AC%AC4%E7%89%88.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0%E7%99%BD%E7%9A%AE%E4%B9%A6_%E7%AC%AC4%E7%89%88.pdf"
+      },
+      "subcats": [
+        "algebra"
+      ]
+    },
+    {
+      "id": "bd-math-shijihuai-down",
+      "title": "数学分析（下册）",
+      "author": "史济怀",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "cats": [
+        "university-math"
+      ],
+      "desc": "中科大史济怀《数学分析》第三版下册：严谨体系的数学分析教材。",
+      "pages": 459,
+      "size": "94.6 MB",
+      "year": 2019,
+      "format": "PDF",
+      "bytes": 94568822,
+      "tags": [
+        "大学数学",
+        "分析",
+        "研究生教材"
+      ],
+      "searchTitles": [
+        "数学分析 史济怀 下册",
+        "数学分析（下册）"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-math-shijihuai-down/page-001.webp",
+          "previews/bd-math-shijihuai-down/page-002.webp",
+          "previews/bd-math-shijihuai-down/page-003.webp",
+          "previews/bd-math-shijihuai-down/page-004.webp",
+          "previews/bd-math-shijihuai-down/page-005.webp",
+          "previews/bd-math-shijihuai-down/page-006.webp",
+          "previews/bd-math-shijihuai-down/page-007.webp",
+          "previews/bd-math-shijihuai-down/page-008.webp",
+          "previews/bd-math-shijihuai-down/page-009.webp",
+          "previews/bd-math-shijihuai-down/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 459
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90_%E5%8F%B2%E6%B5%8E%E6%80%80_%E7%AC%AC3%E7%89%88_%E4%B8%8B%E5%86%8C.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90_%E5%8F%B2%E6%B5%8E%E6%80%80_%E7%AC%AC3%E7%89%88_%E4%B8%8B%E5%86%8C.pdf"
+      },
+      "subcats": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "bd-math-docs-combined",
+      "title": "数学分析资料合订",
+      "author": "多位作者",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "cats": [
+        "university-math"
+      ],
+      "desc": "多份数学分析资料合订（175MB，Release 分发），含讲义与习题。",
+      "pages": 444,
+      "size": "183.6 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 183550445,
+      "tags": [
+        "大学数学",
+        "分析",
+        "研究生教材"
+      ],
+      "searchTitles": [
+        "数学分析 资料合订",
+        "数学分析资料合订"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-math-docs-combined/page-001.webp",
+          "previews/bd-math-docs-combined/page-002.webp",
+          "previews/bd-math-docs-combined/page-003.webp",
+          "previews/bd-math-docs-combined/page-004.webp",
+          "previews/bd-math-docs-combined/page-005.webp",
+          "previews/bd-math-docs-combined/page-006.webp",
+          "previews/bd-math-docs-combined/page-007.webp",
+          "previews/bd-math-docs-combined/page-008.webp",
+          "previews/bd-math-docs-combined/page-009.webp",
+          "previews/bd-math-docs-combined/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 444
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/overlimit-large-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/overlimit-large-20261115/math-docs-combined.pdf"
+      },
+      "subcats": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "bd-quantum-sakurai",
+      "title": "现代量子力学（第2版）",
+      "author": "樱井纯、拿波里塔诺",
+      "cat": "university-physics",
+      "catName": "大学物理",
+      "cats": [
+        "university-physics"
+      ],
+      "desc": "樱井《现代量子力学》第二版中译本：量子力学公理化、角动量、微扰与散射，研究生经典。",
+      "pages": 412,
+      "size": "126.2 MB",
+      "year": 2017,
+      "format": "PDF",
+      "bytes": 126168245,
+      "tags": [
+        "大学物理",
+        "研究生教材"
+      ],
+      "searchTitles": [
+        "现代量子力学 樱井",
+        "现代量子力学（第2版）"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-quantum-sakurai/page-001.webp",
+          "previews/bd-quantum-sakurai/page-002.webp",
+          "previews/bd-quantum-sakurai/page-003.webp",
+          "previews/bd-quantum-sakurai/page-004.webp",
+          "previews/bd-quantum-sakurai/page-005.webp",
+          "previews/bd-quantum-sakurai/page-006.webp",
+          "previews/bd-quantum-sakurai/page-007.webp",
+          "previews/bd-quantum-sakurai/page-008.webp",
+          "previews/bd-quantum-sakurai/page-009.webp",
+          "previews/bd-quantum-sakurai/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 412
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/overlimit-large-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/overlimit-large-20261115/modern-quantum-mechanics-sakurai.pdf"
+      }
+    },
+    {
+      "id": "bd-algebra-fanqibin",
+      "title": "高等代数典型问题与方法",
+      "author": "樊启斌",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "cats": [
+        "university-math"
+      ],
+      "desc": "高等代数专题：典型问题、方法与考研精讲（101MB，Release 分发）。",
+      "pages": 677,
+      "size": "106.5 MB",
+      "year": 2021,
+      "format": "PDF",
+      "bytes": 106534030,
+      "tags": [
+        "大学数学",
+        "代数",
+        "研究生教材"
+      ],
+      "searchTitles": [
+        "高等代数 樊启斌",
+        "高等代数典型问题与方法"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-algebra-fanqibin/page-001.webp",
+          "previews/bd-algebra-fanqibin/page-002.webp",
+          "previews/bd-algebra-fanqibin/page-003.webp",
+          "previews/bd-algebra-fanqibin/page-004.webp",
+          "previews/bd-algebra-fanqibin/page-005.webp",
+          "previews/bd-algebra-fanqibin/page-006.webp",
+          "previews/bd-algebra-fanqibin/page-007.webp",
+          "previews/bd-algebra-fanqibin/page-008.webp",
+          "previews/bd-algebra-fanqibin/page-009.webp",
+          "previews/bd-algebra-fanqibin/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 677
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/overlimit-large-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/overlimit-large-20261115/advanced-algebra-methods-fanqibin.pdf"
+      },
+      "subcats": [
+        "algebra"
+      ]
     }
   ],
   "subcategories": [
