@@ -7558,6 +7558,112 @@
         "view": "https://github.com/Nicole8206929/study-materials-originals/blob/f79f7586d91948c15ba9d43d03b224a7898192ad/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%B0%B4%E6%89%8B%E7%BB%83%E4%B9%A0%E9%A2%98%E9%9B%86_%E4%B8%AD%E6%96%87%E9%87%8D%E7%BC%96%E6%9C%AC.pdf",
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/f79f7586d91948c15ba9d43d03b224a7898192ad/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%B0%B4%E6%89%8B%E7%BB%83%E4%B9%A0%E9%A2%98%E9%9B%86_%E4%B8%AD%E6%96%87%E9%87%8D%E7%BC%96%E6%9C%AC.pdf"
       }
+    },
+    {
+      "id": "psych-psychandlife19",
+      "title": "心理学与生活（第19版）",
+      "author": "Richard Gerrig, Philip Zimbardo / 理查德·格里格、菲利普·津巴多；王垒 等译",
+      "cat": "psych",
+      "catName": "心理",
+      "desc": "经典心理学入门教材第19版：涵盖感知、学习、认知、情绪、人格、社会心理与心理障碍，理论联系生活，教育部心理学教学指导委员会推荐用书。",
+      "pages": 679,
+      "size": "48.7 MB",
+      "year": 2014,
+      "format": "PDF",
+      "bytes": 51102154,
+      "tags": [
+        "心理学",
+        "经典教材",
+        "中文教材",
+        "入门"
+      ],
+      "searchTitles": [
+        "心理学与生活",
+        "Psychology and Life",
+        "格里格",
+        "津巴多",
+        "第19版",
+        "Gerrig",
+        "Zimbardo"
+      ],
+      "preview": {
+        "images": [
+          "previews/psych-psychandlife19/page-001.webp",
+          "previews/psych-psychandlife19/page-002.webp",
+          "previews/psych-psychandlife19/page-003.webp",
+          "previews/psych-psychandlife19/page-004.webp",
+          "previews/psych-psychandlife19/page-005.webp",
+          "previews/psych-psychandlife19/page-006.webp",
+          "previews/psych-psychandlife19/page-007.webp",
+          "previews/psych-psychandlife19/page-008.webp",
+          "previews/psych-psychandlife19/page-009.webp",
+          "previews/psych-psychandlife19/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 679
+      },
+      "subcats": [],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/c28f6d095fd844c6b7273fe472deaacde950e3db/%E5%BF%83%E7%90%86%E9%87%91%E8%9E%8D%E4%B9%A6%E7%B1%8D/Gerrig_Zimbardo_Psychology_and_Life_19e.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/c28f6d095fd844c6b7273fe472deaacde950e3db/%E5%BF%83%E7%90%86%E9%87%91%E8%9E%8D%E4%B9%A6%E7%B1%8D/Gerrig_Zimbardo_Psychology_and_Life_19e.pdf"
+      },
+      "cats": [
+        "psych"
+      ]
+    },
+    {
+      "id": "eng-ai-academic-english",
+      "title": "人工智能通识学术英语教程",
+      "author": "张敏 主编（清华大学出版社）",
+      "cat": "english",
+      "catName": "英语",
+      "desc": "面向人工智能方向的学术英语教程，覆盖AI领域核心术语、文献阅读与学术表达，作为《人工智能专业英语》的高质量平替。",
+      "pages": 46,
+      "size": "2.3 MB",
+      "year": 2025,
+      "format": "PDF",
+      "bytes": 2432555,
+      "tags": [
+        "人工智能",
+        "学术英语",
+        "专业英语",
+        "中文教材",
+        "词汇"
+      ],
+      "searchTitles": [
+        "人工智能通识学术英语教程",
+        "人工智能专业英语",
+        "人工智能学术英语",
+        "张敏",
+        "AI Academic English"
+      ],
+      "preview": {
+        "images": [
+          "previews/eng-ai-academic-english/page-001.webp",
+          "previews/eng-ai-academic-english/page-002.webp",
+          "previews/eng-ai-academic-english/page-003.webp",
+          "previews/eng-ai-academic-english/page-004.webp",
+          "previews/eng-ai-academic-english/page-005.webp",
+          "previews/eng-ai-academic-english/page-006.webp",
+          "previews/eng-ai-academic-english/page-007.webp",
+          "previews/eng-ai-academic-english/page-008.webp",
+          "previews/eng-ai-academic-english/page-009.webp",
+          "previews/eng-ai-academic-english/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 46
+      },
+      "subcats": [],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/c28f6d095fd844c6b7273fe472deaacde950e3db/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%80%9A%E8%AF%86%E5%AD%A6%E6%9C%AF%E8%8B%B1%E8%AF%AD%E6%95%99%E7%A8%8B_%E5%BC%A0%E6%95%8F.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/c28f6d095fd844c6b7273fe472deaacde950e3db/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B1%87/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%80%9A%E8%AF%86%E5%AD%A6%E6%9C%AF%E8%8B%B1%E8%AF%AD%E6%95%99%E7%A8%8B_%E5%BC%A0%E6%95%8F.pdf"
+      },
+      "cats": [
+        "english",
+        "artificial-intelligence"
+      ]
     }
   ],
   "subcategories": [
