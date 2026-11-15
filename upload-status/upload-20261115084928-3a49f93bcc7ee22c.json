@@ -1,14 +1,37 @@
 {
   "version": 1,
   "batch": "upload-20261115084928-3a49f93bcc7ee22c",
-  "stage": "processing",
-  "message": "上传成功，正在按所选分类整理。",
-  "updatedAt": "2026-11-15T09:04:47.253382+00:00",
+  "stage": "publishing",
+  "message": "资料已整理，正在更新书架。",
+  "updatedAt": "2026-11-15T09:05:24.273090+00:00",
   "cat": "university-math",
   "cats": [
     "university-math"
   ],
   "subcats": [],
-  "bookIds": [],
+  "bookIds": [
+    "upload-750427213",
+    "upload-750426952",
+    "upload-750426908",
+    "upload-750426817",
+    "upload-750426998",
+    "upload-750426505",
+    "upload-750427519",
+    "upload-750426181",
+    "upload-750426149",
+    "upload-750427450",
+    "upload-750427137",
+    "upload-750427642",
+    "upload-750426614",
+    "upload-750426685",
+    "upload-750426764",
+    "upload-750427306",
+    "upload-750426285",
+    "upload-750426230",
+    "upload-750427071",
+    "upload-750427373",
+    "upload-750426387",
+    "upload-750426337"
+  ],
   "sourceCount": 22
 }
