@@ -10421,6 +10421,517 @@
       "subcats": [
         "algebra"
       ]
+    },
+    {
+      "id": "bd-gtm073",
+      "title": "Algebra（GTM 73）",
+      "author": "Thomas W. Hungerford",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "cats": [
+        "university-math"
+      ],
+      "desc": "GTM73 代数：研究生抽象代数经典，群、环、模与域论。",
+      "pages": 523,
+      "size": "77.7 MB",
+      "year": 1974,
+      "format": "PDF",
+      "bytes": 77717178,
+      "tags": [
+        "大学数学",
+        "代数",
+        "研究生教材"
+      ],
+      "searchTitles": [
+        "GTM073 代数 Hungerford",
+        "Algebra（GTM 73）"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-gtm073/page-001.webp",
+          "previews/bd-gtm073/page-002.webp",
+          "previews/bd-gtm073/page-003.webp",
+          "previews/bd-gtm073/page-004.webp",
+          "previews/bd-gtm073/page-005.webp",
+          "previews/bd-gtm073/page-006.webp",
+          "previews/bd-gtm073/page-007.webp",
+          "previews/bd-gtm073/page-008.webp",
+          "previews/bd-gtm073/page-009.webp",
+          "previews/bd-gtm073/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 523
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM073_%E4%BB%A3%E6%95%B0.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM073_%E4%BB%A3%E6%95%B0.pdf"
+      },
+      "subcats": [
+        "algebra"
+      ]
+    },
+    {
+      "id": "bd-gtm211",
+      "title": "Algebra（GTM 211）",
+      "author": "David Eisenbud",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "cats": [
+        "university-math"
+      ],
+      "desc": "GTM211 交换代数：面向代数几何的交换代数权威教材。",
+      "pages": 923,
+      "size": "69.3 MB",
+      "year": 1995,
+      "format": "PDF",
+      "bytes": 69290941,
+      "tags": [
+        "大学数学",
+        "代数",
+        "研究生教材"
+      ],
+      "searchTitles": [
+        "GTM211 交换代数 Eisenbud",
+        "Algebra（GTM 211）"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-gtm211/page-001.webp",
+          "previews/bd-gtm211/page-002.webp",
+          "previews/bd-gtm211/page-003.webp",
+          "previews/bd-gtm211/page-004.webp",
+          "previews/bd-gtm211/page-005.webp",
+          "previews/bd-gtm211/page-006.webp",
+          "previews/bd-gtm211/page-007.webp",
+          "previews/bd-gtm211/page-008.webp",
+          "previews/bd-gtm211/page-009.webp",
+          "previews/bd-gtm211/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 923
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM211_%E4%BB%A3%E6%95%B0.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM211_%E4%BB%A3%E6%95%B0.pdf"
+      },
+      "subcats": [
+        "algebra"
+      ]
+    },
+    {
+      "id": "bd-prob-101-core",
+      "title": "概率论（上册）",
+      "author": "核心教材编写组",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "cats": [
+        "university-math"
+      ],
+      "desc": "101核心教材概率论上册：测度与概率基础、随机变量与极限定理。",
+      "pages": 250,
+      "size": "101.5 MB",
+      "year": 2020,
+      "format": "PDF",
+      "bytes": 101537281,
+      "tags": [
+        "大学数学",
+        "概率统计",
+        "研究生教材"
+      ],
+      "searchTitles": [
+        "概率论 核心教材 上册",
+        "概率论（上册）"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-prob-101-core/page-001.webp",
+          "previews/bd-prob-101-core/page-002.webp",
+          "previews/bd-prob-101-core/page-003.webp",
+          "previews/bd-prob-101-core/page-004.webp",
+          "previews/bd-prob-101-core/page-005.webp",
+          "previews/bd-prob-101-core/page-006.webp",
+          "previews/bd-prob-101-core/page-007.webp",
+          "previews/bd-prob-101-core/page-008.webp",
+          "previews/bd-prob-101-core/page-009.webp",
+          "previews/bd-prob-101-core/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 250
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8A%E5%86%8C_%E6%A0%B8%E5%BF%83%E6%95%99%E6%9D%90_101.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8A%E5%86%8C_%E6%A0%B8%E5%BF%83%E6%95%99%E6%9D%90_101.pdf"
+      },
+      "subcats": [
+        "probability-statistics"
+      ]
+    },
+    {
+      "id": "bd-competition-guide",
+      "title": "全国大学生数学竞赛参赛指南",
+      "author": "佘志坤",
+      "cat": "competition-math",
+      "catName": "竞赛数学",
+      "cats": [
+        "competition-math"
+      ],
+      "desc": "全国大学生数学竞赛官方参赛指南：赛制、考点与备考。",
+      "pages": 382,
+      "size": "94.7 MB",
+      "year": 2022,
+      "format": "PDF",
+      "bytes": 94743130,
+      "tags": [
+        "竞赛数学",
+        "数学竞赛"
+      ],
+      "searchTitles": [
+        "数学竞赛 参赛指南",
+        "全国大学生数学竞赛参赛指南"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-competition-guide/page-001.webp",
+          "previews/bd-competition-guide/page-002.webp",
+          "previews/bd-competition-guide/page-003.webp",
+          "previews/bd-competition-guide/page-004.webp",
+          "previews/bd-competition-guide/page-005.webp",
+          "previews/bd-competition-guide/page-006.webp",
+          "previews/bd-competition-guide/page-007.webp",
+          "previews/bd-competition-guide/page-008.webp",
+          "previews/bd-competition-guide/page-009.webp",
+          "previews/bd-competition-guide/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 382
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%8F%82%E8%B5%9B%E6%8C%87%E5%8D%97_%E4%BD%98%E5%BF%97%E5%9D%A4.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%8F%82%E8%B5%9B%E6%8C%87%E5%8D%97_%E4%BD%98%E5%BF%97%E5%9D%A4.pdf"
+      }
+    },
+    {
+      "id": "bd-comp-nonmath-up",
+      "title": "数学竞赛解析教程（非数学专业类）上册",
+      "author": "佘志坤",
+      "cat": "competition-math",
+      "catName": "竞赛数学",
+      "cats": [
+        "competition-math"
+      ],
+      "desc": "全国大学生数学竞赛非数学专业类解析教程上册。",
+      "pages": 283,
+      "size": "71.4 MB",
+      "year": 2022,
+      "format": "PDF",
+      "bytes": 71377580,
+      "tags": [
+        "竞赛数学",
+        "数学竞赛"
+      ],
+      "searchTitles": [
+        "数学竞赛 非数学类 上册",
+        "数学竞赛解析教程（非数学专业类）上册"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-comp-nonmath-up/page-001.webp",
+          "previews/bd-comp-nonmath-up/page-002.webp",
+          "previews/bd-comp-nonmath-up/page-003.webp",
+          "previews/bd-comp-nonmath-up/page-004.webp",
+          "previews/bd-comp-nonmath-up/page-005.webp",
+          "previews/bd-comp-nonmath-up/page-006.webp",
+          "previews/bd-comp-nonmath-up/page-007.webp",
+          "previews/bd-comp-nonmath-up/page-008.webp",
+          "previews/bd-comp-nonmath-up/page-009.webp",
+          "previews/bd-comp-nonmath-up/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 283
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%A7%A3%E6%9E%90%E6%95%99%E7%A8%8B_%E9%9D%9E%E6%95%B0%E5%AD%A6%E4%B8%93%E4%B8%9A%E7%B1%BB_%E4%B8%8A%E5%86%8C.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%A7%A3%E6%9E%90%E6%95%99%E7%A8%8B_%E9%9D%9E%E6%95%B0%E5%AD%A6%E4%B8%93%E4%B8%9A%E7%B1%BB_%E4%B8%8A%E5%86%8C.pdf"
+      }
+    },
+    {
+      "id": "bd-comp-nonmath-down",
+      "title": "数学竞赛解析教程（非数学专业类）下册",
+      "author": "佘志坤",
+      "cat": "competition-math",
+      "catName": "竞赛数学",
+      "cats": [
+        "competition-math"
+      ],
+      "desc": "全国大学生数学竞赛非数学专业类解析教程下册。",
+      "pages": 316,
+      "size": "75.4 MB",
+      "year": 2022,
+      "format": "PDF",
+      "bytes": 75396124,
+      "tags": [
+        "竞赛数学",
+        "数学竞赛"
+      ],
+      "searchTitles": [
+        "数学竞赛 非数学类 下册",
+        "数学竞赛解析教程（非数学专业类）下册"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-comp-nonmath-down/page-001.webp",
+          "previews/bd-comp-nonmath-down/page-002.webp",
+          "previews/bd-comp-nonmath-down/page-003.webp",
+          "previews/bd-comp-nonmath-down/page-004.webp",
+          "previews/bd-comp-nonmath-down/page-005.webp",
+          "previews/bd-comp-nonmath-down/page-006.webp",
+          "previews/bd-comp-nonmath-down/page-007.webp",
+          "previews/bd-comp-nonmath-down/page-008.webp",
+          "previews/bd-comp-nonmath-down/page-009.webp",
+          "previews/bd-comp-nonmath-down/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 316
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%A7%A3%E6%9E%90%E6%95%99%E7%A8%8B_%E9%9D%9E%E6%95%B0%E5%AD%A6%E4%B8%93%E4%B8%9A%E7%B1%BB_%E4%B8%8B%E5%86%8C.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%A7%A3%E6%9E%90%E6%95%99%E7%A8%8B_%E9%9D%9E%E6%95%B0%E5%AD%A6%E4%B8%93%E4%B8%9A%E7%B1%BB_%E4%B8%8B%E5%86%8C.pdf"
+      }
+    },
+    {
+      "id": "bd-comp-math-down",
+      "title": "数学竞赛解析教程（数学专业类）下册",
+      "author": "佘志坤",
+      "cat": "competition-math",
+      "catName": "竞赛数学",
+      "cats": [
+        "competition-math"
+      ],
+      "desc": "数学专业类解析教程下册：高等代数与解析几何专题。",
+      "pages": 325,
+      "size": "64.5 MB",
+      "year": 2022,
+      "format": "PDF",
+      "bytes": 64516533,
+      "tags": [
+        "竞赛数学",
+        "数学竞赛"
+      ],
+      "searchTitles": [
+        "数学竞赛 数学类 下册",
+        "数学竞赛解析教程（数学专业类）下册"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-comp-math-down/page-001.webp",
+          "previews/bd-comp-math-down/page-002.webp",
+          "previews/bd-comp-math-down/page-003.webp",
+          "previews/bd-comp-math-down/page-004.webp",
+          "previews/bd-comp-math-down/page-005.webp",
+          "previews/bd-comp-math-down/page-006.webp",
+          "previews/bd-comp-math-down/page-007.webp",
+          "previews/bd-comp-math-down/page-008.webp",
+          "previews/bd-comp-math-down/page-009.webp",
+          "previews/bd-comp-math-down/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 325
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%A7%A3%E6%9E%90%E6%95%99%E7%A8%8B_%E6%95%B0%E5%AD%A6%E4%B8%93%E4%B8%9A%E7%B1%BB_%E4%B8%8B%E5%86%8C.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%A7%A3%E6%9E%90%E6%95%99%E7%A8%8B_%E6%95%B0%E5%AD%A6%E4%B8%93%E4%B8%9A%E7%B1%BB_%E4%B8%8B%E5%86%8C.pdf"
+      }
+    },
+    {
+      "id": "bd-complex-zhong",
+      "title": "复变函数论（第五版）",
+      "author": "钟玉泉",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "cats": [
+        "university-math"
+      ],
+      "desc": "复变函数论经典教材：解析函数、复积分、级数与留数。",
+      "pages": 275,
+      "size": "82.3 MB",
+      "year": 2021,
+      "format": "PDF",
+      "bytes": 82250372,
+      "tags": [
+        "大学数学",
+        "分析",
+        "研究生教材"
+      ],
+      "searchTitles": [
+        "复变函数论 钟玉泉",
+        "复变函数论（第五版）"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-complex-zhong/page-001.webp",
+          "previews/bd-complex-zhong/page-002.webp",
+          "previews/bd-complex-zhong/page-003.webp",
+          "previews/bd-complex-zhong/page-004.webp",
+          "previews/bd-complex-zhong/page-005.webp",
+          "previews/bd-complex-zhong/page-006.webp",
+          "previews/bd-complex-zhong/page-007.webp",
+          "previews/bd-complex-zhong/page-008.webp",
+          "previews/bd-complex-zhong/page-009.webp",
+          "previews/bd-complex-zhong/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 275
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E8%AE%BA_%E7%AC%AC%E4%BA%94%E7%89%88_%E9%92%9F%E7%8E%89%E6%B3%89.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E8%AE%BA_%E7%AC%AC%E4%BA%94%E7%89%88_%E9%92%9F%E7%8E%89%E6%B3%89.pdf"
+      },
+      "subcats": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "bd-scan-2026",
+      "title": "丘班数学讲义（北京九学）",
+      "author": "北京九学丘班教研组",
+      "cat": "competition-math",
+      "catName": "竞赛数学",
+      "cats": [
+        "competition-math"
+      ],
+      "desc": "丘成桐领军计划/英才班数学讲义，内部学员资料。",
+      "pages": 143,
+      "size": "53.1 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 53087965,
+      "tags": [
+        "竞赛数学",
+        "数学竞赛"
+      ],
+      "searchTitles": [
+        "丘班 数学讲义 九学",
+        "丘班数学讲义（北京九学）"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-scan-2026/page-001.webp",
+          "previews/bd-scan-2026/page-002.webp",
+          "previews/bd-scan-2026/page-003.webp",
+          "previews/bd-scan-2026/page-004.webp",
+          "previews/bd-scan-2026/page-005.webp",
+          "previews/bd-scan-2026/page-006.webp",
+          "previews/bd-scan-2026/page-007.webp",
+          "previews/bd-scan-2026/page-008.webp",
+          "previews/bd-scan-2026/page-009.webp",
+          "previews/bd-scan-2026/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 143
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%89%AB%E6%8F%8F%E5%85%A8%E8%83%BD%E7%8E%8B_2026%E8%B5%84%E6%96%99.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%89%AB%E6%8F%8F%E5%85%A8%E8%83%BD%E7%8E%8B_2026%E8%B5%84%E6%96%99.pdf"
+      }
+    },
+    {
+      "id": "bd-lingjun-2025-combined",
+      "title": "2025年领军综合资料集",
+      "author": "领军计划资料组",
+      "cat": "competition-math",
+      "catName": "竞赛数学",
+      "cats": [
+        "competition-math"
+      ],
+      "desc": "领军计划综合资料合订（152MB，Release 分发）。",
+      "pages": 256,
+      "size": "159.6 MB",
+      "year": 2025,
+      "format": "PDF",
+      "bytes": 159632583,
+      "tags": [
+        "竞赛数学",
+        "数学竞赛"
+      ],
+      "searchTitles": [
+        "领军 综合资料集",
+        "2025年领军综合资料集"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-lingjun-2025-combined/page-001.webp",
+          "previews/bd-lingjun-2025-combined/page-002.webp",
+          "previews/bd-lingjun-2025-combined/page-003.webp",
+          "previews/bd-lingjun-2025-combined/page-004.webp",
+          "previews/bd-lingjun-2025-combined/page-005.webp",
+          "previews/bd-lingjun-2025-combined/page-006.webp",
+          "previews/bd-lingjun-2025-combined/page-007.webp",
+          "previews/bd-lingjun-2025-combined/page-008.webp",
+          "previews/bd-lingjun-2025-combined/page-009.webp",
+          "previews/bd-lingjun-2025-combined/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 256
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/overlimit-large-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/overlimit-large-20261115/lingjun-2025-comprehensive.pdf"
+      }
+    },
+    {
+      "id": "bd-comp-math-up",
+      "title": "数学竞赛解析教程（数学专业类）数学分析上册",
+      "author": "佘志坤",
+      "cat": "competition-math",
+      "catName": "竞赛数学",
+      "cats": [
+        "competition-math"
+      ],
+      "desc": "数学专业类解析教程数学分析上册（102MB，Release 分发）。",
+      "pages": 409,
+      "size": "107.5 MB",
+      "year": 2022,
+      "format": "PDF",
+      "bytes": 107533461,
+      "tags": [
+        "竞赛数学",
+        "数学竞赛"
+      ],
+      "searchTitles": [
+        "数学竞赛 数学类 数学分析 上册",
+        "数学竞赛解析教程（数学专业类）数学分析上册"
+      ],
+      "preview": {
+        "images": [
+          "previews/bd-comp-math-up/page-001.webp",
+          "previews/bd-comp-math-up/page-002.webp",
+          "previews/bd-comp-math-up/page-003.webp",
+          "previews/bd-comp-math-up/page-004.webp",
+          "previews/bd-comp-math-up/page-005.webp",
+          "previews/bd-comp-math-up/page-006.webp",
+          "previews/bd-comp-math-up/page-007.webp",
+          "previews/bd-comp-math-up/page-008.webp",
+          "previews/bd-comp-math-up/page-009.webp",
+          "previews/bd-comp-math-up/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 409
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/overlimit-large-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/overlimit-large-20261115/competition-math-analysis-vol1.pdf"
+      }
     }
   ],
   "subcategories": [
