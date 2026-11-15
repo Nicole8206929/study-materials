@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "batch": "upload-20261115084928-3a49f93bcc7ee22c",
+  "stage": "processing",
+  "message": "上传成功，正在按所选分类整理。",
+  "updatedAt": "2026-11-15T09:04:47.253382+00:00",
+  "cat": "university-math",
+  "cats": [
+    "university-math"
+  ],
+  "subcats": [],
+  "bookIds": [],
+  "sourceCount": 22
+}
