@@ -65,6 +65,1466 @@
   ],
   "books": [
     {
+      "id": "vocabulary-usage-a4-full",
+      "title": "词汇与用法｜A4合订本",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "紧凑A4双栏词汇书：4500主词头、1500备查词，180个新学日及14日尾部复习。每个主词页14—18词，含完整词条、双语语境、构词联记、间隔复习和可点击索引。合订本1274页；28个独立周包、打印ZIP、源码和核验报告在“本人查看原件”的发布页。",
+      "pages": 1274,
+      "size": "23.5 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 24634504,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "高考英语",
+        "雅思学术",
+        "数学英语",
+        "金融英语",
+        "AI英语",
+        "计算机英语"
+      ],
+      "searchTitles": [
+        "词汇与用法｜A4合订本",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "Vocabulary-Usage-A4-Full.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/Vocabulary-Usage-A4-Full.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-full/page-001.webp",
+          "previews/vocabulary-usage-a4-full/page-002.webp",
+          "previews/vocabulary-usage-a4-full/page-003.webp",
+          "previews/vocabulary-usage-a4-full/page-004.webp",
+          "previews/vocabulary-usage-a4-full/page-005.webp",
+          "previews/vocabulary-usage-a4-full/page-006.webp",
+          "previews/vocabulary-usage-a4-full/page-007.webp",
+          "previews/vocabulary-usage-a4-full/page-008.webp",
+          "previews/vocabulary-usage-a4-full/page-009.webp",
+          "previews/vocabulary-usage-a4-full/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 1274
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w01",
+      "title": "词汇与用法｜第01周（第1—7日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第1周，第1—7学习日。完整周包32页，双面16张；答案从第26页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 32,
+      "size": "0.6 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 654302,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "高考英语"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第01周（第1—7日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W01-D001-007.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W01-D001-007.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w01/page-001.webp",
+          "previews/vocabulary-usage-a4-w01/page-002.webp",
+          "previews/vocabulary-usage-a4-w01/page-003.webp",
+          "previews/vocabulary-usage-a4-w01/page-004.webp",
+          "previews/vocabulary-usage-a4-w01/page-005.webp",
+          "previews/vocabulary-usage-a4-w01/page-006.webp",
+          "previews/vocabulary-usage-a4-w01/page-007.webp",
+          "previews/vocabulary-usage-a4-w01/page-008.webp",
+          "previews/vocabulary-usage-a4-w01/page-009.webp",
+          "previews/vocabulary-usage-a4-w01/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 32
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w02",
+      "title": "词汇与用法｜第02周（第8—14日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第2周，第8—14学习日。完整周包38页，双面19张；答案从第29页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 38,
+      "size": "0.7 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 739580,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "高考英语"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第02周（第8—14日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W02-D008-014.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W02-D008-014.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w02/page-001.webp",
+          "previews/vocabulary-usage-a4-w02/page-002.webp",
+          "previews/vocabulary-usage-a4-w02/page-003.webp",
+          "previews/vocabulary-usage-a4-w02/page-004.webp",
+          "previews/vocabulary-usage-a4-w02/page-005.webp",
+          "previews/vocabulary-usage-a4-w02/page-006.webp",
+          "previews/vocabulary-usage-a4-w02/page-007.webp",
+          "previews/vocabulary-usage-a4-w02/page-008.webp",
+          "previews/vocabulary-usage-a4-w02/page-009.webp",
+          "previews/vocabulary-usage-a4-w02/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 38
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w03",
+      "title": "词汇与用法｜第03周（第15—21日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第3周，第15—21学习日。完整周包42页，双面21张；答案从第31页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 42,
+      "size": "0.8 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 850683,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "高考英语"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第03周（第15—21日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W03-D015-021.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W03-D015-021.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w03/page-001.webp",
+          "previews/vocabulary-usage-a4-w03/page-002.webp",
+          "previews/vocabulary-usage-a4-w03/page-003.webp",
+          "previews/vocabulary-usage-a4-w03/page-004.webp",
+          "previews/vocabulary-usage-a4-w03/page-005.webp",
+          "previews/vocabulary-usage-a4-w03/page-006.webp",
+          "previews/vocabulary-usage-a4-w03/page-007.webp",
+          "previews/vocabulary-usage-a4-w03/page-008.webp",
+          "previews/vocabulary-usage-a4-w03/page-009.webp",
+          "previews/vocabulary-usage-a4-w03/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 42
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w04",
+      "title": "词汇与用法｜第04周（第22—28日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第4周，第22—28学习日。完整周包46页，双面23张；答案从第33页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 46,
+      "size": "0.9 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 910722,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "高考英语"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第04周（第22—28日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W04-D022-028.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W04-D022-028.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w04/page-001.webp",
+          "previews/vocabulary-usage-a4-w04/page-002.webp",
+          "previews/vocabulary-usage-a4-w04/page-003.webp",
+          "previews/vocabulary-usage-a4-w04/page-004.webp",
+          "previews/vocabulary-usage-a4-w04/page-005.webp",
+          "previews/vocabulary-usage-a4-w04/page-006.webp",
+          "previews/vocabulary-usage-a4-w04/page-007.webp",
+          "previews/vocabulary-usage-a4-w04/page-008.webp",
+          "previews/vocabulary-usage-a4-w04/page-009.webp",
+          "previews/vocabulary-usage-a4-w04/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 46
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w05",
+      "title": "词汇与用法｜第05周（第29—35日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第5周，第29—35学习日。完整周包46页，双面23张；答案从第34页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 46,
+      "size": "0.9 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 948485,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "高考英语"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第05周（第29—35日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W05-D029-035.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W05-D029-035.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w05/page-001.webp",
+          "previews/vocabulary-usage-a4-w05/page-002.webp",
+          "previews/vocabulary-usage-a4-w05/page-003.webp",
+          "previews/vocabulary-usage-a4-w05/page-004.webp",
+          "previews/vocabulary-usage-a4-w05/page-005.webp",
+          "previews/vocabulary-usage-a4-w05/page-006.webp",
+          "previews/vocabulary-usage-a4-w05/page-007.webp",
+          "previews/vocabulary-usage-a4-w05/page-008.webp",
+          "previews/vocabulary-usage-a4-w05/page-009.webp",
+          "previews/vocabulary-usage-a4-w05/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 46
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w06",
+      "title": "词汇与用法｜第06周（第36—42日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第6周，第36—42学习日。完整周包44页，双面22张；答案从第33页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 44,
+      "size": "0.9 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 910685,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "高考英语"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第06周（第36—42日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W06-D036-042.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W06-D036-042.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w06/page-001.webp",
+          "previews/vocabulary-usage-a4-w06/page-002.webp",
+          "previews/vocabulary-usage-a4-w06/page-003.webp",
+          "previews/vocabulary-usage-a4-w06/page-004.webp",
+          "previews/vocabulary-usage-a4-w06/page-005.webp",
+          "previews/vocabulary-usage-a4-w06/page-006.webp",
+          "previews/vocabulary-usage-a4-w06/page-007.webp",
+          "previews/vocabulary-usage-a4-w06/page-008.webp",
+          "previews/vocabulary-usage-a4-w06/page-009.webp",
+          "previews/vocabulary-usage-a4-w06/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 44
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w07",
+      "title": "词汇与用法｜第07周（第43—49日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第7周，第43—49学习日。完整周包46页，双面23张；答案从第34页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 46,
+      "size": "0.9 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 941436,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "高考英语"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第07周（第43—49日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W07-D043-049.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W07-D043-049.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w07/page-001.webp",
+          "previews/vocabulary-usage-a4-w07/page-002.webp",
+          "previews/vocabulary-usage-a4-w07/page-003.webp",
+          "previews/vocabulary-usage-a4-w07/page-004.webp",
+          "previews/vocabulary-usage-a4-w07/page-005.webp",
+          "previews/vocabulary-usage-a4-w07/page-006.webp",
+          "previews/vocabulary-usage-a4-w07/page-007.webp",
+          "previews/vocabulary-usage-a4-w07/page-008.webp",
+          "previews/vocabulary-usage-a4-w07/page-009.webp",
+          "previews/vocabulary-usage-a4-w07/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 46
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w08",
+      "title": "词汇与用法｜第08周（第50—56日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第8周，第50—56学习日。完整周包46页，双面23张；答案从第34页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 46,
+      "size": "0.9 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 929000,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "高考英语"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第08周（第50—56日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W08-D050-056.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W08-D050-056.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w08/page-001.webp",
+          "previews/vocabulary-usage-a4-w08/page-002.webp",
+          "previews/vocabulary-usage-a4-w08/page-003.webp",
+          "previews/vocabulary-usage-a4-w08/page-004.webp",
+          "previews/vocabulary-usage-a4-w08/page-005.webp",
+          "previews/vocabulary-usage-a4-w08/page-006.webp",
+          "previews/vocabulary-usage-a4-w08/page-007.webp",
+          "previews/vocabulary-usage-a4-w08/page-008.webp",
+          "previews/vocabulary-usage-a4-w08/page-009.webp",
+          "previews/vocabulary-usage-a4-w08/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 46
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w09",
+      "title": "词汇与用法｜第09周（第57—63日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第9周，第57—63学习日。完整周包46页，双面23张；答案从第34页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 46,
+      "size": "0.9 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 928211,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "高考英语"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第09周（第57—63日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W09-D057-063.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W09-D057-063.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w09/page-001.webp",
+          "previews/vocabulary-usage-a4-w09/page-002.webp",
+          "previews/vocabulary-usage-a4-w09/page-003.webp",
+          "previews/vocabulary-usage-a4-w09/page-004.webp",
+          "previews/vocabulary-usage-a4-w09/page-005.webp",
+          "previews/vocabulary-usage-a4-w09/page-006.webp",
+          "previews/vocabulary-usage-a4-w09/page-007.webp",
+          "previews/vocabulary-usage-a4-w09/page-008.webp",
+          "previews/vocabulary-usage-a4-w09/page-009.webp",
+          "previews/vocabulary-usage-a4-w09/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 46
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w10",
+      "title": "词汇与用法｜第10周（第64—70日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第10周，第64—70学习日。完整周包44页，双面22张；答案从第32页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 44,
+      "size": "0.8 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 876675,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "高考英语"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第10周（第64—70日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W10-D064-070.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W10-D064-070.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w10/page-001.webp",
+          "previews/vocabulary-usage-a4-w10/page-002.webp",
+          "previews/vocabulary-usage-a4-w10/page-003.webp",
+          "previews/vocabulary-usage-a4-w10/page-004.webp",
+          "previews/vocabulary-usage-a4-w10/page-005.webp",
+          "previews/vocabulary-usage-a4-w10/page-006.webp",
+          "previews/vocabulary-usage-a4-w10/page-007.webp",
+          "previews/vocabulary-usage-a4-w10/page-008.webp",
+          "previews/vocabulary-usage-a4-w10/page-009.webp",
+          "previews/vocabulary-usage-a4-w10/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 44
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w11",
+      "title": "词汇与用法｜第11周（第71—77日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第11周，第71—77学习日。完整周包44页，双面22张；答案从第32页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 44,
+      "size": "0.8 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 854019,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "高考英语"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第11周（第71—77日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W11-D071-077.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W11-D071-077.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w11/page-001.webp",
+          "previews/vocabulary-usage-a4-w11/page-002.webp",
+          "previews/vocabulary-usage-a4-w11/page-003.webp",
+          "previews/vocabulary-usage-a4-w11/page-004.webp",
+          "previews/vocabulary-usage-a4-w11/page-005.webp",
+          "previews/vocabulary-usage-a4-w11/page-006.webp",
+          "previews/vocabulary-usage-a4-w11/page-007.webp",
+          "previews/vocabulary-usage-a4-w11/page-008.webp",
+          "previews/vocabulary-usage-a4-w11/page-009.webp",
+          "previews/vocabulary-usage-a4-w11/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 44
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w12",
+      "title": "词汇与用法｜第12周（第78—84日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第12周，第78—84学习日。完整周包44页，双面22张；答案从第32页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 44,
+      "size": "0.8 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 855248,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "高考英语"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第12周（第78—84日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W12-D078-084.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W12-D078-084.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w12/page-001.webp",
+          "previews/vocabulary-usage-a4-w12/page-002.webp",
+          "previews/vocabulary-usage-a4-w12/page-003.webp",
+          "previews/vocabulary-usage-a4-w12/page-004.webp",
+          "previews/vocabulary-usage-a4-w12/page-005.webp",
+          "previews/vocabulary-usage-a4-w12/page-006.webp",
+          "previews/vocabulary-usage-a4-w12/page-007.webp",
+          "previews/vocabulary-usage-a4-w12/page-008.webp",
+          "previews/vocabulary-usage-a4-w12/page-009.webp",
+          "previews/vocabulary-usage-a4-w12/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 44
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w13",
+      "title": "词汇与用法｜第13周（第85—91日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第13周，第85—91学习日。完整周包44页，双面22张；答案从第33页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 44,
+      "size": "0.9 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 915446,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "高考英语"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第13周（第85—91日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W13-D085-091.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W13-D085-091.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w13/page-001.webp",
+          "previews/vocabulary-usage-a4-w13/page-002.webp",
+          "previews/vocabulary-usage-a4-w13/page-003.webp",
+          "previews/vocabulary-usage-a4-w13/page-004.webp",
+          "previews/vocabulary-usage-a4-w13/page-005.webp",
+          "previews/vocabulary-usage-a4-w13/page-006.webp",
+          "previews/vocabulary-usage-a4-w13/page-007.webp",
+          "previews/vocabulary-usage-a4-w13/page-008.webp",
+          "previews/vocabulary-usage-a4-w13/page-009.webp",
+          "previews/vocabulary-usage-a4-w13/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 44
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w14",
+      "title": "词汇与用法｜第14周（第92—98日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第14周，第92—98学习日。完整周包46页，双面23张；答案从第34页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 46,
+      "size": "0.9 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 910205,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "高考英语",
+        "雅思学术"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第14周（第92—98日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W14-D092-098.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W14-D092-098.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w14/page-001.webp",
+          "previews/vocabulary-usage-a4-w14/page-002.webp",
+          "previews/vocabulary-usage-a4-w14/page-003.webp",
+          "previews/vocabulary-usage-a4-w14/page-004.webp",
+          "previews/vocabulary-usage-a4-w14/page-005.webp",
+          "previews/vocabulary-usage-a4-w14/page-006.webp",
+          "previews/vocabulary-usage-a4-w14/page-007.webp",
+          "previews/vocabulary-usage-a4-w14/page-008.webp",
+          "previews/vocabulary-usage-a4-w14/page-009.webp",
+          "previews/vocabulary-usage-a4-w14/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 46
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w15",
+      "title": "词汇与用法｜第15周（第99—105日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第15周，第99—105学习日。完整周包44页，双面22张；答案从第33页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 44,
+      "size": "0.9 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 896005,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "雅思学术"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第15周（第99—105日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W15-D099-105.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W15-D099-105.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w15/page-001.webp",
+          "previews/vocabulary-usage-a4-w15/page-002.webp",
+          "previews/vocabulary-usage-a4-w15/page-003.webp",
+          "previews/vocabulary-usage-a4-w15/page-004.webp",
+          "previews/vocabulary-usage-a4-w15/page-005.webp",
+          "previews/vocabulary-usage-a4-w15/page-006.webp",
+          "previews/vocabulary-usage-a4-w15/page-007.webp",
+          "previews/vocabulary-usage-a4-w15/page-008.webp",
+          "previews/vocabulary-usage-a4-w15/page-009.webp",
+          "previews/vocabulary-usage-a4-w15/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 44
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w16",
+      "title": "词汇与用法｜第16周（第106—112日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第16周，第106—112学习日。完整周包44页，双面22张；答案从第33页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 44,
+      "size": "0.8 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 858365,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "雅思学术"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第16周（第106—112日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W16-D106-112.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W16-D106-112.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w16/page-001.webp",
+          "previews/vocabulary-usage-a4-w16/page-002.webp",
+          "previews/vocabulary-usage-a4-w16/page-003.webp",
+          "previews/vocabulary-usage-a4-w16/page-004.webp",
+          "previews/vocabulary-usage-a4-w16/page-005.webp",
+          "previews/vocabulary-usage-a4-w16/page-006.webp",
+          "previews/vocabulary-usage-a4-w16/page-007.webp",
+          "previews/vocabulary-usage-a4-w16/page-008.webp",
+          "previews/vocabulary-usage-a4-w16/page-009.webp",
+          "previews/vocabulary-usage-a4-w16/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 44
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w17",
+      "title": "词汇与用法｜第17周（第113—119日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第17周，第113—119学习日。完整周包44页，双面22张；答案从第33页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 44,
+      "size": "0.8 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 862658,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "雅思学术"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第17周（第113—119日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W17-D113-119.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W17-D113-119.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w17/page-001.webp",
+          "previews/vocabulary-usage-a4-w17/page-002.webp",
+          "previews/vocabulary-usage-a4-w17/page-003.webp",
+          "previews/vocabulary-usage-a4-w17/page-004.webp",
+          "previews/vocabulary-usage-a4-w17/page-005.webp",
+          "previews/vocabulary-usage-a4-w17/page-006.webp",
+          "previews/vocabulary-usage-a4-w17/page-007.webp",
+          "previews/vocabulary-usage-a4-w17/page-008.webp",
+          "previews/vocabulary-usage-a4-w17/page-009.webp",
+          "previews/vocabulary-usage-a4-w17/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 44
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w18",
+      "title": "词汇与用法｜第18周（第120—126日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第18周，第120—126学习日。完整周包44页，双面22张；答案从第32页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 44,
+      "size": "0.9 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 895349,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "雅思学术"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第18周（第120—126日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W18-D120-126.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W18-D120-126.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w18/page-001.webp",
+          "previews/vocabulary-usage-a4-w18/page-002.webp",
+          "previews/vocabulary-usage-a4-w18/page-003.webp",
+          "previews/vocabulary-usage-a4-w18/page-004.webp",
+          "previews/vocabulary-usage-a4-w18/page-005.webp",
+          "previews/vocabulary-usage-a4-w18/page-006.webp",
+          "previews/vocabulary-usage-a4-w18/page-007.webp",
+          "previews/vocabulary-usage-a4-w18/page-008.webp",
+          "previews/vocabulary-usage-a4-w18/page-009.webp",
+          "previews/vocabulary-usage-a4-w18/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 44
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w19",
+      "title": "词汇与用法｜第19周（第127—133日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第19周，第127—133学习日。完整周包44页，双面22张；答案从第32页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 44,
+      "size": "0.9 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 905590,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "雅思学术"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第19周（第127—133日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W19-D127-133.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W19-D127-133.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w19/page-001.webp",
+          "previews/vocabulary-usage-a4-w19/page-002.webp",
+          "previews/vocabulary-usage-a4-w19/page-003.webp",
+          "previews/vocabulary-usage-a4-w19/page-004.webp",
+          "previews/vocabulary-usage-a4-w19/page-005.webp",
+          "previews/vocabulary-usage-a4-w19/page-006.webp",
+          "previews/vocabulary-usage-a4-w19/page-007.webp",
+          "previews/vocabulary-usage-a4-w19/page-008.webp",
+          "previews/vocabulary-usage-a4-w19/page-009.webp",
+          "previews/vocabulary-usage-a4-w19/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 44
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w20",
+      "title": "词汇与用法｜第20周（第134—140日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第20周，第134—140学习日。完整周包46页，双面23张；答案从第33页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 46,
+      "size": "0.8 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 890007,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "雅思学术"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第20周（第134—140日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W20-D134-140.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W20-D134-140.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w20/page-001.webp",
+          "previews/vocabulary-usage-a4-w20/page-002.webp",
+          "previews/vocabulary-usage-a4-w20/page-003.webp",
+          "previews/vocabulary-usage-a4-w20/page-004.webp",
+          "previews/vocabulary-usage-a4-w20/page-005.webp",
+          "previews/vocabulary-usage-a4-w20/page-006.webp",
+          "previews/vocabulary-usage-a4-w20/page-007.webp",
+          "previews/vocabulary-usage-a4-w20/page-008.webp",
+          "previews/vocabulary-usage-a4-w20/page-009.webp",
+          "previews/vocabulary-usage-a4-w20/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 46
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w21",
+      "title": "词汇与用法｜第21周（第141—147日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第21周，第141—147学习日。完整周包46页，双面23张；答案从第33页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 46,
+      "size": "0.9 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 906658,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "雅思学术"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第21周（第141—147日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W21-D141-147.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W21-D141-147.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w21/page-001.webp",
+          "previews/vocabulary-usage-a4-w21/page-002.webp",
+          "previews/vocabulary-usage-a4-w21/page-003.webp",
+          "previews/vocabulary-usage-a4-w21/page-004.webp",
+          "previews/vocabulary-usage-a4-w21/page-005.webp",
+          "previews/vocabulary-usage-a4-w21/page-006.webp",
+          "previews/vocabulary-usage-a4-w21/page-007.webp",
+          "previews/vocabulary-usage-a4-w21/page-008.webp",
+          "previews/vocabulary-usage-a4-w21/page-009.webp",
+          "previews/vocabulary-usage-a4-w21/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 46
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w22",
+      "title": "词汇与用法｜第22周（第148—154日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第22周，第148—154学习日。完整周包46页，双面23张；答案从第35页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 46,
+      "size": "0.9 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 901581,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "雅思学术"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第22周（第148—154日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W22-D148-154.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W22-D148-154.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w22/page-001.webp",
+          "previews/vocabulary-usage-a4-w22/page-002.webp",
+          "previews/vocabulary-usage-a4-w22/page-003.webp",
+          "previews/vocabulary-usage-a4-w22/page-004.webp",
+          "previews/vocabulary-usage-a4-w22/page-005.webp",
+          "previews/vocabulary-usage-a4-w22/page-006.webp",
+          "previews/vocabulary-usage-a4-w22/page-007.webp",
+          "previews/vocabulary-usage-a4-w22/page-008.webp",
+          "previews/vocabulary-usage-a4-w22/page-009.webp",
+          "previews/vocabulary-usage-a4-w22/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 46
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w23",
+      "title": "词汇与用法｜第23周（第155—161日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第23周，第155—161学习日。完整周包48页，双面24张；答案从第35页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 48,
+      "size": "0.8 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 885921,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "雅思学术",
+        "数学英语"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第23周（第155—161日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W23-D155-161.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W23-D155-161.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w23/page-001.webp",
+          "previews/vocabulary-usage-a4-w23/page-002.webp",
+          "previews/vocabulary-usage-a4-w23/page-003.webp",
+          "previews/vocabulary-usage-a4-w23/page-004.webp",
+          "previews/vocabulary-usage-a4-w23/page-005.webp",
+          "previews/vocabulary-usage-a4-w23/page-006.webp",
+          "previews/vocabulary-usage-a4-w23/page-007.webp",
+          "previews/vocabulary-usage-a4-w23/page-008.webp",
+          "previews/vocabulary-usage-a4-w23/page-009.webp",
+          "previews/vocabulary-usage-a4-w23/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 48
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w24",
+      "title": "词汇与用法｜第24周（第162—168日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第24周，第162—168学习日。完整周包48页，双面24张；答案从第35页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 48,
+      "size": "0.9 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 914166,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "数学英语",
+        "金融英语"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第24周（第162—168日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W24-D162-168.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W24-D162-168.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w24/page-001.webp",
+          "previews/vocabulary-usage-a4-w24/page-002.webp",
+          "previews/vocabulary-usage-a4-w24/page-003.webp",
+          "previews/vocabulary-usage-a4-w24/page-004.webp",
+          "previews/vocabulary-usage-a4-w24/page-005.webp",
+          "previews/vocabulary-usage-a4-w24/page-006.webp",
+          "previews/vocabulary-usage-a4-w24/page-007.webp",
+          "previews/vocabulary-usage-a4-w24/page-008.webp",
+          "previews/vocabulary-usage-a4-w24/page-009.webp",
+          "previews/vocabulary-usage-a4-w24/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 48
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w25",
+      "title": "词汇与用法｜第25周（第169—175日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第25周，第169—175学习日。完整周包50页，双面25张；答案从第37页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 50,
+      "size": "0.9 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 919540,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "AI英语",
+        "计算机英语"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第25周（第169—175日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W25-D169-175.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W25-D169-175.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w25/page-001.webp",
+          "previews/vocabulary-usage-a4-w25/page-002.webp",
+          "previews/vocabulary-usage-a4-w25/page-003.webp",
+          "previews/vocabulary-usage-a4-w25/page-004.webp",
+          "previews/vocabulary-usage-a4-w25/page-005.webp",
+          "previews/vocabulary-usage-a4-w25/page-006.webp",
+          "previews/vocabulary-usage-a4-w25/page-007.webp",
+          "previews/vocabulary-usage-a4-w25/page-008.webp",
+          "previews/vocabulary-usage-a4-w25/page-009.webp",
+          "previews/vocabulary-usage-a4-w25/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 50
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w26",
+      "title": "词汇与用法｜第26周（第176—182日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第26周，第176—182学习日。完整周包42页，双面21张；答案从第30页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 42,
+      "size": "0.8 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 822362,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "计算机英语",
+        "尾部复习"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第26周（第176—182日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W26-D176-182.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W26-D176-182.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w26/page-001.webp",
+          "previews/vocabulary-usage-a4-w26/page-002.webp",
+          "previews/vocabulary-usage-a4-w26/page-003.webp",
+          "previews/vocabulary-usage-a4-w26/page-004.webp",
+          "previews/vocabulary-usage-a4-w26/page-005.webp",
+          "previews/vocabulary-usage-a4-w26/page-006.webp",
+          "previews/vocabulary-usage-a4-w26/page-007.webp",
+          "previews/vocabulary-usage-a4-w26/page-008.webp",
+          "previews/vocabulary-usage-a4-w26/page-009.webp",
+          "previews/vocabulary-usage-a4-w26/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 42
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w27",
+      "title": "词汇与用法｜第27周（第183—189日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第27周，第183—189学习日。完整周包18页，双面9张；答案从第11页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 18,
+      "size": "0.4 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 458557,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "尾部复习"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第27周（第183—189日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W27-D183-189.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W27-D183-189.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w27/page-001.webp",
+          "previews/vocabulary-usage-a4-w27/page-002.webp",
+          "previews/vocabulary-usage-a4-w27/page-003.webp",
+          "previews/vocabulary-usage-a4-w27/page-004.webp",
+          "previews/vocabulary-usage-a4-w27/page-005.webp",
+          "previews/vocabulary-usage-a4-w27/page-006.webp",
+          "previews/vocabulary-usage-a4-w27/page-007.webp",
+          "previews/vocabulary-usage-a4-w27/page-008.webp",
+          "previews/vocabulary-usage-a4-w27/page-009.webp",
+          "previews/vocabulary-usage-a4-w27/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 18
+      }
+    },
+    {
+      "id": "vocabulary-usage-a4-w28",
+      "title": "词汇与用法｜第28周（第190—194日）",
+      "author": "Nicole 自学资料",
+      "cat": "english",
+      "catName": "英语",
+      "cats": [
+        "english"
+      ],
+      "desc": "第28周，第190—194学习日。完整周包10页，双面5张；答案从第7页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
+      "pages": 10,
+      "size": "0.3 MB",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 330502,
+      "tags": [
+        "英语词汇",
+        "词根词缀",
+        "A4打印",
+        "中英双语",
+        "尾部复习"
+      ],
+      "searchTitles": [
+        "词汇与用法｜第28周（第190—194日）",
+        "词汇与用法",
+        "词汇与用法 A4词根词缀版",
+        "W28-D190-194.pdf"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W28-D190-194.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/vocabulary-usage-a4-w28/page-001.webp",
+          "previews/vocabulary-usage-a4-w28/page-002.webp",
+          "previews/vocabulary-usage-a4-w28/page-003.webp",
+          "previews/vocabulary-usage-a4-w28/page-004.webp",
+          "previews/vocabulary-usage-a4-w28/page-005.webp",
+          "previews/vocabulary-usage-a4-w28/page-006.webp",
+          "previews/vocabulary-usage-a4-w28/page-007.webp",
+          "previews/vocabulary-usage-a4-w28/page-008.webp",
+          "previews/vocabulary-usage-a4-w28/page-009.webp",
+          "previews/vocabulary-usage-a4-w28/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 10
+      }
+    },
+    {
       "id": "upload-737850270",
       "title": "高中数学一试",
       "author": "DingCheng Weng；李名德、李胜宏（主编）",
