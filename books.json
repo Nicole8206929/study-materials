@@ -8135,6 +8135,150 @@
         "pageCount": 10,
         "sourcePageCount": 48
       }
+    },
+    {
+      "id": "gtm-040",
+      "title": "Denumerable Markov Chains: with a chapter of Markov Random Fields",
+      "author": "John G. Kemeny, J. Laurie Snell, Anthony W. Knapp",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "可数马尔可夫链（第二版），含 David Griffeath 撰写的马尔可夫随机场一章：转移概率、势函数、边界理论与随机过程，GTM 概率经典。",
+      "pages": 495,
+      "size": "37.9 MB",
+      "year": 1976,
+      "format": "PDF",
+      "bytes": 37877382,
+      "tags": [
+        "GTM",
+        "Springer",
+        "研究生教材",
+        "概率与统计"
+      ],
+      "searchTitles": [
+        "可数马尔可夫链",
+        "Denumerable Markov Chains: with a chapter of Markov Random Fields",
+        "GTM 40"
+      ],
+      "preview": {
+        "images": [
+          "previews/gtm-040/page-001.webp",
+          "previews/gtm-040/page-002.webp",
+          "previews/gtm-040/page-003.webp",
+          "previews/gtm-040/page-004.webp",
+          "previews/gtm-040/page-005.webp",
+          "previews/gtm-040/page-006.webp",
+          "previews/gtm-040/page-007.webp",
+          "previews/gtm-040/page-008.webp",
+          "previews/gtm-040/page-009.webp",
+          "previews/gtm-040/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 495
+      },
+      "subcats": [
+        "probability-statistics"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/19ccec008bb1daa80b96ec44edb8f8668c603bbf/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM040_Denumerable_Markov_Chains.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/19ccec008bb1daa80b96ec44edb8f8668c603bbf/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM040_Denumerable_Markov_Chains.pdf"
+      }
+    },
+    {
+      "id": "gtm-191",
+      "title": "Fundamentals of Differential Geometry",
+      "author": "Serge Lang",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "微分几何基础：流形、微分形式、黎曼几何、联络与曲率，Serge Lang 研究生教材。",
+      "pages": 553,
+      "size": "67.1 MB",
+      "year": 1999,
+      "format": "PDF",
+      "bytes": 67063188,
+      "tags": [
+        "GTM",
+        "Springer",
+        "研究生教材",
+        "几何与拓扑"
+      ],
+      "searchTitles": [
+        "微分几何基础",
+        "Fundamentals of Differential Geometry",
+        "GTM 191"
+      ],
+      "preview": {
+        "images": [
+          "previews/gtm-191/page-001.webp",
+          "previews/gtm-191/page-002.webp",
+          "previews/gtm-191/page-003.webp",
+          "previews/gtm-191/page-004.webp",
+          "previews/gtm-191/page-005.webp",
+          "previews/gtm-191/page-006.webp",
+          "previews/gtm-191/page-007.webp",
+          "previews/gtm-191/page-008.webp",
+          "previews/gtm-191/page-009.webp",
+          "previews/gtm-191/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 553
+      },
+      "subcats": [
+        "geometry-topology"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/19ccec008bb1daa80b96ec44edb8f8668c603bbf/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM191_Fundamentals_of_Differential_Geometry.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/19ccec008bb1daa80b96ec44edb8f8668c603bbf/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM191_Fundamentals_of_Differential_Geometry.pdf"
+      }
+    },
+    {
+      "id": "gtm-281",
+      "title": "Intersection Homology & Perverse Sheaves with Applications to Singularities",
+      "author": "Laurențiu G. Maxim",
+      "cat": "university-math",
+      "catName": "大学数学",
+      "desc": "相交同调与反常层（奇异点应用）：层导出范畴、相交同调、奇异点拓扑，现代代数拓扑教材。",
+      "pages": 278,
+      "size": "3.9 MB",
+      "year": 2019,
+      "format": "PDF",
+      "bytes": 3927965,
+      "tags": [
+        "GTM",
+        "Springer",
+        "研究生教材",
+        "几何与拓扑"
+      ],
+      "searchTitles": [
+        "相交同调与反常层",
+        "Intersection Homology & Perverse Sheaves with Applications to Singularities",
+        "GTM 281"
+      ],
+      "preview": {
+        "images": [
+          "previews/gtm-281/page-001.webp",
+          "previews/gtm-281/page-002.webp",
+          "previews/gtm-281/page-003.webp",
+          "previews/gtm-281/page-004.webp",
+          "previews/gtm-281/page-005.webp",
+          "previews/gtm-281/page-006.webp",
+          "previews/gtm-281/page-007.webp",
+          "previews/gtm-281/page-008.webp",
+          "previews/gtm-281/page-009.webp",
+          "previews/gtm-281/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 278
+      },
+      "subcats": [
+        "geometry-topology"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/19ccec008bb1daa80b96ec44edb8f8668c603bbf/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM281_Intersection_Homology_Perverse_Sheaves.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/19ccec008bb1daa80b96ec44edb8f8668c603bbf/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM281_Intersection_Homology_Perverse_Sheaves.pdf"
+      }
     }
   ],
   "subcategories": [
