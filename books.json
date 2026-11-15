@@ -10932,6 +10932,55 @@
         "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/overlimit-large-20261115",
         "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/overlimit-large-20261115/competition-math-analysis-vol1.pdf"
       }
+    },
+    {
+      "id": "qf-afml",
+      "title": "Advances in Financial Machine Learning",
+      "author": "Marcos López de Prado",
+      "cat": "finance",
+      "catName": "金融",
+      "cats": [
+        "finance"
+      ],
+      "desc": "金融机器学习开山之作：金融数据结构、特征工程、元标签、交叉验证与机器学习资产配置。PDF 版受版权下架，本条目由可下载 EPUB 转换（附原始 EPUB），Wiley 2018。",
+      "pages": 296,
+      "size": "15.5 MB",
+      "year": 2018,
+      "format": "PDF",
+      "bytes": 15541047,
+      "tags": [
+        "金融量化",
+        "机器学习",
+        "算法交易",
+        "量化投资"
+      ],
+      "searchTitles": [
+        "Advances in Financial Machine Learning",
+        "AFML",
+        "金融机器学习",
+        "Lopez de Prado"
+      ],
+      "preview": {
+        "images": [
+          "previews/qf-afml/page-001.webp",
+          "previews/qf-afml/page-002.webp",
+          "previews/qf-afml/page-003.webp",
+          "previews/qf-afml/page-004.webp",
+          "previews/qf-afml/page-005.webp",
+          "previews/qf-afml/page-006.webp",
+          "previews/qf-afml/page-007.webp",
+          "previews/qf-afml/page-008.webp",
+          "previews/qf-afml/page-009.webp",
+          "previews/qf-afml/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 296
+      },
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/98a92fece5639b58fb82a6b5da0dd5f9bbf773ef/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/AdvancesFinancialMachineLearning_LopezDePrado.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/98a92fece5639b58fb82a6b5da0dd5f9bbf773ef/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/AdvancesFinancialMachineLearning_LopezDePrado.pdf"
+      }
     }
   ],
   "subcategories": [
