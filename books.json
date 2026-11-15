@@ -23,6 +23,10 @@
       "name": "大学物理"
     },
     {
+      "id": "high-school-chemistry",
+      "name": "高中化学"
+    },
+    {
       "id": "bio",
       "name": "高中生物"
     },
@@ -5195,7 +5199,6 @@
       "year": null,
       "tags": [
         "松松饼",
-        "高新雨",
         "丘赛真题",
         "同源资料合订",
         "物理",
@@ -5243,7 +5246,8 @@
         "bd-22b934b966e1",
         "upload-735648510",
         "upload-736069923",
-        "松松饼（高新雨）"
+        "松松饼（高新雨）",
+        "高新雨"
       ],
       "bytes": 43583405,
       "size": "41.6 MB",
@@ -7664,6 +7668,60 @@
         "english",
         "artificial-intelligence"
       ]
+    },
+    {
+      "id": "high-school-chemistry-revised",
+      "title": "高中化学系统讲义（修订版）",
+      "author": "未署名",
+      "cat": "high-school-chemistry",
+      "catName": "高中化学",
+      "cats": [
+        "high-school-chemistry"
+      ],
+      "desc": "面向广东新高考，涵盖选择性必修1、2、3与高考综合。包括高一基础回顾、化学反应原理、物质结构、有机化学、实验与综合训练，附分层练习、解析和修订记录。",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 2907432,
+      "pages": 248,
+      "size": "2.8 MB",
+      "tags": [
+        "系统讲义",
+        "广东新高考",
+        "选择性必修",
+        "化学反应原理",
+        "物质结构与性质",
+        "有机化学",
+        "化学实验",
+        "修订版"
+      ],
+      "searchTitles": [
+        "高中化学系统讲义_修订版 _1_.pdf",
+        "高中化学系统讲义_修订版.pdf",
+        "高中化学系统讲义",
+        "高中化学讲义",
+        "选择性必修1、2、3与高考综合"
+      ],
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/a96fc879d569ca6b70759f3d55b710faa4e0e582/%E9%AB%98%E4%B8%AD%E5%8C%96%E5%AD%A6/%E9%AB%98%E4%B8%AD%E5%8C%96%E5%AD%A6%E7%B3%BB%E7%BB%9F%E8%AE%B2%E4%B9%89_%E4%BF%AE%E8%AE%A2%E7%89%88.pdf",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/a96fc879d569ca6b70759f3d55b710faa4e0e582/%E9%AB%98%E4%B8%AD%E5%8C%96%E5%AD%A6/%E9%AB%98%E4%B8%AD%E5%8C%96%E5%AD%A6%E7%B3%BB%E7%BB%9F%E8%AE%B2%E4%B9%89_%E4%BF%AE%E8%AE%A2%E7%89%88.pdf"
+      },
+      "preview": {
+        "images": [
+          "previews/high-school-chemistry-revised/page-001.webp",
+          "previews/high-school-chemistry-revised/page-002.webp",
+          "previews/high-school-chemistry-revised/page-003.webp",
+          "previews/high-school-chemistry-revised/page-004.webp",
+          "previews/high-school-chemistry-revised/page-005.webp",
+          "previews/high-school-chemistry-revised/page-006.webp",
+          "previews/high-school-chemistry-revised/page-007.webp",
+          "previews/high-school-chemistry-revised/page-008.webp",
+          "previews/high-school-chemistry-revised/page-009.webp",
+          "previews/high-school-chemistry-revised/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 248
+      }
     }
   ],
   "subcategories": [
@@ -7707,6 +7765,7 @@
       "ids": [
         "high-school-physics",
         "university-physics",
+        "high-school-chemistry",
         "bio"
       ]
     },
@@ -7747,7 +7806,8 @@
     "GTM 数学": "GTM",
     "深中物理": "深中高中物理资料",
     "深中物理资料": "深中高中物理资料",
-    "中文版": "中文教材"
+    "中文版": "中文教材",
+    "高新雨": "松松饼"
   },
   "tagGroups": [
     {
@@ -7782,7 +7842,6 @@
         "格里菲斯",
         "刘川",
         "松松饼",
-        "高新雨",
         "曹知秋",
         "数学奥林匹克小丛书",
         "水手练习题集"
@@ -7832,7 +7891,10 @@
         "雅思",
         "高中英语",
         "习题与解答",
-        "中文重编本"
+        "中文重编本",
+        "修订版",
+        "选择性必修",
+        "广东新高考"
       ]
     }
   ]
