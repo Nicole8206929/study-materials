@@ -241,7 +241,7 @@ function bookCard(book) {
   const shape = document.createElementNS("http://www.w3.org/2000/svg", "path");
   shape.setAttribute("d", "M7 10V7a5 5 0 0 1 10 0v3M6 10h12v11H6zM12 14v3");
   icon.append(shape);
-  access.append(icon,node("span","","完整原件仅本人可用"));
+  access.append(icon,node("span","",book.ownerAccess?"完整原件仅本人可用":"原件待补齐 · 当前仅可试读"));
   const details=node('details','book-details');
   details.append(node('summary','','简介与标签'),node('p','desc',book.desc));
   const bookTags=node('div','book-tags');
@@ -257,7 +257,7 @@ function bookCard(book) {
   const branches=bookSubcategories(book).map(id=>subcategories.find(s=>s.id===id)?.name).filter(Boolean);
   if(branches.length)heading.append(node('p','book-branches',branches.join(' / ')));
   card.append(heading,meta,details,access,actions);
-  card.append(node("p","format-note","访客试读 "+book.previewImages.length+" 页"+(book.ownerAccess?"；本人入口验证 GitHub 权限":"；完整文件保持私有")));
+  card.append(node("p","format-note","访客试读 "+book.previewImages.length+" 页"+(book.ownerAccess?"；本人入口验证 GitHub 权限":"；完整原件待补齐")));
 
   return card;
 }

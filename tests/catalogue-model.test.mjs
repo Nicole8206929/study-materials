@@ -27,7 +27,9 @@ test('catalogue has five math branches and valid unique records',()=>{
  assert.equal(data.subcategories.length,5);assert.equal(data.categoryGroups.flatMap(g=>g.ids).length,data.categories.length);
  const ids=new Set(),links=new Set();
  for(const b of data.books){
-  assert(!ids.has(b.id));ids.add(b.id);assert(!links.has(b.ownerAccess.download));links.add(b.ownerAccess.download);
+  assert(!ids.has(b.id));ids.add(b.id);
+  if(b.ownerAccess){assert(!links.has(b.ownerAccess.download));links.add(b.ownerAccess.download);}
+  else assert(b.tags.includes('原件待补齐'),'A missing original must be clearly labelled');
   assert.equal(model.categories.get(b.cat),b.catName);
   for(const s of b.subcats||[])assert(data.subcategories.some(v=>v.id===s&&(b.cats||[b.cat]).includes(v.parent)));
  }

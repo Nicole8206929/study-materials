@@ -66,14 +66,14 @@
   "books": [
     {
       "id": "vocabulary-usage-a4-full",
-      "title": "词汇与用法｜A4合订本",
+      "title": "词汇与用法（A4合订本与分周打印）",
       "author": "Nicole 自学资料",
       "cat": "english",
       "catName": "英语",
       "cats": [
         "english"
       ],
-      "desc": "紧凑A4双栏词汇书：4500主词头、1500备查词，180个新学日及14日尾部复习。每个主词页14—18词，含完整词条、双语语境、构词联记、间隔复习和可点击索引。合订本1274页；28个独立周包、打印ZIP、源码和核验报告在“本人查看原件”的发布页。",
+      "desc": "A4词汇书：4500主词头、1500备查词，180个新学日与14日尾部复习，完整合订本1274页。点击“本人下载”取得整本PDF；“查看原件”提供28个独立周包、全部周包ZIP及打印清单。分周版本用于独立打印，集中在这一书目下。",
       "pages": 1274,
       "size": "23.5 MB",
       "year": 2026,
@@ -95,11 +95,96 @@
         "词汇与用法｜A4合订本",
         "词汇与用法",
         "词汇与用法 A4词根词缀版",
-        "Vocabulary-Usage-A4-Full.pdf"
+        "Vocabulary-Usage-A4-Full.pdf",
+        "词汇与用法｜第01周（第1—7日）",
+        "W01-D001-007.pdf",
+        "vocabulary-usage-a4-w01",
+        "词汇与用法｜第02周（第8—14日）",
+        "W02-D008-014.pdf",
+        "vocabulary-usage-a4-w02",
+        "词汇与用法｜第03周（第15—21日）",
+        "W03-D015-021.pdf",
+        "vocabulary-usage-a4-w03",
+        "词汇与用法｜第04周（第22—28日）",
+        "W04-D022-028.pdf",
+        "vocabulary-usage-a4-w04",
+        "词汇与用法｜第05周（第29—35日）",
+        "W05-D029-035.pdf",
+        "vocabulary-usage-a4-w05",
+        "词汇与用法｜第06周（第36—42日）",
+        "W06-D036-042.pdf",
+        "vocabulary-usage-a4-w06",
+        "词汇与用法｜第07周（第43—49日）",
+        "W07-D043-049.pdf",
+        "vocabulary-usage-a4-w07",
+        "词汇与用法｜第08周（第50—56日）",
+        "W08-D050-056.pdf",
+        "vocabulary-usage-a4-w08",
+        "词汇与用法｜第09周（第57—63日）",
+        "W09-D057-063.pdf",
+        "vocabulary-usage-a4-w09",
+        "词汇与用法｜第10周（第64—70日）",
+        "W10-D064-070.pdf",
+        "vocabulary-usage-a4-w10",
+        "词汇与用法｜第11周（第71—77日）",
+        "W11-D071-077.pdf",
+        "vocabulary-usage-a4-w11",
+        "词汇与用法｜第12周（第78—84日）",
+        "W12-D078-084.pdf",
+        "vocabulary-usage-a4-w12",
+        "词汇与用法｜第13周（第85—91日）",
+        "W13-D085-091.pdf",
+        "vocabulary-usage-a4-w13",
+        "词汇与用法｜第14周（第92—98日）",
+        "W14-D092-098.pdf",
+        "vocabulary-usage-a4-w14",
+        "词汇与用法｜第15周（第99—105日）",
+        "W15-D099-105.pdf",
+        "vocabulary-usage-a4-w15",
+        "词汇与用法｜第16周（第106—112日）",
+        "W16-D106-112.pdf",
+        "vocabulary-usage-a4-w16",
+        "词汇与用法｜第17周（第113—119日）",
+        "W17-D113-119.pdf",
+        "vocabulary-usage-a4-w17",
+        "词汇与用法｜第18周（第120—126日）",
+        "W18-D120-126.pdf",
+        "vocabulary-usage-a4-w18",
+        "词汇与用法｜第19周（第127—133日）",
+        "W19-D127-133.pdf",
+        "vocabulary-usage-a4-w19",
+        "词汇与用法｜第20周（第134—140日）",
+        "W20-D134-140.pdf",
+        "vocabulary-usage-a4-w20",
+        "词汇与用法｜第21周（第141—147日）",
+        "W21-D141-147.pdf",
+        "vocabulary-usage-a4-w21",
+        "词汇与用法｜第22周（第148—154日）",
+        "W22-D148-154.pdf",
+        "vocabulary-usage-a4-w22",
+        "词汇与用法｜第23周（第155—161日）",
+        "W23-D155-161.pdf",
+        "vocabulary-usage-a4-w23",
+        "词汇与用法｜第24周（第162—168日）",
+        "W24-D162-168.pdf",
+        "vocabulary-usage-a4-w24",
+        "词汇与用法｜第25周（第169—175日）",
+        "W25-D169-175.pdf",
+        "vocabulary-usage-a4-w25",
+        "词汇与用法｜第26周（第176—182日）",
+        "W26-D176-182.pdf",
+        "vocabulary-usage-a4-w26",
+        "词汇与用法｜第27周（第183—189日）",
+        "W27-D183-189.pdf",
+        "vocabulary-usage-a4-w27",
+        "词汇与用法｜第28周（第190—194日）",
+        "W28-D190-194.pdf",
+        "vocabulary-usage-a4-w28",
+        "自编教材/词汇与用法-A4-20261115/Vocabulary-Usage-A4-Full.pdf"
       ],
       "ownerAccess": {
         "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/README.md",
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/Vocabulary-Usage-A4-Full.pdf"
       },
       "preview": {
@@ -117,1411 +202,6 @@
         ],
         "pageCount": 10,
         "sourcePageCount": 1274
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w01",
-      "title": "词汇与用法｜第01周（第1—7日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第1周，第1—7学习日。完整周包32页，双面16张；答案从第26页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 32,
-      "size": "0.6 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 654302,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "高考英语"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第01周（第1—7日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W01-D001-007.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W01-D001-007.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w01/page-001.webp",
-          "previews/vocabulary-usage-a4-w01/page-002.webp",
-          "previews/vocabulary-usage-a4-w01/page-003.webp",
-          "previews/vocabulary-usage-a4-w01/page-004.webp",
-          "previews/vocabulary-usage-a4-w01/page-005.webp",
-          "previews/vocabulary-usage-a4-w01/page-006.webp",
-          "previews/vocabulary-usage-a4-w01/page-007.webp",
-          "previews/vocabulary-usage-a4-w01/page-008.webp",
-          "previews/vocabulary-usage-a4-w01/page-009.webp",
-          "previews/vocabulary-usage-a4-w01/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 32
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w02",
-      "title": "词汇与用法｜第02周（第8—14日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第2周，第8—14学习日。完整周包38页，双面19张；答案从第29页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 38,
-      "size": "0.7 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 739580,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "高考英语"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第02周（第8—14日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W02-D008-014.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W02-D008-014.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w02/page-001.webp",
-          "previews/vocabulary-usage-a4-w02/page-002.webp",
-          "previews/vocabulary-usage-a4-w02/page-003.webp",
-          "previews/vocabulary-usage-a4-w02/page-004.webp",
-          "previews/vocabulary-usage-a4-w02/page-005.webp",
-          "previews/vocabulary-usage-a4-w02/page-006.webp",
-          "previews/vocabulary-usage-a4-w02/page-007.webp",
-          "previews/vocabulary-usage-a4-w02/page-008.webp",
-          "previews/vocabulary-usage-a4-w02/page-009.webp",
-          "previews/vocabulary-usage-a4-w02/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 38
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w03",
-      "title": "词汇与用法｜第03周（第15—21日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第3周，第15—21学习日。完整周包42页，双面21张；答案从第31页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 42,
-      "size": "0.8 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 850683,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "高考英语"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第03周（第15—21日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W03-D015-021.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W03-D015-021.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w03/page-001.webp",
-          "previews/vocabulary-usage-a4-w03/page-002.webp",
-          "previews/vocabulary-usage-a4-w03/page-003.webp",
-          "previews/vocabulary-usage-a4-w03/page-004.webp",
-          "previews/vocabulary-usage-a4-w03/page-005.webp",
-          "previews/vocabulary-usage-a4-w03/page-006.webp",
-          "previews/vocabulary-usage-a4-w03/page-007.webp",
-          "previews/vocabulary-usage-a4-w03/page-008.webp",
-          "previews/vocabulary-usage-a4-w03/page-009.webp",
-          "previews/vocabulary-usage-a4-w03/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 42
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w04",
-      "title": "词汇与用法｜第04周（第22—28日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第4周，第22—28学习日。完整周包46页，双面23张；答案从第33页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 46,
-      "size": "0.9 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 910722,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "高考英语"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第04周（第22—28日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W04-D022-028.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W04-D022-028.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w04/page-001.webp",
-          "previews/vocabulary-usage-a4-w04/page-002.webp",
-          "previews/vocabulary-usage-a4-w04/page-003.webp",
-          "previews/vocabulary-usage-a4-w04/page-004.webp",
-          "previews/vocabulary-usage-a4-w04/page-005.webp",
-          "previews/vocabulary-usage-a4-w04/page-006.webp",
-          "previews/vocabulary-usage-a4-w04/page-007.webp",
-          "previews/vocabulary-usage-a4-w04/page-008.webp",
-          "previews/vocabulary-usage-a4-w04/page-009.webp",
-          "previews/vocabulary-usage-a4-w04/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 46
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w05",
-      "title": "词汇与用法｜第05周（第29—35日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第5周，第29—35学习日。完整周包46页，双面23张；答案从第34页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 46,
-      "size": "0.9 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 948485,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "高考英语"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第05周（第29—35日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W05-D029-035.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W05-D029-035.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w05/page-001.webp",
-          "previews/vocabulary-usage-a4-w05/page-002.webp",
-          "previews/vocabulary-usage-a4-w05/page-003.webp",
-          "previews/vocabulary-usage-a4-w05/page-004.webp",
-          "previews/vocabulary-usage-a4-w05/page-005.webp",
-          "previews/vocabulary-usage-a4-w05/page-006.webp",
-          "previews/vocabulary-usage-a4-w05/page-007.webp",
-          "previews/vocabulary-usage-a4-w05/page-008.webp",
-          "previews/vocabulary-usage-a4-w05/page-009.webp",
-          "previews/vocabulary-usage-a4-w05/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 46
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w06",
-      "title": "词汇与用法｜第06周（第36—42日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第6周，第36—42学习日。完整周包44页，双面22张；答案从第33页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 44,
-      "size": "0.9 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 910685,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "高考英语"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第06周（第36—42日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W06-D036-042.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W06-D036-042.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w06/page-001.webp",
-          "previews/vocabulary-usage-a4-w06/page-002.webp",
-          "previews/vocabulary-usage-a4-w06/page-003.webp",
-          "previews/vocabulary-usage-a4-w06/page-004.webp",
-          "previews/vocabulary-usage-a4-w06/page-005.webp",
-          "previews/vocabulary-usage-a4-w06/page-006.webp",
-          "previews/vocabulary-usage-a4-w06/page-007.webp",
-          "previews/vocabulary-usage-a4-w06/page-008.webp",
-          "previews/vocabulary-usage-a4-w06/page-009.webp",
-          "previews/vocabulary-usage-a4-w06/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 44
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w07",
-      "title": "词汇与用法｜第07周（第43—49日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第7周，第43—49学习日。完整周包46页，双面23张；答案从第34页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 46,
-      "size": "0.9 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 941436,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "高考英语"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第07周（第43—49日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W07-D043-049.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W07-D043-049.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w07/page-001.webp",
-          "previews/vocabulary-usage-a4-w07/page-002.webp",
-          "previews/vocabulary-usage-a4-w07/page-003.webp",
-          "previews/vocabulary-usage-a4-w07/page-004.webp",
-          "previews/vocabulary-usage-a4-w07/page-005.webp",
-          "previews/vocabulary-usage-a4-w07/page-006.webp",
-          "previews/vocabulary-usage-a4-w07/page-007.webp",
-          "previews/vocabulary-usage-a4-w07/page-008.webp",
-          "previews/vocabulary-usage-a4-w07/page-009.webp",
-          "previews/vocabulary-usage-a4-w07/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 46
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w08",
-      "title": "词汇与用法｜第08周（第50—56日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第8周，第50—56学习日。完整周包46页，双面23张；答案从第34页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 46,
-      "size": "0.9 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 929000,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "高考英语"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第08周（第50—56日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W08-D050-056.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W08-D050-056.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w08/page-001.webp",
-          "previews/vocabulary-usage-a4-w08/page-002.webp",
-          "previews/vocabulary-usage-a4-w08/page-003.webp",
-          "previews/vocabulary-usage-a4-w08/page-004.webp",
-          "previews/vocabulary-usage-a4-w08/page-005.webp",
-          "previews/vocabulary-usage-a4-w08/page-006.webp",
-          "previews/vocabulary-usage-a4-w08/page-007.webp",
-          "previews/vocabulary-usage-a4-w08/page-008.webp",
-          "previews/vocabulary-usage-a4-w08/page-009.webp",
-          "previews/vocabulary-usage-a4-w08/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 46
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w09",
-      "title": "词汇与用法｜第09周（第57—63日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第9周，第57—63学习日。完整周包46页，双面23张；答案从第34页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 46,
-      "size": "0.9 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 928211,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "高考英语"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第09周（第57—63日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W09-D057-063.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W09-D057-063.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w09/page-001.webp",
-          "previews/vocabulary-usage-a4-w09/page-002.webp",
-          "previews/vocabulary-usage-a4-w09/page-003.webp",
-          "previews/vocabulary-usage-a4-w09/page-004.webp",
-          "previews/vocabulary-usage-a4-w09/page-005.webp",
-          "previews/vocabulary-usage-a4-w09/page-006.webp",
-          "previews/vocabulary-usage-a4-w09/page-007.webp",
-          "previews/vocabulary-usage-a4-w09/page-008.webp",
-          "previews/vocabulary-usage-a4-w09/page-009.webp",
-          "previews/vocabulary-usage-a4-w09/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 46
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w10",
-      "title": "词汇与用法｜第10周（第64—70日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第10周，第64—70学习日。完整周包44页，双面22张；答案从第32页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 44,
-      "size": "0.8 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 876675,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "高考英语"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第10周（第64—70日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W10-D064-070.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W10-D064-070.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w10/page-001.webp",
-          "previews/vocabulary-usage-a4-w10/page-002.webp",
-          "previews/vocabulary-usage-a4-w10/page-003.webp",
-          "previews/vocabulary-usage-a4-w10/page-004.webp",
-          "previews/vocabulary-usage-a4-w10/page-005.webp",
-          "previews/vocabulary-usage-a4-w10/page-006.webp",
-          "previews/vocabulary-usage-a4-w10/page-007.webp",
-          "previews/vocabulary-usage-a4-w10/page-008.webp",
-          "previews/vocabulary-usage-a4-w10/page-009.webp",
-          "previews/vocabulary-usage-a4-w10/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 44
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w11",
-      "title": "词汇与用法｜第11周（第71—77日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第11周，第71—77学习日。完整周包44页，双面22张；答案从第32页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 44,
-      "size": "0.8 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 854019,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "高考英语"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第11周（第71—77日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W11-D071-077.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W11-D071-077.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w11/page-001.webp",
-          "previews/vocabulary-usage-a4-w11/page-002.webp",
-          "previews/vocabulary-usage-a4-w11/page-003.webp",
-          "previews/vocabulary-usage-a4-w11/page-004.webp",
-          "previews/vocabulary-usage-a4-w11/page-005.webp",
-          "previews/vocabulary-usage-a4-w11/page-006.webp",
-          "previews/vocabulary-usage-a4-w11/page-007.webp",
-          "previews/vocabulary-usage-a4-w11/page-008.webp",
-          "previews/vocabulary-usage-a4-w11/page-009.webp",
-          "previews/vocabulary-usage-a4-w11/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 44
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w12",
-      "title": "词汇与用法｜第12周（第78—84日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第12周，第78—84学习日。完整周包44页，双面22张；答案从第32页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 44,
-      "size": "0.8 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 855248,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "高考英语"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第12周（第78—84日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W12-D078-084.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W12-D078-084.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w12/page-001.webp",
-          "previews/vocabulary-usage-a4-w12/page-002.webp",
-          "previews/vocabulary-usage-a4-w12/page-003.webp",
-          "previews/vocabulary-usage-a4-w12/page-004.webp",
-          "previews/vocabulary-usage-a4-w12/page-005.webp",
-          "previews/vocabulary-usage-a4-w12/page-006.webp",
-          "previews/vocabulary-usage-a4-w12/page-007.webp",
-          "previews/vocabulary-usage-a4-w12/page-008.webp",
-          "previews/vocabulary-usage-a4-w12/page-009.webp",
-          "previews/vocabulary-usage-a4-w12/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 44
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w13",
-      "title": "词汇与用法｜第13周（第85—91日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第13周，第85—91学习日。完整周包44页，双面22张；答案从第33页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 44,
-      "size": "0.9 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 915446,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "高考英语"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第13周（第85—91日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W13-D085-091.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W13-D085-091.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w13/page-001.webp",
-          "previews/vocabulary-usage-a4-w13/page-002.webp",
-          "previews/vocabulary-usage-a4-w13/page-003.webp",
-          "previews/vocabulary-usage-a4-w13/page-004.webp",
-          "previews/vocabulary-usage-a4-w13/page-005.webp",
-          "previews/vocabulary-usage-a4-w13/page-006.webp",
-          "previews/vocabulary-usage-a4-w13/page-007.webp",
-          "previews/vocabulary-usage-a4-w13/page-008.webp",
-          "previews/vocabulary-usage-a4-w13/page-009.webp",
-          "previews/vocabulary-usage-a4-w13/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 44
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w14",
-      "title": "词汇与用法｜第14周（第92—98日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第14周，第92—98学习日。完整周包46页，双面23张；答案从第34页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 46,
-      "size": "0.9 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 910205,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "高考英语",
-        "雅思学术"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第14周（第92—98日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W14-D092-098.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W14-D092-098.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w14/page-001.webp",
-          "previews/vocabulary-usage-a4-w14/page-002.webp",
-          "previews/vocabulary-usage-a4-w14/page-003.webp",
-          "previews/vocabulary-usage-a4-w14/page-004.webp",
-          "previews/vocabulary-usage-a4-w14/page-005.webp",
-          "previews/vocabulary-usage-a4-w14/page-006.webp",
-          "previews/vocabulary-usage-a4-w14/page-007.webp",
-          "previews/vocabulary-usage-a4-w14/page-008.webp",
-          "previews/vocabulary-usage-a4-w14/page-009.webp",
-          "previews/vocabulary-usage-a4-w14/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 46
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w15",
-      "title": "词汇与用法｜第15周（第99—105日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第15周，第99—105学习日。完整周包44页，双面22张；答案从第33页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 44,
-      "size": "0.9 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 896005,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "雅思学术"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第15周（第99—105日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W15-D099-105.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W15-D099-105.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w15/page-001.webp",
-          "previews/vocabulary-usage-a4-w15/page-002.webp",
-          "previews/vocabulary-usage-a4-w15/page-003.webp",
-          "previews/vocabulary-usage-a4-w15/page-004.webp",
-          "previews/vocabulary-usage-a4-w15/page-005.webp",
-          "previews/vocabulary-usage-a4-w15/page-006.webp",
-          "previews/vocabulary-usage-a4-w15/page-007.webp",
-          "previews/vocabulary-usage-a4-w15/page-008.webp",
-          "previews/vocabulary-usage-a4-w15/page-009.webp",
-          "previews/vocabulary-usage-a4-w15/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 44
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w16",
-      "title": "词汇与用法｜第16周（第106—112日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第16周，第106—112学习日。完整周包44页，双面22张；答案从第33页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 44,
-      "size": "0.8 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 858365,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "雅思学术"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第16周（第106—112日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W16-D106-112.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W16-D106-112.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w16/page-001.webp",
-          "previews/vocabulary-usage-a4-w16/page-002.webp",
-          "previews/vocabulary-usage-a4-w16/page-003.webp",
-          "previews/vocabulary-usage-a4-w16/page-004.webp",
-          "previews/vocabulary-usage-a4-w16/page-005.webp",
-          "previews/vocabulary-usage-a4-w16/page-006.webp",
-          "previews/vocabulary-usage-a4-w16/page-007.webp",
-          "previews/vocabulary-usage-a4-w16/page-008.webp",
-          "previews/vocabulary-usage-a4-w16/page-009.webp",
-          "previews/vocabulary-usage-a4-w16/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 44
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w17",
-      "title": "词汇与用法｜第17周（第113—119日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第17周，第113—119学习日。完整周包44页，双面22张；答案从第33页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 44,
-      "size": "0.8 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 862658,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "雅思学术"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第17周（第113—119日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W17-D113-119.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W17-D113-119.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w17/page-001.webp",
-          "previews/vocabulary-usage-a4-w17/page-002.webp",
-          "previews/vocabulary-usage-a4-w17/page-003.webp",
-          "previews/vocabulary-usage-a4-w17/page-004.webp",
-          "previews/vocabulary-usage-a4-w17/page-005.webp",
-          "previews/vocabulary-usage-a4-w17/page-006.webp",
-          "previews/vocabulary-usage-a4-w17/page-007.webp",
-          "previews/vocabulary-usage-a4-w17/page-008.webp",
-          "previews/vocabulary-usage-a4-w17/page-009.webp",
-          "previews/vocabulary-usage-a4-w17/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 44
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w18",
-      "title": "词汇与用法｜第18周（第120—126日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第18周，第120—126学习日。完整周包44页，双面22张；答案从第32页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 44,
-      "size": "0.9 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 895349,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "雅思学术"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第18周（第120—126日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W18-D120-126.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W18-D120-126.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w18/page-001.webp",
-          "previews/vocabulary-usage-a4-w18/page-002.webp",
-          "previews/vocabulary-usage-a4-w18/page-003.webp",
-          "previews/vocabulary-usage-a4-w18/page-004.webp",
-          "previews/vocabulary-usage-a4-w18/page-005.webp",
-          "previews/vocabulary-usage-a4-w18/page-006.webp",
-          "previews/vocabulary-usage-a4-w18/page-007.webp",
-          "previews/vocabulary-usage-a4-w18/page-008.webp",
-          "previews/vocabulary-usage-a4-w18/page-009.webp",
-          "previews/vocabulary-usage-a4-w18/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 44
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w19",
-      "title": "词汇与用法｜第19周（第127—133日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第19周，第127—133学习日。完整周包44页，双面22张；答案从第32页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 44,
-      "size": "0.9 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 905590,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "雅思学术"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第19周（第127—133日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W19-D127-133.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W19-D127-133.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w19/page-001.webp",
-          "previews/vocabulary-usage-a4-w19/page-002.webp",
-          "previews/vocabulary-usage-a4-w19/page-003.webp",
-          "previews/vocabulary-usage-a4-w19/page-004.webp",
-          "previews/vocabulary-usage-a4-w19/page-005.webp",
-          "previews/vocabulary-usage-a4-w19/page-006.webp",
-          "previews/vocabulary-usage-a4-w19/page-007.webp",
-          "previews/vocabulary-usage-a4-w19/page-008.webp",
-          "previews/vocabulary-usage-a4-w19/page-009.webp",
-          "previews/vocabulary-usage-a4-w19/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 44
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w20",
-      "title": "词汇与用法｜第20周（第134—140日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第20周，第134—140学习日。完整周包46页，双面23张；答案从第33页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 46,
-      "size": "0.8 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 890007,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "雅思学术"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第20周（第134—140日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W20-D134-140.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W20-D134-140.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w20/page-001.webp",
-          "previews/vocabulary-usage-a4-w20/page-002.webp",
-          "previews/vocabulary-usage-a4-w20/page-003.webp",
-          "previews/vocabulary-usage-a4-w20/page-004.webp",
-          "previews/vocabulary-usage-a4-w20/page-005.webp",
-          "previews/vocabulary-usage-a4-w20/page-006.webp",
-          "previews/vocabulary-usage-a4-w20/page-007.webp",
-          "previews/vocabulary-usage-a4-w20/page-008.webp",
-          "previews/vocabulary-usage-a4-w20/page-009.webp",
-          "previews/vocabulary-usage-a4-w20/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 46
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w21",
-      "title": "词汇与用法｜第21周（第141—147日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第21周，第141—147学习日。完整周包46页，双面23张；答案从第33页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 46,
-      "size": "0.9 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 906658,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "雅思学术"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第21周（第141—147日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W21-D141-147.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W21-D141-147.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w21/page-001.webp",
-          "previews/vocabulary-usage-a4-w21/page-002.webp",
-          "previews/vocabulary-usage-a4-w21/page-003.webp",
-          "previews/vocabulary-usage-a4-w21/page-004.webp",
-          "previews/vocabulary-usage-a4-w21/page-005.webp",
-          "previews/vocabulary-usage-a4-w21/page-006.webp",
-          "previews/vocabulary-usage-a4-w21/page-007.webp",
-          "previews/vocabulary-usage-a4-w21/page-008.webp",
-          "previews/vocabulary-usage-a4-w21/page-009.webp",
-          "previews/vocabulary-usage-a4-w21/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 46
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w22",
-      "title": "词汇与用法｜第22周（第148—154日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第22周，第148—154学习日。完整周包46页，双面23张；答案从第35页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 46,
-      "size": "0.9 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 901581,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "雅思学术"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第22周（第148—154日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W22-D148-154.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W22-D148-154.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w22/page-001.webp",
-          "previews/vocabulary-usage-a4-w22/page-002.webp",
-          "previews/vocabulary-usage-a4-w22/page-003.webp",
-          "previews/vocabulary-usage-a4-w22/page-004.webp",
-          "previews/vocabulary-usage-a4-w22/page-005.webp",
-          "previews/vocabulary-usage-a4-w22/page-006.webp",
-          "previews/vocabulary-usage-a4-w22/page-007.webp",
-          "previews/vocabulary-usage-a4-w22/page-008.webp",
-          "previews/vocabulary-usage-a4-w22/page-009.webp",
-          "previews/vocabulary-usage-a4-w22/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 46
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w23",
-      "title": "词汇与用法｜第23周（第155—161日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第23周，第155—161学习日。完整周包48页，双面24张；答案从第35页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 48,
-      "size": "0.8 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 885921,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "雅思学术",
-        "数学英语"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第23周（第155—161日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W23-D155-161.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W23-D155-161.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w23/page-001.webp",
-          "previews/vocabulary-usage-a4-w23/page-002.webp",
-          "previews/vocabulary-usage-a4-w23/page-003.webp",
-          "previews/vocabulary-usage-a4-w23/page-004.webp",
-          "previews/vocabulary-usage-a4-w23/page-005.webp",
-          "previews/vocabulary-usage-a4-w23/page-006.webp",
-          "previews/vocabulary-usage-a4-w23/page-007.webp",
-          "previews/vocabulary-usage-a4-w23/page-008.webp",
-          "previews/vocabulary-usage-a4-w23/page-009.webp",
-          "previews/vocabulary-usage-a4-w23/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 48
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w24",
-      "title": "词汇与用法｜第24周（第162—168日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第24周，第162—168学习日。完整周包48页，双面24张；答案从第35页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 48,
-      "size": "0.9 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 914166,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "数学英语",
-        "金融英语"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第24周（第162—168日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W24-D162-168.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W24-D162-168.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w24/page-001.webp",
-          "previews/vocabulary-usage-a4-w24/page-002.webp",
-          "previews/vocabulary-usage-a4-w24/page-003.webp",
-          "previews/vocabulary-usage-a4-w24/page-004.webp",
-          "previews/vocabulary-usage-a4-w24/page-005.webp",
-          "previews/vocabulary-usage-a4-w24/page-006.webp",
-          "previews/vocabulary-usage-a4-w24/page-007.webp",
-          "previews/vocabulary-usage-a4-w24/page-008.webp",
-          "previews/vocabulary-usage-a4-w24/page-009.webp",
-          "previews/vocabulary-usage-a4-w24/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 48
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w25",
-      "title": "词汇与用法｜第25周（第169—175日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第25周，第169—175学习日。完整周包50页，双面25张；答案从第37页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 50,
-      "size": "0.9 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 919540,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "AI英语",
-        "计算机英语"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第25周（第169—175日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W25-D169-175.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W25-D169-175.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w25/page-001.webp",
-          "previews/vocabulary-usage-a4-w25/page-002.webp",
-          "previews/vocabulary-usage-a4-w25/page-003.webp",
-          "previews/vocabulary-usage-a4-w25/page-004.webp",
-          "previews/vocabulary-usage-a4-w25/page-005.webp",
-          "previews/vocabulary-usage-a4-w25/page-006.webp",
-          "previews/vocabulary-usage-a4-w25/page-007.webp",
-          "previews/vocabulary-usage-a4-w25/page-008.webp",
-          "previews/vocabulary-usage-a4-w25/page-009.webp",
-          "previews/vocabulary-usage-a4-w25/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 50
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w26",
-      "title": "词汇与用法｜第26周（第176—182日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第26周，第176—182学习日。完整周包42页，双面21张；答案从第30页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 42,
-      "size": "0.8 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 822362,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "计算机英语",
-        "尾部复习"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第26周（第176—182日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W26-D176-182.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W26-D176-182.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w26/page-001.webp",
-          "previews/vocabulary-usage-a4-w26/page-002.webp",
-          "previews/vocabulary-usage-a4-w26/page-003.webp",
-          "previews/vocabulary-usage-a4-w26/page-004.webp",
-          "previews/vocabulary-usage-a4-w26/page-005.webp",
-          "previews/vocabulary-usage-a4-w26/page-006.webp",
-          "previews/vocabulary-usage-a4-w26/page-007.webp",
-          "previews/vocabulary-usage-a4-w26/page-008.webp",
-          "previews/vocabulary-usage-a4-w26/page-009.webp",
-          "previews/vocabulary-usage-a4-w26/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 42
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w27",
-      "title": "词汇与用法｜第27周（第183—189日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第27周，第183—189学习日。完整周包18页，双面9张；答案从第11页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 18,
-      "size": "0.4 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 458557,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "尾部复习"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第27周（第183—189日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W27-D183-189.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W27-D183-189.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w27/page-001.webp",
-          "previews/vocabulary-usage-a4-w27/page-002.webp",
-          "previews/vocabulary-usage-a4-w27/page-003.webp",
-          "previews/vocabulary-usage-a4-w27/page-004.webp",
-          "previews/vocabulary-usage-a4-w27/page-005.webp",
-          "previews/vocabulary-usage-a4-w27/page-006.webp",
-          "previews/vocabulary-usage-a4-w27/page-007.webp",
-          "previews/vocabulary-usage-a4-w27/page-008.webp",
-          "previews/vocabulary-usage-a4-w27/page-009.webp",
-          "previews/vocabulary-usage-a4-w27/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 18
-      }
-    },
-    {
-      "id": "vocabulary-usage-a4-w28",
-      "title": "词汇与用法｜第28周（第190—194日）",
-      "author": "Nicole 自学资料",
-      "cat": "english",
-      "catName": "英语",
-      "cats": [
-        "english"
-      ],
-      "desc": "第28周，第190—194学习日。完整周包10页，双面5张；答案从第7页开始。含本周语境、词条、全部到期复习、核对及按需错词卡，可独立打印。",
-      "pages": 10,
-      "size": "0.3 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 330502,
-      "tags": [
-        "英语词汇",
-        "词根词缀",
-        "A4打印",
-        "中英双语",
-        "尾部复习"
-      ],
-      "searchTitles": [
-        "词汇与用法｜第28周（第190—194日）",
-        "词汇与用法",
-        "词汇与用法 A4词根词缀版",
-        "W28-D190-194.pdf"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/vocabulary-usage-a4-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/3a1fe2608c7b4d031f0617ab3796be6b43507b9c/%E8%87%AA%E7%BC%96%E6%95%99%E6%9D%90/%E8%AF%8D%E6%B1%87%E4%B8%8E%E7%94%A8%E6%B3%95-A4-20261115/W28-D190-194.pdf"
-      },
-      "preview": {
-        "images": [
-          "previews/vocabulary-usage-a4-w28/page-001.webp",
-          "previews/vocabulary-usage-a4-w28/page-002.webp",
-          "previews/vocabulary-usage-a4-w28/page-003.webp",
-          "previews/vocabulary-usage-a4-w28/page-004.webp",
-          "previews/vocabulary-usage-a4-w28/page-005.webp",
-          "previews/vocabulary-usage-a4-w28/page-006.webp",
-          "previews/vocabulary-usage-a4-w28/page-007.webp",
-          "previews/vocabulary-usage-a4-w28/page-008.webp",
-          "previews/vocabulary-usage-a4-w28/page-009.webp",
-          "previews/vocabulary-usage-a4-w28/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 10
       }
     },
     {
@@ -1774,16 +454,13 @@
     {
       "id": "upload-735645128",
       "title": "九学资料",
-      "author": "进阶九学教研组及原资料作者",
+      "author": "北京九学丘班教研组及原资料作者",
       "catName": "竞赛数学",
-      "desc": "九学资料共62份，新增线性代数第1—6讲、独立的第3—4讲与第5—6讲、内积空间，以及分析代数、几何拓扑、概率统计、应用数学零试专项。不同讲次版本含有不同题目，均予保留；附可点击目录与书签。",
+      "desc": "同一机构的课程讲义、模拟题与手稿合订，原页保留，附可点击目录与原书签。",
       "year": 2026,
       "tags": [
         "九学",
-        "同源资料合订",
-        "数学竞赛",
-        "领军资料",
-        "领军备考"
+        "同源资料合订"
       ],
       "searchTitles": [
         "81048c907fee7aeb44303d22b64e65f9_6698635806548788498_m_SZX-级数",
@@ -1992,10 +669,37 @@
         "考前零试-几何与拓扑",
         "考前零试-概率统计",
         "零试专项-应用数学",
-        "进阶九学教研组及原资料作者"
+        "进阶九学教研组及原资料作者",
+        "大学数学/扫描全能王_2026资料.pdf",
+        "大学数学/机构资料/九学/26年暑假/手稿/9e20f478899dc29eb19741386f9343c8_8348830757598901607_m.pdf",
+        "大学数学/机构资料/九学/26年暑假/手稿/7.24 深圳代数(1).pdf",
+        "大学数学/机构资料/九学/26年暑假/手稿/7.25 深圳代数(1).pdf",
+        "大学数学/机构资料/九学/26年暑假/手稿/7.26 深圳代数.pdf",
+        "丘班数学讲义（北京九学）",
+        "九学代数手稿：高等代数与表示论",
+        "九学深圳代数手稿（7月24日）",
+        "九学深圳代数手稿（7月25日）",
+        "九学深圳代数手稿（7月26日）",
+        "丘班 数学讲义 九学",
+        "9e20f478899dc29eb19741386f9343c8_8348830757598901607_m",
+        "7.24 深圳代数(1)",
+        "7.25 深圳代数(1)",
+        "7.26 深圳代数",
+        "北京九学丘班教研组及原资料作者",
+        "upload-735645128",
+        "bd-scan-2026",
+        "bd-23e3445f946d",
+        "bd-df782e35763b",
+        "bd-15f2ae022b43",
+        "bd-438efba09df6",
+        "扫描全能王_2026资料.pdf",
+        "9e20f478899dc29eb19741386f9343c8_8348830757598901607_m.pdf",
+        "7.24 深圳代数(1).pdf",
+        "7.26 深圳代数.pdf",
+        "7.25 深圳代数(1).pdf"
       ],
-      "bytes": 72566542,
-      "size": "69.2 MB",
+      "bytes": 235122107,
+      "size": "224.2 MB",
       "format": "PDF",
       "cat": "competition-math",
       "cats": [
@@ -2011,10 +715,10 @@
       ],
       "ownerAccess": {
         "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/handouts-organized-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/handouts-organized-20261115/library-64d3dc82f636be01389ad45990d6df49ac6932d3db01250e11323b3df390f7b5.pdf"
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/shelf-organized-20261116",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/shelf-organized-20261116/library-413d36e51fc57061188b73ca51fe0ee7f3fbef3a447afcf3c73a68a65b89d07f.pdf"
       },
-      "pages": 845,
+      "pages": 1067,
       "preview": {
         "images": [
           "previews/upload-735645128/page-001.webp",
@@ -2029,7 +733,7 @@
           "previews/upload-735645128/page-010.webp"
         ],
         "pageCount": 10,
-        "sourcePageCount": 845
+        "sourcePageCount": 1067
       },
       "subcat": "analysis"
     },
@@ -2080,66 +784,15 @@
       ]
     },
     {
-      "id": "bd-4b2274204128",
-      "title": "清北学堂数学模拟题1答案",
-      "author": "清北学堂课程资料",
-      "cat": "competition-math",
-      "catName": "竞赛数学",
-      "desc": "数学练习题模拟题 1 的参考答案，保留原页；属于模拟训练资料。",
-      "pages": 89,
-      "size": "37.9 MB",
-      "year": null,
-      "format": "PDF",
-      "bytes": 37923447,
-      "tags": [
-        "数学竞赛",
-        "领军资料",
-        "领军备考",
-        "清北学堂"
-      ],
-      "searchTitles": [
-        "数学练习题-模拟题1答案",
-        "清北学堂数学模拟题1答案"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-4b2274204128/page-001.webp",
-          "previews/bd-4b2274204128/page-002.webp",
-          "previews/bd-4b2274204128/page-003.webp",
-          "previews/bd-4b2274204128/page-004.webp",
-          "previews/bd-4b2274204128/page-005.webp",
-          "previews/bd-4b2274204128/page-006.webp",
-          "previews/bd-4b2274204128/page-007.webp",
-          "previews/bd-4b2274204128/page-008.webp",
-          "previews/bd-4b2274204128/page-009.webp",
-          "previews/bd-4b2274204128/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 89
-      },
-      "subcats": [],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/5bd984f8a164543f02d0d24800eb6228717de349/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%9C%BA%E6%9E%84%E8%B5%84%E6%96%99/%E6%B8%85%E5%8C%97%E5%AD%A6%E5%A0%82/26%E6%9A%91%E5%81%87%E6%B8%85%E5%8C%97%E5%AD%A6%E5%A0%82/%E8%80%83%E8%AF%95/%E6%95%B0%E5%AD%A6%E7%BB%83%E4%B9%A0%E9%A2%98-%E6%A8%A1%E6%8B%9F%E9%A2%981%E7%AD%94%E6%A1%88.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/5bd984f8a164543f02d0d24800eb6228717de349/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%9C%BA%E6%9E%84%E8%B5%84%E6%96%99/%E6%B8%85%E5%8C%97%E5%AD%A6%E5%A0%82/26%E6%9A%91%E5%81%87%E6%B8%85%E5%8C%97%E5%AD%A6%E5%A0%82/%E8%80%83%E8%AF%95/%E6%95%B0%E5%AD%A6%E7%BB%83%E4%B9%A0%E9%A2%98-%E6%A8%A1%E6%8B%9F%E9%A2%981%E7%AD%94%E6%A1%88.pdf"
-      },
-      "cats": [
-        "competition-math"
-      ]
-    },
-    {
       "id": "upload-735647630",
       "title": "清北学堂资料",
-      "author": "原资料作者（见各来源）",
+      "author": "清北学堂及原资料作者",
       "catName": "竞赛数学",
-      "desc": "61 份同机构、作者或系列资料合订，保留 1,233 页原始正文，附可点击目录与书签。另附 5 页已核对的手写 LaTeX 誊录，全部手写原页保留。",
-      "year": null,
+      "desc": "同一机构的课程讲义、模拟题与手稿合订，原页保留，附可点击目录与原书签。",
+      "year": 2026,
       "tags": [
         "清北学堂",
-        "同源资料合订",
-        "数学竞赛",
-        "领军资料",
-        "领军备考"
+        "同源资料合订"
       ],
       "searchTitles": [
         "251001上午",
@@ -2284,10 +937,78 @@
         "bd-456057dca558",
         "bd-2bf819ecb132",
         "bd-9dd58bc32c85",
-        "bd-701f6cefbba0"
+        "bd-701f6cefbba0",
+        "大学数学/机构资料/清北学堂/25国庆清北学堂/251001上午.pdf",
+        "大学数学/机构资料/清北学堂/25国庆清北学堂/251002上午.pdf",
+        "大学数学/机构资料/清北学堂/25国庆清北学堂/251002晚上.pdf",
+        "大学数学/机构资料/清北学堂/25国庆清北学堂/251003下午.pdf",
+        "大学数学/机构资料/清北学堂/25国庆清北学堂/251004上午.pdf",
+        "大学数学/机构资料/清北学堂/25国庆清北学堂/251004晚上.pdf",
+        "大学数学/机构资料/清北学堂/25国庆清北学堂/251005下午.pdf",
+        "大学数学/机构资料/清北学堂/25国庆清北学堂/251006上午.pdf",
+        "大学数学/机构资料/清北学堂/25国庆清北学堂/251006晚上.pdf",
+        "大学数学/机构资料/清北学堂/25国庆清北学堂/251007下午.pdf",
+        "大学数学/机构资料/清北学堂/25国庆清北学堂/[problems-from-the-book-1-pdf_1380724174.pdf",
+        "大学数学/机构资料/清北学堂/25寒假清北学堂/扫描全能王 2026-2-16 16.00.pdf",
+        "大学数学/机构资料/清北学堂/25暑假清北学堂/250711上午.pdf",
+        "大学数学/机构资料/清北学堂/25暑假清北学堂/250711下午.pdf",
+        "大学数学/机构资料/清北学堂/25暑假清北学堂/250712上午.pdf",
+        "大学数学/机构资料/清北学堂/25暑假清北学堂/250712下午.pdf",
+        "大学数学/机构资料/清北学堂/25暑假清北学堂/250713上午.pdf",
+        "大学数学/机构资料/清北学堂/25暑假清北学堂/250713下午.pdf",
+        "大学数学/机构资料/清北学堂/25暑假清北学堂/250714上午.pdf",
+        "大学数学/机构资料/清北学堂/25暑假清北学堂/250714下午.pdf",
+        "大学数学/机构资料/清北学堂/25暑假清北学堂/250715上午.pdf",
+        "大学数学/机构资料/清北学堂/25暑假清北学堂/250715下午.pdf",
+        "大学数学/机构资料/清北学堂/25暑假清北学堂/250716上午.pdf",
+        "大学数学/机构资料/清北学堂/25暑假清北学堂/250716下午.pdf",
+        "大学数学/机构资料/清北学堂/25暑假清北学堂/250717上午.pdf",
+        "大学数学/机构资料/清北学堂/25暑假清北学堂/250717下午.pdf",
+        "大学数学/机构资料/清北学堂/25暑假清北学堂/250718上午.pdf",
+        "大学数学/机构资料/清北学堂/25暑假清北学堂/250718下午.pdf",
+        "大学数学/机构资料/清北学堂/25清明清北学堂（不全）/250402晚上(1).pdf",
+        "大学数学/机构资料/清北学堂/25清明清北学堂（不全）/250403下午(1) (1).pdf",
+        "大学数学/机构资料/清北学堂/25清明清北学堂（不全）/250404上午(1).pdf",
+        "大学数学/机构资料/清北学堂/25清明清北学堂（不全）/250404晚上(1).pdf",
+        "大学数学/机构资料/清北学堂/25清明清北学堂（不全）/250405下午(1).pdf",
+        "大学数学/机构资料/清北学堂/25清明清北学堂（不全）/250406上午(1).pdf",
+        "大学数学/机构资料/清北学堂/26五月清北学堂（仅考试题）/2026年5月新领军一试模拟题1-5.pdf",
+        "大学数学/机构资料/清北学堂/26五月清北学堂（仅考试题）/2026年5月新领军一试模拟题1-5答案-去水印.pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/手稿/7.13上午.pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/手稿/7.13下午(1).pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/手稿/7.14上午.pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/手稿/7.14下午(1).pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/手稿/7.15上午(1).pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/手稿/7.15下午(1).pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/手稿/7.15下午补发页(1).pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/手稿/7.16上午(1).pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/手稿/7.16下午(1).pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/手稿/7.17上午(1).pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/手稿/7.17下午(1).pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/手稿/7.18上午.pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/手稿/7.18下午.pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/手稿/7.19全天手稿 (1).pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/手稿/7.20上午 (1).pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/手稿/7.20下午 (1).pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/手稿/7.21上午 (1).pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/手稿/7_21下午手稿.pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/考试/数学模拟题1.pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/讲义/finite_field_polynomials.pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/讲义/Gronwall不等式及应用.pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/讲义/TACA一式讲义.pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/讲义/一维自治ODE的长时间估计.pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/讲义/暑假深圳丘班讲义.pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/讲义/非负矩阵.pdf",
+        "大学数学/机构资料/清北学堂/26暑假清北学堂/考试/数学练习题-模拟题1答案.pdf",
+        "清北学堂数学模拟题1答案",
+        "数学练习题-模拟题1答案",
+        "清北学堂及原资料作者",
+        "upload-735647630",
+        "bd-4b2274204128",
+        "数学练习题-模拟题1答案.pdf"
       ],
-      "bytes": 238801435,
-      "size": "227.7 MB",
+      "bytes": 276678510,
+      "size": "263.9 MB",
       "format": "PDF",
       "cat": "competition-math",
       "cats": [
@@ -2296,10 +1017,10 @@
       ],
       "ownerAccess": {
         "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/origin-collections-20261111",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/origin-collections-20261111/library-00ad6d8e70f36feb39d0b327e6cf255a3a6e0f39dc812b718ab7fa399b92f09a.pdf"
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/shelf-organized-20261116",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/shelf-organized-20261116/library-d1993fe9b07753d0ed833903154ca9b3242d64cc9ccc27688f14c7354a054b9c.pdf"
       },
-      "pages": 1241,
+      "pages": 1330,
       "preview": {
         "images": [
           "previews/upload-735647630/page-001.webp",
@@ -2314,78 +1035,25 @@
           "previews/upload-735647630/page-010.webp"
         ],
         "pageCount": 10,
-        "sourcePageCount": 1241
-      }
-    },
-    {
-      "id": "bd-001e65b02785",
-      "title": "求真 Putnam 讲义：实分析 III（第13周）",
-      "author": "求真 Putnam 课程资料",
-      "cat": "competition-math",
-      "catName": "竞赛数学",
-      "desc": "以黎曼和与定积分为内容的手写竞赛讲义，同时归入大学数学分析。",
-      "pages": 70,
-      "size": "33.8 MB",
-      "year": null,
-      "format": "PDF",
-      "bytes": 33821575,
-      "tags": [
-        "数学竞赛",
-        "领军资料",
-        "实分析",
-        "大学数学竞赛",
-        "手写讲义",
-        "求真"
-      ],
-      "searchTitles": [
-        "week-13-real-analysis-iii",
-        "求真 Putnam 讲义：实分析 III（第13周）"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-001e65b02785/page-001.webp",
-          "previews/bd-001e65b02785/page-002.webp",
-          "previews/bd-001e65b02785/page-003.webp",
-          "previews/bd-001e65b02785/page-004.webp",
-          "previews/bd-001e65b02785/page-005.webp",
-          "previews/bd-001e65b02785/page-006.webp",
-          "previews/bd-001e65b02785/page-007.webp",
-          "previews/bd-001e65b02785/page-008.webp",
-          "previews/bd-001e65b02785/page-009.webp",
-          "previews/bd-001e65b02785/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 70
+        "sourcePageCount": 1330
       },
       "subcats": [
-        "analysis"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B/Putnam/%E6%B1%82%E7%9C%9FPutnam%E8%AE%B2%E4%B9%89/week-13-real-analysis-iii.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B/Putnam/%E6%B1%82%E7%9C%9FPutnam%E8%AE%B2%E4%B9%89/week-13-real-analysis-iii.pdf"
-      },
-      "cats": [
-        "competition-math",
-        "university-math"
+        "analysis",
+        "algebra",
+        "geometry-topology"
       ],
       "subcat": "analysis"
     },
     {
       "id": "upload-735644213",
       "title": "求真资料",
-      "author": "原资料作者（见各来源）",
+      "author": "求真书院课程教师及原资料作者",
       "catName": "竞赛数学",
-      "desc": "39 份同机构、作者或系列资料合订，保留 1,952 页原始正文，附可点击目录与书签。",
-      "year": null,
+      "desc": "求真书院课程资料合订，补入 Putnam 课程说明、数论与实分析材料、实分析第13周讲义，以及林剑峰拓扑学讲义。新444页文件中370页经逐页图像与文字比对确认已收录，仅补入其余74页；私有原件保留。",
+      "year": 2026,
       "tags": [
         "求真",
-        "同源资料合订",
-        "数学竞赛",
-        "领军资料",
-        "分析",
-        "物理",
-        "领军备考"
+        "同源资料合订"
       ],
       "searchTitles": [
         "homework_1_ymsc_creative_problem_solving__fall_202-2",
@@ -2466,10 +1134,67 @@
         "bd-75e361aaf87b",
         "bd-5868c4420ed1",
         "bd-1780fa0786b2",
-        "bd-3f53c3c22225"
+        "bd-3f53c3c22225",
+        "大学数学/大学生数学竞赛/Putnam/求真Putnam讲义/homework_1_ymsc_creative_problem_solving__fall_202-2.pdf",
+        "大学数学/大学生数学竞赛/Putnam/求真Putnam讲义/homework_2_ymsc_creative_problem_solving__fall_202-1.pdf",
+        "大学数学/大学生数学竞赛/Putnam/求真Putnam讲义/homework_3_ymsc_creative_problem_solving__fall_202.pdf",
+        "大学数学/大学生数学竞赛/Putnam/求真Putnam讲义/homework_4_ymsc_creative_problem_solving__fall_202.pdf",
+        "大学数学/大学生数学竞赛/Putnam/求真Putnam讲义/week-1-elementary-algebra-1.pdf",
+        "大学数学/大学生数学竞赛/Putnam/求真Putnam讲义/week-2-geometry-and-trigonometry-1.pdf",
+        "大学数学/大学生数学竞赛/Putnam/求真Putnam讲义/week-3-combinatorics-.pdf",
+        "大学数学/大学生数学竞赛/Putnam/求真Putnam讲义/week-5-probability.pdf",
+        "大学数学/大学生数学竞赛/Putnam/求真Putnam讲义/week-7-number-theory-ii.pdf",
+        "大学数学/大学生数学竞赛/Putnam/求真Putnam讲义/week-8-abstract-algebra.pdf",
+        "大学数学/大学生数学竞赛/Putnam/求真Putnam讲义/week-9-linear-algebra-i.pdf",
+        "大学数学/大学生数学竞赛/Putnam/求真Putnam讲义/week-10-linear-algebra-ii.pdf",
+        "大学数学/大学生数学竞赛/Putnam/求真Putnam讲义/week-11-real-analysis-i.pdf",
+        "大学数学/数学分析/提高篇/2023_Analysis.pdf",
+        "大学数学/高年级课程/高年级分析学/泛函分析/2025_FA.pdf",
+        "大学物理/物理/普通物理/求真讲义/hw01.pdf",
+        "大学物理/物理/普通物理/求真讲义/hw02.pdf",
+        "大学物理/物理/普通物理/求真讲义/hw03.pdf",
+        "大学物理/物理/普通物理/求真讲义/hw04.pdf",
+        "大学物理/物理/普通物理/求真讲义/hw05.pdf",
+        "大学物理/物理/普通物理/求真讲义/hw06.pdf",
+        "大学物理/物理/普通物理/求真讲义/hw07.pdf",
+        "大学物理/物理/普通物理/求真讲义/hw08.pdf",
+        "大学物理/物理/普通物理/求真讲义/hw09.pdf",
+        "大学物理/物理/普通物理/求真讲义/hw10.pdf",
+        "大学物理/物理/普通物理/求真讲义/Lecture1.pdf",
+        "大学物理/物理/普通物理/求真讲义/Lecture2.pdf",
+        "大学物理/物理/普通物理/求真讲义/Lecture3.pdf",
+        "大学物理/物理/普通物理/求真讲义/Lecture4.pdf",
+        "大学物理/物理/普通物理/求真讲义/Lecture5.pdf",
+        "大学物理/物理/普通物理/求真讲义/Lecture6.pdf",
+        "大学物理/物理/普通物理/求真讲义/Lecture7.pdf",
+        "大学物理/物理/普通物理/求真讲义/Lecture8.pdf",
+        "大学物理/物理/普通物理/求真讲义/Lecture9.pdf",
+        "大学物理/物理/普通物理/求真讲义/Lecture10.pdf",
+        "大学物理/物理/普通物理/求真讲义/Lecture11.pdf",
+        "大学物理/物理/普通物理/求真讲义/Lecture12.pdf",
+        "大学物理/物理/普通物理/求真讲义/Physics_0(1).pdf",
+        "大学物理/物理/普通物理/求真讲义/预科物理.pdf",
+        "qiuzhen-new-pages.pdf",
+        "大学数学/大学生数学竞赛/Putnam/求真Putnam讲义/week-13-real-analysis-iii.pdf",
+        "大学数学/高年级课程/几何与拓扑/基础拓扑学（点集＋代数初步）/求真拓扑学讲义(林剑峰).pdf",
+        "Putnam 课程补充：课程说明、数论与实分析（去除已收录的相同页面）",
+        "求真 Putnam 讲义：实分析 III（第13周）",
+        "求真拓扑学讲义（林剑峰）",
+        "数学分析 资料合订",
+        "数学分析资料合订",
+        "week-13-real-analysis-iii",
+        "求真拓扑学讲义(林剑峰)",
+        "求真书院课程教师及原资料作者",
+        "upload-735644213",
+        "bd-math-docs-combined",
+        "bd-001e65b02785",
+        "bd-d8b5e45160b5",
+        "math-docs-combined.pdf",
+        "week-13-real-analysis-iii.pdf",
+        "求真拓扑学讲义(林剑峰).pdf"
       ],
-      "bytes": 222324867,
-      "size": "212.0 MB",
+      "bytes": 328756744,
+      "size": "313.5 MB",
       "format": "PDF",
       "cat": "competition-math",
       "cats": [
@@ -2485,10 +1210,10 @@
       ],
       "ownerAccess": {
         "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/origin-collections-20261111",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/origin-collections-20261111/library-e569005b66d835ff66ce211c25fbc73dfd58098c2490794e689bf8cc263becdd.pdf"
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/shelf-organized-20261116",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/shelf-organized-20261116/library-06c7563bf02a646b53c72d379ff310fa0b81419a5a4152da9bf271048e4115f9.pdf"
       },
-      "pages": 1954,
+      "pages": 2241,
       "preview": {
         "images": [
           "previews/upload-735644213/page-001.webp",
@@ -2503,7 +1228,7 @@
           "previews/upload-735644213/page-010.webp"
         ],
         "pageCount": 10,
-        "sourcePageCount": 1954
+        "sourcePageCount": 2241
       },
       "subcat": "analysis"
     },
@@ -2974,24 +1699,34 @@
     },
     {
       "id": "bd-7626873ad965",
-      "title": "复变函数论学习指导书（第5版，钟玉泉）",
+      "title": "钟玉泉复变函数论与学习指导（第五版）",
       "author": "钟玉泉",
       "cat": "university-math",
       "catName": "大学数学",
-      "desc": "复变函数论学习指导书（第5版，钟玉泉）。主题：复分析。保留原文及原始页序。",
-      "pages": 344,
-      "size": "16.2 MB",
-      "year": null,
+      "desc": "按作者及原有册次合订：复变函数论（第五版）；复变函数论学习指导书（第5版，钟玉泉）。完整保留原文，新增封面、可点击目录及原书签。",
+      "pages": 621,
+      "size": "93.9 MB",
+      "year": 2026,
       "format": "PDF",
-      "bytes": 16158293,
+      "bytes": 98457437,
       "tags": [
-        "领军资料",
-        "分析",
-        "复分析"
+        "钟玉泉",
+        "复分析",
+        "教材与习题",
+        "同源资料合订"
       ],
       "searchTitles": [
         "复变函数论(第五版)学习指导书 (钟玉泉) (Z-Library)",
-        "复变函数论学习指导书（第5版，钟玉泉）"
+        "复变函数论学习指导书（第5版，钟玉泉）",
+        "大学数学/复变函数论_第五版_钟玉泉.pdf",
+        "大学数学/高年级课程/高年级分析学/复分析/复变函数论(第五版)学习指导书 (钟玉泉) (Z-Library).pdf",
+        "复变函数论（第五版）",
+        "复变函数论 钟玉泉",
+        "钟玉泉",
+        "bd-complex-zhong",
+        "bd-7626873ad965",
+        "复变函数论(第五版)学习指导书 (钟玉泉) (Z-Library).pdf",
+        "复变函数论_第五版_钟玉泉.pdf"
       ],
       "preview": {
         "images": [
@@ -3007,15 +1742,15 @@
           "previews/bd-7626873ad965/page-010.webp"
         ],
         "pageCount": 10,
-        "sourcePageCount": 344
+        "sourcePageCount": 621
       },
       "subcats": [
         "analysis"
       ],
       "ownerAccess": {
         "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/60686b75f2eb43902312b939ecb3b9b78fcd4147/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E9%AB%98%E5%B9%B4%E7%BA%A7%E5%88%86%E6%9E%90%E5%AD%A6/%E5%A4%8D%E5%88%86%E6%9E%90/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E8%AE%BA%28%E7%AC%AC%E4%BA%94%E7%89%88%29%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%AF%BC%E4%B9%A6%20%28%E9%92%9F%E7%8E%89%E6%B3%89%29%20%28Z-Library%29.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/60686b75f2eb43902312b939ecb3b9b78fcd4147/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E9%AB%98%E5%B9%B4%E7%BA%A7%E5%88%86%E6%9E%90%E5%AD%A6/%E5%A4%8D%E5%88%86%E6%9E%90/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E8%AE%BA%28%E7%AC%AC%E4%BA%94%E7%89%88%29%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%AF%BC%E4%B9%A6%20%28%E9%92%9F%E7%8E%89%E6%B3%89%29%20%28Z-Library%29.pdf"
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/shelf-organized-20261116",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/shelf-organized-20261116/library-5aea07be2a72483e60f9412dbcfdf4fd161cb501478ba37d04d05a0bcaaf2a0d.pdf"
       },
       "cats": [
         "university-math"
@@ -3073,24 +1808,34 @@
     },
     {
       "id": "bd-780d713ae23f",
-      "title": "高等代数（丘维声）",
+      "title": "丘维声代数与解析几何资料",
       "author": "丘维声",
       "cat": "university-math",
       "catName": "大学数学",
-      "desc": "高等代数（丘维声）。主题：线性代数。保留原文及原始页序。",
-      "pages": 600,
-      "size": "39.6 MB",
-      "year": null,
+      "desc": "按作者及原有册次合订：高等代数（丘维声）；解析几何（第三版）。完整保留原文，新增封面、可点击目录及原书签。",
+      "pages": 1015,
+      "size": "92.2 MB",
+      "year": 2026,
       "format": "PDF",
-      "bytes": 39612052,
+      "bytes": 96643405,
       "tags": [
-        "领军资料",
-        "代数",
-        "线性代数"
+        "丘维声",
+        "高等代数",
+        "解析几何",
+        "同源资料合订"
       ],
       "searchTitles": [
         "高等代数 (丘维声) (z-library.sk, 1lib.sk, z-lib.sk)",
-        "高等代数（丘维声）"
+        "高等代数（丘维声）",
+        "大学数学/高等代数/基础篇/高等代数 (丘维声) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+        "大学数学/解析几何_第3版_丘维声.pdf",
+        "解析几何（第三版）",
+        "解析几何 丘维声",
+        "丘维声",
+        "bd-780d713ae23f",
+        "bd-geometry-qiuweisheng",
+        "解析几何_第3版_丘维声.pdf",
+        "高等代数 (丘维声) (z-library.sk, 1lib.sk, z-lib.sk).pdf"
       ],
       "preview": {
         "images": [
@@ -3106,15 +1851,16 @@
           "previews/bd-780d713ae23f/page-010.webp"
         ],
         "pageCount": 10,
-        "sourcePageCount": 600
+        "sourcePageCount": 1015
       },
       "subcats": [
-        "algebra"
+        "algebra",
+        "geometry-topology"
       ],
       "ownerAccess": {
         "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/60686b75f2eb43902312b939ecb3b9b78fcd4147/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/%E5%9F%BA%E7%A1%80%E7%AF%87/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0%20%28%E4%B8%98%E7%BB%B4%E5%A3%B0%29%20%28z-library.sk%2C%201lib.sk%2C%20z-lib.sk%29.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/60686b75f2eb43902312b939ecb3b9b78fcd4147/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/%E5%9F%BA%E7%A1%80%E7%AF%87/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0%20%28%E4%B8%98%E7%BB%B4%E5%A3%B0%29%20%28z-library.sk%2C%201lib.sk%2C%20z-lib.sk%29.pdf"
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/shelf-organized-20261116",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/shelf-organized-20261116/library-4ebb5a5c366fe3358419076ad625a07b11c9b2c1cd493db08145184dc97797dd.pdf"
       },
       "cats": [
         "university-math"
@@ -3220,223 +1966,6 @@
         "university-math"
       ],
       "subcat": "geometry-topology"
-    },
-    {
-      "id": "bd-23e3445f946d",
-      "title": "九学代数手稿：高等代数与表示论",
-      "author": "九学课程资料",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "desc": "2026 年暑期手稿，涉及高等代数、有限群与表示论。原文件无标题，以已核对的手稿主题命名。",
-      "pages": 19,
-      "size": "45.9 MB",
-      "year": null,
-      "format": "PDF",
-      "bytes": 45863232,
-      "tags": [
-        "数学竞赛",
-        "领军资料",
-        "表示论",
-        "九学",
-        "手写讲义",
-        "领军备考",
-        "代数"
-      ],
-      "searchTitles": [
-        "9e20f478899dc29eb19741386f9343c8_8348830757598901607_m",
-        "九学代数手稿：高等代数与表示论"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-23e3445f946d/page-001.webp",
-          "previews/bd-23e3445f946d/page-002.webp",
-          "previews/bd-23e3445f946d/page-003.webp",
-          "previews/bd-23e3445f946d/page-004.webp",
-          "previews/bd-23e3445f946d/page-005.webp",
-          "previews/bd-23e3445f946d/page-006.webp",
-          "previews/bd-23e3445f946d/page-007.webp",
-          "previews/bd-23e3445f946d/page-008.webp",
-          "previews/bd-23e3445f946d/page-009.webp",
-          "previews/bd-23e3445f946d/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 19
-      },
-      "subcats": [
-        "algebra"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/5bd984f8a164543f02d0d24800eb6228717de349/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%9C%BA%E6%9E%84%E8%B5%84%E6%96%99/%E4%B9%9D%E5%AD%A6/26%E5%B9%B4%E6%9A%91%E5%81%87/%E6%89%8B%E7%A8%BF/9e20f478899dc29eb19741386f9343c8_8348830757598901607_m.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/5bd984f8a164543f02d0d24800eb6228717de349/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%9C%BA%E6%9E%84%E8%B5%84%E6%96%99/%E4%B9%9D%E5%AD%A6/26%E5%B9%B4%E6%9A%91%E5%81%87/%E6%89%8B%E7%A8%BF/9e20f478899dc29eb19741386f9343c8_8348830757598901607_m.pdf"
-      },
-      "cats": [
-        "university-math",
-        "competition-math"
-      ],
-      "subcat": "algebra"
-    },
-    {
-      "id": "bd-df782e35763b",
-      "title": "九学深圳代数手稿（7月24日）",
-      "author": "九学课程资料",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "desc": "2026 年暑期深圳代数课程手稿，原手写页面保留。",
-      "pages": 20,
-      "size": "50.2 MB",
-      "year": null,
-      "format": "PDF",
-      "bytes": 50178864,
-      "tags": [
-        "数学竞赛",
-        "领军资料",
-        "九学",
-        "手写讲义",
-        "领军备考",
-        "代数"
-      ],
-      "searchTitles": [
-        "7.24 深圳代数(1)",
-        "九学深圳代数手稿（7月24日）"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-df782e35763b/page-001.webp",
-          "previews/bd-df782e35763b/page-002.webp",
-          "previews/bd-df782e35763b/page-003.webp",
-          "previews/bd-df782e35763b/page-004.webp",
-          "previews/bd-df782e35763b/page-005.webp",
-          "previews/bd-df782e35763b/page-006.webp",
-          "previews/bd-df782e35763b/page-007.webp",
-          "previews/bd-df782e35763b/page-008.webp",
-          "previews/bd-df782e35763b/page-009.webp",
-          "previews/bd-df782e35763b/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 20
-      },
-      "subcats": [
-        "algebra"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/5bd984f8a164543f02d0d24800eb6228717de349/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%9C%BA%E6%9E%84%E8%B5%84%E6%96%99/%E4%B9%9D%E5%AD%A6/26%E5%B9%B4%E6%9A%91%E5%81%87/%E6%89%8B%E7%A8%BF/7.24%20%E6%B7%B1%E5%9C%B3%E4%BB%A3%E6%95%B0%281%29.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/5bd984f8a164543f02d0d24800eb6228717de349/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%9C%BA%E6%9E%84%E8%B5%84%E6%96%99/%E4%B9%9D%E5%AD%A6/26%E5%B9%B4%E6%9A%91%E5%81%87/%E6%89%8B%E7%A8%BF/7.24%20%E6%B7%B1%E5%9C%B3%E4%BB%A3%E6%95%B0%281%29.pdf"
-      },
-      "cats": [
-        "university-math",
-        "competition-math"
-      ],
-      "subcat": "algebra"
-    },
-    {
-      "id": "bd-15f2ae022b43",
-      "title": "九学深圳代数手稿（7月25日）",
-      "author": "九学课程资料",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "desc": "2026 年暑期深圳代数课程手稿，原手写页面保留。",
-      "pages": 20,
-      "size": "44.8 MB",
-      "year": null,
-      "format": "PDF",
-      "bytes": 44839465,
-      "tags": [
-        "数学竞赛",
-        "领军资料",
-        "九学",
-        "手写讲义",
-        "领军备考",
-        "代数"
-      ],
-      "searchTitles": [
-        "7.25 深圳代数(1)",
-        "九学深圳代数手稿（7月25日）"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-15f2ae022b43/page-001.webp",
-          "previews/bd-15f2ae022b43/page-002.webp",
-          "previews/bd-15f2ae022b43/page-003.webp",
-          "previews/bd-15f2ae022b43/page-004.webp",
-          "previews/bd-15f2ae022b43/page-005.webp",
-          "previews/bd-15f2ae022b43/page-006.webp",
-          "previews/bd-15f2ae022b43/page-007.webp",
-          "previews/bd-15f2ae022b43/page-008.webp",
-          "previews/bd-15f2ae022b43/page-009.webp",
-          "previews/bd-15f2ae022b43/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 20
-      },
-      "subcats": [
-        "algebra"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/5bd984f8a164543f02d0d24800eb6228717de349/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%9C%BA%E6%9E%84%E8%B5%84%E6%96%99/%E4%B9%9D%E5%AD%A6/26%E5%B9%B4%E6%9A%91%E5%81%87/%E6%89%8B%E7%A8%BF/7.25%20%E6%B7%B1%E5%9C%B3%E4%BB%A3%E6%95%B0%281%29.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/5bd984f8a164543f02d0d24800eb6228717de349/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%9C%BA%E6%9E%84%E8%B5%84%E6%96%99/%E4%B9%9D%E5%AD%A6/26%E5%B9%B4%E6%9A%91%E5%81%87/%E6%89%8B%E7%A8%BF/7.25%20%E6%B7%B1%E5%9C%B3%E4%BB%A3%E6%95%B0%281%29.pdf"
-      },
-      "cats": [
-        "university-math",
-        "competition-math"
-      ],
-      "subcat": "algebra"
-    },
-    {
-      "id": "bd-438efba09df6",
-      "title": "九学深圳代数手稿（7月26日）",
-      "author": "九学课程资料",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "desc": "2026 年暑期深圳代数课程手稿，原手写页面保留。",
-      "pages": 20,
-      "size": "43.6 MB",
-      "year": null,
-      "format": "PDF",
-      "bytes": 43642142,
-      "tags": [
-        "数学竞赛",
-        "领军资料",
-        "九学",
-        "手写讲义",
-        "领军备考",
-        "代数"
-      ],
-      "searchTitles": [
-        "7.26 深圳代数",
-        "九学深圳代数手稿（7月26日）"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-438efba09df6/page-001.webp",
-          "previews/bd-438efba09df6/page-002.webp",
-          "previews/bd-438efba09df6/page-003.webp",
-          "previews/bd-438efba09df6/page-004.webp",
-          "previews/bd-438efba09df6/page-005.webp",
-          "previews/bd-438efba09df6/page-006.webp",
-          "previews/bd-438efba09df6/page-007.webp",
-          "previews/bd-438efba09df6/page-008.webp",
-          "previews/bd-438efba09df6/page-009.webp",
-          "previews/bd-438efba09df6/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 20
-      },
-      "subcats": [
-        "algebra"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%9C%BA%E6%9E%84%E8%B5%84%E6%96%99/%E4%B9%9D%E5%AD%A6/26%E5%B9%B4%E6%9A%91%E5%81%87/%E6%89%8B%E7%A8%BF/7.26%20%E6%B7%B1%E5%9C%B3%E4%BB%A3%E6%95%B0.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%9C%BA%E6%9E%84%E8%B5%84%E6%96%99/%E4%B9%9D%E5%AD%A6/26%E5%B9%B4%E6%9A%91%E5%81%87/%E6%89%8B%E7%A8%BF/7.26%20%E6%B7%B1%E5%9C%B3%E4%BB%A3%E6%95%B0.pdf"
-      },
-      "cats": [
-        "university-math",
-        "competition-math"
-      ],
-      "subcat": "algebra"
     },
     {
       "id": "upload-735649640",
@@ -3545,57 +2074,6 @@
         "university-math"
       ],
       "subcat": "analysis"
-    },
-    {
-      "id": "bd-d8b5e45160b5",
-      "title": "求真拓扑学讲义（林剑峰）",
-      "author": "林剑峰",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "desc": "求真课程拓扑学讲义。",
-      "pages": 142,
-      "size": "39.3 MB",
-      "year": null,
-      "format": "PDF",
-      "bytes": 39251026,
-      "tags": [
-        "领军资料",
-        "几何与拓扑",
-        "拓扑学",
-        "求真"
-      ],
-      "searchTitles": [
-        "求真拓扑学讲义(林剑峰)",
-        "求真拓扑学讲义（林剑峰）"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-d8b5e45160b5/page-001.webp",
-          "previews/bd-d8b5e45160b5/page-002.webp",
-          "previews/bd-d8b5e45160b5/page-003.webp",
-          "previews/bd-d8b5e45160b5/page-004.webp",
-          "previews/bd-d8b5e45160b5/page-005.webp",
-          "previews/bd-d8b5e45160b5/page-006.webp",
-          "previews/bd-d8b5e45160b5/page-007.webp",
-          "previews/bd-d8b5e45160b5/page-008.webp",
-          "previews/bd-d8b5e45160b5/page-009.webp",
-          "previews/bd-d8b5e45160b5/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 142
-      },
-      "subcats": [
-        "geometry-topology"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E5%87%A0%E4%BD%95%E4%B8%8E%E6%8B%93%E6%89%91/%E5%9F%BA%E7%A1%80%E6%8B%93%E6%89%91%E5%AD%A6%EF%BC%88%E7%82%B9%E9%9B%86%EF%BC%8B%E4%BB%A3%E6%95%B0%E5%88%9D%E6%AD%A5%EF%BC%89/%E6%B1%82%E7%9C%9F%E6%8B%93%E6%89%91%E5%AD%A6%E8%AE%B2%E4%B9%89%28%E6%9E%97%E5%89%91%E5%B3%B0%29.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/e64d3b1e24059558660cc152d997014376454490/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E5%B9%B4%E7%BA%A7%E8%AF%BE%E7%A8%8B/%E5%87%A0%E4%BD%95%E4%B8%8E%E6%8B%93%E6%89%91/%E5%9F%BA%E7%A1%80%E6%8B%93%E6%89%91%E5%AD%A6%EF%BC%88%E7%82%B9%E9%9B%86%EF%BC%8B%E4%BB%A3%E6%95%B0%E5%88%9D%E6%AD%A5%EF%BC%89/%E6%B1%82%E7%9C%9F%E6%8B%93%E6%89%91%E5%AD%A6%E8%AE%B2%E4%B9%89%28%E6%9E%97%E5%89%91%E5%B3%B0%29.pdf"
-      },
-      "cats": [
-        "university-math"
-      ],
-      "subcat": "geometry-topology"
     },
     {
       "id": "upload-735649051",
@@ -3808,24 +2286,32 @@
     {
       "id": "upload-735644735",
       "title": "史济怀教材资料",
-      "author": "原资料作者（见各来源）",
+      "author": "常庚哲、史济怀",
       "catName": "大学数学",
-      "desc": "2 份同机构、作者或系列资料合订，保留 806 页原始正文，附可点击目录与书签。",
-      "year": null,
+      "desc": "按作者及原有册次合订：数分史济怀上(第3版)；数学分析教程（下册，第3版，常庚哲、史济怀）；复变函数史济怀LaTeX重排。完整保留原文，新增封面、可点击目录及原书签。",
+      "year": 2026,
       "tags": [
         "史济怀教材",
-        "同源资料合订",
-        "领军资料",
-        "分析"
+        "同源资料合订"
       ],
       "searchTitles": [
         "数分史济怀上(第3版)",
         "复变函数史济怀LaTeX重排",
         "bd-fd2e5b820c7f",
-        "bd-6be38103ae65"
+        "bd-6be38103ae65",
+        "大学数学/数学分析/基础篇/数分史济怀上(第3版).pdf",
+        "大学数学/数学分析_史济怀_第3版_下册.pdf",
+        "大学数学/高年级课程/高年级分析学/复分析/复变函数史济怀LaTeX重排.pdf",
+        "数学分析教程（下册，第3版，常庚哲、史济怀）",
+        "数学分析 史济怀 下册",
+        "数学分析（下册）",
+        "常庚哲、史济怀",
+        "upload-735644735",
+        "bd-math-shijihuai-down",
+        "数学分析_史济怀_第3版_下册.pdf"
       ],
-      "bytes": 17551663,
-      "size": "16.7 MB",
+      "bytes": 113096512,
+      "size": "107.9 MB",
       "format": "PDF",
       "cat": "university-math",
       "cats": [
@@ -3836,10 +2322,10 @@
       ],
       "ownerAccess": {
         "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/origin-collections-20261111",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/origin-collections-20261111/library-d6977b872646c2d1f88a336ba20d19e74ecce5520a1cca3ee7c7f8db76a1c948.pdf"
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/shelf-organized-20261116",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/shelf-organized-20261116/library-cd4d159dc3fc9a2728039fa1f9d8858001387e42d5ba4de07db9d2865c13528f.pdf"
       },
-      "pages": 808,
+      "pages": 1267,
       "preview": {
         "images": [
           "previews/upload-735644735/page-001.webp",
@@ -3854,30 +2340,46 @@
           "previews/upload-735644735/page-010.webp"
         ],
         "pageCount": 10,
-        "sourcePageCount": 808
+        "sourcePageCount": 1267
       },
       "subcat": "analysis"
     },
     {
       "id": "bd-267d789c5c6c",
-      "title": "数学分析习题课讲义（上册，谢惠民）",
-      "author": "谢惠民等",
+      "title": "谢惠民数学分析习题课讲义与配套解答",
+      "author": "谢惠民等；解答编写者见原文",
       "cat": "university-math",
       "catName": "大学数学",
-      "desc": "数学分析习题课讲义（上册，谢惠民）。主题：数学分析。保留原文及原始页序。",
-      "pages": 442,
-      "size": "11.6 MB",
-      "year": null,
+      "desc": "上、下册讲义及学习者编写的配套解答合订。解答前言说明其为个人学习整理，并非谢惠民等原作者提供的官方答案；各来源原文完整保留。",
+      "pages": 1536,
+      "size": "100.5 MB",
+      "year": 2026,
       "format": "PDF",
-      "bytes": 11588171,
+      "bytes": 105381129,
       "tags": [
-        "领军资料",
-        "分析",
-        "数学分析"
+        "谢惠民",
+        "数学分析",
+        "习题与解答",
+        "同源资料合订"
       ],
       "searchTitles": [
         "谢惠民数学分析习题课讲义上册 (2018, 高等教育出版社) - libgen.li",
-        "数学分析习题课讲义（上册，谢惠民）"
+        "数学分析习题课讲义（上册，谢惠民）",
+        "大学数学/数学分析/习题集/谢惠民数学分析习题课讲义上册 (2018, 高等教育出版社) - libgen.li.pdf",
+        "大学数学/数学分析/习题集/数学分析习题课讲义（谢惠民）.下册.pdf",
+        "大学数学/谢惠民数学分析习题课讲义答案.pdf",
+        "数学分析习题课讲义（下册，谢惠民）",
+        "配套习题解答（学习者编写，非官方答案）",
+        "数学分析习题课讲义（谢惠民）.下册",
+        "数学分析 谢惠民 习题答案",
+        "数学分析习题课讲义答案",
+        "谢惠民等；解答编写者见原文",
+        "bd-267d789c5c6c",
+        "bd-27adac96b061",
+        "bd-math-xiehuimin",
+        "谢惠民数学分析习题课讲义答案.pdf",
+        "谢惠民数学分析习题课讲义上册 (2018, 高等教育出版社) - libgen.li.pdf",
+        "数学分析习题课讲义（谢惠民）.下册.pdf"
       ],
       "preview": {
         "images": [
@@ -3893,65 +2395,15 @@
           "previews/bd-267d789c5c6c/page-010.webp"
         ],
         "pageCount": 10,
-        "sourcePageCount": 442
+        "sourcePageCount": 1536
       },
       "subcats": [
         "analysis"
       ],
       "ownerAccess": {
         "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/60686b75f2eb43902312b939ecb3b9b78fcd4147/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/%E4%B9%A0%E9%A2%98%E9%9B%86/%E8%B0%A2%E6%83%A0%E6%B0%91%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B9%A0%E9%A2%98%E8%AF%BE%E8%AE%B2%E4%B9%89%E4%B8%8A%E5%86%8C%20%282018%2C%20%E9%AB%98%E7%AD%89%E6%95%99%E8%82%B2%E5%87%BA%E7%89%88%E7%A4%BE%29%20-%20libgen.li.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/60686b75f2eb43902312b939ecb3b9b78fcd4147/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/%E4%B9%A0%E9%A2%98%E9%9B%86/%E8%B0%A2%E6%83%A0%E6%B0%91%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B9%A0%E9%A2%98%E8%AF%BE%E8%AE%B2%E4%B9%89%E4%B8%8A%E5%86%8C%20%282018%2C%20%E9%AB%98%E7%AD%89%E6%95%99%E8%82%B2%E5%87%BA%E7%89%88%E7%A4%BE%29%20-%20libgen.li.pdf"
-      },
-      "cats": [
-        "university-math"
-      ],
-      "subcat": "analysis"
-    },
-    {
-      "id": "bd-27adac96b061",
-      "title": "数学分析习题课讲义（下册，谢惠民）",
-      "author": "谢惠民等",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "desc": "数学分析习题课讲义下册，与上册分别保留，便于按册查找。",
-      "pages": 421,
-      "size": "33.9 MB",
-      "year": null,
-      "format": "PDF",
-      "bytes": 33929886,
-      "tags": [
-        "领军资料",
-        "分析",
-        "数学分析"
-      ],
-      "searchTitles": [
-        "数学分析习题课讲义（谢惠民）.下册",
-        "数学分析习题课讲义（下册，谢惠民）"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-27adac96b061/page-001.webp",
-          "previews/bd-27adac96b061/page-002.webp",
-          "previews/bd-27adac96b061/page-003.webp",
-          "previews/bd-27adac96b061/page-004.webp",
-          "previews/bd-27adac96b061/page-005.webp",
-          "previews/bd-27adac96b061/page-006.webp",
-          "previews/bd-27adac96b061/page-007.webp",
-          "previews/bd-27adac96b061/page-008.webp",
-          "previews/bd-27adac96b061/page-009.webp",
-          "previews/bd-27adac96b061/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 421
-      },
-      "subcats": [
-        "analysis"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/5bd984f8a164543f02d0d24800eb6228717de349/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/%E4%B9%A0%E9%A2%98%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B9%A0%E9%A2%98%E8%AF%BE%E8%AE%B2%E4%B9%89%EF%BC%88%E8%B0%A2%E6%83%A0%E6%B0%91%EF%BC%89.%E4%B8%8B%E5%86%8C.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/5bd984f8a164543f02d0d24800eb6228717de349/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/%E4%B9%A0%E9%A2%98%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B9%A0%E9%A2%98%E8%AF%BE%E8%AE%B2%E4%B9%89%EF%BC%88%E8%B0%A2%E6%83%A0%E6%B0%91%EF%BC%89.%E4%B8%8B%E5%86%8C.pdf"
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/shelf-organized-20261116",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/shelf-organized-20261116/library-76a7ef4c78f084e4f364aed31a2b1637cee6f28bcdb9829de9c285d2e58f1792.pdf"
       },
       "cats": [
         "university-math"
@@ -4820,10 +3272,10 @@
     {
       "id": "upload-737626449",
       "title": "GTM 数学资料",
-      "author": "原资料作者（见各册）",
+      "author": "Springer GTM 系列各卷作者",
       "catName": "大学数学",
-      "desc": "GTM 系列及关联资料共 31 册，按卷号合订。本次补入 GTM 95 Shiryaev《Probability》第二版、GTM 96 Conway《A Course in Functional Analysis》第一版，涵盖分析、代数、几何与拓扑、概率与统计及应用数学。原文、原书签与内部跳转保留；GTM045 文件实际为 Loève《Probability Theory》第3版关联旧版，GTM275 为第1—6章中文译稿。",
-      "year": null,
+      "desc": "Springer GTM 系列按卷号排列，新增第40、191、281卷。第73卷的两个重印版本分别保留并标明，避免遗漏不同前置页；第211卷仍采用原藏版本，新传同版原件保留于私有归档。附可点击总目录与原书签。",
+      "year": 2026,
       "tags": [
         "GTM",
         "同源资料合订",
@@ -4835,8 +3287,7 @@
         "应用数学",
         "领军资料",
         "分析",
-        "Springer",
-        "泛函分析"
+        "Springer"
       ],
       "searchTitles": [
         "GTM 数学资料",
@@ -5098,10 +3549,85 @@
         "GTM096",
         "GTM 096",
         "GTM96",
-        "GTM 96"
+        "GTM 96",
+        "大学数学/GTM027_General_Topology.pdf",
+        "大学数学/GTM030_Lectures_in_Abstract_Algebra_I_Basic_Concepts.pdf",
+        "大学数学/GTM031_Lectures_in_Abstract_Algebra_II_Linear_Algebra.pdf",
+        "大学数学/GTM032_Lectures_in_Abstract_Algebra_III_Theory_of_Fields.pdf",
+        "大学数学/GTM040_Denumerable_Markov_Chains.pdf",
+        "大学数学/高年级课程/高年级代数学/群表示论/(GTM042)Linear Representations of Finite Groups.pdf",
+        "大学数学/GTM045_Probability_Theory_I.pdf",
+        "大学数学/GTM046_Probability_Theory_II.pdf",
+        "大学数学/GTM047_Geometric_Topology_in_Dimensions_2_and_3.pdf",
+        "大学数学/GTM051_A_Course_in_Differential_Geometry.pdf",
+        "大学数学/GTM073_Algebra.pdf",
+        "大学数学/GTM073_代数.pdf",
+        "大学数学/GTM082_Differential_Forms_in_Algebraic_Topology.pdf",
+        "大学数学/GTM095_Probability_Shiryaev.pdf",
+        "大学数学/高年级课程/高年级分析学/泛函分析/(GTM096)A Course in Functional Analysis.pdf",
+        "大学数学/高年级课程/高年级代数学/代数数论/(GTM110)Algebraic Number Theory.pdf",
+        "大学数学/GTM115_Differential_Geometry.pdf",
+        "大学数学/GTM139_Topology_and_Geometry.pdf",
+        "大学数学/GTM153_Algebraic_Topology.pdf",
+        "大学数学/GTM166_Differential_Geometry.pdf",
+        "大学数学/GTM169_Matrix_Analysis.pdf",
+        "大学数学/GTM176_Riemannian_Manifolds.pdf",
+        "大学数学/GTM181_Numerical_Analysis.pdf",
+        "大学数学/GTM191_Fundamentals_of_Differential_Geometry.pdf",
+        "大学数学/GTM202_Introduction_to_Topological_Manifolds.pdf",
+        "大学数学/GTM208_Analysis_for_Applied_Mathematics.pdf",
+        "大学数学/GTM211_Algebra.pdf",
+        "大学数学/GTM218_Introduction_to_Smooth_Manifolds.pdf",
+        "大学数学/高年级课程/高年级代数学/李代数/(GTM222)Lie Groups, Lie Algebras, and Representations.pdf",
+        "大学数学/GTM223_Fourier_Analysis_and_Its_Applications.pdf",
+        "大学数学/GTM242_Abstract_Algebra.pdf",
+        "大学数学/高年级课程/高年级分析学/Fourier分析/GTM249 Classical Fourier Analysis(1)(1)(1).pdf",
+        "大学数学/高年级课程/高年级代数学/交换代数/(GTM256)A Course in Commutative Algebra.pdf",
+        "大学数学/GTM275_Differential_Geometry_Connections_Curvature_Characteristic_Classes.pdf",
+        "大学数学/GTM281_Intersection_Homology_Perverse_Sheaves.pdf",
+        "GTM 040 · Denumerable Markov Chains",
+        "GTM 047 · Geometric Topology in Dimensions 2 and 3",
+        "GTM 073 · Algebra（原藏版本，526页）",
+        "GTM 073 · Algebra（另一重印版本，523页）",
+        "GTM 082 · Differential Forms in Algebraic Topology",
+        "GTM 095 · Probability（第2版，Shiryaev）",
+        "GTM 096 · A Course in Functional Analysis（Conway）",
+        "GTM 139 · Topology and Geometry",
+        "GTM 153 · Algebraic Topology: A First Course",
+        "GTM 191 · Fundamentals of Differential Geometry",
+        "GTM 208 · Analysis for Applied Mathematics",
+        "GTM 218 · Introduction to Smooth Manifolds",
+        "GTM 223 · Fourier Analysis and Its Applications",
+        "GTM 281 · Intersection Homology and Perverse Sheaves",
+        "可数马尔可夫链",
+        "Denumerable Markov Chains: with a chapter of Markov Random Fields",
+        "GTM 40",
+        "微分几何基础",
+        "Fundamentals of Differential Geometry",
+        "GTM 191",
+        "相交同调与反常层",
+        "Intersection Homology & Perverse Sheaves with Applications to Singularities",
+        "GTM 281",
+        "GTM073 代数 Hungerford",
+        "Algebra（GTM 73）",
+        "GTM211 交换代数 Eisenbud",
+        "Algebra（GTM 211）",
+        "Springer GTM 系列各卷作者",
+        "upload-737626449",
+        "gtm-040",
+        "gtm-191",
+        "gtm-281",
+        "bd-gtm073",
+        "bd-gtm211",
+        "GTM040_Denumerable_Markov_Chains.pdf",
+        "GTM281_Intersection_Homology_Perverse_Sheaves.pdf",
+        "GTM191_Fundamentals_of_Differential_Geometry.pdf",
+        "GTM073_代数.pdf",
+        "大学数学/GTM211_代数.pdf",
+        "GTM211_代数.pdf"
       ],
-      "bytes": 734710335,
-      "size": "700.7 MB",
+      "bytes": 919130615,
+      "size": "876.6 MB",
       "format": "PDF",
       "cat": "university-math",
       "cats": [
@@ -5116,10 +3642,10 @@
       ],
       "ownerAccess": {
         "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/gtm-extended-20261114",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/gtm-extended-20261114/library-17c689bb1ae556330acf260489a049538718c6905088696083024fa6915574dc.pdf"
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/shelf-organized-20261116",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/shelf-organized-20261116/library-3860f6eee27d67a3ead7966758ae44b7b75a44117f0672d88a5a86100ede753f.pdf"
       },
-      "pages": 13190,
+      "pages": 15039,
       "preview": {
         "images": [
           "previews/upload-737626449/page-001.webp",
@@ -5134,7 +3660,7 @@
           "previews/upload-737626449/page-010.webp"
         ],
         "pageCount": 10,
-        "sourcePageCount": 13190
+        "sourcePageCount": 15039
       },
       "subcat": "algebra"
     },
@@ -9597,266 +8123,25 @@
       }
     },
     {
-      "id": "gtm-040",
-      "title": "Denumerable Markov Chains: with a chapter of Markov Random Fields",
-      "author": "John G. Kemeny, J. Laurie Snell, Anthony W. Knapp",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "desc": "可数马尔可夫链（第二版），含 David Griffeath 撰写的马尔可夫随机场一章：转移概率、势函数、边界理论与随机过程，GTM 概率经典。",
-      "pages": 495,
-      "size": "37.9 MB",
-      "year": 1976,
-      "format": "PDF",
-      "bytes": 37877382,
-      "tags": [
-        "GTM",
-        "Springer",
-        "研究生教材",
-        "概率与统计"
-      ],
-      "searchTitles": [
-        "可数马尔可夫链",
-        "Denumerable Markov Chains: with a chapter of Markov Random Fields",
-        "GTM 40"
-      ],
-      "preview": {
-        "images": [
-          "previews/gtm-040/page-001.webp",
-          "previews/gtm-040/page-002.webp",
-          "previews/gtm-040/page-003.webp",
-          "previews/gtm-040/page-004.webp",
-          "previews/gtm-040/page-005.webp",
-          "previews/gtm-040/page-006.webp",
-          "previews/gtm-040/page-007.webp",
-          "previews/gtm-040/page-008.webp",
-          "previews/gtm-040/page-009.webp",
-          "previews/gtm-040/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 495
-      },
-      "subcats": [
-        "probability-statistics"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/19ccec008bb1daa80b96ec44edb8f8668c603bbf/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM040_Denumerable_Markov_Chains.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/19ccec008bb1daa80b96ec44edb8f8668c603bbf/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM040_Denumerable_Markov_Chains.pdf"
-      }
-    },
-    {
-      "id": "gtm-191",
-      "title": "Fundamentals of Differential Geometry",
-      "author": "Serge Lang",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "desc": "微分几何基础：流形、微分形式、黎曼几何、联络与曲率，Serge Lang 研究生教材。",
-      "pages": 553,
-      "size": "67.1 MB",
-      "year": 1999,
-      "format": "PDF",
-      "bytes": 67063188,
-      "tags": [
-        "GTM",
-        "Springer",
-        "研究生教材",
-        "几何与拓扑"
-      ],
-      "searchTitles": [
-        "微分几何基础",
-        "Fundamentals of Differential Geometry",
-        "GTM 191"
-      ],
-      "preview": {
-        "images": [
-          "previews/gtm-191/page-001.webp",
-          "previews/gtm-191/page-002.webp",
-          "previews/gtm-191/page-003.webp",
-          "previews/gtm-191/page-004.webp",
-          "previews/gtm-191/page-005.webp",
-          "previews/gtm-191/page-006.webp",
-          "previews/gtm-191/page-007.webp",
-          "previews/gtm-191/page-008.webp",
-          "previews/gtm-191/page-009.webp",
-          "previews/gtm-191/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 553
-      },
-      "subcats": [
-        "geometry-topology"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/19ccec008bb1daa80b96ec44edb8f8668c603bbf/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM191_Fundamentals_of_Differential_Geometry.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/19ccec008bb1daa80b96ec44edb8f8668c603bbf/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM191_Fundamentals_of_Differential_Geometry.pdf"
-      }
-    },
-    {
-      "id": "gtm-281",
-      "title": "Intersection Homology & Perverse Sheaves with Applications to Singularities",
-      "author": "Laurențiu G. Maxim",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "desc": "相交同调与反常层（奇异点应用）：层导出范畴、相交同调、奇异点拓扑，现代代数拓扑教材。",
-      "pages": 278,
-      "size": "3.9 MB",
-      "year": 2019,
-      "format": "PDF",
-      "bytes": 3927965,
-      "tags": [
-        "GTM",
-        "Springer",
-        "研究生教材",
-        "几何与拓扑"
-      ],
-      "searchTitles": [
-        "相交同调与反常层",
-        "Intersection Homology & Perverse Sheaves with Applications to Singularities",
-        "GTM 281"
-      ],
-      "preview": {
-        "images": [
-          "previews/gtm-281/page-001.webp",
-          "previews/gtm-281/page-002.webp",
-          "previews/gtm-281/page-003.webp",
-          "previews/gtm-281/page-004.webp",
-          "previews/gtm-281/page-005.webp",
-          "previews/gtm-281/page-006.webp",
-          "previews/gtm-281/page-007.webp",
-          "previews/gtm-281/page-008.webp",
-          "previews/gtm-281/page-009.webp",
-          "previews/gtm-281/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 278
-      },
-      "subcats": [
-        "geometry-topology"
-      ],
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/19ccec008bb1daa80b96ec44edb8f8668c603bbf/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM281_Intersection_Homology_Perverse_Sheaves.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/19ccec008bb1daa80b96ec44edb8f8668c603bbf/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM281_Intersection_Homology_Perverse_Sheaves.pdf"
-      }
-    },
-    {
-      "id": "bd-math-chenjixiu-up",
-      "title": "数学分析（上册）",
-      "author": "陈纪修 等",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "cats": [
-        "university-math"
-      ],
-      "desc": "复旦陈纪修《数学分析》第三版上册：极限、连续、一元微积分与级数，经典数学系教材。",
-      "pages": 381,
-      "size": "59.4 MB",
-      "year": 2019,
-      "format": "PDF",
-      "bytes": 59353322,
-      "tags": [
-        "大学数学",
-        "分析",
-        "研究生教材"
-      ],
-      "searchTitles": [
-        "数学分析 陈纪修 上册",
-        "数学分析（上册）"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-math-chenjixiu-up/page-001.webp",
-          "previews/bd-math-chenjixiu-up/page-002.webp",
-          "previews/bd-math-chenjixiu-up/page-003.webp",
-          "previews/bd-math-chenjixiu-up/page-004.webp",
-          "previews/bd-math-chenjixiu-up/page-005.webp",
-          "previews/bd-math-chenjixiu-up/page-006.webp",
-          "previews/bd-math-chenjixiu-up/page-007.webp",
-          "previews/bd-math-chenjixiu-up/page-008.webp",
-          "previews/bd-math-chenjixiu-up/page-009.webp",
-          "previews/bd-math-chenjixiu-up/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 381
-      },
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90_%E5%A4%8D%E6%97%A6%E9%99%88%E7%BA%AA%E4%BF%AE_%E7%AC%AC3%E7%89%88_%E4%B8%8A%E5%86%8C.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90_%E5%A4%8D%E6%97%A6%E9%99%88%E7%BA%AA%E4%BF%AE_%E7%AC%AC3%E7%89%88_%E4%B8%8A%E5%86%8C.pdf"
-      },
-      "subcats": [
-        "analysis"
-      ]
-    },
-    {
-      "id": "bd-math-chenjixiu-down",
-      "title": "数学分析（下册）",
-      "author": "陈纪修 等",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "cats": [
-        "university-math"
-      ],
-      "desc": "复旦陈纪修《数学分析》第三版下册：多元微积分、级数与含参变量积分。",
-      "pages": 442,
-      "size": "54.3 MB",
-      "year": 2019,
-      "format": "PDF",
-      "bytes": 54270986,
-      "tags": [
-        "大学数学",
-        "分析",
-        "研究生教材"
-      ],
-      "searchTitles": [
-        "数学分析 陈纪修 下册",
-        "数学分析（下册）"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-math-chenjixiu-down/page-001.webp",
-          "previews/bd-math-chenjixiu-down/page-002.webp",
-          "previews/bd-math-chenjixiu-down/page-003.webp",
-          "previews/bd-math-chenjixiu-down/page-004.webp",
-          "previews/bd-math-chenjixiu-down/page-005.webp",
-          "previews/bd-math-chenjixiu-down/page-006.webp",
-          "previews/bd-math-chenjixiu-down/page-007.webp",
-          "previews/bd-math-chenjixiu-down/page-008.webp",
-          "previews/bd-math-chenjixiu-down/page-009.webp",
-          "previews/bd-math-chenjixiu-down/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 442
-      },
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90_%E9%99%88%E7%BA%AA%E4%BF%AE_%E7%AC%AC3%E7%89%88_%E4%B8%8B%E5%86%8C.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90_%E9%99%88%E7%BA%AA%E4%BF%AE_%E7%AC%AC3%E7%89%88_%E4%B8%8B%E5%86%8C.pdf"
-      },
-      "subcats": [
-        "analysis"
-      ]
-    },
-    {
       "id": "bd-math-peiliwen",
-      "title": "数学分析中的典型问题与方法（第三版）",
+      "title": "数学分析中的典型问题与方法（第三版·原件待补齐）",
       "author": "裴礼文",
       "cat": "university-math",
       "catName": "大学数学",
       "cats": [
         "university-math"
       ],
-      "desc": "数学分析经典题解：按专题归纳典型问题与方法，覆盖分析学各核心考点。",
+      "desc": "现有书目和10页试读；原书目所指的私有仓库文件不存在，已核对仓库历史及上传附件，尚未找到完整原件。暂不显示下载入口，待原件补齐后恢复。",
       "pages": 879,
       "size": "61.9 MB",
-      "year": 2021,
+      "year": null,
       "format": "PDF",
       "bytes": 61906755,
       "tags": [
-        "大学数学",
-        "分析",
-        "研究生教材"
+        "裴礼文",
+        "数学分析",
+        "习题与解答",
+        "原件待补齐"
       ],
       "searchTitles": [
         "数学分析 典型问题 裴礼文",
@@ -9878,60 +8163,6 @@
         "pageCount": 10,
         "sourcePageCount": 879
       },
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%AD%E7%9A%84%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98%E4%B8%8E%E6%96%B9%E6%B3%95_%E8%A3%B4%E7%A4%BC%E6%96%87_%E7%AC%AC3%E7%89%88.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%AD%E7%9A%84%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98%E4%B8%8E%E6%96%B9%E6%B3%95_%E8%A3%B4%E7%A4%BC%E6%96%87_%E7%AC%AC3%E7%89%88.pdf"
-      },
-      "subcats": [
-        "analysis"
-      ]
-    },
-    {
-      "id": "bd-math-louhongwei-up",
-      "title": "数学分析（上册）",
-      "author": "楼红卫",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "cats": [
-        "university-math"
-      ],
-      "desc": "楼红卫《数学分析》2022上册：现代观点讲解数学分析基础。",
-      "pages": 377,
-      "size": "58.0 MB",
-      "year": 2022,
-      "format": "PDF",
-      "bytes": 58009377,
-      "tags": [
-        "大学数学",
-        "分析",
-        "研究生教材"
-      ],
-      "searchTitles": [
-        "数学分析 楼红卫 上册",
-        "数学分析（上册）"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-math-louhongwei-up/page-001.webp",
-          "previews/bd-math-louhongwei-up/page-002.webp",
-          "previews/bd-math-louhongwei-up/page-003.webp",
-          "previews/bd-math-louhongwei-up/page-004.webp",
-          "previews/bd-math-louhongwei-up/page-005.webp",
-          "previews/bd-math-louhongwei-up/page-006.webp",
-          "previews/bd-math-louhongwei-up/page-007.webp",
-          "previews/bd-math-louhongwei-up/page-008.webp",
-          "previews/bd-math-louhongwei-up/page-009.webp",
-          "previews/bd-math-louhongwei-up/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 377
-      },
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90_%E4%B8%8A%E5%86%8C_%E6%A5%BC%E7%BA%A2%E5%8D%AB_2022.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90_%E4%B8%8A%E5%86%8C_%E6%A5%BC%E7%BA%A2%E5%8D%AB_2022.pdf"
-      },
       "subcats": [
         "analysis"
       ]
@@ -9945,20 +8176,24 @@
       "cats": [
         "university-math"
       ],
-      "desc": "Serre 有限群经典：群作用、Sylow 定理、有限群结构与表示入门。",
+      "desc": "Jean-Pierre Serre《Finite Groups: An Introduction / 有限群导引》。归入大学数学的代数类别，保留194页原文。",
       "pages": 194,
-      "size": "73.7 MB",
-      "year": 1976,
+      "size": "70.3 MB",
+      "year": null,
       "format": "PDF",
       "bytes": 73703947,
       "tags": [
-        "大学数学",
+        "Serre",
+        "有限群",
         "代数",
-        "研究生教材"
+        "经典教材"
       ],
       "searchTitles": [
         "有限群导引 Serre",
-        "有限群导引"
+        "有限群导引",
+        "Jean-Pierre Serre",
+        "大学数学/有限群导引_Jean-Pierre_Serre.pdf",
+        "有限群导引_Jean-Pierre_Serre.pdf"
       ],
       "preview": {
         "images": [
@@ -9983,373 +8218,37 @@
       },
       "subcats": [
         "algebra"
-      ]
-    },
-    {
-      "id": "bd-math-louhongwei-down",
-      "title": "数学分析（下册）",
-      "author": "楼红卫",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "cats": [
-        "university-math"
       ],
-      "desc": "楼红卫《数学分析》下册：多元分析与现代分析专题。",
-      "pages": 413,
-      "size": "59.1 MB",
-      "year": 2022,
-      "format": "PDF",
-      "bytes": 59082264,
-      "tags": [
-        "大学数学",
-        "分析",
-        "研究生教材"
-      ],
-      "searchTitles": [
-        "数学分析 楼红卫 下册",
-        "数学分析（下册）"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-math-louhongwei-down/page-001.webp",
-          "previews/bd-math-louhongwei-down/page-002.webp",
-          "previews/bd-math-louhongwei-down/page-003.webp",
-          "previews/bd-math-louhongwei-down/page-004.webp",
-          "previews/bd-math-louhongwei-down/page-005.webp",
-          "previews/bd-math-louhongwei-down/page-006.webp",
-          "previews/bd-math-louhongwei-down/page-007.webp",
-          "previews/bd-math-louhongwei-down/page-008.webp",
-          "previews/bd-math-louhongwei-down/page-009.webp",
-          "previews/bd-math-louhongwei-down/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 413
-      },
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90_%E4%B8%8B%E5%86%8C_%E6%A5%BC%E7%BA%A2%E5%8D%AB.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90_%E4%B8%8B%E5%86%8C_%E6%A5%BC%E7%BA%A2%E5%8D%AB.pdf"
-      },
-      "subcats": [
-        "analysis"
-      ]
-    },
-    {
-      "id": "bd-geometry-qiuweisheng",
-      "title": "解析几何（第三版）",
-      "author": "丘维声",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "cats": [
-        "university-math"
-      ],
-      "desc": "丘维声解析几何：向量、坐标、空间曲线曲面与二次型，经典几何教材。",
-      "pages": 413,
-      "size": "57.1 MB",
-      "year": 2014,
-      "format": "PDF",
-      "bytes": 57113791,
-      "tags": [
-        "大学数学",
-        "几何与拓扑",
-        "研究生教材"
-      ],
-      "searchTitles": [
-        "解析几何 丘维声",
-        "解析几何（第三版）"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-geometry-qiuweisheng/page-001.webp",
-          "previews/bd-geometry-qiuweisheng/page-002.webp",
-          "previews/bd-geometry-qiuweisheng/page-003.webp",
-          "previews/bd-geometry-qiuweisheng/page-004.webp",
-          "previews/bd-geometry-qiuweisheng/page-005.webp",
-          "previews/bd-geometry-qiuweisheng/page-006.webp",
-          "previews/bd-geometry-qiuweisheng/page-007.webp",
-          "previews/bd-geometry-qiuweisheng/page-008.webp",
-          "previews/bd-geometry-qiuweisheng/page-009.webp",
-          "previews/bd-geometry-qiuweisheng/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 413
-      },
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95_%E7%AC%AC3%E7%89%88_%E4%B8%98%E7%BB%B4%E5%A3%B0.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95_%E7%AC%AC3%E7%89%88_%E4%B8%98%E7%BB%B4%E5%A3%B0.pdf"
-      },
-      "subcats": [
-        "geometry-topology"
-      ]
-    },
-    {
-      "id": "bd-math-xiehuimin",
-      "title": "数学分析习题课讲义答案",
-      "author": "谢惠民 等",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "cats": [
-        "university-math"
-      ],
-      "desc": "谢惠民《数学分析习题课讲义》配套答案，逐题解析。",
-      "pages": 671,
-      "size": "59.9 MB",
-      "year": 2018,
-      "format": "PDF",
-      "bytes": 59888612,
-      "tags": [
-        "大学数学",
-        "分析",
-        "研究生教材"
-      ],
-      "searchTitles": [
-        "数学分析 谢惠民 习题答案",
-        "数学分析习题课讲义答案"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-math-xiehuimin/page-001.webp",
-          "previews/bd-math-xiehuimin/page-002.webp",
-          "previews/bd-math-xiehuimin/page-003.webp",
-          "previews/bd-math-xiehuimin/page-004.webp",
-          "previews/bd-math-xiehuimin/page-005.webp",
-          "previews/bd-math-xiehuimin/page-006.webp",
-          "previews/bd-math-xiehuimin/page-007.webp",
-          "previews/bd-math-xiehuimin/page-008.webp",
-          "previews/bd-math-xiehuimin/page-009.webp",
-          "previews/bd-math-xiehuimin/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 671
-      },
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E8%B0%A2%E6%83%A0%E6%B0%91%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B9%A0%E9%A2%98%E8%AF%BE%E8%AE%B2%E4%B9%89%E7%AD%94%E6%A1%88.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E8%B0%A2%E6%83%A0%E6%B0%91%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B9%A0%E9%A2%98%E8%AF%BE%E8%AE%B2%E4%B9%89%E7%AD%94%E6%A1%88.pdf"
-      },
-      "subcats": [
-        "analysis"
-      ]
-    },
-    {
-      "id": "bd-algebra-xieqihong",
-      "title": "高等代数学（第四版）",
-      "author": "谢启鸿、姚慕生、吴泉水",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "cats": [
-        "university-math"
-      ],
-      "desc": "复旦高等代数第四版：线性代数、多项式、矩阵与空间理论，经典教材。",
-      "pages": 492,
-      "size": "56.6 MB",
-      "year": 2015,
-      "format": "PDF",
-      "bytes": 56581942,
-      "tags": [
-        "大学数学",
-        "代数",
-        "研究生教材"
-      ],
-      "searchTitles": [
-        "高等代数 谢启鸿",
-        "高等代数学（第四版）"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-algebra-xieqihong/page-001.webp",
-          "previews/bd-algebra-xieqihong/page-002.webp",
-          "previews/bd-algebra-xieqihong/page-003.webp",
-          "previews/bd-algebra-xieqihong/page-004.webp",
-          "previews/bd-algebra-xieqihong/page-005.webp",
-          "previews/bd-algebra-xieqihong/page-006.webp",
-          "previews/bd-algebra-xieqihong/page-007.webp",
-          "previews/bd-algebra-xieqihong/page-008.webp",
-          "previews/bd-algebra-xieqihong/page-009.webp",
-          "previews/bd-algebra-xieqihong/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 492
-      },
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0%E5%AD%A6_%E7%AC%AC4%E7%89%88_%E8%B0%A2%E5%90%AF%E9%B8%BF.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0%E5%AD%A6_%E7%AC%AC4%E7%89%88_%E8%B0%A2%E5%90%AF%E9%B8%BF.pdf"
-      },
-      "subcats": [
-        "algebra"
-      ]
-    },
-    {
-      "id": "bd-algebra-whitepaper",
-      "title": "高等代数白皮书（第四版）",
-      "author": "谢启鸿",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "cats": [
-        "university-math"
-      ],
-      "desc": "复旦高等代数学习白皮书：考研与课程配套习题精讲。",
-      "pages": 639,
-      "size": "62.5 MB",
-      "year": 2016,
-      "format": "PDF",
-      "bytes": 62452756,
-      "tags": [
-        "大学数学",
-        "代数",
-        "研究生教材"
-      ],
-      "searchTitles": [
-        "高等代数 白皮书",
-        "高等代数白皮书（第四版）"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-algebra-whitepaper/page-001.webp",
-          "previews/bd-algebra-whitepaper/page-002.webp",
-          "previews/bd-algebra-whitepaper/page-003.webp",
-          "previews/bd-algebra-whitepaper/page-004.webp",
-          "previews/bd-algebra-whitepaper/page-005.webp",
-          "previews/bd-algebra-whitepaper/page-006.webp",
-          "previews/bd-algebra-whitepaper/page-007.webp",
-          "previews/bd-algebra-whitepaper/page-008.webp",
-          "previews/bd-algebra-whitepaper/page-009.webp",
-          "previews/bd-algebra-whitepaper/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 639
-      },
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0%E7%99%BD%E7%9A%AE%E4%B9%A6_%E7%AC%AC4%E7%89%88.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0%E7%99%BD%E7%9A%AE%E4%B9%A6_%E7%AC%AC4%E7%89%88.pdf"
-      },
-      "subcats": [
-        "algebra"
-      ]
-    },
-    {
-      "id": "bd-math-shijihuai-down",
-      "title": "数学分析（下册）",
-      "author": "史济怀",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "cats": [
-        "university-math"
-      ],
-      "desc": "中科大史济怀《数学分析》第三版下册：严谨体系的数学分析教材。",
-      "pages": 459,
-      "size": "94.6 MB",
-      "year": 2019,
-      "format": "PDF",
-      "bytes": 94568822,
-      "tags": [
-        "大学数学",
-        "分析",
-        "研究生教材"
-      ],
-      "searchTitles": [
-        "数学分析 史济怀 下册",
-        "数学分析（下册）"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-math-shijihuai-down/page-001.webp",
-          "previews/bd-math-shijihuai-down/page-002.webp",
-          "previews/bd-math-shijihuai-down/page-003.webp",
-          "previews/bd-math-shijihuai-down/page-004.webp",
-          "previews/bd-math-shijihuai-down/page-005.webp",
-          "previews/bd-math-shijihuai-down/page-006.webp",
-          "previews/bd-math-shijihuai-down/page-007.webp",
-          "previews/bd-math-shijihuai-down/page-008.webp",
-          "previews/bd-math-shijihuai-down/page-009.webp",
-          "previews/bd-math-shijihuai-down/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 459
-      },
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90_%E5%8F%B2%E6%B5%8E%E6%80%80_%E7%AC%AC3%E7%89%88_%E4%B8%8B%E5%86%8C.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/0a6d7af11184d286c8e3a8a75e710deb7e5f484e/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90_%E5%8F%B2%E6%B5%8E%E6%80%80_%E7%AC%AC3%E7%89%88_%E4%B8%8B%E5%86%8C.pdf"
-      },
-      "subcats": [
-        "analysis"
-      ]
-    },
-    {
-      "id": "bd-math-docs-combined",
-      "title": "数学分析资料合订",
-      "author": "多位作者",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "cats": [
-        "university-math"
-      ],
-      "desc": "多份数学分析资料合订（175MB，Release 分发），含讲义与习题。",
-      "pages": 444,
-      "size": "183.6 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 183550445,
-      "tags": [
-        "大学数学",
-        "分析",
-        "研究生教材"
-      ],
-      "searchTitles": [
-        "数学分析 资料合订",
-        "数学分析资料合订"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-math-docs-combined/page-001.webp",
-          "previews/bd-math-docs-combined/page-002.webp",
-          "previews/bd-math-docs-combined/page-003.webp",
-          "previews/bd-math-docs-combined/page-004.webp",
-          "previews/bd-math-docs-combined/page-005.webp",
-          "previews/bd-math-docs-combined/page-006.webp",
-          "previews/bd-math-docs-combined/page-007.webp",
-          "previews/bd-math-docs-combined/page-008.webp",
-          "previews/bd-math-docs-combined/page-009.webp",
-          "previews/bd-math-docs-combined/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 444
-      },
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/overlimit-large-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/overlimit-large-20261115/math-docs-combined.pdf"
-      },
-      "subcats": [
-        "analysis"
-      ]
+      "subcat": "algebra"
     },
     {
       "id": "bd-quantum-sakurai",
-      "title": "现代量子力学（第2版）",
-      "author": "樱井纯、拿波里塔诺",
+      "title": "现代量子力学（第2版中译本修订版）",
+      "author": "J. J. Sakurai（樱井纯）、Jim Napolitano",
       "cat": "university-physics",
       "catName": "大学物理",
       "cats": [
         "university-physics"
       ],
-      "desc": "樱井《现代量子力学》第二版中译本：量子力学公理化、角动量、微扰与散射，研究生经典。",
+      "desc": "樱井纯、Jim Napolitano《现代量子力学》第2版中译本修订版。归入大学物理，保留所传412页。",
       "pages": 412,
-      "size": "126.2 MB",
-      "year": 2017,
+      "size": "120.3 MB",
+      "year": null,
       "format": "PDF",
       "bytes": 126168245,
       "tags": [
+        "量子力学",
+        "四大力学",
+        "樱井纯",
         "大学物理",
-        "研究生教材"
+        "经典教材"
       ],
       "searchTitles": [
         "现代量子力学 樱井",
-        "现代量子力学（第2版）"
+        "现代量子力学（第2版）",
+        "现代量子力学（第2版中译本修订版）",
+        "J. J. Sakurai（樱井纯）、Jim Napolitano",
+        "modern-quantum-mechanics-sakurai.pdf"
       ],
       "preview": {
         "images": [
@@ -10382,20 +8281,23 @@
       "cats": [
         "university-math"
       ],
-      "desc": "高等代数专题：典型问题、方法与考研精讲（101MB，Release 分发）。",
+      "desc": "樊启斌编著的高等代数学习资料，保留全部677页。",
       "pages": 677,
-      "size": "106.5 MB",
-      "year": 2021,
+      "size": "101.6 MB",
+      "year": null,
       "format": "PDF",
       "bytes": 106534030,
       "tags": [
-        "大学数学",
-        "代数",
-        "研究生教材"
+        "樊启斌",
+        "高等代数",
+        "习题与解答",
+        "本科教材"
       ],
       "searchTitles": [
         "高等代数 樊启斌",
-        "高等代数典型问题与方法"
+        "高等代数典型问题与方法",
+        "樊启斌",
+        "advanced-algebra-methods-fanqibin.pdf"
       ],
       "preview": {
         "images": [
@@ -10420,129 +8322,36 @@
       },
       "subcats": [
         "algebra"
-      ]
-    },
-    {
-      "id": "bd-gtm073",
-      "title": "Algebra（GTM 73）",
-      "author": "Thomas W. Hungerford",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "cats": [
-        "university-math"
       ],
-      "desc": "GTM73 代数：研究生抽象代数经典，群、环、模与域论。",
-      "pages": 523,
-      "size": "77.7 MB",
-      "year": 1974,
-      "format": "PDF",
-      "bytes": 77717178,
-      "tags": [
-        "大学数学",
-        "代数",
-        "研究生教材"
-      ],
-      "searchTitles": [
-        "GTM073 代数 Hungerford",
-        "Algebra（GTM 73）"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-gtm073/page-001.webp",
-          "previews/bd-gtm073/page-002.webp",
-          "previews/bd-gtm073/page-003.webp",
-          "previews/bd-gtm073/page-004.webp",
-          "previews/bd-gtm073/page-005.webp",
-          "previews/bd-gtm073/page-006.webp",
-          "previews/bd-gtm073/page-007.webp",
-          "previews/bd-gtm073/page-008.webp",
-          "previews/bd-gtm073/page-009.webp",
-          "previews/bd-gtm073/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 523
-      },
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM073_%E4%BB%A3%E6%95%B0.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM073_%E4%BB%A3%E6%95%B0.pdf"
-      },
-      "subcats": [
-        "algebra"
-      ]
-    },
-    {
-      "id": "bd-gtm211",
-      "title": "Algebra（GTM 211）",
-      "author": "David Eisenbud",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "cats": [
-        "university-math"
-      ],
-      "desc": "GTM211 交换代数：面向代数几何的交换代数权威教材。",
-      "pages": 923,
-      "size": "69.3 MB",
-      "year": 1995,
-      "format": "PDF",
-      "bytes": 69290941,
-      "tags": [
-        "大学数学",
-        "代数",
-        "研究生教材"
-      ],
-      "searchTitles": [
-        "GTM211 交换代数 Eisenbud",
-        "Algebra（GTM 211）"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-gtm211/page-001.webp",
-          "previews/bd-gtm211/page-002.webp",
-          "previews/bd-gtm211/page-003.webp",
-          "previews/bd-gtm211/page-004.webp",
-          "previews/bd-gtm211/page-005.webp",
-          "previews/bd-gtm211/page-006.webp",
-          "previews/bd-gtm211/page-007.webp",
-          "previews/bd-gtm211/page-008.webp",
-          "previews/bd-gtm211/page-009.webp",
-          "previews/bd-gtm211/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 923
-      },
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM211_%E4%BB%A3%E6%95%B0.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/GTM211_%E4%BB%A3%E6%95%B0.pdf"
-      },
-      "subcats": [
-        "algebra"
-      ]
+      "subcat": "algebra"
     },
     {
       "id": "bd-prob-101-core",
-      "title": "概率论（上册）",
-      "author": "核心教材编写组",
+      "title": "概率论（上册·101计划核心教材）",
+      "author": "李增沪、张梅、何辉",
       "cat": "university-math",
       "catName": "大学数学",
       "cats": [
         "university-math"
       ],
-      "desc": "101核心教材概率论上册：测度与概率基础、随机变量与极限定理。",
+      "desc": "李增沪、张梅、何辉编著的“101计划”核心教材《概率论》上册，保留所传250页原文。",
       "pages": 250,
-      "size": "101.5 MB",
-      "year": 2020,
+      "size": "96.8 MB",
+      "year": null,
       "format": "PDF",
       "bytes": 101537281,
       "tags": [
-        "大学数学",
-        "概率统计",
-        "研究生教材"
+        "概率论",
+        "101计划核心教材",
+        "本科教材"
       ],
       "searchTitles": [
         "概率论 核心教材 上册",
-        "概率论（上册）"
+        "概率论（上册）",
+        "概率论（上册·101计划核心教材）",
+        "李增沪、张梅、何辉",
+        "大学数学/概率论上册_核心教材_101.pdf",
+        "概率论上册_核心教材_101.pdf"
       ],
       "preview": {
         "images": [
@@ -10567,304 +8376,36 @@
       },
       "subcats": [
         "probability-statistics"
-      ]
-    },
-    {
-      "id": "bd-competition-guide",
-      "title": "全国大学生数学竞赛参赛指南",
-      "author": "佘志坤",
-      "cat": "competition-math",
-      "catName": "竞赛数学",
-      "cats": [
-        "competition-math"
       ],
-      "desc": "全国大学生数学竞赛官方参赛指南：赛制、考点与备考。",
-      "pages": 382,
-      "size": "94.7 MB",
-      "year": 2022,
-      "format": "PDF",
-      "bytes": 94743130,
-      "tags": [
-        "竞赛数学",
-        "数学竞赛"
-      ],
-      "searchTitles": [
-        "数学竞赛 参赛指南",
-        "全国大学生数学竞赛参赛指南"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-competition-guide/page-001.webp",
-          "previews/bd-competition-guide/page-002.webp",
-          "previews/bd-competition-guide/page-003.webp",
-          "previews/bd-competition-guide/page-004.webp",
-          "previews/bd-competition-guide/page-005.webp",
-          "previews/bd-competition-guide/page-006.webp",
-          "previews/bd-competition-guide/page-007.webp",
-          "previews/bd-competition-guide/page-008.webp",
-          "previews/bd-competition-guide/page-009.webp",
-          "previews/bd-competition-guide/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 382
-      },
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%8F%82%E8%B5%9B%E6%8C%87%E5%8D%97_%E4%BD%98%E5%BF%97%E5%9D%A4.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%8F%82%E8%B5%9B%E6%8C%87%E5%8D%97_%E4%BD%98%E5%BF%97%E5%9D%A4.pdf"
-      }
-    },
-    {
-      "id": "bd-comp-nonmath-up",
-      "title": "数学竞赛解析教程（非数学专业类）上册",
-      "author": "佘志坤",
-      "cat": "competition-math",
-      "catName": "竞赛数学",
-      "cats": [
-        "competition-math"
-      ],
-      "desc": "全国大学生数学竞赛非数学专业类解析教程上册。",
-      "pages": 283,
-      "size": "71.4 MB",
-      "year": 2022,
-      "format": "PDF",
-      "bytes": 71377580,
-      "tags": [
-        "竞赛数学",
-        "数学竞赛"
-      ],
-      "searchTitles": [
-        "数学竞赛 非数学类 上册",
-        "数学竞赛解析教程（非数学专业类）上册"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-comp-nonmath-up/page-001.webp",
-          "previews/bd-comp-nonmath-up/page-002.webp",
-          "previews/bd-comp-nonmath-up/page-003.webp",
-          "previews/bd-comp-nonmath-up/page-004.webp",
-          "previews/bd-comp-nonmath-up/page-005.webp",
-          "previews/bd-comp-nonmath-up/page-006.webp",
-          "previews/bd-comp-nonmath-up/page-007.webp",
-          "previews/bd-comp-nonmath-up/page-008.webp",
-          "previews/bd-comp-nonmath-up/page-009.webp",
-          "previews/bd-comp-nonmath-up/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 283
-      },
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%A7%A3%E6%9E%90%E6%95%99%E7%A8%8B_%E9%9D%9E%E6%95%B0%E5%AD%A6%E4%B8%93%E4%B8%9A%E7%B1%BB_%E4%B8%8A%E5%86%8C.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%A7%A3%E6%9E%90%E6%95%99%E7%A8%8B_%E9%9D%9E%E6%95%B0%E5%AD%A6%E4%B8%93%E4%B8%9A%E7%B1%BB_%E4%B8%8A%E5%86%8C.pdf"
-      }
-    },
-    {
-      "id": "bd-comp-nonmath-down",
-      "title": "数学竞赛解析教程（非数学专业类）下册",
-      "author": "佘志坤",
-      "cat": "competition-math",
-      "catName": "竞赛数学",
-      "cats": [
-        "competition-math"
-      ],
-      "desc": "全国大学生数学竞赛非数学专业类解析教程下册。",
-      "pages": 316,
-      "size": "75.4 MB",
-      "year": 2022,
-      "format": "PDF",
-      "bytes": 75396124,
-      "tags": [
-        "竞赛数学",
-        "数学竞赛"
-      ],
-      "searchTitles": [
-        "数学竞赛 非数学类 下册",
-        "数学竞赛解析教程（非数学专业类）下册"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-comp-nonmath-down/page-001.webp",
-          "previews/bd-comp-nonmath-down/page-002.webp",
-          "previews/bd-comp-nonmath-down/page-003.webp",
-          "previews/bd-comp-nonmath-down/page-004.webp",
-          "previews/bd-comp-nonmath-down/page-005.webp",
-          "previews/bd-comp-nonmath-down/page-006.webp",
-          "previews/bd-comp-nonmath-down/page-007.webp",
-          "previews/bd-comp-nonmath-down/page-008.webp",
-          "previews/bd-comp-nonmath-down/page-009.webp",
-          "previews/bd-comp-nonmath-down/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 316
-      },
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%A7%A3%E6%9E%90%E6%95%99%E7%A8%8B_%E9%9D%9E%E6%95%B0%E5%AD%A6%E4%B8%93%E4%B8%9A%E7%B1%BB_%E4%B8%8B%E5%86%8C.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%A7%A3%E6%9E%90%E6%95%99%E7%A8%8B_%E9%9D%9E%E6%95%B0%E5%AD%A6%E4%B8%93%E4%B8%9A%E7%B1%BB_%E4%B8%8B%E5%86%8C.pdf"
-      }
-    },
-    {
-      "id": "bd-comp-math-down",
-      "title": "数学竞赛解析教程（数学专业类）下册",
-      "author": "佘志坤",
-      "cat": "competition-math",
-      "catName": "竞赛数学",
-      "cats": [
-        "competition-math"
-      ],
-      "desc": "数学专业类解析教程下册：高等代数与解析几何专题。",
-      "pages": 325,
-      "size": "64.5 MB",
-      "year": 2022,
-      "format": "PDF",
-      "bytes": 64516533,
-      "tags": [
-        "竞赛数学",
-        "数学竞赛"
-      ],
-      "searchTitles": [
-        "数学竞赛 数学类 下册",
-        "数学竞赛解析教程（数学专业类）下册"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-comp-math-down/page-001.webp",
-          "previews/bd-comp-math-down/page-002.webp",
-          "previews/bd-comp-math-down/page-003.webp",
-          "previews/bd-comp-math-down/page-004.webp",
-          "previews/bd-comp-math-down/page-005.webp",
-          "previews/bd-comp-math-down/page-006.webp",
-          "previews/bd-comp-math-down/page-007.webp",
-          "previews/bd-comp-math-down/page-008.webp",
-          "previews/bd-comp-math-down/page-009.webp",
-          "previews/bd-comp-math-down/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 325
-      },
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%A7%A3%E6%9E%90%E6%95%99%E7%A8%8B_%E6%95%B0%E5%AD%A6%E4%B8%93%E4%B8%9A%E7%B1%BB_%E4%B8%8B%E5%86%8C.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%A7%A3%E6%9E%90%E6%95%99%E7%A8%8B_%E6%95%B0%E5%AD%A6%E4%B8%93%E4%B8%9A%E7%B1%BB_%E4%B8%8B%E5%86%8C.pdf"
-      }
-    },
-    {
-      "id": "bd-complex-zhong",
-      "title": "复变函数论（第五版）",
-      "author": "钟玉泉",
-      "cat": "university-math",
-      "catName": "大学数学",
-      "cats": [
-        "university-math"
-      ],
-      "desc": "复变函数论经典教材：解析函数、复积分、级数与留数。",
-      "pages": 275,
-      "size": "82.3 MB",
-      "year": 2021,
-      "format": "PDF",
-      "bytes": 82250372,
-      "tags": [
-        "大学数学",
-        "分析",
-        "研究生教材"
-      ],
-      "searchTitles": [
-        "复变函数论 钟玉泉",
-        "复变函数论（第五版）"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-complex-zhong/page-001.webp",
-          "previews/bd-complex-zhong/page-002.webp",
-          "previews/bd-complex-zhong/page-003.webp",
-          "previews/bd-complex-zhong/page-004.webp",
-          "previews/bd-complex-zhong/page-005.webp",
-          "previews/bd-complex-zhong/page-006.webp",
-          "previews/bd-complex-zhong/page-007.webp",
-          "previews/bd-complex-zhong/page-008.webp",
-          "previews/bd-complex-zhong/page-009.webp",
-          "previews/bd-complex-zhong/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 275
-      },
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E8%AE%BA_%E7%AC%AC%E4%BA%94%E7%89%88_%E9%92%9F%E7%8E%89%E6%B3%89.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E8%AE%BA_%E7%AC%AC%E4%BA%94%E7%89%88_%E9%92%9F%E7%8E%89%E6%B3%89.pdf"
-      },
-      "subcats": [
-        "analysis"
-      ]
-    },
-    {
-      "id": "bd-scan-2026",
-      "title": "丘班数学讲义（北京九学）",
-      "author": "北京九学丘班教研组",
-      "cat": "competition-math",
-      "catName": "竞赛数学",
-      "cats": [
-        "competition-math"
-      ],
-      "desc": "丘成桐领军计划/英才班数学讲义，内部学员资料。",
-      "pages": 143,
-      "size": "53.1 MB",
-      "year": 2026,
-      "format": "PDF",
-      "bytes": 53087965,
-      "tags": [
-        "竞赛数学",
-        "数学竞赛"
-      ],
-      "searchTitles": [
-        "丘班 数学讲义 九学",
-        "丘班数学讲义（北京九学）"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-scan-2026/page-001.webp",
-          "previews/bd-scan-2026/page-002.webp",
-          "previews/bd-scan-2026/page-003.webp",
-          "previews/bd-scan-2026/page-004.webp",
-          "previews/bd-scan-2026/page-005.webp",
-          "previews/bd-scan-2026/page-006.webp",
-          "previews/bd-scan-2026/page-007.webp",
-          "previews/bd-scan-2026/page-008.webp",
-          "previews/bd-scan-2026/page-009.webp",
-          "previews/bd-scan-2026/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 143
-      },
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/blob/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%89%AB%E6%8F%8F%E5%85%A8%E8%83%BD%E7%8E%8B_2026%E8%B5%84%E6%96%99.pdf",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/raw/75d5f27619dfa1f309da4a5001f93f8899d2977b/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E6%89%AB%E6%8F%8F%E5%85%A8%E8%83%BD%E7%8E%8B_2026%E8%B5%84%E6%96%99.pdf"
-      }
+      "subcat": "probability-statistics"
     },
     {
       "id": "bd-lingjun-2025-combined",
-      "title": "2025年领军综合资料集",
-      "author": "领军计划资料组",
+      "title": "2025年领军综合测试与答案",
+      "author": "原资料未署名",
       "cat": "competition-math",
       "catName": "竞赛数学",
       "cats": [
-        "competition-math"
+        "competition-math",
+        "university-math"
       ],
-      "desc": "领军计划综合资料合订（152MB，Release 分发）。",
+      "desc": "2025年领军综合测试试题与参考答案合订，内容涉及数学分析、高等代数等。保留原有256页；原件未注明机构，不据题名推定为深中或九学资料。",
       "pages": 256,
-      "size": "159.6 MB",
-      "year": 2025,
+      "size": "152.2 MB",
+      "year": null,
       "format": "PDF",
       "bytes": 159632583,
       "tags": [
-        "竞赛数学",
-        "数学竞赛"
+        "领军备考",
+        "模拟试题",
+        "习题与解答"
       ],
       "searchTitles": [
         "领军 综合资料集",
-        "2025年领军综合资料集"
+        "2025年领军综合资料集",
+        "2025年领军综合测试与答案",
+        "原资料未署名",
+        "lingjun-2025-comprehensive.pdf"
       ],
       "preview": {
         "images": [
@@ -10886,52 +8427,12 @@
         "provider": "github-private",
         "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/overlimit-large-20261115",
         "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/overlimit-large-20261115/lingjun-2025-comprehensive.pdf"
-      }
-    },
-    {
-      "id": "bd-comp-math-up",
-      "title": "数学竞赛解析教程（数学专业类）数学分析上册",
-      "author": "佘志坤",
-      "cat": "competition-math",
-      "catName": "竞赛数学",
-      "cats": [
-        "competition-math"
-      ],
-      "desc": "数学专业类解析教程数学分析上册（102MB，Release 分发）。",
-      "pages": 409,
-      "size": "107.5 MB",
-      "year": 2022,
-      "format": "PDF",
-      "bytes": 107533461,
-      "tags": [
-        "竞赛数学",
-        "数学竞赛"
-      ],
-      "searchTitles": [
-        "数学竞赛 数学类 数学分析 上册",
-        "数学竞赛解析教程（数学专业类）数学分析上册"
-      ],
-      "preview": {
-        "images": [
-          "previews/bd-comp-math-up/page-001.webp",
-          "previews/bd-comp-math-up/page-002.webp",
-          "previews/bd-comp-math-up/page-003.webp",
-          "previews/bd-comp-math-up/page-004.webp",
-          "previews/bd-comp-math-up/page-005.webp",
-          "previews/bd-comp-math-up/page-006.webp",
-          "previews/bd-comp-math-up/page-007.webp",
-          "previews/bd-comp-math-up/page-008.webp",
-          "previews/bd-comp-math-up/page-009.webp",
-          "previews/bd-comp-math-up/page-010.webp"
-        ],
-        "pageCount": 10,
-        "sourcePageCount": 409
       },
-      "ownerAccess": {
-        "provider": "github-private",
-        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/overlimit-large-20261115",
-        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/overlimit-large-20261115/competition-math-analysis-vol1.pdf"
-      }
+      "subcats": [
+        "analysis",
+        "algebra"
+      ],
+      "subcat": "analysis"
     },
     {
       "id": "qf-afml",
@@ -10980,6 +8481,266 @@
         "provider": "github-private",
         "view": "https://github.com/Nicole8206929/study-materials-originals/blob/98a92fece5639b58fb82a6b5da0dd5f9bbf773ef/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/AdvancesFinancialMachineLearning_LopezDePrado.pdf",
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/98a92fece5639b58fb82a6b5da0dd5f9bbf773ef/%E9%87%8F%E5%8C%96AI%E4%B9%A6%E7%B1%8D/AdvancesFinancialMachineLearning_LopezDePrado.pdf"
+      }
+    },
+    {
+      "id": "collection-chenjixiu",
+      "title": "陈纪修数学分析（第三版·上下册）",
+      "author": "陈纪修、於崇华、金路",
+      "cat": "university-math",
+      "cats": [
+        "university-math"
+      ],
+      "catName": "大学数学",
+      "subcats": [
+        "analysis"
+      ],
+      "desc": "按作者及原有册次合订：数学分析（上册）；数学分析（下册）。完整保留原文，新增封面、可点击目录及原书签。",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 113656715,
+      "size": "108.4 MB",
+      "tags": [
+        "陈纪修",
+        "数学分析",
+        "上下册合订",
+        "本科教材"
+      ],
+      "searchTitles": [
+        "大学数学/数学分析_复旦陈纪修_第3版_上册.pdf",
+        "大学数学/数学分析_陈纪修_第3版_下册.pdf",
+        "数学分析（上册）",
+        "数学分析（下册）",
+        "数学分析 陈纪修 上册",
+        "数学分析 陈纪修 下册",
+        "陈纪修、於崇华、金路",
+        "bd-math-chenjixiu-up",
+        "bd-math-chenjixiu-down",
+        "数学分析_陈纪修_第3版_下册.pdf",
+        "数学分析_复旦陈纪修_第3版_上册.pdf"
+      ],
+      "subcat": "analysis",
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/shelf-organized-20261116",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/shelf-organized-20261116/library-e06b99175f104f3eb71b8afd9af18f78a9c41b644f8407f465c50d8603f4b3bd.pdf"
+      },
+      "pages": 825,
+      "preview": {
+        "images": [
+          "previews/collection-chenjixiu/page-001.webp",
+          "previews/collection-chenjixiu/page-002.webp",
+          "previews/collection-chenjixiu/page-003.webp",
+          "previews/collection-chenjixiu/page-004.webp",
+          "previews/collection-chenjixiu/page-005.webp",
+          "previews/collection-chenjixiu/page-006.webp",
+          "previews/collection-chenjixiu/page-007.webp",
+          "previews/collection-chenjixiu/page-008.webp",
+          "previews/collection-chenjixiu/page-009.webp",
+          "previews/collection-chenjixiu/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 825
+      }
+    },
+    {
+      "id": "collection-louhongwei",
+      "title": "楼红卫数学分析（上下册）",
+      "author": "楼红卫",
+      "cat": "university-math",
+      "cats": [
+        "university-math"
+      ],
+      "catName": "大学数学",
+      "subcats": [
+        "analysis"
+      ],
+      "desc": "按作者及原有册次合订：数学分析（上册）；数学分析（下册）。完整保留原文，新增封面、可点击目录及原书签。",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 117130389,
+      "size": "111.7 MB",
+      "tags": [
+        "楼红卫",
+        "数学分析",
+        "上下册合订",
+        "本科教材"
+      ],
+      "searchTitles": [
+        "大学数学/数学分析_上册_楼红卫_2022.pdf",
+        "大学数学/数学分析_下册_楼红卫.pdf",
+        "数学分析（上册）",
+        "数学分析（下册）",
+        "数学分析 楼红卫 上册",
+        "数学分析 楼红卫 下册",
+        "楼红卫",
+        "bd-math-louhongwei-up",
+        "bd-math-louhongwei-down",
+        "数学分析_上册_楼红卫_2022.pdf",
+        "数学分析_下册_楼红卫.pdf"
+      ],
+      "subcat": "analysis",
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/shelf-organized-20261116",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/shelf-organized-20261116/library-2a23cfc1fae3a9596d50d37090327ee7ca476857d1fd086a882b86d2454949e5.pdf"
+      },
+      "pages": 792,
+      "preview": {
+        "images": [
+          "previews/collection-louhongwei/page-001.webp",
+          "previews/collection-louhongwei/page-002.webp",
+          "previews/collection-louhongwei/page-003.webp",
+          "previews/collection-louhongwei/page-004.webp",
+          "previews/collection-louhongwei/page-005.webp",
+          "previews/collection-louhongwei/page-006.webp",
+          "previews/collection-louhongwei/page-007.webp",
+          "previews/collection-louhongwei/page-008.webp",
+          "previews/collection-louhongwei/page-009.webp",
+          "previews/collection-louhongwei/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 792
+      }
+    },
+    {
+      "id": "collection-xieqihong",
+      "title": "谢启鸿高等代数教材与配套学习资料",
+      "author": "谢启鸿、姚慕生、吴泉水",
+      "cat": "university-math",
+      "cats": [
+        "university-math"
+      ],
+      "catName": "大学数学",
+      "subcats": [
+        "algebra"
+      ],
+      "desc": "按作者及原有册次合订：高等代数学（第四版，谢启鸿、姚慕生、吴泉水）；高等代数（第四版配套学习用书，谢启鸿、姚慕生）。完整保留原文，新增封面、可点击目录及原书签。",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 118997561,
+      "size": "113.5 MB",
+      "tags": [
+        "谢启鸿",
+        "高等代数",
+        "教材与习题",
+        "同源资料合订"
+      ],
+      "searchTitles": [
+        "大学数学/高等代数学_第4版_谢启鸿.pdf",
+        "大学数学/高等代数白皮书_第4版.pdf",
+        "高等代数学（第四版，谢启鸿、姚慕生、吴泉水）",
+        "高等代数（第四版配套学习用书，谢启鸿、姚慕生）",
+        "高等代数 谢启鸿",
+        "高等代数学（第四版）",
+        "高等代数 白皮书",
+        "高等代数白皮书（第四版）",
+        "谢启鸿、姚慕生、吴泉水",
+        "bd-algebra-xieqihong",
+        "bd-algebra-whitepaper",
+        "高等代数白皮书_第4版.pdf",
+        "高等代数学_第4版_谢启鸿.pdf"
+      ],
+      "subcat": "algebra",
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/shelf-organized-20261116",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/shelf-organized-20261116/library-4bfb62fece60d9ce2e5b876d9198b5ee236a1961ead6e60345bc176c0ae8175c.pdf"
+      },
+      "pages": 1133,
+      "preview": {
+        "images": [
+          "previews/collection-xieqihong/page-001.webp",
+          "previews/collection-xieqihong/page-002.webp",
+          "previews/collection-xieqihong/page-003.webp",
+          "previews/collection-xieqihong/page-004.webp",
+          "previews/collection-xieqihong/page-005.webp",
+          "previews/collection-xieqihong/page-006.webp",
+          "previews/collection-xieqihong/page-007.webp",
+          "previews/collection-xieqihong/page-008.webp",
+          "previews/collection-xieqihong/page-009.webp",
+          "previews/collection-xieqihong/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 1133
+      }
+    },
+    {
+      "id": "collection-cmc-series",
+      "title": "全国大学生数学竞赛丛书",
+      "author": "余志坤主编；全国大学生数学竞赛命题组编",
+      "cat": "university-math",
+      "cats": [
+        "university-math",
+        "competition-math"
+      ],
+      "catName": "大学数学",
+      "subcats": [
+        "analysis",
+        "algebra",
+        "geometry-topology"
+      ],
+      "desc": "同一丛书五册合订：参赛指南、非数学专业类解析教程上册和下册、数学专业类数学分析上册及高等代数与解析几何下册。按参赛说明、非数学类、数学类排列，保留全部原文。",
+      "year": 2026,
+      "format": "PDF",
+      "bytes": 410630360,
+      "size": "391.6 MB",
+      "tags": [
+        "全国大学生数学竞赛丛书",
+        "余志坤",
+        "大学数学竞赛",
+        "本科教材",
+        "同源资料合订"
+      ],
+      "searchTitles": [
+        "大学数学/全国大学生数学竞赛参赛指南_佘志坤.pdf",
+        "大学数学/数学竞赛解析教程_非数学专业类_上册.pdf",
+        "大学数学/数学竞赛解析教程_非数学专业类_下册.pdf",
+        "competition-math-analysis-vol1.pdf",
+        "大学数学/数学竞赛解析教程_数学专业类_下册.pdf",
+        "全国大学生数学竞赛参赛指南",
+        "数学竞赛解析教程（非数学专业类）上册",
+        "数学竞赛解析教程（非数学专业类）下册",
+        "数学竞赛解析教程（数学专业类）数学分析上册",
+        "数学竞赛解析教程（数学专业类）下册",
+        "数学竞赛 参赛指南",
+        "数学竞赛 非数学类 上册",
+        "数学竞赛 非数学类 下册",
+        "数学竞赛 数学类 数学分析 上册",
+        "数学竞赛 数学类 下册",
+        "余志坤主编；全国大学生数学竞赛命题组编",
+        "bd-competition-guide",
+        "bd-comp-nonmath-up",
+        "bd-comp-nonmath-down",
+        "bd-comp-math-up",
+        "bd-comp-math-down",
+        "全国大学生数学竞赛参赛指南_佘志坤.pdf",
+        "数学竞赛解析教程_非数学专业类_上册.pdf",
+        "数学竞赛解析教程_非数学专业类_下册.pdf",
+        "数学竞赛解析教程_数学专业类_下册.pdf"
+      ],
+      "subcat": "analysis",
+      "ownerAccess": {
+        "provider": "github-private",
+        "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/shelf-organized-20261116",
+        "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/shelf-organized-20261116/library-5fe9909904e7852aaf30174005e1d0efe36cd6bc740377d2969fa63b8ecaeee5.pdf"
+      },
+      "pages": 1717,
+      "preview": {
+        "images": [
+          "previews/collection-cmc-series/page-001.webp",
+          "previews/collection-cmc-series/page-002.webp",
+          "previews/collection-cmc-series/page-003.webp",
+          "previews/collection-cmc-series/page-004.webp",
+          "previews/collection-cmc-series/page-005.webp",
+          "previews/collection-cmc-series/page-006.webp",
+          "previews/collection-cmc-series/page-007.webp",
+          "previews/collection-cmc-series/page-008.webp",
+          "previews/collection-cmc-series/page-009.webp",
+          "previews/collection-cmc-series/page-010.webp"
+        ],
+        "pageCount": 10,
+        "sourcePageCount": 1717
       }
     }
   ],
@@ -11105,7 +8866,19 @@
         "数学奥林匹克小丛书",
         "水手练习题集",
         "藤藤蛇擅长找东西",
-        "数学与物理积木"
+        "数学与物理积木",
+        "陈纪修",
+        "楼红卫",
+        "谢惠民",
+        "谢启鸿",
+        "丘维声",
+        "钟玉泉",
+        "全国大学生数学竞赛丛书",
+        "余志坤",
+        "101计划核心教材",
+        "Serre",
+        "樊启斌",
+        "裴礼文"
       ]
     },
     {
@@ -11160,7 +8933,11 @@
         "期末复习",
         "课程讲义",
         "知识整理",
-        "原文合订"
+        "原文合订",
+        "本科教材",
+        "上下册合订",
+        "教材与习题",
+        "原件待补齐"
       ]
     }
   ]
