@@ -19,6 +19,10 @@
    "name": "高中物理"
   },
   {
+   "id": "high-school-physics-competition",
+   "name": "高中物理竞赛"
+  },
+  {
    "id": "university-physics",
    "name": "大学物理"
   },
@@ -61,10 +65,6 @@
   {
    "id": "artificial-intelligence",
    "name": "人工智能"
-  },
-  {
-   "id": "high-school-physics-competition",
-   "name": "高中物理竞赛"
   }
  ],
  "books": [
@@ -8127,51 +8127,6 @@
    }
   },
   {
-   "id": "bd-math-peiliwen",
-   "title": "数学分析中的典型问题与方法（第三版·原件待补齐）",
-   "author": "裴礼文",
-   "cat": "university-math",
-   "catName": "大学数学",
-   "cats": [
-    "university-math"
-   ],
-   "desc": "现有书目和10页试读；原书目所指的私有仓库文件不存在，已核对仓库历史及上传附件，尚未找到完整原件。暂不显示下载入口，待原件补齐后恢复。",
-   "pages": 879,
-   "size": "61.9 MB",
-   "year": null,
-   "format": "PDF",
-   "bytes": 61906755,
-   "tags": [
-    "裴礼文",
-    "数学分析",
-    "习题与解答",
-    "原件待补齐"
-   ],
-   "searchTitles": [
-    "数学分析 典型问题 裴礼文",
-    "数学分析中的典型问题与方法（第三版）"
-   ],
-   "preview": {
-    "images": [
-     "previews/bd-math-peiliwen/page-001.webp",
-     "previews/bd-math-peiliwen/page-002.webp",
-     "previews/bd-math-peiliwen/page-003.webp",
-     "previews/bd-math-peiliwen/page-004.webp",
-     "previews/bd-math-peiliwen/page-005.webp",
-     "previews/bd-math-peiliwen/page-006.webp",
-     "previews/bd-math-peiliwen/page-007.webp",
-     "previews/bd-math-peiliwen/page-008.webp",
-     "previews/bd-math-peiliwen/page-009.webp",
-     "previews/bd-math-peiliwen/page-010.webp"
-    ],
-    "pageCount": 10,
-    "sourcePageCount": 879
-   },
-   "subcats": [
-    "analysis"
-   ]
-  },
-  {
    "id": "bd-serrefinitegroups",
    "title": "有限群导引",
    "author": "Jean-Pierre Serre",
@@ -8748,27 +8703,33 @@
    }
   },
   {
-   "id": "hspc-mechanics",
-   "title": "中学奥林匹克竞赛物理教程·力学篇（第2版）",
-   "author": "程稼夫编著",
+   "id": "collection-cheng-jiafu",
+   "title": "中学奥林匹克竞赛物理教程（第2版·力学篇与电磁学篇）",
+   "author": "程稼夫 编著",
    "cat": "high-school-physics-competition",
    "cats": [
-    "high-school-physics-competition"
+    "high-school-physics-competition",
+    "high-school-physics"
    ],
    "catName": "高中物理竞赛",
-   "desc": "程稼夫《中学奥林匹克竞赛物理教程》力学篇第2版，高中物理竞赛经典教程，高清扫描完整收录，保留全部原文。",
-   "year": 2013,
+   "desc": "《力学篇》和《电磁学篇》均为第 2 版，由中国科学技术大学出版社分别于 2013、2014 年出版。力学九章，电磁学六章。第 2 页目录可跳到每章和两册的习题答案。",
+   "year": null,
    "format": "PDF",
-   "pages": 545,
-   "bytes": 104356985,
-   "size": "99.5 MB",
+   "pages": 1176,
+   "bytes": 206892765,
+   "size": "197.3 MB",
    "tags": [
     "程稼夫",
-    "高中物理竞赛",
+    "中学奥林匹克竞赛物理教程",
     "力学",
+    "电磁学",
+    "高中竞赛",
+    "同源资料合订",
     "运动学",
     "动力学",
-    "中学奥林匹克竞赛物理教程"
+    "静电场",
+    "磁场",
+    "高中物理竞赛"
    ],
    "searchTitles": [
     "中学奥林匹克竞赛物理教程·力学篇（第2版）",
@@ -8776,81 +8737,55 @@
     "程稼夫编著",
     "程稼夫",
     "高中物理竞赛",
-    "中学奥林匹克竞赛物理教程-力学篇(第2版)"
-   ],
-   "preview": {
-    "images": [
-     "previews/hspc-mechanics/page-001.webp",
-     "previews/hspc-mechanics/page-002.webp",
-     "previews/hspc-mechanics/page-003.webp",
-     "previews/hspc-mechanics/page-004.webp",
-     "previews/hspc-mechanics/page-005.webp",
-     "previews/hspc-mechanics/page-006.webp",
-     "previews/hspc-mechanics/page-007.webp",
-     "previews/hspc-mechanics/page-008.webp",
-     "previews/hspc-mechanics/page-009.webp",
-     "previews/hspc-mechanics/page-010.webp"
-    ],
-    "pageCount": 10,
-    "sourcePageCount": 545
-   },
-   "ownerAccess": {
-    "provider": "github-private",
-    "view": "https://github.com/Nicole8206929/study-materials-originals/blob/5e0ef30b079d7cbfb1463c3173eb1179b65a7ee9/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86%E7%AB%9E%E8%B5%9B/%E4%B8%AD%E5%AD%A6%E5%A5%A5%E6%9E%97%E5%8C%B9%E5%85%8B%E7%AB%9E%E8%B5%9B%E7%89%A9%E7%90%86%E6%95%99%E7%A8%8B-%E5%8A%9B%E5%AD%A6%E7%AF%87%28%E7%AC%AC2%E7%89%88%29.pdf",
-    "download": "https://github.com/Nicole8206929/study-materials-originals/raw/5e0ef30b079d7cbfb1463c3173eb1179b65a7ee9/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86%E7%AB%9E%E8%B5%9B/%E4%B8%AD%E5%AD%A6%E5%A5%A5%E6%9E%97%E5%8C%B9%E5%85%8B%E7%AB%9E%E8%B5%9B%E7%89%A9%E7%90%86%E6%95%99%E7%A8%8B-%E5%8A%9B%E5%AD%A6%E7%AF%87%28%E7%AC%AC2%E7%89%88%29.pdf"
-   }
-  },
-  {
-   "id": "hspc-em",
-   "title": "中学奥林匹克竞赛物理教程·电磁学篇",
-   "author": "程稼夫编著",
-   "cat": "high-school-physics-competition",
-   "cats": [
-    "high-school-physics-competition"
-   ],
-   "catName": "高中物理竞赛",
-   "desc": "程稼夫《中学奥林匹克竞赛物理教程》电磁学篇，高中物理竞赛经典教程，高清扫描完整收录，保留全部原文。",
-   "year": 2014,
-   "format": "PDF",
-   "pages": 629,
-   "bytes": 102862251,
-   "size": "98.1 MB",
-   "tags": [
-    "程稼夫",
-    "高中物理竞赛",
-    "电磁学",
-    "静电场",
-    "磁场",
-    "中学奥林匹克竞赛物理教程"
-   ],
-   "searchTitles": [
+    "中学奥林匹克竞赛物理教程-力学篇(第2版)",
+    "hspc-mechanics",
+    "力学篇（第2版）",
     "中学奥林匹克竞赛物理教程·电磁学篇",
     "中学奥林匹克竞赛物理教程-电磁学篇.pdf",
-    "程稼夫编著",
-    "程稼夫",
-    "高中物理竞赛",
-    "中学奥林匹克竞赛物理教程-电磁学篇"
+    "中学奥林匹克竞赛物理教程-电磁学篇",
+    "hspc-em",
+    "电磁学篇（第2版）",
+    "程稼夫力学",
+    "程稼夫电磁学",
+    "奥林匹克竞赛实战丛书",
+    "中国科学技术大学出版社",
+    "时间和距离",
+    "运动学",
+    "牛顿动力学",
+    "动量",
+    "能量",
+    "角动量",
+    "静力学",
+    "振动",
+    "波动",
+    "各章习题答案",
+    "静电场",
+    "稳恒电流",
+    "静磁场",
+    "电磁感应",
+    "交流电",
+    "电磁振荡与电磁波"
    ],
    "preview": {
     "images": [
-     "previews/hspc-em/page-001.webp",
-     "previews/hspc-em/page-002.webp",
-     "previews/hspc-em/page-003.webp",
-     "previews/hspc-em/page-004.webp",
-     "previews/hspc-em/page-005.webp",
-     "previews/hspc-em/page-006.webp",
-     "previews/hspc-em/page-007.webp",
-     "previews/hspc-em/page-008.webp",
-     "previews/hspc-em/page-009.webp",
-     "previews/hspc-em/page-010.webp"
+     "previews/collection-cheng-jiafu/page-001.webp",
+     "previews/collection-cheng-jiafu/page-002.webp",
+     "previews/collection-cheng-jiafu/page-003.webp",
+     "previews/collection-cheng-jiafu/page-004.webp",
+     "previews/collection-cheng-jiafu/page-005.webp",
+     "previews/collection-cheng-jiafu/page-006.webp",
+     "previews/collection-cheng-jiafu/page-007.webp",
+     "previews/collection-cheng-jiafu/page-008.webp",
+     "previews/collection-cheng-jiafu/page-009.webp",
+     "previews/collection-cheng-jiafu/page-010.webp"
     ],
     "pageCount": 10,
-    "sourcePageCount": 629
+    "sourcePageCount": 1176
    },
    "ownerAccess": {
     "provider": "github-private",
-    "view": "https://github.com/Nicole8206929/study-materials-originals/blob/5e0ef30b079d7cbfb1463c3173eb1179b65a7ee9/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86%E7%AB%9E%E8%B5%9B/%E4%B8%AD%E5%AD%A6%E5%A5%A5%E6%9E%97%E5%8C%B9%E5%85%8B%E7%AB%9E%E8%B5%9B%E7%89%A9%E7%90%86%E6%95%99%E7%A8%8B-%E7%94%B5%E7%A3%81%E5%AD%A6%E7%AF%87.pdf",
-    "download": "https://github.com/Nicole8206929/study-materials-originals/raw/5e0ef30b079d7cbfb1463c3173eb1179b65a7ee9/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86%E7%AB%9E%E8%B5%9B/%E4%B8%AD%E5%AD%A6%E5%A5%A5%E6%9E%97%E5%8C%B9%E5%85%8B%E7%AB%9E%E8%B5%9B%E7%89%A9%E7%90%86%E6%95%99%E7%A8%8B-%E7%94%B5%E7%A3%81%E5%AD%A6%E7%AF%87.pdf"
+    "view": "https://github.com/Nicole8206929/study-materials-originals/releases/tag/cheng-jiafu-physics-20261121",
+    "download": "https://github.com/Nicole8206929/study-materials-originals/releases/download/cheng-jiafu-physics-20261121/library-e081ea9ee2822d7f11cfdbf58baa669470f0d35b8793a092bc68da5a9e555c81.pdf"
    }
   }
  ],
@@ -8894,10 +8829,10 @@
    "name": "自然科学",
    "ids": [
     "high-school-physics",
+    "high-school-physics-competition",
     "university-physics",
     "high-school-chemistry",
-    "bio",
-    "high-school-physics-competition"
+    "bio"
    ]
   },
   {
@@ -8989,7 +8924,8 @@
     "101计划核心教材",
     "Serre",
     "樊启斌",
-    "裴礼文"
+    "程稼夫",
+    "中学奥林匹克竞赛物理教程"
    ]
   },
   {
@@ -9047,8 +8983,7 @@
     "原文合订",
     "本科教材",
     "上下册合订",
-    "教材与习题",
-    "原件待补齐"
+    "教材与习题"
    ]
   }
  ]

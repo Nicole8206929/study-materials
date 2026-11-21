@@ -220,9 +220,9 @@ function bookCard(book) {
   if (book.year) labels.push(String(book.year));
   meta.append(...labels.filter(Boolean).map(label => node("span", "", label)));
   const actions = node("div", "actions");
-  const preview = node("button", "view", "查看试读");
+  const preview = node("button", "view", `试读 ${book.previewImages.length} 页`);
   preview.type = "button";
-  preview.setAttribute("aria-label", `查看试读《${book.title}》`);
+  preview.setAttribute("aria-label", `${preview.textContent}《${book.title}》`);
   preview.addEventListener("click", () => previewBook(book));
   actions.append(preview);
   if (book.ownerAccess) {
@@ -253,11 +253,25 @@ function bookCard(book) {
   }
   details.append(bookTags);
   const heading=node('div','book-heading');
-  heading.append(top,node("h3","",book.title),node("p","author",book.author));
+  const title = node("h3", "", book.title);
+  const edition = /^(.+?)（([^（）]+)）$/u.exec(book.title);
+  if (edition) {
+    title.replaceChildren(edition[1], node("span", "book-edition", `（${edition[2]}）`));
+  }
+  heading.append(top, title, node("p", "author", book.author));
   const branches=bookSubcategories(book).map(id=>subcategories.find(s=>s.id===id)?.name).filter(Boolean);
   if(branches.length)heading.append(node('p','book-branches',branches.join(' / ')));
-  card.append(heading,meta,details,access,actions);
-  card.append(node("p","format-note","访客试读 "+book.previewImages.length+" 页"+(book.ownerAccess?"；本人入口验证 GitHub 权限":"；完整原件待补齐")));
+  const cover = node("img", "book-cover");
+  cover.alt = "";
+  cover.loading = "lazy";
+  cover.decoding = "async";
+  cover.width = 72;
+  cover.height = 96;
+  cover.addEventListener("error", () => cover.remove(), {once: true});
+  cover.src = book.previewImages[0];
+  const identity = node("div", "book-identity");
+  identity.append(heading, cover);
+  card.append(identity, meta, details, access, actions);
 
   return card;
 }

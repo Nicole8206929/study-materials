@@ -111,8 +111,8 @@
 .shelf-page .brand{display:inline-flex;align-items:center;gap:12px;letter-spacing:0;font-size:17px;color:var(--fg)}
 .brand svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linejoin:round}
 .shelf-page .owner-entry{padding:8px 16px;background:var(--accent);color:var(--card);border-radius:6px;text-decoration:none!important;font-size:13px}
-.shelf-intro{display:flex;justify-content:space-between;align-items:end;gap:24px;padding:30px 0 28px}
-.shelf-intro h1{font:600 clamp(25px,3.6vw,38px)/1.4 "Songti SC","Noto Serif CJK SC",STSong,serif;margin:0 0 8px;letter-spacing:.01em}
+.shelf-intro{display:flex;justify-content:space-between;align-items:baseline;gap:24px;padding:26px 0}
+.shelf-intro h1{font:600 clamp(25px,3.6vw,38px)/1.4 "Songti SC","Noto Serif CJK SC",STSong,serif;margin:0;letter-spacing:.01em}
 .shelf-intro p{margin:0;color:var(--muted);font-size:13px}
 #totalSummary{white-space:nowrap;padding-bottom:2px}
 .catalog-layout{display:grid;grid-template-columns:204px minmax(0,1fr);gap:32px;align-items:start}
@@ -163,16 +163,21 @@
 .shelf-page .books{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
 .shelf-page .book{position:relative;border:1px solid var(--border);border-left:4px solid #759586;border-radius:4px 9px 9px 4px;padding:22px 22px 18px;box-shadow:none;gap:0}
 .book[data-subject=university-math],.book[data-subject=competition-math],.book[data-subject=high-school-math]{border-left-color:#598574}
-.book[data-subject=university-physics],.book[data-subject=high-school-physics],.book[data-subject=bio]{border-left-color:#6789a0}
+.book[data-subject=university-physics],.book[data-subject=high-school-physics],.book[data-subject=high-school-physics-competition],.book[data-subject=high-school-chemistry],.book[data-subject=bio]{border-left-color:#6789a0}
 .book[data-subject=computer-science],.book[data-subject=english]{border-left-color:#8980a6}
 .book[data-subject=finance],.book[data-subject=econ],.book[data-subject=management],.book[data-subject=accounting],.book[data-subject=psych]{border-left-color:#a18b65}
-.shelf-page .book-top{color:var(--accent);font-size:11px;letter-spacing:0;line-height:1.65}
-.shelf-page .book h3{font:600 20px/1.5 "Songti SC","Noto Serif CJK SC",STSong,Georgia,serif;margin:11px 0 9px;overflow-wrap:anywhere;letter-spacing:0}
-.book-heading{flex:1}
+.shelf-page .book-top{color:var(--accent);font-size:12px;letter-spacing:0;line-height:1.65}
+.shelf-page .book h3{font:600 20px/1.5 "Songti SC","Noto Serif CJK SC",STSong,Georgia,serif;margin:9px 0 7px;overflow-wrap:anywhere;letter-spacing:0;text-wrap:balance}
+.book-edition{display:block;color:var(--muted);font:500 14px/1.6 system-ui,sans-serif;margin-top:3px}
+.book-identity{display:flex;align-items:flex-start;gap:16px;flex:1;margin-bottom:12px}
+.book-heading{flex:1;min-width:0}
+.book-cover{flex:none;display:block;width:clamp(54px,6vw,72px);height:auto;aspect-ratio:3/4;object-fit:contain;background:var(--tag);border:1px solid var(--border);border-radius:2px}
 .shelf-page .author{font-size:12px;margin-bottom:12px;line-height:1.6}
+.shelf-page .book-heading .author:last-child{margin-bottom:0}
 .book-branches{color:var(--muted);font-size:11px;margin:0 0 12px;line-height:1.8}
 .shelf-page .meta{margin-bottom:10px;gap:6px}
-.shelf-page .meta span{background:var(--tag);font-size:11px;padding:3px 7px}
+.shelf-page .meta span{background:transparent;font-size:12px;padding:0}
+.shelf-page .meta span+span::before{content:"·";margin-right:6px;color:var(--muted)}
 .book-details{font-size:12px;border-top:1px solid var(--border);margin:2px 0 12px;padding-top:4px}
 .book-details summary{color:var(--accent);min-height:44px;padding:10px 0;cursor:pointer}
 .book-details summary:focus-visible{outline:3px solid var(--warm);outline-offset:2px}
@@ -182,7 +187,7 @@
 .shelf-page .book-access{font-size:11px;margin:0 0 10px}
 .shelf-page .book-access svg{width:14px;height:14px}
 .shelf-page .actions{display:grid;grid-template-columns:1.1fr 1fr 1.1fr;gap:7px}
-.shelf-page .actions a,.shelf-page .actions button{font-size:12px;padding:8px 5px;background:var(--card);border-radius:5px;line-height:1.5}
+.shelf-page .actions a,.shelf-page .actions button{font-size:14px;padding:8px 5px;background:var(--card);border-radius:5px;line-height:1.5}
 .shelf-page .actions .view{background:var(--accent);color:var(--card);border-color:var(--accent)}
 .shelf-page .actions .owner-download{background:var(--tag);color:var(--accent);border-color:var(--border);font-weight:600}
 .shelf-page .format-note{font-size:10px;line-height:1.7;margin-top:11px}
@@ -190,7 +195,7 @@
 @media(min-width:801px){.subject-nav summary::marker{content:''}}
 @media(max-width:1100px) and (min-width:801px){.catalog-layout{grid-template-columns:178px minmax(0,1fr);gap:24px}.shelf-page .container{padding:0 28px}.shelf-page .book{padding:18px 16px}.shelf-page .actions{grid-template-columns:1fr 1fr}.shelf-page .actions .view{grid-column:1/-1}}
 @media(max-width:800px){
- .shelf-page .container{padding:0 20px}.shelf-intro{padding:22px 0 20px;display:block}.shelf-intro h1{font-size:28px}.shelf-intro #totalSummary{margin-top:10px;font-size:11px}
+ .shelf-page .container{padding:0 20px}.shelf-intro{padding:18px 0;flex-wrap:wrap;gap:4px 12px}.shelf-intro h1{font-size:28px}.shelf-intro #totalSummary{font-size:12px}
  .catalog-layout{display:flex;flex-direction:column;gap:16px}.subject-nav{position:static;top:auto;max-height:none;overflow:visible;width:100%;padding:0;border:1px solid var(--border);border-radius:7px;background:var(--card)}
  .subject-nav summary{display:flex;padding:10px 14px;font-size:12px;min-height:48px}.subject-nav summary:after{content:'⌄';font-size:16px;margin-left:0}.subject-nav details[open]>summary:after{content:'⌃'}
  #currentCategory{display:inline;font-size:13px}.subject-switch{display:inline;font-size:11px;margin-left:auto;color:var(--muted)}

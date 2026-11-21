@@ -109,7 +109,10 @@ const bookBySearchTitle = text => {
     const hostile={...catalog,books:[{...catalog.books[0],title:'<img src=x onerror=alert(1)>'}]};
     await page.route('**/books.json',route=>route.fulfill({json:hostile}));
     await page.reload(); await page.waitForSelector('.book');
-    assert.equal(await page.locator('.book img').count(),0);
+    assert.equal(await page.locator('.book h3').innerText(),hostile.books[0].title);
+    assert.deepEqual(await page.locator('.book img').evaluateAll(images=>images.map(image=>image.getAttribute('src'))),[
+      new URL(hostile.books[0].preview.images[0],page.url()).href
+    ]);
     await page.unroute('**/books.json');
     await page.goto('http://127.0.0.1:8765/');
     await page.locator('.owner-entry').click();
