@@ -8791,18 +8791,38 @@
     {
       "id": "upload-774891887",
       "title": "丘成桐新领军数学分析备考教程",
-      "author": "作者待补充",
+      "author": "原书未署名",
       "catName": "大学数学",
-      "desc": "按上传时所选分类入库，完整资料保存在私有归档区。",
+      "desc": "全书七篇二十八章，从实数、极限与连续讲到单变量和多变量微积分，再到测度、流形上的积分与傅里叶分析。每篇附综合测试，卷末有符号表和主题索引。",
       "year": null,
-      "tags": [],
-      "searchTitles": [],
+      "tags": [
+        "领军备考",
+        "领军资料",
+        "数学分析",
+        "系统讲义",
+        "测度论",
+        "傅里叶分析"
+      ],
+      "searchTitles": [
+        "丘成桐新领军数学分析备考教程.pdf",
+        "丘成桐新领军分析讲义",
+        "新领军数学分析讲义",
+        "从完备性、局部线性化到正交展开",
+        "数学分析备考讲义",
+        "Lebesgue 积分",
+        "勒贝格积分",
+        "Fourier 级数",
+        "Fourier 变换",
+        "傅里叶级数",
+        "傅里叶变换"
+      ],
       "bytes": 30457326,
       "size": "29.0 MB",
       "format": "PDF",
       "cat": "university-math",
       "cats": [
-        "university-math"
+        "university-math",
+        "competition-math"
       ],
       "ownerAccess": {
         "provider": "github-private",
@@ -8825,7 +8845,11 @@
         ],
         "pageCount": 10,
         "sourcePageCount": 1199
-      }
+      },
+      "subcat": "analysis",
+      "subcats": [
+        "analysis"
+      ]
     }
   ],
   "subcategories": [

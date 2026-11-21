@@ -6,9 +6,12 @@
   "updatedAt": "2026-11-21T08:13:10.553947+00:00",
   "cat": "university-math",
   "cats": [
-    "university-math"
+    "university-math",
+    "competition-math"
   ],
-  "subcats": [],
+  "subcats": [
+    "analysis"
+  ],
   "bookIds": [
     "upload-774891887"
   ],
