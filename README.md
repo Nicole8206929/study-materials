@@ -8,6 +8,14 @@
 
 完整原件和包含原件的旧Git历史已迁移到私有仓库 `Nicole8206929/study-materials-originals`。本人点击卡片入口取回完整文件，沿用 GitHub 登录。静态网页不会凭前端变量伪造本人身份；访客即使得到同一个入口，也没有读取私有仓库的权限。完整合集已发布在私有 Release 归档中，附件 ID、大小和 SHA256 保持不变，下载不再依赖聊天附件。
 
+## 按学科打开试读书架
+
+- 数学　[大学数学](https://nicole8206929.github.io/study-materials/?cat=university-math) · [竞赛数学](https://nicole8206929.github.io/study-materials/?cat=competition-math)
+- 物理　[高中物理竞赛](https://nicole8206929.github.io/study-materials/?cat=high-school-physics-competition) · [大学物理](https://nicole8206929.github.io/study-materials/?cat=university-physics)
+- 计算机与经管　[人工智能](https://nicole8206929.github.io/study-materials/?cat=artificial-intelligence) · [金融](https://nicole8206929.github.io/study-materials/?cat=finance)
+
+进入分类后可继续输入书名、作者或主题词。手机浏览器可将当前筛选结果存为书签。
+
 ## 上传并自动分类
 
 普通 `upload.html?connect=github` 入口即可开始首次连接，不依赖私人链接片段。页面显示“连接 GitHub（首次）”或“GitHub 登录”，状态和重试提示位于按钮旁。旧文件核对记录不会覆盖上传启用、首次连接或登录返回的信息。
