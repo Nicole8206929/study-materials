@@ -34,3 +34,25 @@ test('catalogue has five math branches and valid unique records',()=>{
   for(const s of b.subcats||[])assert(data.subcategories.some(v=>v.id===s&&(b.cats||[b.cat]).includes(v.parent)));
  }
 });
+
+test('subject hubs count unique books and respect specific and legacy subject links', () => {
+  assert.equal(model.groups.size, 5);
+  for (const group of model.groups.values()) {
+    const actual = data.books.filter(model.filterFor({group:group.id})).map(b => b.id);
+    const expected = data.books.filter(b => (b.cats || [b.cat]).some(cat => group.ids.includes(cat))).map(b => b.id);
+    assert.deepEqual(actual, expected);
+    assert.equal(new Set(actual).size, actual.length);
+  }
+  assert.equal(model.normalizeState({group:'unknown'}).group, '');
+  assert.equal(model.normalizeState({group:'business', cat:'statistics'}).group, '');
+});
+test('search supports author and subject aliases both in filenames and on tags', () => {
+  const find = q => data.books.filter(model.filterFor({q})).map(b => b.id);
+  for (const [a, b] of [['松松饼','高新雨'], ['Griffiths','格里菲斯'], ['普通物理','普物']]) {
+    assert(find(a).length);
+    assert.deepEqual(find(b), find(a));
+  }
+  assert(find('计算机与人工智能').length);
+  assert(model.tagGroups(data.books, {}, '高新雨').flatMap(g => g.tags).some(t => t.tag === '松松饼'));
+  assert(find('Dummit-Foote-Abstract-Algebra-3E.pdf').includes('bd-ac70ba6c42a2'));
+});

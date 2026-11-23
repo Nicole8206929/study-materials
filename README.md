@@ -2,17 +2,19 @@
 
 网址：https://nicole8206929.github.io/study-materials/
 
-无需登录或入口密码。按“心理、经济、金融、管理、会计、统计、生物、高中物理、大学物理、高中数学、竞赛数学、大学数学”分类，可按中文书名、英文书名和常用名称搜索。
-
-每本书展示锁图标，访客只看前10页图片试读。每张卡片新增“本人查看原件”和“本人下载原件”，链接到 GitHub 私有文件；GitHub 验证账号权限后才交付完整原文件。公开代码和书目不包含全文、密码、GitHub 令牌或临时签名下载链接。本人浏览器可保存独立上传服务的受限会话，服务端验证其权限。已公开的试读图片仍可被截图或保存。
+书架向访客开放，首页可按学科浏览，也可直接搜索书名、原文件名、作者或常用别名。每本书提供前 10 页图片试读。书架主人展开书卡上的「本人原件」，即可用有权限的 GitHub 账号查看或下载完整文件。
 
 完整原件和包含原件的旧Git历史已迁移到私有仓库 `Nicole8206929/study-materials-originals`。本人点击卡片入口取回完整文件，沿用 GitHub 登录。静态网页不会凭前端变量伪造本人身份；访客即使得到同一个入口，也没有读取私有仓库的权限。完整合集已发布在私有 Release 归档中，附件 ID、大小和 SHA256 保持不变，下载不再依赖聊天附件。
 
 ## 按学科打开试读书架
 
-- 数学　[大学数学](https://nicole8206929.github.io/study-materials/?cat=university-math) · [竞赛数学](https://nicole8206929.github.io/study-materials/?cat=competition-math)
-- 物理　[高中物理竞赛](https://nicole8206929.github.io/study-materials/?cat=high-school-physics-competition) · [大学物理](https://nicole8206929.github.io/study-materials/?cat=university-physics)
-- 计算机与经管　[人工智能](https://nicole8206929.github.io/study-materials/?cat=artificial-intelligence) · [金融](https://nicole8206929.github.io/study-materials/?cat=finance)
+| 学科大类 | 分类选读 |
+| --- | --- |
+| [数学](https://nicole8206929.github.io/study-materials/?group=mathematics) | [大学数学](https://nicole8206929.github.io/study-materials/?cat=university-math)、[竞赛数学](https://nicole8206929.github.io/study-materials/?cat=competition-math) |
+| [自然科学](https://nicole8206929.github.io/study-materials/?group=natural-sciences) | [高中物理竞赛](https://nicole8206929.github.io/study-materials/?cat=high-school-physics-competition)、[大学物理](https://nicole8206929.github.io/study-materials/?cat=university-physics) |
+| [计算机](https://nicole8206929.github.io/study-materials/?group=computing) | [计算机科学](https://nicole8206929.github.io/study-materials/?cat=computer-science)、[人工智能](https://nicole8206929.github.io/study-materials/?cat=artificial-intelligence) |
+| [语言与心理](https://nicole8206929.github.io/study-materials/?group=humanities) | [英语](https://nicole8206929.github.io/study-materials/?cat=english)、[心理](https://nicole8206929.github.io/study-materials/?cat=psych) |
+| [经济与管理](https://nicole8206929.github.io/study-materials/?group=business) | [经济](https://nicole8206929.github.io/study-materials/?cat=econ)、[金融](https://nicole8206929.github.io/study-materials/?cat=finance) |
 
 进入分类后可继续输入书名、作者或主题词。手机浏览器可将当前筛选结果存为书签。
 
@@ -70,6 +72,6 @@ npm test
 
 ### 分类与检索
 
-书架按数学、自然科学、计算机与语言、心理与经管组织导航。大学数学保留五个主分支，微分几何作为知识主题。标签按机构与系列、知识主题、用途与版本分组。跨学科资料只有一个稳定书目 ID，搜索支持书名、原文件名、作者及标签。
+跨学科资料可在多个入口找到，同一大类内按书目去重计数。大学数学分五个分支，微分几何归在「几何与拓扑」。标签分为「作者、机构与系列」「知识主题」「用途与版本」。搜索支持「高新雨／松松饼」「格里菲斯／Griffiths」等别名，以及含空格、下划线或连字符的原文件名。
 
-旧统计和微分几何链接有兼容映射；人工智能保留独立分类，相关教材同时归入计算机与人工智能。删除、回收站和原件权限保持原规则。仅原文件完全相同的记录合并书目，不同版本或语言分别保留。变更分类时须核对上传服务及私有归档的允许类别，避免可选择却无法上传。
+旧统计、微分几何和人工智能链接继续有效。「计算机与人工智能」现显示为「计算机科学」，旧名称仍可检索。分类的 ID 同时用于上传与私有归档；调整分类时需同步验证选类、入库及公开筛选。

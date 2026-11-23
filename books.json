@@ -36,7 +36,14 @@
     },
     {
       "id": "computer-science",
-      "name": "计算机与人工智能"
+      "name": "计算机科学",
+      "searchNames": [
+        "计算机与人工智能"
+      ]
+    },
+    {
+      "id": "artificial-intelligence",
+      "name": "人工智能"
     },
     {
       "id": "english",
@@ -47,24 +54,20 @@
       "name": "心理"
     },
     {
-      "id": "finance",
-      "name": "金融"
-    },
-    {
       "id": "econ",
       "name": "经济"
     },
     {
-      "id": "management",
-      "name": "管理"
+      "id": "finance",
+      "name": "金融"
     },
     {
       "id": "accounting",
       "name": "会计"
     },
     {
-      "id": "artificial-intelligence",
-      "name": "人工智能"
+      "id": "management",
+      "name": "管理"
     }
   ],
   "books": [
@@ -210,7 +213,7 @@
     },
     {
       "id": "upload-737850270",
-      "title": "高中数学一试",
+      "title": "高中数学一试（课内讲义与竞赛培优教程合订）",
       "author": "DingCheng Weng；李名德、李胜宏（主编）",
       "catName": "高中数学",
       "desc": "依次收录 DingCheng Weng《高中数学讲义》（284 页）和李名德、李胜宏主编《高中数学竞赛培优教程（一试）》（396 页）。覆盖课内知识与竞赛一试训练，保留原文、题目和答案；附合订目录及原讲义章节书签。",
@@ -274,7 +277,7 @@
     },
     {
       "id": "upload-743483749",
-      "title": "高中数学一试讲义",
+      "title": "高中数学一试讲义（系统讲义·第三版修订本）",
       "author": "讲义编写组",
       "catName": "高中数学",
       "desc": "《高中数学系统讲义》第三版修订本，覆盖高中数学主线、全国高中数学联赛一试专题和综合训练，含练习及题解。保留原 PDF 的可跳转目录、章节书签和题解链接。",
@@ -331,7 +334,7 @@
     },
     {
       "id": "upload-739976186",
-      "title": "初联高考组合数论",
+      "title": "初联高考组合数论（数学奥林匹克小丛书·初中卷6、7）",
       "author": "冯志刚；周建新",
       "catName": "竞赛数学",
       "desc": "《数学奥林匹克小丛书》第二版初中卷 6、7 合订。依次收录冯志刚《整除、同余与不定方程》（128 页）和周建新《组合趣题》（88 页），保留原扫描页、例题及习题解答，涵盖整除、同余、不定方程、计数、抽屉原理、染色、操作与游戏、组合最值。",
@@ -362,7 +365,8 @@
         "初中竞赛",
         "数论",
         "组合",
-        "原文合订"
+        "原文合订",
+        "初联高考组合数论"
       ],
       "bytes": 10087571,
       "size": "9.6 MB",
@@ -784,7 +788,8 @@
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/60686b75f2eb43902312b939ecb3b9b78fcd4147/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B/Putnam/%E6%99%AE%E7%89%B9%E5%8D%97%E8%AF%95%E9%A2%981985-2019.pdf"
       },
       "cats": [
-        "competition-math"
+        "competition-math",
+        "university-math"
       ]
     },
     {
@@ -1057,7 +1062,8 @@
       "year": 2026,
       "tags": [
         "求真",
-        "同源资料合订"
+        "同源资料合订",
+        "普通物理"
       ],
       "searchTitles": [
         "homework_1_ymsc_creative_problem_solving__fall_202-2",
@@ -1348,7 +1354,8 @@
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/60686b75f2eb43902312b939ecb3b9b78fcd4147/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B/CMC/CMC%E6%95%B0%E5%AD%A6%E7%B1%BB%E7%9C%9F%E9%A2%98%E6%B1%87%E7%BC%96.pdf"
       },
       "cats": [
-        "competition-math"
+        "competition-math",
+        "university-math"
       ]
     },
     {
@@ -1395,7 +1402,8 @@
         "download": "https://github.com/Nicole8206929/study-materials-originals/raw/60686b75f2eb43902312b939ecb3b9b78fcd4147/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B/IMC/Vojte%CC%8Cch%20Jarni%CC%81k%20International%20Mathematical%20Compet.pdf"
       },
       "cats": [
-        "competition-math"
+        "competition-math",
+        "university-math"
       ]
     },
     {
@@ -1501,7 +1509,7 @@
     {
       "id": "bd-6d639074c21b",
       "title": "常微分方程教程",
-      "author": "原资料作者（见原文件）",
+      "author": "丁同仁、李承治",
       "cat": "university-math",
       "catName": "大学数学",
       "desc": "常微分方程教程。主题：常微分方程。保留原文及原始页序。",
@@ -1517,7 +1525,8 @@
       ],
       "searchTitles": [
         "常微分方程教程(1)",
-        "常微分方程教程"
+        "常微分方程教程",
+        "常微分方程教程（第二版）"
       ],
       "preview": {
         "images": [
@@ -1764,7 +1773,7 @@
     {
       "id": "bd-14888fda5f39",
       "title": "复旦大学高等代数习题集",
-      "author": "原资料作者（见原文件）",
+      "author": "谢启鸿",
       "cat": "university-math",
       "catName": "大学数学",
       "desc": "复旦大学高等代数习题集。主题：线性代数。保留原文及原始页序。",
@@ -1776,7 +1785,9 @@
       "tags": [
         "领军资料",
         "代数",
-        "线性代数"
+        "线性代数",
+        "谢启鸿",
+        "高等代数"
       ],
       "searchTitles": [
         "复旦大学高等代数习题集"
@@ -1874,7 +1885,7 @@
     {
       "id": "bd-655960dde9e5",
       "title": "基础拓扑学及应用",
-      "author": "原资料作者（见原文件）",
+      "author": "雷逢春、杨志青、李风玲",
       "cat": "university-math",
       "catName": "大学数学",
       "desc": "基础拓扑学与相关应用教材。",
@@ -3227,7 +3238,7 @@
     {
       "id": "bd-b1e50aff6be2",
       "title": "From Calculus to Cohomology: de Rham Cohomology and Characteristic Classes",
-      "author": "原资料作者（见原文件）",
+      "author": "Ib Madsen / Jørgen Tornehave",
       "cat": "university-math",
       "catName": "大学数学",
       "desc": "From Calculus to Cohomology: de Rham Cohomology and Characteristic Classes。主题：微分几何。保留原文及原始页序。",
@@ -3671,7 +3682,7 @@
     {
       "id": "bd-f1b72e09d65a",
       "title": "Introduction to Commutative Algebra",
-      "author": "原资料作者（见原文件）",
+      "author": "M. F. Atiyah / I. G. Macdonald",
       "cat": "university-math",
       "catName": "大学数学",
       "desc": "Introduction to Commutative Algebra。主题：交换代数。保留原文及原始页序。",
@@ -3821,7 +3832,7 @@
     {
       "id": "bd-98ff6755ba4a",
       "title": "Modern Differential Geometry of Curves and Surfaces with Mathematica（第3版）",
-      "author": "原资料作者（见原文件）",
+      "author": "Alfred Gray（原著），Elsa Abbena、Simon Salamon（第3版修订）",
       "cat": "university-math",
       "catName": "大学数学",
       "desc": "Modern Differential Geometry of Curves and Surfaces with Mathematica（第3版）。主题：微分几何。保留原文及原始页序。",
@@ -4691,16 +4702,19 @@
     },
     {
       "id": "upload-735648029",
-      "title": "北师大物理资料",
-      "author": "原资料作者（见各来源）",
+      "title": "北师大物理资料（理论力学课件）",
+      "author": "涂展春（主讲）",
       "catName": "大学物理",
-      "desc": "10 份同机构、作者或系列资料合订，保留 360 页原始正文，附可点击目录与书签。",
+      "desc": "收录北京师范大学理论力学课件 10 份，按原编号 1_00 至 1_09 排列，共 360 页课件原文，附可点击目录与书签。",
       "year": null,
       "tags": [
         "北师大物理",
         "同源资料合订",
         "物理",
-        "领军资料"
+        "领军资料",
+        "四大力学",
+        "理论力学",
+        "课程课件"
       ],
       "searchTitles": [
         "1_00",
@@ -4722,7 +4736,8 @@
         "bd-75f23d0ffb33",
         "bd-775bcc656da5",
         "bd-6a481ec2588c",
-        "bd-cda70cbeb6d3"
+        "bd-cda70cbeb6d3",
+        "北师大物理资料"
       ],
       "bytes": 12168703,
       "size": "11.6 MB",
@@ -4757,7 +4772,7 @@
     {
       "id": "bd-324df6a8eeec",
       "title": "电磁学与电动力学（上册，第2版）",
-      "author": "原资料作者（见原文件）",
+      "author": "胡友秋、程福臻、叶邦角、刘之景",
       "cat": "university-physics",
       "catName": "大学物理",
       "desc": "电磁学与电动力学（上册，第2版）。主题：电磁学与电动力学。保留原文及原始页序。",
@@ -4769,7 +4784,8 @@
       "tags": [
         "物理",
         "领军资料",
-        "电磁学与电动力学"
+        "电磁学与电动力学",
+        "普通物理"
       ],
       "searchTitles": [
         "电磁学与电动力学_上册_第二版(胡友秋_程福臻_叶邦角_刘之景)(z-library.sk_1lib",
@@ -4816,7 +4832,9 @@
       "tags": [
         "物理",
         "领军资料",
-        "电磁学与电动力学"
+        "电磁学与电动力学",
+        "四大力学",
+        "电动力学"
       ],
       "searchTitles": [
         "1_电动力学讲义(添加超链接)(陶鑫)(Z-Library)(1)",
@@ -4863,7 +4881,9 @@
       "tags": [
         "物理",
         "领军资料",
-        "电磁学与电动力学"
+        "电磁学与电动力学",
+        "四大力学",
+        "电动力学"
       ],
       "searchTitles": [
         "电动力学讲义周磊",
@@ -4910,7 +4930,10 @@
       "tags": [
         "物理",
         "领军资料",
-        "力学"
+        "力学",
+        "四大力学",
+        "理论力学",
+        "李思讲义"
       ],
       "searchTitles": [
         "经典力学与几何(李思)第5版_202503112134_18959",
@@ -4956,7 +4979,9 @@
         "领军资料",
         "几何与拓扑",
         "电磁学与电动力学",
-        "量子力学"
+        "量子力学",
+        "四大力学",
+        "电动力学"
       ],
       "searchTitles": [
         "2_李思讲义-Electromagnetism and Geometry",
@@ -5068,7 +5093,8 @@
       "tags": [
         "物理",
         "领军资料",
-        "力学"
+        "力学",
+        "普通物理"
       ],
       "searchTitles": [
         "力学（舒幼生）带目录(舒幼生)(z-library.sk_1lib.sk_z-lib.sk)",
@@ -5105,7 +5131,7 @@
       "title": "刘川物理教材资料",
       "author": "刘川",
       "catName": "大学物理",
-      "desc": "2 份同作者、机构或系列资料合订，保留 460 页原始正文，附可点击目录与书签。",
+      "desc": "刘川的《理论力学》和《热力学与统计物理》两册合订，保留 460 页原文，附可点击目录与书签。",
       "year": null,
       "tags": [
         "刘川",
@@ -5114,7 +5140,7 @@
         "同源资料合订",
         "物理",
         "领军资料",
-        "热学与统计物理"
+        "四大力学"
       ],
       "searchTitles": [
         "理论力学（刘川）",
@@ -5228,7 +5254,8 @@
       "tags": [
         "物理",
         "领军资料",
-        "热学与统计物理"
+        "普通物理",
+        "热学"
       ],
       "searchTitles": [
         "热学(21世纪物理规划教材·基础课系列)(刘玉鑫)(z-library.sk_1lib.sk_z-l",
@@ -5265,7 +5292,7 @@
       "title": "松松饼资料",
       "author": "松松饼（高新雨）",
       "catName": "大学物理",
-      "desc": "18 份同作者、机构或系列资料合订，保留 446 页原始正文，附可点击目录与书签。已补入历年丘赛统计与量子真题解合集（2026.3）。",
+      "desc": "松松饼（高新雨）的 18 份资料合订，收录普通物理的力学与电磁学、热力学与统计物理、量子力学、高考复习清单及历年丘赛统计与量子题解。保留 446 页原文，附目录和书签。",
       "year": null,
       "tags": [
         "松松饼",
@@ -5273,8 +5300,12 @@
         "同源资料合订",
         "物理",
         "领军资料",
-        "热学与统计物理",
-        "量子力学"
+        "热力学与统计物理",
+        "量子力学",
+        "普通物理",
+        "四大力学",
+        "力学",
+        "电磁学"
       ],
       "searchTitles": [
         "热力学与统计物理1【修订1.1】",
@@ -5365,7 +5396,8 @@
       "tags": [
         "物理",
         "领军资料",
-        "光学"
+        "光学",
+        "普通物理"
       ],
       "searchTitles": [
         "现代光学基础(钟锡华(编著))(z-library.sk_1lib.sk_z-lib.sk)",
@@ -5412,7 +5444,8 @@
       "tags": [
         "物理",
         "领军资料",
-        "力学"
+        "力学",
+        "普通物理"
       ],
       "searchTitles": [
         "An Introduction to Mechanics, Second Edition (Daniel Kleppner, Robert Kolenkow) (Z-Library)",
@@ -5453,12 +5486,12 @@
       "year": null,
       "tags": [
         "Griffiths",
-        "格里菲斯",
         "电动力学",
         "同源资料合订",
         "物理",
         "领军资料",
-        "电磁学与电动力学"
+        "电磁学与电动力学",
+        "四大力学"
       ],
       "searchTitles": [
         "格里菲斯物理教材资料",
@@ -5516,7 +5549,8 @@
       "tags": [
         "物理",
         "领军资料",
-        "热学与统计物理"
+        "热力学与统计物理",
+        "四大力学"
       ],
       "searchTitles": [
         "参考书2.Statistical Physics of Particles - Mehran Kardar",
@@ -5647,7 +5681,7 @@
       "title": "Artificial Intelligence: A Modern Approach",
       "author": "Stuart Russell, Peter Norvig",
       "cat": "computer-science",
-      "catName": "计算机与人工智能",
+      "catName": "计算机科学",
       "desc": "人工智能领域权威综合教材（第四版）：智能代理、搜索、知识表示、规划、机器学习、概率推理与深度学习，北美高校标准用书。",
       "pages": 1127,
       "size": "12.9 MB",
@@ -5698,7 +5732,7 @@
       "title": "Deep Learning",
       "author": "Ian Goodfellow, Yoshua Bengio, Aaron Courville",
       "cat": "computer-science",
-      "catName": "计算机与人工智能",
+      "catName": "计算机科学",
       "desc": "深度学习奠基性教材（花书）：线性代数概率信息论基础、深度网络、正则化优化、卷积/循环网络与研究前沿。",
       "pages": 643,
       "size": "21.7 MB",
@@ -5750,7 +5784,7 @@
       "title": "Dive into Deep Learning",
       "author": "Aston Zhang, Zachary C. Lipton, Mu Li, Alexander J. Smola",
       "cat": "computer-science",
-      "catName": "计算机与人工智能",
+      "catName": "计算机科学",
       "desc": "开源交互式深度学习教材：全PyTorch等框架代码实现，覆盖预备知识、CV、NLP、推荐系统等，可直接抽取代码作为实验案例。",
       "pages": 1151,
       "size": "44.7 MB",
@@ -5803,7 +5837,7 @@
       "title": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow",
       "author": "Aurélien Géron",
       "cat": "computer-science",
-      "catName": "计算机与人工智能",
+      "catName": "计算机科学",
       "desc": "机器学习工程实践标杆（第二版）：端到端项目流程、Scikit-Learn 算法、Keras/TensorFlow 深度网络，含大量可运行代码。",
       "pages": 799,
       "size": "83.1 MB",
@@ -5855,7 +5889,7 @@
       "title": "Mathematics for Machine Learning",
       "author": "Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong",
       "cat": "computer-science",
-      "catName": "计算机与人工智能",
+      "catName": "计算机科学",
       "desc": "衔接本科数学与机器学习：线性代数、解析几何、矩阵分解、微积分、概率统计与优化在ML中的应用，剑桥官方免费教材。",
       "pages": 417,
       "size": "17.6 MB",
@@ -5912,7 +5946,7 @@
       "title": "Pattern Recognition and Machine Learning",
       "author": "Christopher M. Bishop",
       "cat": "computer-science",
-      "catName": "计算机与人工智能",
+      "catName": "计算机科学",
       "desc": "统计机器学习经典（PRML）：贝叶斯方法、回归分类、核方法、图模型与近似推断，概率视角术语严谨。",
       "pages": 803,
       "size": "5.8 MB",
@@ -5965,7 +5999,7 @@
       "title": "Probabilistic Machine Learning: An Introduction",
       "author": "Kevin P. Murphy",
       "cat": "computer-science",
-      "catName": "计算机与人工智能",
+      "catName": "计算机科学",
       "desc": "以概率视角统一机器学习知识体系：概率模型、高斯过程、图模型与深度生成模型，术语严谨、北美高校核心教材。",
       "pages": 860,
       "size": "92.3 MB",
@@ -6018,7 +6052,7 @@
       "title": "Reinforcement Learning: An Introduction",
       "author": "Richard S. Sutton, Andrew G. Barto",
       "cat": "computer-science",
-      "catName": "计算机与人工智能",
+      "catName": "计算机科学",
       "desc": "强化学习标杆教材（第二版）：马尔可夫决策过程、时序差分、策略梯度等完整算法体系与专业术语。",
       "pages": 548,
       "size": "73.1 MB",
@@ -7960,7 +7994,9 @@
         "数学物理",
         "理论力学",
         "量子力学",
-        "电磁学与电动力学"
+        "电磁学与电动力学",
+        "普通物理",
+        "四大力学"
       ],
       "searchTitles": [
         "数学与物理积木_合并去重版.pdf",
@@ -8942,6 +8978,7 @@
   ],
   "categoryGroups": [
     {
+      "id": "mathematics",
       "name": "数学",
       "ids": [
         "high-school-math",
@@ -8950,6 +8987,7 @@
       ]
     },
     {
+      "id": "natural-sciences",
       "name": "自然科学",
       "ids": [
         "high-school-physics",
@@ -8960,21 +8998,29 @@
       ]
     },
     {
-      "name": "计算机与语言",
+      "id": "computing",
+      "name": "计算机",
       "ids": [
         "computer-science",
-        "english",
         "artificial-intelligence"
       ]
     },
     {
-      "name": "心理与经管",
+      "id": "humanities",
+      "name": "语言与心理",
       "ids": [
-        "psych",
-        "finance",
+        "english",
+        "psych"
+      ]
+    },
+    {
+      "id": "business",
+      "name": "经济与管理",
+      "ids": [
         "econ",
-        "management",
-        "accounting"
+        "finance",
+        "accounting",
+        "management"
       ]
     }
   ],
@@ -8997,11 +9043,16 @@
     "深中物理": "深中高中物理资料",
     "深中物理资料": "深中高中物理资料",
     "中文版": "中文教材",
-    "高新雨": "松松饼"
+    "高新雨": "松松饼",
+    "格里菲斯": "Griffiths",
+    "普物": "普通物理",
+    "大物": "普通物理",
+    "热学与统计物理": "热力学与统计物理",
+    "热统": "热力学与统计物理"
   },
   "tagGroups": [
     {
-      "name": "机构与系列",
+      "name": "作者、机构与系列",
       "tags": [
         "领军资料",
         "GTM",
@@ -9029,7 +9080,6 @@
         "Rudin 教材",
         "徐森林教材",
         "Griffiths",
-        "格里菲斯",
         "刘川",
         "松松饼",
         "曹知秋",
@@ -9051,7 +9101,9 @@
         "程稼夫",
         "中学奥林匹克竞赛物理教程",
         "江四喜",
-        "中学物理奥赛辅导"
+        "中学物理奥赛辅导",
+        "樱井纯",
+        "津巴多"
       ]
     },
     {
@@ -9106,10 +9158,15 @@
         "期末复习",
         "课程讲义",
         "知识整理",
-        "原文合订",
         "本科教材",
         "上下册合订",
-        "教材与习题"
+        "教材与习题",
+        "课程课件",
+        "模拟试题",
+        "研究论文",
+        "CC BY-NC 4.0",
+        "中英双语",
+        "A4打印"
       ]
     }
   ]

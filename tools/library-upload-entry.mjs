@@ -8,31 +8,52 @@ export function initializeLibraryUpload() {
   const legacyUpload=url.searchParams.get('legacyUpload')==='1';
   if(legacyUpload){el('directUploadControls').hidden=true;el('legacyUploadInstructions').hidden=false;el('startNewUpload').textContent='前往上传';}
   el('legacyChecker').open=url.searchParams.has('batch') || url.searchParams.has('legacy');
-  let categories=[],subcategories=[],ready=false,refreshing=false,settingsLoading=false,categoriesLoaded=false;
+  let categories=[],subcategories=[],ready=false,refreshing=false,settingsLoading=false,catalogueKey='';
   let direct;
+  let canRestoreDestination=!url.searchParams.has('cat')&&!url.searchParams.has('subcat');
+  el('newUploadForm').addEventListener('input',event=>{if(event.target.id!=='directFiles')canRestoreDestination=false;});
   const checked=id=>Array.from(el(id).querySelectorAll('input:checked'),input=>input.value);
-  function choices(id,items,selected){
-    el(id).replaceChildren(...items.map(item=>{
+  function choice(id,item,selected){
       const label=document.createElement('label'),input=document.createElement('input'),text=document.createElement('span');
       input.type='checkbox';input.name=id;input.value=item.id;input.checked=selected.includes(item.id);
       text.textContent=item.name;label.append(input,text);label.classList.toggle('is-selected',input.checked);return label;
-    }));
+  }
+  function showCategories(items,groups,selected){
+    const byId=new Map(items.map(item=>[item.id,item])),nodes=[];
+    for(const group of groups){
+      const subjects=group.ids.map(id=>byId.get(id)).filter(Boolean);
+      if(!subjects.length)continue;
+      const section=document.createElement('fieldset'),legend=document.createElement('legend'),options=document.createElement('div');
+      legend.textContent=group.name;options.className='category-options';
+      for(const item of subjects){options.append(choice('uploadCategories',item,selected));byId.delete(item.id);}
+      section.append(legend,options);nodes.push(section);
+    }
+    if(byId.size){
+      const remaining=document.createElement('div');remaining.className='category-options';
+      remaining.append(...[...byId.values()].map(item=>choice('uploadCategories',item,selected)));nodes.push(remaining);
+    }
+    el('uploadCategories').replaceChildren(...nodes);
   }
   function updateChoiceLabels(){
     for(const id of ['uploadCategories','uploadSubcategories'])el(id).querySelectorAll('label').forEach(label=>label.classList.toggle('is-selected',label.querySelector('input').checked));
     const selected=checked('uploadCategories');
     el('selectedCategoryCount').textContent=selected.length?`已选 ${selected.length} 类：${selected.map(id=>categories.find(c=>c.id===id)?.name).join('、')}。同一份资料会在这些类别中显示。`:'请至少勾选一个分类。';
   }
-  function renderSubcategories(){
-    const previous=checked('uploadSubcategories'),items=subcategories.filter(s=>checked('uploadCategories').includes(s.parent));
+  function renderSubcategories(selected=checked('uploadSubcategories')){
+    const items=subcategories.filter(s=>checked('uploadCategories').includes(s.parent));
     el('uploadSubcategoryField').hidden=!items.length;
-    choices('uploadSubcategories',items,previous);updateChoiceLabels();
+    el('uploadSubcategories').replaceChildren(...items.map(item=>choice('uploadSubcategories',item,selected)));updateChoiceLabels();
   }
-  el('uploadCategories').addEventListener('change',renderSubcategories);
+  el('uploadCategories').addEventListener('change',()=>renderSubcategories());
   el('uploadSubcategories').addEventListener('change',updateChoiceLabels);
   const pendingKey='nicole-library-pending-v1',receiptsKey='nicole-library-receipts-v1';
   const waitingMessage='尚未收到云端处理记录。请先在 GitHub 完成附件上传并点 Publish release；此处刷新只查询结果，不会重新上传文件。';
-  function read(key) {try {const rows=JSON.parse(localStorage.getItem(key)||'[]');return Array.isArray(rows)?rows.filter(x=>batchPattern.test(x.batch)).slice(-20):[];}catch{return [];}}
+  const directWaiting='服务器已接收文件，正在等待入库回执。稍后可在本页刷新。';
+  function receiptSummary(record){
+    const {version,batch,cat,cats,state,stage,sourceCount,bookIds,message,source}=record;
+    return {version,batch,cat,cats,state,stage,sourceCount,bookIds,message,source};
+  }
+  function read(key) {try {const rows=JSON.parse(localStorage.getItem(key)||'[]');return Array.isArray(rows)?rows.filter(x=>batchPattern.test(x.batch)).slice(-20).map(receiptSummary):[];}catch{return [];}}
   let pending=read(pendingKey),receipts=read(receiptsKey);
   function save(){try{localStorage.setItem(pendingKey,JSON.stringify(pending));localStorage.setItem(receiptsKey,JSON.stringify(receipts.slice(-5)));}catch{}}
   function row(item,done=false) {
@@ -41,7 +62,7 @@ export function initializeLibraryUpload() {
       const dismiss=document.createElement('button');dismiss.type='button';dismiss.className='remove-selection receipt-dismiss';dismiss.textContent='×';dismiss.setAttribute('aria-label','移除此条未完成记录');
       dismiss.addEventListener('click',()=>{pending=pending.filter(x=>x.batch!==item.batch);save();render();});li.append(dismiss);
     }
-    const text=document.createElement('p');text.textContent=done?'上传成功，已入库。':item.message||waitingMessage;li.append(text);
+    const text=document.createElement('p');text.textContent=done?'上传成功，已入库。':item.message||(item.source==='direct'?directWaiting:waitingMessage);li.append(text);
     if(!done&&item.statusError){const error=document.createElement('p');error.className='muted';error.textContent=item.statusError;li.append(error);}
     const detail=document.createElement('p');detail.className='muted';detail.textContent=`批次 ${item.batch.replace('upload-','')}${item.sourceCount?` · ${item.sourceCount} 份资料`:''}`;li.append(detail);
     if(done){
@@ -75,7 +96,7 @@ export function initializeLibraryUpload() {
           const response=await fetch(`upload-status/${item.batch}.json?fresh=${Date.now()}`,{cache:'no-store',credentials:'omit',signal:AbortSignal.timeout?AbortSignal.timeout(15000):undefined});
           if (response.status===404) {
             delete item.statusError;
-            if(!item.stage)item.message=waitingMessage;
+            if(!item.stage)item.message=item.source==='direct'?directWaiting:waitingMessage;
             continue;
           }
           if (!response.ok) throw new Error('记录暂时不可用，返回前台后会重试。');
@@ -83,9 +104,9 @@ export function initializeLibraryUpload() {
           }
           const record=validateUploadStatus(value,item.batch);
           delete item.statusError;
-          if (record.stage==='ready') {pending=pending.filter(x=>x.batch!==item.batch);receipts=receipts.filter(x=>x.batch!==item.batch).concat(record).slice(-5);}
+          if (record.stage==='ready') {pending=pending.filter(x=>x.batch!==item.batch);receipts=receipts.filter(x=>x.batch!==item.batch).concat(receiptSummary({...record,source:item.source})).slice(-5);}
           else if(record.stage==='failed'){pending=pending.filter(x=>x.batch!==item.batch);failed++;}
-          else Object.assign(item,record);
+          else Object.assign(item,receiptSummary({...record,source:item.source}));
         } catch {item.statusError=item.source==='direct'?'暂时无法查询最新入库结果，请稍后刷新。已确认接收的文件不会重复传输。':'暂时无法查询最新处理结果，请稍后刷新。若 GitHub 添加附件失败，请回原上传页重试；刷新不会重传手机文件。';}
       }
       save();render();
@@ -95,6 +116,11 @@ export function initializeLibraryUpload() {
   const input=()=>({cats:checked('uploadCategories'),subcats:checked('uploadSubcategories'),tags:el('uploadTags').value,mode:el('uploadMode').value,title:el('uploadTitle').value,expectedCount:el('uploadExpected').value});
   el('newUploadForm').addEventListener('submit',async event=>{
     event.preventDefault();
+    if((direct?.connected||legacyUpload&&ready)&&!checked('uploadCategories').length){
+      el('newUploadNotice').textContent='请先选择一个或多个书架分类，再开始上传。';
+      el('selectedCategoryCount').textContent='请选择至少一个分类，再开始上传。';
+      el('selectedCategoryCount').focus();return;
+    }
     if(direct){await direct.start();return;}
     if(!legacyUpload){el('newUploadNotice').textContent='原页上传服务暂未连接，请刷新设置后重试。';return;}
     if (!ready) {el('newUploadNotice').textContent='自动入库尚未启用，请先完成一次性配置。';return;}
@@ -120,10 +146,18 @@ export function initializeLibraryUpload() {
     try {
       const [catalogue,automation]=await Promise.all([fetch('books.json',{cache:'no-store'}),fetch('upload-automation.json',{cache:'no-store'})]);
       if(!catalogue.ok||!automation.ok)throw new Error('上传设置暂时未载入，请刷新重试。');
-      const data=await catalogue.json(),state=await automation.json(),previous=checked('uploadCategories');categories=data.categories;subcategories=data.subcategories||[];
-      const initial=categories.some(c=>c.id===url.searchParams.get('cat'))?url.searchParams.get('cat'):'high-school-physics';
-      choices('uploadCategories',categories,categoriesLoaded?previous:[initial]);categoriesLoaded=true;
-      renderSubcategories();render();
+      const data=await catalogue.json(),state=await automation.json();
+      categories=data.categories;subcategories=data.subcategories||[];
+      const groups=data.categoryGroups||[],key=JSON.stringify([categories,subcategories,groups]);
+      if(catalogueKey!==key){
+        const requested=url.searchParams.get('cat'),alias=data.categoryAliases?.[requested];
+        const requestedChild=alias?.subcat||url.searchParams.get('subcat');
+        const child=data.subcategoryAliases?.[requestedChild]?.subcat||requestedChild;
+        const cat=alias?.cat||requested||subcategories.find(item=>item.id===child)?.parent;
+        const selected=catalogueKey?checked('uploadCategories'):[cat].filter(Boolean);
+        const children=catalogueKey?checked('uploadSubcategories'):[child].filter(Boolean);
+        showCategories(categories,groups,selected);renderSubcategories(children);catalogueKey=key;render();
+      }
       ready=state.version===1&&state.ready===true;el('startNewUpload').disabled=!ready||!legacyUpload;
       el('automationSetup').hidden=ready;el('automationState').textContent=ready?'自动入库已启用。选择分类后上传，不需要回聊天处理。':'自动入库已准备好，尚需完成一次 GitHub 发布授权。启用前不会把资料误报成已入库。';
       if(!legacyUpload){
@@ -131,8 +165,14 @@ export function initializeLibraryUpload() {
         if(!response.ok)throw new Error('原页上传设置暂未载入，请稍后刷新。');
         const config=await response.json();
         if(config.version!==1||typeof config.ready!=='boolean'||config.endpoint!=='https://nicole-private-book-upload.vibrantcloth2.chatgpt.site')throw new Error('原页上传设置不完整，请稍后刷新。');
-        if(!direct)direct=initializeDirectUpload({config,authorizationUrl:url.href,categories:()=>categories,input,notify:message=>{el('newUploadNotice').textContent=message;},onQueued:record=>{
-          pending=pending.filter(x=>x.batch!==record.batch).concat(record);save();render();refresh();
+        if(!direct)direct=initializeDirectUpload({config,authorizationUrl:url.href,categories:()=>categories,input,onResume:(draft,expectedInput)=>{
+          if(!canRestoreDestination)return;
+          canRestoreDestination=false;
+          showCategories(categories,data.categoryGroups||[],draft.cats);renderSubcategories(draft.subcats||[]);
+          el('uploadTags').value=draft.tags.join('，');el('uploadMode').value=draft.mode;
+          el('uploadTitle').value=draft.title;el('uploadExpected').value=expectedInput||'';
+        },notify:message=>{el('newUploadNotice').textContent=message;},onQueued:record=>{
+          pending=pending.filter(x=>x.batch!==record.batch).concat(receiptSummary(record));save();render();refresh();
         }});
         direct.configure(config);if(!config.ready){ready=false;el('automationState').textContent='原网页上传服务已部署，正在等待接口连接授权。可以先选择文件；尚未开始传输。';}
       }

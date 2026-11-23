@@ -103,105 +103,246 @@
 @media(prefers-color-scheme:dark){.delete-book,.management-dialog .danger{color:#f2a192;border-color:#f2a192}}
 
 
-/* Shelf: a compact subject directory and readable book records. */
-.shelf-page{--bg:#f3f6f4;--card:#fff;--fg:#203c35;--muted:#52685f;--accent:#235c4c;--accent-hover:#194737;--warm:#375e82;--border:#d8e3dc;--tag:#edf3ef;--shadow:none;background:var(--bg)}
-.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
-.shelf-page .container{max-width:1320px;padding:0 40px}
-.shelf-page .masthead{padding:16px 0;font-size:14px}
-.shelf-page .brand{display:inline-flex;align-items:center;gap:12px;letter-spacing:0;font-size:17px;color:var(--fg)}
-.brand svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linejoin:round}
-.shelf-page .owner-entry{padding:8px 16px;background:var(--accent);color:var(--card);border-radius:6px;text-decoration:none!important;font-size:13px}
-.shelf-intro{display:flex;justify-content:space-between;align-items:baseline;gap:24px;padding:26px 0}
-.shelf-intro h1{font:600 clamp(25px,3.6vw,38px)/1.4 "Songti SC","Noto Serif CJK SC",STSong,serif;margin:0;letter-spacing:.01em}
-.shelf-intro p{margin:0;color:var(--muted);font-size:13px}
-#totalSummary{white-space:nowrap;padding-bottom:2px}
-.catalog-layout{display:grid;grid-template-columns:204px minmax(0,1fr);gap:32px;align-items:start}
-.subject-nav{position:sticky;top:16px;max-height:calc(100dvh - 32px);overflow-y:auto;border-top:2px solid var(--accent);padding-top:14px}
-.subject-nav summary{font-size:14px;min-height:44px;cursor:pointer;align-items:center;gap:12px;list-style:none;font-weight:600}
-.subject-nav summary::-webkit-details-marker{display:none}
-.subject-nav summary:focus-visible{outline:3px solid var(--warm);outline-offset:3px}
-#currentCategory,.subject-switch{display:none}
-.shelf-page .categories{display:block;margin:0}
-.category-group{margin-top:18px}
-.category-group h2{margin:0 10px 5px;color:var(--muted);font-size:12px;font-weight:500}
-.category-list{display:grid;gap:3px}
-.shelf-page .category{display:flex;width:100%;align-items:center;justify-content:space-between;text-align:left;border:0;padding:8px 10px;gap:6px;border-radius:5px;font-size:13px;color:var(--fg)}
-.shelf-page .category[aria-pressed=true]{background:var(--accent);color:var(--card);font-weight:600}
-.shelf-page .category:hover:not([aria-pressed=true]){background:var(--tag)}
-.shelf-page .category-count{font-size:11px;margin-left:auto;min-width:22px;text-align:center}
-.nav-note{font-size:11px;line-height:1.8;color:var(--muted);padding:16px 10px 0;border-top:1px solid var(--border);margin:22px 0 0}
-.catalog-content{min-width:0}
-.shelf-page .filters{padding:0 0 14px}
-.shelf-page .search-label{font-size:13px;margin-bottom:8px}
-.shelf-page .search-row{gap:8px}
-.shelf-page .search-row input{padding:13px 16px;border-color:#b0c4b8;border-radius:7px;font-size:15px;min-height:52px}
-.shelf-page .search-row button{border-radius:7px;padding:8px 16px;min-height:44px;font-size:13px}
-.shelf-page .subcategory-section{padding:16px 0 0}
-.shelf-page .subcategory-section h2{font-size:12px;font-weight:500;color:var(--muted);margin:0}
-.shelf-page .subcategory-section .tag-filter{margin-top:8px}
-.shelf-page .tag-section{border-bottom:1px solid var(--border);margin:8px 0 12px;padding:0 0 4px}
-.shelf-page .tag-section summary{font-size:13px;min-height:44px;padding:10px 0}
-.shelf-page #selectedTag{font-size:12px;margin-left:12px}
-.tag-search-label{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:12px;margin:10px 0}
-.tag-search-label input{min-width:0;flex:1;border:1px solid var(--border);background:var(--card);color:var(--fg);border-radius:5px;padding:8px 12px;min-height:44px}
-.shelf-page #tagFilter{display:block;margin:0;padding-bottom:12px;max-height:420px;overflow-y:auto;overscroll-behavior:contain}
-.facet-group{margin-top:14px}
-.facet-group h3{margin:0 0 8px;font-size:12px;color:var(--muted);font-weight:500}
-.facet-options{display:flex;flex-wrap:wrap;gap:7px}
-.shelf-page .tag-chip{font-size:12px;border-radius:5px;min-height:44px;padding:7px 11px;border:1px solid var(--border);background:var(--card);color:var(--fg);overflow-wrap:anywhere;text-align:left;max-width:100%}
-.shelf-page .tag-chip[aria-pressed=true]{background:var(--tag);border-color:var(--accent);color:var(--accent)}
-.tag-count{margin-left:8px;color:var(--muted);font-size:11px}
-.shelf-page .filter-row{gap:8px}
-.shelf-page select{min-height:44px}
-.active-filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.active-filter{border:1px solid var(--border);color:var(--accent);background:var(--tag);border-radius:5px;min-height:44px;padding:7px 10px;font-size:12px;max-width:100%;overflow-wrap:anywhere;text-align:left}
-.shelf-page .results-heading{padding:16px 0 20px;align-items:center;gap:12px}
-.shelf-page .results-heading h2{font:600 22px/1.4 "Songti SC","Noto Serif CJK SC",STSong,serif}
-.shelf-page .results-heading p{margin:5px 0 0;font-size:12px}
-.shelf-page .shelf-management{margin:0;gap:8px}
-.shelf-page .shelf-management button{font-size:12px;padding:8px 11px}
-.shelf-page .books{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-.shelf-page .book{position:relative;border:1px solid var(--border);border-left:4px solid #759586;border-radius:4px 9px 9px 4px;padding:22px 22px 18px;box-shadow:none;gap:0}
-.book[data-subject=university-math],.book[data-subject=competition-math],.book[data-subject=high-school-math]{border-left-color:#598574}
-.book[data-subject=university-physics],.book[data-subject=high-school-physics],.book[data-subject=high-school-physics-competition],.book[data-subject=high-school-chemistry],.book[data-subject=bio]{border-left-color:#6789a0}
-.book[data-subject=computer-science],.book[data-subject=english]{border-left-color:#8980a6}
-.book[data-subject=finance],.book[data-subject=econ],.book[data-subject=management],.book[data-subject=accounting],.book[data-subject=psych]{border-left-color:#a18b65}
-.shelf-page .book-top{color:var(--accent);font-size:12px;letter-spacing:0;line-height:1.65}
-.shelf-page .book h3{font:600 20px/1.5 "Songti SC","Noto Serif CJK SC",STSong,Georgia,serif;margin:9px 0 7px;overflow-wrap:anywhere;letter-spacing:0;text-wrap:balance}
-.book-edition{display:block;color:var(--muted);font:500 14px/1.6 system-ui,sans-serif;margin-top:3px}
-.book-identity{display:flex;align-items:flex-start;gap:16px;flex:1;margin-bottom:12px}
-.book-heading{flex:1;min-width:0}
-.book-cover{flex:none;display:block;width:clamp(54px,6vw,72px);height:auto;aspect-ratio:3/4;object-fit:contain;background:var(--tag);border:1px solid var(--border);border-radius:2px}
-.shelf-page .author{font-size:12px;margin-bottom:12px;line-height:1.6}
-.shelf-page .book-heading .author:last-child{margin-bottom:0}
-.book-branches{color:var(--muted);font-size:11px;margin:0 0 12px;line-height:1.8}
-.shelf-page .meta{margin-bottom:10px;gap:6px}
-.shelf-page .meta span{background:transparent;font-size:12px;padding:0}
-.shelf-page .meta span+span::before{content:"·";margin-right:6px;color:var(--muted)}
-.book-details{font-size:12px;border-top:1px solid var(--border);margin:2px 0 12px;padding-top:4px}
-.book-details summary{color:var(--accent);min-height:44px;padding:10px 0;cursor:pointer}
-.book-details summary:focus-visible{outline:3px solid var(--warm);outline-offset:2px}
-.shelf-page .desc{font-size:13px;line-height:1.85;margin:0 0 12px}
-.shelf-page .book-tags{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}
-.book-tag{background:var(--tag);color:var(--accent);border:1px solid transparent;border-radius:4px;min-height:44px;padding:6px 9px;font-size:11px;max-width:100%;text-align:left;overflow-wrap:anywhere}
-.shelf-page .book-access{font-size:11px;margin:0 0 10px}
-.shelf-page .book-access svg{width:14px;height:14px}
-.shelf-page .actions{display:grid;grid-template-columns:1.1fr 1fr 1.1fr;gap:7px}
-.shelf-page .actions a,.shelf-page .actions button{font-size:14px;padding:8px 5px;background:var(--card);border-radius:5px;line-height:1.5}
-.shelf-page .actions .view{background:var(--accent);color:var(--card);border-color:var(--accent)}
-.shelf-page .actions .owner-download{background:var(--tag);color:var(--accent);border-color:var(--border);font-weight:600}
-.shelf-page .format-note{font-size:10px;line-height:1.7;margin-top:11px}
-.shelf-page footer{max-width:940px;margin:36px 0 0 auto;font-size:11px}
-@media(min-width:801px){.subject-nav summary::marker{content:''}}
-@media(max-width:1100px) and (min-width:801px){.catalog-layout{grid-template-columns:178px minmax(0,1fr);gap:24px}.shelf-page .container{padding:0 28px}.shelf-page .book{padding:18px 16px}.shelf-page .actions{grid-template-columns:1fr 1fr}.shelf-page .actions .view{grid-column:1/-1}}
-@media(max-width:800px){
- .shelf-page .container{padding:0 20px}.shelf-intro{padding:18px 0;flex-wrap:wrap;gap:4px 12px}.shelf-intro h1{font-size:28px}.shelf-intro #totalSummary{font-size:12px}
- .catalog-layout{display:flex;flex-direction:column;gap:16px}.subject-nav{position:static;top:auto;max-height:none;overflow:visible;width:100%;padding:0;border:1px solid var(--border);border-radius:7px;background:var(--card)}
- .subject-nav summary{display:flex;padding:10px 14px;font-size:12px;min-height:48px}.subject-nav summary:after{content:'⌄';font-size:16px;margin-left:0}.subject-nav details[open]>summary:after{content:'⌃'}
- #currentCategory{display:inline;font-size:13px}.subject-switch{display:inline;font-size:11px;margin-left:auto;color:var(--muted)}
- .shelf-page .categories{padding:0 12px 14px}.category-group{margin-top:12px}.category-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}.category-group h2{margin-left:8px}.shelf-page .category{font-size:12px}.nav-note{display:none}
- .catalog-content{width:100%}.shelf-page .filters{padding-bottom:12px}.shelf-page .results-heading{padding:16px 0}.shelf-page .books{gap:14px}.shelf-page .book{padding:20px 18px 17px}.shelf-page .book h3{font-size:21px}
- .shelf-page .tag-section summary{font-size:12px}.shelf-page #selectedTag{font-size:11px}.shelf-page .filter-row{align-items:center}.shelf-page .selects{gap:8px}.shelf-page select{padding:7px 5px;font-size:12px;margin-left:2px}.shelf-page .text-button{font-size:12px}.shelf-page .results-heading h2{font-size:20px}.shelf-page .shelf-management{flex-shrink:0}
+/* The shelf uses a museum plate above a working catalogue. Upload pages use
+   the shared controls above; the paper and ink palette belongs to this page. */
+@font-face {
+  font-family: "Shelf Titles";
+  src: url("fonts/shelf-titles.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
 }
-@media(max-width:600px){.shelf-page .books{grid-template-columns:minmax(0,1fr)}.shelf-page .brand{font-size:15px;gap:8px}.shelf-page .owner-entry{font-size:12px;padding:7px 12px}.shelf-page .masthead{padding:12px 0}.shelf-page .search-row input{font-size:14px;padding:12px}.shelf-page .search-row button{padding:8px 12px}.shelf-page .container{padding:0 16px}.shelf-intro h1{font-size:27px}.shelf-page .results-heading{flex-wrap:wrap}}
-@media(prefers-color-scheme:dark){.shelf-page{--bg:#152720;--card:#1d3229;--fg:#edf4ee;--muted:#b4c8bc;--accent:#b0d5c1;--accent-hover:#d0ebdc;--warm:#a9c7e8;--border:#3d5548;--tag:#2a4235}.shelf-page .search-row input{border-color:#637f6f}.shelf-page .category[aria-pressed=true],.shelf-page .owner-entry,.shelf-page .actions .view{color:var(--bg)}}
+.shelf-page {
+  --bg: #f7f7f3;
+  --card: #fffefa;
+  --fg: #182632;
+  --muted: #51616d;
+  --accent: #214c60;
+  --accent-hover: #12364b;
+  --on-accent: #fff;
+  --warm: #92622b;
+  --border: #d3d8d5;
+  --tag: #e9eeeb;
+  --paper-raised: #f0f2ee;
+  --shadow: none;
+  --navy: #040c1b;
+  --gold: #e5c48d;
+  --serif: "Shelf Titles", "Songti SC", "Noto Serif CJK SC", "STSong", Georgia, serif;
+  --gutter: clamp(18px, 4.25vw, 64px);
+  background: var(--bg);
+  color: var(--fg);
+}
+@media (prefers-color-scheme: dark) {
+  .shelf-page {
+    --bg: #101923; --card: #18232e; --fg: #f0f1e9; --muted: #b9c6cd;
+    --accent: #b5d5de; --accent-hover: #d1e8ef; --on-accent: #102531;
+    --border: #3e4a51; --tag: #263741; --warm: #e3bc80; --paper-raised: #1d2b36;
+  }
+}
+.shelf-page .container { width:100%; max-width:1440px; margin-inline:auto; padding-inline:var(--gutter); }
+.sr-only { position:absolute; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; clip-path:inset(50%); white-space:nowrap; border:0; }
+.shelf-page :is(a,button,input,select,summary):focus-visible { outline:3px solid var(--warm); outline-offset:3px; }
+.shelf-page .skip-link:focus-visible { left:20px; color:#12364b; background:#fffaf1; z-index:10; }
+.atlas-header { background:var(--navy); color:#fffaf0; }
+.shelf-page .masthead { min-height:70px; padding-block:10px; flex-wrap:nowrap; border:0; }
+.shelf-page .brand { display:inline-flex; gap:12px; align-items:center; color:#f5eee0; font:600 17px/1.3 "Songti SC","Noto Serif CJK SC",Georgia,serif; letter-spacing:.035em; }
+.brand svg,.owner-entry svg,.search-submit svg { flex:none; fill:none; stroke:currentColor; stroke-linecap:round; stroke-linejoin:round; }
+.brand svg { width:30px; height:30px; color:var(--gold); stroke-width:1.6; }
+.shelf-page .owner-entry { display:inline-flex; gap:8px; align-items:center; padding:6px 15px; border:1px solid #57616a; border-radius:5px; color:#fdf9f0; text-decoration:none!important; font-size:13px; font-weight:550; }
+.owner-entry svg,.search-submit svg { width:17px; height:17px; stroke-width:1.8; }
+.shelf-page .owner-entry:hover { border-color:var(--gold); }
+.atlas-hero {
+  position:relative; overflow:hidden; isolation:isolate; background:#000719;
+  border-block:1px solid #25313d;
+}
+.atlas-art { position:absolute; z-index:-1; top:0; bottom:0; right:max(0px, calc((100% - 1440px)/2)); width:min(77%, 1050px); pointer-events:none; }
+.atlas-art img { display:block; width:100%; height:100%; object-fit:contain; object-position:right center; }
+.atlas-art::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,#000719,transparent 25%); }
+.shelf-intro { display:flex; flex-direction:column; align-items:flex-start; justify-content:center; min-height:clamp(280px,23vw,345px); padding-block:36px 41px; }
+.shelf-intro h1 { font:700 clamp(46px,6.3vw,82px)/1.18 var(--serif); color:#fff7e5; margin:0 0 10px; letter-spacing:.055em; }
+.shelf-intro p { color:#dfd3bb; margin:0; font-size:15px; letter-spacing:.03em; }
+.atlas-search { display:flex; align-items:center; gap:2px; width:min(470px,55%); margin-top:25px; padding:5px; background:#fffdf6; border-radius:7px; }
+.atlas-search input { flex:1; min-width:0; padding:8px 10px; min-height:44px; color:#12242e; border:0; background:transparent; font-size:15px; appearance:none; color-scheme:light; }
+.atlas-search input::placeholder { color:#586871; opacity:1; }
+.atlas-search input::-webkit-search-cancel-button { display:none; }
+.atlas-search button { flex:none; min-height:44px; border:0; border-radius:4px; }
+.atlas-search #clearSearch { color:#4e5d66; background:transparent; padding:4px 9px; font-size:12px; }
+.atlas-search:has(input:placeholder-shown) #clearSearch { visibility:hidden; width:0; min-width:0; padding:0; }
+.atlas-search .search-submit { display:inline-flex; align-items:center; justify-content:center; gap:6px; padding:6px 15px; color:#132330; background:var(--gold); font-size:14px; font-weight:650; }
+.atlas-search .search-submit:hover { background:#f0d8ad; }
+.atlas-header :is(a,button,input):focus-visible { outline-color:#c19757; outline-offset:2px; }
+.atlas-search input:focus-visible { outline-color:#865b24; outline-offset:0; }
+.subject-hubs { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); border-bottom:1px solid var(--border); }
+.subject-hubs:empty { display:none; }
+.subject-hub {
+  --subject-ink:#347278; position:relative; display:grid; grid-template-columns:1fr auto;
+  align-content:center; align-items:baseline; gap:4px 10px; min-height:82px;
+  border:0; background:transparent; color:var(--fg); text-align:left; padding:12px clamp(8px,1.3vw,23px);
+}
+.subject-hub[data-group="natural-sciences"] { --subject-ink:#527597; }
+.subject-hub[data-group="computing"] { --subject-ink:#6d6891; }
+.subject-hub[data-group="humanities"] { --subject-ink:#98684c; }
+.subject-hub[data-group="business"] { --subject-ink:#89732d; }
+.subject-hub+.subject-hub::before { content:""; position:absolute; left:0; top:27%; height:46%; width:1px; background:var(--border); }
+.subject-hub::after { content:""; position:absolute; bottom:0; right:14px; left:14px; height:2px; background:transparent; }
+.subject-hub:hover,.subject-hub[aria-pressed=true] { background:var(--paper-raised); }
+.subject-hub[aria-pressed=true]::after { background:var(--subject-ink); height:3px; }
+.hub-name { display:flex; align-items:center; gap:7px; font:700 clamp(15px,1.25vw,20px)/1.45 var(--serif); }
+.hub-name::before { content:""; width:7px; height:7px; border-radius:50%; background:var(--subject-ink); flex:none; }
+.hub-count { color:var(--muted); font-size:12px; font-variant-numeric:tabular-nums; white-space:nowrap; }
+
+.catalog-layout { display:grid; grid-template-columns:clamp(174px,16.5vw,223px) minmax(0,1fr); gap:clamp(25px,3.4vw,56px); align-items:start; padding-top:30px; }
+.subject-nav { position:sticky; top:14px; max-height:calc(100dvh - 28px); overflow-y:auto; scrollbar-width:thin; }
+.subject-nav summary { display:flex; gap:10px; align-items:center; min-height:44px; color:var(--fg); font-size:17px; font-weight:650; list-style:none; cursor:pointer; }
+.subject-nav summary::-webkit-details-marker { display:none; }
+.subject-nav summary::marker { content:""; }
+#currentCategory,.subject-switch { display:none; }
+.shelf-page .categories { display:block; margin:8px 0 0; }
+.category-group { margin:12px 0 0; border-top:1px solid var(--border); padding-top:12px; }
+.category-group h2 { color:var(--muted); font-size:12px; font-weight:650; letter-spacing:.04em; margin:0 10px 4px; }
+.category-list { display:grid; gap:1px; }
+.shelf-page .category { display:flex; align-items:center; justify-content:space-between; gap:8px; width:100%; min-height:44px; padding:8px 11px; text-align:left; color:var(--fg); border:0; border-radius:4px; font-size:13px; }
+.shelf-page .category[aria-pressed=true] { background:var(--accent); color:var(--on-accent); font-weight:650; }
+.shelf-page .category:hover:not([aria-pressed=true]) { background:var(--tag); }
+.shelf-page .category-count { min-width:1.5em; text-align:right; font-size:12px; font-variant-numeric:tabular-nums; }
+.nav-note { border-top:1px solid var(--border); padding:13px 8px 0; margin:16px 0 8px; color:var(--muted); font-size:12px; line-height:1.65; }
+.catalog-content { min-width:0; }
+.shelf-page .filters { display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:space-between; gap:6px 14px; border-bottom:1px solid var(--border); padding:0 0 12px; }
+.shelf-page .subcategory-section { width:100%; padding:0 0 8px; }
+.shelf-page .subcategory-section h2 { color:var(--muted); font-size:13px; font-weight:600; margin:0; }
+.shelf-page .subcategory-section .tag-filter { margin-top:8px; }
+.shelf-page .tag-section { margin:0; min-width:0; }
+.shelf-page .tag-section[open] { width:100%; }
+.shelf-page .tag-section summary,.book-details summary,.owner-originals summary { cursor:pointer; color:var(--accent); }
+.shelf-page .tag-section summary { min-height:44px; font-size:13px; padding:10px 0; }
+.shelf-page #selectedTag { font-size:12px; margin-left:10px; }
+.tag-search-label { display:flex; align-items:center; gap:10px; font-size:13px; color:var(--muted); }
+.tag-search-label input { flex:1; min-width:0; min-height:44px; border:1px solid var(--border); border-radius:4px; background:var(--card); color:var(--fg); padding:8px 10px; }
+.shelf-page #tagFilter { display:block; max-height:380px; overflow-y:auto; overscroll-behavior:contain; margin:0; padding:0 3px 10px; }
+.facet-group { margin-top:12px; }
+.facet-group h3 { color:var(--muted); font-size:12px; font-weight:550; margin:0 0 6px; }
+.facet-options,.active-filters { display:flex; flex-wrap:wrap; gap:6px; }
+.shelf-page .tag-chip,.active-filter,.book-tag { max-width:100%; min-height:44px; text-align:left; overflow-wrap:anywhere; padding:6px 10px; border:1px solid var(--border); border-radius:4px; background:var(--card); color:var(--fg); font-size:12px; }
+.shelf-page .tag-chip[aria-pressed=true],.active-filter,.book-tag:hover { color:var(--accent); border-color:var(--accent); background:var(--tag); }
+.tag-count { margin-left:7px; color:var(--muted); font-size:11px; }
+.shelf-page .filter-row { flex-wrap:wrap; gap:6px 12px; }
+.shelf-page .selects { gap:6px 12px; }
+.shelf-page select { min-height:44px; font-size:12px; padding:6px 8px; }
+.active-filters { width:100%; margin-top:4px; }
+.shelf-page .results-heading { border:0; padding:19px 0 18px; align-items:center; }
+.shelf-page .results-heading>div:first-child { display:flex; align-items:baseline; gap:7px 16px; flex-wrap:wrap; }
+.shelf-page .results-heading h2 { margin:0; font:700 clamp(23px,2.15vw,31px)/1.4 var(--serif); overflow-wrap:anywhere; scroll-margin-top:12px; }
+.shelf-page .results-heading p { margin:0; font-size:12px; }
+.shelf-page .shelf-management { margin:0; gap:6px; }
+.shelf-page .shelf-management button { padding:7px 9px; font-size:12px; }
+
+.shelf-page .books { grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; align-items:start; }
+.shelf-page .book { position:relative; align-self:stretch; min-width:0; border:1px solid var(--border); border-radius:7px; padding:clamp(15px,1.55vw,23px); box-shadow:0 2px 5px #11253405; }
+.shelf-page .book:hover { border-color:var(--muted); }
+.book-identity { display:flex; align-items:flex-start; gap:14px; flex:1; margin-bottom:13px; }
+.book-heading { min-width:0; flex:1; }
+.book-cover { flex:none; width:clamp(63px,6vw,86px); height:auto; aspect-ratio:3/4; object-fit:contain; border:1px solid var(--border); border-radius:2px; background:var(--tag); box-shadow:1px 2px 5px #10243313; }
+.shelf-page .book-top { display:block; color:var(--accent); font-size:12px; font-weight:600; line-height:1.7; letter-spacing:0; overflow-wrap:anywhere; }
+.shelf-page .book h3 { font:650 clamp(20px,1.6vw,26px)/1.4 "Songti SC","Noto Serif CJK SC",Georgia,serif; margin:7px 0 6px; letter-spacing:0; text-wrap:pretty; }
+.book-edition { display:block; margin-top:3px; color:var(--muted); font:500 14px/1.6 system-ui,sans-serif; }
+.shelf-page .author { font-size:13px; margin:0; }
+.book-branches { margin:6px 0 0; color:var(--muted); font-size:12px; }
+.shelf-page .meta { gap:0; margin:0 0 8px; font-size:12px; align-items:center; }
+.shelf-page .meta span { background:none; padding:0; font:inherit; }
+.shelf-page .meta span+span::before { content:"·"; margin-inline:6px; }
+.book-details { border-block:1px solid var(--border); margin:0 0 10px; font-size:12px; }
+.book-details summary { min-height:44px; padding:10px 0; font-size:13px; }
+.shelf-page .desc { font-size:13px; line-height:1.8; margin:0 0 10px; }
+.shelf-page .book-tags { display:flex; flex-wrap:wrap; gap:5px; margin:0 0 10px; }
+.book-tag { background:var(--tag); border-color:transparent; }
+.shelf-page .book-access { font-size:12px; line-height:1.5; margin:0 0 11px; }
+.shelf-page .book-access svg { width:14px; height:14px; }
+.shelf-page .actions { display:grid; align-items:start; grid-template-columns:1fr 1fr; gap:8px; }
+.shelf-page .actions a,.shelf-page .actions button,.owner-originals summary { min-height:44px; padding:9px 6px; border-radius:4px; line-height:1.5; font-size:13px; }
+.shelf-page .actions .view { background:var(--accent); color:var(--on-accent); border:1px solid var(--accent); font-weight:600; }
+.shelf-page .actions .view:hover { background:var(--accent-hover); }
+.owner-originals { min-width:0; }
+.owner-originals summary { border:1px solid var(--border); text-align:center; color:var(--accent); }
+.owner-originals summary:hover,.owner-originals[open] summary { background:var(--tag); }
+.owner-links { display:grid; gap:5px; padding-top:5px; }
+.shelf-page .owner-links a { display:flex; justify-content:center; background:var(--paper-raised); color:var(--accent); border:1px solid var(--border); }
+.shelf-page .owner-links a:hover { text-decoration:underline; }
+.shelf-page footer { margin-top:38px; padding-bottom:40px; font-size:12px; }
+.shelf-page dialog::backdrop { background:#050e1ad6; }
+.shelf-page .empty-state { background:var(--card); }
+
+@media (max-width:1090px) {
+  .subject-hub { grid-template-columns:1fr; gap:0; padding-inline:14px; }
+  .hub-count { padding-left:14px; }
+  .shelf-page .books { gap:12px; }
+  .book-identity { gap:10px; }
+}
+@media (max-width:800px) {
+  .shelf-page .masthead { min-height:57px; padding-block:6px; }
+  .atlas-art { width:79%; }
+  .shelf-intro { min-height:235px; padding:26px 0 30px; }
+  .atlas-search { width:min(430px,64%); margin-top:19px; }
+  .subject-hub { min-height:65px; padding:8px; }
+  .catalog-layout { display:flex; flex-direction:column; gap:10px; padding-top:16px; }
+  .subject-nav { position:static; width:100%; max-height:none; overflow:visible; border:1px solid var(--border); border-radius:5px; background:var(--card); }
+  .subject-nav summary { padding:7px 12px; min-height:47px; font-size:13px; }
+  #currentCategory { display:inline; color:var(--accent); }
+  .subject-switch { display:inline; margin-left:auto; font-size:12px; color:var(--muted); }
+  .subject-nav summary::after { content:""; width:6px; height:6px; transform:translateY(-2px) rotate(45deg); border:solid currentColor; border-width:0 1.5px 1.5px 0; }
+  .subject-nav details[open]>summary::after { transform:translateY(2px) rotate(225deg); }
+  .shelf-page .categories { padding:0 10px 12px; margin:0; }
+  .category-list { grid-template-columns:repeat(2,minmax(0,1fr)); gap:2px 8px; }
+  .category-group { margin-top:6px; padding-top:8px; }
+  .nav-note { display:none; }
+  .catalog-content { width:100%; }
+  .shelf-page .filters { gap:1px 8px; padding-bottom:7px; }
+  .shelf-page .results-heading { padding:13px 0; }
+}
+@media (max-width:640px) {
+  .shelf-page .books { grid-template-columns:minmax(0,1fr); }
+  .shelf-page .book { padding:18px; }
+  .shelf-page .book h3 { font-size:22px; }
+  .book-cover { width:71px; }
+  .shelf-page .brand { gap:8px; font-size:15px; }
+  .brand svg { width:25px; height:25px; }
+  .shelf-page .owner-entry { padding:6px 10px; font-size:12px; }
+  .shelf-page .results-heading { flex-wrap:wrap; gap:6px; }
+}
+@media (max-width:600px) {
+  .shelf-page { --gutter:16px; }
+  .atlas-art { left:auto; width:58%; height:100%; }
+  .atlas-art img { object-fit:cover; object-position:73% 48%; }
+  .atlas-art::after { background:linear-gradient(90deg,#000719 0%,#0007198f 12%,transparent 42%); }
+  .shelf-intro { min-height:222px; padding:28px 0 15px; justify-content:flex-end; }
+  .shelf-intro h1 { font-size:clamp(40px,10.5vw,54px); letter-spacing:.03em; }
+  .shelf-intro p { font-size:12px; letter-spacing:0; }
+  .atlas-search { width:100%; margin-top:30px; padding:3px; }
+  .atlas-search input { font-size:16px; padding:8px; }
+  .atlas-search .search-submit { padding-inline:12px; }
+  .subject-hubs { grid-template-columns:repeat(6,minmax(0,1fr)); }
+  .subject-hub { grid-column:span 2; display:flex; flex-wrap:wrap; justify-content:flex-start; align-content:center; align-items:baseline; gap:0 4px; min-height:47px; padding:6px 5px; }
+  .subject-hub:nth-child(n+4) { grid-column:span 3; border-top:1px solid var(--border); }
+  .subject-hub:nth-child(4)::before { display:none; }
+  .subject-hub::after { left:5px; right:5px; }
+  .hub-name { font-size:14px; gap:5px; }
+  .hub-name::before { width:5px; height:5px; }
+  .hub-count { padding:0; font-size:11px; }
+  .shelf-page .filters { display:block; }
+  .shelf-page .filter-row { gap:0 6px; justify-content:space-between; }
+  .shelf-page .selects { gap:0 6px; }
+  .shelf-page select { font-size:12px; margin-left:1px; padding:5px 3px; }
+  .shelf-page .results-heading h2 { font-size:24px; }
+  .shelf-page .results-heading>div:first-child { gap:5px 9px; }
+}
+@media (max-width:365px) {
+  .shelf-page { --gutter:12px; }
+  .atlas-search .search-submit { padding-inline:8px; }
+  .atlas-search .search-submit svg { width:14px; }
+  .atlas-art { width:51%; }
+  .shelf-intro h1 { font-size:38px; }
+  .subject-hub { display:grid; grid-template-columns:1fr; gap:0; }
+  .hub-count { padding-left:10px; }
+  .hub-name { font-size:13px; }
+  .shelf-page .filter-row,.shelf-page .selects { gap:0 3px; }
+  .shelf-page .text-button { font-size:11px; }
+}

@@ -1,0 +1,27 @@
+.owner-upload-page {
+  --bg:#f6f3ec; --card:#fffdf8; --fg:#172d43; --accent:#204560; --accent-hover:#17364e;
+  --muted:#4f606b; --warm:#945421; --border:#c9c9c2; --tag:#e9ece9;
+  background:var(--bg); color:var(--fg); font-size:1rem;
+}
+.owner-upload-page .guide-container { max-width:55rem; }
+.owner-upload-page .masthead { font-size:.9rem; }
+.owner-upload-page .upload-guide > .upload-intro {
+  background:#142f45; color:#fff7e9; border-top:3px solid #bd8b55; border-radius:.4rem;
+  padding:clamp(1.4rem,4.5vw,3rem); margin:0 0 1.5rem;
+}
+.owner-upload-page .upload-intro h1 { color:inherit; margin:0 0 .6rem; font-size:clamp(2rem,6vw,3.35rem); font-family:Georgia,"Songti SC","Noto Serif CJK SC",serif; }
+.owner-upload-page .upload-intro p { color:#d9e1e3; max-width:38em; margin:0; line-height:1.75; }
+.owner-upload-page .upload-guide #directFileHeading { margin-top:0; }
+.owner-upload-page input[type=file]::file-selector-button { border:1px solid var(--accent); background:var(--tag); color:var(--accent); border-radius:.25rem; padding:.35rem .6rem; margin-right:.6rem; font:inherit; }
+@media(prefers-color-scheme:dark){
+  .owner-upload-page { --bg:#111e2a; --card:#1b2b39; --fg:#f4f0e6; --accent:#c2dee9; --accent-hover:#deebf4; --muted:#b5c3cd; --warm:#e3b980; --border:#485867; --tag:#233747; }
+}
+.owner-upload-page .upload-subject-groups { display:grid; gap:1.15rem; }
+.owner-upload-page .upload-subject-groups fieldset { min-inline-size:0; margin:0; padding:0; border:0; }
+.owner-upload-page .upload-subject-groups legend { margin:0 0 .5rem; font-size:.94rem; font-weight:600; }
+.owner-upload-page .category-choices > legend { margin-bottom:1rem; font-size:1.14rem; }
+.owner-upload-page .upload-subject-groups .category-options { grid-template-columns:repeat(auto-fit,minmax(min(100%,8.75rem),1fr)); }
+.owner-upload-page .upload-destination .category-options label.is-selected { border-color:var(--accent); box-shadow:inset 0 0 0 1px var(--accent); }
+.owner-upload-page #directProgressSection { border-inline-start:.2rem solid var(--accent); padding:.1rem 0 .1rem 1rem; margin:1rem 0; }
+.owner-upload-page #directFileList:empty { margin:0; }
+.owner-upload-page #newUploadNotice:empty,.owner-upload-page #githubLoginNotice:empty { margin:0; }

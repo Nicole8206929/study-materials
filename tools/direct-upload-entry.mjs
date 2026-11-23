@@ -1,4 +1,4 @@
-import {DirectUploadClient,UploadFailure} from './direct-upload-client.mjs';
+import {DirectUploadClient} from './direct-upload-client.mjs';
 import {makeUploadRelease} from './library-upload.mjs';
 import {screenActivity} from './screen-activity.mjs';
 import {initializeGithubLogin} from './github-login.mjs';
@@ -7,7 +7,7 @@ const read=(key,fallback=null)=>{try{return JSON.parse(localStorage.getItem(key)
 const write=(key,value)=>{try{value===null?localStorage.removeItem(key):localStorage.setItem(key,JSON.stringify(value));}catch{}};
 const random=()=>btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(32)))).replaceAll('+','-').replaceAll('/','_').replaceAll('=','');
 const label=bytes=>`${(bytes/1024/1024).toFixed(1)} MB`;
-export function initializeDirectUpload({config,authorizationUrl=location.href,categories,input,onQueued,notify}){
+export function initializeDirectUpload({config,authorizationUrl=location.href,categories,input,onQueued,onResume,notify}){
  const el=id=>document.getElementById(id),endpoint=new URL(config.endpoint).origin;
  const entry=new URL(authorizationUrl),connectRequested=entry.searchParams.get('connect')==='github'||new URLSearchParams(entry.hash.slice(1)).has('githubSetup');
  window.nicoleDirectUploaderStarted=true;
@@ -16,11 +16,15 @@ export function initializeDirectUpload({config,authorizationUrl=location.href,ca
  const activity=screenActivity({request:navigator.wakeLock?.request?()=>navigator.wakeLock.request('screen'):null,visible:()=>document.visibilityState==='visible',notify:text=>{el('directBackground').textContent=text;}});
  const names={selected:'待上传',checking:'正在本地核对',uploading:'正在上传',retrying:'正在核对并重试',verifying:'服务器正在校验',complete:'服务器已校验',duplicate:'内容重复，已跳过',failed:'未完成，可重试'};
  function updateButton(){el('startNewUpload').textContent=connected?'开始上传':githubReady?'GitHub 登录':'连接 GitHub';el('startNewUpload').disabled=!enabled||busy||(connected&&!rows.length);if(busy)for(const id of ['uploadCategories','uploadSubcategories'])el(id).querySelectorAll('input').forEach(item=>{item.disabled=true;});}
+ function updateRow(row){
+  if(!row.statusNode)return;
+  row.statusNode.textContent=`${label(row.file.size)} · ${names[row.state]||row.state}${row.sent?` · 已发送 ${label(Math.min(row.sent,row.file.size))}`:''}`;
+ }
  function renderRows(){
   el('directSelectionCount').textContent=rows.length?`已选 ${rows.length} 份，可继续添加`:'尚未选择文件';
   el('directFileList').replaceChildren(...rows.map((row,index)=>{
    const li=document.createElement('li'),body=document.createElement('div'),name=document.createElement('p'),status=document.createElement('p'),remove=document.createElement('button');
-   name.textContent=row.file.name;status.className='muted';status.textContent=`${label(row.file.size)} · ${names[row.state]||row.state}${row.sent?` · 已发送 ${label(Math.min(row.sent,row.file.size))}`:''}`;
+   name.textContent=row.file.name;status.className='muted';row.statusNode=status;updateRow(row);
    body.append(name,status);remove.type='button';remove.className='remove-selection';remove.textContent='×';remove.disabled=busy;remove.setAttribute('aria-label','移除 '+row.file.name);
    remove.addEventListener('click',()=>{rows.splice(index,1);renderRows();});li.append(body,remove);return li;
   }));updateButton();
@@ -28,7 +32,7 @@ export function initializeDirectUpload({config,authorizationUrl=location.href,ca
  function add(files){
   if(busy)return;
   for(const file of files){
-   if(rows.some(r=>r.file.name===file.name&&r.file.size===file.size&&r.file.lastModified===file.lastModified))continue;
+   if(rows.some(row=>row.file===file))continue;
    if(!/\.(pdf|epub|ppt|pptx)$/i.test(file.name)||!file.size||file.size>=2*1024**3||/[\/\\\x00-\x1f]/.test(file.name)||file.name.length>240){notify(`无法添加“${file.name}”：请先完整保存 PDF、EPUB、PPT 或 PPTX，文件需小于 2 GiB。`);continue;}
    if(rows.length>=1000){notify('每批最多累计选择 1000 份文件。');break;}
    rows.push({file,state:'selected',sent:0});
@@ -41,7 +45,7 @@ export function initializeDirectUpload({config,authorizationUrl=location.href,ca
  }
  async function flushFailures(){
   const waiting=read(failedKey,[]),remaining=[];
-  for(const item of waiting){try{await client.fail(item.batch,item);}catch{remaining.push(item);}}
+  for(const item of waiting){try{await client.fail(item.batch,item);}catch(error){if(![404,409].includes(error.status))remaining.push(item);}}
   write(failedKey,remaining);
  }
  async function refreshAuth(){
@@ -69,7 +73,7 @@ export function initializeDirectUpload({config,authorizationUrl=location.href,ca
       const record=await client.status(active.batch);
       if(['failed','cancelled'].includes(record.state)){active=null;write(activeKey,null);notify('上次未完成的上传已移出记录，可以重新选择文件。');}
       else if(['queued','archiving','processing','ready'].includes(record.state)){onQueued({...record,source:'direct'});active=null;write(activeKey,null);}
-      else notify('上次传输有部分文件尚未收齐。重新选择原文件后，可复用服务器已收到的分块。');
+      else if(record.state==='uploading'){onResume(record,active.expectedInput);notify('上次传输有部分文件尚未收齐。重新选择原文件后，可复用服务器已收到的分块。');}
      }catch(error){if(error.status===404){active=null;write(activeKey,null);}else throw error;}
     }
    }
@@ -93,25 +97,46 @@ export function initializeDirectUpload({config,authorizationUrl=location.href,ca
   try{makeUploadRelease({...selected,expectedCount:rows.length},categories());}catch(error){notify(error.message);return;}
   controller=new AbortController();const signal=controller.signal;setBusy(true);el('directProgressSection').hidden=false;
   let batch,finalizing=false;
+  el('directUploadProgress').value=0;
+  el('directUploadState').textContent='正在本地核对所选文件…';
   const finish=record=>{
    onQueued({...record,source:'direct'});active=null;write(activeKey,null);rows=[];el('directFiles').value='';renderRows();
-   el('directUploadState').textContent='上传成功，服务器已收齐并校验文件。已进入自动整理队列（后台每 30 分钟检查），完成后会显示“已入库”。';notify('文件已上传并私有保存。可以关闭网页；后台会自动按所选分类整理。');
+   el('directUploadState').textContent='上传成功，服务器已收齐并校验文件。已进入自动整理队列（后台定时处理），完成后会显示“已入库”。';notify('文件已上传并私有保存。可以关闭网页；后台会自动按所选分类整理。');
   };
   try{
-   const unique=[],seen=new Set();let checked=0,last=0;
+   const unique=[],seen=new Set(),uniqueNames=new Set();let checked=0,last=0;
    for(const row of rows){
-    row.state='checking';renderRows();
+    row.state='checking';row.sent=0;updateRow(row);
     row.sha256||=await client.hash(row.file,{signal,onProgress:bytes=>{if(performance.now()-last>150){last=performance.now();el('directUploadState').textContent=`正在本地核对 ${checked+1}/${rows.length}：${row.file.name}（${label(bytes)}）`;}}});
-    const key=row.sha256+':'+row.file.size;if(seen.has(key))row.state='duplicate';else{seen.add(key);row.state='selected';unique.push(row);}checked++;
+    const key=row.sha256+':'+row.file.size;
+    if(seen.has(key)){row.state='duplicate';}
+    else{
+     const name=row.file.name.normalize('NFC');
+     if(uniqueNames.has(name))throw new Error(`两份“${name}”内容不同。请移除其中一份或改名，再开始上传。`);
+     uniqueNames.add(name);seen.add(key);row.state='selected';unique.push(row);
+    }
+    checked++;updateRow(row);
    }
    const prepared=makeUploadRelease({...selected,expectedCount:unique.length},categories());
    if(active){
-    const status=await client.status(active.batch);
-    if(['queued','archiving','processing','ready'].includes(status.state)){onQueued({...status,source:'direct'});active=null;write(activeKey,null);notify('上次文件已交给云端整理。本次所选文件尚未发送，可再次点击开始上传。');return;}
-    if(status.state!=='uploading'||JSON.stringify(active.spec)!==JSON.stringify(prepared.spec)){if(status.state==='uploading')await client.cancel(active.batch);active=null;write(activeKey,null);}
+    let status;
+    try{status=await client.status(active.batch);}catch(error){if(error.status!==404)throw error;}
+    if(!status){active=null;write(activeKey,null);}
+    else{
+     if(['queued','archiving','processing','ready'].includes(status.state)){onQueued({...status,source:'direct'});active=null;write(activeKey,null);notify('上次文件已交给云端整理。本次所选文件尚未发送，可再次点击开始上传。');return;}
+     const identities=new Map(unique.map(row=>[row.sha256,row.file]));
+     const sameFiles=Array.isArray(status.files)&&status.files.every(stored=>{
+      const selected=identities.get(stored.sha256);
+      return selected?.size===stored.size&&selected.name.normalize('NFC')===stored.name;
+     });
+     if(status.state!=='uploading'||!sameFiles||JSON.stringify(active.spec)!==JSON.stringify(prepared.spec)){
+      if(status.state==='uploading')await client.cancel(active.batch);
+      active=null;write(activeKey,null);
+     }
+    }
    }
-   batch=active?.batch||prepared.batch;active={batch,spec:prepared.spec};write(activeKey,active);
-   await client.request('/api/batches',{method:'POST',body:active,signal});
+   batch=active?.batch||prepared.batch;active={batch,spec:prepared.spec,expectedInput:selected.expectedCount};write(activeKey,active);
+   await client.request('/api/batches',{method:'POST',body:{batch,spec:prepared.spec},signal});
    let completed=0;const total=unique.reduce((sum,row)=>sum+row.file.size,0);
    for(let index=0;index<unique.length;index++){
     const row=unique[index];last=0;
@@ -119,7 +144,7 @@ export function initializeDirectUpload({config,authorizationUrl=location.href,ca
      const changed=row.state!==state.state;row.state=state.state;row.sent=state.sent;
      el('directUploadProgress').value=Math.min(100,(completed+state.sent)/total*100);
      if(changed||performance.now()-last>150||state.state==='complete'||state.state==='retrying'){
-      last=performance.now();el('directUploadState').textContent=`${names[state.state]} ${index+1}/${unique.length}：${row.file.name} · ${label(state.sent)} / ${label(row.file.size)}${state.attempt?` · 重试 ${state.attempt}/3`:''}`;renderRows();
+      last=performance.now();el('directUploadState').textContent=`${names[state.state]} ${index+1}/${unique.length}：${row.file.name} · ${label(state.sent)} / ${label(row.file.size)}${state.attempt?` · 重试 ${state.attempt}/3`:''}`;updateRow(row);
      }
     }});completed+=row.file.size;
    }
@@ -130,7 +155,6 @@ export function initializeDirectUpload({config,authorizationUrl=location.href,ca
    const record=await client.request('/api/batches/'+encodeURIComponent(batch)+'/finalize',{method:'POST',body:{},signal});
    finish(record);
   }catch(error){
-   batch||=active?.batch;
    if(finalizing&&batch&&error.name!=='AbortError'){
     let confirmed;try{confirmed=await client.status(batch);}catch{}
     if(confirmed&&['queued','archiving','processing','ready'].includes(confirmed.state)){finish(confirmed);return;}
@@ -145,7 +169,7 @@ export function initializeDirectUpload({config,authorizationUrl=location.href,ca
     el('directUploadState').textContent=message;notify(message);
     for(const row of rows)if(!['complete','duplicate'].includes(row.state))row.state='failed';
    }
-   active=null;write(activeKey,null);
+   if(batch&&active?.batch===batch){active=null;write(activeKey,null);}
   }finally{setBusy(false);}
  }
  el('directFiles').addEventListener('change',()=>{add(el('directFiles').files);el('directFiles').value='';});

@@ -6,31 +6,54 @@
   <meta name="description" content="Nicole 的学习资料库：按学科、机构、主题和书名查找数学、物理、计算机、英语与人文经管资料，浏览书目和部分试读页，完整原件不在本站公开。">
   <meta name="color-scheme" content="light dark">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self' https://nicole-private-book-upload.vibrantcloth2.chatgpt.site; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="theme-color" content="#040c1b">
   <title>Nicole 的学习书架</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/styles.css?v=shelf-20261121">
-  <script type="module" src="assets/app.js?v=shelf-20261121"></script>
+  <link rel="stylesheet" href="assets/styles.css?v=observatory-20261123">
+  <script type="module" src="assets/app.js?v=observatory-20261123"></script>
 </head>
 <body class="shelf-page">
   <noscript><p class="notice">本页需要 JavaScript 才能搜索和查看试读内容，请在浏览器中启用 JavaScript。</p></noscript>
+  <header class="atlas-header">
+    <a class="skip-link" href="#catalog">跳到资料列表</a>
+    <div class="masthead container">
+      <a class="brand" href="./">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 9c5.2-.4 9.1 1 13 4.1 4-3.1 7.8-4.5 13-4.1v15c-4.9-.1-9 1.1-13 3.9C12 25.1 7.9 23.9 3 24Z"/><path d="M16 13.1v14.3M8 6.8l2.6-3.1M16 7V2m5.4 4.8L24 3.7"/></svg>
+        Nicole 的学习书架
+      </a>
+      <a class="owner-entry" href="upload.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3m-4 4 4-4 4 4M4 14v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/></svg>上传书籍</a>
+    </div>
+    <div class="atlas-hero">
+      <picture class="atlas-art" aria-hidden="true">
+        <source media="(max-width:600px)" srcset="assets/observatory-small.jpg">
+        <img src="assets/observatory.jpg" width="1580" height="632" alt="" fetchpriority="high">
+      </picture>
+      <div class="container">
+        <div class="shelf-intro">
+          <h1>藏书目录</h1>
+          <p id="totalSummary">正在读取书目…</p>
+          <form class="atlas-search" id="catalogSearch" role="search">
+            <label class="sr-only" for="search">搜索书名、作者、机构或原文件名</label>
+            <input type="search" id="search" placeholder="书名、作者、机构或原文件名" autocomplete="off" enterkeyhint="search">
+            <button type="button" id="clearSearch" aria-label="清空搜索">清空</button>
+            <button type="submit" class="search-submit"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>搜索</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
   <div class="container" id="main">
-    <header>
-      <a class="skip-link" href="#catalog">跳到资料列表</a>
-      <div class="masthead"><a class="brand" href="./"><svg viewBox="0 0 28 28" aria-hidden="true"><path d="M4 6h5v17H4zM12 3h5v20h-5zM20 8l4-1 4 15-4 1zM2 25h26"/></svg>Nicole 的学习书架</a><a class="owner-entry" href="upload.html">上传书籍</a></div>
-      <div class="shelf-intro"><h1>藏书目录</h1><p id="totalSummary">正在读取书目…</p></div>
-    </header>
+    <nav class="subject-hubs" id="subjectHubs" aria-label="按学科大类浏览"></nav>
     <main id="catalog" tabindex="-1" class="catalog-layout">
       <aside class="subject-nav" aria-label="学科导航">
         <details id="subjectDetails" open>
-          <summary><span>学科目录</span><span id="currentCategory">全部资料</span><span class="subject-switch">切换</span></summary>
+          <summary><span>学科索引</span><span id="currentCategory">全部资料</span><span class="subject-switch">切换</span></summary>
           <div id="categories" class="categories" role="group" aria-label="学科分类"></div>
         </details>
         <p class="nav-note">跨学科资料可在多个分类找到，书架只保留一条书目。</p>
       </aside>
       <div class="catalog-content">
         <section class="filters" aria-label="查找资料">
-          <label class="search-label" for="search">查找一本书</label>
-          <div class="search-row"><input type="search" id="search" placeholder="书名、原文件名、作者或主题" autocomplete="off"><button type="button" id="clearSearch">清空</button></div>
           <section id="subcategorySection" class="subcategory-section" hidden aria-labelledby="subcategoryTitle"><h2 id="subcategoryTitle">大学数学分类</h2><div id="subcategories" class="tag-filter" role="group" aria-label="大学数学小分类"></div></section>
           <details class="tag-section" id="tagDetails">
             <summary><span id="tagSummary">按标签细分</span><span id="selectedTag">机构、主题、用途</span></summary>
@@ -41,7 +64,7 @@
           <div class="filter-row"><div class="selects"><label for="format">格式 <select id="format"><option value="all">全部格式</option><option value="pdf">PDF</option><option value="epub">EPUB</option></select></label><label for="sort">排序 <select id="sort"><option value="default">按学科与书名</option><option value="title">书名 A–Z</option><option value="year">年份由新到旧</option><option value="size">文件由小到大</option></select></label></div><button type="button" id="resetFilters" class="text-button">重置筛选</button></div>
           <div id="activeFilters" class="active-filters" aria-label="当前筛选" hidden></div>
         </section>
-        <div class="results-heading"><div><h2 id="resultsTitle">全部资料</h2><p id="stats" role="status" aria-live="polite" aria-atomic="true">正在加载资料…</p></div><div class="shelf-management"><button id="manageShelf" type="button" aria-pressed="false" hidden>管理书架</button><button id="openTrash" type="button" hidden>回收站</button></div></div>
+        <div class="results-heading"><div><h2 id="resultsTitle" tabindex="-1">全部资料</h2><p id="stats" role="status" aria-live="polite" aria-atomic="true">正在加载资料…</p></div><div class="shelf-management"><button id="manageShelf" type="button" aria-pressed="false" hidden>管理书架</button><button id="openTrash" type="button" hidden>回收站</button></div></div>
         <p id="managementNotice" class="management-notice" role="status" aria-live="polite" hidden></p>
         <div id="loadError" class="empty-state" role="alert" hidden><h3>书架暂时没有加载成功</h3><p>请检查网络后重试。</p><button id="retryLoad" class="primary" type="button">重新加载</button></div>
         <div id="emptyState" class="empty-state" hidden><h3 id="emptyStateTitle">还没有找到匹配的资料</h3><p id="emptyStateHint">试试更短的关键词，或重置分类、格式和标签。</p><button id="emptyReset" type="button" class="primary">查看全部资料</button></div>

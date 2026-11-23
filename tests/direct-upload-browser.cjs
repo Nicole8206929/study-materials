@@ -15,7 +15,14 @@ const service='https://nicole-private-book-upload.vibrantcloth2.chatgpt.site';
     const context=await browser.newContext({viewport:{width:390,height:844}}),page=await context.newPage();
     const errors=[];page.on('pageerror',e=>errors.push(e.message));
     await context.addInitScript(()=>localStorage.setItem('nicole-direct-session-v1',JSON.stringify({token:'v'.repeat(43),scope:'owner',expires:Date.now()/1000+86400})));
-    let serviceReady=false;
+    const interruptedBatch='upload-20261123010000-1234abcd';
+    const interruptedSpec={version:1,cat:'high-school-physics',cats:['high-school-physics','university-physics'],tags:['深中高中物理资料'],mode:'individual',title:'',expectedCount:1};
+    await context.addInitScript(({batch,spec})=>{
+     if(!localStorage.getItem('interrupted-fixture')){
+      localStorage.setItem('nicole-direct-active-v1',JSON.stringify({batch,spec}));localStorage.setItem('interrupted-fixture','yes');
+     }
+    },{batch:interruptedBatch,spec:interruptedSpec});
+    let serviceReady=false,interruptedCancelled=false;
     await page.route('**/upload-service.json',r=>r.fulfill({json:{version:1,ready:serviceReady,endpoint:service}}));
     const cors={'Access-Control-Allow-Origin':'http://127.0.0.1:8791','Access-Control-Allow-Headers':'authorization,content-type,x-chunk-sha256,x-upload-request','Access-Control-Allow-Methods':'GET,POST,PUT,DELETE,OPTIONS','Content-Type':'application/json'};
     let batch,spec,stored,allowVerified=false,ready=false,puts=0,failedMode=false,loseFinalResponse=true,finalizes=0,pairCalls=0;
@@ -27,6 +34,10 @@ const service='https://nicole-private-book-upload.vibrantcloth2.chatgpt.site';
      if(url.pathname==='/api/session')return req.headers().authorization==='Bearer '+'v'.repeat(43)?send({connected:true,scope:'owner'}):send({error:{code:'session_required',message:'权限不可用'}},401);
      if(url.pathname==='/api/pair'){pairCalls++;return send({error:{code:'pairing_used',message:'已使用'}},409);}
      if(url.pathname==='/api/batches'&&method==='GET')return send({batches:[]});
+     if(url.pathname==='/api/batches/'+interruptedBatch){
+      if(method==='DELETE'){interruptedCancelled=true;return send({cancelled:true});}
+      return send({batch:interruptedBatch,...interruptedSpec,state:'uploading',files:[{name:'旧课件.pdf',size:999,sha256:'0'.repeat(64)}]});
+     }
      if(url.pathname==='/api/batches'&&method==='POST'){
       const body=req.postDataJSON();batch=body.batch;spec=body.spec;stored=null;return send({batch,state:'uploading',chunkSize:8*1024*1024},201);
      }
@@ -64,10 +75,13 @@ const service='https://nicole-private-book-upload.vibrantcloth2.chatgpt.site';
     assert.equal(await page.locator('#directFiles').isEnabled(),true);
     const big=Buffer.alloc(8*1024*1024+543,7);big.write('%PDF-1.7\n');
     await page.locator('#directFiles').setInputFiles({name:'物理课件.pdf',mimeType:'application/pdf',buffer:big});
+    await page.locator('#uploadExpected').fill('');
     await page.locator('#directFiles').setInputFiles([{name:'重复内容.pdf',mimeType:'application/pdf',buffer:big},{name:'移除.pdf',mimeType:'application/pdf',buffer:Buffer.from('%PDF remove')}]);
     assert.equal(await page.locator('#directFileList li').count(),3);
     await page.getByRole('button',{name:'移除 移除.pdf',exact:true}).click();assert.equal(await page.locator('#directFileList li').count(),2);
-    await page.locator('#uploadCategories input[value=university-physics]').check();await page.locator('#uploadTags').fill('深中高中物理资料');
+    assert.deepEqual(await page.locator('#uploadCategories input:checked').evaluateAll(nodes=>nodes.map(node=>node.value)),interruptedSpec.cats);
+    assert.equal(await page.locator('#uploadTags').inputValue(),interruptedSpec.tags.join('，'));
+    await page.locator('#uploadCategories input[value=high-school-physics]').check();await page.locator('#uploadCategories input[value=university-physics]').check();await page.locator('#uploadTags').fill('深中高中物理资料');
     await page.locator('#startNewUpload').click();
     try{await page.waitForFunction(()=>document.querySelector('#directUploadState').textContent.includes('服务器正在校验'),{},{timeout:10000});}
     catch(error){console.log({state:await page.locator('#directUploadState').innerText(),notice:await page.locator('#newUploadNotice').innerText(),puts,errors});throw error;}
@@ -75,6 +89,7 @@ const service='https://nicole-private-book-upload.vibrantcloth2.chatgpt.site';
     assert.equal(await page.locator('#completedUploads li').count(),0);assert.equal(await page.locator('#directUploadProgress').evaluate(progress=>progress.value),100);
     allowVerified=true;
     await page.waitForFunction(()=>document.querySelector('#directUploadState').textContent.includes('上传成功，服务器已收齐'));
+    assert(interruptedCancelled&&batch!==interruptedBatch,'a different selection with the same classifications and file count starts a fresh batch');
     assert.equal(puts,2,'the stored first part must not be retransmitted after its failed response');
     assert.equal(finalizes,1,'a lost final response must be reconciled from server status without restarting the batch');
     assert.deepEqual(spec.cats,['high-school-physics','university-physics']);assert.equal(spec.expectedCount,1);assert.deepEqual(spec.tags,['深中高中物理资料']);
@@ -85,6 +100,10 @@ const service='https://nicole-private-book-upload.vibrantcloth2.chatgpt.site';
     await page.locator('#directFiles').setInputFiles({name:'失败.pdf',mimeType:'application/pdf',buffer:Buffer.from('%PDF failure')});
     await page.locator('#startNewUpload').click();await page.waitForFunction(()=>document.querySelector('#directUploadState').textContent.includes('HTTP 403'));
     assert.equal(puts,1);assert.equal(await page.locator('#pendingUploads li').count(),0);
+    await page.getByRole('button',{name:'移除 失败.pdf'}).click();
+    await page.locator('#directFiles').setInputFiles(['A','B'].map(text=>({name:'同名.pdf',mimeType:'application/pdf',buffer:Buffer.from('%PDF-'+text)})));
+    await page.locator('#startNewUpload').click();await page.waitForFunction(()=>document.querySelector('#newUploadNotice').textContent.includes('内容不同'));
+    assert.equal(puts,1,'same name and size with different contents must be detected before sending either file');
     await page.reload({waitUntil:'networkidle'});assert.equal(await page.locator('#pendingUploads li').count(),0);assert.equal(await page.locator('#directFileList li').count(),0);
     for(const scheme of ['light','dark']){
      await page.emulateMedia({colorScheme:scheme});assert.deepEqual((await new AxeBuilder({page}).analyze()).violations,[]);

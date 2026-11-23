@@ -20,7 +20,9 @@ const path=require('node:path');
     await page.route('**/upload-automation.json',r=>r.fulfill({json:{version:1,ready:true}}));
     await page.evaluate(()=>window.dispatchEvent(new Event('pageshow')));
     await page.waitForFunction(()=>!document.querySelector('#startNewUpload').disabled);
-    await page.locator('#uploadCategories input[value="high-school-physics"]').uncheck();
+    assert.equal(await page.locator('#uploadCategories input:checked').count(),0,'a new upload starts without a subject');
+    await page.locator('#startNewUpload').click();assert(await page.locator('#selectedCategoryCount').evaluate(node=>node===document.activeElement));
+    assert((await page.locator('#newUploadNotice').innerText()).includes('选择'));
     await page.locator('#uploadCategories input[value="high-school-math"]').check();
     await page.locator('#uploadCategories input[value="university-math"]').check();
     await page.locator('#uploadSubcategories input[value="analysis"]').check();
@@ -69,6 +71,15 @@ const path=require('node:path');
     await page.screenshot({path:`/tmp/library-upload-${name}.png`,fullPage:true});
     await page.goto('http://127.0.0.1:8768/upload-setup.html');assert.deepEqual((await new AxeBuilder({page}).analyze()).violations,[]);
     assert.equal(await page.locator('input[type=password],input[type=file],textarea').count(),0);assert.deepEqual(errors,[]);
+    await page.goto('http://127.0.0.1:8768/upload.html?legacyUpload=1&cat=statistics');
+    await page.waitForSelector('#uploadSubcategories input[value="probability-statistics"]:checked');
+    const groups=require('../books.json').categoryGroups;
+    assert.deepEqual(await page.locator('#uploadCategories fieldset legend').allTextContents(),groups.map(group=>group.name));
+    assert.equal(await page.locator('#uploadCategories input:checked').inputValue(),'university-math');
+    await page.locator('#uploadSubcategories input[value="probability-statistics"]').uncheck();
+    await page.evaluate(()=>window.dispatchEvent(new Event('pageshow')));
+    await page.waitForLoadState('networkidle');
+    assert.equal(await page.locator('#uploadSubcategories input:checked').count(),0,'returning to the page keeps the owner’s changed selection');
     console.log(`PASS ${name}: destination survives GitHub handoff; pending/failure/ready, no false success, reload recovery, mobile layout and accessibility. GitHub upload itself is stubbed.`);
    }finally{await browser.close();}
   }

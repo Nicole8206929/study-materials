@@ -10,18 +10,19 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self' https://nicole-private-book-upload.vibrantcloth2.chatgpt.site; object-src 'none'; base-uri 'self'; form-action 'none'">
   <title>上传并分类 · Nicole 的学习书架</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/styles.css?v=shelf-20261114">
-  <script src="tools/upload-category-compat.js?v=categories-20261114b"></script>
+  <link rel="stylesheet" href="assets/styles.css?v=shelf-20261123">
+  <link rel="stylesheet" href="assets/upload.css?v=20261123">
   <script src="assets/upload-checker-bootstrap.js?v=direct-upload-1" defer></script>
-  <script src="assets/upload-checker.js?v=github-login-2" defer></script>
+  <script src="assets/upload-checker.js?v=workflow-20261123" defer></script>
 </head>
-<body>
+<body class="owner-upload-page">
   <div class="container guide-container">
     <header><div class="masthead"><a class="brand" href="./">NICOLE / 学习书架</a><a href="./">返回书架</a></div></header>
     <main class="upload-guide">
-      <h1>上传并分类</h1>
-      <p class="guide-intro">选好放在哪里，上传后自动整理。</p>
-      <p>手机自带浏览器即可使用：在本页选文件、看进度和重试。完整资料保存在私有资料库，书架向访客提供前 10 页试读。</p>
+      <div class="upload-intro">
+        <h1>上传并分类</h1>
+        <p>用手机自带浏览器选择文件和学科，上传后自动归入书架。原件存入私有资料库，访客可看试读页。</p>
+      </div>
       <p id="automationState" role="status">正在读取上传设置…</p>
       <p id="automationSetup" hidden><a class="upload-link" href="upload-setup.html">首次启用自动入库</a></p>
       <form id="newUploadForm" class="upload-destination">
@@ -42,7 +43,7 @@
           <button id="disconnectDirectUpload" class="text-button" type="button" hidden>退出本人上传</button>
           <label for="directFiles">添加 PDF、EPUB、PPT 或 PPTX，可多次选择</label>
           <input id="directFiles" type="file" accept=".pdf,.epub,.ppt,.pptx" multiple>
-          <p class="muted">分批选择会累计；手机一次只能选 50 个时，再继续添加即可。每批最多 1000 份，右侧“×”可移除。上传会核对重复内容。</p>
+          <p class="muted">可分次添加，每批最多 1000 份。点 × 移除文件。上传前会按内容核对重复项。</p>
           <p id="directSelectionCount" aria-live="polite">尚未选择文件</p>
           <ul id="directFileList" class="selection-list" aria-label="本次上传文件"></ul>
           <div id="directProgressSection" hidden>
@@ -53,7 +54,7 @@
             <button id="cancelDirectUpload" type="button" class="text-button" hidden>暂停／修改文件</button>
           </div>
         </section>
-        <fieldset class="category-choices"><legend>书架分类（可多选）</legend><div id="uploadCategories" class="category-options"><p>正在载入分类…</p></div><p id="selectedCategoryCount" class="muted" aria-live="polite">至少选一类，同一份资料可同时放入多个类别。</p></fieldset>
+        <fieldset class="category-choices" aria-describedby="selectedCategoryCount"><legend>书架分类（可多选）</legend><p id="selectedCategoryCount" class="muted" tabindex="-1" aria-live="polite">至少选一类，同一份资料可同时放入多个类别。</p><div id="uploadCategories" class="upload-subject-groups"><p>正在载入分类…</p></div></fieldset>
         <div id="uploadSubcategoryField" hidden><fieldset class="category-choices"><legend>大学数学小分类（可多选）</legend><div id="uploadSubcategories" class="category-options"></div></fieldset></div>
         <label for="uploadTags">分类标签（选填，用逗号分隔）</label>
         <input id="uploadTags" placeholder="例如：深中高中物理资料，课内总结" maxlength="450">
@@ -64,7 +65,7 @@
         <input id="uploadTitle" maxlength="120" placeholder="留空时使用原文件名">
         <label for="uploadExpected">本批文件总数（选填）</label>
         <input id="uploadExpected" type="number" inputmode="numeric" min="1" max="1000" placeholder="填写后会检查是否齐全">
-        <p>点击开始后，本页逐个分块上传并显示实际传输进度。服务器收齐并校验后才显示“上传成功”。后台每 30 分钟检查待整理资料，再自动分类入库；不需要手动发布或保存草稿。</p>
+        <p>点击开始后，本页逐个分块上传并显示实际传输进度。服务器收齐并校验后才显示“上传成功”。后台会定时接收并按所选分类入库。</p>
         <p id="legacyUploadInstructions" hidden>旧上传入口：在 GitHub 添加附件，全部成功后点 Publish release。新资料请使用本页直接上传。</p>
         <button id="startNewUpload" class="primary" type="submit" disabled>开始上传</button>
         <p class="muted"><a href="upload.html?legacyUpload=1">使用原上传方式（备用）</a></p>
